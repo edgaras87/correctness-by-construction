@@ -3,7 +3,7 @@
 <!--
 What it is: a Problem Domain Idea of the Maintainer Repo's own Problem Domain, keeping knowledge (§3.2), and its one home. Still a draft and a trial: practice changes it.
 What it stands on: knowledge/backbone-ideas/layers-of-knowledge.md, the layers in any Problem Domain. It adapts that document, and never retells it.
-What stands on it: other texts point here, and never retell it.
+What stands on it: other texts point here, and never retell it. This repo's own Adapted Cases written from §4.2's parts, by their Adapted Understanding Texts: .claude/understanding/read-copy-changes.md, from §4.2.2.
 Its place in the repo: knowledge/problem-domain-ideas/keeping-knowledge/ (ADR-0084).
 Where it started: TODO-CONVERSATION-MEMORY.md §35, *The layers of knowledge*.
 Its first sources, input and not rules:
@@ -233,7 +233,7 @@ A Copy Change travels through six parts, each done by one repo. Each part sits a
 
 So the six parts are one movement: up from layer 4, as high as the Copy Change holds, and back down.
 
-**The Look for Lessons.** Read Copy Changes, Judge Copy Changes and Act on the verdicts make one pass over one Backend Repo, the Look for Lessons. It starts when the human names a Backend Repo, for its lessons or to update it. It ends once Act on the verdicts is done, which sets the *settled snapshot* to the stop (§4.2.2). Its first step, two checks at main, sorts it into one of three cases (§4.2.2). Deliver the Kit Update and Take the Kit Update are outside it.
+**The Look for Lessons.** Read Copy Changes, Judge Copy Changes and Act on the verdicts make one pass over one Backend Repo, the Look for Lessons. It starts when the human names a Backend Repo, for its lessons or to update it. It ends once Act on the verdicts is done, which sets the *settled snapshot* to the stop (§4.2.2). It falls into one of three cases (§4.2.2). Deliver the Kit Update and Take the Kit Update are outside it.
 
 **Bringing a Backend Repo up to date.** It is a second job, which needs the first. It runs only when the human names the Backend Repo to update, and starts with a Look for Lessons. Its check, whether a Kit Update is due, belongs to Deliver the Kit Update. It comes after Act on the verdicts, since the Backend Kit moves for a Copy Change only once it is judged and acted on (§4.2.5).
 
@@ -281,21 +281,15 @@ The Backend Repo changes a Kit Copy during its own work, and the gate of its Pla
 
 #### 4.2.2 Read Copy Changes
 
-The Maintainer Repo finds what changed in one Backend Repo since it last looked, and lists it, judging nothing. How each rule was chosen is the simulation's (`temp/common-ground/backend-repo-change-simulation.md` §4, *Read Copy Changes*).
+The Maintainer Repo finds what changed in one Backend Repo since it last looked, and lists it, judging nothing.
 
-**How it starts.** The human decides which Backend Repo gets a Look for Lessons, and when. The human names a Backend Repo, for its lessons or to update it, and the agent compares its main with its *settled snapshot*. When the human asks which Backend Repos have new work, every one's main is compared with its *settled snapshot*, and nothing more is done. No state is kept: whether a Backend Repo has work comes from its main and the *settled snapshot*, never from a line someone must keep true.
-
-**Where a stretch ends.** At the gate where one of the Backend Repo's Plan Steps closed, the last one on main. Main moves only at a gate's close, so main is always at a closed gate. Work past it, in a branch or not yet committed, is left for the next Look for Lessons. An open Plan Step changes nothing here: its work waits for the next Look for Lessons, and a Kit Update waits for the step's gate (§4.2.5). If a stretch's history is cleaned before main moves, the Change Records are unharmed: they are in the Kit Copies, not in the commits.
+**Where a stretch ends.** At the gate where one of the Backend Repo's Plan Steps closed, the last one on main. Main moves only at a gate's close, so main is always at a closed gate. Work past it, in a branch or not yet committed, is left for the next Look for Lessons: a Copy Change the gate has not yet looked at may still be edited or reversed there (§4.2.1). An open Plan Step changes nothing here: its work waits for the next Look for Lessons, and a Kit Update waits for the step's gate (§4.2.5). If a stretch's history is cleaned before main moves, the Change Records are unharmed: they are in the Kit Copies, not in the commits.
 
 **Two snapshots.** Read Copy Changes compares two snapshots of the Backend Repo, the older snapshot and the stop, and never walks its commits. The commits between them are history, opened only to understand something deeper.
-- **The older snapshot** is the Repo Register's *settled snapshot*, and it is never empty. At birth, the Maintainer Repo's check of the delivery writes the Backend Repo's row, its *settled snapshot* set to the start: the commit holding the Kit Copies as they arrived (`temp/common-ground/between-repos-simulation.md` §5.1, step 2). Nothing before the start is the Backend Repo's own Copy Change. So every Look for Lessons, the first among them, starts at the *settled snapshot*.
+- **The older snapshot** is the Repo Register's *settled snapshot*, and it is never empty. It is kept in the Maintainer Repo, not carried to the Backend Repo by the next Kit Update: a Look for Lessons may have no Kit Update after it, and the Backend Repo would then hold an old stop, so the next Look for Lessons would find again what was judged. Nor is it each Repo Reading's first line, which would keep every Repo Reading for good, for that line alone. At birth, the Maintainer Repo's check of the delivery writes the Backend Repo's row, its *settled snapshot* set to the start: the commit holding the Kit Copies as they arrived (`temp/common-ground/between-repos-simulation.md` §5.1, step 2). Nothing before the start is the Backend Repo's own Copy Change. So every Look for Lessons, the first among them, starts at the *settled snapshot*.
 - **After an Update Take,** the first Look for Lessons starts at the *version snapshot* instead, found at main (§4.2.6, *At the Update Take, in order*, item 4). The *settled snapshot* still holds the Kit Copies of the previous Kit Version, and starting there would read the Update Take's changes as the Backend Repo's. The *version snapshot*'s Kit Copies are not checked against the new Kit Version: Deliver the Kit Update and the Update Take check the files three times before (§4.2.5; §4.2.6, items 2 and 6).
 - **The stop** is the Backend Repo's main as it stands when the Look for Lessons begins, named by its commit. Everything is compared against that commit, never against main as it moves, so a commit landing during the Look for Lessons falls into the next one.
 - **The Backend Repo's Kit Version** is read from the *settled snapshot*, never stored anywhere else. It may be behind the newest.
-
-**Two checks at main,** both on whether there are Copy Changes to judge:
-1. **main moved:** the Backend Repo's main against the *settled snapshot*;
-2. **Copy Changes:** the Kit Copies, compared between the older snapshot and the stop. It is asked only when main moved.
 
 A Look for Lessons ends in one of three cases:
 
@@ -307,22 +301,13 @@ A Look for Lessons ends in one of three cases:
 
 When the human named the Backend Repo to update, the check in Deliver the Kit Update follows, once Act on the verdicts is done.
 
-**Finding each Copy Change.** Each Kit Copy in the Backend Kit's folders, a new file among them, is compared between the older snapshot and the stop. A Change Record lands in the same diff as its Copy Change, so pairing them is reading one diff. Three things can come out:
-- a Copy Change with its Change Record: read with its what, what happened, which work found it, and the Backend Repo's proposal;
-- a Copy Change with no Change Record: read from the comparison alone, and marked "no entry";
-- a Change Record changed with no Copy Change, as when a why is rewritten: read as a change of its why.
-
-The agent only reads the Backend Repo, and writes only in the Maintainer Repo.
-
-**The Repo Reading.** One line per Copy Change, nothing judged. A line holds the Kit Copy and its part, what it says now, what happened, which work found it, and the Backend Repo's proposal, marked as one. A Copy Change with no Change Record says "no entry". Copy Changes linked by one reason are listed together, under it. The Repo Reading names its stop. When the list is empty, none is written. The human checks that the list is whole; then it is judged. The Repo Reading stays a draft, and goes once its work is done.
+**The Repo Reading.** One line per Copy Change, nothing judged. One line per Kit Copy would merge two Copy Changes to it, and lose one of their reasons. A line holds the Kit Copy and its part, what it says now, what happened, which work found it, and the Backend Repo's proposal, marked as one. A Copy Change with no Change Record says "no entry". Copy Changes linked by one reason are listed together, under it. The Repo Reading names its stop. When the list is empty, none is written. The Repo Reading stays a draft, and goes once its work is done.
 
 **When the stop moves.** Act on the verdicts sets the *settled snapshot* to the stop, in the Repo Register, at every Look for Lessons, whether or not a Copy Change was found. With no verdicts, that is right after judging. It never moves before: a Look for Lessons left half done must not mark its Copy Changes taken into account. Whether the Backend Repo takes the Kit Update does not hold it back.
 
 **Its Adapted Cases:**
 - the Backend Repo's gate list: main moves only at a gate's close. It is there today;
-- the Maintainer Repo's, for reading a Backend Repo's Copy Changes. It loads when the human names a Backend Repo, for its lessons or to update it, or asks which have new work, and says everything above.
-
-**Open:** a Backend Repo nobody names gets no Look for Lessons until its work resumes. Its trigger: the first lesson found late because a Backend Repo went without one.
+- the Maintainer Repo's own, for reading a Backend Repo's Copy Changes. It holds this part's own steps, and why each is so.
 
 #### 4.2.3 Judge Copy Changes
 

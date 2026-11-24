@@ -43,7 +43,7 @@ Each step has these fields. A field with nothing in it is left out.
 
 - **Options:** what could be done here, today's way among them.
 - **Chosen:** the option taken, and why the others were not.
-- **Its rules:** where the rules it led to are written, in the layers document's §4.2.
+- **Its rules:** where the rules it led to are written: the layers document's §4.2, or the Adapted Understanding Text of the part's Adapted Case (ADR-0087).
 - **Today:** what is borrowed from today, and what changes, each with its source. Today's things keep today's names, such as the Delivery Note.
 
 A step simulated anew also says what must happen, which Adapted Case runs it, and what it leaves open, each with its trigger, until its part is read together and they move to the layers document.
@@ -150,7 +150,7 @@ Four steps:
   - a reads Copy Changes the gate has not yet looked at, which the Backend Repo may still edit or reverse (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.1, *Change a Kit Copy*);
   - c depends on the human remembering, and the Repo Register then says a Backend Repo has nothing new when it has new work (Failure Case 2);
   - e alone gives no Look for Lessons to a Backend Repo whose work does not resume, so what it learned is lost (Failure Case 1). The Look for Lessons when work resumes still runs, as d: the human names the Backend Repo to update, which starts a Look for Lessons (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.5, *Deliver the Kit Update*).
-- **Its rules:** the layers document's (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.2, *Read Copy Changes*).
+- **Its rules:** the layers document's (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.2, *Read Copy Changes*), and this repo's own Adapted Case for it (`.claude/understanding/read-copy-changes.md`).
 - **Today:**
   - borrowed: a CBC Run's Plan Step reaches main by fast-forward at its close, on the reviewer's word (`delivery/fills/cbc-run-pure-playbook.md`, *At the close*);
   - borrowed: the Maintainer Repo keeps where each Backend Repo lives (`ARCHITECTURE.md` §2.5, *The CBC Runs*);
@@ -185,7 +185,7 @@ Four steps:
   - b finds the same as a at the first Look for Lessons after birth or an Update Take. After it, a Copy Change already judged differs from that Kit Version until the next Update Take, and is found again at every Look for Lessons before it;
   - c misses a Copy Change with no Change Record, which the commit's check should have stopped, but which can still land (Failure Case 22);
   - d shows every edit on the way, and Copy Changes the gate reversed. The gate has settled those (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.1, *Change a Kit Copy*); what stands at the stop is what is read.
-- **Its rules:** the layers document's (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.2, *Read Copy Changes*).
+- **Its rules:** this repo's own Adapted Case for Read Copy Changes (`.claude/understanding/read-copy-changes.md`).
 - **Today:**
   - borrowed: every item is read from the copies' diff, the whys, and the lines to the Concept Deliverer (`docs/conventions/exchange/` §6.1, *Reading a CBC Run*; `.claude/skills/exchange-read/SKILL.md`, Stage 3). Here the whys are in the diff, and nothing else is sent to the Maintainer Repo, so it is one: the diff;
   - borrowed: the CBC Run is only read, never written (`.claude/skills/exchange-read/SKILL.md`, *Gates*);
@@ -204,7 +204,7 @@ Four steps:
   - b judges before the whole list is seen, so Copy Changes with one reason are judged apart, and each verdict tends to follow the Backend Repo's proposal (Failure Case 20). Listing is cheap and judging is not, so the list is checked whole first;
   - c takes the proposal for the verdict, and a lesson for every repo stays in one Backend Repo (Failure Case 20);
   - d merges two Copy Changes to one Kit Copy, and one of their reasons is lost.
-- **Its rules:** the layers document's (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.2, *Read Copy Changes*).
+- **Its rules:** the layers document's (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.2, *Read Copy Changes*), and this repo's own Adapted Case for it (`.claude/understanding/read-copy-changes.md`).
 - **Today:**
   - borrowed: one line per item, what it is and where, nothing decided (`.claude/skills/exchange-read/SKILL.md`, Stage 4 and *Gates*);
   - borrowed: the Repo Reading is a draft to its form (`.claude/rules/exchange-reading.md`);
