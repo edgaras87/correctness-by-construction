@@ -5,7 +5,7 @@ description: Make a Kit Update for one Backend Repo, then stage it into the Back
 
 # Deliver the Kit Update
 
-Making a Kit Update, then staging it. When one is due, what it holds, and what crosses to the Backend Repo are the layers document's (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.5, *Deliver the Kit Update*).
+Making a Kit Update, then staging it. When one is due, what it holds, and what crosses to the Backend Repo are in Change, in keeping knowledge (`knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §3.5, *Deliver the Kit Update*).
 
 Why each stage is so: `.claude/understanding/deliver-the-kit-update.md`.
 
@@ -18,12 +18,12 @@ Borrowed:
 | Backend Kit | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Backend Repo | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Kit Copy | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
-| Kit Update | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
-| Kit Version | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
-| Look for Lessons | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
+| Kit Update | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
+| Kit Version | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
+| Look for Lessons | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Maintainer Repo | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Plan Step | `docs/conventions/project-recording/` §2.1, *What a plan is* |
-| Update Note | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
+| Update Note | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 
 ## Stage 1 — is one due
 
@@ -34,7 +34,7 @@ Borrowed:
 ## Stage 2 — make it
 
 1. Take every Kit Copy, whole, at the newest Kit Version.
-2. Write the Update Note, holding each item the layers document lists (§4.2.5, *What a Kit Update is*). Read each why from the bodies of the Maintainer Repo's commits that changed a Backend Kit file between the two Kit Versions. Cite nothing the Backend Repo cannot open: no path, record or word of the Maintainer Repo's own.
+2. Write the Update Note, holding each item Change, in keeping knowledge, lists (§3.5, *What a Kit Update is*). Read each why from the bodies of the Maintainer Repo's commits that changed a Backend Kit file between the two Kit Versions. Cite nothing the Backend Repo cannot open: no path, record or word of the Maintainer Repo's own.
 3. Name the Kit Update by the Maintainer Repo's commit at which its files and Update Note are final.
 4. Show it to the human, who decides it.
 
@@ -53,7 +53,7 @@ Compare each Backend Repo's Kit Version with the newest, as in Stage 1, step 2. 
 
 - A Look for Lessons ended at this Backend Repo before the Kit Update was made.
 - No Plan Step of the Backend Repo's was open.
-- The Update Note holds each item the layers document lists, and cites nothing of the Maintainer Repo's own.
+- The Update Note holds each item Change, in keeping knowledge, lists, and cites nothing of the Maintainer Repo's own.
 - The Kit Update was staged only on the human's word, only into the Backend Repo's `temp/`.
 - Each staged file matches the new Kit Version.
 

@@ -5,7 +5,7 @@ description: Judge each line of a Repo Reading, write its verdict, act on the ve
 
 # Judge Copy Changes
 
-The second and third parts of a Look for Lessons: Judge Copy Changes, then Act on the verdicts. Who judges, what a verdict holds, and what each depth asks are the layers document's (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.3, *Judge Copy Changes*; §4.2.4, *Act on the verdicts*).
+The second and third parts of a Look for Lessons: Judge Copy Changes, then Act on the verdicts. Who judges, what a verdict holds, and what each depth asks are in Change, in keeping knowledge (`knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §3.3, *Judge Copy Changes*; §3.4, *Act on the verdicts*).
 
 Why each stage is so: `.claude/understanding/judge-copy-changes.md`.
 
@@ -17,17 +17,17 @@ Borrowed:
 | Backbone Idea | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
 | Backend Kit | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Backend Repo | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
-| Change Record | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
-| Copy Change | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
+| Change Record | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
+| Copy Change | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Kit Copy | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
-| Kit Update | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
-| Kit Version | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
-| Look for Lessons | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
+| Kit Update | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
+| Kit Version | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
+| Look for Lessons | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Maintainer Repo | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Problem Domain | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
 | Problem Domain Idea | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
-| Repo Reading | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
-| Repo Register | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
+| Repo Reading | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
+| Repo Register | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 
 With nothing to judge, in the cases *not moved* and *no Copy Change*, go to Stage 6.
 
@@ -55,11 +55,11 @@ Take the depth from the reason, never from the edit. Split a line whose parts an
 
 ## Stage 4 — the verdicts
 
-Draft each verdict to its form (the layers document's §4.2.3, *The verdict*): the answer, its why, and one line on the proposal, "the proposal holds" or "the proposal does not hold, because …". Lines under one reason share one verdict, and each says how its own Kit Copy is affected. A verdict that cannot be reached yet is *held*, with its trigger. The human decides each.
+Draft each verdict to its form (Change, in keeping knowledge, §3.3, *The verdict*): the answer, its why, and one line on the proposal, "the proposal holds" or "the proposal does not hold, because …". Lines under one reason share one verdict, and each says how its own Kit Copy is affected. A verdict that cannot be reached yet is *held*, with its trigger. The human decides each.
 
 ## Stage 5 — act
 
-For each decided verdict, make what its depth asks (the layers document's §4.2.4, *What each verdict asks*), drafting for the human to decide:
+For each decided verdict, make what its depth asks (Change, in keeping knowledge, §3.4, *What each verdict asks*), drafting for the human to decide:
 
 - **depth b:** reword the lesson for every Backend Repo; the Backend Kit's Adapted Case gains it; commit it in the Maintainer Repo, the body saying why and quoting the lesson as reworded;
 - **misread:** perhaps the Backend Kit's wording, committed as for depth b;

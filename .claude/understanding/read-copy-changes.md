@@ -2,14 +2,14 @@
 
 <!--
 What it is: the Adapted Understanding Text of this repo's own Adapted Case for Read Copy Changes, at layer 4 (knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md §3.4, The layer of a repo's work). It says why its Instruction Text is as it is.
-What it stands on: knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md §4.2.2, Read Copy Changes, the part it is written from. It adapts that text, and never retells it.
+What it stands on: knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md §3.2, Read Copy Changes, the part it is written from. It adapts that text, and never retells it.
 What stands on it: .claude/skills/read-copy-changes/SKILL.md, its Instruction Text, an Agent Skill.
 Its place in the repo: .claude/understanding/ (ADR-0084). It never loads; it is read when its Instruction Text changes.
 Why it carries no Foundation Line: docs/conventions/conventions/ §1.3, The Foundation Line.
 Its first source, input and not rules: temp/common-ground/backend-repo-change-simulation.md §4, Read Copy Changes, each step's Chosen.
 -->
 
-This text says why the Maintainer Repo reads one Backend Repo's Copy Changes the way its Agent Skill does. What the part hands on, the stop and the Repo Reading, and why, is the layers document's (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.2, *Read Copy Changes*).
+This text says why the Maintainer Repo reads one Backend Repo's Copy Changes the way its Agent Skill does. What the part hands on, the stop and the Repo Reading, and why, is in Change, in keeping knowledge (`knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §3.2, *Read Copy Changes*).
 
 ## 1. Its Defined Terms
 
@@ -21,18 +21,18 @@ Borrowed:
 | Adapted Understanding Text | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
 | Agent Skill | `docs/conventions/agent-arrangement/` §3.1, *`.claude/skills/`* |
 | Backend Repo | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
-| Change Record | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
-| Copy Change | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
+| Change Record | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
+| Copy Change | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Failure Case | `temp/common-ground/common-ground-problem.md`, *Defined Terms* |
 | Instruction Text | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
 | Kit Copy | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
-| Kit Update | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
-| Kit Version | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
-| Look for Lessons | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
+| Kit Update | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
+| Kit Version | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
+| Look for Lessons | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Maintainer Repo | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
-| Repo Reading | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
-| Repo Register | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
-| Update Take | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
+| Repo Reading | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
+| Repo Register | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
+| Update Take | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 
 ## 2. Who starts it
 
@@ -62,7 +62,7 @@ The agent lists each Copy Change, judging none, and the human checks the list wh
 
 ## 5. Only reading
 
-The agent reads the Backend Repo and writes only in the Maintainer Repo. What the Maintainer Repo makes of a Copy Change reaches the Backend Repo only by a Kit Update, on the human's word (the layers document's §4.2.5, *Deliver the Kit Update*).
+The agent reads the Backend Repo and writes only in the Maintainer Repo. What the Maintainer Repo makes of a Copy Change reaches the Backend Repo only by a Kit Update, on the human's word (Change, in keeping knowledge, §3.5, *Deliver the Kit Update*).
 
 ## 6. Why an Agent Skill
 

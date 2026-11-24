@@ -2,14 +2,14 @@
 
 <!--
 What it is: the Adapted Understanding Text of this repo's own Adapted Case for Deliver the Kit Update, making and staging, at layer 4 (knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md §3.4, The layer of a repo's work). It says why its Instruction Text is as it is.
-What it stands on: knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md §4.2.5, Deliver the Kit Update, the part it is written from. It adapts that text, and never retells it.
+What it stands on: knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md §3.5, Deliver the Kit Update, the part it is written from. It adapts that text, and never retells it.
 What stands on it: .claude/skills/deliver-the-kit-update/SKILL.md, its Instruction Text, an Agent Skill.
 Its place in the repo: .claude/understanding/ (ADR-0084). It never loads; it is read when its Instruction Text changes.
 Why it carries no Foundation Line: docs/conventions/conventions/ §1.3, The Foundation Line.
 Its first source, input and not rules: temp/common-ground/backend-repo-change-simulation.md §7, Deliver the Kit Update, each step's Chosen.
 -->
 
-This text says why the Maintainer Repo makes and stages a Kit Update the way its Agent Skill does. When one is due, what it holds, and what crosses to the Backend Repo, and why, are the layers document's (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.5, *Deliver the Kit Update*).
+This text says why the Maintainer Repo makes and stages a Kit Update the way its Agent Skill does. When one is due, what it holds, and what crosses to the Backend Repo, and why, are in Change, in keeping knowledge (`knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §3.5, *Deliver the Kit Update*).
 
 ## 1. Its Defined Terms
 
@@ -22,15 +22,15 @@ Borrowed:
 | Agent Skill | `docs/conventions/agent-arrangement/` §3.1, *`.claude/skills/`* |
 | Backend Kit | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Backend Repo | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
-| Copy Change | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
+| Copy Change | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Instruction Text | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
-| Kit Update | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
-| Kit Version | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
-| Look for Lessons | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
+| Kit Update | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
+| Kit Version | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
+| Look for Lessons | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Maintainer Repo | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Plan Step | `docs/conventions/project-recording/` §2.1, *What a plan is* |
-| Update Note | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
-| Update Take | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
+| Update Note | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
+| Update Take | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 
 ## 2. Making and staging in one Adapted Case
 

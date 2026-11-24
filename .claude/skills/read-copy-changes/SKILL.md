@@ -5,7 +5,7 @@ description: Read one Backend Repo's Copy Changes since the Maintainer Repo last
 
 # Read Copy Changes
 
-The first part of a Look for Lessons. It ends in one of three cases, and hands Judge Copy Changes a Repo Reading, or nothing to judge (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.2, *Read Copy Changes*).
+The first part of a Look for Lessons. It ends in one of three cases, and hands Judge Copy Changes a Repo Reading, or nothing to judge (`knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §3.2, *Read Copy Changes*).
 
 Why each stage is so: `.claude/understanding/read-copy-changes.md`.
 
@@ -16,14 +16,14 @@ Borrowed:
 | Adapted Case | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
 | Backend Kit | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Backend Repo | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
-| Change Record | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
-| Copy Change | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
+| Change Record | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
+| Copy Change | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Kit Copy | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
-| Look for Lessons | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
+| Look for Lessons | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Maintainer Repo | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
-| Repo Reading | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
-| Repo Register | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
-| Update Take | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
+| Repo Reading | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
+| Repo Register | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
+| Update Take | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 
 ## Stage 1 — the two snapshots
 
@@ -48,7 +48,7 @@ If nothing differs, the case is *no Copy Change*: write no Repo Reading, and han
 
 ## Stage 4 — write the Repo Reading
 
-The case is *Copy Change read*. Write the Repo Reading to its form (the layers document's §4.2.2, *The Repo Reading*): one line per Copy Change, nothing judged; Copy Changes linked by one reason together, under it; its stop named. If a Repo Reading for this Backend Repo is still open, extend it.
+The case is *Copy Change read*. Write the Repo Reading to its form (Change, in keeping knowledge, §3.2, *The Repo Reading*): one line per Copy Change, nothing judged; Copy Changes linked by one reason together, under it; its stop named. If a Repo Reading for this Backend Repo is still open, extend it.
 
 Then stop. Ask the human to check that the list is whole. Judging starts only after.
 

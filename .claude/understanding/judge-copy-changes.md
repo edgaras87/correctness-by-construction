@@ -2,14 +2,14 @@
 
 <!--
 What it is: the Adapted Understanding Text of this repo's own Adapted Case for Judge Copy Changes and Act on the verdicts, at layer 4 (knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md §3.4, The layer of a repo's work). It says why its Instruction Text is as it is.
-What it stands on: knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md §4.2.3, Judge Copy Changes, and §4.2.4, Act on the verdicts, the parts it is written from. It adapts that text, and never retells it.
+What it stands on: knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md §3.3, Judge Copy Changes, and §3.4, Act on the verdicts, the parts it is written from. It adapts that text, and never retells it.
 What stands on it: .claude/skills/judge-copy-changes/SKILL.md, its Instruction Text, an Agent Skill.
 Its place in the repo: .claude/understanding/ (ADR-0084). It never loads; it is read when its Instruction Text changes.
 Why it carries no Foundation Line: docs/conventions/conventions/ §1.3, The Foundation Line.
 Its first source, input and not rules: temp/common-ground/backend-repo-change-simulation.md §5, Judge Copy Changes, and §6, Act on the verdicts, each step's Chosen.
 -->
 
-This text says why the Maintainer Repo judges a Repo Reading, and acts on its verdicts, the way its Agent Skill does. Who judges, what a verdict holds, what each depth asks, and why, are the layers document's (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.3, *Judge Copy Changes*; §4.2.4, *Act on the verdicts*).
+This text says why the Maintainer Repo judges a Repo Reading, and acts on its verdicts, the way its Agent Skill does. Who judges, what a verdict holds, what each depth asks, and why, are in Change, in keeping knowledge (`knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §3.3, *Judge Copy Changes*; §3.4, *Act on the verdicts*).
 
 ## 1. Its Defined Terms
 
@@ -22,17 +22,17 @@ Borrowed:
 | Agent Skill | `docs/conventions/agent-arrangement/` §3.1, *`.claude/skills/`* |
 | Backend Kit | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Backend Repo | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
-| Change Record | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
-| Copy Change | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
+| Change Record | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
+| Copy Change | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Failure Case | `temp/common-ground/common-ground-problem.md`, *Defined Terms* |
 | Instruction Text | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
 | Kit Copy | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
-| Look for Lessons | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
+| Look for Lessons | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Maintainer Repo | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Plan Step | `docs/conventions/project-recording/` §2.1, *What a plan is* |
 | Problem Domain | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
 | Problem Domain Idea | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
-| Repo Reading | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
+| Repo Reading | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 
 ## 2. Judge and Act in one Adapted Case
 
@@ -53,7 +53,7 @@ They run from the cheapest check to the dearest, and stop at the first that hold
 
 ## 5. From the reason, never the wording
 
-The depth comes from the reason, never the edit. A cap raised from 50 to 60 is the Backend Repo's own, depth a, when its reason is "our scope names are long". The same edit is a lesson for its Problem Domain Idea, depth c at layer 2, when its reason is "the cap counts the scope, which any repo with scopes meets". A Copy Change worded for one project may still be a lesson for every repo: the Backend Repo writes in its own words on purpose (the layers document's §4.2.1, *Change a Kit Copy*), and making a lesson general is rewording, after judging (§4.2.4).
+The depth comes from the reason, never the edit. A cap raised from 50 to 60 is the Backend Repo's own, depth a, when its reason is "our scope names are long". The same edit is a lesson for its Problem Domain Idea, depth c at layer 2, when its reason is "the cap counts the scope, which any repo with scopes meets". A Copy Change worded for one project may still be a lesson for every repo: the Backend Repo writes in its own words on purpose (Change, in keeping knowledge, §3.1, *Change a Kit Copy*), and making a lesson general is rewording, after judging (Change, in keeping knowledge, §3.4).
 
 ## 6. A line with no Change Record
 
@@ -70,4 +70,4 @@ Lines under one reason are judged together, and the reason once: judged apart, o
 
 - How question 4 is answered, and by whom. A first guess, not a rule: 4a first, and 4b only if 4a holds. 4a is the cheaper check, inside one Problem Domain, and a lesson still true naming no Problem Domain is true across its own. Its trigger: depth c checked against these rules (`TODO.md`, the item "Simulate depth c, then bring the Change idea to it"), or the first lesson judged at layer 1.
 - Whether an unsound verdict offers a fix. Its trigger: the first unsound verdict.
-- Whether a Look for Lessons is one of the Maintainer Repo's Plan Steps. It is a question of how the Maintainer Repo's agent shapes its work, and that idea is not yet written. Its trigger: How an agent works, in keeping knowledge, written (the layers document's §3.2.1).
+- Whether a Look for Lessons is one of the Maintainer Repo's Plan Steps. It is a question of how the Maintainer Repo's agent shapes its work, and that idea is not yet written. Its trigger: How an agent works, in keeping knowledge, written (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §3.2.1, *Keeping knowledge*).
