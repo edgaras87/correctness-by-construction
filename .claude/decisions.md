@@ -1318,3 +1318,16 @@
   Rejected: Act on the verdicts as an Adapted Case of its own; an
   Instruction Text for Judge alone, the others' left to the rewrite
   (ADR-0087).
+
+- 2026-11-24 An Agent Skill, `.claude/skills/deliver-the-kit-update/`,
+  with its understanding in
+  `.claude/understanding/deliver-the-kit-update.md`: this repo's own
+  Adapted Case for Deliver the Kit Update, written whole from the
+  simulation. Making and staging in one Agent Skill, two stages with
+  the human's word between. Its description names Backend Repos, so
+  "deliver to a CBC Run" still fires the exchange-deliver Agent
+  Skill. It carries no Foundation Line (ADR-0084, decision 9).
+  Why: ADR-0087; ADR-0084.
+  Rejected: two Adapted Cases, making and staging apart; understanding
+  only, the exchange-deliver Agent Skill doing the work until the
+  rewrite (ADR-0087).
