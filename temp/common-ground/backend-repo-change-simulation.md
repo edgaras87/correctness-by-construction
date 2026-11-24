@@ -235,7 +235,7 @@ Two steps:
   - c leaves the human to read every text the questions need, which the agent reads faster, and with nothing written down to check;
   - d judges on a guess at the why (Failure Case 22);
   - e asks the human for what the Backend Repo may already have written.
-- **Its rules:** the layers document's (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.3, *Judge Copy Changes*).
+- **Its rules:** the layers document's (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.3, *Judge Copy Changes*), and this repo's own Adapted Case for it (`.claude/understanding/judge-copy-changes.md`).
 - **Today:**
   - borrowed: the four questions, from the rules on deciding written in the problem file before this simulation. They leave how each is answered, and by whom, open; step 1 answers it for questions 1 to 3;
   - borrowed: a change may be declined as "not worth the change" (`docs/conventions/exchange/` §6.5, *Verdicts*). Question 0 asks it first, for every depth;
