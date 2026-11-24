@@ -45,8 +45,22 @@ Understanding and Agent Skill, from the simulation's §7; its `.claude/decisions
 **8. `docs: Deliver keeps what it hands on`**
 §4.2.5 cut, as commit 4. *Its Adapted Cases* becomes one.
 
-**8b. `docs: layers of knowledge, in CBC backend design`** (provisional)
-The Problem Domain Idea the Backend Repo's Adapted Cases are written from (the layers document's §3.2.2 and §3.3.1). Asked at its boundary, before it is drafted: what it holds that the Maintainer Repo's document does not, since both sides see the same handoffs.
+**8a. `docs: TODO makes Change an idea of its own`** (landed)
+
+**8a1. `docs: ADR-0088, Change an idea of its own`**
+Proposed. Change becomes a Backbone Idea, for any change to knowledge, wherever it starts; one Problem Domain Idea under it for each side. Rejected: the Backend Repo's parent named the layers of knowledge; Change kept inside the Maintainer Repo's layers document; a second adaptation of the layers of knowledge, which breaks the title rule.
+
+**8a2. `docs: Change, a Backbone Idea`**
+`knowledge/backbone-ideas/change.md`, thin. What a change is, and that it can start at any layer; that it lands as high as it is true, and each text built on what changed is checked, pointing at the layers document's §4 for its rules. The reviewer's guesses as open questions, each with its trigger: a change that starts at an idea, carried to all layers together; the other sources; whether the layers document's rules on change move here. Its row in the §3.1 table.
+
+**8a3. `docs: Change, in keeping knowledge, moved out`**
+`knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md`: the layers document's §4.2 and §4.3 moved, with the Change Defined Terms and the open questions on change. The layers document keeps the layers and the arrows, and points at it. Its row in the §3.2.1 table. Every pointer to a moved section followed by script, from `docs` paths: the rename grep, unwrapped.
+
+**8a4. `chore(agent): understanding follows Change's move`**
+The three Maintainer Repo Adapted Cases, their understanding and Agent Skills, point at Change, in keeping knowledge: headers, Fact References and Borrow Tables. The agent's side of 8a3's rename grep.
+
+**8b. `docs: Change, in CBC backend design`** (provisional)
+The draft written for "the layers of knowledge, in CBC backend design", renamed and adapted from the Backbone Idea Change. Its row in the §3.2.2 table; the planned row for the layers of knowledge in CBC backend design kept or dropped at its boundary.
 
 **8c. `docs: the Backend Kit's Defined Terms`** (provisional)
 ADR-0085's decision 4 is decided here: its first guess is one terms text in the Backend Kit. A Backend Repo reads its Kit Copies without layers 1 and 2.
@@ -55,24 +69,24 @@ ADR-0085's decision 4 is decided here: its first guess is one terms text in the 
 Understanding and Instruction Text, from the simulation's §3; and the gate list's part, *At the gate*. Asked here: the Backend Kit's folder layout, and each Instruction Text's form.
 
 **8e. `docs: Change a Kit Copy keeps what it hands on`** (provisional)
-§4.2.1 cut, as commit 4.
+Change, in keeping knowledge, its Change a Kit Copy section cut to the Maintainer Repo's view, as commit 4.
 
 **8f. `docs: the Backend Kit's Take the Kit Update case`** (provisional)
 Understanding and Instruction Text, from the simulation's §8.
 
 **8g. `docs: Take the Kit Update keeps what it hands on`** (provisional)
-§4.2.6 cut, as commit 4.
+Change, in keeping knowledge, its Take the Kit Update section cut to the Maintainer Repo's view, as commit 4.
 
-**8h. `docs: §4.2's tables take their whys`** (provisional)
-How each case and depth was weighed, from the simulation's §2, into §4.2.7. No pointer from the layers to the simulation stays.
+**8h. `docs: the cases take their whys`** (provisional)
+How each case and depth was weighed, from the simulation's §2, into Change, in keeping knowledge, its cases section. No pointer from the layers to the simulation stays.
 
 **8i. The picture** (provisional, likely several commits)
-One picture of the whole travel at layer 2, by the visual-comparison Agent Skill, its candidates committed before the choice. It settles whether the simulation's picture *The whole flow* moves or goes.
+One picture of the whole travel, in Change, in keeping knowledge, by the visual-comparison Agent Skill, its candidates committed before the choice. It settles whether the simulation's picture *The whole flow* moves or goes.
 
 **9. `docs: TODO follows the Change split`** (provisional)
 The split item closes. The item on CBC Runs 4, 5 and 6 judges by the Agent Skill. Any open point the cuts answer, or move, followed.
 
-**10. `docs: ADR-0087 accepted`**
+**10. `docs: ADR-0087 and ADR-0088 accepted`**
 
 **11. `docs(agent): close plan for the Change split`**
 After the sweep and the look back. The body names what diverged.
@@ -98,3 +112,5 @@ After the sweep and the look back. The body names what diverged.
   - §4.2.4 keeps *What each verdict asks*, *Rewording* and *Then the stop moves*. The survey is a call shown at commit 6; my first guess is that it stays.
   - §4.2.5 keeps *When one is due*, *What a Kit Update is*, its Update Note, and *One at a time*.
   - §4.2.1 and §4.2.6 are sorted at 8e and 8g.
+- **What moves with Change, a first sort,** decided at 8a3: the Defined Terms of a change's travel, Copy Change, Change Record, Kit Update, Update Note, Update Take, Kit Version, Look for Lessons, Repo Reading, Repo Register, Attention Note and their short forms; §4.2 and §4.3; §5's questions 2, 3, 4, 10 and 11. Staying in the layers document: Backend Kit, Kit Copy, Backend Repo, Maintainer Repo; §3; the arrows of §4.1; the picture.
+- **Section numbers change with the move.** The plan names the moved sections by title from 8a3 on.
