@@ -11,7 +11,7 @@ Its first sources, input and not rules:
 - the simulation's six parts and depths, temp/common-ground/backend-repo-change-simulation.md;
 - temp/model-example/idea-model-problem.md §1 and temp/model-example/layers.md;
 - docs/models/tiers.md.
-How it is edited: the picture and the text are checked against each other at every change, as the general document's header says. Until the picture is redrawn, its arrows are explained in Change, in keeping knowledge, knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md §2 (ADR-0088, decision 8).
+How it is edited: the picture and the text are checked against each other at every change, as the general document's header says. It draws what is where; how knowledge travels between the repos is Change, in keeping knowledge's (ADR-0088, decision 8).
 -->
 
 This document is the layers of knowledge in the Maintainer Repo's Problem Domain: where each layer is kept. How knowledge travels between the Maintainer Repo and the Backend Repos is Change, in keeping knowledge (`knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md`). The layers themselves are the general document's (`knowledge/backbone-ideas/layers-of-knowledge.md`), and how knowledge moves between them is Change's (`knowledge/backbone-ideas/change.md`). The picture comes first; the text explains each of its labels.
@@ -56,31 +56,26 @@ Borrowed:
  Layer 1  ┆  │ Backbone Ideas, bound to no Problem Domain:                             │  ┆
           ┆  │ understanding                                                           │  ┆
           ┆  └─────────────────────────────────────────────────────────────────────────┘  ┆
-          ┆     │      ▲       ▲                                    ▲        ▲      │     ┆
-          ┆   adapt lesson set apart                            set apart lesson  adapt   ┆
-          ┆     ▼      │       │                                    │        │      ▼     ┆
+          ┆                                                                               ┆
           ┆  ┌───────────────────────────────────────────────┐  ┌──────────────────────┐  ┆
           ┆  │ CBC backend design,                           │  │ keeping knowledge,   │  ┆
  Layer 2  ┆  │ the Backend Repos'                            │  │ the Maintainer Repo's│  ┆
           ┆  │                                               │  │                      │  ┆
           ┆  │ understanding                                 │  │ understanding        │  ┆
           ┆  └───────────────────────────────────────────────┘  └──────────────────────┘  ┆
-          ┆     │      ▲       ▲          │      ▲       ▲          │      ▲       ▲      ┆
-          ┆   adapt lesson set apart    adapt lesson set apart    adapt lesson set apart  ┆
-          ┆ ┌╌╌╌▼╌╌╌╌╌╌│╌╌╌╌╌╌╌│╌╌╌╌╌╌╌╌╌╌▼╌╌╌╌╌╌│╌╌╌╌╌╌╌│╌╌╌╌╌┐    │      │       │      ┆
-          ┆ ╎┌──────────────────────┐  ┌──────────────────────┐╎    │      │       │      ┆
-          ┆ ╎│ the Backend Repos'   │  │ the Backend Repos'   │╎    │      │       │      ┆
-          ┆ ╎│ Adapted Cases for    │  │ Adapted Cases for    │╎    │      │       │      ┆
- Layer 3  ┆ ╎│ designing a backend  │  │ keeping knowledge    │╎    │      │       │      ┆
-          ┆ ╎│ understanding and    │  │ understanding and    │╎    │      │       │      ┆
-          ┆ ╎│ instructions         │  │ instructions         │╎    │      │       │      ┆
-          ┆ ╎└──────────────────────┘  └──────────────────────┘╎    │      │       │      ┆
-          ┆ ╎ the Backend Kit                                  ╎    │      │       │      ┆
-          ┆ └╌╌╌╌╌╌╌╌╌╌╌╌│╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌▲╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌┘    │      │       │      ┆
-          └┄┄┄┄┄┄┄┄┄┄┄┄┄┄│┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄│┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┐   │      │       │      ┆
-                      birth,            Copy Change,            ┆   │      │       │      ┆
-                    Kit Update           read back              ┆   │      │       │      ┆
-                         ▼                   │                  ┆   ▼      │       │      ┆
+          ┆                                                                               ┆
+          ┆ ┌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌┐                          ┆
+          ┆ ╎┌──────────────────────┐  ┌──────────────────────┐╎                          ┆
+          ┆ ╎│ the Backend Repos'   │  │ the Backend Repos'   │╎                          ┆
+          ┆ ╎│ Adapted Cases for    │  │ Adapted Cases for    │╎                          ┆
+ Layer 3  ┆ ╎│ designing a backend  │  │ keeping knowledge    │╎                          ┆
+          ┆ ╎│ understanding and    │  │ understanding and    │╎                          ┆
+          ┆ ╎│ instructions         │  │ instructions         │╎                          ┆
+          ┆ ╎└──────────────────────┘  └──────────────────────┘╎                          ┆
+          ┆ ╎ the Backend Kit                                  ╎                          ┆
+          ┆ └╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌┘                          ┆
+          └┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┐                         ┆
+                                                                ┆                         ┆
               ┌─────────────────────────────────────┐           ┆ ┌────────────────────┐  ┆
  Layer 4      │ each Backend Repo's work,           │           ┆ │ its own work, by   │  ┆
               │ by its Kit Copies                   │           ┆ │ its own Adapted    │  ┆
@@ -91,7 +86,7 @@ Borrowed:
                                                                 └┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┘
 ```
 
-Key: the arrows are explained in Change, in keeping knowledge (`knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §2, *The arrows*). The dotted frame holds what the Maintainer Repo keeps. The dashed frame holds what the Backend Kit copies to each Backend Repo. On the right, the Maintainer Repo's own Adapted Cases sit in layer 4 with its work, in `.claude/`: they are written for this repo alone, and no Adapted Case of layer 3 holds them (§3.4).
+Key: the dotted frame holds what the Maintainer Repo keeps. The dashed frame holds what the Backend Kit copies to each Backend Repo. On the right, the Maintainer Repo's own Adapted Cases sit in layer 4 with its work, in `.claude/`: they are written for this repo alone, and no Adapted Case of layer 3 holds them (§3.4). How knowledge travels between the repos is Change, in keeping knowledge's (`knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §2, *The arrows*).
 
 ## 3. The layers
 

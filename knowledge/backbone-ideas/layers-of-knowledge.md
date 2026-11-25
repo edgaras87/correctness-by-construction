@@ -5,7 +5,7 @@ What it is: a Backbone Idea (§3.1), and its one home.
 What stands on it: knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md, its Problem Domain Idea of keeping knowledge. knowledge/backbone-ideas/change.md, a Backbone Idea standing on it. Each Problem Domain Idea points here, and never retells it.
 Its place in the repo: knowledge/backbone-ideas/ (ADR-0084).
 How it is edited:
-- The picture and the text are checked against each other at every change: each label in the picture is explained in the text, each part the text names is in the picture, and what the text says moves where matches the arrows. Until the picture is redrawn, its arrows but *worked by* are explained in Change, knowledge/backbone-ideas/change.md §4 (ADR-0088, decision 8).
+- The picture and the text are checked against each other at every change: each label in the picture is explained in the text, each part the text names is in the picture. It draws what is where, and the one arrow that is part of it, *worked by*; how knowledge moves is Change's, knowledge/backbone-ideas/change.md (ADR-0088, decision 8).
 - It gives no example from one Problem Domain's work. §1 names one kind of project only to show what a Problem Domain is.
 - A trial, here only: a section's rules close it, in a last paragraph marked Rules, and govern that section. A rule may be split across a section and its subsections.
 -->
@@ -33,11 +33,8 @@ This document says what the layers of knowledge are, in any Problem Domain, and 
           │   │ Idea 1   │            │ Idea 2   │            │ Idea 3   │                    │
           │   └──────────┘            └──────────┘            └──────────┘                    │
           └───────────────────────────────────────────────────────────────────────────────────┘
-                │      ▲       ▲                │      ▲       ▲
-                │      │       │                │      │       │
-              adapt lesson set apart          adapt lesson set apart
-          ┌╌╌╌╌╌│╌╌╌╌╌╌│╌╌╌╌╌╌╌│╌╌╌╌╌╌╌┐  ┌╌╌╌╌╌│╌╌╌╌╌╌│╌╌╌╌╌╌╌│╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌┐
-          ╎     ▼      │       │       ╎  ╎     ▼      │       │                              ╎
+
+          ┌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌┐  ┌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌┐
           ╎ ┌────────────────────────┐ ╎  ╎ ┌───────────────────────────────────────────────┐ ╎
           ╎ │ Problem Domain Ideas:  │ ╎  ╎ │ Problem Domain Ideas: understanding           │ ╎
           ╎ │ understanding          │ ╎  ╎ │                                               │ ╎
@@ -48,17 +45,15 @@ This document says what the layers of knowledge are, in any Problem Domain, and 
           ╎ │ │ from Idea 2   │      │ ╎  ╎ │                                               │ ╎
           ╎ │ └───────────────┘      │ ╎  ╎ │                                               │ ╎
           ╎ └────────────────────────┘ ╎  ╎ └───────────────────────────────────────────────┘ ╎
-          ╎     │      ▲       ▲       ╎  ╎     │      ▲       ▲        │      ▲       ▲      ╎
-          ╎   adapt lesson set apart   ╎  ╎   adapt lesson set apart  adapt lesson set apart  ╎
-          ╎     ▼      │       │       ╎  ╎     ▼      │       │        │      │       │      ╎
-          ╎ ┌────────────────────────┐ ╎  ╎ ┌──────────────────────┐    │      │       │      ╎
-          ╎ │ Adapted Cases:         │ ╎  ╎ │ Adapted Cases:       │    │      │       │      ╎
- Layer 3  ╎ │ understanding and      │ ╎  ╎ │ understanding and    │    │      │       │      ╎
-          ╎ │ instructions           │ ╎  ╎ │ instructions         │    │      │       │      ╎
-          ╎ └────────────────────────┘ ╎  ╎ └──────────────────────┘    │      │       │      ╎
-          ╎     │        ▲       ▲     ╎  ╎     │        ▲       ▲      │      │       │      ╎
-          ╎ worked by   fit  set apart ╎  ╎ worked by   fit  set apart  │      │       │      ╎
-          ╎     ▼        │       │     ╎  ╎     ▼        │       │      ▼      │       │      ╎
+          ╎                            ╎  ╎                                                   ╎
+          ╎ ┌────────────────────────┐ ╎  ╎ ┌───────────────────────────────────────────────┐ ╎
+          ╎ │ Adapted Cases:         │ ╎  ╎ │ Adapted Cases:                                │ ╎
+ Layer 3  ╎ │ understanding and      │ ╎  ╎ │ understanding and                             │ ╎
+          ╎ │ instructions           │ ╎  ╎ │ instructions                                  │ ╎
+          ╎ └────────────────────────┘ ╎  ╎ └───────────────────────────────────────────────┘ ╎
+          ╎     │                      ╎  ╎     │                                             ╎
+          ╎ worked by                  ╎  ╎ worked by                                         ╎
+          ╎     ▼                      ╎  ╎     ▼                                             ╎
           ╎ ┌────────────────────────┐ ╎  ╎ ┌───────────────────────────────────────────────┐ ╎
           ╎ │ a project: its work,   │ ╎  ╎ │ a project: its work, by understanding and     │ ╎
           ╎ │ by copies of its       │ ╎  ╎ │ instructions:                                 │ ╎
@@ -72,7 +67,7 @@ This document says what the layers of knowledge are, in any Problem Domain, and 
           └╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌┘  └╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌┘
 ```
 
-Key: the arrows but *worked by* are Change's, and explained there (`knowledge/backbone-ideas/change.md` §4, *The arrows*). Each dashed frame holds one Problem Domain: its Problem Domain Ideas, its set of Adapted Cases, and a project of it. Each Problem Domain Idea names the Backbone Idea it is adapted from (§3.2). The arrows on the right serve a project's own Adapted Case, written where none of its Problem Domain's covers a piece of its work (§3.4). Problem Domain A's project has none.
+Key: each dashed frame holds one Problem Domain: its Problem Domain Ideas, its set of Adapted Cases, and a project of it. Each Problem Domain Idea names the Backbone Idea it is adapted from (§3.2). The arrow *worked by* is how a project works by its Problem Domain's Adapted Cases (§3.4). Problem Domain B's project also has its own Adapted Cases, written where none of its Problem Domain's covers a piece of its work (§3.4); Problem Domain A's has none. How knowledge moves between the layers is Change's (`knowledge/backbone-ideas/change.md` §4, *The arrows*).
 
 ## 3. The layers
 
@@ -125,7 +120,7 @@ Layer 4 is one project: the work it does, and the texts it works by. Those texts
 
 ## 4. How knowledge moves
 
-How knowledge enters the layers and moves between them, and the picture's arrows but *worked by*, are Change's (`knowledge/backbone-ideas/change.md`).
+How knowledge enters the layers and moves between them is Change's (`knowledge/backbone-ideas/change.md`).
 
 ## 5. Open questions
 

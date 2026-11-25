@@ -3,7 +3,7 @@
 <!--
 What it is: a Problem Domain Idea of the Maintainer Repo's own Problem Domain, keeping knowledge, and its one home (knowledge/backbone-ideas/layers-of-knowledge.md §3.2, The Problem Domain layer). Still a draft and a trial: practice changes it.
 What it stands on: knowledge/backbone-ideas/change.md, the Backbone Idea it is adapted from. It adapts that document, and never retells it. Where each layer is kept is knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md's, the layers document here.
-What stands on it: this repo's own Adapted Cases for a change, by their Adapted Understanding Texts: .claude/understanding/read-copy-changes.md, from §3.2; .claude/understanding/judge-copy-changes.md, from §3.3 and §3.4; .claude/understanding/deliver-the-kit-update.md, from §3.5. knowledge/problem-domain-ideas/cbc-backend-design/change-in-cbc-backend-design.md, Change, in CBC backend design, borrows the Defined Terms of a change's travel. Until it is redrawn, the layers document's picture, whose arrows are explained here (ADR-0088, decision 8).
+What stands on it: this repo's own Adapted Cases for a change, by their Adapted Understanding Texts: .claude/understanding/read-copy-changes.md, from §3.2; .claude/understanding/judge-copy-changes.md, from §3.3 and §3.4; .claude/understanding/deliver-the-kit-update.md, from §3.5. knowledge/problem-domain-ideas/cbc-backend-design/change-in-cbc-backend-design.md, Change, in CBC backend design, borrows the Defined Terms of a change's travel.
 Its place in the repo: knowledge/problem-domain-ideas/keeping-knowledge/ (ADR-0084).
 Where it started: the layers document's §4, How knowledge moves, moved here whole, with the Defined Terms of a change's travel and the open questions on change (ADR-0088).
 Its first sources, input and not rules:
@@ -56,9 +56,9 @@ Borrowed:
 
 ## 3. How a change travels
 
-A Copy Change travels through six parts, each done by one repo. Each part sits at a layer, or on an arrow:
+A Copy Change travels through six parts, each done by one repo. Each part sits at a layer, or on an arrow of §2:
 
-| Part | Who | Where in the picture |
+| Part | Who | Where |
 |---|---|---|
 | Change a Kit Copy | Backend Repo | layer 4, in a Kit Copy |
 | Read Copy Changes | Maintainer Repo | the arrow *Copy Change, read back* |

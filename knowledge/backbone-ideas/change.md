@@ -3,7 +3,7 @@
 <!--
 What it is: a Backbone Idea (knowledge/backbone-ideas/layers-of-knowledge.md §3.1, The Backbone Idea layer), and its one home. Still a draft and a trial: practice changes it.
 What it stands on: knowledge/backbone-ideas/layers-of-knowledge.md, the layers and what each holds. It points there, and never retells it.
-What stands on it: knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md, its Problem Domain Idea of keeping knowledge, and knowledge/problem-domain-ideas/cbc-backend-design/change-in-cbc-backend-design.md, its Problem Domain Idea of CBC backend design. Each Problem Domain Idea points here, and never retells it. And, until it is redrawn, the layers of knowledge's picture, whose arrows but worked by are explained here (ADR-0088, decision 8).
+What stands on it: knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md, its Problem Domain Idea of keeping knowledge, and knowledge/problem-domain-ideas/cbc-backend-design/change-in-cbc-backend-design.md, its Problem Domain Idea of CBC backend design. Each Problem Domain Idea points here, and never retells it.
 Its place in the repo: knowledge/backbone-ideas/ (ADR-0084).
 Why it is an idea of its own: ADR-0088. Its §2 to §4 were the layers of knowledge's §4, How knowledge moves, moved here whole but the arrow worked by, and the arrow change renamed fit.
 How it is edited:
@@ -29,7 +29,7 @@ Borrowed:
 
 A change is knowledge entering the layers, or moving in them: a text found not to fit, or knowledge no text holds yet. It can start in work, or at an idea, at layer 1 or 2.
 
-Knowledge moves along the arrows of the layers of knowledge's picture. Going down, an idea is adapted and taken to where it is used. Going up, what the work taught is judged, and lands in the layer it holds for.
+Knowledge moves along the arrows of §4. Going down, an idea is adapted and taken to where it is used. Going up, what the work taught is judged, and lands in the layer it holds for.
 
 ## 3. How the layers fill
 
