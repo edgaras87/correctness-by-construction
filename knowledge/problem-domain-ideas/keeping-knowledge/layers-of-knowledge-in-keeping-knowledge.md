@@ -33,9 +33,9 @@ Borrowed:
 | Agent Rule | `docs/conventions/agent-arrangement/` §3.2, *`.claude/rules/`* |
 | Agent Skill | `docs/conventions/agent-arrangement/` §3.1, *`.claude/skills/`* |
 | Backbone Idea | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
-| Backend Kit Copy Change Record | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Backend Kit Update | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Borrow Table | `knowledge/problem-domain-ideas/keeping-knowledge/defined-terms-in-keeping-knowledge.md` §1, *Its Defined Terms* |
+| Change Record | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Copy Change | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Defined Term | `knowledge/backbone-ideas/defined-terms.md` §1, *Its Defined Terms* |
 | Instruction Text | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
@@ -99,7 +99,7 @@ Knowledge sits in four layers (`knowledge/backbone-ideas/layers-of-knowledge.md`
 
 Each repo is a project of a Problem Domain (`knowledge/backbone-ideas/layers-of-knowledge.md` §3, *The layers*): a Backend Repo's is CBC backend design, and the Maintainer Repo's is keeping knowledge.
 
-The Backend Kit is layer 3's set for the Backend Repos' Problem Domain, the picture's dashed frame, and what is copied to each Backend Repo. Each of its parts is an Adapted Case: an Adapted Understanding Text with its Instruction Text (§3.3). A part that has only one of the two is open (§5, question 3). So far it holds:
+The Backend Kit is layer 3's set for the Backend Repos' Problem Domain, the picture's dashed frame, and what is copied to each Backend Repo. Each of its parts is an Adapted Case: an Adapted Understanding Text with its Instruction Text (§3.3). A part with an Instruction Text and no Adapted Understanding Text, such as the Backend Kit's Defined Terms, carries its Change Record in its own footer (`knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §3.1, *Change a Kit Copy*). A part with only an Understanding Text is open (§5, question 3). So far it holds:
 
 1. the Backend Repos' Adapted Cases for keeping knowledge, such as taking a Kit Update (§3.3.1);
 2. their Adapted Cases for designing a backend: agent work, and CBC system design (§3.3.2);
@@ -189,7 +189,7 @@ Each layer has one folder, so a text's path says its layer:
 
 - layer 1: `knowledge/backbone-ideas/`;
 - layer 2: `knowledge/problem-domain-ideas/<Problem Domain>/`, such as `keeping-knowledge/`;
-- layer 3: `knowledge/adapted-cases/<Problem Domain>/`, one set for each Problem Domain, not made until the first Adapted Case for the Backend Repos is written;
+- layer 3: `knowledge/adapted-cases/<Problem Domain>/`, one set for each Problem Domain. In it, a folder for each group, such as `keeping-knowledge/`, and in that a folder for each Adapted Case, named after it, its texts together, each named by its kind, such as `understanding.md` and `rule.md`. The Defined Terms sit in `defined-terms/`, beside the groups. Each Instruction Text is written as it loads in a Backend Repo;
 - layer 4, this repo's own Adapted Cases: whole in `.claude/`. The Instruction Text sits where its kind loads, such as `.claude/rules/`. The Adapted Understanding Text sits in `.claude/understanding/`, which never loads.
 
 A Backend Repo's layer 4 is kept in the Backend Repo.
@@ -211,8 +211,7 @@ None is answered by the text above. Each is answered when work reaches it: its a
 
 1. **A kit for new Maintainer Repos:** should there be a kit a new Maintainer Repo is born from, as a Backend Repo is born from the Backend Kit? There is one Maintainer Repo so far. The Tiers Model has a rule for a second Maintainer Repo (`docs/models/tiers.md` §2.1, *The empty top tier*), and `cbc-concept`, once close to a second Maintainer Repo, ended as a rebuild and is kept only as a source (ADR-0082). §3.4 says what such a kit would be made from.
 2. **What then points at it:** the simulation's opening and the problem file's §2.1. Then `temp/`'s old files, one by one, and how today's ways are written across the drafts.
-3. **What the Backend Kit holds:** only its Problem Domain's Adapted Cases, or the Backend Repos' Problem Domain Ideas too. CBC system design adapted for backends (§3, the Backend Kit's item 2) may already be layer 2. Three cases the rule that each part is an Adapted Case (§3) does not yet cover:
-   - an Instruction Text with no Adapted Understanding Text. A first guess: its Backend Kit Copy Change Record goes in a footer of the Instruction Text itself, as a record file carries its instructions in its header comment;
+3. **What the Backend Kit holds:** only its Problem Domain's Adapted Cases, or the Backend Repos' Problem Domain Ideas too. CBC system design adapted for backends (§3, the Backend Kit's item 2) may already be layer 2. Two cases the rule that each part is an Adapted Case (§3) does not yet cover:
    - an Understanding Text with no Instruction Text, such as the description of CBC system design for a Backend Repo's readers (§3, the Backend Kit's item 5);
    - Knowledge on Trial in the Backend Kit: today's, for ways of working, is one text of both kinds, not yet split, and today's Kit Updates carry it.
 4. **Which other ideas are Backbone Ideas:** of today's project-agnostic ideas, beyond how an agent works and CBC design (§3.1).

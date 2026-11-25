@@ -3,7 +3,7 @@
 <!--
 What it is: a Problem Domain Idea of the Backend Repos' Problem Domain, CBC backend design, and its one home (knowledge/backbone-ideas/layers-of-knowledge.md §3.2, The Problem Domain layer). Still a draft and a trial: practice changes it.
 What it stands on: knowledge/backbone-ideas/change.md, the Backbone Idea it is adapted from. It adapts that document, and never retells it. Where each layer is kept, and what the Backend Kit holds, are knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md's.
-What stands on it: the Backend Kit's Adapted Cases for keeping knowledge, planned under knowledge/adapted-cases/cbc-backend-design/.
+What stands on it: the Backend Kit's Adapted Cases for keeping knowledge, under knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/: knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/change-a-kit-copy/understanding.md, from §2.
 Its place in the repo: knowledge/problem-domain-ideas/cbc-backend-design/ (ADR-0084). It is kept in the Maintainer Repo, and never copied to a Backend Repo.
 Where it started: the Backend Repo's parts of how a change travels, knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md §3.1, Change a Kit Copy, and §3.6, Take the Kit Update (ADR-0087). Drafted as the layers of knowledge, in CBC backend design, it held only change, and was renamed (ADR-0088).
 Its first source, input and not rules: temp/common-ground/backend-repo-change-simulation.md §3 and §8, each step's Chosen.
@@ -44,7 +44,7 @@ Borrowed:
 - **The misfit noted, and the Kit Copy changed at the gate.** It gains nothing by waiting, since a Change Record lets any Copy Change be edited or reversed later. Until the gate, the Kit Copy would say what the Backend Repo no longer does.
 - **The Kit Copy left as it is, what the Backend Repo does instead written in its own records.** The Kit Copy then says it for good, and the next agent reads the Kit Copy, not the records.
 
-**Where the Change Record sits.** In a footer of the Kit Copy's Adapted Understanding Text, which is not loaded for work. So the Copy Change and its why land in one diff, and the why cannot lose its Kit Copy. When only an Instruction Text changes, its Change Record goes there too.
+**Where the Change Record sits.** In a footer of the Kit Copy's Adapted Understanding Text, which is not loaded for work. So the Copy Change and its why land in one diff, and the why cannot lose its Kit Copy. When only an Instruction Text changes, its Change Record goes there too. An Instruction Text with no Adapted Understanding Text, such as the Backend Kit's Defined Terms, carries its Change Record in its own footer.
 
 **What the Change Record holds:**
 - what changed, by meaning: the part, and what it says now. When some of the Adapted Case's texts were left as they were, it also says whether they still match the Copy Change (`temp/common-ground/common-ground-problem.md` §4, Failure Case 8);
@@ -77,8 +77,8 @@ Borrowed:
 ## 4. Its Adapted Cases
 
 The Backend Kit's, in its group for keeping knowledge, each written from this document:
-- for changing a Kit Copy. It loads when a Kit Copy is touched;
-- the gate's part of closing one of the Backend Repo's Plan Steps, *At the gate*;
+- for changing a Kit Copy, `knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/change-a-kit-copy/`. It loads when a Kit Copy is touched;
+- the gate's part of closing one of the Backend Repo's Plan Steps, *At the gate*, written with how a Backend Repo closes a Plan Step (`TODO.md`, the item that rewrites the Agent Model);
 - for taking a Kit Update, itself in the Kit Update and taken first.
 
 ## 5. Open questions

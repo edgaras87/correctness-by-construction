@@ -93,7 +93,7 @@ The Backend Repo changes a Kit Copy during its own work, and the gate of its Pla
 
 **When a Kit Copy changes.** A Kit Copy changes only when the Backend Repo's work shows it does not fit what happened, never ahead. The human decides the Copy Change, the agent proposing. It is made then, with its Change Record. A Copy Change may be edited or reversed later, its Change Record with it.
 
-**Where the Change Record sits.** In a footer of the Kit Copy's Adapted Understanding Text, which is not loaded for work. So the Copy Change and its why land in one diff, and the why cannot lose its Kit Copy. When only an Instruction Text changes, its Change Record goes there too.
+**Where the Change Record sits.** In a footer of the Kit Copy's Adapted Understanding Text, which is not loaded for work. So the Copy Change and its why land in one diff, and the why cannot lose its Kit Copy. When only an Instruction Text changes, its Change Record goes there too. An Instruction Text with no Adapted Understanding Text, such as the Backend Kit's Defined Terms, carries its Change Record in its own footer.
 
 **What the Change Record holds:**
 - what changed, by meaning: the part, and what it says now. When some of the Adapted Case's texts were left as they were, it also says whether they still match the Copy Change (`temp/common-ground/common-ground-problem.md` §4, Failure Case 8);
@@ -112,7 +112,6 @@ The Backend Repo changes a Kit Copy during its own work, and the gate of its Pla
 - the Backend Repo's gate list, for closing one of its Plan Steps. It loads when the step closes, and says *At the gate*.
 
 **Open:**
-- where the Change Record goes when the Kit Copy has no Adapted Understanding Text: the layers document's §5, question 3, with its first guess;
 - whether a reversed Copy Change leaves a trace for the Maintainer Repo. One tried and undone may be evidence that the Kit Copy was right. Its trigger: the first Copy Change reversed at a gate.
 
 ### 3.2 Read Copy Changes

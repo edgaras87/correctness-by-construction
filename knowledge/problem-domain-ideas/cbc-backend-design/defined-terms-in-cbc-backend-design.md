@@ -3,7 +3,7 @@
 <!--
 What it is: a Problem Domain Idea of CBC backend design, the Backend Repos' Problem Domain, and its one home (knowledge/backbone-ideas/layers-of-knowledge.md §3.2, The Problem Domain layer). Still a draft and a trial: practice changes it.
 What it stands on: knowledge/backbone-ideas/defined-terms.md, the Backbone Idea it is adapted from. It adapts that document, and never retells it.
-What stands on it: the Backend Kit's terms text, planned with the first Adapted Case for the Backend Repos.
+What stands on it: the Backend Kit's terms text, knowledge/adapted-cases/cbc-backend-design/defined-terms/defined-terms.md.
 Its place in the repo: knowledge/problem-domain-ideas/cbc-backend-design/ (ADR-0084). It is kept in the Maintainer Repo, and never copied to a Backend Repo.
 Why it is written: ADR-0088, decision 9.
 How it is edited: a trial, as in the layers of knowledge: a section's rules close it, in a last paragraph marked Rules, and govern that section.
