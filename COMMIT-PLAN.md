@@ -11,7 +11,7 @@ Change is an idea of its own, at layers 1 and 2 (ADR-0088). The layers documents
 Each of the six parts of how a change travels has its Adapted Case, written whole from the simulation: its Adapted Understanding Text and its Instruction Text. Today's repo is not read for them; the rewrite compares it with them later.
 
 - **The Maintainer Repo's parts, at layer 4,** kept whole in `.claude/`: Read Copy Changes; Judge Copy Changes with Act on the verdicts; Deliver the Kit Update. Each has its understanding in `.claude/understanding/` and an Agent Skill in `.claude/skills/`, standing on Change, in keeping knowledge.
-- **The Backend Repo's parts, at layer 3,** in the Backend Kit's group for keeping knowledge, under `knowledge/adapted-cases/cbc-backend-design/`: Change a Kit Copy, with the gate's part, and Take the Kit Update. Nothing in them names backends.
+- **The Backend Repo's parts, at layer 3,** in the Backend Kit's group for keeping knowledge, under `knowledge/adapted-cases/cbc-backend-design/`: Change a Kit Copy, and Take the Kit Update. The gate's part, *At the gate*, waits for how a Backend Repo closes a Plan Step (`TODO.md`, the item that rewrites the Agent Model). Nothing in them names backends.
 
 Each picture shows one thing: the layers pictures what is where, the Change pictures how knowledge moves. The simulation keeps its steps, which depth c walks, and its *Today* lines, which the rewrite reads.
 
@@ -73,14 +73,20 @@ The three Maintainer Repo Adapted Cases, their understanding and Agent Skills, p
 **8b. `docs: Change, in CBC backend design`** (landed)
 The draft written for "the layers of knowledge, in CBC backend design", untracked at `knowledge/problem-domain-ideas/cbc-backend-design/layers-of-knowledge-in-cbc-backend-design.md`, renamed and adapted from the Backbone Idea Change. Asked first: where its §2, "What a Backend Repo keeps", goes, since it is what is where, not change: to the planned Layers of knowledge, in CBC backend design, with its trigger, or dropped with that row. Its 7 Borrow Table rows for the Defined Terms of a change's travel point at their old home, and are re-pointed to Change, in keeping knowledge. Its row in the §3.2.2 table. Answered: §2 cut, each of its four facts already held by the layers document or Change, in keeping knowledge; the planned row dropped, with no trigger kept.
 
-**8b1. `docs: a shared Defined Term has one home`** (provisional, inserted)
+**8b1. `docs: a shared Defined Term has one home`** (landed, inserted)
 Decided on 2026-11-25, by the reviewer: no Defined Term is defined twice. One several Problem Domains share is defined in one of their Problem Domain Ideas, and the others borrow it. The 11 Defined Terms Change, in CBC backend design uses from keeping knowledge stay defined there, and it keeps borrowing them. Defined Terms §4, its second rule, says the opposite, "defined in each one's own adaptation", and changes. The general layers document's §3.2, "Text shared by several Problem Domains, but not by all, is written into each one's own adaptation", is checked for the same, and excepts a Defined Term if it must. The Paths Rule already forbids a second definition, so no agent follower.
 
-**8c. `docs: Defined Terms, in CBC backend design`** (provisional)
-ADR-0085's decision 4, decided on 2026-11-25: one terms text in the Backend Kit, its first guess. Where the decision is recorded is asked here. The layer-2 parent of that terms text, its row in the §3.2.2 table: where a Backend Repo finds a Defined Term, the terms text, never the Maintainer Repo; each entry adapted from its one home, and checked when that home changes, by Change's rule; the mark; finding one. Open, with its trigger: a Defined Term a Backend Repo coins, the first one. A Borrow Table, short forms and the collision check are written only when the terms text shows a need. The terms text itself starts at 8d.
+**8b2. `docs: ADR-0088 revised, one home a term`** (landed, inserted)
+ADR-0088's decisions 9 and 10: the Backend Kit's terms text, and a shared Defined Term's one home. Where 8c's decision is recorded, asked there and answered first.
+
+**8c. `docs: Defined Terms, in CBC backend design`** (landed)
+ADR-0085's decision 4, decided on 2026-11-25: one terms text in the Backend Kit, its first guess. Where the decision is recorded is asked here. The layer-2 parent of that terms text, its row in the §3.2.2 table: where a Backend Repo finds a Defined Term, the terms text, never the Maintainer Repo; each entry adapted from its one home, and checked when that home changes, by Change's rule; the mark; finding one. Open, with its trigger: a Defined Term a Backend Repo coins, the first one. A Borrow Table, short forms and the collision check are written only when the terms text shows a need. The terms text itself starts at 8d. Answered: its §2 narrows Defined Terms' one text, and marks it.
+
+**8c1. `docs: TODO holds At the gate for the close`** (landed, inserted)
+*At the gate* waits for how a Backend Repo closes a Plan Step: an Ideas line in the item that rewrites the Agent Model.
 
 **8d. `docs: the Backend Kit's Change a Kit Copy case`** (provisional)
-Understanding and Instruction Text, from the simulation's §3; and the gate list's part, *At the gate*. The Backend Kit's terms text starts here, with the Defined Terms this case uses. Asked here: the Backend Kit's folder layout, and each Instruction Text's form.
+Change a Kit Copy's Adapted Understanding Text, and its Instruction Text, a Paths Rule that loads when a Kit Copy is touched, from the simulation's §3, step 1. The Backend Kit's terms text starts here, with the Defined Terms this case uses. The layers document's §3.5 gains the layer-3 folders. Answered before it: the folder layout, and each Instruction Text in its final form, both under *Decisions taken inside this plan*; *At the gate* waits (8c1). Asked here: whether the terms text has an Adapted Understanding Text (the layers document's §5, question 3).
 
 **8e. `docs: Change a Kit Copy keeps what it hands on`** (provisional)
 Change, in keeping knowledge, its Change a Kit Copy section cut to the Maintainer Repo's view, as commit 4.
@@ -120,6 +126,8 @@ After the sweep and the look back. The body names what diverged.
 - **The new Agent Skills' descriptions name Backend Repos and the Look for Lessons.** "Read a CBC Run" still fires the exchange-read Agent Skill. The item on CBC Runs 4, 5 and 6 says which it uses.
 - **Names:** each file is named after its part. A Maintainer Repo understanding text is titled "<part>, in this repo", as `defined-terms.md` is.
 - **Layers 1 and 2 are not delivered with the Backend Kit,** decided on 2026-11-25. Delivering layer 2 alone would not spare the terms text: the Backend Kit's Defined Terms are defined in keeping knowledge and in layer 1. Delivering both is the layers document's §5, question 3, still open.
+- **The Backend Kit's folders,** decided on 2026-11-25: under `knowledge/adapted-cases/cbc-backend-design/`, a folder per group, such as `keeping-knowledge/`, and in it a folder per Adapted Case, named after it, its Adapted Understanding Text and Instruction Texts together. The terms text has a folder of its own, `defined-terms/`, beside the groups. Not the Backend Repo's own layout, a `.claude/` inside `knowledge/`; not a split by kind.
+- **Each Instruction Text in its final form,** decided on 2026-11-25: the file as it loads in a Backend Repo, such as a Paths Rule with its `paths:`. Delivery is a plain copy, and Read Copy Changes compares a Kit Copy with its Backend Kit file line by line. Where each kind lands in a Backend Repo is Deliver the Kit Update's, not yet written there; asked at 8d whether it goes in as an open point with its trigger, the first Kit Update carrying a file from `knowledge/adapted-cases/`.
 - **Backend Kit files are `docs`, not `agent`.** They are under `knowledge/`, outside the agent's closed list of paths.
 - **What stays at layer 2, a first sort,** each cut shown and decided at its boundary:
   - §4.2.2 keeps its purpose line, *Where a stretch ends*, *Two snapshots*, the three cases, what a Repo Reading holds, and *When the stop moves*.
@@ -133,8 +141,8 @@ After the sweep and the look back. The body names what diverged.
     - where the Change Record sits, and what it holds: CK, since Read and Judge rely on it, and CB;
     - rewritten with its Copy Change; the commit, an Update Take's commits passing: CB;
     - the gate decides each Copy Change; main moves only at a gate: CK, already in §3.2, and CB;
-    - *At the gate*'s steps, and why the gate decides: Kit, the gate's part;
-    - the simulation's two "it comes back if" lines, a session-end check and a gate note: Kit, as open points with their triggers;
+    - *At the gate*'s steps, and why the gate decides: Kit, the gate's part, waiting (8c1);
+    - the simulation's two "it comes back if" lines, as open points with their triggers: the session-end check, Kit, Change a Kit Copy; the gate note, with *At the gate*;
     - the open point on a reversed Copy Change leaving a trace: CK.
   - *Take the Kit Update,* §3.6:
     - taken between Plan Steps, at the next opening, after a Look for Lessons, and why not mid-step or over unjudged changes: CK, since Deliver relies on it, and CB;
@@ -147,7 +155,7 @@ After the sweep and the look back. The body names what diverged.
     - the open points on finished work under a changed rule, dropping an open step, and asking at each opening: CB;
     - the open point on postponing a staged Kit Update: CK;
     - where the Kit Version and the *version snapshot* are written: Kit, its trigger firing at 8f.
-  - The gate is part of how a Backend Repo closes any Plan Step; only *At the gate* belongs here. Where the rest lives is asked at 8d.
+  - The gate is part of how a Backend Repo closes any Plan Step; only *At the gate* belongs here. Answered on 2026-11-25: it waits for the close, in how an agent works, in CBC backend design (8c1).
 - **What moves with Change, a first sort,** decided at 8a3: the Defined Terms of a change's travel, Copy Change, Change Record, Kit Update, Update Note, Update Take, Kit Version, Look for Lessons, Repo Reading, Repo Register, Attention Note and their short forms; §4.2 and §4.3; §5's questions 2, 3, 4, 10 and 11. Staying in the layers document: Backend Kit, Kit Copy, Backend Repo, Maintainer Repo; §3; the arrows of §4.1; the picture.
 - **Section numbers change with the move.** The plan names the moved sections by title from 8a3 on.
 - **The boundary between the layers and Change:** a sentence still true if nothing ever changed stays in the layers; one about something added, moved or changed goes to Change. Change holds how a text is checked when an idea above it changes; the layers hold what that text must hold.
