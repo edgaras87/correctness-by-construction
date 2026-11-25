@@ -116,24 +116,6 @@
       Trigger: due now, the Change idea written in Change, in keeping knowledge, §3.
       See: devlog 2026-11-18, later, *Found, not fixed*, item 5.
 
-- [ ] Unlock the folders locked for CBC Run 6 (2026-10-29, the
-      reviewer).
-      Context: CBC Run 6 must not read another repository, and a
-      `Read` deny rule stops `cat` and `sed` but not `grep -r` or a script
-      (`docs/conventions/agent-arrangement/` §5.4, *Permission rules*). So, before its CBC Run Birth,
-      twelve entries in `~/IdeaProjects` were made unreadable,
-      `chmod 000`: `archive`, `cbc-pure-run`, `cbc-pure-run-2`,
-      `cbc-pure-run-3`, `cbc-pure-run-4`, `cbc-pure-run-5`,
-      `checkout-system`, `idempotent-orders`, `order-placement`,
-      `safe-reservations-v1`, each 755 before; and
-      `checkout-system-first-prompt.md`,
-      `safe-reservation-briefing.md`, each 644 before.
-      Trigger: the reviewer's word, or before CBC Run 5's lessons Plan Step
-               resumes, since it reads CBC Run 5. CBC Run 6's Release,
-               the first trigger, has passed; the reviewer kept
-               the lock for now.
-      See: devlog 2026-10-29, night.
-
 - [ ] Read and judge CBC Runs 4, 5 and 6: each read apart, their
       findings judged together, kept for the rewrite (2026-11-19,
       the reviewer; from three items of 2026-10-15 to 2026-10-31).
@@ -145,8 +127,7 @@
       the rewrite, not now: no old text changed, no update sent
       (ADR-0082).
       Ideas:
-      - CBC Run 6 first, its folder open; then CBC Run 4, once its
-        folder is unlocked (the item that unlocks the folders);
+      - CBC Run 6 first, then CBC Run 4;
       - read by needs, not by diff: how the CBC Run went and what it
         needed, since the refinement and the rewrite change the
         texts its diff touched; each need ends met, naming where;
