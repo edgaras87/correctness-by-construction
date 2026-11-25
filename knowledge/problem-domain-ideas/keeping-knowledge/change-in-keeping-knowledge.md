@@ -232,7 +232,7 @@ The Backend Repo takes a waiting Kit Update, at the opening of its next Plan Ste
 
 ### 3.7 The cases
 
-A Copy Change varies in two ways. What was changed varies how the Backend Repo records it, and how the Maintainer Repo finds it; it is the same however deep the Copy Change turns out to go, since that is known only once it is judged. How deep it goes varies how the Maintainer Repo decides, and how the Kit Update is written. The rules above are worked for the first case and depth b. Each row not yet checked is checked when practice first meets it, depth c's by its own item (`TODO.md`, the item "Simulate depth c, then bring the Change idea to it"). How each case was weighed is the simulation's (`temp/common-ground/backend-repo-change-simulation.md` §2, *The cases*).
+A Copy Change varies in two ways. What was changed varies how the Backend Repo records it, and how the Maintainer Repo finds it; it is the same however deep the Copy Change turns out to go, since that is known only once it is judged. How deep it goes varies how the Maintainer Repo decides, and how the Kit Update is written. The rules above are worked for the first case and depth b. Each row not yet checked is checked when practice first meets it, depth c's by its own item (`TODO.md`, the item "Simulate depth c, then bring the Change idea to it").
 
 | Kind | Case | Status | Differs so far |
 |---|---|---|---|
