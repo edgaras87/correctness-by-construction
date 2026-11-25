@@ -102,6 +102,7 @@ One Backbone Idea may be adapted more than once in the same Problem Domain, as t
 - Each adaptation is a Problem Domain Idea of its own: written whole, read alone, and changed alone. A change to one does not reach the other.
 - A Problem Domain Idea names the Problem Domain it is adapted to, and the Backbone Idea it is adapted from.
 - Text shared by several Problem Domains, but not by all, is written into each one's own adaptation. Only what is true for every Problem Domain goes up to layer 1.
+- A Defined Term is the one exception: one several Problem Domains share is defined in one adaptation and borrowed by the others. A change to it is checked against every text that borrows it (`knowledge/backbone-ideas/defined-terms.md` §4, *Where it is defined*).
 
 ### 3.3 The Adapted Case layer
 

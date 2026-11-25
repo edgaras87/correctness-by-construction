@@ -53,7 +53,7 @@ A definition written in two texts drifts: one is changed, and the other is not. 
 **Rules:**
 
 - A Defined Term is defined in one text. Every other text that uses it points there, and never retells the definition.
-- A Defined Term every Problem Domain shares is defined here. One several Problem Domains share, but not all, is defined in each one's own adaptation, as any shared text is (`knowledge/backbone-ideas/layers-of-knowledge.md` §3.2, *The Problem Domain layer*).
+- A Defined Term every Problem Domain shares is defined here. One several Problem Domains share, but not all, is defined in one of their adaptations, and the others borrow it from there.
 - A definition names what it builds on by its Defined Term, never by where it stands in the text, such as "the same idea" or "the two".
 
 ## 5. Plain words
