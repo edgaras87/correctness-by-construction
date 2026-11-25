@@ -89,9 +89,7 @@ Depth f's gap, text shared by several Adapted Cases of one Problem Domain but no
 
 ### 3.1 Change a Kit Copy
 
-The Backend Repo changes a Kit Copy during its own work, and the gate of its Plan Step decides each Copy Change. How each rule was chosen is the simulation's (`temp/common-ground/backend-repo-change-simulation.md` §3, *Change a Kit Copy*).
-
-**When a Kit Copy changes.** A Kit Copy changes only when the Backend Repo's work shows it does not fit what happened, never ahead. The human decides the Copy Change, the agent proposing. It is made then, with its Change Record. A Copy Change may be edited or reversed later, its Change Record with it.
+The Backend Repo changes a Kit Copy during its own work, and the gate of its Plan Step decides each Copy Change. When a Kit Copy changes, how the change is committed, and why, are the Backend Repo's side, in Change, in CBC backend design (`knowledge/problem-domain-ideas/cbc-backend-design/change-in-cbc-backend-design.md` §2, *Changing a Kit Copy*). This section keeps what the Maintainer Repo relies on: where the Change Record sits, what it holds, and the gate.
 
 **Where the Change Record sits.** In a footer of the Kit Copy's Adapted Understanding Text, which is not loaded for work. So the Copy Change and its why land in one diff, and the why cannot lose its Kit Copy. When only an Instruction Text changes, its Change Record goes there too. An Instruction Text with no Adapted Understanding Text, such as the Backend Kit's Defined Terms, carries its Change Record in its own footer.
 
@@ -101,15 +99,9 @@ The Backend Repo changes a Kit Copy during its own work, and the gate of its Pla
 - which work found it;
 - the Backend Repo's proposal, marked as one: its own problem, or one any repo would meet. The Maintainer Repo judges every Copy Change, and says whether it agrees, and why if not.
 
-**When it is rewritten.** The Change Record says the Copy Change as it stands. A later edit rewrites it, and git keeps the old one.
-
-**The commit.** A Copy Change and its Change Record go in the same commit. A commit that changes a Kit Copy and not its Change Record is stopped there. An Update Take is not a Copy Change, so its commits pass: together they replace every Kit Copy with the Backend Kit's, and clear every Change Record. Work never committed is lost, the Copy Change and its Change Record together.
-
 **At the gate.** At the close of the Backend Repo's Plan Step, its Copy Changes are seen together, now that the whole step is seen. The agent compares the Kit Copies against where the step began, checks that each Copy Change has a Change Record that says it, and shows each with its Change Record. The human decides each, the agent proposing: kept, edited or reversed, its Change Record with it. One edited gets its Change Record rewritten. Copy Changes that share one reason are linked: the reason is written in full in one Change Record, and each other one says how its own Kit Copy was affected and points at that one. If the one holding the reason is reversed, the reason moves to one that stays, and the others point there.
 
-**Its Adapted Cases:**
-- the Backend Repo's, for changing a Kit Copy, itself a Kit Copy. It loads when a Kit Copy is touched, and says everything above but *At the gate*;
-- the Backend Repo's gate list, for closing one of its Plan Steps. It loads when the step closes, and says *At the gate*.
+**Its Adapted Cases:** the Backend Repo's, in Change, in CBC backend design (`knowledge/problem-domain-ideas/cbc-backend-design/change-in-cbc-backend-design.md` §4, *Its Adapted Cases*).
 
 **Open:**
 - whether a reversed Copy Change leaves a trace for the Maintainer Repo. One tried and undone may be evidence that the Kit Copy was right. Its trigger: the first Copy Change reversed at a gate.
@@ -228,7 +220,7 @@ The Backend Repo takes a waiting Kit Update, at the opening of its next Plan Ste
 **At the Update Take, in order.** Once the check finds case 1, the Update Take cuts a branch from main, the *settled snapshot*. Its first commit is the Kit Update as it arrived, in `temp/`, not yet in force: a record of what came, before the Update Take changes anything. Each item below is then a commit of its own, but item 2, a check. Main moves to the branch's last commit by fast-forward at the gate's close, so it still moves only at a gate's close (§3.2).
 1. the Adapted Case for taking a Kit Update is taken first, on its own, so the rest is taken by the new one (`temp/common-ground/common-ground-problem.md` §4, Failure Case 10);
 2. the files are checked against the Update Note: what changed, and how many (§3.5). A mismatch is said before anything moves;
-3. every Kit Copy is taken whole, at the new Kit Version; each path gone is removed, and each renamed is moved. A part the Backend Repo never changed is taken, and work shows whether it fits (§3.1). A Kit Copy taken whole takes its Change Records away with it, so clearing them is no act of its own. Nothing is lost: main is the *settled snapshot*, so each was read and judged;
+3. every Kit Copy is taken whole, at the new Kit Version; each path gone is removed, and each renamed is moved. A part the Backend Repo never changed is taken, and work shows whether it fits (`knowledge/problem-domain-ideas/cbc-backend-design/change-in-cbc-backend-design.md` §2, *Changing a Kit Copy*). A Kit Copy taken whole takes its Change Records away with it, so clearing them is no act of its own. Nothing is lost: main is the *settled snapshot*, so each was read and judged;
 4. the new Kit Version is recorded, with the commit that holds it: item 3's, the *version snapshot*, every Kit Copy at the new Kit Version. So the check in Deliver the Kit Update can compare it with the newest. It names item 3's commit because a commit cannot hold its own hash, and item 3's is the last before it;
 5. the Kit Update and its Update Note are removed from `temp/`;
 6. the Update Take's gate, last. It checks that the Update Take finished: the files matched the Update Note, every Kit Copy is at the new Kit Version, the Kit Version is recorded, and `temp/` holds no Kit Update.

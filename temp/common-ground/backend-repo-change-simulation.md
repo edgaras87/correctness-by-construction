@@ -43,7 +43,7 @@ Each step has these fields. A field with nothing in it is left out.
 
 - **Options:** what could be done here, today's way among them.
 - **Chosen:** the option taken, and why the others were not.
-- **Its rules:** where the rules it led to are written: Change, in keeping knowledge, §3, or the Adapted Understanding Text of the part's Adapted Case (ADR-0087).
+- **Its rules:** where the rules it led to are written: Change, in keeping knowledge, §3, Change, in CBC backend design, or the Adapted Understanding Text of the part's Adapted Case (ADR-0087).
 - **Today:** what is borrowed from today, and what changes, each with its source. Today's things keep today's names, such as the Delivery Note.
 
 A step simulated anew also says what must happen, which Adapted Case runs it, and what it leaves open, each with its trigger, until its part is read together and they move to the layers document.
@@ -100,7 +100,7 @@ Two steps:
   - d leaves the Kit Copy saying it for good, and the next agent reads the Kit Copy, not the Backend Repo's records.
 
   **Weighed and dropped:** a check at each session's end, comparing the Kit Copies with their Change Records. It would run every session, needs an Adapted Case of its own, and never runs when a session stops with no warning. The commit's check and the gate's comparison (step 2) cover what it would find. It comes back if a gate finds a Copy Change committed in an earlier session with its Change Record missing or wrong.
-- **Its rules:** in Change, in keeping knowledge (`knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §3.1, *Change a Kit Copy*).
+- **Its rules:** when a Kit Copy changes, and its commit, in Change, in CBC backend design (`knowledge/problem-domain-ideas/cbc-backend-design/change-in-cbc-backend-design.md` §2, *Changing a Kit Copy*); the Change Record, in Change, in keeping knowledge (`knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §3.1, *Change a Kit Copy*); the check at each session's end, in the Backend Kit's Adapted Case (`knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/change-a-kit-copy/understanding.md` §3, *Open*).
 - **Today:**
   - borrowed: an edit comes from something that happened, never a speculation (`delivery/container/.claude/rules/delivered-copies.md`, rule 2; `docs/conventions/exchange/` §5.1, *When a copy may be edited*);
   - borrowed: the rule for changing a copy loads when a copy is touched (`delivery/container/.claude/rules/delivered-copies.md`, its `paths:`);
@@ -121,7 +121,7 @@ Two steps:
   - b keeps a Copy Change made early in the step, though the end of the step may show it wrong, and leaves Copy Changes with one reason unlinked;
   - c leaves the review to the side that cannot see what happened, and a wrong Copy Change then reaches the Maintainer Repo's judging;
   - d adds nothing to the Change Records: Read Copy Changes compares every Kit Copy, and reads the Change Records. It comes back if Read Copy Changes misses a changed Kit Copy because nothing asked it to look.
-- **Its rules:** in Change, in keeping knowledge (`knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §3.1, *Change a Kit Copy*).
+- **Its rules:** in Change, in keeping knowledge (`knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §3.1, *Change a Kit Copy*), and Change, in CBC backend design (`knowledge/problem-domain-ideas/cbc-backend-design/change-in-cbc-backend-design.md` §2, *Changing a Kit Copy*).
 - **Today:**
   - borrowed: the gate is a list of outcomes checked at the close (`delivery/fills/cbc-run-pure-playbook.md`, *At the close*);
   - borrowed: each Approach on Trial the CBC Run's Plan Step used has its dated note at the close (`delivery/fills/cbc-run-pure-playbook.md`, *At the close*). A Change Record checked at the gate is the same shape;
