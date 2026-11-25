@@ -3,7 +3,7 @@
 <!--
 What it is: a Problem Domain Idea of the Maintainer Repo's own Problem Domain, keeping knowledge (§3.2), and its one home. Still a draft and a trial: practice changes it.
 What it stands on: knowledge/backbone-ideas/layers-of-knowledge.md, the layers in any Problem Domain. It adapts that document, and never retells it.
-What stands on it: other texts point here, and never retell it. knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md, Change, in keeping knowledge, borrows where each layer is kept.
+What stands on it: other texts point here, and never retell it. knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md, Change, in keeping knowledge, borrows where each layer is kept, and so does knowledge/problem-domain-ideas/cbc-backend-design/change-in-cbc-backend-design.md, Change, in CBC backend design.
 Its place in the repo: knowledge/problem-domain-ideas/keeping-knowledge/ (ADR-0084).
 Where it started: TODO-CONVERSATION-MEMORY.md §35, *The layers of knowledge*.
 Its first sources, input and not rules:
@@ -151,7 +151,7 @@ The Backend Repos' Problem Domain. The Maintainer Repo keeps its Problem Domain 
 | CBC design, in CBC backend design | CBC design | backends as the kind of system | planned, from `concept/` (`TODO.md`, the item that splits the concept) |
 | How an agent works, in CBC backend design | How an agent works | not yet known | planned (`TODO.md`, the item that rewrites the Agent Model) |
 | Defined Terms, in CBC backend design | Defined Terms | the Backend Kit's Defined Terms, read in a Backend Repo without layers 1 and 2 | planned, with the first Adapted Case for the Backend Repos (ADR-0085, decision 4) |
-| The layers of knowledge, in CBC backend design | The layers of knowledge | how a Backend Repo keeps its own knowledge, and takes the Backend Kit's changes | planned, with the first Adapted Case for the Backend Repos (`TODO.md`, the item "Split the Change idea") |
+| Change, in CBC backend design | Change | how a Backend Repo changes a Kit Copy, and takes a Kit Update | `knowledge/problem-domain-ideas/cbc-backend-design/change-in-cbc-backend-design.md` |
 
 ### 3.3 The Adapted Case layer
 
