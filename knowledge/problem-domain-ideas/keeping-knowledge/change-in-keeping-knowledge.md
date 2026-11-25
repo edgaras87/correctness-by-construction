@@ -209,13 +209,11 @@ The Update Note is no summary of the Maintainer Repo's work, which the Backend R
 
 ### 3.6 Take the Kit Update
 
-The Backend Repo takes a waiting Kit Update, at the opening of its next Plan Step. How each rule was chosen is the simulation's (`temp/common-ground/backend-repo-change-simulation.md` §8, *Take the Kit Update*).
+The Backend Repo takes a waiting Kit Update, at the opening of its next Plan Step. How it takes one, from its own side, is Change, in CBC backend design (`knowledge/problem-domain-ideas/cbc-backend-design/change-in-cbc-backend-design.md` §3, *Taking a Kit Update*). This section keeps what the Maintainer Repo relies on.
 
 **Before the Update Take.** A Kit Update is taken between two of the Backend Repo's Plan Steps, when the next is about to open, never in the middle of one, the agent proposing and the human deciding. Before that step opens, in a fixed order: a Look for Lessons runs to main, and the Backend Repo's Kit Update, when one is due, is made, delivered and taken. Then the step opens on the new Kit Copies, or on the same ones when no Kit Update was due. An open Repo Reading is extended. The human works on one project at a time, so the Backend Repo waits at little cost. A Backend Repo's Plan Step open when the human returns finishes on the old Kit Copies first, and the human names the Backend Repo to update at the next opening (§3.5). The Update Take checks first, from the Update Note, what the Backend Repo itself can see:
 - case 1, its main is still the *settled snapshot* the Update Note names: the Kit Update is taken. Its Kit Version needs no check of its own: it is recorded in main, so it cannot change while main stands still;
 - case 2, anything else: there is no Update Take, and the Backend Repo says so. The human names it to update again, and the Look for Lessons finds that main has moved (§3.2). The check in Deliver the Kit Update then finds a new Kit Update due, made against the Backend Kit as it is now, and it replaces the waiting one (§3.5).
-
-**When the Backend Kit moves on.** The Backend Kit may move after the Kit Update is made. That is no reason to refuse the Kit Update: it is correct, if not the latest, and the next brings the rest.
 
 **At the Update Take, in order.** Once the check finds case 1, the Update Take cuts a branch from main, the *settled snapshot*. Its first commit is the Kit Update as it arrived, in `temp/`, not yet in force: a record of what came, before the Update Take changes anything. Each item below is then a commit of its own, but item 2, a check. Main moves to the branch's last commit by fast-forward at the gate's close, so it still moves only at a gate's close (§3.2).
 1. the Adapted Case for taking a Kit Update is taken first, on its own, so the rest is taken by the new one (`temp/common-ground/common-ground-problem.md` §4, Failure Case 10);
@@ -227,13 +225,10 @@ The Backend Repo takes a waiting Kit Update, at the opening of its next Plan Ste
 
 **What a Change Record stands against.** Every Change Record stands against the last Kit Version taken, or birth's, and every Change Record goes at an Update Take. This is confirmed at the first Kit Update to reach a Backend Repo whose Kit Copies have Change Records.
 
-**Its Adapted Case.** The Backend Repo's, for taking a Kit Update, itself in the Kit Update and taken first. It loads when the Backend Repo's next Plan Step opens with a Kit Update waiting, and says everything above.
+**Its Adapted Case.** The Backend Repo's, in Change, in CBC backend design (`knowledge/problem-domain-ideas/cbc-backend-design/change-in-cbc-backend-design.md` §4, *Its Adapted Cases*).
 
 **Open:**
-- finished work done under a rule the Kit Update changed may now be wrong. New work follows the new Kit Copy; the Backend Repo lists which Backend Kit changes touch rules its finished work followed, and the human decides. Its trigger: the first Kit Update that changes a rule one of the Backend Repo's finished Plan Steps followed;
-- postponing an Update Take after its Kit Update is staged, so the step opens on the old Kit Copies and the Kit Update waits. For now there is no such choice: a staged Kit Update is taken at the opening, unless the Update Take's check finds main moved (case 2). Once an Update Take can be postponed, main can move before it, so decide then whether the Maintainer Repo must check main before delivery, and whether main alone is enough: a Plan Step on a branch leaves main where it is. Its trigger: the first staged Kit Update the human does not want taken;
-- dropping or restarting the Backend Repo's open Plan Step so the Kit Update is taken sooner, when the Kit Update changes a rule the step rests on. Its trigger: the first Kit Update the human wants taken before an open step finishes;
-- whether each opening of the Backend Repo's Plan Steps asks: was this Backend Repo named to update? Without that question, a Backend Repo nobody names opens each step on the old Kit Copies, and falls further behind each time. Its trigger: the first time one of the Backend Repo's Plan Steps opens on old Kit Copies because nobody named the Backend Repo to update.
+- postponing an Update Take after its Kit Update is staged, so the step opens on the old Kit Copies and the Kit Update waits. For now there is no such choice: a staged Kit Update is taken at the opening, unless the Update Take's check finds main moved (case 2). Once an Update Take can be postponed, main can move before it, so decide then whether the Maintainer Repo must check main before delivery, and whether main alone is enough: a Plan Step on a branch leaves main where it is. Its trigger: the first staged Kit Update the human does not want taken.
 
 ### 3.7 The cases
 

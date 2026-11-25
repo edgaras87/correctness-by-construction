@@ -343,7 +343,7 @@ Two steps:
   - g leaves main on the old Kit Version until the step's gate closes, so naming the Backend Repo to update in between finds the Kit Update due again;
   - h gives the Update Take an opening, as the Backend Repo's Plan Steps have, for work the Update Note already orders. f keeps what it needs from one: the gate;
   - i narrows that rule for the Update Take alone. f keeps the rule whole, its gate checking that the Update Take finished.
-- **Its rules:** in Change, in keeping knowledge (`knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §3.6, *Take the Kit Update*).
+- **Its rules:** in Change, in keeping knowledge (`knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §3.6, *Take the Kit Update*), and Change, in CBC backend design (`knowledge/problem-domain-ideas/cbc-backend-design/change-in-cbc-backend-design.md` §3, *Taking a Kit Update*); why the Update Take runs on a branch, in the Backend Kit's Adapted Case (`knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/take-the-kit-update/understanding.md` §1, *Why a branch with a gate*).
 - **Today:**
   - borrowed: nothing in `temp/` is in force until it is copied into place (`delivery/container/.claude/rules/delivered-copies.md`, rule 5);
   - borrowed: the Delivery Take's order: the Delivery Note checked against the staging first, copies taken whole, what is gone removed, one entry with the new Delivery Pin, the staging removed (`delivery/container/.claude/rules/delivered-copies.md`, rule 5, steps 1, 4, 5, 6 and 7);
