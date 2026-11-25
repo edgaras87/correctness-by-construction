@@ -103,11 +103,16 @@ Read Copy Changes and Deliver the Kit Update read the two values from that path.
 **8g. `docs: Take the Kit Update keeps what it hands on`** (landed)
 Change, in keeping knowledge, its Take the Kit Update section cut to the Maintainer Repo's view, as commit 4. The six items stay, against the first sort: Read Copy Changes relies on items 2, 4 and 6, and on main moving only at a gate.
 
-**8h. `docs: the cases take their whys`** (provisional)
-How each case and depth was weighed, from the simulation's §2, into Change, in keeping knowledge, its cases section. No pointer from the layers to the simulation stays.
+**8h. `docs: the cases point no more at the simulation`** (landed, renamed)
+How each case and depth was weighed, from the simulation's §2, into Change, in keeping knowledge, its cases section. No pointer from the layers to the simulation stays. Found: §2 held only how the simulation was worked and its picture, each case's weighing already in §3.7; one pointer went. The header lines naming the simulation as a first source stay.
 
-**8i. The pictures** (provisional, likely several commits)
-By the visual-comparison Agent Skill, its candidates committed before the choice, each picture showing one thing: the two layers pictures redrawn without the arrows Change took; a picture for Change, its arrows over the layers drawn plainly; one for Change, in keeping knowledge, the whole travel between the repos. A picture whose point fits in a few lines may end as none. It settles whether the simulation's picture *The whole flow* moves or goes.
+**8i. The pictures** (landed, six commits)
+By the visual-comparison Agent Skill, its candidates committed before the choice, each picture showing one thing: the two layers pictures redrawn without the arrows Change took; a picture for Change, its arrows over the layers drawn plainly; one for Change, in keeping knowledge, the whole travel between the repos. A picture whose point fits in a few lines may end as none. It settles whether the simulation's picture *The whole flow* moves or goes. Landed:
+- `262a6dea`, the two layers pictures without Change's arrows, *worked by* kept; no comparison, the form settled on 2026-11-23;
+- `28b26691` and `befc9138`, Change's picture: the draft, then C, a box drawing of the four arrows, its list kept below it;
+- `7f3ba8f3`, inserted: four lines of Change, in keeping knowledge followed the redraw;
+- `ec9ec541` and `ed287006`, Change, in keeping knowledge's picture: the draft, then C, *The whole flow* whole, moved out of the simulation.
+Each picture with a second form of its facts, a list or a table, has a header line checking one against the other.
 
 **9. `docs: TODO follows the Change split`** (provisional)
 The split item closes. The item on CBC Runs 4, 5 and 6 judges by the Agent Skill. Any open point the cuts answer, or move, followed.
