@@ -60,59 +60,6 @@
       Trigger: due now.
       See: `TODO-CONVERSATION-MEMORY.md` §35, *The layers of knowledge*.
 
-- [ ] Split the Change idea: what one part hands the next stays in
-      the Problem Domain Idea; each part's own steps go to its Adapted
-      Cases (2026-11-23, the reviewer).
-      Context: Change, in keeping knowledge, §3.1 to §3.6, about 200
-      lines, are mostly steps for one use each: text of layers 3 and
-      4 at layer 2 (`knowledge/backbone-ideas/change.md` §3,
-      *How the layers fill*, its **Rules**). Each part already names
-      its Adapted Cases. Left at layer 2, a change to one part's steps
-      reads as a change to the Problem Domain Idea, and sets off a
-      survey of every Adapted Case built on it.
-      Ideas:
-      - stays at layer 2, since Adapted Cases are tied only through
-        the idea above them (the general document's §3.3): what one
-        part hands the next, such as the Change Record in its Copy
-        Change's diff, the *settled snapshot*, a Kit Update's whole
-        files and Update Note, main moving only at a gate's close; the
-        rules every part keeps; the tables of parts, depths and cases;
-      - goes down: each part's own steps, as the Adapted
-        Understanding Text of its Adapted Cases, each open point with
-        its rule. The Maintainer Repo's parts, Read, Judge with Act,
-        and Deliver, go to its own Adapted Cases at layer 4, in
-        `.claude/understanding/`; the Backend Repo's, Change a Kit
-        Copy and Take the Kit Update, go to layer 3 (the layers
-        document's §3.3 and §3.4);
-      - one Change Set, both sides, the Maintainer Repo's parts first
-        (2026-11-24, the reviewer). The Backend Repo's parts go to the
-        Backend Kit's group for keeping knowledge, naming nothing of
-        backends. They first need the Problem Domain Idea above them,
-        Change, in CBC backend design, and its Defined Terms (the
-        layers document's §3.2.2; ADR-0085, decision 4);
-      - Change, an idea of its own (2026-11-24, the reviewer): a
-        Backbone Idea, Change, for any change to knowledge, wherever
-        it starts. Under it, Change, in keeping knowledge, the
-        layers document's §4 moved out of it, and Change,
-        in CBC backend design, the parent of the Backend Kit's
-        Adapted Cases for keeping knowledge. The reviewer's guesses,
-        such as a new idea carried to all layers together, are open
-        questions in the Backbone Idea, each with its trigger;
-      - each Adapted Case whole, its Adapted Understanding Text and
-        its Instruction Text, written from the simulation alone.
-        Today's repo is compared with them in the rewrite (2026-11-24,
-        the reviewer);
-      - the whys leave the simulation: a shared rule's to layer 2, one
-        part's own to its Adapted Understanding Text. The simulation
-        keeps its steps, which depth c walks, and its *Today* lines,
-        which the rewrite reads (2026-11-24, the reviewer);
-      - one picture of the whole travel at layer 2, chosen by a visual
-        comparison; it settles whether the simulation's picture *The
-        whole flow* moves or goes.
-      Trigger: the layers model out of `temp/`, where layer 3's
-      texts are kept decided.
-      See: devlog 2026-11-23, later.
-
 - [ ] Simulate depth c, then bring the Change idea to it
       (2026-11-22, the reviewer).
       Context: depth c is a lesson that changes the idea above: a
@@ -139,7 +86,7 @@
         reach every text built on it. It answers the Backbone Idea
         Change's open question on such a change, first a guess: carried
         to all layers together (2026-11-24, the reviewer).
-      Trigger: the Change idea split, its item.
+      Trigger: due; the Change split landed on 2026-11-25.
       See: devlog 2026-11-22, the depth c item.
 
 - [ ] Sweep the drafts for words that read as walking commits, where
@@ -208,8 +155,8 @@
       - CBC Run 5's Reading re-judged by needs, not read again; its
         open DECISION-2 and DECISION-5, and WORK-1 and WORK-3 to
         WORK-10, among the findings;
-      - judged by the simulation's Judge Copy Changes, by meaning: each finding's
-        depth, kept where the rewrite finds it;
+      - judged by the judge-copy-changes Agent Skill, by meaning: each
+        finding's depth, kept where the rewrite finds it;
       - old words read through the refinement's Names table, at
         `55e2bd0^:temp/refinement-2026-10-18.md`;
       - CBC Run 4's own questions: CBC Run 3's and CBC Run 4's
@@ -662,18 +609,6 @@
       Idea, or the rewrite's end, whichever comes first.
       See: devlog 2026-11-23, the `knowledge/` plan's Defined Terms
       commits.
-
-- [ ] Decide how the Backend Kit keeps its Defined Terms
-      (2026-11-23, the reviewer).
-      Context: a Backend Repo gets the Backend Kit's Adapted Cases,
-      but not layers 1 and 2, where most of their Defined Terms
-      are defined. Their Borrow Tables would point at texts the
-      Backend Repo does not hold.
-      Ideas:
-      - one terms text in the Backend Kit, each Defined Term adapted
-        from its home.
-      Trigger: the first Adapted Case for the Backend Repos written.
-      See: ADR-0085, decision 4.
 
 - [ ] Write the exchange-birth Agent Skill while a CBC Run Birth runs (2026-09-26, the
       reviewer).
