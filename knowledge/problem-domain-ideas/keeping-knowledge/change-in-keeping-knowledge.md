@@ -9,6 +9,7 @@ Where it started: the layers document's §4, How knowledge moves, moved here who
 Its first sources, input and not rules:
 - temp/common-ground/backend-repo-change-simulation.md, the six parts and depths, and how each rule was chosen;
 - temp/common-ground/common-ground-problem.md §2.1 and §3.
+How it is edited: §3's picture is checked at every change against §3's table of parts and §3.7's table of cases.
 -->
 
 This document is Change in the Maintainer Repo's Problem Domain: the arrows between the Maintainer Repo and the Backend Repos, how a Copy Change travels them, and the Maintainer Repo's own lessons. What a change is, and the rules every change keeps, are Change's (`knowledge/backbone-ideas/change.md`). Where each layer is kept, and what the Backend Kit holds, are the layers document's: the layers of knowledge, in keeping knowledge (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md`).
@@ -56,7 +57,33 @@ Borrowed:
 
 ## 3. How a change travels
 
-A Copy Change travels through six parts, each done by one repo. Each part sits at a layer, or on an arrow of §2:
+A Copy Change travels through six parts, each done by one repo.
+
+```
+ Backend Repo              ┆ Maintainer Repo
+ ────────────              ┆ ───────────────
+                           ┆
+ 1. Change a Kit Copy ─────┼── reads; writes nothing there ──▶ 2. Read Copy Changes ──▶ 3. Judge Copy Changes ──▶ 4. Act on the verdicts
+    §3.1                   ┆                                   §3.2                     §3.3                      §3.4
+                           ┆                                                                                      │
+ 6. Take the Kit Update ◀──┼── writes only into its temp/ ──── 5. Deliver the Kit Update ◀────────────────────────┘
+    §3.6                   ┆                                   §3.5
+
+ How high each depth goes: 3. Judge Copy Changes sets it, 4. Act on the verdicts changes it
+
+ depth                          b        c, at 2   c, at 1   d         e         f
+                                         └─────────── not yet checked ────────────┘
+ layer 1  Backbone Idea                            ●
+ layer 2  Problem Domain Idea            ●         ●         ○         ○
+ layer 3  Adapted Case          ●        ●         ●         ●         ●
+ layer 4  a Backend Repo's work ●        ●         ●         ●         ●         ●
+ ───────────────────────────────────────────────────────────────────────────────────────────
+ highest layer                  3        2         1         3, or 2   3, or 2   none, open
+```
+
+Key: each § is a section of this document. A Look for Lessons is 2 to 4; bringing a Backend Repo up to date adds 5 and 6, and needs the first. ● is a Copy Change's path, from its Kit Copy up to the highest layer it changes; ○ is "or up to here", when the case asks it (§3.7, its rows d and e). At every depth, 5. Deliver the Kit Update brings a Kit Update down.
+
+Each part sits at a layer, or on an arrow of §2:
 
 | Part | Who | Where |
 |---|---|---|
@@ -73,7 +100,7 @@ So the six parts are one movement: up from layer 4, as high as the Copy Change h
 
 **Bringing a Backend Repo up to date.** It is a second job, which needs the first. It runs only when the human names the Backend Repo to update, and starts with a Look for Lessons. Its check, whether a Kit Update is due, belongs to Deliver the Kit Update. It comes after Act on the verdicts, since the Backend Kit moves for a Copy Change only once it is judged and acted on (§3.5).
 
-Each of the simulation's depths names the highest layer a Copy Change reaches (§3.7). The arrows each travels:
+Each depth names the highest layer a Copy Change reaches (§3.7). The arrows each travels:
 
 | Depth | Arrows it travels |
 |---|---|

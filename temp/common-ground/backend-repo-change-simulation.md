@@ -52,33 +52,7 @@ A step simulated anew also says what must happen, which Adapted Case runs it, an
 
 The cases are simulated one at a time. The first is simulated whole; each other case is then checked against it, and what differs is written. A case that grows too complex goes to TODO, to be checked once the Common Ground Problem is finished. The cases themselves, what is known but not ruled, and the other sources are in Change, in keeping knowledge (`knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §3.7, *The cases*).
 
-**The whole flow.** The six parts of §1 and the depths of the table of cases in Change, in keeping knowledge (`knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §3.7, *The cases*), in one picture. It is a summary: Change, in keeping knowledge, §3 holds the facts, and each § in the picture names the section of this document that weighed them.
-
-```
- Backend Repo              ┆ Maintainer Repo
- ────────────              ┆ ───────────────
-                           ┆
- 1. Change a Kit Copy ─────┼── reads; writes nothing there ──▶ 2. Read Copy Changes ──▶ 3. Judge Copy Changes ──▶ 4. Act on the verdicts
-    §3                     ┆                                   §4                       §5                        §6
-                           ┆                                                                                      │
- 6. Take the Kit Update ◀──┼── writes only into its temp/ ──── 5. Deliver the Kit Update ◀────────────────────────┘
-    §8                     ┆                                   §7
-
- How high each depth goes: 3. Judge Copy Changes sets it, 4. Act on the verdicts changes it
-
- depth                          b        c, at 2   c, at 1   d         e         f
-                                         └─────────── not yet checked ────────────┘
- layer 1  Backbone Idea                            ●
- layer 2  Problem Domain Idea            ●         ●         ○         ○
- layer 3  Adapted Case          ●        ●         ●         ●         ●
- layer 4  a Backend Repo's work ●        ●         ●         ●         ●         ●
- ───────────────────────────────────────────────────────────────────────────────────────────
- highest layer                  3        2         1         3, or 2   3, or 2   none, open
-```
-
-At every depth, 5. Deliver the Kit Update brings a Kit Update down.
-
-Key: ● is the Copy Change's path, from its Kit Copy up to the highest layer it changes. ○ is "or up to here", when the case asks it (that table, rows d and e). The line after the picture follows the arrows of Change, in keeping knowledge (`knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §3, *How a change travels*). A § is a section of this document.
+**The whole flow,** the six parts and how high each depth goes in one picture, is in Change, in keeping knowledge (`knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §3, *How a change travels*).
 
 ## 3. Change a Kit Copy
 
