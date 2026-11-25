@@ -9,6 +9,7 @@ Why it is an idea of its own: ADR-0088. Its §2 to §4 were the layers of knowle
 How it is edited:
 - It gives no example from one Problem Domain's work, as the layers of knowledge gives none.
 - As in the layers of knowledge, a section's rules close it, in a last paragraph marked Rules, and govern that section.
+- §4's picture and its list are checked against each other at every change: each arrow and pair of layers in one is in the other.
 -->
 
 This document says what a change to knowledge is, in any Problem Domain: how knowledge enters the layers, and how it moves between them. The layers, and what each holds, are the layers of knowledge's (`knowledge/backbone-ideas/layers-of-knowledge.md` §3, *The layers*). How a Problem Domain's changes travel is its own Change idea.
@@ -42,6 +43,32 @@ Knowledge can enter at any layer. Work meets something new and changes the Adapt
 - A guess is written as open, with the trigger that tests it. Only what follows from a text already written is stated as a rule.
 
 ## 4. The arrows
+
+```
+                       ┌──────────────────────────────┐
+ Layer 1               │ Backbone Ideas               │
+                       └──────────────────────────────┘
+                          │        ▲          ▲
+                        adapt   lesson    set apart
+                          ▼        │          │
+                       ┌──────────────────────────────────────────────────────────────────────────────────┐
+ Layer 2               │ Problem Domain Ideas                                                             │
+                       └──────────────────────────────────────────────────────────────────────────────────┘
+                          │        ▲          ▲                                 │        ▲         ▲
+                        adapt   lesson    set apart                           adapt   lesson   set apart
+                          ▼        │          │                                 │        │         │
+                       ┌────────────────────────────────────────────────┐       │        │         │
+ Layer 3               │ Adapted Cases                                  │       │        │         │
+                       └────────────────────────────────────────────────┘       │        │         │
+                                   ▲                              ▲             │        │         │
+                                  fit                         set apart         │        │         │
+                                   │                              │             ▼        │         │
+                                   │                        ┌─────────────────────────────────────────────┐
+ Layer 4               a project's work                     │ a project's own Adapted Case                │
+                                                            └─────────────────────────────────────────────┘
+```
+
+Key: each box names a layer's texts, never what they hold, which is the layers of knowledge's picture (`knowledge/backbone-ideas/layers-of-knowledge.md` §2, *The picture*). The arrow *worked by*, layer 3 to layer 4, is not drawn: it is the layers of knowledge's, not a change. What moves on each arrow is said below.
 
 - **adapt,** layer 1 to layer 2, and layer 2 to layer 3, or to layer 4 for a project's own Adapted Case: a text is written from the idea above it, narrowed to its need, with what the need adds. A part left out on purpose is marked, with why (§4's **Rules**, *Narrowing, never shrinking*).
 - **lesson,** layer 3 to layer 2, layer 2 to layer 1, and a project's own Adapted Case in layer 4 to layer 2: a lesson goes up as far as it is true (§3).
