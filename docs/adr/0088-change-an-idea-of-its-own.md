@@ -15,6 +15,8 @@ The reviewer sees Change as any change to knowledge, wherever it starts: a Copy 
 
 The general layers document's §4, *How knowledge moves*, holds how knowledge enters the layers, the arrows between them, and the rules on moving. Its arrow named *change*, layer 4 to layer 3, reads as if change came only from a project's work.
 
+On 2026-11-25, the Backend Kit's Defined Terms raised two questions. A Backend Repo cannot open layers 1 and 2, so its Kit Copies cannot point at a Defined Term's home there (ADR-0085, decision 4, left open). And Change, in CBC backend design borrows 11 Defined Terms from keeping knowledge, while Defined Terms §4 said a Defined Term several Problem Domains share is defined in each one's own adaptation.
+
 ## Options considered
 
 - **The Backend Repo's parent named "The layers of knowledge, in CBC backend design".** Rejected: it holds only change, and a later change to how layers work would read as touching the Backend Kit's Adapted Cases for keeping knowledge.
@@ -23,6 +25,9 @@ The general layers document's §4, *How knowledge moves*, holds how knowledge en
 - **A Backbone Idea Change that leaves the general layers document's §4 where it is,** until depth c is simulated. Rejected: moving a rule is not writing a new one, and depth c will change these rules. Moved first, each line changes once, in its home. Left, the arrow named *change* keeps reading as if change came only from work.
 - **Change as one section of the layers of knowledge, each Change idea at layer 2 adapted from that section.** Rejected: a text's header lists what stands on it by document, so a change to the layers part would flag the Change ideas; and the title rule names a layer-2 idea after a document, not a section. It would keep the arrows next to the picture that draws them, and move less now.
 - **A picture in Change repeating the layers picture with its arrows.** Rejected: two pictures of the same thing drift. Each picture shows one thing.
+- **Layers 1 and 2 delivered with the Backend Kit,** so a Kit Copy points at each Defined Term's home. Rejected for now: layer 2 alone is not enough, since the Backend Kit's Defined Terms are defined in keeping knowledge and in layer 1; both would grow every Kit Update with understanding a Backend Repo's agent rarely needs. It stays the layers document's §5, question 3.
+- **Each Adapted Case in the Backend Kit defining the Defined Terms it uses.** Rejected: Kit Copy and Change Record would be defined in several, and drift.
+- **Each Problem Domain defining a shared Defined Term in its own words,** as Defined Terms §4 said. Rejected by the reviewer: two definitions drift, and no Defined Term is defined twice.
 
 ## Decision
 
@@ -34,10 +39,14 @@ The general layers document's §4, *How knowledge moves*, holds how knowledge en
 6. **Change, in CBC backend design,** `knowledge/problem-domain-ideas/cbc-backend-design/change-in-cbc-backend-design.md`: the parent of the Backend Kit's Adapted Cases for keeping knowledge.
 7. **Each Adapted Case for a change names its own Change idea as its parent.**
 8. **Each picture shows one thing,** chosen by the visual-comparison Agent Skill: the layers pictures what is where, the Change pictures how knowledge moves. Until they are drawn, the layers pictures keep their arrows, a key line naming Change.
+9. **The Backend Kit's Defined Terms are one terms text in the Backend Kit,** ADR-0085's decision 4, its first guess. Each entry is adapted from its home in the Maintainer Repo, and checked when that home changes. It starts with the first Adapted Case for the Backend Repos, and holds only the Defined Terms the Backend Kit uses. Layers 1 and 2 are not delivered.
+10. **A shared Defined Term has one home.** One several Problem Domains share is defined in one of their Problem Domain Ideas, chosen when it is first shared, and the others borrow it. A change to it is checked against every text that borrows it (`knowledge/backbone-ideas/defined-terms.md` §4, *Where it is defined*). Change, in CBC backend design borrows its 11 from keeping knowledge.
 
 ## Consequences
 
 - Every pointer into either layers document's §4 follows the move, by the rename grep.
 - The Defined Terms of a change's travel have a new home, and every Borrow Table listing them follows.
 - Depth c answers the Backbone Idea's first open question, and changes its rules in their home (`TODO.md`, the item "Simulate depth c, then bring the Change idea to it").
-- "The layers of knowledge, in CBC backend design" is kept as planned, or dropped, when Change, in CBC backend design lands.
+- "The layers of knowledge, in CBC backend design" is dropped: its draft's section on what a Backend Repo keeps held only facts the Maintainer Repo's layers document and Change, in keeping knowledge already hold.
+- Defined Terms, in CBC backend design is the terms text's parent at layer 2.
+- The general layers document's §3.2 makes a shared Defined Term the one exception to an adaptation changed alone.
