@@ -1,7 +1,7 @@
 # 0087. The Change split, each Adapted Case whole
 
 Date: 2026-11-24
-Status: Proposed, opened under the commit plan for the Change split
+Status: Accepted (2026-11-25, in the final records commit of the commit plan for the Change split; since it was proposed: decisions 8 to 11 joined, taken inside the plan; the Backend Kit's *At the gate* waits for how a Backend Repo closes a Plan Step, so Change a Kit Copy's Adapted Case has no gate's part yet (decision 1))
 
 ## Context
 
@@ -22,6 +22,11 @@ Layer 3 holds one set of Adapted Cases for each Problem Domain, never shared (AD
 - **The whys left in the simulation, the layers pointing at it.** Rejected: the layers would point at a draft that is deleted.
 - **A base kit for any repo that works from Kit Copies, which the Backend Kit extends.** Rejected: it shares a set across Problem Domains, against ADR-0084, decision 5, for a second kind of project that does not exist. How a second kit reuses the group is a TODO item, its trigger that kit.
 - **Four Adapted Cases for the Maintainer Repo,** making and staging a Kit Update apart. Rejected: staging is one step of the same work, after the human's word. One Agent Skill holds both, in two stages.
+- **The Backend Kit laid out as a Backend Repo's own `.claude/`,** so delivery copies folders as they are. Rejected: Claude Code may load a nested `.claude/`, and the groups vanish. **A split by kind inside each group,** understanding apart from instructions, rejected too: an Adapted Case's two texts travel together (the layers document's §3.3).
+- **An Instruction Text in a neutral form, made final at delivery.** Rejected: Read Copy Changes compares a Kit Copy with its Backend Kit file line by line, and a conversion would show differences nobody made.
+- **The shared whys carried into each Backend Kit Adapted Understanding Text, adapted from layer 2.** Rejected by the reviewer: a Backend Repo that changes a rule is judged by the Maintainer Repo, which reads layer 2; the copies would be a second home to keep in step.
+- **Take the Kit Update as a step of a Plan Step's opening, waiting as *At the gate* does.** Rejected: it is a whole piece of work between two Plan Steps, its moment seen without the opening written, and it must be in the Backend Kit from the first Kit Update, since it is taken first.
+- **The Kit Version in an entry of a Backend Repo's record, or in each Kit Copy's header.** Rejected: the Maintainer Repo would search old entries for the newest, or read one value from many files; and the *version snapshot* cannot sit in the commit it names.
 
 ## Decision
 
@@ -35,10 +40,15 @@ Layer 3 holds one set of Adapted Cases for each Problem Domain, never shared (AD
 5. **The whys leave the simulation.** Layer 2 no longer points at it for how a rule was chosen. The simulation keeps its steps, which depth c walks, and its *Today* lines, which the rewrite reads.
 6. **One Change Set, the Maintainer Repo's side first.**
 7. **Depth c changes what it must in both halves** of every Adapted Case the split writes; Judge's before CBC Runs 4, 5 and 6 are judged.
+8. **The Backend Kit's folders:** under `knowledge/adapted-cases/cbc-backend-design/`, a folder per group, and in it a folder per Adapted Case, named after it, its texts named by their kind; the Backend Kit's Defined Terms in `defined-terms/`. Its rule is the layers document's §3.5.
+9. **Each Instruction Text in its final form:** the file as it loads in a Backend Repo. Delivery is a plain copy; where each kind lands is Deliver the Kit Update's, still open.
+10. **A Backend Kit Adapted Understanding Text holds only its own Adapted Case's whys.** The shared ones stay at layer 2; a Backend Repo that changes a rule they explain is judged by the Maintainer Repo, which reads them (2026-11-25, the reviewer).
+11. **Take the Kit Update is an Agent Skill, written now; the gate's part, *At the gate*, waits** for how a Backend Repo closes a Plan Step (`TODO.md`, the item that rewrites the Agent Model). A Backend Repo writes its Kit Version and *version snapshot* in `.claude/kit-version.md`.
 
 ## Consequences
 
 - Until the simulation goes, each why sits in it and in the layers. The layers are its home.
 - The new Agent Skills name Backend Repos and the Look for Lessons, and the exchange Agent Skills name CBC Runs. The item on CBC Runs 4, 5 and 6 says which it uses.
-- Three questions wait for their commits: what the layers of knowledge in CBC backend design hold that the Maintainer Repo's document does not; the Backend Kit's Defined Terms; the Backend Kit's folder layout and each Instruction Text's form.
+- Its three questions are answered: the layers of knowledge in CBC backend design dropped, and the Backend Kit's Defined Terms (ADR-0088, decision 9 and its consequences); the Backend Kit's folders and each Instruction Text's form (decisions 8 and 9).
+- A Backend Repo that changes a shared rule changes it without its why in front of it (decision 10).
 - A second kit copies the group for keeping knowledge, unless its TODO item decides one shared group.

@@ -1,7 +1,7 @@
 # 0088. Change, an idea of its own
 
 Date: 2026-11-24
-Status: Proposed, opened under the commit plan for the Change split
+Status: Accepted (2026-11-25, in the final records commit of the commit plan for the Change split; since it was proposed: revised so Change takes both layers documents' §4 (decision 3); decisions 9 and 10 joined, the Backend Kit's Defined Terms and a shared Defined Term's one home; the layers pictures redrawn with no comparison, their form settled before (decision 8))
 
 ## Context
 
