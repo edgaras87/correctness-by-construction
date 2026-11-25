@@ -85,11 +85,14 @@ ADR-0085's decision 4, decided on 2026-11-25: one terms text in the Backend Kit,
 **8c1. `docs: TODO holds At the gate for the close`** (landed, inserted)
 *At the gate* waits for how a Backend Repo closes a Plan Step: an Ideas line in the item that rewrites the Agent Model.
 
-**8d. `docs: the Backend Kit's Change a Kit Copy case`** (provisional)
-Change a Kit Copy's Adapted Understanding Text, and its Instruction Text, a Paths Rule that loads when a Kit Copy is touched, from the simulation's §3, step 1. The Backend Kit's terms text starts here, with the Defined Terms this case uses. The layers document's §3.5 gains the layer-3 folders. Answered before it: the folder layout, and each Instruction Text in its final form, both under *Decisions taken inside this plan*; *At the gate* waits (8c1). Asked here: whether the terms text has an Adapted Understanding Text (the layers document's §5, question 3).
+**8d. `docs: the Backend Kit's Change a Kit Copy case`** (landed)
+Change a Kit Copy's Adapted Understanding Text, and its Instruction Text, a Paths Rule that loads when a Kit Copy is touched, from the simulation's §3, step 1. The Backend Kit's terms text starts here, with the Defined Terms this case uses. The layers document's §3.5 gains the layer-3 folders. Answered before it: the folder layout, and each Instruction Text in its final form, both under *Decisions taken inside this plan*; *At the gate* waits (8c1). Asked here: whether the terms text has an Adapted Understanding Text (the layers document's §5, question 3). Answered: none; its Change Records go in its own footer, and question 3 loses that case. The Adapted Understanding Text holds only this case's own whys; the shared ones stay in Change, in CBC backend design (2026-11-25, the reviewer). Files in a case folder are named by their kind, `understanding.md` and `rule.md`; a Kit Copy is told by its header.
 
-**8e. `docs: Change a Kit Copy keeps what it hands on`** (provisional)
-Change, in keeping knowledge, its Change a Kit Copy section cut to the Maintainer Repo's view, as commit 4.
+**8d1. `chore(agent): follow the Backend Kit's first case`** (landed, inserted)
+The Defined Terms Paths Rule leaves out the Backend Kit's files; Deliver the Kit Update's understanding gains the open point on where each kind of Backend Kit file lands; its `.claude/decisions.md` entry.
+
+**8e. `docs: Change a Kit Copy keeps what it hands on`** (landed)
+Change, in keeping knowledge, its Change a Kit Copy section cut to the Maintainer Repo's view, as commit 4. *At the gate* stays there until the Backend Kit's own is written, since part of it has no other home yet: add, then cut.
 
 **8f. `docs: the Backend Kit's Take the Kit Update case`** (provisional)
 Understanding and Instruction Text, from the simulation's §8.
