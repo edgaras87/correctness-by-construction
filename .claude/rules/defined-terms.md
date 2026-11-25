@@ -11,7 +11,7 @@ paths:
 
 # Defined Terms
 
-**Governs:** the Defined Terms of a text under `knowledge/` or `.claude/understanding/`, or of an Agent Skill or Agent Rule built on one there: how each is found, defined and borrowed. How a text reads is the writing rule's.
+**Governs:** the Defined Terms of a text under `knowledge/` or `.claude/understanding/`, or of an Agent Skill or Agent Rule built on one there: how each is found, defined and borrowed. Not the Backend Kit's files under `knowledge/adapted-cases/`: they find each Defined Term in the Backend Kit's Defined Terms (`knowledge/problem-domain-ideas/cbc-backend-design/defined-terms-in-cbc-backend-design.md` §2, *Where a Backend Repo finds one*). How a text reads is the writing rule's.
 
 Borrowed:
 
@@ -19,6 +19,7 @@ Borrowed:
 |---|---|
 | Agent Rule | `docs/conventions/agent-arrangement/` §3.2, *`.claude/rules/`* |
 | Agent Skill | `docs/conventions/agent-arrangement/` §3.1, *`.claude/skills/`* |
+| Backend Kit | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Borrow Table | `knowledge/problem-domain-ideas/keeping-knowledge/defined-terms-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Defined Term | `knowledge/backbone-ideas/defined-terms.md` §1, *Its Defined Terms* |
 | Glossary Name | `docs/conventions/writing/` §2, *Why each rule*, rule 9 |
@@ -40,3 +41,4 @@ Each rule's source is `knowledge/problem-domain-ideas/keeping-knowledge/defined-
 
 - ADR-0085 — Defined Terms at their homes; this Paths Rule is this repo's Instruction Text for them
 - ADR-0084 — this repo's own Adapted Cases kept whole in `.claude/`
+- ADR-0088 — the Backend Kit's files find their Defined Terms in its own terms text, so this Paths Rule leaves them out

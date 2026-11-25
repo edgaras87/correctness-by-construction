@@ -23,11 +23,13 @@ Borrowed:
 | Backend Kit | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Backend Repo | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Copy Change | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
+| Defined Term | `knowledge/backbone-ideas/defined-terms.md` §1, *Its Defined Terms* |
 | Instruction Text | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
 | Kit Update | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Kit Version | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Look for Lessons | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Maintainer Repo | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
+| Paths Rule | `docs/conventions/agent-arrangement/` §5.6, *Rules files* |
 | Plan Step | `docs/conventions/project-recording/` §2.1, *What a plan is* |
 | Update Note | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Update Take | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
@@ -58,3 +60,4 @@ Its moments are the human's words: naming a Backend Repo to update, once its Loo
 ## 6. Open
 
 - A second check of what was staged, as at birth. Its trigger: a staged file found, after an Update Take, to differ from the Backend Kit.
+- Where each kind of Backend Kit file lands in a Backend Repo: an Instruction Text where its kind loads, such as a Paths Rule in `.claude/rules/`, an Adapted Understanding Text in `.claude/understanding/`, and the Backend Kit's Defined Terms in a place not yet set. The Agent Skill does not yet say it. Its trigger: the first Kit Update that carries a file from `knowledge/adapted-cases/`.

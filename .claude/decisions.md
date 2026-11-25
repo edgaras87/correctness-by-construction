@@ -1331,3 +1331,11 @@
   Rejected: two Adapted Cases, making and staging apart; understanding
   only, the exchange-deliver Agent Skill doing the work until the
   rewrite (ADR-0087).
+
+- 2026-11-25 The Defined Terms Paths Rule, `.claude/rules/defined-terms.md`,
+  leaves out the Backend Kit's files under `knowledge/adapted-cases/`:
+  they find each Defined Term in the Backend Kit's Defined Terms, not
+  in a Borrow Table.
+  Why: ADR-0088, decision 9.
+  Rejected: a Borrow Table in each Backend Kit file, every row
+  pointing at the terms text.
