@@ -1180,12 +1180,13 @@
 - [ ] Judge the Conversation Memory trial (2026-11-01, the
       refinement's last read).
       Context: project-recording put `TODO-CONVERSATION-MEMORY.md` on
-      trial, to be judged when its third item was worked with its
-      section in hand (`docs/conventions/project-recording/` §14,
-      *Conversation Memory*). The third was worked by
-      2026-10-29, and no one judged it. If it holds, it reaches CBC
-      Runs through the Container Group; if not, it goes.
-      Trigger: the close of the refinement Plan Step.
+      trial (`docs/conventions/project-recording/` §14,
+      *Conversation Memory*). The trial runs on as it is, three
+      forms included, and is judged later, on the reviewer's word.
+      If it holds, it reaches CBC Runs through the Container Group;
+      if not, it goes.
+      Trigger: the rewrite of today's repo into the layers model
+      (ADR-0082) reaches the records.
       See: devlog 2026-11-01, the last read's work.
 
 - [ ] Decide whether a delivery checks its paths against the CBC Run's
