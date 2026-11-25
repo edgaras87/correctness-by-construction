@@ -505,7 +505,15 @@
         Backbone Idea layer*);
       - `CLAUDE.md` comes in whole then, its Local Rule among its
         lines: no understanding text for one line before the rest
-        (2026-11-23, the reviewer).
+        (2026-11-23, the reviewer);
+      - the Backend Kit's *At the gate*, the gate's part of closing
+        one of the Backend Repo's Plan Steps, is written with how a
+        Backend Repo closes a Plan Step, in how an agent works, in
+        CBC backend design. Its form, an Agent Skill or a step of
+        the close, is decided then. Its why stands in
+        `knowledge/problem-domain-ideas/cbc-backend-design/change-in-cbc-backend-design.md`
+        §2, *Changing a Kit Copy*; its steps in the simulation's §3,
+        step 2 (2026-11-25, the reviewer).
       Trigger: with the concept's split.
       See: devlog 2026-11-16 and 2026-11-18, layers 3 and 4 read back.
 
