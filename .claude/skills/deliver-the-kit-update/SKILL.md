@@ -28,7 +28,7 @@ Borrowed:
 ## Stage 1 — is one due
 
 1. Check that a Look for Lessons ran at this Backend Repo, to its end, since the human named it to update. If not, run it first: the read-copy-changes Agent Skill, then the judge-copy-changes Agent Skill.
-2. Compare the Backend Repo's Kit Version, read from its *settled snapshot*, with the newest. Compare the Backend Kit's files at the two commits, never the commits themselves. If the Backend Repo's is the newest, say so, and stop.
+2. Compare the Backend Repo's Kit Version, read from `.claude/kit-version.md` at its *settled snapshot*, with the newest. Compare the Backend Kit's files at the two commits, never the commits themselves. If the Backend Repo's is the newest, say so, and stop.
 3. Check that none of the Backend Repo's Plan Steps is open. If one is, say so, and stop: make nothing.
 
 ## Stage 2 — make it

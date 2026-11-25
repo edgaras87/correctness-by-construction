@@ -27,7 +27,7 @@ Borrowed:
 
 ## Stage 1 — the two snapshots
 
-1. Take the Backend Repo's *settled snapshot* from the Repo Register: the older snapshot. If an Update Take came since, start at its *version snapshot* instead, found at the Backend Repo's main.
+1. Take the Backend Repo's *settled snapshot* from the Repo Register: the older snapshot. If an Update Take came since, start at its *version snapshot* instead, found in `.claude/kit-version.md` at the Backend Repo's main.
 2. Name the stop: the commit the Backend Repo's main stands at now. Compare everything against that commit, never against main as it moves.
 
 ## Stage 2 — did main move
