@@ -3,7 +3,7 @@
 <!--
 What it is: a Problem Domain Idea of the Backend Repos' Problem Domain, CBC backend design, and its one home (knowledge/backbone-ideas/layers-of-knowledge.md §3.2, The Problem Domain layer). Still a draft and a trial: practice changes it.
 What it stands on: knowledge/backbone-ideas/change.md, the Backbone Idea it is adapted from. It adapts that document, and never retells it. Where each layer is kept, and what the Backend Kit holds, are knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md's.
-What stands on it: the Backend Kit's Adapted Cases for keeping knowledge, under knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/: knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/change-a-kit-copy/understanding.md, from §2.
+What stands on it: the Backend Kit's Adapted Cases for keeping knowledge, under knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/: knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/change-a-kit-copy/understanding.md, from §2; knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/take-the-kit-update/understanding.md, from §3.
 Its place in the repo: knowledge/problem-domain-ideas/cbc-backend-design/ (ADR-0084). It is kept in the Maintainer Repo, and never copied to a Backend Repo.
 Where it started: the Backend Repo's parts of how a change travels, knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md §3.1, Change a Kit Copy, and §3.6, Take the Kit Update (ADR-0087). Drafted as the layers of knowledge, in CBC backend design, it held only change, and was renamed (ADR-0088).
 Its first source, input and not rules: temp/common-ground/backend-repo-change-simulation.md §3 and §8, each step's Chosen.
@@ -70,7 +70,7 @@ Borrowed:
 
 **When the Backend Kit moves on.** The Backend Kit may move after the Kit Update is made. That is no reason to refuse the Kit Update: it is correct, if not the latest, and the next brings the rest.
 
-**What is taken.** The Adapted Case for taking a Kit Update is taken first, on its own, so the rest is taken by the new one (`temp/common-ground/common-ground-problem.md` §4, Failure Case 10). Every Kit Copy is then taken whole, at the new Kit Version. A part the Backend Repo never changed is taken, and work shows whether it fits. A Kit Copy taken whole takes its Change Records away with it. Nothing is lost: main is the *settled snapshot*, so each was read and judged. Kept, a Change Record would say how its Kit Copy differed from the old Backend Kit: after the Update Take some would describe nothing, and none would say how the Kit Copy differs from the new one. The new Kit Version is recorded, with its *version snapshot*: the commit where every Kit Copy stands at it.
+**What is taken.** The Adapted Case for taking a Kit Update is taken first, on its own, so the rest is taken by the new one (`temp/common-ground/common-ground-problem.md` §4, Failure Case 10). Every Kit Copy is then taken whole, at the new Kit Version. A part the Backend Repo never changed is taken, and work shows whether it fits. A Kit Copy taken whole takes its Change Records away with it. Nothing is lost: main is the *settled snapshot*, so each was read and judged. Kept, a Change Record would say how its Kit Copy differed from the old Backend Kit: after the Update Take some would describe nothing, and none would say how the Kit Copy differs from the new one. The new Kit Version is recorded, with its *version snapshot*: the commit where every Kit Copy stands at it. Both are written in `.claude/kit-version.md`, a file of its own, rewritten at each Update Take, so the Maintainer Repo finds them at one fixed path.
 
 **What a Change Record stands against.** Every Change Record stands against the last Kit Version taken, or birth's, and every Change Record goes at an Update Take. This is confirmed at the first Kit Update to reach a Backend Repo whose Kit Copies have Change Records.
 
@@ -79,7 +79,7 @@ Borrowed:
 The Backend Kit's, in its group for keeping knowledge, each written from this document:
 - for changing a Kit Copy, `knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/change-a-kit-copy/`. It loads when a Kit Copy is touched;
 - the gate's part of closing one of the Backend Repo's Plan Steps, *At the gate*, written with how a Backend Repo closes a Plan Step (`TODO.md`, the item that rewrites the Agent Model);
-- for taking a Kit Update, itself in the Kit Update and taken first.
+- for taking a Kit Update, `knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/take-the-kit-update/`, itself in the Kit Update and taken first.
 
 ## 5. Open questions
 
