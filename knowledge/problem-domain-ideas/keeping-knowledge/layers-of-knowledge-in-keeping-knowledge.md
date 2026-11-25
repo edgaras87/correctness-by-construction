@@ -150,7 +150,7 @@ The Backend Repos' Problem Domain. The Maintainer Repo keeps its Problem Domain 
 |---|---|---|---|
 | CBC design, in CBC backend design | CBC design | backends as the kind of system | planned, from `concept/` (`TODO.md`, the item that splits the concept) |
 | How an agent works, in CBC backend design | How an agent works | not yet known | planned (`TODO.md`, the item that rewrites the Agent Model) |
-| Defined Terms, in CBC backend design | Defined Terms | the Backend Kit's Defined Terms, read in a Backend Repo without layers 1 and 2 | planned, with the first Adapted Case for the Backend Repos (ADR-0085, decision 4) |
+| Defined Terms, in CBC backend design | Defined Terms | the Backend Kit's Defined Terms, read in a Backend Repo without layers 1 and 2 | `knowledge/problem-domain-ideas/cbc-backend-design/defined-terms-in-cbc-backend-design.md` |
 | Change, in CBC backend design | Change | how a Backend Repo changes a Kit Copy, and takes a Kit Update | `knowledge/problem-domain-ideas/cbc-backend-design/change-in-cbc-backend-design.md` |
 
 ### 3.3 The Adapted Case layer
