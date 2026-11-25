@@ -94,11 +94,14 @@ The Defined Terms Paths Rule leaves out the Backend Kit's files; Deliver the Kit
 **8e. `docs: Change a Kit Copy keeps what it hands on`** (landed)
 Change, in keeping knowledge, its Change a Kit Copy section cut to the Maintainer Repo's view, as commit 4. *At the gate* stays there until the Backend Kit's own is written, since part of it has no other home yet: add, then cut.
 
-**8f. `docs: the Backend Kit's Take the Kit Update case`** (provisional)
-Understanding and Instruction Text, from the simulation's §8.
+**8f. `docs: the Backend Kit's Take the Kit Update case`** (landed)
+Understanding and Instruction Text, from the simulation's §8. Answered: an Agent Skill, written now, not waiting as *At the gate* does: a whole piece of work between two Plan Steps, its moment a Kit Update in `temp/` and the human's word. The Kit Version and the *version snapshot* are written in `.claude/kit-version.md`, a file of its own, rewritten at each Update Take; at birth, the Kit Version alone (2026-11-25, the reviewer).
 
-**8g. `docs: Take the Kit Update keeps what it hands on`** (provisional)
-Change, in keeping knowledge, its Take the Kit Update section cut to the Maintainer Repo's view, as commit 4.
+**8f1. `chore(agent): skills read .claude/kit-version.md`** (landed, inserted)
+Read Copy Changes and Deliver the Kit Update read the two values from that path.
+
+**8g. `docs: Take the Kit Update keeps what it hands on`** (landed)
+Change, in keeping knowledge, its Take the Kit Update section cut to the Maintainer Repo's view, as commit 4. The six items stay, against the first sort: Read Copy Changes relies on items 2, 4 and 6, and on main moving only at a gate.
 
 **8h. `docs: the cases take their whys`** (provisional)
 How each case and depth was weighed, from the simulation's §2, into Change, in keeping knowledge, its cases section. No pointer from the layers to the simulation stays.
@@ -154,10 +157,10 @@ After the sweep and the look back. The body names what diverged.
     - every Kit Copy taken whole, every Change Record going with it, and why: CK, since Read relies on it, and CB;
     - the *version snapshot* recorded: CK and CB;
     - when the Backend Kit moves on: CB;
-    - the branch, items 1 to 6, the gate last, and why: Kit;
+    - the branch, items 1 to 6, the gate last, and why: Kit; the items stay in CK too, since Read relies on them (8g);
     - the open points on finished work under a changed rule, dropping an open step, and asking at each opening: CB;
     - the open point on postponing a staged Kit Update: CK;
-    - where the Kit Version and the *version snapshot* are written: Kit, its trigger firing at 8f.
+    - where the Kit Version and the *version snapshot* are written: Kit, its trigger firing at 8f; answered there, `.claude/kit-version.md`, in CK and CB too, since Read and Deliver rely on it.
   - The gate is part of how a Backend Repo closes any Plan Step; only *At the gate* belongs here. Answered on 2026-11-25: it waits for the close, in how an agent works, in CBC backend design (8c1).
 - **What moves with Change, a first sort,** decided at 8a3: the Defined Terms of a change's travel, Copy Change, Change Record, Kit Update, Update Note, Update Take, Kit Version, Look for Lessons, Repo Reading, Repo Register, Attention Note and their short forms; §4.2 and §4.3; §5's questions 2, 3, 4, 10 and 11. Staying in the layers document: Backend Kit, Kit Copy, Backend Repo, Maintainer Repo; §3; the arrows of §4.1; the picture.
 - **Section numbers change with the move.** The plan names the moved sections by title from 8a3 on.
