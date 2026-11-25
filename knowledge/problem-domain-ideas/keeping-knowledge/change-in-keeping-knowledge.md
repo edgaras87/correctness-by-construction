@@ -48,11 +48,11 @@ Borrowed:
 
 ## 2. The arrows
 
-- **adapt,** **lesson** and **set apart,** between layers 1, 2 and 3: as Change has them (`knowledge/backbone-ideas/change.md` §4, *The arrows*). A lesson, or a part set apart, can come from either column.
+- **adapt,** **lesson** and **set apart,** between layers 1, 2 and 3: as Change has them (`knowledge/backbone-ideas/change.md` §4, *The arrows*). A lesson, or a part set apart, can come from the Backend Kit's Adapted Cases or from the Maintainer Repo's own.
 - **birth,** layer 3 to layer 4: a new Backend Repo receives Kit Copies of the Backend Kit, at one Backend Kit Version.
 - **Kit Update,** layer 3 to layer 4: a Backend Kit Update (the layers document's §3) brings a Backend Repo's Kit Copies to a newer Backend Kit Version. The Backend Repo takes it by its own Kit Copy of the Adapted Case for taking a Kit Update.
 - **Copy Change, read back,** layer 4 to layer 3: a Backend Repo changes a Kit Copy and records why. The Maintainer Repo reads it back and judges it against the Adapted Case the Kit Copy came from.
-- **adapt,** **lesson** and **set apart,** between layer 2 and layer 4, in the right column: the Maintainer Repo's own Adapted Cases are written from its Problem Domain Ideas, and its lessons, and the parts it sets apart, go up to them (`knowledge/backbone-ideas/change.md` §4, *The arrows*).
+- **adapt,** **lesson** and **set apart,** between layer 2 and layer 4, for the Maintainer Repo's own Adapted Cases: they are written from its Problem Domain Ideas, and its lessons, and the parts it sets apart, go up to them (`knowledge/backbone-ideas/change.md` §4, *The arrows*).
 
 ## 3. How a change travels
 
@@ -85,7 +85,7 @@ Each of the simulation's depths names the highest layer a Copy Change reaches (�
 | e. it asks to narrow the idea above | *Copy Change, read back*; *Kit Update* |
 | f. several Adapted Cases need it, but not all | *Copy Change, read back*; *Kit Update* |
 
-Depth f's gap, text shared by several Adapted Cases of one Problem Domain but not all, is the simulation's (§3.7, its row f).
+Depth f's gap, text shared by several Adapted Cases of one Problem Domain but not all, is §3.7's, its row f.
 
 ### 3.1 Change a Kit Copy
 
@@ -268,7 +268,7 @@ Birth stays outside, as the start: it gives a Backend Repo its first Kit Copies 
 
 ## 4. The Maintainer Repo's lessons
 
-A lesson from the Maintainer Repo's own work starts in layer 4 of the right column. Since that work is done by its own Adapted Cases, kept with it, the lesson changes its own Adapted Case at once. It is then judged as a Copy Change read back is, by whether the idea above already holds it and how high it is true, and goes up the arrow *lesson* as far as it holds (§3.3). If it reaches layer 1, it comes down the arrow *adapt*, to the Backend Repos' Adapted Cases too, and reaches Backend Repos by a Kit Update.
+A lesson from the Maintainer Repo's own work starts in layer 4. Since that work is done by its own Adapted Cases, kept with it, the lesson changes its own Adapted Case at once. It is then judged as a Copy Change read back is, by whether the idea above already holds it and how high it is true, and goes up the arrow *lesson* as far as it holds (§3.3). If it reaches layer 1, it comes down the arrow *adapt*, to the Backend Repos' Adapted Cases too, and reaches Backend Repos by a Kit Update.
 
 It has no Read Copy Changes, Deliver the Kit Update or Take the Kit Update of its own: nothing crosses between repos until a Kit Update carries it to a Backend Repo.
 
