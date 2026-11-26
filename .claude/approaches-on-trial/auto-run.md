@@ -141,8 +141,8 @@ will say.
 
 CBC Run 6 ran through Release and closed a Step 15 after it: 7
 Invariant Slices, 233 commits on main and 254 across its branches,
-tag `v0.1.0`. What it taught is not yet known: it is unread, and
-its reading is the Plan Step in `PLAN.md` that reads and judges CBC Runs 4, 5 and 6.
+tag `v0.1.0`. What it taught is in its CBC Run Reading,
+`temp/reading-run-6-2026-11-26.md`, judged with CBC Runs 4 and 5 (ADR-0089).
 
 Not known still: as for CBC Run 5, and whether a larger CBC Run
 Briefing holds on full auto.
