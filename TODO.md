@@ -705,16 +705,15 @@
       Context: drafted for CBC Run 5 and used twice, for CBC Runs 5
       and 6 (`.claude/approaches-on-trial/auto-run.md`, its use note;
       CBC Run 6's note written at its CBC Run Birth's close, `e5bb8ca`). Its
-      open questions are CBC Run 5's CBC Run Reading's to answer: what in the
-      CBC Run Hand-off is general enough for the Container Group, and whether the
-      light read of the last CBC Run cost CBC Run 5 anything. Evaluated
-      before that, every piece would end on trial and be judged
-      again.
-      Trigger: CBC Runs 4, 5 and 6 read and judged, CBC Run 5's nine
-               lessons for the auto-run Approach on Trial among the
-               findings (`PLAN.md`, the Plan Step that reads and
-               judges them).
-      See: devlog 2026-10-22.
+      open questions: what in the CBC Run Hand-off is general enough for
+      the Container Group, and whether the light read of the last CBC
+      Run cost anything. The judging of CBC Runs 4, 5 and 6 gathered its
+      evidence: full auto held in all three; the reviewer's message
+      mid-run; the run file against the delivered forms; CBC Run 5's
+      nine lessons for the next CBC Run; decision logs nobody read.
+      Trigger: the next full-auto CBC Run's hand-off is prepared.
+      See: devlog 2026-10-22; `temp/reading-run-6-2026-11-26.md` §6,
+      *The work*.
 
 - [ ] Decide how a Work Approach and an Output Shape divide an output: the
       Work Approach says what is done, the Output Shape how its output looks
