@@ -144,7 +144,7 @@ work.
 
 Goal: every part of the repo-hygiene manual, and of the texts that
 wait on it alone, stands at its layer, and the manual is gone.
-Now: stage 4, this repo's own Adapted Case.
+Now: stage 5, the manual goes.
 Gate:
 
 **At the opening.**
@@ -175,10 +175,11 @@ Gate:
       its Instruction Text, and its why is its Adapted Understanding
       Text (the map's QUESTION-4, *Why it arrives this way*)
       (2026-11-26).
-- [ ] This repo's three files are its own Adapted Case at layer 4
+- [x] This repo's three files are its own Adapted Case at layer 4
       (§3.4, *The layer of a repo's work*): the files at its root, and
       an Adapted Understanding Text in `.claude/understanding/` only
-      if they have a why of their own.
+      if they have a why of their own (2026-11-26, its why in
+      `.claude/understanding/repo-hygiene.md`, `2262166b`).
 - [ ] Each part the map's §9 lists for the manual has landed, or was
       judged not needed, and the commit that ends it names where.
 - [ ] The manual and its `templates/` directory are gone, and every

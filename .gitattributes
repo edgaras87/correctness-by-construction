@@ -4,7 +4,3 @@
 
 # Set default behavior to automatically normalize line endings.
 * text=auto eol=lf
-
-# ======================================================================
-# Stack Overlays — appended below this line at app bootstrap
-# ======================================================================
