@@ -214,6 +214,21 @@
       Trigger: CBC Runs 4, 5 and 6 judged.
       See: devlog 2026-11-23, the order before the rewrite.
 
+- [ ] Decide whether the rewrite takes the Approaches on Trial and
+      check scripts the CBC Runs wrote (2026-11-26, the judging of
+      CBC Runs 4, 5 and 6).
+      Context: four Approaches on Trial were offered: birth (CBC Runs
+      5 and 6), checks and identity (CBC Run 5), release (CBC Runs 5
+      and 6). The CBC Runs wrote their own check scripts, such as a
+      fresh-clone check, a commit guard and a close tool. CBC Run 6's
+      records check could not fail for four steps: a check is seen
+      failing before it is trusted. Held, not evaluated: the rewrite
+      may replace the texts they would change (ADR-0089).
+      Trigger: the map decides whether the rewrite's kit ships
+      Approaches on Trial and check scripts.
+      See: `temp/reading-run-6-2026-11-26.md` §5, *Decisions*; devlog
+      2026-11-26.
+
 - [ ] Decide what becomes of the branch `experiment-simulation-auto`
       (2026-11-19, the reviewer).
       Context: 9 commits on the simulation, of 2026-11-12, kept, not
