@@ -255,7 +255,8 @@ record whose entries are history is mapped by its form. A pair, ours
 and the shipped copy, takes one line. **Parts:** what the text holds.
 **Layer:** where each part goes
 (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md`
-§3.5, *Where each layer is kept*), or the question that keeps it open.
+§3.5, *Where each layer is kept*), or the question that keeps it open;
+"in place" when the text already sits at its layer, by its path.
 **Needs first:** the texts rewritten before it, or none.
 
 | Text | Parts | Layer | Needs first |
@@ -267,7 +268,7 @@ and the shipped copy, takes one line. **Parts:** what the text holds.
 | `.claude/approaches-on-trial/refinement.md` | | | |
 | `.claude/decisions.md` and `delivery/container/.claude/decisions.md`, its form | | | |
 | `.claude/rules/convention-manual.md` | | | |
-| `.claude/rules/defined-terms.md` | | | |
+| `.claude/rules/defined-terms.md` | our Defined Terms: the Instruction Text, a Paths Rule | 4, in place | none |
 | `.claude/rules/exchange-reading.md` | | | |
 | `.claude/rules/foundation-check.md` | | | |
 | `.claude/rules/one-home.md` and `delivery/container/.claude/rules/one-home.md` | | | |
@@ -275,16 +276,16 @@ and the shipped copy, takes one line. **Parts:** what the text holds.
 | `.claude/rules/writing.md` and `delivery/container/.claude/rules/writing.md` | | | |
 | `.claude/skills/commit-messages/SKILL.md` and `delivery/container/.claude/skills/commit-messages/SKILL.md` | | | |
 | `.claude/skills/commit-plan/SKILL.md` and `delivery/container/.claude/skills/commit-plan/SKILL.md` | | | |
-| `.claude/skills/deliver-the-kit-update/SKILL.md` | | | |
+| `.claude/skills/deliver-the-kit-update/SKILL.md` | our Deliver the Kit Update: the Instruction Text, an Agent Skill | 4, in place | none |
 | `.claude/skills/exchange-deliver/SKILL.md` | | | |
 | `.claude/skills/exchange-read/SKILL.md` | | | |
-| `.claude/skills/judge-copy-changes/SKILL.md` | | | |
-| `.claude/skills/read-copy-changes/SKILL.md` | | | |
+| `.claude/skills/judge-copy-changes/SKILL.md` | our Judge Copy Changes: the Instruction Text, an Agent Skill | 4, in place | none |
+| `.claude/skills/read-copy-changes/SKILL.md` | our Read Copy Changes: the Instruction Text, an Agent Skill | 4, in place | none |
 | `.claude/skills/visual-comparison/SKILL.md` and `delivery/container/.claude/skills/visual-comparison/SKILL.md` | | | |
-| `.claude/understanding/defined-terms.md` | | | |
-| `.claude/understanding/deliver-the-kit-update.md` | | | |
-| `.claude/understanding/judge-copy-changes.md` | | | |
-| `.claude/understanding/read-copy-changes.md` | | | |
+| `.claude/understanding/defined-terms.md` | our Defined Terms: the Adapted Understanding Text | 4, in place | none |
+| `.claude/understanding/deliver-the-kit-update.md` | our Deliver the Kit Update: the Adapted Understanding Text | 4, in place | none |
+| `.claude/understanding/judge-copy-changes.md` | our Judge Copy Changes: the Adapted Understanding Text | 4, in place | none |
+| `.claude/understanding/read-copy-changes.md` | our Read Copy Changes: the Adapted Understanding Text | 4, in place | none |
 | `.editorconfig` and `delivery/container/.editorconfig` | | | |
 | `.gitattributes` and `delivery/container/.gitattributes` | | | |
 | `.gitignore` and `delivery/container/.gitignore` | | | |
@@ -380,19 +381,19 @@ and the shipped copy, takes one line. **Parts:** what the text holds.
 | `docs/models/agent.md` | | | |
 | `docs/models/idea-to-output.md` | | | |
 | `docs/models/tiers.md` | | | |
-| `knowledge/adapted-cases/cbc-backend-design/defined-terms/defined-terms.md` | | | |
-| `knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/change-a-kit-copy/rule.md` | | | |
-| `knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/change-a-kit-copy/understanding.md` | | | |
-| `knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/take-the-kit-update/SKILL.md` | | | |
-| `knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/take-the-kit-update/understanding.md` | | | |
-| `knowledge/backbone-ideas/change.md` | | | |
-| `knowledge/backbone-ideas/defined-terms.md` | | | |
-| `knowledge/backbone-ideas/layers-of-knowledge.md` | | | |
-| `knowledge/problem-domain-ideas/cbc-backend-design/change-in-cbc-backend-design.md` | | | |
-| `knowledge/problem-domain-ideas/cbc-backend-design/defined-terms-in-cbc-backend-design.md` | | | |
-| `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` | | | |
-| `knowledge/problem-domain-ideas/keeping-knowledge/defined-terms-in-keeping-knowledge.md` | | | |
-| `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` | | | |
+| `knowledge/adapted-cases/cbc-backend-design/defined-terms/defined-terms.md` | the Backend Kit's Defined Terms, an Instruction Text alone | 3, in place | none |
+| `knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/change-a-kit-copy/rule.md` | changing a Kit Copy: its Instruction Text, a Paths Rule | 3, in place | none |
+| `knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/change-a-kit-copy/understanding.md` | changing a Kit Copy: its Adapted Understanding Text | 3, in place | none |
+| `knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/take-the-kit-update/SKILL.md` | taking a Kit Update: its Instruction Text, an Agent Skill | 3, in place | none |
+| `knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/take-the-kit-update/understanding.md` | taking a Kit Update: its Adapted Understanding Text | 3, in place | none |
+| `knowledge/backbone-ideas/change.md` | the Backbone Idea of change | 1, in place | none |
+| `knowledge/backbone-ideas/defined-terms.md` | the Backbone Idea of Defined Terms | 1, in place | none |
+| `knowledge/backbone-ideas/layers-of-knowledge.md` | the Backbone Idea of the layers | 1, in place | none |
+| `knowledge/problem-domain-ideas/cbc-backend-design/change-in-cbc-backend-design.md` | change, in CBC backend design | 2, in place | none |
+| `knowledge/problem-domain-ideas/cbc-backend-design/defined-terms-in-cbc-backend-design.md` | Defined Terms, in CBC backend design | 2, in place | none |
+| `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` | change, in keeping knowledge | 2, in place | none |
+| `knowledge/problem-domain-ideas/keeping-knowledge/defined-terms-in-keeping-knowledge.md` | Defined Terms, in keeping knowledge | 2, in place | none |
+| `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` | the layers, in keeping knowledge | 2, in place | none |
 | `temp/README.md` | | | |
 | `temp/common-ground/backend-repo-change-flow.md` | | | |
 | `temp/common-ground/backend-repo-change-simulation.md` | | | |

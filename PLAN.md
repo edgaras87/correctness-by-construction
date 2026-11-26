@@ -145,7 +145,7 @@ work.
 Goal: the rewrite has a map of today's Maintainer Repo: each text of
 Living Text, the parts it holds, the layer each part goes to, and which
 text needs another first; and every TODO item due at the map has ended.
-Now: stage 2, the inventory brought up to date.
+Now: stage 3, each text's parts, their layers, and what each needs first.
 Gate:
 
 **At the opening.**
