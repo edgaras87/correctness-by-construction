@@ -261,38 +261,38 @@ and the shipped copy, takes one line. **Parts:** what the text holds.
 
 | Text | Parts | Layer | Needs first |
 |---|---|---|---|
-| `.claude/approaches-on-trial/approach-drafting.md` and `delivery/container/.claude/approaches-on-trial/approach-drafting.md` | | | |
-| `.claude/approaches-on-trial/approach-evaluation.md` | | | |
-| `.claude/approaches-on-trial/auto-run.md` | | | |
-| `.claude/approaches-on-trial/model-placing.md` | | | |
-| `.claude/approaches-on-trial/refinement.md` | | | |
+| `.claude/approaches-on-trial/approach-drafting.md` and `delivery/container/.claude/approaches-on-trial/approach-drafting.md` | trying a new way of working, its idea written only here (§3); the stages | idea: 1 or 2, with §8's approach-drafting row; ours: 4; the CBC Run's copy: 3 | none |
+| `.claude/approaches-on-trial/approach-evaluation.md` | trying a new way of working: judging an Approach on Trial and placing its pieces | 4 | `.claude/approaches-on-trial/approach-drafting.md` |
+| `.claude/approaches-on-trial/auto-run.md` | a CBC Run on full auto: preparing it and its birth | 4, on trial; TODO's "Evaluate the auto-run Approach on Trial" waits | `delivery/installs/pure-seed.md` |
+| `.claude/approaches-on-trial/model-placing.md` | an Idea Model taking what it borrows from a text below it | QUESTION-5 | none |
+| `.claude/approaches-on-trial/refinement.md` | bringing old text up to a new rule: Refinement Rounds, Finding Kinds, the last read | idea: 1 or 2; the stages: 4 | none |
 | `.claude/decisions.md` and `delivery/container/.claude/decisions.md`, its form | the Decisions Log's form; the entries are history | form: 4, open (QUESTION-1) | `docs/conventions/agent-arrangement/` |
-| `.claude/rules/convention-manual.md` | | | |
+| `.claude/rules/convention-manual.md` | the manual's form, as an Agent Rule | QUESTION-4; QUESTION-5 | `docs/conventions/conventions/` |
 | `.claude/rules/defined-terms.md` | our Defined Terms: the Instruction Text, a Paths Rule | 4, in place | none |
-| `.claude/rules/exchange-reading.md` | | | |
-| `.claude/rules/foundation-check.md` | | | |
-| `.claude/rules/one-home.md` and `delivery/container/.claude/rules/one-home.md` | | | |
-| `.claude/rules/working-a-reading.md` | | | |
-| `.claude/rules/writing.md` and `delivery/container/.claude/rules/writing.md` | | | |
-| `.claude/skills/commit-messages/SKILL.md` and `delivery/container/.claude/skills/commit-messages/SKILL.md` | | | |
-| `.claude/skills/commit-plan/SKILL.md` and `delivery/container/.claude/skills/commit-plan/SKILL.md` | | | |
+| `.claude/rules/exchange-reading.md` | the CBC Run Reading's form | 4: each part to our change Adapted Case in place that holds it, the rest beside them | `docs/conventions/exchange/` |
+| `.claude/rules/foundation-check.md` | the check before a commit | 4 | `docs/conventions/facts-in-sync/` |
+| `.claude/rules/one-home.md` and `delivery/container/.claude/rules/one-home.md` | where a fact lives, as an Agent Rule | ours: 4; the CBC Run's copy: 3, its instruction side | `docs/conventions/facts-in-sync/` |
+| `.claude/rules/working-a-reading.md` | working a CBC Run Reading's list | 4: each part to our change Adapted Case in place that holds it, the rest beside them; the lessons in §7 of the three CBC Run Readings land here | `docs/conventions/exchange/` |
+| `.claude/rules/writing.md` and `delivery/container/.claude/rules/writing.md` | how a text reads, as an Agent Rule | ours: 4; the CBC Run's copy: 3, its instruction side; rule 9: QUESTION-2 | `docs/conventions/writing/` |
+| `.claude/skills/commit-messages/SKILL.md` and `delivery/container/.claude/skills/commit-messages/SKILL.md` | writing a commit message | ours: 4; the CBC Run's copy: 3, its instruction side | `docs/conventions/commit-messages/` |
+| `.claude/skills/commit-plan/SKILL.md` and `delivery/container/.claude/skills/commit-plan/SKILL.md` | work of more than one commit | ours: 4; the CBC Run's copy: 3, its instruction side | `docs/conventions/commit-plan/` |
 | `.claude/skills/deliver-the-kit-update/SKILL.md` | our Deliver the Kit Update: the Instruction Text, an Agent Skill | 4, in place | none |
-| `.claude/skills/exchange-deliver/SKILL.md` | | | |
-| `.claude/skills/exchange-read/SKILL.md` | | | |
+| `.claude/skills/exchange-deliver/SKILL.md` | delivering to a CBC Run | 4: each part to our change Adapted Case in place that holds it, the rest beside them; a later update to a CBC Run born before names the renames in its Delivery Note, once | `docs/conventions/exchange/` |
+| `.claude/skills/exchange-read/SKILL.md` | reading a CBC Run | 4: each part to our change Adapted Case in place that holds it, the rest beside them; the lessons in §7 of the three CBC Run Readings land here | `docs/conventions/exchange/` |
 | `.claude/skills/judge-copy-changes/SKILL.md` | our Judge Copy Changes: the Instruction Text, an Agent Skill | 4, in place | none |
 | `.claude/skills/read-copy-changes/SKILL.md` | our Read Copy Changes: the Instruction Text, an Agent Skill | 4, in place | none |
-| `.claude/skills/visual-comparison/SKILL.md` and `delivery/container/.claude/skills/visual-comparison/SKILL.md` | | | |
+| `.claude/skills/visual-comparison/SKILL.md` and `delivery/container/.claude/skills/visual-comparison/SKILL.md` | how a structure is shown | ours: 4; the CBC Run's copy: 3, its instruction side | `docs/conventions/visual-comparison/` |
 | `.claude/understanding/defined-terms.md` | our Defined Terms: the Adapted Understanding Text | 4, in place | none |
 | `.claude/understanding/deliver-the-kit-update.md` | our Deliver the Kit Update: the Adapted Understanding Text | 4, in place | none |
 | `.claude/understanding/judge-copy-changes.md` | our Judge Copy Changes: the Adapted Understanding Text | 4, in place | none |
 | `.claude/understanding/read-copy-changes.md` | our Read Copy Changes: the Adapted Understanding Text | 4, in place | none |
-| `.editorconfig` and `delivery/container/.editorconfig` | | | |
-| `.gitattributes` and `delivery/container/.gitattributes` | | | |
-| `.gitignore` and `delivery/container/.gitignore` | | | |
+| `.editorconfig` and `delivery/container/.editorconfig` | the Hygiene Base's file | ours: 4; the CBC Run's copy: 3, its instruction side | `docs/conventions/repo-hygiene/` |
+| `.gitattributes` and `delivery/container/.gitattributes` | the Hygiene Base's file | ours: 4; the CBC Run's copy: 3, its instruction side | `docs/conventions/repo-hygiene/` |
+| `.gitignore` and `delivery/container/.gitignore` | the Hygiene Base's file | ours: 4; the CBC Run's copy: 3, its instruction side | `docs/conventions/repo-hygiene/` |
 | `ARCHITECTURE.md` | its form; how the repo's parts tie, and the table of CBC Runs | form: 4, open (QUESTION-1); the content: 4, rewritten last | every other text: it says what stands |
 | `CHANGELOG.md`, its form | its form, for those who pin a concept version; the entries are history | form: 4, open (QUESTION-1); what is versioned: open (QUESTION-3) | `docs/conventions/project-recording/`; `concept/` |
-| `CLAUDE.local.md` | | | |
-| `CLAUDE.md` | | | |
+| `CLAUDE.local.md` | the reviewer's own rules for working here | 4, in place | none |
+| `CLAUDE.md` | our Entry File: what this repo is, the records table, the local rules | 4; the records table: QUESTION-1 | `docs/conventions/agent-arrangement/`; `docs/conventions/project-recording/` |
 | `PLAN.md` | the legend and the Plan Step Form; the open Plan Step, this repo's work | form: 4, open (QUESTION-1); the Plan Step: 4, in place | `docs/conventions/project-recording/`; the playbook, `delivery/fills/cbc-run-pure-playbook.md` |
 | `README.md` | its form; what this repo is, for a reader from outside | form: 4, open (QUESTION-1); the content: 4, rewritten last | every other text: it says what stands |
 | `TODO-CONVERSATION-MEMORY.md`, its form | its form, on trial; the sections are history | form: 4, open (QUESTION-1); whether it stays: TODO's "Judge the Conversation Memory trial" | TODO's "Judge the Conversation Memory trial" |
@@ -361,7 +361,7 @@ and the shipped copy, takes one line. **Parts:** what the text holds.
 | `docs/baselines/cbc-startup-snippet.md` | | | |
 | `docs/baselines/claude-md-template-v1.md` | | | |
 | `docs/baselines/spring-slice-reference.md` | | | |
-| `docs/conventions/README.md` | | | |
+| `docs/conventions/README.md` | a Local Map: the order the conventions act in | 4; goes with the manuals it maps | every manual |
 | `docs/conventions/agent-arrangement/README.md` | the idea: §1 to §4, an arrangement, the Entry File, `.claude/`; §5, the Claude Code Tool Binding; both seats; the form's sections | idea: 1 or 2 (§8, the Idea Models row); §5: QUESTION-6; the CBC Run's seat: 3; ours: 4; the form's sections: QUESTION-4 | `docs/models/agent.md` |
 | `docs/conventions/commit-messages/README.md` | the idea: §1, §2; §3, our habit; the seats, alike; the form's sections | idea: 1 or 2 (§8, the Idea Models row); §3: 4; the CBC Run's seat: 3; ours: 4; the form's sections: QUESTION-4 | `docs/conventions/agent-arrangement/`, for §2.3 |
 | `docs/conventions/commit-plan/README.md` | the idea: §1, §2; the seats, alike; the form's sections | idea: 1 or 2 (§8, the Idea Models row); the CBC Run's seat: 3; ours: 4; the form's sections: QUESTION-4 | `docs/conventions/commit-messages/` |
@@ -370,9 +370,9 @@ and the shipped copy, takes one line. **Parts:** what the text holds.
 | `docs/conventions/facts-in-sync/README.md` | the idea: §1 to §5, one home, the Fact Reference, a Canonical Description's rule, a disagreement; both seats; the form's sections | idea: 1 or 2 (§8, the Idea Models row); the CBC Run's seat: 3; ours: 4; the form's sections: QUESTION-4 | `docs/models/idea-to-output.md`, for §4 |
 | `docs/conventions/project-recording/README.md` | the idea of records: §1, §11 to §13; each record, §2 to §8, and its form; the playbook, §9; supporting records, §10; Conversation Memory, §14; both seats; the form's sections | idea: 1 or 2 (§8, the Idea Models row); each record's form: QUESTION-1; §14: 4, on trial; the CBC Run's seat: 3; ours: 4; the form's sections: QUESTION-4 | none |
 | `docs/conventions/repo-hygiene/README.md` | the idea: §1 to §3, the three files, the template layers, the rules; the seats; the form's sections | idea: 1 or 2 (§8, the Idea Models row); the CBC Run's seat: 3; ours: 4; the form's sections: QUESTION-4 | none |
-| `docs/conventions/repo-hygiene/templates/java-spring/editorconfig.part` | | | |
-| `docs/conventions/repo-hygiene/templates/java-spring/gitattributes.part` | | | |
-| `docs/conventions/repo-hygiene/templates/java-spring/gitignore.part` | | | |
+| `docs/conventions/repo-hygiene/templates/java-spring/editorconfig.part` | the Java and Spring template layer | 3 | `docs/conventions/repo-hygiene/` |
+| `docs/conventions/repo-hygiene/templates/java-spring/gitattributes.part` | the Java and Spring template layer | 3 | `docs/conventions/repo-hygiene/` |
+| `docs/conventions/repo-hygiene/templates/java-spring/gitignore.part` | the Java and Spring template layer | 3 | `docs/conventions/repo-hygiene/` |
 | `docs/conventions/retrospective/README.md` | the idea: §1 to §4, the two Plan Steps, deciding, applying, `RETRO.md`; both seats; the form's sections | idea: 1 or 2 (§8, the Idea Models row); the CBC Run's seat: 3; ours: 4, on trial (TODO's "Run this repo's retrospective, on trial"); the form's sections: QUESTION-4 | `docs/conventions/project-recording/` |
 | `docs/conventions/shapes/README.md` | the idea: §1 to §5, what an Output Shape is and is not, where it lives, between repos, using it; both seats; the form's sections | idea: 1 or 2 (§8, the Idea Models row); the CBC Run's seat: 3; ours: 4; the form's sections: QUESTION-4; two items wait here (§8) | `docs/models/tiers.md`, for §4.1 |
 | `docs/conventions/visual-comparison/README.md` | the idea: §1, §2; the seats, alike; the form's sections | idea: 1 or 2 (§8, the Idea Models row); the CBC Run's seat: 3; ours: 4; the form's sections: QUESTION-4 | none |
