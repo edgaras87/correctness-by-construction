@@ -181,7 +181,7 @@ deciding what a skill would ask a human.
   words. One is marked agreed (L-28); the rest say "Review: open".
   The run file leaves reading it to the reviewer after auto ends.
 - **FINDING-28. Nobody compared CBC Run 4's facts and kills with CBC
-  Run 3's.** `temp/RUN-4.md` put the comparison in the CBC Run's
+  Run 3's.** `temp/RUN-4.md` (in git at `4ef580f6^:temp/RUN-4.md`) put the comparison in the CBC Run's
   self-check. The run file CBC Run 4 got does not have it, and
   `docs/settled.md`'s header says "The reviewer compares the two runs
   afterwards". CBC Run 4 framed 24 facts and 23 kills; CBC Run 3, 24
@@ -204,7 +204,7 @@ deciding what a skill would ask a human.
 - **FINDING-32. The Entry File was last changed at Step 2.** Three
   commits in all. Its pre-framing paragraph stands after framing;
   CBC Run 6 removed the same paragraph (its FINDING-21). Its one
-  local rule is "Nothing before the briefing names the problem."
+  Local Rule is "Nothing before the briefing names the problem."
   Neither the ground-must-be-up rule at Step 3 nor a stack fact at
   Step 4 was added: ADR-0013's watch item, the old trigger "the next
   birth's Step 3 close".
@@ -235,7 +235,7 @@ deciding what a skill would ask a human.
   apply-retrospective Agent Skill. The reviewer's message was put
   there, and deleted. This is the old trigger "before the next
   birth", shipping `temp/`.
-- **FINDING-38. `.gitignore`'s stack overlay was derived by hand a
+- **FINDING-38. `.gitignore`'s Stack Overlay was derived by hand a
   fourth time,** at Step 4 (`378b467`), with `*.iml` listed twice.
   The cbc-bootstrap Agent Skill says "grow, never overwrite" and
   points at no hygiene part. This is the old trigger "a fourth run

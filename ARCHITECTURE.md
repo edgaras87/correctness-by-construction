@@ -190,9 +190,9 @@ then has only ours:
 | CBC Run 1 | — | `~/IdeaProjects/cbc-pure-run` | frozen |
 | CBC Run 2 | — | `~/IdeaProjects/cbc-pure-run-2` | idle since its Step 0 |
 | CBC Run 3 | `never-oversold` | `~/IdeaProjects/cbc-pure-run-3` | live |
-| CBC Run 4 | `safe-reservation-2` | `~/IdeaProjects/cbc-pure-run-4` | through Release, not yet read |
-| CBC Run 5 | `event-tickets` | `~/IdeaProjects/cbc-pure-run-5` | through Release, read, not yet answered |
-| CBC Run 6 | `checkout` | `~/IdeaProjects/cbc-pure-run-6` | through Release, not yet read |
+| CBC Run 4 | `safe-reservation-2` | `~/IdeaProjects/cbc-pure-run-4` | through Release, judged (ADR-0089) |
+| CBC Run 5 | `event-tickets` | `~/IdeaProjects/cbc-pure-run-5` | through Release, judged (ADR-0089) |
+| CBC Run 6 | `checkout` | `~/IdeaProjects/cbc-pure-run-6` | through Release, judged (ADR-0089) |
 
 How a delivery goes down and what a CBC Run learned comes back is the
 Exchange Convention's, `docs/conventions/exchange/`. A CBC Run:

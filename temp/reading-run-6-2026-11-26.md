@@ -167,7 +167,7 @@ stop until Release, the reviewer's hand-off `temp/run-6-handoff/`.
   starts (L-15).
 - **FINDING-24. ADR-0013's watch item: the Entry File gained neither
   the ground-must-be-up rule at Step 3 nor the stack fact at Step 4.**
-  Its only new local rule is the name (ADR-0003). This is CBC Run 6's
+  Its only new Local Rule is the name (ADR-0003). This is CBC Run 6's
   own question in the Plan Step's Notes.
 - **FINDING-25. Three words of record per word of code.** 58,266
   words of record against 17,594 of code and tests. The 7 slice
@@ -307,7 +307,7 @@ and WORK-16 taken as one batch, the rest one at a time.
   enforces, as one line (FINDING-4 and 20); an Approach on Trial
   drafted before its gate opened (CBC Run 5's old Reading's
   FINDING-20).
-- **WORK-12. The pure seed.** Taken. Its first commit straddles agent
+- **WORK-12. The Pure Seed.** Taken. Its first commit straddles agent
   and project paths, and all three CBC Runs landed it by kind
   instead (FINDING-8).
 - **WORK-13. The glossary opens at the birth.** Taken (FINDING-23;

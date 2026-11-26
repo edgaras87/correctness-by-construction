@@ -221,7 +221,7 @@ to it, a stop hook refusing a stop until Release, and the run file
 - **FINDING-33. PLAN's Decision index lists ADR-0001 alone,** of
   20. CBC Run 4's lists 1 of 13 (its FINDING-31).
 - **FINDING-34. The Entry File keeps its pre-framing paragraph after
-  framing.** Its one local rule was rewritten at the retrospective.
+  framing.** Its one Local Rule was rewritten at the retrospective.
   Neither the ground-must-be-up rule nor a stack fact was added. This
   answers CBC Run 6's question for CBC Run 5: not added unasked.
   CBC Run 4 (its FINDING-32) and CBC Run 6 (its FINDING-21) are the
@@ -241,7 +241,7 @@ to it, a stop hook refusing a stop until Release, and the run file
   try. D18 changes the run file's look-back.
 - **FINDING-39. `temp/` was shipped, tracked, with its README,** from
   our container at the pin. CBC Run 4 had none (its FINDING-37).
-- **FINDING-40. `.gitignore`'s stack overlay was appended at Step 4**
+- **FINDING-40. `.gitignore`'s Stack Overlay was appended at Step 4**
   (ADR-0008), with one line for the fresh-clone check's working copy.
 - **FINDING-41. CBC Run Ask 5's range ends at a commit that does not
   touch identity.** `76a3318` changes `COMMIT-PLAN.md` only; the

@@ -474,10 +474,10 @@
       CBC Run's next opening prompt: at a step's end it gives one
       hand-back line, and the run decides how it continues.
       Ideas:
-      - their home: the exchange convention, which owns pins and
+      - their home: the Exchange Convention, which owns pins and
         readings, and `.claude/rules/working-a-reading.md`; or an ADR
         for the first.
-      Trigger: the exchange convention is next changed, in the rewrite
+      Trigger: the Exchange Convention is next changed, in the rewrite
       or before.
 
 - [ ] Write the understanding of the agent's memory, and how it is
