@@ -229,6 +229,16 @@
       See: `temp/reading-run-6-2026-11-26.md` §5, *Decisions*; devlog
       2026-11-26.
 
+- [ ] Decide how much a CBC Run records against what it builds
+      (2026-11-26, the judging of CBC Runs 4, 5 and 6).
+      Context: CBC Run 6 wrote 58,266 words of record against 17,594
+      of code and tests, about 3 to 1; its 7 slice records alone hold
+      16,329. CBC Run 4 wrote 39,162 words against 457 lines of main
+      Java, about 85 words a line. The slice records' line limits are
+      another item's, taken for the slice-record shape.
+      Trigger: the map decides which records the rewrite keeps.
+      See: `temp/reading-run-6-2026-11-26.md` §6, *The work*.
+
 - [ ] Decide what becomes of the branch `experiment-simulation-auto`
       (2026-11-19, the reviewer).
       Context: 9 commits on the simulation, of 2026-11-12, kept, not
