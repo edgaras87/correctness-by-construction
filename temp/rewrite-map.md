@@ -463,7 +463,10 @@ Each text it touches names it in §9.
     outside the layers model is rewritten; the defined-terms Agent
     Rule's rule 6 holds what rule 9 says of a name's form;
   - the delivered Glossary Names, the container's, the method's and
-    the stack's, fold into the Backend Kit's Defined Terms, in place.
+    the stack's, fold into the Backend Kit's Defined Terms, in place;
+  - a Glossary Name a rewritten text now defines stays in the glossary,
+    pointing at its new home, until no text outside the layers model
+    uses it (repo hygiene's Plan Step, 2026-11-26).
 - **QUESTION-3. What the changelog versions.** It versions the concept,
   for those who pin a concept version. In the layers model the concept
   is split (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md`
