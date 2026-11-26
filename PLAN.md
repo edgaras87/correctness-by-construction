@@ -139,3 +139,105 @@ reason. That is a finding about the item, not a Plan Step skipping
 work.
 
 ---
+
+## Step: Rewrite repo hygiene into the layers  (the commit-messages Agent Skill; the commit-plan Agent Skill if a Change Set needs it)    [~]
+
+Goal: every part of the repo-hygiene manual, and of the texts that
+wait on it alone, stands at its layer, and the manual is gone.
+Now: the opening.
+Gate:
+
+**At the opening.**
+
+- [ ] The Plan Step's branch `hygiene-2026-11-26`, if it has one, is cut
+      from main, and nothing of the Plan Step was done on main
+      (`.claude/rules/working-a-reading.md`, step 1).
+- [ ] This Plan Step Gate was written before the work started.
+- [ ] The Plan Step's Work Approach is known: the stages its Notes
+      list, from the map, `temp/rewrite-map.md` §9, *Every text*, and
+      §10, *Shared questions*; no Approach on Trial drafted.
+
+**The Plan Step's own items.**
+
+- [ ] Repo hygiene is a Backbone Idea, `knowledge/backbone-ideas/repo-hygiene.md`,
+      with its row in §3.1's table of the layers document in keeping
+      knowledge (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md`
+      §3.5, *Where each layer is kept*; the map's QUESTION-7).
+- [ ] Repo hygiene has a Problem Domain Idea in each Problem Domain,
+      keeping knowledge and CBC backend design, each with its row in
+      §3.2's table of the same document.
+- [ ] The Backend Kit holds repo hygiene as an Adapted Case at layer 3,
+      at its path by §3.5: the Hygiene Base and the Stack Overlay are
+      its Instruction Text, and its why is its Adapted Understanding
+      Text (the map's QUESTION-4, *Why it arrives this way*).
+- [ ] This repo's three files are its own Adapted Case at layer 4
+      (§3.4, *The layer of a repo's work*): the files at its root, and
+      an Adapted Understanding Text in `.claude/understanding/` only
+      if they have a why of their own.
+- [ ] Each part the map's §9 lists for the manual has landed, or was
+      judged not needed, and the commit that ends it names where.
+- [ ] The manual and its `templates/` directory are gone, and every
+      Living Text that named their paths or sections names the new
+      home (`docs/conventions/facts-in-sync/` §3.3, *The rename grep*).
+- [ ] The Glossary Names Hygiene Base and Stack Overlay are retired by
+      the map's QUESTION-2: each a Defined Term at its new home, its
+      lines gone from `docs/glossary.md` and from the container's
+      delivered Glossary Names.
+
+**Known already.** The commit-messages and commit-plan Agent Skills
+have no *Gates* section; the own items stand alone.
+
+**At the close.**
+
+- [ ] Every link and path in the records resolves.
+- [ ] Every ADR a record cites exists.
+- [ ] Each pair of copies agrees, such as the worked example in the
+      cbc-framing Agent Skill and in the cbc-slice Agent Skill.
+- [ ] No line of Living Text in a record the Plan Step touched, or one that
+      mentions its subject, still says "now", "today" or "not yet"
+      about something the Plan Step changed.
+- [ ] New and changed text meets `.claude/rules/writing.md`.
+- [ ] Every commit on `hygiene-2026-11-26` follows the commit-messages Agent Skill.
+      Its subjects are counted by script: one up to 70 characters
+      passes, and one past 70 is the reviewer's to keep or rewrite
+      (`docs/conventions/commit-messages/` §2.1, *Conventional Commits*).
+- [ ] No commit straddles agent and project paths
+      (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*).
+- [ ] The Plan Step's lessons are written back where they came from:
+      conventions, the playbook, the concept.
+- [ ] `CLAUDE.md` read top to bottom; each line still passes its
+      three tests, or leaves (`docs/conventions/agent-arrangement/`
+      §2.4, *How the Entry File is written*).
+- [ ] Each Approach on Trial the Plan Step drafted or used has this
+      use's dated note, and was handed over for evaluation
+      (`.claude/approaches-on-trial/approach-drafting.md` §3, *Close*).
+
+Notes:
+- Opened 2026-11-26, the first Plan Step of TODO's "Rewrite today's
+  Maintainer Repo into the layers model, by the map", chosen by the
+  reviewer: the repo-hygiene manual needs no text first, and 7 texts
+  wait on it (the map's §9, counted by grep). The TODO item stays: it
+  is the whole rewrite, and this is one text of it. The lighter way
+  first, by the reviewer's word of that day (devlog 2026-11-26, the
+  Maintainer Repo stops evolving).
+- The texts it rewrites, by the map's §9: the manual; the three pairs
+  `.gitignore`, `.gitattributes` and `.editorconfig`, ours and
+  `delivery/container/`'s; the three `.part` files of the Java and
+  Spring Stack Overlay. `delivery/installs/pure-seed.md` also waits
+  on the exchange manual, so it stays; its paths are fixed by the
+  rename grep.
+- Its stages, from the map:
+  1. the Backbone Idea, from the manual's *What it is for* and §1 to §3;
+  2. the two Problem Domain Ideas;
+  3. the Backend Kit's Adapted Case, with the Stack Overlay;
+  4. this repo's own Adapted Case;
+  5. the manual goes: the rename grep, the Glossary Names retired;
+  6. the close.
+- Held, not this Plan Step's: TODO's "Decide whether the cbc-bootstrap
+  Agent Skill points at the Spring Stack Overlay", its trigger the
+  cbc-bootstrap Agent Skill's hygiene step rewritten. CBC Run 4's
+  FINDING-38, CBC Run 5's FINDING-40 and CBC Run 6's FINDING-26, each
+  a `.gitignore` written by hand, wait there. Its Context names the
+  templates' path, which the rename grep fixes.
+- Behind it: ADR-0082, decision 2; ADR-0089; the map's QUESTION-2,
+  QUESTION-4 and QUESTION-7.
