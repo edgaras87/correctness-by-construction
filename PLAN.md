@@ -145,7 +145,7 @@ work.
 Goal: CBC Runs 4, 5 and 6 each have a CBC Run Reading by today's
 exchange, and every item of the three has ended taken, declined or
 held, kept for the rewrite.
-Now: stage 2, read CBC Run 4.
+Now: stage 3, close CBC Run 5's old Reading, then read CBC Run 5 again.
 Gate:
 
 **At the opening.**
@@ -167,12 +167,21 @@ Gate:
 - [x] CBC Run 6 has a CBC Run Reading in `temp/`, its first line
       naming the commit read through (2026-11-26, `67210ae1`,
       through `00fc075`).
-- [ ] CBC Run 4 has a CBC Run Reading in `temp/`, its first line
+- [x] CBC Run 4 has a CBC Run Reading in `temp/`, its first line
+      naming the commit read through (2026-11-26, `2d81febc`,
+      through `7637a79`).
+- [-] CBC Run 5's CBC Run Reading reads in today's words, and each of
+      its open items says whether today's texts already meet it
+      (struck 2026-11-26: the reviewer chose to read CBC Run 5 again
+      from its first commit, so the two items below replace it).
+- [ ] CBC Run 5's old CBC Run Reading, of 2026-10-22, is closed as
+      overtaken: each open item says where it went, and the file is
+      deleted (`docs/conventions/exchange/` §6.4, *How a CBC Run
+      Reading closes*).
+- [ ] CBC Run 5 has a new CBC Run Reading in `temp/`, its first line
       naming the commit read through.
-- [ ] CBC Run 5's CBC Run Reading reads in today's words, and each of
-      its open items says whether today's texts already meet it.
-- [ ] Each edit, CBC Run Ask and finding of CBC Runs 4 and 6 has one
-      line in its CBC Run Reading.
+- [ ] Each edit, CBC Run Ask and finding of CBC Runs 4, 5 and 6 has
+      one line in its CBC Run Reading.
 - [ ] CBC Run 4's own questions and CBC Run 6's, listed in the Notes,
       each have a line in their CBC Run Reading.
 - [ ] The three CBC Run Readings were judged together: a finding seen
@@ -258,8 +267,11 @@ Notes:
   - read by needs, not by diff: declined for the read, which is the
     exchange-read Agent Skill's (ADR-0089, decision 1). Extended to
     the judging: an item whose need is gone ends declined, saying why.
-  - CBC Run 5's Reading not read again: open, the reviewer's, before
-    CBC Run 5's stage.
+  - CBC Run 5's Reading not read again: declined, 2026-11-26, the
+    reviewer. CBC Run 5 is read again from its first commit. Its old
+    Reading closes first, as overtaken, since the exchange-read Agent
+    Skill extends a CBC Run Reading still open in `temp/`. Git keeps
+    the old one, to compare.
   - judged by working-a-reading: taken (ADR-0089).
   - old words read through the refinement's Names table, at
     `55e2bd0^:temp/refinement-2026-10-18.md`: taken.
@@ -280,7 +292,8 @@ Notes:
 - Stages:
   1. read CBC Run 6 (the exchange-read Agent Skill);
   2. read CBC Run 4 (the same);
-  3. bring CBC Run 5's CBC Run Reading to today's words;
+  3. close CBC Run 5's old CBC Run Reading as overtaken, then read
+     CBC Run 5 again (the exchange-read Agent Skill);
   4. decide and work, the three together (working-a-reading, steps
      1 to 8), on the branch if the count calls for one;
   5. close (working-a-reading, step 9, without the Delivery Note).
