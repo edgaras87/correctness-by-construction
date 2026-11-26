@@ -49,8 +49,8 @@
       each beside its part's rules, with its trigger.
       Ideas:
       - the change work: its rules in Change, in keeping knowledge, §3,
-        how each was chosen in the simulation; depth c next (its
-        item);
+        how each was chosen in the simulation; depth c at its trigger
+        (its item);
       - a piece of work modeled at each layer, in a document of its
         own, starting from `cbc-concept/ideas/`, to see how ideas are
         kept at each layer;
@@ -64,11 +64,12 @@
       (2026-11-22, the reviewer).
       Context: depth c is a lesson that changes the idea above: a
       Problem Domain Idea at layer 2, or a Backbone Idea at layer 1.
-      New ideas are written at those layers now, so the case is met
-      today. The survey of Change, in keeping knowledge, §3.4 holds a first
+      The survey of Change, in keeping knowledge, §3.4 holds a first
       guess: each text built on the idea is asked whether it still
       fits. It was never walked through Deliver the Kit Update and
-      Take the Kit Update, nor drawn.
+      Take the Kit Update, nor drawn. Until it is, the first guess is
+      worked by, and the judge-copy-changes Agent Skill stops at depth
+      c and asks the human.
       Ideas:
       - layer 2 first, then layer 1, each walked against depth b as
         the simulation's §2 says, writing only what differs; its
@@ -80,13 +81,13 @@
         down the survey reaches (`knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md`
         §3.4, *Act on the verdicts*, its *Open*);
       - the Adapted Cases the split writes follow what depth c
-        changes, both halves; Judge's before CBC Runs 4, 5 and 6 are
-        judged (2026-11-24, the reviewer);
+        changes, both halves (2026-11-24, the reviewer);
       - depth c is the first change that starts at an idea and must
         reach every text built on it. It answers the Backbone Idea
         Change's open question on such a change, first a guess: carried
         to all layers together (2026-11-24, the reviewer).
-      Trigger: due; the Change split landed on 2026-11-25.
+      Trigger: the first lesson judged at depth c, in a CBC Run's or a
+      Backend Repo's reading.
       See: devlog 2026-11-22, the depth c item.
 
 - [ ] Sweep the drafts for words that read as walking commits, where
@@ -97,8 +98,7 @@
       *Read Copy Changes*). "Runs from … to main" and "across that span"
       read as a walk in the problem file's rules on reading, cut on
       2026-11-19; the same words may stand in other drafts.
-      Trigger: due now, the facts of Change in their final home, Change,
-      in keeping knowledge, §3, so the sweep reads the final text.
+      Trigger: the map reaches the drafts that hold these words.
 
 - [ ] Do the problem file's next pass: §6 and §8, Failure Case 15,
       the rest of the "project-agnostic" sweep, and §2.2's "middle
@@ -113,7 +113,7 @@
         understanding; the lines of the Repo Responsibility lists
         that retell the layers document; §8's middle-level option,
         which the layers model answers.
-      Trigger: due now, the Change idea written in Change, in keeping knowledge, §3.
+      Trigger: the map reaches the problem file.
       See: devlog 2026-11-18, later, *Found, not fixed*, item 5.
 
 - [ ] Read and judge CBC Runs 4, 5 and 6: each read apart, their
@@ -128,6 +128,7 @@
       (ADR-0082).
       Ideas:
       - CBC Run 6 first, then CBC Run 4;
+      - each read with today's conventions (2026-11-26, the reviewer);
       - read by needs, not by diff: how the CBC Run went and what it
         needed, since the refinement and the rewrite change the
         texts its diff touched; each need ends met, naming where;
@@ -178,8 +179,8 @@
         Backbone Idea; the Maintainer Repo's part, the Repo
         Responsibility, §2.2 and the Failure Cases between repos,
         its adaptation.
-      Trigger: due now, the Change idea defined: its rules have left
-      the problem file's §2.1.
+      Trigger: the rewrite of today's repo done, on the reviewer's
+      word.
       See: ADR-0082; `TODO-CONVERSATION-MEMORY.md` §31, *Keeping what
       we know true*, in git at `60f692d`.
 
@@ -249,9 +250,11 @@
         replaces;
       - the inventory brought up to date, not started again;
       - which of today's ideas are Backbone Ideas, open question 4 of
-        the keeping-knowledge layers document.
-      Trigger: the way to keep what we know true chosen, and CBC Runs
-      4, 5 and 6 judged.
+        the keeping-knowledge layers document;
+      - how much is rewritten, decided here by what the map shows,
+        with the aim of getting back to the projects soon
+        (2026-11-26, the reviewer).
+      Trigger: CBC Runs 4, 5 and 6 judged.
       See: devlog 2026-11-23, the order before the rewrite.
 
 - [ ] Decide what becomes of the branch `experiment-simulation-auto`
