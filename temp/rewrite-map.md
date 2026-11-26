@@ -1,10 +1,12 @@
-# What this repo holds, for the rebuild
+# The map of today's Maintainer Repo, for the rewrite
 
-<!-- A kept file: every Work Approach this repo holds, the idea behind
-     each, what it points at, the lessons it carries, and the facts
-     many texts share. The list the
-     rebuild in a new repo reads this repo by, idea by idea. Counted
-     2026-11-03 at `ee8f3b0`. -->
+<!-- A kept file: the map the rewrite into the layers model reads
+     this repo by (ADR-0082, decision 2). Each text, the parts it
+     holds, the layer each part goes to, and which text needs
+     another first; and the TODO items that land with a text (§8).
+     §1 to §7 still hold the inventory counted 2026-11-03 at
+     `ee8f3b0`, for the rebuild in `cbc-concept`, which ended
+     (ADR-0082, decision 3). -->
 
 28 Work Approaches stand on 16 written ideas: 12 manuals, 3 Idea
 Models and the concept. 6 more stand on no written idea. A pair of
@@ -246,3 +248,24 @@ What it changes in the draft order (§5):
   not counted. A shipped copy's pointers count with ours.
 - **Not read:** what each text says. A row says what a text is for,
   from its own opening line, not whether that is true.
+
+## 8. Items from TODO
+
+Each TODO item here lands with a text, and is decided when that text
+is rewritten. Each left `TODO.md` on 2026-11-26; its words are in git
+at `f83d146b:TODO.md`, at the line given, and its Conversation Memory
+section, if any, at `f83d146b:TODO-CONVERSATION-MEMORY.md`.
+
+| Item | Lands with | Line | Conversation Memory |
+|---|---|---|---|
+| Sweep the drafts for words that read as walking commits | each draft that holds them, found by grep when the drafts are mapped | 93 | — |
+| The problem file's next pass: §6 and §8, Failure Case 15, the "project-agnostic" sweep, §2.2's "middle level" | `temp/common-ground/common-ground-problem.md` | 103 | — |
+| Whether the rewrite takes the Approaches on Trial and check scripts the CBC Runs wrote | the Backend Kit's parts for birth, checks and release | 190 | — |
+| How much a CBC Run records against what it builds | the Record Stubs, `delivery/container/`, and the playbook, `delivery/fills/cbc-run-pure-playbook.md` | 205 | — |
+| How a Work Approach and an Output Shape divide an output | the shapes manual, `docs/conventions/shapes/`, decided with the next row | 701 | §2, *How an approach and a shape divide an output* |
+| Whether our own forms become Output Shapes, and whether an Output Shape's part can be optional | the shapes manual, and the forms in `.claude/rules/convention-manual.md` and `.claude/rules/exchange-reading.md` | 927 | §3, *Layouts as shapes* |
+| Whether the approach-drafting Approach on Trial becomes a convention | `.claude/approaches-on-trial/approach-drafting.md` | 740 | — |
+| Whether writing rule 10 reaches unnumbered headings | the writing manual, `docs/conventions/writing/` | 995 | — |
+| A Fact Reference from the method's texts to each part of a concept chapter they use | the method's texts, `delivery/method/`, and the chapters, `concept/` | 1092 | §6, *The method's plain rewrite: `cbc-slice`'s opening* |
+| Sort `docs/baselines/` by kind, read with care: a wrong move destroys a measurement | `docs/baselines/` | 1164 | — |
+| Which ideas here are Idea Models | decided once, with which ideas are Backbone Ideas (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §5, *Open questions*, question 4) | 1175 | §29, *Two checks on text kept true* |

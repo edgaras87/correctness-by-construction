@@ -156,10 +156,12 @@ Gate:
       (skipped 2026-11-26, the reviewer: no branch; the map writes
       only `temp/` and `TODO.md`, nothing ships, and each commit is
       signed; the Plan Step runs on main).
-- [ ] This Plan Step Gate was written before the work started.
-- [ ] The Plan Step's Work Approach is known: the stages its Notes
+- [x] This Plan Step Gate was written before the work started
+      (2026-11-26, in `f83d146b`, the Plan Step's opening commit).
+- [x] The Plan Step's Work Approach is known: the stages its Notes
       list, from the inventory of 2026-11-03,
-      `temp/rebuild-inventory.md`; no Approach on Trial drafted.
+      `temp/rewrite-map.md`, renamed from `temp/rebuild-inventory.md`; no
+      Approach on Trial drafted (2026-11-26).
 
 **The Plan Step's own items.**
 
@@ -177,12 +179,17 @@ Gate:
       the reviewer's word, and each text it touches points at it.
 - [ ] How much of today's repo is rewritten is decided on the
       reviewer's word, from what the map shows.
-- [ ] Each TODO item whose trigger was the refinement's close has
-      ended: put on the map, given a new trigger, or dropped.
-- [ ] Each TODO item whose trigger names the map has ended: decided,
-      put on the map, or given a new trigger.
-- [ ] The TODO item on the shared names of five conventions and their
-      Agent Skills or Agent Rules has ended the same way.
+- [x] Each TODO item whose trigger was the refinement's close has
+      ended: put on the map, given a new trigger, or dropped
+      (2026-11-26, stage 1: 5 on the map, 8 with new triggers, 3 of
+      them merged into one item).
+- [x] Each TODO item whose trigger names the map has ended: decided,
+      put on the map, or given a new trigger (2026-11-26, stage 1: all
+      6 on the map).
+- [x] The TODO item on the shared names of five conventions and their
+      Agent Skills or Agent Rules has ended the same way (2026-11-26,
+      stage 1: dropped, since the rewrite makes a manual and its Agent
+      Skill one Adapted Case).
 - [ ] Each Idea of the TODO item this Plan Step opened from has ended
       as its Notes weigh it.
 

@@ -57,8 +57,8 @@ Output Forms, a CBC Run Reading's and a Convention Manual's, are Agent
 Rules today, with
 a Governs line. They load when the file is read, not while a new one is
 written (`docs/conventions/agent-arrangement/` §5.6, *Rules files*).
-Whether they become Output Shapes read at a Plan Step Gate is the
-TODO item "Decide whether our own forms become Output Shapes".
+Whether they become Output Shapes read at a Plan Step Gate is held on
+the rewrite's map (`temp/rewrite-map.md` §8, *Items from TODO*).
 
 It holds the Output Shapes it ships, each in the group of what it
 shapes (§4, *An Output Shape between repos*). It reads a CBC Run's

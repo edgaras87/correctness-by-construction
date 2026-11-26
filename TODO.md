@@ -90,32 +90,6 @@
       reading.
       See: devlog 2026-11-22, the depth c item.
 
-- [ ] Sweep the drafts for words that read as walking commits, where
-      Read Copy Changes compares two snapshots (2026-11-13, the
-      reviewer).
-      Context: Read Copy Changes compares two snapshots and never
-      walks commits (`knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §3.2,
-      *Read Copy Changes*). "Runs from … to main" and "across that span"
-      read as a walk in the problem file's rules on reading, cut on
-      2026-11-19; the same words may stand in other drafts.
-      Trigger: the map reaches the drafts that hold these words.
-
-- [ ] Do the problem file's next pass: §6 and §8, Failure Case 15,
-      the rest of the "project-agnostic" sweep, and §2.2's "middle
-      level" (2026-11-22, the reviewer).
-      Context: found on 2026-11-18, and written since only in the
-      devlog. The Change idea's move rewrote the problem file's §2.1
-      and its Defined Terms first, so each line changes once. Each
-      fault is checked again now it is due.
-      Ideas:
-      - the problem file's answers that belong in the layers
-        document move there: §2.1's table of the two groups of
-        understanding; the lines of the Repo Responsibility lists
-        that retell the layers document; §8's middle-level option,
-        which the layers model answers.
-      Trigger: the map reaches the problem file.
-      See: devlog 2026-11-18, later, *Found, not fixed*, item 5.
-
 - [ ] Confirm the Common Ground Problem in the reviewer's words
       (2026-11-05, the reviewer; an item since 2026-11-19).
       Context: the problem is drafted in
@@ -186,31 +160,6 @@
       Trigger: two real cases drawn side by side.
       See: ADR-0082; `TODO-CONVERSATION-MEMORY.md` §31, *Keeping what
       we know true*, in git at `60f692d`.
-
-- [ ] Decide whether the rewrite takes the Approaches on Trial and
-      check scripts the CBC Runs wrote (2026-11-26, the judging of
-      CBC Runs 4, 5 and 6).
-      Context: four Approaches on Trial were offered: birth (CBC Runs
-      5 and 6), checks and identity (CBC Run 5), release (CBC Runs 5
-      and 6). The CBC Runs wrote their own check scripts, such as a
-      fresh-clone check, a commit guard and a close tool. CBC Run 6's
-      records check could not fail for four steps: a check is seen
-      failing before it is trusted. Held, not evaluated: the rewrite
-      may replace the texts they would change (ADR-0089).
-      Trigger: the map decides whether the rewrite's kit ships
-      Approaches on Trial and check scripts.
-      See: `temp/reading-run-6-2026-11-26.md` §5, *Decisions*; devlog
-      2026-11-26.
-
-- [ ] Decide how much a CBC Run records against what it builds
-      (2026-11-26, the judging of CBC Runs 4, 5 and 6).
-      Context: CBC Run 6 wrote 58,266 words of record against 17,594
-      of code and tests, about 3 to 1; its 7 slice records alone hold
-      16,329. CBC Run 4 wrote 39,162 words against 457 lines of main
-      Java, about 85 words a line. The slice records' line limits are
-      another item's, taken for the slice-record shape.
-      Trigger: the map decides which records the rewrite keeps.
-      See: `temp/reading-run-6-2026-11-26.md` §6, *The work*.
 
 - [ ] Decide what becomes of the branch `experiment-simulation-auto`
       (2026-11-19, the reviewer).
@@ -698,57 +647,6 @@
       See: devlog 2026-10-22; `temp/reading-run-6-2026-11-26.md` §6,
       *The work*.
 
-- [ ] Decide how a Work Approach and an Output Shape divide an output: the
-      Work Approach says what is done, the Output Shape how its output looks
-      (2026-10-20, the reviewer).
-      Context: an Output Shape is read at a Plan Step Gate only, so work written
-      without it can show it wrong (`docs/conventions/shapes/` §3, *Where an Output Shape lives*).
-      An Agent Skill that carries the output's form undoes that.
-      the cbc-framing Agent Skill hands over `templates/registry.md` to fill in,
-      for the output the Invariant Slice Entry Shape governs.
-      the approach-drafting Approach on Trial's Stage 1 lists the parts a Work Approach
-      file holds, the form of its own output.
-      Ideas:
-      - an Output Shape adapts: divergence is how it learns
-        (`docs/conventions/shapes/` §2, *What an Output Shape is not*), and an Output Shape that never
-        changes is finished or unread (`docs/conventions/shapes/`
-        §5.2, *Ticks and differences*).
-      - a Work Approach is written without the output's form; a part an
-        Output Shape needs is asked for as content, in the Work Approach's own
-        words.
-      - such an ask carries a Fact Reference to the Output Shape only for
-        the Change Walk; the
-        Output Shape says it is read at a Plan Step Gate.
-      - a part may be optional, and the Output Shape marks it so.
-      - a part considered and empty says "none, because…", so it
-        reads differently from one left out.
-      - a part never asked for is a fifth kind of difference, beside
-        the four a Plan Step Gate ends one in
-        (`docs/conventions/shapes/` §5.2, *Ticks and differences*):
-        the fix goes to the Work Approach, and the output records
-        the gap.
-      - Refinement Round 2's FINDING-211: one form told in an Agent Skill, an Output Shape
-        and an Agent Skill Template: the Invariant Slice Record's outline, the
-        Structural Wall Backstop at the Red Run, a cost's size, the Invariant Slice Entry's fields, a
-        body asserted by path.
-      - a document's refinement is a case of it: the item "Design how
-        a document is refined".
-      Trigger: the approach-drafting Approach on Trial's first evaluation, at the
-               refinement's close.
-      See: devlog 2026-10-20, later; `TODO-CONVERSATION-MEMORY.md` §2, *How an approach and a shape divide an output*.
-
-- [ ] Decide whether the approach-drafting Approach on Trial becomes a convention
-      (2026-10-27, the reviewer).
-      Context: `approach-drafting.md` is on trial (ADR-0058), held
-      word for word in both Convention Seats until its evaluation (ADR-0069,
-      decision 2). No manual lists it.
-      Ideas:
-      - one convention for Approaches on Trial, its Work Approaches
-        the approach-drafting Approach on Trial in both Convention Seats and the approach-evaluation one
-        in ours.
-      Trigger: the approach-drafting Approach on Trial's evaluation at the
-               refinement's close, at the approach-evaluation Approach on Trial's Stage 5.
-
 - [ ] Choose whether a manual is called a concept (2026-10-19, the
       reviewer).
       Context: one idea should have one word. The reviewer saw a
@@ -765,50 +663,26 @@
                decided (`docs/models/idea-to-output.md` §5, *An Idea Model and a concept*).
       See: devlog 2026-10-19, the redesign's ideas.
 
-- [ ] Decide whether a sweep checks one home after work lands, and
-      when (2026-10-22, the reviewer).
-      Context: the Foundation Check walks what derives from a
-      changed Canonical Description at each commit, and the commit-plan Agent Skill's close
-      sweeps for names a Change Set moved. Nothing looks back over finished
-      work to see whether its facts still have one home. Refinement Round 2's
-      One home Finding Kind does it once, for the refinement.
-      Ideas:
-      - a one-home sweep of its own, or one part of a sweep
-        defined as a convention or a Work Approach.
-      - other parts such a sweep might hold: regrouping commits,
-        if a way is found that breaks no reference (its own item,
-        on commits cited by hash).
-      - when: after a branch is fast-forwarded; when a branch is
-        cut; at a commit plan's close.
-      - a missing-context part: each session ends by asking "what
-        context was missing that would have helped?", as
-        `claude-md-management` does; the answer is one finding in
-        that session's devlog entry, from 2026-10-22. The sweep
-        reads the findings since the last one and ends each: Entry
-        File, Agent Rule, Agent Skill, record, or nothing.
-      - how the sweep stands to the retrospective Agent Skill, a CBC Run's look-back
-        at its end.
-      - `.claude/rules/foundation-check.md`, weighed with this item:
-        what is checked at each commit, and what is left to the
-        sweep.
-      - compare `CLAUDE.local.md` with the settings the manuals
-        leave to the operator. A missing setting is not wrong, so a
-        sweep reports it; nothing checks it at a session's start.
-      - a reference sweep, two kinds: missing, a line relying on a
-        fact elsewhere with no reference, found only by reading;
-        broken, a reference whose path, number or title no longer
-        matches, which a script can check in the form `(<path>,
-        §<number>, <title>)`.
-      - looking back, defined once: reading a text against what it
-        rests on, to find what is out of date, wrong or in
-        disagreement. Five acts do it today: the Foundation Check,
-        the commit-plan Agent Skill's sweep, a Refinement Round, a CBC Run Reading
-        and the missing-context finding. What a check is
-        in the Idea-to-Output Model; when each runs, in its own
-        convention.
-      Trigger: the refinement's close.
-      See: devlog 2026-10-21, evening; `TODO-CONVERSATION-MEMORY.md`
-      §11, *How work is run by agents*, the `claude-md-management` part, and §14, *A sweep, and what looking back is*.
+- [ ] Decide how texts are checked to stay true after the rewrite: a
+      one-home sweep, a standing full read for missing Fact
+      References, and a test of Fact References and foundations as a
+      whole (2026-11-26, merged from three items of 2026-10-22,
+      2026-10-27 and 2026-10-28, the reviewer).
+      Context: each is a check that a text still holds after a change.
+      The sweep looks back over finished work for a fact with two
+      homes. The full read finds a line that relies on a fact elsewhere
+      with no Fact Reference, which no grep finds; its trigger fired at
+      the refinement's last read, the refinement's FINDING-1625 and
+      1626. The test walks every scenario a change brings through the
+      grep and the read. The rewrite reads every text and rewrites most
+      Fact References, so a check of today's texts would check what
+      goes. The three items' Ideas are in git, at `f83d146b:TODO.md`,
+      lines 768, 1226 and 1256.
+      Trigger: the rewrite done.
+      See: `TODO-CONVERSATION-MEMORY.md` §14, *A sweep, and what
+      looking back is*, §21, *A full read for missing fact
+      references*, and §22, *Testing fact references and foundations
+      as a whole*.
 
 - [ ] Decide how an item names the items it waits on, and what
       happens when one closes (2026-10-24, the reviewer).
@@ -870,8 +744,8 @@
         the problem draft (§3.1, and §2.2 as a gap seen); check
         what `/memory` covers; at each check, ask per note
         whether it stays, moves into the repo, or goes.
-      Trigger: with "Decide whether a sweep checks one home after
-               work lands", its twin; ADR-0063's kinds of text now
+      Trigger: with "Decide how texts are checked to stay true after
+               the rewrite", its twin; ADR-0063's kinds of text now
                say where either belongs.
       See: devlog 2026-10-22, later; `TODO-CONVERSATION-MEMORY.md`
       §12, *A session's end*.
@@ -892,8 +766,7 @@
       - rewrite the citations with the regroup: a map of old hash
         to new, grepped and replaced in the same rewrite.
       - regroup only on the branch, before main takes it.
-      Trigger: the refinement of this repo closes; its Refinement Rounds read the commit-plan manual and the Fact Reference's form
-        (`docs/conventions/facts-in-sync/` §3, *The Fact Reference*).
+      Trigger: a Change Set wants a regroup, and its hashes are cited.
       See: devlog 2026-10-19, regrouping.
 
 - [ ] Make the conventions index a full Local Map (2026-09-30, the
@@ -924,53 +797,6 @@
       Trigger: due — the pair it waited on was made on 2026-09-30.
       See: devlog 2026-09-30, Local Maps; `cb41ade`.
 
-- [ ] Decide whether our own forms become Output Shapes, and whether an
-      Output Shape's part can be optional (2026-10-17, the reviewer).
-      Context: an Output Shape is read at a Plan Step Gate only, so the work
-      is not shaped by it (`docs/conventions/shapes/` §3, *Where an Output Shape lives*). Our own
-      forms, a CBC Run Reading's and a manual's, are Agent Rules that load when
-      such a file is read. They kept that place because this repo
-      had no Plan Steps; since ADR-0057 it has. CBC Run 6 read its
-      Output Shapes at the gate only: one rework per kind of output, at
-      its first close, each finding a real miss, and nothing after (its
-      CBC Run Reading of 2026-11-26, TAUGHT-2). CBC Run 4, holding them from birth, cut late at SLICE-1 too (its FINDING-39).
-      Ideas:
-      - the work's rules keep what must hold while working, such as
-        numbers never changed; the forms become Output Shapes.
-      - a part an Output Shape names may be optional, where the work does
-        not always produce it.
-      - Known already as questions, an Agent Skill's Gates and the
-        playbook's lists, answered in a Plan Step's own words.
-      - our documents' layouts are Output Shapes too, a case of the shapes
-        convention: a manual's, a Work Approach's, a CBC Run Reading's, a
-        record's. Five mechanisms hold them today.
-      - read at a Plan Step Gate and adaptable like any Output Shape; the Work Approach
-        or Agent Rule that writes the document carries no layout.
-      - what must hold while writing stays an Agent Rule
-        (`docs/conventions/shapes/` §3, *Where an Output Shape lives*): a
-        manual's section order may; how each part is written may not.
-      - `.claude/rules/convention-manual.md` is the manual's form. It
-        stands on the conventions convention until this item
-        decides; as an Output Shape, it would stand on the shapes convention.
-      - a record's form, in its header comment, stays
-        project-recording's: it is read when the record is opened,
-        while an entry is written, which the shapes manual keeps for Agent Rules
-        (`docs/conventions/shapes/` §3, *Where an Output Shape lives*).
-        Only `.claude/decisions.md` and `docs/glossary.md` hold one
-        under another convention: agent-arrangement and writing. The
-        open forms are those in Agent Rules: a manual's, a CBC Run Reading's.
-      - a text gets an Output Shape when there are many of its kind and a
-        moment to check them: manuals, CBC Run Readings, Agent Skills and Agent Rules
-        may; a record's entries are checked only as they are written.
-      - Idea Models and the concept get none while nothing of their kind
-        recurs: three Idea Models share no parts yet, and the concept has
-        one form and one home (`docs/models/idea-to-output.md` §5, *An Idea Model and a concept*).
-      - a refinement's report may be the first: the item "Design how
-        a document is refined".
-      Trigger: the map.
-      See: devlog 2026-10-17, our forms as shapes; 2026-10-20,
-      later, layouts; `TODO-CONVERSATION-MEMORY.md` §3, *Layouts as shapes*.
-
 - [ ] Try a readability pass, the reviewer marking where text is
       hard to read (2026-10-18, the reviewer).
       Context: a refinement's finding names a broken rule, so text
@@ -989,49 +815,8 @@
         Agent Rules, what ships.
       - the agent polishing alone, only where a rewrite cuts words;
         the reviewer checks each one for drift in meaning.
-      Trigger: the refinement of this repo closes.
+      Trigger: the first rewritten texts land.
       See: devlog 2026-10-18, readability.
-
-- [ ] Decide whether writing rule 10 reaches unnumbered headings
-      (2026-10-30, the reviewer).
-      Context: rule 10 binds a numbered section's title; its reason,
-      that a title is read in every Fact Reference to it, reaches an
-      unnumbered heading too. Refinement Round 3 found references
-      cutting an Agent Skill's or a reference file's heading short, and 27
-      unnumbered headings in the Method Group with a gloss after a
-      dash or colon. The round read against the rule as written.
-      Trigger: the refinement of this repo closes.
-      See: `55e2bd0^:temp/refinement-2026-10-18.md`, DECISION-20 (`1aa928c`).
-
-- [ ] Rename the manuals, Agent Skills and Agent Rules that share a
-      name (2026-10-31, the reviewer).
-      Context: five names are shared: commit-messages, commit-plan,
-      visual-comparison and retrospective, each a manual and an Agent
-      Skill; writing, a manual and an Agent Rule. Writing the kind
-      word always keeps them apart in reading (the refinement's
-      DECISION-24 and DECISION-27), but a grep still finds both. It waits for
-      two reasons: which side is renamed, and to what, is a choice
-      that how CBC Runs 4, 5 and 6 used these parts can inform; and
-      all five names ship, so a rename moves every CBC Run's
-      folders and commands, the paths a read compares by. Their
-      records keep the old names either way, since a record is never
-      updated. New names follow the naming rule of the
-      refinement's design, ADR-0078.
-      Ideas:
-      - rename the manual, by its subject: commit-message-form,
-        change-sets, diagram-choice, looking-back, plain-writing.
-      - or rename the Agent Skill or Agent Rule, by its act:
-        write-commit-message, plan-commits, compare-diagrams,
-        hold-retrospective, write-plainly; all five ship, so every CBC
-        Run gets new folders and commands.
-      - a strict "verb first" grammar would rename 11 of the 12
-        Agent Skills; a loose one 3, and lets commit-plan through.
-      - no grammar parts a manual from an Agent Rule: both are nouns.
-      Trigger: CBC Runs 4, 5 and 6 judged. A
-               CBC Run born before then is built with the old names
-               and joins them.
-      See: `TODO-CONVERSATION-MEMORY.md` §27, *Shared names of
-      conventions and approaches*.
 
 - [ ] Write an Agent Rule that writes an Agent Skill or Agent Rule from its convention
       (2026-10-17, the reviewer).
@@ -1084,30 +869,9 @@
       - a Finding Kind of the next refinement, if one comes again
         (`.claude/approaches-on-trial/refinement.md` §3, *Not known
         yet*); ADR-0078 is the new rule that makes it due.
-      Trigger: the refinement of this repo closes, when whether a
-               refinement comes again is decided.
+      Trigger: a refinement of the rewritten repo is planned.
       See: ADR-0078; `TODO-CONVERSATION-MEMORY.md` §28, *Text at the
       wrong level of the chain*.
-
-- [ ] Rewrite the method's texts plain (2026-10-17, CBC Run 3's RETRO
-      D2).
-      Context: Refinement Round 3 rewrote the method's and the stack's
-      texts, the concept chapters and System Readiness against the
-      writing rule. FINDING-206 and 224 were gone by then, and the
-      refinement's last read fixed 223, 227 and 228. What is
-      left: the method's texts use parts of the concept chapters and
-      never say which, so a change to a chapter finds no line here
-      (the refinement's DECISION-43 and FINDING-1665).
-      Ideas:
-      - one Fact Reference per section that uses a chapter part
-        (ADR-0072), such as (`docs/concept/03-cbc-framing.md`, *The
-        derivation order*); the first one fires "Number the concept
-        chapters' sections".
-      - the chapters, one Canonical Description copied whole, need none
-        between themselves.
-      Trigger: the refinement of this repo closes.
-      See: devlog 2026-10-17, later, the plain method;
-      `TODO-CONVERSATION-MEMORY.md` §6, *The method's plain rewrite: `cbc-slice`'s opening*.
 
 - [ ] Run this repo's retrospective, on trial (2026-10-17, from the
       Plan Step Gate of PLAN's Step 10).
@@ -1115,7 +879,7 @@
       seat, says what it is: both retrospective Agent Skills run on this repo, from
       `delivery/container/`, and a verdict on whether we hold them.
       The Plan Step Gate of PLAN's Step 10 held it until ADR-0057.
-      Trigger: the close of the refinement Plan Step.
+      Trigger: the rewrite done.
       See: ADR-0057, decision 4.
 
 - [ ] Judge the Conversation Memory trial (2026-11-01, the
@@ -1161,44 +925,6 @@
       whole.
       See: devlog 2026-09-06 (the template re-cut).
 
-- [ ] Sort `docs/baselines/` by kind (2026-09-23, ADR-0035
-      decision 6).
-      Context: trial evidence is withheld so a later derivation
-      measures independence; an Output Shape is withheld only until a
-      Plan Step Gate. A wrong move destroys a measurement that cannot be
-      remade, so this is a piece of work of its own, read with care,
-      not a tidy-up. The Spring Invariant Slice reference opens once, at a CBC Run's Release
-      (ADR-0033); CBC Run 3 has had no Release, and CBC Run 4 had one.
-      Trigger: the map.
-      See: devlog 2026-09-24.
-
-- [ ] Decide which ideas here are Idea Models (2026-10-24, the
-      reviewer).
-      Context: three Idea Models exist: the Agent Model, the Tiers Model
-      and the Idea-to-Output Model. An
-      Idea Model comes from a convention whose idea is general enough to
-      be used elsewhere (`docs/models/idea-to-output.md` §4.2, *The upward direction*). The
-      text-division item held candidates, left open by ADR-0063.
-      Ideas:
-      - one home: facts, their home, Fact References, and how a
-        disagreement between linked texts is settled.
-      - the Concept Deliverer and the CBC Run, with Convention Seats.
-      - an Output Shape: the shapes manual says what one is
-        (`docs/conventions/shapes/` §1.1, *What an Output Shape says*, and §2, *What
-        an Output Shape is not*).
-      - records: what a record is, a form and its entries; what a
-        set of records answers; how each Convention Seat adapts it, as the
-        project-recording's list of the records shows (the refinement's DECISION-12). Weighed against the Idea-to-Output Model, which holds part of
-        it (`docs/models/idea-to-output.md` §2, *The kinds*).
-      - the two checks on text kept true: the checks at each change,
-        a refinement after, and a finding's cause the way back. A
-        section of the Idea-to-Output Model, with its Chain Links and
-        its way up, or with the one-home idea if that becomes a model.
-      Trigger: the refinement's close.
-      See: ADR-0063; `30eb42e:TODO-CONVERSATION-MEMORY.md` §1;
-      `TODO-CONVERSATION-MEMORY.md` §29, *Two checks on text kept
-      true*.
-
 - [ ] Decide whether an Idea Model ships to a CBC Run (2026-10-24, the
       reviewer).
       Context: no manual and no Idea Model ships
@@ -1222,87 +948,6 @@
       Trigger: a convention whose idea another repo could use, with
                no second manual sharing it.
       See: ADR-0063; `30eb42e:TODO-CONVERSATION-MEMORY.md` §1.
-
-- [ ] Decide whether a standing full read looks for missing Fact
-      References, and for references pointing down (2026-10-27, the
-      reviewer).
-      Context: a line that relies on a fact written elsewhere and
-      carries no Fact Reference is found by no grep and no Change Walk. The
-      check of ADR-0070 asks it of each new or changed
-      line at the commit. Only the refinement's Refinement Rounds read the whole
-      repo for it today: their Dependencies Finding Kind, which two of Refinement
-      Round 2's seven close-read agents ran, with 19 findings. The last
-      read found it missed in text written after the check: FINDING-1625
-      (`9435842`, 2026-10-30) and FINDING-1626 (`683febc`, 2026-11-01).
-      Ideas:
-      - its own piece of work: not the sweep, a grep at a plan's
-        close, and not session end, which only records.
-      - read by foundation: one agent reads a Canonical Description beside
-        every file built on it, and asks of each line whether it
-        relies on a fact and says where.
-      - one Finding Kind per agent; other Finding Kinds may share the read, each
-        with its own agent.
-      - it reads against the reference's form
-        (`docs/conventions/facts-in-sync/` §3.1, *What a Fact Reference is*).
-      - a second Finding Kind for the same read: direction (ADR-0071). A
-        line in an Idea Model or a manual that relies on a lower text is
-        found by no grep either: telling relying from naming takes
-        a read. Done by hand on 2026-10-28: the three Idea Models and 67
-        manual paragraphs, 6 found, 3 of them references left at a
-        fact's old home when it moved (`b7c17ae`).
-      Trigger: the refinement's close.
-      See: devlog 2026-10-28; `TODO-CONVERSATION-MEMORY.md` §21, *A full read for missing fact references*.
-
-- [ ] Test Fact References and foundations as a whole: name every
-      scenario a change brings, and check each still holds
-      (2026-10-28, the reviewer).
-      Context: two means keep facts in place. A grep finds every line
-      that names a path, number, title or id. Only a read tells
-      whether that line, its paragraph or its whole file still holds
-      after the change. One home rests on both: the grep finds the
-      line, the read keeps its logic. ADR-0070 changed the reference
-      and the rename grep, and no one has walked every scenario
-      through both, end to end.
-      Ideas:
-      - the scenarios:
-        - a fact changed at its home;
-        - a section renamed, renumbered or retitled;
-        - a file renamed;
-        - a fact moved to a new home, a placed Approach on Trial among
-          them;
-        - a foundation changed;
-        - a derived file changed against its foundation;
-        - a retelling whose host is itself a Canonical Description;
-        - a CBC Run's id whose home changes;
-        - a shipped line that retells a manual, when our manual changes;
-        - a fact stated only in history;
-        - a line with no Fact Reference;
-        - a reference inside a living sentence about the past, after
-          its section is retitled: it takes the new title, since only
-          history keeps an old one (2026-10-31, ADR-0078's Context).
-      - for each: what finds it, a grep or a read; which rule says
-        so, by Fact Reference; what is re-read, the line, its
-        paragraph or the whole file; what could still slip.
-      - (a) on paper: a table of the scenarios against the rules.
-      - (b) a drill on a throwaway branch: each scenario made for
-        real, the check run, and what it found compared with a full
-        read.
-      - (c) agents: one per scenario, or one trying to make a change
-        slip past the check.
-      - (d) a Finding Kind of its own in the refinement's last read.
-      - what a scenario finds missing becomes a finding or a TODO
-        item; the test changes no rule itself.
-      - the same two means for Glossary Names, 2026-10-30. A script
-        can check every bold capitalized phrase against the glossary,
-        every entry's pointer against the file where its Name is bold
-        once (DECISION-22 of the refinement), and every Name spelled
-        in lowercase. Only a read finds a word a text gives a new
-        meaning with no mark, and decides a Name or plain words:
-        writing rule 9's question at the commit, and a refinement's Writing
-        read. The sweep scripts live in a session's scratchpad today.
-      Trigger: the refinement closes.
-      See: devlog 2026-10-28; ADR-0070;
-      `TODO-CONVERSATION-MEMORY.md` §22, *Testing fact references and foundations as a whole*.
 
 - [ ] Look again at where a CBC Run learns how to treat an Agent Skill
       Template (2026-10-28, the reviewer).
@@ -1360,7 +1005,7 @@
         sends a stranger there;
       - known issues filed here.
       PLAN held it until ADR-0057.
-      Trigger: the reviewer names it, after the refinement's close.
+      Trigger: the rewrite done, on the reviewer's word.
       See: ADR-0057, decision 4.
 
 - [ ] Decide what our CHANGELOG tracks, and how the Record Stub asks it

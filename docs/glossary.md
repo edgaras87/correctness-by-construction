@@ -148,8 +148,8 @@ delivered files below.
   A particular one is named by its owner: the Plan Step Form. A
   record's Output Form sits in the record itself: its header comment,
   or a Record Stub's headings. A Convention Manual's and a CBC Run Reading's are
-  Agent Rules today; whether they become Output Shapes is TODO's
-  "Decide whether our own forms become Output Shapes".
+  Agent Rules today; whether they become Output Shapes is held on the
+  rewrite's map (`temp/rewrite-map.md` §8, *Items from TODO*).
 - **Output Shape** — a presumed output, written from outputs that
   exist, and read only at a Plan Step Gate to check what was made
   (`docs/models/idea-to-output.md` §2, *The kinds*;

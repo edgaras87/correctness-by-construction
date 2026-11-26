@@ -26,168 +26,12 @@
      changed the work. It goes in the commit that works its item;
      the file stays, empty or not.
 
-     Last touched: 2026-11-20.
+     Last touched: 2026-11-26.
      Why the form is as it is: (docs/conventions/project-recording/
      §14, Conversation Memory).
      foundation: the project-recording convention -->
 
 # TODO's Conversation Memory
-
-## 2. How an approach and a shape divide an output
-
-Item: "Decide how an approach and a shape divide an output".
-
-### 2026-10-20
-
-#### What the reviewer said
-
-It opened with a question: should the shape idea be a model, with
-one convention holding both seats, or separate conventions?
-
-A shape is a presumed output, from practice: an output we want to
-look the same next time. Why a shape at the gate and not a
-template: with a template, or a shape written into the approach,
-the agent does the work to it and stops trying other ways. We may
-miss a better version, or a case that needs a second shape for the
-same approach. We want adaptation. So the shape is kept in
-`shapes/`, shown at the gate, and a difference ends one of the
-known ways.
-
-So approaches should be written without the output's form: they say
-fully what must be done, by their manual, and avoid how the output
-looks. Where an approach does not give what a shape needs, the
-reviewer listed: the part is optional, and the shape marks it so;
-the part was considered and is empty in this case, so it says none;
-the part was never considered, by the approach being older than the
-shape or touched since, which one home's re-read should make rare.
-
-#### What exists today
-
-- The shapes manual already holds most of the model: written from
-  work that exists (§1); "Not a template… Filling a shape in is the
-  failure mode it warns about" (§2); read at the gate only, since
-  "work written to the shape can only conform" (§3), lived by run 3
-  when a shape loaded early (ADR-0052); four endings, decided per
-  difference (§5.2). Adaptation is its core: "A shape *wants*
-  divergence" (§2); "A shape record that never changes is either
-  finished or unread" (§5.2).
-- The fourth ending, "the output is a different kind: both stand,
-  and a new shape starts", is the reviewer's several shapes for one
-  approach.
-- §3 holds half of the approach's side: "What must hold while the
-  work is written is not a shape. It belongs to the skill… where a
-  shape names a part only the work can produce… the skill asks for
-  it too." It does not say the other half: a skill carries no form.
-
-#### The live cases
-
-- `cbc-framing` hands over `templates/registry.md`, "Copy-and-fill…
-  Fill every slot", for the output the `registry-entry` shape
-  governs. Older than shapes (ADR-0008).
-- `approach-drafting`'s stage 1 lists what an approach file holds:
-  what for, stages, not known, ways rejected, uses. The form of its
-  own output, written into the approach.
-
-#### Points made
-
-- The three cases sharpened: a part considered and empty says "none,
-  because…", so it reads differently from one left out, as §5.2's "a
-  tick with no note is what would be wrong". A part never asked for
-  is too late to produce at the gate: a fifth kind of difference,
-  whose fix goes upstream to the approach, the output recording the
-  gap.
-- **The tension:** an approach that asks for a part a shape needs is
-  retelling the shape's need, and under ADR-0059 it would carry a
-  tag to the shape. A tag invites opening the shape before the gate.
-  So the ask is written in the approach's own words, as what to
-  capture; the tag serves the walk only; the shape says it is read
-  at the gate.
-
-## 3. Layouts as shapes
-
-Item: "Decide whether our own forms become shapes, and whether a
-shape's part can be optional", its layout ideas.
-
-### 2026-10-20
-
-#### What the reviewer asked
-
-Is there such a thing as a document layout design, chosen by kind:
-one layout for a convention's manual, another for an approach,
-another for a shape? Would it help maintenance, readability,
-future-proofing, complexity? Then: mark the layout as a shape thing,
-a layout shape under the shape model, so layouts adapt, compared at
-the gate, with the writing approach carrying none.
-
-#### What exists today
-
-| Kind of document | Its layout | Where | Seen by the writer |
-|---|---|---|---|
-| a manual | nine sections, in order | `.claude/rules/convention-manual.md` | when a manual is read (a `paths:` rule) |
-| a reading | its parts | `.claude/rules/exchange-reading.md` | when a reading is read |
-| a skill or rule file | frontmatter, stages, a *Decisions* footer | `docs/conventions/conventions/` §2 | never loaded |
-| a record | the form in its header comment | the record | when it is opened |
-| an approach on trial | its parts | `approach-drafting`, stage 1 | while drafting |
-| a run's outputs | shapes | `.claude/shapes/` | at the gate only |
-
-The writing rule is not one of these: it sets the voice, not where
-parts go. Its *Other styles* is where a kind of text would get a
-style of its own.
-
-#### Points made
-
-- Under the shape model, a layout is a shape whose output is one of
-  our documents: a case of the shapes convention, not a system of
-  its own.
-- The four questions: one family with one mechanism helps
-  maintenance and future-proofing; readability holds either way;
-  complexity stays low only if it is shapes extended, not a new
-  system beside them.
-- **The test is shapes §3's:** what must hold while writing stays a
-  rule. A manual's section order may: readers find things in the
-  same place across eleven manuals, and a writer who meets the
-  sections only at the gate may rework every new manual. How each
-  part is written may not.
-- A new reading is written without its form in view today, since
-  the form loads only when a reading is read (FINDING-4, `162bfb0`).
-
-### 2026-10-26
-
-#### What the reviewer asked
-
-Is a form the same as a shape, the one read before the output and
-the other after? Should the two share a name, such as a
-pre-output shape? Rules and skills already carry no shape: the
-shape is checked at the output, and an eval improves it. Then:
-what of manuals, models, the concept and the method? And does the
-form hold on maintenance, readability, future-proofing and
-complexity?
-
-#### Points made
-
-- A form is not only a layout. It also holds rules for the moment
-  of writing, such as "add an item the moment it is discovered",
-  which a shape cannot hold (`docs/conventions/shapes/` §3). A
-  record's form is both, in one place.
-- No new name: "pre-output shape" would name a thing this item may
-  remove. If layouts become shapes, "form" keeps only the writing
-  rules.
-- The test for a shape: many of a kind, and a moment to check
-  them. Manuals, readings, skills and rules pass. A record's
-  entries have no gate of their own, so the record keeps its form.
-  Models, three with no shared parts, and the one concept do not.
-- The reviewer agreed the record's form stays, and the manual's and
-  the reading's forms stay rules until this item decides.
-- The four questions, for the record's form:
-  - maintenance: one home per rule after the refinement's plan 2
-    for layer 2, but two seats each hold a copy, and nothing checks
-    they agree;
-  - readability: the rule is where the writer looks, and hidden
-    from a person reading the page; the header grows;
-  - future-proofing: a live run never takes a form's change, since
-    records go once, at birth (`docs/conventions/exchange/` §2.4);
-  - complexity: no new mechanism, but writing rules and layout
-    share one comment.
 
 ## 4. What our changelog tracks
 
@@ -301,22 +145,6 @@ layer 6 findings into this item rather than fixing either side:
 
 Nothing more was said of either; the reviewer said "go, write the
 plan".
-
-## 6. The method's plain rewrite: `cbc-slice`'s opening
-
-Item: "Rewrite the method's texts plain", its Ideas line on
-`cbc-slice`'s opening, added in `7db58ed`.
-
-### 2026-10-21
-
-FINDING-82 found the container's README stub saying an invariant
-is "closed by a test", where the concept says the test proves a
-wall, and the wall closes it. The stub was fixed in round 1.
-`cbc-slice`'s own opening line says the same, stating the
-completion test alone; it was moved here, not fixed, because it is
-method text, and round 1's rule for the method was to change a line
-only where it is untrue. Wording that is true but could be plainer
-waits for this rewrite.
 
 ## 9. A commit plan's look-back at the way
 
@@ -807,52 +635,6 @@ throwaway branch, agents, or a kind in the refinement's last read.
 Due when the refinement closes. A diagnostic: what it finds becomes
 findings or TODO items, and it changes no rule itself.
 
-## 27. Shared names of conventions and approaches
-
-Item: "Rename the manuals, Agent Skills and Agent Rules that share a
-name".
-
-### 2026-10-31
-
-#### What the reviewer asked
-
-At the design's question 8, after the agent recommended renaming
-the five manuals: "now i confused and thinking maybe we should leave
-that names can be same? we kind of solved by how we refer, by adding
-suffix, doent we? what else is wrong if we leave the same names?
-could we bring more clarity by having different names? can u show
-examples how we could rename both ways … should we bring rules how
-we name conventions and how we name approaches, like different
-grammar, expression or something like that?" Then: "show me others
-too how could look after renaming with those rules".
-
-#### What exists today
-
-- **The kind word, always:** "the commit-plan manual", "the
-  commit-plan Agent Skill" (the refinement's DECISION-24 and 27).
-  Reading is no longer ambiguous.
-- **What stays wrong:** a grep for a shared name finds the manual,
-  the Agent Skill, the `foundation:` lines and the paths together;
-  history and the CBC Runs' records say the bare name and are never
-  reworded.
-- **The grammar, tried on every name:** all 12 manuals already fit
-  "a subject, a noun", and all 10 Agent Rules fit "what it governs,
-  a noun", which cannot part a manual from an Agent Rule. Agent
-  Skills follow no one pattern: subject and act (exchange-read,
-  infra-establish), act and subject (apply-retrospective), a noun
-  (commit-messages). A strict "verb first" renames 11 of 12; a loose
-  "has a verb" renames 3 and lets commit-plan through, since it
-  reads as a noun or as subject and act.
-
-#### What the reviewer took
-
-The current names stay, the five shared ones too. A rule for new
-names: a new name never repeats a manual's, an Agent Skill's or an
-Agent Rule's, checked by grep; a new Agent Skill takes a verb. The
-renaming, either way the tables show, waits until the CBC Runs built
-with the old names have been read: a TODO item, with this talk kept
-here.
-
 ## 28. Text at the wrong level of the chain
 
 Item: "Read text for its level in the chain, the Levels Finding Kind,
@@ -895,61 +677,6 @@ and manual, manual and Work Approach, each read both ways. It is a
 Finding Kind, Levels, for the next refinement, due when this one
 closes and decides whether a refinement comes again. This talk kept
 here.
-
-## 29. Two checks on text kept true
-
-Item: "Decide which ideas here are Idea Models".
-
-### 2026-10-31
-
-#### What the reviewer asked
-
-At the design's commit 5d, reworded at the reviewer's request: "We
-wrote the Idea-to-Output Model so that our texts do not become false
-over time. A line written today can stop being true later, when other
-texts change. We want the texts never to contradict each other. Each
-carries a reference where it needs one, so that when one place
-changes, the others are adapted and the whole picture stays true. We
-cannot be sure this holds, so we run whole-repo refinements, and what
-we just found is one of their results. A refinement checks that the
-repo still holds true, and also finds what was missed. When we find a
-miss, we can find why it was missed, and improve how we keep the
-texts true so that it does not happen again. So a refinement is a
-second wall. The first is the rules we follow at each change; when
-something slips past them, a full read of the repo catches it. Is
-this right? What am I missing, and what could be done better? Will it
-hold on maintenance, readability, future-proofing and complexity?
-Where, how and when should we define it?" Then: "Should it have an
-Idea Model of its own, or be a new section of one we have?"
-
-#### What exists today
-
-- **The first check has four layers:** the Foundation Check and
-  one-home rule 6 at each commit; a commit plan's sweep and look back
-  at its close; a Plan Step's close items; the reviewer at every
-  boundary, whose questions caught four of the day's slips.
-- **The second is the refinement,** an Approach on Trial. Its stated
-  job is old text meeting a new rule; catching misses is a second job.
-  Most of Refinement Round 3's 644 findings are text older than
-  writing rules 9 to 11.
-- **What was missing:** a finding's cause, so a miss teaches the first
-  check; the scripted checks, rebuilt in three sessions and never
-  kept; one place that shows the two checks together. A test of the
-  first check before it fails is TODO's "Test Fact References and
-  foundations as a whole".
-- **Weighed on four questions:** maintenance holds once each miss gets
-  its cause; readability not yet, the checks spread over five texts
-  and three TODO items; future-proofing partly, since full reads grow
-  with the repo; complexity low, every piece existing.
-
-#### What the reviewer took
-
-A cause for every finding from Refinement Round 3's close read on, as
-the refinement's own change (`fc4efe0`); the two-check view
-in the refinement's *Not known yet*, judged at its close with where it
-is written. Whether the idea is an Idea Model, a section of the
-Idea-to-Output Model or of a one-home model, is this item's, due at
-the same close. This talk kept here.
 
 ## 30. Reading a CBC Run born before
 

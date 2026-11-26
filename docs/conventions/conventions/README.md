@@ -171,8 +171,7 @@ Fact Reference (`docs/conventions/facts-in-sync/` §3.1, *What a Fact Reference 
 Five names older than this part are shared: commit-messages,
 commit-plan, visual-comparison and retrospective, each a manual and
 an Agent Skill; writing, a manual and an Agent Rule. The kind keeps
-them apart in text until TODO's "Rename the manuals, Agent Skills and
-Agent Rules that share a name" is worked (ADR-0078).
+them apart in text (ADR-0078).
 
 ## 2. The Convention Manual
 
@@ -194,8 +193,8 @@ and what points at it or derives from it stay in agreement is
 opening, but for §2.6, a rule for the body. They come in the order of §2.1 to §2.9 below. It fixes where a reader
 finds each section, not a manual's length, its tone, or how many
 sections its body has. Whether a section is needed is each
-manual's to decide. Whether the form becomes an Output Shape is the TODO
-item "Decide whether our own forms become Output Shapes".
+manual's to decide. Whether the form becomes an Output Shape is held
+on the rewrite's map (`temp/rewrite-map.md` §8, *Items from TODO*).
 
 The form grows from what manuals already hold. The list is the
 least a manual has, and content that fits none of it takes its own

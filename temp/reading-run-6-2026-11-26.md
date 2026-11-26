@@ -337,7 +337,8 @@ and WORK-16 taken as one batch, the rest one at a time.
   Run 4's FINDING-40; CBC Run 5's FINDING-23). Words of record
   against code: held, TODO's "Decide how much a CBC Run records
   against what it builds", trigger: the map (`cbd4d343`; FINDING-25,
-  CBC Run 4's FINDING-41).
+  CBC Run 4's FINDING-41); on the map since 2026-11-26
+  (`temp/rewrite-map.md` §8, *Items from TODO*).
 - **WORK-18. The TODO items whose trigger these Readings fired.**
   Done (`0cf4c0f2`):
   - the look-back, new trigger the commit-plan Agent Skill's rewrite
