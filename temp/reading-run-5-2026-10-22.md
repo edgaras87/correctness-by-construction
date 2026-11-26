@@ -1,9 +1,12 @@
 <!-- The reading of run 5, event-tickets, opened 2026-10-22 by
      exchange-read and worked in place. A step before run 6's birth
      takes what run 6 needs, and the rest is taken after the
-     refinement. It stays here until the note that
-     carries its verdicts goes (exchange-deliver); then it is
-     deleted, and git keeps it. Its form is
+     refinement. Closed 2026-11-26 as overtaken
+     (docs/conventions/exchange/ §6.4, How a CBC Run Reading
+     closes): our texts moved past it, and CBC Run 5 is read again
+     from its first commit. Each open decision and work item says
+     where it went; its findings and lessons go with them. Then it
+     is deleted, and git keeps it, to compare. Its form is
      .claude/rules/exchange-reading.md; how it is worked,
      .claude/rules/working-a-reading.md. Our paths and decisions
      are cited freely: nothing here goes to the run. -->
@@ -483,6 +486,7 @@ Rests: A1's D2, D4, D15, D18, D19, D20, D21 (the hand-off), D16,
 D17 (the run's checks). Our hand-off is deleted and git keeps it;
 `auto-run.md` is the master a next hand-off is written from. Gates
 WORK-10 and `auto-run`'s evaluation (TODO).
+*Overtaken 2026-11-26: read again in CBC Run 5's new CBC Run Reading, from its first commit.*
 
 **DECISION-3. What does FINDING-1 ask of the method?** A record's
 rewrite at the gate was lost between the working tree and the
@@ -491,21 +495,25 @@ FINDING-24 (the retrospective reading the records), the "shape
 teaches once" lesson. Gates WORK-11. Nothing decides whether a
 close's check must read a record's sections, or whose that check
 is.
+*Overtaken 2026-11-26: read again in CBC Run 5's new CBC Run Reading, from its first commit.*
 
 **DECISION-4. How does a run's offered approach reach the
 evaluation?** Rests: A3, A4, A5, A13. `approach-evaluation`'s *Not
 known yet* holds this question; four offers now wait on it. Gates
 WORK-12 to WORK-15.
+*Overtaken 2026-11-26: read again in CBC Run 5's new CBC Run Reading, from its first commit.*
 
 **DECISION-5. Is the hand-off's §7 Method line, §11 message step and
 §8 "first entry" wording wrong, or the run?** Rests: FINDING-3, 8,
 18, 19. Each is a place where our hand-off said one thing and the
 delivered files another. Gates WORK-10.
+*Overtaken 2026-11-26: read again in CBC Run 5's new CBC Run Reading, from its first commit.*
 
 **DECISION-6. Does the reading of run 4 come before this one is
 worked?** Rests: FINDING-24 (lived twice), E5 and E7 (run 4's D4,
 D5, D8 cover the same traps per its RETRO), the playbook's run-3
 lines. Two readings open; one order for their work.
+*Overtaken 2026-11-26: the Plan Step "Read and judge CBC Runs 4, 5 and 6" judges the three CBC Run Readings together.*
 
 ## 6. The work
 
@@ -514,15 +522,20 @@ commit plan of its own.
 
 - **WORK-1.** The playbook: the eight "for run 5 only" lines retire,
   their answers folded (FINDING-31); its version note names run 5.
+  *Overtaken 2026-11-26: read again in CBC Run 5's new CBC Run Reading, from its first commit.*
 - **WORK-2.** Answer the four notices that close earlier asks, A6,
   A8, A10, A11, in the note.
+  *Overtaken 2026-11-26: read again in CBC Run 5's new CBC Run Reading, from its first commit.*
 - **WORK-3. plan.** `cbc-slice`: E9, E10, E11 (D9, D10, D11, D13,
   D14) against the master, read whole, and the concept's chapter
   04; the worked example's two copies if touched.
+  *Overtaken 2026-11-26: read again in CBC Run 5's new CBC Run Reading, from its first commit.*
 - **WORK-4. plan.** `cbc-bootstrap`'s three references: E4, E5,
   E6, E7 (D7, D8, D11, D12).
+  *Overtaken 2026-11-26: read again in CBC Run 5's new CBC Run Reading, from its first commit.*
 - **WORK-5.** `infra-establish`: E12, E13 (D5, D6), with
   FINDING-26's name collision and FINDING-25's lines.
+  *Overtaken 2026-11-26: read again in CBC Run 5's new CBC Run Reading, from its first commit.*
 - **WORK-6.** The registry template: E8 (D3), against the
   registry-entry shape and the framing skill.
   *Done 2026-10-29: E8 taken whole (`5e29435`).*
@@ -532,32 +545,42 @@ commit plan of its own.
   change of ours.*
 - **WORK-8.** The `retrospective` skill: FINDING-24, the block on
   top of an append-only log, lived twice, with run 4's FINDING-77.
+  *Overtaken 2026-11-26: read again in CBC Run 5's new CBC Run Reading, from its first commit.*
 - **WORK-9.** The `approach-drafting` master: E1, who chooses when
   verdicts are delegated (A2); the container's copy follows.
+  *Overtaken 2026-11-26: read again in CBC Run 5's new CBC Run Reading, from its first commit.*
 - **WORK-10. plan.** `auto-run.md`: the nine "next run only"
   lessons (D2, D4, D15 to D21) and FINDING-3, 8, 18, 19 into its
   stage 4; its evaluation is TODO's item.
+  *Overtaken 2026-11-26: read again in CBC Run 5's new CBC Run Reading, from its first commit.*
 - **WORK-11.** FINDING-1 as a question for the method: a close that
   reads a record's sections, where it lives; a TODO item or a
   decision (DECISION-3).
+  *Overtaken 2026-11-26: read again in CBC Run 5's new CBC Run Reading, from its first commit.*
 - **WORK-12 to WORK-15. plan each.** Evaluate `birth`, `identity`,
   `checks`, `release` by `approach-evaluation`, once DECISION-4 is
   answered.
+  *Overtaken 2026-11-26: read again in CBC Run 5's new CBC Run Reading, from its first commit.*
 - **WORK-16.** A7 and A9: read the two offers of evidence against
   the framing workflow's open question and the role split; a line
   each in the note.
+  *Overtaken 2026-11-26: read again in CBC Run 5's new CBC Run Reading, from its first commit.*
 - **WORK-17.** TODO's look-back item takes FINDING-9 and D18 as its
   first evidence; TODO's examples item takes the worked-example
   section; TODO's "how work is run by agents" item takes the fact
   that run 5 delegated nothing.
+  *Overtaken 2026-11-26: read again in CBC Run 5's new CBC Run Reading, from its first commit.*
 - **WORK-18.** The findings that are the run's own (FINDING-2, 5,
   6, 7, 10 to 17, 20 to 23, 27, 28) go to the note as findings,
   none a verdict; FINDING-1 first.
+  *Overtaken 2026-11-26: read again in CBC Run 5's new CBC Run Reading, from its first commit.*
 - **WORK-19.** `ARCHITECTURE.md` §2.5: run 5 "read, not yet
   answered" after this reading, "answered" after the note.
+  *Overtaken 2026-11-26: read again in CBC Run 5's new CBC Run Reading, from its first commit.*
 - **WORK-20.** The note, by `exchange-deliver`: every verdict in
   the run's order, the read-through `80099b1`, the files that
   changed since the pin.
+  *Overtaken 2026-11-26: no Delivery Note goes until the rewrite (ADR-0089, decision 3); the new CBC Run Reading's verdicts land there.*
 
 Counted (`.claude/rules/working-a-reading.md`, step 1): 20 work
 items, 7 marked plan. More than one plan: the step that works this
