@@ -277,12 +277,70 @@ to it, a stop hook refusing a stop until Release, and the run file
 
 ## 5. Decisions
 
-None yet. Decisions are written at the judging, stage 4, with CBC
-Runs 4 and 6.
+Judged with CBC Runs 4 and 6. The decisions live in CBC Run 6's
+Reading, `temp/reading-run-6-2026-11-26.md` §5, its DECISION-1. This
+Reading's findings among them:
+
+- CBC Run 6's DECISION-2, held: FINDING-7, 10, 11, 12 and 20; the
+  old Reading's FINDING-21 and 28.
+- CBC Run 6's DECISION-3, taken: FINDING-21.
+- CBC Run 6's DECISION-4, declined: FINDING-23.
+- CBC Run 6's DECISION-7, the watch ended: FINDING-34.
 
 ## 6. The work
 
-None yet; written at the judging.
+The work lives in CBC Run 6's Reading, §6, with each item's ending.
+This Reading's findings among it:
+
+- CBC Run 6's WORK-1, the cbc-slice Agent Skill: FINDING-5, 18 and
+  19, TAUGHT-3.
+- CBC Run 6's WORK-2, the cbc-bootstrap references and templates:
+  FINDING-4, 17 and 28, TAUGHT-4.
+- CBC Run 6's WORK-3, the infra-establish Agent Skill: FINDING-3, 15,
+  16, 28 and 29.
+- CBC Run 6's WORK-5, the commit-messages Agent Skill: FINDING-36
+  and 37.
+- CBC Run 6's WORK-6, the retrospective Agent Skill: FINDING-31 and
+  35.
+- CBC Run 6's WORK-7, CBC Run Asks checked at Release's close:
+  FINDING-8, 41 and 42; the old Reading's FINDING-27, the third
+  pointer.
+- CBC Run 6's WORK-8, the apply-retrospective Agent Skill:
+  FINDING-19; the old Reading's FINDING-4.
+- CBC Run 6's WORK-9, the Entry File stub: FINDING-34.
+- CBC Run 6's WORK-10, the PLAN stub: FINDING-33.
+- CBC Run 6's WORK-11, the playbook's Plan Step Form: FINDING-25;
+  the old Reading's FINDING-20.
+- CBC Run 6's WORK-13, the glossary opens at the birth: the old
+  Reading's FINDING-19.
+- CBC Run 6's WORK-14, the auto-run Approach on Trial: FINDING-8,
+  22 and 30, TAUGHT-1; the old Reading's FINDING-3, 8, 10, 11 and
+  18, DECISION-2 and DECISION-5.
+- CBC Run 6's WORK-15, `.gitignore` written by hand: FINDING-40.
+- CBC Run 6's WORK-16, the approach-drafting Approach on Trial:
+  FINDING-1, 9 and 32.
+- CBC Run 6's WORK-17, how much a CBC Run records: FINDING-23.
+- CBC Run 6's WORK-18, the TODO items whose trigger fired:
+  FINDING-14 and 38, TAUGHT-2 and TAUGHT-5.
+
+**Ending with no item:**
+
+- FINDING-2, 6 and 13: the registry template's slots and the
+  slice-record shape's backstop line were taken on 2026-10-29, in our
+  `5e29435` and `4fc9037`, and held in CBC Run 6 (its FINDING-10).
+- FINDING-24 and 26, and the old Reading's FINDING-12, 14, 15 and
+  23: CBC Run 5's own slips. A Delivery Note would have carried them,
+  and none goes (ADR-0089, decision 3).
+- FINDING-27: the playbook's "for run 5 only" lines are gone, so the
+  old Reading's WORK-1 has nothing left to do.
+- FINDING-39: `temp/` shipped as the container meant; it answers CBC
+  Run 4's FINDING-37.
+
+**The old Reading's open items,** at `4a44c206`, by where they went:
+DECISION-2, DECISION-5 and WORK-10 to CBC Run 6's WORK-14; WORK-1 to
+FINDING-27 above; WORK-3, WORK-4, WORK-5, WORK-8 and WORK-9 to CBC
+Run 6's WORK-1, WORK-2, WORK-3, WORK-6 and WORK-16, in that order.
+WORK-6 and WORK-7 were done on 2026-10-29.
 
 ## 7. What this CBC Run Reading taught
 
@@ -291,6 +349,8 @@ None yet; written at the judging.
 - A record that quotes lines by number in a file with newest entries
   on top goes stale at the next entry. A quote's text is checked, not
   its number.
+- The lesson of the judging, on working-a-reading step 1's count, is
+  in CBC Run 6's Reading, §7.
 
 ## 8. Notes
 
