@@ -210,7 +210,10 @@
         (2026-11-26, the reviewer);
       - a later update to a CBC Run born before names the renames in
         its Delivery Note, once (from the Plan Step that reads and
-        judges CBC Runs 4, 5 and 6).
+        judges CBC Runs 4, 5 and 6);
+      - the lessons in §7 of the three CBC Run Readings, for
+        working-a-reading and the exchange-read Agent Skill (from the
+        Plan Step that reads and judges CBC Runs 4, 5 and 6).
       Trigger: CBC Runs 4, 5 and 6 judged.
       See: devlog 2026-11-23, the order before the rewrite.
 
