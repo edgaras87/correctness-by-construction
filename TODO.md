@@ -575,15 +575,15 @@
       way and compare it with the first try before keeping one. CBC
       Run 4 tried the options of each question it must not decide
       alone on `try/` branches: 14 of them, and 2 changed the answer. CBC Run 5 tried it from
-      its CBC Run Hand-off: 13 look-back lines, 0 tries (its CBC Run Reading, FINDING-9).
+      its CBC Run Hand-off: 13 look-back lines, 0 tries (its CBC Run Reading of 2026-10-22, FINDING-9).
       Ideas:
       - a bar for "meaningful": it changes a Structural Wall, a test's
         adversity, or removes a part; rewording is not enough.
       - the better way on a `try/` branch, compared, and the try not
         chosen kept on its branch.
       - a cap on its cost, so no plan doubles by habit.
-      Trigger: WORK-17 of CBC Run 5's CBC Run Reading is worked, giving this
-               item FINDING-9 and D18.
+      Trigger: CBC Runs 4, 5 and 6 judged (`PLAN.md`), CBC Run 5's new CBC Run Reading giving this
+               item its look-back lines and its RETRO's D18.
       See: devlog 2026-10-21, evening; `TODO-CONVERSATION-MEMORY.md`
       §9, *A commit plan's look-back at the way*.
 
@@ -603,10 +603,10 @@
       - examples kept where a reader learns, gone where a CBC Run acts.
       - a second worked example on another kind of problem, keeping
         this one: CBC Run 5 framed two Responsibility Areas and a
-        LAYER-5 not empty (its CBC Run Reading, §4, *What run 5 teaches
+        LAYER-5 not empty (its CBC Run Reading of 2026-10-22, §4, *What run 5 teaches
         the worked example*).
-      Trigger: WORK-17 of CBC Run 5's CBC Run Reading is worked, giving this
-               item the reading's worked-example section.
+      Trigger: CBC Runs 4, 5 and 6 judged (`PLAN.md`), CBC Run 5's new CBC Run Reading giving this
+               item its worked-example section.
       See: devlog 2026-10-21, evening; `TODO-CONVERSATION-MEMORY.md`
       §10, *Examples in the concept, the conventions and the approaches*.
 
@@ -679,7 +679,7 @@
         user's memory files only. The Agent Model §6 states the rule;
         the Tool Binding (`docs/conventions/agent-arrangement/` §5,
         *The Claude Code Tool Binding*) would hold the mechanics.
-      Trigger: WORK-17 of CBC Run 5's CBC Run Reading is worked, giving this
+      Trigger: CBC Runs 4, 5 and 6 judged (`PLAN.md`), CBC Run 5's new CBC Run Reading giving this
                item that CBC Run 5 delegated nothing; with the lines
                gathered by then.
       See: devlog 2026-10-21, evening; `TODO-CONVERSATION-MEMORY.md`
@@ -1181,9 +1181,9 @@
       differences are the measurement. CBC Run 4 held CBC Run 3's Output Shape from
       birth, so CBC Run 5 is the first clean one: since ADR-0061 a Newborn CBC Run reads its Output Shapes at the Plan Step Gate, not at birth.
       The cbc-slice Agent Skill holds most of its lessons, so tests from the Agent Skill alone may meet it.
-      CBC Run 5's CBC Run Reading counts three differences at SLICE-1 (§4) and does not list them.
-      Trigger: the Plan Step that works the rest of CBC Run 5's CBC Run
-               Reading, after the refinement.
+      CBC Run 5's CBC Run Reading of 2026-10-22 counts three differences at SLICE-1 (§4) and does not list them.
+      Trigger: CBC Runs 4, 5 and 6 judged (`PLAN.md`, the Plan Step that
+               reads and judges them).
       See: devlog 2026-10-08; and 2026-10-10.
 
 - [ ] Decide which ideas here are Idea Models (2026-10-24, the
@@ -1436,8 +1436,8 @@
       held it rather than declined: one instance is not an Output Shape.
       CBC Run 3 says SL-2 did not lean on it; SL-2 faces no race.
       CBC Run 4 rebuilt CBC Run 3's problem from CBC Run 3's copies, so it
-      cannot be the second CBC Run. CBC Run 5's CBC Run Reading has
-      nothing on it.
+      cannot be the second CBC Run. CBC Run 5's CBC Run Reading of
+      2026-10-22 has nothing on it.
       Trigger: a CBC Run Reading finds a CBC Run writing it unprompted.
       See: devlog 2026-09-17, later still.
 
@@ -1623,7 +1623,7 @@
       classes. CBC Run 3 asks for a level between "single checked entry
       path" and "code review". It met it again in SL-2 and SL-4, and
       CBC Run 4 rebuilt the same problem from CBC Run 3's copies, so neither
-      is a second CBC Run, and CBC Run 5's CBC Run Reading has nothing on it. The hierarchy lives in
+      is a second CBC Run, and CBC Run 5's CBC Run Reading of 2026-10-22 has nothing on it. The hierarchy lives in
       `concept/02-guarantees-and-walls.md` and both of the cbc-slice Agent Skill's files: a
       concept change, with an ADR and the version question (ADR-0003).
       Trigger: a CBC Run Reading finds another CBC Run meeting a System

@@ -256,7 +256,7 @@ Notes:
   - CBC Run 4: unread; 158 commits, 42 branches, born by hand from
     CBC Run 3's kit at `dac4dd1`; 12 lines under *To the deliverer*.
   - CBC Run 5: read on 2026-10-22 through `80099b1`,
-    `temp/reading-run-5-2026-10-22.md`, its judging half done; no
+    `temp/reading-run-5-2026-10-22.md`, in git at `4a44c206`, its judging half done; no
     commit since, its tree clean. Its open DECISION-2 and
     DECISION-5, and WORK-1 and WORK-3 to WORK-10, are among the
     findings.
