@@ -145,15 +145,17 @@ work.
 Goal: CBC Runs 4, 5 and 6 each have a CBC Run Reading by today's
 exchange, and every item of the three has ended taken, declined or
 held, kept for the rewrite.
-Now: stage 4, decide and work, the three together.
+Now: stage 5, close.
 Gate:
 
 **At the opening.**
 
-- [ ] The Plan Step's branch `runs-judged-2026-11-26`, if it has one,
+- [-] The Plan Step's branch `runs-judged-2026-11-26`, if it has one,
       is cut from main after the reads, and nothing of the Plan Step
       was done on main except the reads
-      (`.claude/rules/working-a-reading.md`, step 1).
+      (`.claude/rules/working-a-reading.md`, step 1)
+      (skipped 2026-11-26: no branch, since the count found 0 items
+      marked plan; the judging ran on main).
 - [x] This Plan Step Gate was written before the work started
       (2026-11-26, in `c7ef5580`, the Plan Step's opening commit).
 - [x] The Plan Step's Work Approach is known: the exchange-read Agent
@@ -181,27 +183,31 @@ Gate:
 - [x] CBC Run 5 has a new CBC Run Reading in `temp/`, its first line
       naming the commit read through (2026-11-26, `3f12fb5f`,
       through `80099b1`).
-- [ ] Each edit, CBC Run Ask and finding of CBC Runs 4, 5 and 6 has
-      one line in its CBC Run Reading.
-- [ ] CBC Run 4's own questions and CBC Run 6's, listed in the Notes,
-      each have a line in their CBC Run Reading.
-- [ ] The three CBC Run Readings were judged together: a finding seen
+- [x] Each edit, CBC Run Ask and finding of CBC Runs 4, 5 and 6 has
+      one line in its CBC Run Reading (2026-11-26, at the reads).
+- [x] CBC Run 4's own questions and CBC Run 6's, listed in the Notes,
+      each have a line in their CBC Run Reading (2026-11-26: CBC Run
+      4's FINDING-30, 32 to 38; CBC Run 6's FINDING-24).
+- [x] The three CBC Run Readings were judged together: a finding seen
       in more than one names each CBC Run it came from, and is judged
-      once.
-- [ ] Every finding has ended in a decision or a work item, or says
-      why it needs neither.
-- [ ] Every work item has ended taken, declined or held, and is
-      marked in its CBC Run Reading.
-- [ ] Each taken item names the text it lands with in the rewrite. No
+      once (2026-11-26, in CBC Run 6's Reading, `4a8b9a0b`).
+- [x] Every finding has ended in a decision or a work item, or says
+      why it needs neither (2026-11-26, `4a8b9a0b`, `5445cdb1`,
+      `d1fb34f4`; checked by script).
+- [x] Every work item has ended taken, declined or held, and is
+      marked in its CBC Run Reading (2026-11-26, `4a8b9a0b`).
+- [x] Each taken item names the text it lands with in the rewrite. No
       Master Copy changed and no Delivery Note was sent (ADR-0089,
-      decision 3).
-- [ ] Each held item has its line in TODO.
-- [ ] Nothing in CBC Runs 4, 5 and 6 was written to.
-- [ ] Each CBC Run's uncommitted work, if any, is named in its CBC Run
-      Reading.
-- [ ] The three CBC Run Readings stay in `temp/`, each header saying
-      it is kept for the rewrite.
-- [ ] `temp/RUN-4.md` is read, then deleted.
+      decision 3) (2026-11-26).
+- [x] Each held item has its line in TODO (2026-11-26, `d1919e53`,
+      `1911efd6`, `1c387828`, `cbd4d343`).
+- [x] Nothing in CBC Runs 4, 5 and 6 was written to (2026-11-26: each
+      at its read-through commit, its tree clean).
+- [x] Each CBC Run's uncommitted work, if any, is named in its CBC Run
+      Reading (2026-11-26: none, each Reading's Notes).
+- [x] The three CBC Run Readings stay in `temp/`, each header saying
+      it is kept for the rewrite (2026-11-26).
+- [x] `temp/RUN-4.md` is read, then deleted (2026-11-26, `4ef580f6`).
 
 **Known already.** The exchange-read Agent Skill's *Gates* and
 working-a-reading's *Gates*, checked against the own items by meaning:
