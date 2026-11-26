@@ -145,7 +145,7 @@ work.
 Goal: CBC Runs 4, 5 and 6 each have a CBC Run Reading by today's
 exchange, and every item of the three has ended taken, declined or
 held, kept for the rewrite.
-Now: stage 3, close CBC Run 5's old Reading, then read CBC Run 5 again.
+Now: stage 4, decide and work, the three together.
 Gate:
 
 **At the opening.**
@@ -178,8 +178,9 @@ Gate:
       overtaken: each open item says where it went, and the file is
       deleted (`docs/conventions/exchange/` §6.4, *How a CBC Run
       Reading closes*) (2026-11-26, `4a44c206` and `23744f02`).
-- [ ] CBC Run 5 has a new CBC Run Reading in `temp/`, its first line
-      naming the commit read through.
+- [x] CBC Run 5 has a new CBC Run Reading in `temp/`, its first line
+      naming the commit read through (2026-11-26, `3f12fb5f`,
+      through `80099b1`).
 - [ ] Each edit, CBC Run Ask and finding of CBC Runs 4, 5 and 6 has
       one line in its CBC Run Reading.
 - [ ] CBC Run 4's own questions and CBC Run 6's, listed in the Notes,
