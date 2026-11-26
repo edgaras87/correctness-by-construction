@@ -266,7 +266,7 @@ and the shipped copy, takes one line. **Parts:** what the text holds.
 | `.claude/approaches-on-trial/auto-run.md` | | | |
 | `.claude/approaches-on-trial/model-placing.md` | | | |
 | `.claude/approaches-on-trial/refinement.md` | | | |
-| `.claude/decisions.md` and `delivery/container/.claude/decisions.md`, its form | | | |
+| `.claude/decisions.md` and `delivery/container/.claude/decisions.md`, its form | the Decisions Log's form; the entries are history | form: 4, open (QUESTION-1) | `docs/conventions/agent-arrangement/` |
 | `.claude/rules/convention-manual.md` | | | |
 | `.claude/rules/defined-terms.md` | our Defined Terms: the Instruction Text, a Paths Rule | 4, in place | none |
 | `.claude/rules/exchange-reading.md` | | | |
@@ -289,14 +289,14 @@ and the shipped copy, takes one line. **Parts:** what the text holds.
 | `.editorconfig` and `delivery/container/.editorconfig` | | | |
 | `.gitattributes` and `delivery/container/.gitattributes` | | | |
 | `.gitignore` and `delivery/container/.gitignore` | | | |
-| `ARCHITECTURE.md` | | | |
-| `CHANGELOG.md`, its form | | | |
+| `ARCHITECTURE.md` | its form; how the repo's parts tie, and the table of CBC Runs | form: 4, open (QUESTION-1); the content: 4, rewritten last | every other text: it says what stands |
+| `CHANGELOG.md`, its form | its form, for those who pin a concept version; the entries are history | form: 4, open (QUESTION-1); what is versioned: open (QUESTION-3) | `docs/conventions/project-recording/`; `concept/` |
 | `CLAUDE.local.md` | | | |
 | `CLAUDE.md` | | | |
-| `PLAN.md` | | | |
-| `README.md` | | | |
-| `TODO-CONVERSATION-MEMORY.md`, its form | | | |
-| `TODO.md` | | | |
+| `PLAN.md` | the legend and the Plan Step Form; the open Plan Step, this repo's work | form: 4, open (QUESTION-1); the Plan Step: 4, in place | `docs/conventions/project-recording/`; the playbook, `delivery/fills/cbc-run-pure-playbook.md` |
+| `README.md` | its form; what this repo is, for a reader from outside | form: 4, open (QUESTION-1); the content: 4, rewritten last | every other text: it says what stands |
+| `TODO-CONVERSATION-MEMORY.md`, its form | its form, on trial; the sections are history | form: 4, open (QUESTION-1); whether it stays: TODO's "Judge the Conversation Memory trial" | TODO's "Judge the Conversation Memory trial" |
+| `TODO.md` | its form, in the header comment; the items, this repo's work | form: 4, open (QUESTION-1); the items: 4, in place | `docs/conventions/project-recording/` |
 | `concept/00-cbc.md` | | | |
 | `concept/01-layered-system.md` | | | |
 | `concept/02-guarantees-and-walls.md` | | | |
@@ -354,8 +354,8 @@ and the shipped copy, takes one line. **Parts:** what the text holds.
 | `delivery/spring-postgres/.claude/skills/infra-establish/templates/verify-database-model.sql` | | | |
 | `delivery/spring-postgres/.claude/skills/infra-serve/SKILL.md` | | | |
 | `delivery/spring-postgres/docs/glossary/stack.md` | | | |
-| `devlog/README.md` | | | |
-| `docs/adr/README.md` | | | |
+| `devlog/README.md` | the devlog's form; the entries are history | form: 4, open (QUESTION-1) | `docs/conventions/project-recording/` |
+| `docs/adr/README.md` | the ADR's form; the ADRs are history | form: 4, open (QUESTION-1) | `docs/conventions/project-recording/` |
 | `docs/baselines/cbc-derived-claude-walk1.md` | | | |
 | `docs/baselines/cbc-run-pure-playbook-v2.md` | | | |
 | `docs/baselines/cbc-startup-snippet.md` | | | |
@@ -377,7 +377,7 @@ and the shipped copy, takes one line. **Parts:** what the text holds.
 | `docs/conventions/shapes/README.md` | | | |
 | `docs/conventions/visual-comparison/README.md` | | | |
 | `docs/conventions/writing/README.md` | | | |
-| `docs/glossary.md` | | | |
+| `docs/glossary.md` | its form; the Glossary Names, each pointing at its home | open (QUESTION-2) | `docs/conventions/writing/`; each text a Name points at |
 | `docs/models/agent.md` | | | |
 | `docs/models/idea-to-output.md` | | | |
 | `docs/models/tiers.md` | | | |
@@ -394,7 +394,7 @@ and the shipped copy, takes one line. **Parts:** what the text holds.
 | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` | change, in keeping knowledge | 2, in place | none |
 | `knowledge/problem-domain-ideas/keeping-knowledge/defined-terms-in-keeping-knowledge.md` | Defined Terms, in keeping knowledge | 2, in place | none |
 | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` | the layers, in keeping knowledge | 2, in place | none |
-| `temp/README.md` | | | |
+| `temp/README.md` | what `temp/` holds: a draft, a kept file | form: 4, open (QUESTION-1) | `docs/conventions/project-recording/` |
 | `temp/common-ground/backend-repo-change-flow.md` | | | |
 | `temp/common-ground/backend-repo-change-simulation.md` | | | |
 | `temp/common-ground/between-repos-simulation.md` | | | |
@@ -422,3 +422,23 @@ and the shipped copy, takes one line. **Parts:** what the text holds.
 | `temp/run-6-handoff/CLAUDE.local.md` | | | |
 | `temp/run-6-handoff/run.md` | | | |
 | `temp/run-6-handoff/start.md` | | | |
+
+## 10. Shared questions
+
+A question many texts share, decided once, here, with the reviewer.
+Each text it touches names it in §9.
+
+- **QUESTION-1. Where a record's form goes.** Each record's form says
+  what its entries are, adapted for this repo from the project-recording
+  manual. In the layers model it may be this repo's own Adapted Case,
+  at layer 4, standing on an idea of records at layer 2; or it may
+  stand on that idea directly, where it is. Touches every record.
+- **QUESTION-2. What becomes of the glossary.** It lists the Glossary
+  Names of texts outside `knowledge/` and `.claude/understanding/`.
+  A text in the layers model keeps its own Defined Terms
+  (`.claude/rules/defined-terms.md`), and the glossary does not list
+  them (ADR-0085).
+- **QUESTION-3. What the changelog versions.** It versions the concept,
+  for those who pin a concept version. In the layers model the concept
+  is split (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md`
+  §3.3, *The Adapted Case layer*).
