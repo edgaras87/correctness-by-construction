@@ -144,18 +144,21 @@ work.
 
 Goal: every part of the repo-hygiene manual, and of the texts that
 wait on it alone, stands at its layer, and the manual is gone.
-Now: the opening.
+Now: stage 1, the Backbone Idea.
 Gate:
 
 **At the opening.**
 
-- [ ] The Plan Step's branch `hygiene-2026-11-26`, if it has one, is cut
+- [x] The Plan Step's branch `hygiene-2026-11-26`, if it has one, is cut
       from main, and nothing of the Plan Step was done on main
-      (`.claude/rules/working-a-reading.md`, step 1).
-- [ ] This Plan Step Gate was written before the work started.
-- [ ] The Plan Step's Work Approach is known: the stages its Notes
+      (`.claude/rules/working-a-reading.md`, step 1)
+      (2026-11-26, cut at `caa86c58`, before the opening commit).
+- [x] This Plan Step Gate was written before the work started
+      (2026-11-26, in `6da07ad8`, the Plan Step's opening commit).
+- [x] The Plan Step's Work Approach is known: the stages its Notes
       list, from the map, `temp/rewrite-map.md` §9, *Every text*, and
-      §10, *Shared questions*; no Approach on Trial drafted.
+      §10, *Shared questions*; no Approach on Trial drafted
+      (2026-11-26).
 
 **The Plan Step's own items.**
 
