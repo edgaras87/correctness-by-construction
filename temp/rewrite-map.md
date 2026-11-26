@@ -245,7 +245,7 @@ section, if any, at `f83d146b:TODO-CONVERSATION-MEMORY.md`.
 | Whether writing rule 10 reaches unnumbered headings | the writing manual, `docs/conventions/writing/` | 995 | — |
 | A Fact Reference from the method's texts to each part of a concept chapter they use | the method's texts, `delivery/method/`, and the chapters, `concept/` | 1092 | §6, *The method's plain rewrite: `cbc-slice`'s opening* |
 | Sort `docs/baselines/` by kind, read with care: a wrong move destroys a measurement | `docs/baselines/` | 1164 | — |
-| Which ideas here are Idea Models | decided once, with which ideas are Backbone Ideas (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §5, *Open questions*, question 4) | 1175 | §29, *Two checks on text kept true* |
+| Which ideas here are Idea Models | decided once, with which ideas are Backbone Ideas (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §5, *Open questions*, question 4); decided: §10, QUESTION-7 | 1175 | §29, *Two checks on text kept true* |
 
 ## 9. Every text
 
@@ -266,10 +266,10 @@ it for, and nothing goes before the rewrite decides.
 | `.claude/approaches-on-trial/approach-drafting.md` and `delivery/container/.claude/approaches-on-trial/approach-drafting.md` | trying a new way of working, its idea written only here (§3); the stages | idea: 1 or 2, with §8's approach-drafting row; ours: 4; the CBC Run's copy: 3 | none |
 | `.claude/approaches-on-trial/approach-evaluation.md` | trying a new way of working: judging an Approach on Trial and placing its pieces | 4 | `.claude/approaches-on-trial/approach-drafting.md` |
 | `.claude/approaches-on-trial/auto-run.md` | a CBC Run on full auto: preparing it and its birth | 4, on trial; TODO's "Evaluate the auto-run Approach on Trial" waits | `delivery/installs/pure-seed.md` |
-| `.claude/approaches-on-trial/model-placing.md` | an Idea Model taking what it borrows from a text below it | QUESTION-5 | none |
+| `.claude/approaches-on-trial/model-placing.md` | an Idea Model taking what it borrows from a text below it | goes (QUESTION-5): Change's arrow *lesson* does its job | none |
 | `.claude/approaches-on-trial/refinement.md` | bringing old text up to a new rule: Refinement Rounds, Finding Kinds, the last read | idea: 1 or 2; the stages: 4 | none |
 | `.claude/decisions.md` and `delivery/container/.claude/decisions.md`, its form | the Decisions Log's form; the entries are history | form: 4, open (QUESTION-1) | `docs/conventions/agent-arrangement/` |
-| `.claude/rules/convention-manual.md` | the manual's form, as an Agent Rule | QUESTION-4; QUESTION-5 | `docs/conventions/conventions/` |
+| `.claude/rules/convention-manual.md` | the manual's form, as an Agent Rule | QUESTION-4; it goes with the conventions manual (QUESTION-5) | `docs/conventions/conventions/` |
 | `.claude/rules/defined-terms.md` | our Defined Terms: the Instruction Text, a Paths Rule | 4, in place | none |
 | `.claude/rules/exchange-reading.md` | the CBC Run Reading's form | 4: each part to our change Adapted Case in place that holds it, the rest beside them | `docs/conventions/exchange/` |
 | `.claude/rules/foundation-check.md` | the check before a commit | 4 | `docs/conventions/facts-in-sync/` |
@@ -367,7 +367,7 @@ it for, and nothing goes before the rewrite decides.
 | `docs/conventions/agent-arrangement/README.md` | the idea: §1 to §4, an arrangement, the Entry File, `.claude/`; §5, the Claude Code Tool Binding; both seats; the form's sections | idea: 1 or 2 (§8, the Idea Models row); §5: QUESTION-6; the CBC Run's seat: 3; ours: 4; the form's sections: QUESTION-4 | `docs/models/agent.md` |
 | `docs/conventions/commit-messages/README.md` | the idea: §1, §2; §3, our habit; the seats, alike; the form's sections | idea: 1 or 2 (§8, the Idea Models row); §3: 4; the CBC Run's seat: 3; ours: 4; the form's sections: QUESTION-4 | `docs/conventions/agent-arrangement/`, for §2.3 |
 | `docs/conventions/commit-plan/README.md` | the idea: §1, §2; the seats, alike; the form's sections | idea: 1 or 2 (§8, the Idea Models row); the CBC Run's seat: 3; ours: 4; the form's sections: QUESTION-4 | `docs/conventions/commit-messages/` |
-| `docs/conventions/conventions/README.md` | how a Work Approach is written, §1; the manual's form, §2; adding a convention, §3 | QUESTION-5 | none: the layers, in place |
+| `docs/conventions/conventions/README.md` | how a Work Approach is written, §1; the manual's form, §2; adding a convention, §3 | goes (QUESTION-5): §1, the new idea of how instructions are written; §2: QUESTION-4; §3: Change | none: the layers, in place |
 | `docs/conventions/exchange/README.md` | the idea: §1, §2; down to a CBC Run, §3, §4; editing a copy, §5; up from a CBC Run, §6; the body by seat; the form's sections | §1, §2: 1 or 2 (§8, the Idea Models row); §3 to §6: each to the change text in place that holds it, at layers 2 to 4, the rest beside them; the form's sections: QUESTION-4 | `docs/models/tiers.md`; `docs/conventions/facts-in-sync/` |
 | `docs/conventions/facts-in-sync/README.md` | the idea: §1 to §5, one home, the Fact Reference, a Canonical Description's rule, a disagreement; both seats; the form's sections | idea: 1 or 2 (§8, the Idea Models row); the CBC Run's seat: 3; ours: 4; the form's sections: QUESTION-4 | `docs/models/idea-to-output.md`, for §4 |
 | `docs/conventions/project-recording/README.md` | the idea of records: §1, §11 to §13; each record, §2 to §8, and its form; the playbook, §9; supporting records, §10; Conversation Memory, §14; both seats; the form's sections | idea: 1 or 2 (§8, the Idea Models row); each record's form: QUESTION-1; §14: 4, on trial; the CBC Run's seat: 3; ours: 4; the form's sections: QUESTION-4 | none |
@@ -381,8 +381,8 @@ it for, and nothing goes before the rewrite decides.
 | `docs/conventions/writing/README.md` | the idea: §1, §2, what it governs, why each rule; the seats; the form's sections | idea: 1 or 2 (§8, the Idea Models row); rule 9: QUESTION-2; the CBC Run's seat: 3; ours: 4; the form's sections: QUESTION-4; one item waits here (§8) | `docs/conventions/facts-in-sync/`, for §1.1 |
 | `docs/glossary.md` | its form; the Glossary Names, each pointing at its home | open (QUESTION-2) | `docs/conventions/writing/`; each text a Name points at |
 | `docs/models/agent.md` | how an agent works: §1 to §8, §11, §12; where each convention lands, §9; the Tool Bindings, §10 | §1 to §8, §11, §12: 1 or 2 (§8, the Idea Models row); §9: 4; §10: QUESTION-6 | none |
-| `docs/models/idea-to-output.md` | the chain, its kinds and links, the two directions, a convention: §1 to §8 | QUESTION-5 | none: the layers, in place |
-| `docs/models/tiers.md` | the tiers, Concept Repos and Run Repos, and the flows between them: §1 to §4 | QUESTION-5 | none: the layers, in place |
+| `docs/models/idea-to-output.md` | the chain, its kinds and links, the two directions, a convention: §1 to §8 | goes (QUESTION-5): §1, §3.1, §3.2, the layers document; §4, Change; §3.3, the one-home idea; §6.2, the new idea of how instructions are written; the rest by its subject | none: the layers, in place |
+| `docs/models/tiers.md` | the tiers, Concept Repos and Run Repos, and the flows between them: §1 to §4 | goes (QUESTION-5): §2, the repos in the layers in keeping knowledge; §3, §4.1, Change; §4.2, the layers document | none: the layers, in place |
 | `knowledge/adapted-cases/cbc-backend-design/defined-terms/defined-terms.md` | the Backend Kit's Defined Terms, an Instruction Text alone | 3, in place | none |
 | `knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/change-a-kit-copy/rule.md` | changing a Kit Copy: its Instruction Text, a Paths Rule | 3, in place | none |
 | `knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/change-a-kit-copy/understanding.md` | changing a Kit Copy: its Adapted Understanding Text | 3, in place | none |
@@ -435,15 +435,51 @@ Each text it touches names it in §9.
   manual. In the layers model it may be this repo's own Adapted Case,
   at layer 4, standing on an idea of records at layer 2; or it may
   stand on that idea directly, where it is. Touches every record.
+  **Decided 2026-11-26, the reviewer:** each record's form is an
+  Adapted Case, ours at layer 4, a Record Stub the Backend Kit's at
+  layer 3, copied once at birth. Its parts land by ADR-0087, decision 4:
+  - the form, how an entry is written: the record's header, where it
+    is, as its Instruction Text, loading when the record is opened;
+  - a why several records share: layer 2, an idea of records in
+    keeping knowledge, written from the project-recording manual;
+  - a why of one record alone: that record's Adapted Understanding
+    Text, ours in `.claude/understanding/`; a record with none has
+    none, as the Backend Kit's Defined Terms have none.
+
+  Left to practice: the paths of the Backend Kit's Record Stubs, and
+  which whys are one record's alone.
 - **QUESTION-2. What becomes of the glossary.** It lists the Glossary
   Names of texts outside `knowledge/` and `.claude/understanding/`.
   A text in the layers model keeps its own Defined Terms
   (`.claude/rules/defined-terms.md`), and the glossary does not list
   them (ADR-0085).
+  **Answered 2026-11-26, the reviewer:** by
+  `.claude/understanding/defined-terms.md` §2, *Two sets of texts*,
+  and §3, *Twin names*: the glossary governs the texts outside the
+  layers model while the rewrite runs, and the rewrite retires each
+  Glossary Name, a twin for its Defined Term, any other as a Defined
+  Term at its new home. Added here:
+  - the glossary and writing rule 9 go together, when the last text
+    outside the layers model is rewritten; the defined-terms Agent
+    Rule's rule 6 holds what rule 9 says of a name's form;
+  - the delivered Glossary Names, the container's, the method's and
+    the stack's, fold into the Backend Kit's Defined Terms, in place.
 - **QUESTION-3. What the changelog versions.** It versions the concept,
   for those who pin a concept version. In the layers model the concept
   is split (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md`
   §3.3, *The Adapted Case layer*).
+  **Decided 2026-11-26, the reviewer:** in the layers model a Backend
+  Repo pins a Backend Kit Version, and the Backend Kit Update Note
+  says what changed since it, and why, from the commit bodies
+  (`knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md`
+  §1, *Its Defined Terms*). No repo pins the concept itself. So:
+  - our `CHANGELOG.md` goes once the first Kit Update is sent; its
+    released entry is history, and its [Unreleased] entries need no
+    new home;
+  - a Backend Repo's own changelog, its Record Stub, stays, under
+    QUESTION-1;
+  - TODO's "Release concept v2" no longer fits as it reads; its own
+    trigger, the rewrite done, decides what it becomes.
 - **QUESTION-4. A manual's own sections.** *What it is for*, *What
   this is made usable as*, *The seats*, *Why it arrives this way*,
   *What this does not cover* and *Where to look* are the manual's form
@@ -451,11 +487,86 @@ Each text it touches names it in §9.
   header says what it is, what it stands on and what stands on it.
   Which of these sections land in the header, which in the text, and
   which go. Touches the 12 manuals.
+  **Decided 2026-11-26, the reviewer:** none needs a home of its own;
+  each goes where the texts in place already say it, or goes with its
+  job:
+  - the opening statement: the text's first line;
+  - *What it is for*: the Understanding Text's own body;
+  - *What this is made usable as*: the header's "What stands on it";
+  - *The seats*: goes; each seat is its own Adapted Case, the CBC
+    Run's at layer 3, ours at layer 4;
+  - *Why it arrives this way*: the Adapted Understanding Text, as
+    `knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/change-a-kit-copy/understanding.md`
+    §1, *Why a Paths Rule*;
+  - *What this does not cover*: the text's opening, naming its
+    neighbours;
+  - *Where to look*: goes; a pointer stands where a line relies on it.
+
+  The manual's form, `.claude/rules/convention-manual.md`, goes with
+  the conventions manual.
 - **QUESTION-5. What the layers model replaces.** The conventions
   manual, the Idea-to-Output Model and the Tiers Model say how ideas,
   texts and repos tie. The layers model says it for its own texts
   (`knowledge/backbone-ideas/layers-of-knowledge.md`). Touches those
   three, and every text with a Foundation Line.
+  **Decided 2026-11-26, the reviewer:** the three go once their parts
+  have landed, as every text does (ADR-0082, decision 2), and
+  model-placing goes with them. Each part lands by its subject, not
+  in the nearest text:
+  - **held already,** pointing at its place: the chain and a link
+    pointing up, the layers document; the two directions, Change;
+  - **how knowledge moves:** the five facts on every flow and where a
+    lesson lands, Change;
+  - **which text may point at which:** the dependency rule, the
+    layers document;
+  - **keeping linked texts true:** settling a disagreement, the idea
+    written from the facts-in-sync manual;
+  - **how instructions are written for an agent:** how an Agent Skill
+    or Agent Rule is written, what a convention asserts, and the
+    Foundation Line, a new idea, written when the rewrite reaches the
+    conventions manual.
 - **QUESTION-6. Where the Tool Bindings go.** How the Agent Model's
   channels map onto Claude Code: agent-arrangement §5, *The Claude
   Code Tool Binding*, and the Agent Model's §10, *The Tool Bindings*.
+  **Decided 2026-11-26, the reviewer:** split as every idea is, and
+  written by TODO's item that rewrites the Agent Model, whose Ideas
+  name it:
+  - what every Tool Binding must say, the Agent Model's §10: layer 1,
+    in the Backbone Idea of how an agent works;
+  - Claude Code's binding for the Backend Repos, all of which use it:
+    a Backend Kit Adapted Case, layer 3;
+  - ours, today's agent-arrangement §5: our own Adapted Case, layer 4.
+- **QUESTION-7. Which ideas are Backbone Ideas.** §8's row on which
+  ideas here are Idea Models, decided once with the layers document's
+  open question 4, which ideas are Backbone Ideas
+  (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md`
+  §5, *Open questions*). In the layers model an Idea Model is a
+  Backbone Idea. It settles "1 or 2" in every manual's line of §9.
+  **Decided 2026-11-26, the reviewer:** an idea goes to layer 1 when
+  both Problem Domains, keeping knowledge and CBC backend design, work
+  by it today. One only one works by stays that Problem Domain's idea
+  at layer 2, and goes up by Change's arrow *lesson* when a second
+  needs it.
+  - **Layer 1, in place or planned:** change, Defined Terms, the
+    layers, how an agent works, CBC design.
+  - **Layer 1, both work by it:** writing; one home, from the
+    facts-in-sync manual, with settling a disagreement; records, from
+    the project-recording manual; commit messages; a set of commits,
+    from the commit-plan manual; repo hygiene; visual comparison;
+    trying a new way of working, from the approach-drafting Approach
+    on Trial; how instructions are written for an agent (QUESTION-5).
+  - **Layer 2, keeping knowledge only:** refinement.
+  - **Layer 2, CBC backend design only:** looking back, from the
+    retrospective manual, our trial never run; Output Shapes, until
+    §8's row on our own forms decides.
+  - **No idea of its own:** birth, the Pure Seed's, lands in Change;
+    the Tiers Model and the Idea-to-Output Model go (QUESTION-5).
+  - **§8's candidates:** one home, Output Shapes and records stand as
+    above; the Concept Deliverer and the CBC Run with their seats go,
+    the repos already in the layers document and each seat an Adapted
+    Case (QUESTION-4); the two checks on text kept true join the
+    one-home idea and TODO's "Decide how texts are checked to stay
+    true after the rewrite".
+
+  The layers document's question 4 is answered here; its own §5 takes
+  the answer when the rewrite reaches it.

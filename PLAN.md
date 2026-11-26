@@ -178,8 +178,10 @@ Gate:
 - [x] Each text on the map names the texts it needs rewritten first,
       or none (2026-11-26, stage 3: all 161 lines of §9, with item 3;
       the open parts name QUESTION-1 to 6 in §10).
-- [ ] A question many texts share is decided once, on the map, on
-      the reviewer's word, and each text it touches points at it.
+- [x] A question many texts share is decided once, on the map, on
+      the reviewer's word, and each text it touches points at it
+      (2026-11-26, stage 4: QUESTION-1 to 7, `temp/rewrite-map.md`
+      §10).
 - [ ] How much of today's repo is rewritten is decided on the
       reviewer's word, from what the map shows.
 - [x] Each TODO item whose trigger was the refinement's close has

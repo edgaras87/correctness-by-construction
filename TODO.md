@@ -348,7 +348,12 @@
         the close, is decided then. Its why stands in
         `knowledge/problem-domain-ideas/cbc-backend-design/change-in-cbc-backend-design.md`
         §2, *Changing a Kit Copy*; its steps in the simulation's §3,
-        step 2 (2026-11-25, the reviewer).
+        step 2 (2026-11-25, the reviewer);
+      - the Tool Bindings, written with it: what every binding must
+        say at layer 1, Claude Code's for the Backend Repos as a
+        Backend Kit Adapted Case at layer 3, ours at layer 4
+        (`temp/rewrite-map.md` §10, QUESTION-6, 2026-11-26, the
+        reviewer).
       Trigger: with the concept's split.
       See: devlog 2026-11-16 and 2026-11-18, layers 3 and 4 read back.
 
