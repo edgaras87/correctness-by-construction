@@ -145,7 +145,7 @@ work.
 Goal: CBC Runs 4, 5 and 6 each have a CBC Run Reading by today's
 exchange, and every item of the three has ended taken, declined or
 held, kept for the rewrite.
-Now: the opening.
+Now: stage 2, read CBC Run 4.
 Gate:
 
 **At the opening.**
@@ -164,8 +164,9 @@ Gate:
 
 **The Plan Step's own items.**
 
-- [ ] CBC Run 6 has a CBC Run Reading in `temp/`, its first line
-      naming the commit read through.
+- [x] CBC Run 6 has a CBC Run Reading in `temp/`, its first line
+      naming the commit read through (2026-11-26, `67210ae1`,
+      through `00fc075`).
 - [ ] CBC Run 4 has a CBC Run Reading in `temp/`, its first line
       naming the commit read through.
 - [ ] CBC Run 5's CBC Run Reading reads in today's words, and each of
