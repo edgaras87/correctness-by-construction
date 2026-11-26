@@ -477,8 +477,8 @@
       - their home: the exchange convention, which owns pins and
         readings, and `.claude/rules/working-a-reading.md`; or an ADR
         for the first.
-      Trigger: the exchange convention is next changed, or a reading
-      of a CBC Run opens.
+      Trigger: the exchange convention is next changed, in the rewrite
+      or before.
 
 - [ ] Write the understanding of the agent's memory, and how it is
       checked (2026-11-07, the reviewer).
@@ -600,15 +600,14 @@
       way and compare it with the first try before keeping one. CBC
       Run 4 tried the options of each question it must not decide
       alone on `try/` branches: 14 of them, and 2 changed the answer. CBC Run 5 tried it from
-      its CBC Run Hand-off: 13 look-back lines, 0 tries (its CBC Run Reading of 2026-10-22, FINDING-9).
+      its CBC Run Hand-off: 13 look-back lines, 0 tries (its CBC Run Reading of 2026-10-22, FINDING-9). CBC Run 6's found nothing 12 times, and it struck the look-back (its RETRO's D9).
       Ideas:
       - a bar for "meaningful": it changes a Structural Wall, a test's
         adversity, or removes a part; rewording is not enough.
       - the better way on a `try/` branch, compared, and the try not
         chosen kept on its branch.
       - a cap on its cost, so no plan doubles by habit.
-      Trigger: CBC Runs 4, 5 and 6 judged (`PLAN.md`), CBC Run 5's new CBC Run Reading giving this
-               item its look-back lines and its RETRO's D18.
+      Trigger: the commit-plan Agent Skill is rewritten.
       See: devlog 2026-10-21, evening; `TODO-CONVERSATION-MEMORY.md`
       §9, *A commit plan's look-back at the way*.
 
@@ -630,8 +629,11 @@
         this one: CBC Run 5 framed two Responsibility Areas and a
         LAYER-5 not empty (its CBC Run Reading of 2026-10-22, §4, *What run 5 teaches
         the worked example*).
-      Trigger: CBC Runs 4, 5 and 6 judged (`PLAN.md`), CBC Run 5's new CBC Run Reading giving this
-               item its worked-example section.
+      - the worked example shows that one claim may hold two halves:
+        CBC Run 6 framed one claim for both halves of its briefing,
+        which the example rejects as overloaded, and it held through
+        seven slices (its CBC Run Reading of 2026-11-26, TAUGHT-4).
+      Trigger: the cbc-framing Agent Skill is rewritten.
       See: devlog 2026-10-21, evening; `TODO-CONVERSATION-MEMORY.md`
       §10, *Examples in the concept, the conventions and the approaches*.
 
@@ -646,7 +648,7 @@
       changed model mid-run with no record of why. `/doctor`,
       2026-10-22: 69 general-purpose agents in 29 days, none given
       a model, so all on Opus: 11% of a week's usage. New challenges
-      have the approach-drafting Approach on Trial; looking back has a trial in CBC Run 5.
+      have the approach-drafting Approach on Trial; looking back was tried in CBC Run 5. CBC Run 5 delegated nothing.
       Ideas:
       - low effort to read and collect; the highest to find the
         options; medium or high to implement and summarise.
@@ -704,9 +706,7 @@
         user's memory files only. The Agent Model §6 states the rule;
         the Tool Binding (`docs/conventions/agent-arrangement/` §5,
         *The Claude Code Tool Binding*) would hold the mechanics.
-      Trigger: CBC Runs 4, 5 and 6 judged (`PLAN.md`), CBC Run 5's new CBC Run Reading giving this
-               item that CBC Run 5 delegated nothing; with the lines
-               gathered by then.
+      Trigger: the Agent Model is rewritten.
       See: devlog 2026-10-21, evening; `TODO-CONVERSATION-MEMORY.md`
       §11, *How work is run by agents*; `.claude/decisions.md`, 2026-10-22, the account Agent Skills.
 
@@ -957,7 +957,10 @@
       is not shaped by it (`docs/conventions/shapes/` §3, *Where an Output Shape lives*). Our own
       forms, a CBC Run Reading's and a manual's, are Agent Rules that load when
       such a file is read. They kept that place because this repo
-      had no Plan Steps; since ADR-0057 it has.
+      had no Plan Steps; since ADR-0057 it has. CBC Run 6 read its
+      Output Shapes at the gate only: one rework per kind of output, at
+      its first close, each finding a real miss, and nothing after (its
+      CBC Run Reading of 2026-11-26, TAUGHT-2). CBC Run 4, holding them from birth, cut late at SLICE-1 too (its FINDING-39).
       Ideas:
       - the work's rules keep what must hold while working, such as
         numbers never changed; the forms become Output Shapes.
@@ -991,8 +994,7 @@
         one form and one home (`docs/models/idea-to-output.md` §5, *An Idea Model and a concept*).
       - a refinement's report may be the first: the item "Design how
         a document is refined".
-      Trigger: CBC Run 4's CBC Run Reading, which reads how CBC Run 4 lived CBC Run 3's
-               Output Shapes.
+      Trigger: the map.
       See: devlog 2026-10-17, our forms as shapes; 2026-10-20,
       later, layouts; `TODO-CONVERSATION-MEMORY.md` §3, *Layouts as shapes*.
 
@@ -1182,7 +1184,8 @@
       only from that CBC Run Reading, each line traced to the CBC Run. CBC Run 3
       has had no Release; CBC Run 4 released the same project, so its
       Entry File is read, CBC Run 3's beside it.
-      Trigger: CBC Run 4's CBC Run Reading.
+      Trigger: the Agent Model is rewritten, where `CLAUDE.md` comes in
+      whole.
       See: devlog 2026-09-06 (the template re-cut).
 
 - [ ] Sort `docs/baselines/` by kind (2026-09-23, ADR-0035
@@ -1193,22 +1196,8 @@
       remade, so this is a piece of work of its own, read with care,
       not a tidy-up. The Spring Invariant Slice reference opens once, at a CBC Run's Release
       (ADR-0033); CBC Run 3 has had no Release, and CBC Run 4 had one.
-      Trigger: CBC Run 4's CBC Run Reading, where the Spring Invariant Slice reference
-               opens.
+      Trigger: the map.
       See: devlog 2026-09-24.
-
-- [ ] Read what CBC Run 5's first Invariant Slice's Plan Step Gate found against the
-      Evidence Test Shape (2026-10-08, the CBC Run Reading of CBC Run 3).
-      Context: the Output Shape ships with the method since ADR-0052, read
-      only at a Plan Step Gate. A Newborn CBC Run writes its first tests without it,
-      and its first Invariant Slice Close reads them against it: the
-      differences are the measurement. CBC Run 4 held CBC Run 3's Output Shape from
-      birth, so CBC Run 5 is the first clean one: since ADR-0061 a Newborn CBC Run reads its Output Shapes at the Plan Step Gate, not at birth.
-      The cbc-slice Agent Skill holds most of its lessons, so tests from the Agent Skill alone may meet it.
-      CBC Run 5's CBC Run Reading of 2026-10-22 counts three differences at SLICE-1 (§4) and does not list them.
-      Trigger: CBC Runs 4, 5 and 6 judged (`PLAN.md`, the Plan Step that
-               reads and judges them).
-      See: devlog 2026-10-08; and 2026-10-10.
 
 - [ ] Decide which ideas here are Idea Models (2026-10-24, the
       reviewer).
