@@ -34,6 +34,23 @@
 
 ## Next (each due at its trigger)
 
+- [ ] Rewrite today's Maintainer Repo into the layers model, by the
+      map (2026-11-26, the reviewer).
+      Context: every text, this repo's own included, is unpacked part
+      by part, each part to its layer, and goes once all it holds has
+      landed or been judged not needed (ADR-0082, decision 2). The map
+      gives each text's parts, their layers and the texts it needs
+      first (`temp/rewrite-map.md` §9, *Every text*), the shared
+      questions decided (§10, *Shared questions*), and the TODO items
+      that land with a text (§8, *Items from TODO*).
+      Ideas:
+      - the order by §9's *Needs first*: first the texts that need
+        none, such as the project-recording, repo-hygiene and
+        visual-comparison manuals and the Agent Model;
+      - one Plan Step per idea, as change was done.
+      Trigger: the map's Plan Step closed.
+      See: devlog 2026-11-26, the map's Plan Step; ADR-0082.
+
 - [ ] Bring the model of the layers of knowledge to what is enough
       to work by; then finish the change work by it; then bring
       today's Maintainer Repo into it; and keep it true from practice
