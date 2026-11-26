@@ -356,11 +356,11 @@ and the shipped copy, takes one line. **Parts:** what the text holds.
 | `delivery/spring-postgres/docs/glossary/stack.md` | the stack's Glossary Names | 3, the Backend Kit's Defined Terms, in place: QUESTION-2 | `concept/` |
 | `devlog/README.md` | the devlog's form; the entries are history | form: 4, open (QUESTION-1) | `docs/conventions/project-recording/` |
 | `docs/adr/README.md` | the ADR's form; the ADRs are history | form: 4, open (QUESTION-1) | `docs/conventions/project-recording/` |
-| `docs/baselines/cbc-derived-claude-walk1.md` | | | |
-| `docs/baselines/cbc-run-pure-playbook-v2.md` | | | |
-| `docs/baselines/cbc-startup-snippet.md` | | | |
-| `docs/baselines/claude-md-template-v1.md` | | | |
-| `docs/baselines/spring-slice-reference.md` | | | |
+| `docs/baselines/cbc-derived-claude-walk1.md` | trial evidence: the first walked birth's derived `CLAUDE.md`, blind | 4, in place; moved only by §8's baselines row; it waits on TODO's "Read the frozen CLAUDE template's stance bullets against a full CBC Run's derived Entry File" | none |
+| `docs/baselines/cbc-run-pure-playbook-v2.md` | a held baseline: the playbook frozen at v2, for the per-step reading of the gates experiment; no Living Text names it | 4, in place; moved only by §8's baselines row, which decides whether it stays | none |
+| `docs/baselines/cbc-startup-snippet.md` | a held baseline: the startup snippet, its comparison used up on 2026-09-04 (ADR-0014) | 4, in place; moved only by §8's baselines row, which decides whether it stays | none |
+| `docs/baselines/claude-md-template-v1.md` | a held baseline: the `CLAUDE.md` template, frozen 2026-09-06, blind | 4, in place; moved only by §8's baselines row; it waits on TODO's "Read the frozen CLAUDE template's stance bullets against a full CBC Run's derived Entry File" | none |
+| `docs/baselines/spring-slice-reference.md` | held material: one Invariant Slice's Spring shapes, opened once, at a CBC Run's Release | 3, the Backend Kit's, held: never shipped at birth; moved only by §8's baselines row | `concept/`; the cbc-slice Agent Skill |
 | `docs/conventions/README.md` | a Local Map: the order the conventions act in | 4; goes with the manuals it maps | every manual |
 | `docs/conventions/agent-arrangement/README.md` | the idea: §1 to §4, an arrangement, the Entry File, `.claude/`; §5, the Claude Code Tool Binding; both seats; the form's sections | idea: 1 or 2 (§8, the Idea Models row); §5: QUESTION-6; the CBC Run's seat: 3; ours: 4; the form's sections: QUESTION-4 | `docs/models/agent.md` |
 | `docs/conventions/commit-messages/README.md` | the idea: §1, §2; §3, our habit; the seats, alike; the form's sections | idea: 1 or 2 (§8, the Idea Models row); §3: 4; the CBC Run's seat: 3; ours: 4; the form's sections: QUESTION-4 | `docs/conventions/agent-arrangement/`, for §2.3 |
