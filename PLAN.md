@@ -154,11 +154,13 @@ Gate:
       is cut from main after the reads, and nothing of the Plan Step
       was done on main except the reads
       (`.claude/rules/working-a-reading.md`, step 1).
-- [ ] This Plan Step Gate was written before the work started.
-- [ ] The Plan Step's Work Approach is known: the exchange-read Agent
+- [x] This Plan Step Gate was written before the work started
+      (2026-11-26, in `c7ef5580`, the Plan Step's opening commit).
+- [x] The Plan Step's Work Approach is known: the exchange-read Agent
       Skill, for each read; the exchange-reading and working-a-reading
       Agent Rules, for each CBC Run Reading and its judging; the
-      commit-plan Agent Skill, if the count calls for a branch.
+      commit-plan Agent Skill, if the count calls for a branch
+      (2026-11-26).
 
 **The Plan Step's own items.**
 
