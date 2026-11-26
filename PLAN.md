@@ -145,7 +145,7 @@ work.
 Goal: the rewrite has a map of today's Maintainer Repo: each text of
 Living Text, the parts it holds, the layer each part goes to, and which
 text needs another first; and every TODO item due at the map has ended.
-Now: stage 1, the items due.
+Now: stage 2, the inventory brought up to date.
 Gate:
 
 **At the opening.**
@@ -165,10 +165,12 @@ Gate:
 
 **The Plan Step's own items.**
 
-- [ ] The map is a kept file in `temp/`, its header naming the commit
-      it was counted at (`temp/README.md`).
-- [ ] Every file of Living Text at that commit has one line on the
-      map, checked by script against `git ls-files`.
+- [x] The map is a kept file in `temp/`, its header naming the commit
+      it was counted at (`temp/README.md`) (2026-11-26,
+      `temp/rewrite-map.md`, at `491e673e`).
+- [x] Every file of Living Text at that commit has one line on the
+      map, checked by script against `git ls-files` (2026-11-26: 171
+      files on 161 lines, 10 of them pairs; §9).
 - [ ] Each text on the map names the parts it holds, and the layer
       each part goes to (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md`
       §3.5, *Where each layer is kept*), or the question that keeps
