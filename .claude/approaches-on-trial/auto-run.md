@@ -142,7 +142,7 @@ will say.
 CBC Run 6 ran through Release and closed a Step 15 after it: 7
 Invariant Slices, 233 commits on main and 254 across its branches,
 tag `v0.1.0`. What it taught is not yet known: it is unread, and
-its reading is TODO's item that reads and judges CBC Runs 4, 5 and 6.
+its reading is the Plan Step in `PLAN.md` that reads and judges CBC Runs 4, 5 and 6.
 
 Not known still: as for CBC Run 5, and whether a larger CBC Run
 Briefing holds on full auto.
