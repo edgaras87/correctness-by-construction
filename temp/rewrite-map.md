@@ -256,7 +256,9 @@ and the shipped copy, takes one line. **Parts:** what the text holds.
 **Layer:** where each part goes
 (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md`
 §3.5, *Where each layer is kept*), or the question that keeps it open;
-"in place" when the text already sits at its layer, by its path.
+"in place" when the text already sits at its layer, by its path. A
+draft in `temp/` is no layer's: its Layer says what the rewrite reads
+it for, and nothing goes before the rewrite decides.
 **Needs first:** the texts rewritten before it, or none.
 
 | Text | Parts | Layer | Needs first |
@@ -395,33 +397,33 @@ and the shipped copy, takes one line. **Parts:** what the text holds.
 | `knowledge/problem-domain-ideas/keeping-knowledge/defined-terms-in-keeping-knowledge.md` | Defined Terms, in keeping knowledge | 2, in place | none |
 | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` | the layers, in keeping knowledge | 2, in place | none |
 | `temp/README.md` | what `temp/` holds: a draft, a kept file | form: 4, open (QUESTION-1) | `docs/conventions/project-recording/` |
-| `temp/common-ground/backend-repo-change-flow.md` | | | |
-| `temp/common-ground/backend-repo-change-simulation.md` | | | |
-| `temp/common-ground/between-repos-simulation.md` | | | |
-| `temp/common-ground/common-ground-problem.md` | | | |
-| `temp/exchange-counts.md` | | | |
-| `temp/model-example/approaches/change-a-home.md` | | | |
-| `temp/model-example/comparison.md` | | | |
-| `temp/model-example/idea-model-problem.md` | | | |
-| `temp/model-example/idea/commit-set.md` | | | |
-| `temp/model-example/idea/one-home.md` | | | |
-| `temp/model-example/layers.md` | | | |
-| `temp/model-example/move-plan.md` | | | |
-| `temp/model-example/other-patterns.md` | | | |
-| `temp/model-example/sideways-pointers.md` | | | |
-| `temp/model-example/this-repo/committing.md` | | | |
-| `temp/model-example/this-repo/one-home.md` | | | |
-| `temp/model-example/today-problems.md` | | | |
-| `temp/reading-run-4-2026-11-26.md` | | | |
-| `temp/reading-run-5-2026-11-26.md` | | | |
-| `temp/reading-run-6-2026-11-26.md` | | | |
-| `temp/rewrite-map.md` | | | |
-| `temp/run-6-briefing.md` | | | |
-| `temp/run-6-handoff/.claude/hooks/keep-going.sh` | | | |
-| `temp/run-6-handoff/.claude/settings.local.json` | | | |
-| `temp/run-6-handoff/CLAUDE.local.md` | | | |
-| `temp/run-6-handoff/run.md` | | | |
-| `temp/run-6-handoff/start.md` | | | |
+| `temp/common-ground/backend-repo-change-flow.md` | a Backend Repo's Copy Change, as a flow: its pictures, and each open decision drawn | none: a source the rewrite reads: the pictures beside the change texts | none |
+| `temp/common-ground/backend-repo-change-simulation.md` | a Backend Repo's Copy Change, simulated: each rule's options and why; its *Today* lines | none: a source the rewrite reads: its *Today* lines (ADR-0087, decision 5) | none |
+| `temp/common-ground/between-repos-simulation.md` | what passes between the repos, simulated; frozen, in the old names | none: a source the rewrite reads; TODO's "Sort the simulation of what passes between the repos, and drop it" sorts it | none |
+| `temp/common-ground/common-ground-problem.md` | the Common Ground Problem; its §1 and §7, the goal of the knowledge work | none: a source the rewrite reads: the rewrite's goal (ADR-0082); one item waits here (§8) | none |
+| `temp/exchange-counts.md` | the exchange's texts, counted 2026-11-03 for the ended rebuild | none: kept; no text reads it; the map's §6 holds today's counts | none |
+| `temp/model-example/approaches/change-a-home.md` | changing a home, as a Work Approach | none: an earlier try, read for ideas, for the one-home Agent Rule | none |
+| `temp/model-example/comparison.md` | today's texts against the earlier try, counted 2026-11-02 | none: an earlier try, read for ideas, for QUESTION-5 | none |
+| `temp/model-example/idea-model-problem.md` | the problem of the idea-to-approach model | none: an earlier try, read for ideas, named a first source of the layers in keeping knowledge | none |
+| `temp/model-example/idea/commit-set.md` | a set of commits, as an idea bound to no project | none: an earlier try, read for ideas, for the commit-plan manual | none |
+| `temp/model-example/idea/one-home.md` | one home per fact, as an idea bound to no project | none: an earlier try, read for ideas, for the facts-in-sync manual | none |
+| `temp/model-example/layers.md` | three layers, pictured fresh, tried on one idea | none: an earlier try, read for ideas, named a first source of the layers in keeping knowledge | none |
+| `temp/model-example/move-plan.md` | the move: split first, choose a pattern after | none: an earlier try, read for ideas, for the rewrite's order | none |
+| `temp/model-example/other-patterns.md` | patterns from shared code and technical writing for texts that rely on each other | none: an earlier try, read for ideas, for QUESTION-4 | none |
+| `temp/model-example/sideways-pointers.md` | why today's manuals point sideways at each other, and what replaces each kind | none: an earlier try, read for ideas, for QUESTION-4 and QUESTION-5 | none |
+| `temp/model-example/this-repo/committing.md` | committing work, in this repo | none: an earlier try, read for ideas, for the commit-plan and commit-messages manuals | none |
+| `temp/model-example/this-repo/one-home.md` | one home per fact, in this repo | none: an earlier try, read for ideas, for the facts-in-sync manual and the one-home Agent Rule | none |
+| `temp/model-example/today-problems.md` | three problems of today's design, and the way out | none: an earlier try, read for ideas, for QUESTION-5 | none |
+| `temp/reading-run-4-2026-11-26.md` | CBC Run 4's Reading: its findings, pointing at CBC Run 6's items | none: a source the rewrite reads: each taken item lands with its text | none |
+| `temp/reading-run-5-2026-11-26.md` | CBC Run 5's Reading: its findings, pointing at CBC Run 6's items | none: a source the rewrite reads: each taken item lands with its text | none |
+| `temp/reading-run-6-2026-11-26.md` | CBC Run 6's Reading: the three CBC Runs' decisions and work items, WORK-1 to 18 | none: a source the rewrite reads: each taken item lands with its text | none |
+| `temp/rewrite-map.md` | the map: every text, its parts, layers and needs; the items from TODO; the shared questions | none: a source the rewrite reads: its plan | none |
+| `temp/run-6-briefing.md` | CBC Run 6's briefing: the checkout it builds | none: kept; no text reads it | none |
+| `temp/run-6-handoff/.claude/hooks/keep-going.sh` | the Stop hook that keeps a full-auto CBC Run going | none: an earlier try, read for ideas, for the auto-run Approach on Trial | none |
+| `temp/run-6-handoff/.claude/settings.local.json` | the settings that install the Stop hook | none: an earlier try, read for ideas, for the auto-run Approach on Trial | none |
+| `temp/run-6-handoff/CLAUDE.local.md` | the reviewer's local rules for a full-auto CBC Run | none: an earlier try, read for ideas, for the auto-run Approach on Trial | none |
+| `temp/run-6-handoff/run.md` | how CBC Run 6 runs on full auto | none: an earlier try, read for ideas, for the auto-run Approach on Trial and TODO's "Evaluate the auto-run Approach on Trial" | none |
+| `temp/run-6-handoff/start.md` | the prompt that started CBC Run 6 | none: an earlier try, read for ideas, for the auto-run Approach on Trial | none |
 
 ## 10. Shared questions
 

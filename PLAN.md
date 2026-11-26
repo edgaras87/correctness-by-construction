@@ -145,7 +145,7 @@ work.
 Goal: the rewrite has a map of today's Maintainer Repo: each text of
 Living Text, the parts it holds, the layer each part goes to, and which
 text needs another first; and every TODO item due at the map has ended.
-Now: stage 3, each text's parts, their layers, and what each needs first.
+Now: stage 4, the shared questions.
 Gate:
 
 **At the opening.**
@@ -171,12 +171,13 @@ Gate:
 - [x] Every file of Living Text at that commit has one line on the
       map, checked by script against `git ls-files` (2026-11-26: 171
       files on 161 lines, 10 of them pairs; §9).
-- [ ] Each text on the map names the parts it holds, and the layer
+- [x] Each text on the map names the parts it holds, and the layer
       each part goes to (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md`
       §3.5, *Where each layer is kept*), or the question that keeps
-      it open.
-- [ ] Each text on the map names the texts it needs rewritten first,
-      or none.
+      it open (2026-11-26, stage 3).
+- [x] Each text on the map names the texts it needs rewritten first,
+      or none (2026-11-26, stage 3: all 161 lines of §9, with item 3;
+      the open parts name QUESTION-1 to 6 in §10).
 - [ ] A question many texts share is decided once, on the map, on
       the reviewer's word, and each text it touches points at it.
 - [ ] How much of today's repo is rewritten is decided on the
