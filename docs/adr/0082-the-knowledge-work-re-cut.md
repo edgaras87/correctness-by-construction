@@ -3,7 +3,8 @@
 Date: 2026-11-19
 Status: Accepted (2026-11-19, the reviewer, in the final records
 commit of the close of the Plan Step "Find how what we know stays
-true")
+true"); superseded in part by ADR-0089: decision 4's "by the
+simulation's Judge"
 
 ## Context
 

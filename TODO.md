@@ -86,8 +86,8 @@
         reach every text built on it. It answers the Backbone Idea
         Change's open question on such a change, first a guess: carried
         to all layers together (2026-11-24, the reviewer).
-      Trigger: the first lesson judged at depth c, in a CBC Run's or a
-      Backend Repo's reading.
+      Trigger: the first lesson judged at depth c, in a Backend Repo's
+      reading.
       See: devlog 2026-11-22, the depth c item.
 
 - [ ] Sweep the drafts for words that read as walking commits, where
@@ -137,8 +137,8 @@
       - CBC Run 5's Reading re-judged by needs, not read again; its
         open DECISION-2 and DECISION-5, and WORK-1 and WORK-3 to
         WORK-10, among the findings;
-      - judged by the judge-copy-changes Agent Skill, by meaning: each
-        finding's depth, kept where the rewrite finds it;
+      - judged by working-a-reading, each item taken, declined or
+        held, and kept for the rewrite (ADR-0089);
       - old words read through the refinement's Names table, at
         `55e2bd0^:temp/refinement-2026-10-18.md`;
       - CBC Run 4's own questions: CBC Run 3's and CBC Run 4's
