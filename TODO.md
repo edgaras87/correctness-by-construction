@@ -1545,7 +1545,7 @@
       Stack Overlay, or "grow, never overwrite" stands (2026-09-18).
       Context: the `.part` files under
       `docs/conventions/repo-hygiene/templates/java-spring/` are pointed at by
-      nothing, and three CBC Runs derived `.gitignore` by hand. They
+      nothing, and six CBC Runs derived `.gitignore` by hand, the last CBC Runs 4, 5 and 6. They
       belong to the Stack Group (ADR-0029 decision 7) and move with the
       answer. Until then they break ADR-0029 decision 5, that what is
       about a group sits beside it, an exception the ADR records. The Change Walk named the wider
@@ -1556,9 +1556,9 @@
         walkthrough both tell a CBC Run to add a Stack Overlay below
         each hygiene file's marker, and no file ships one. The
         Agent Skill could point at the walkthrough's step 2 instead.
-      Trigger: the cbc-bootstrap Agent Skill's hygiene step next opened, or a
-      fourth CBC Run deriving `.gitignore` by hand.
-      See: devlog 2026-09-18.
+      Trigger: the cbc-bootstrap Agent Skill's hygiene step is rewritten.
+      See: devlog 2026-09-18; `temp/reading-run-6-2026-11-26.md` §6,
+      *The work*.
 
 - [ ] Weigh three candidate rules for what makes a Delivery Note land
       (2026-09-17, the reply of the handbook).
