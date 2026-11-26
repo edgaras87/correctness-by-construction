@@ -113,6 +113,7 @@ Layer 1 holds Backbone Ideas (`knowledge/backbone-ideas/layers-of-knowledge.md` 
 | CBC design | how a system is designed by CBC, for no one kind of system | planned, from `concept/` (`TODO.md`, the item that splits the concept) |
 | Defined Terms | what a Defined Term is, and what keeps its meaning exact | `knowledge/backbone-ideas/defined-terms.md` |
 | Change | any change to knowledge, wherever it starts, and what holds for every one | `knowledge/backbone-ideas/change.md` |
+| Repo hygiene | the files every repo carries from its first commit, and why | `knowledge/backbone-ideas/repo-hygiene.md` |
 
 Which other of today's project-agnostic ideas are Backbone Ideas is open (§5).
 
