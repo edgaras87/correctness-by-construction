@@ -5,7 +5,7 @@ What it is: a Problem Domain Idea of keeping knowledge, the Maintainer Repo's Pr
 What it stands on: knowledge/backbone-ideas/repo-hygiene.md, the Backbone Idea it is adapted from. It adapts that document, and never retells it.
 What stands on it: this repo's own Adapted Case for repo hygiene, its three files at its root.
 Its place in the repo: knowledge/problem-domain-ideas/keeping-knowledge/ (ADR-0084).
-Its first source, input and not rules: the repo-hygiene manual, docs/conventions/repo-hygiene/README.md: §3 and The seats.
+Its first source, input and not rules: the repo-hygiene manual, docs/conventions/repo-hygiene/README.md, deleted on 2026-11-26, its last state in git at ea07c6dd: §3 and The seats.
 How it is edited: a trial, as in the layers of knowledge: a section's rules close it, in a last paragraph marked Rules, and govern that section.
 -->
 

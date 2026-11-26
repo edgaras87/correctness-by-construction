@@ -112,8 +112,6 @@ they hand work to each other is the conventions' Local Map,
   and what relies on it agrees.
 - `docs/conventions/project-recording/` — the records, and how each
   is kept.
-- `docs/conventions/repo-hygiene/` — the three files every repo
-  carries.
 - `docs/conventions/retrospective/` — how a finished CBC Run looks
   back.
 - `docs/conventions/shapes/` — what a kind of output looks like.

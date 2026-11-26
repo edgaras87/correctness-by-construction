@@ -354,7 +354,7 @@ later inserts are merges, not text edits.
 ### 3.6 `.claude/settings.local.json`
 
 The tool's machine-local state, never project truth; the Hygiene
-Base ignores it (`docs/conventions/repo-hygiene/`).
+Base ignores it (`knowledge/backbone-ideas/repo-hygiene.md` §4, *What every repo keeps out*).
 
 ### 3.7 `CLAUDE.local.md`
 
@@ -594,7 +594,7 @@ on (`docs/conventions/exchange/` §2.4, *The records' exception*).
 - **How a copy under `.claude/` is updated, and what a CBC Run may do
   to it** — `docs/conventions/exchange/`.
 - **What the Hygiene Base ignores** —
-  `docs/conventions/repo-hygiene/`.
+  `knowledge/backbone-ideas/repo-hygiene.md`.
 
 ## Where to look
 

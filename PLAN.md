@@ -144,7 +144,7 @@ work.
 
 Goal: every part of the repo-hygiene manual, and of the texts that
 wait on it alone, stands at its layer, and the manual is gone.
-Now: stage 5, the manual goes.
+Now: stage 6, the close.
 Gate:
 
 **At the opening.**
@@ -180,15 +180,22 @@ Gate:
       an Adapted Understanding Text in `.claude/understanding/` only
       if they have a why of their own (2026-11-26, its why in
       `.claude/understanding/repo-hygiene.md`, `2262166b`).
-- [ ] Each part the map's §9 lists for the manual has landed, or was
-      judged not needed, and the commit that ends it names where.
-- [ ] The manual and its `templates/` directory are gone, and every
+- [x] Each part the map's §9 lists for the manual has landed, or was
+      judged not needed, and the commit that ends it names where
+      (2026-11-26, the commit that deletes the manual).
+- [x] The manual and its `templates/` directory are gone, and every
       Living Text that named their paths or sections names the new
-      home (`docs/conventions/facts-in-sync/` §3.3, *The rename grep*).
-- [ ] The Glossary Names Hygiene Base and Stack Overlay are retired by
+      home (`docs/conventions/facts-in-sync/` §3.3, *The rename grep*)
+      (2026-11-26).
+- [-] The Glossary Names Hygiene Base and Stack Overlay are retired by
       the map's QUESTION-2: each a Defined Term at its new home, its
       lines gone from `docs/glossary.md` and from the container's
-      delivered Glossary Names.
+      delivered Glossary Names
+      (struck 2026-11-26, the reviewer: six texts outside the layers
+      model still use them, among them the cbc-bootstrap Agent Skill a
+      CBC Run reads; they retire when the last of these is rewritten,
+      as QUESTION-2 says of the glossary. Each is a Defined Term at its
+      new home, and `docs/glossary.md` points there).
 
 **Known already.** The commit-messages and commit-plan Agent Skills
 have no *Gates* section; the own items stand alone.

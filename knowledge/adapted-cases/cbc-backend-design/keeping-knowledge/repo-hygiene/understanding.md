@@ -4,7 +4,7 @@
 What it is: one of the Backend Kit's files, the Adapted Understanding Text of its Adapted Case for repo hygiene. It says why its Instruction Text is as it is, where only this Adapted Case relies on the reason.
 What it stands on: knowledge/problem-domain-ideas/cbc-backend-design/repo-hygiene-in-cbc-backend-design.md, kept in the Maintainer Repo. The rules this Adapted Case shares with every repo, and why each is so, are there and in the Backbone Idea it adapts.
 What stands on it: its Instruction Text, beside it: the Hygiene Base, .gitignore, .gitattributes and .editorconfig, copied to a Backend Repo's root at birth; and the Stack Overlay for Java and Spring, java-spring/.
-Its first source, input and not rules: the repo-hygiene manual, docs/conventions/repo-hygiene/README.md, Why it arrives this way and §2.
+Its first source, input and not rules: the repo-hygiene manual, docs/conventions/repo-hygiene/README.md, deleted on 2026-11-26, its last state in git at ea07c6dd: Why it arrives this way and §2.
 It never loads; it is read when its Instruction Text changes.
 -->
 

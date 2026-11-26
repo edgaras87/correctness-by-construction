@@ -191,11 +191,11 @@ delivered files below.
   (`docs/conventions/project-recording/`, *What this is made usable as*).
 - **Hygiene Base** — the stack-agnostic hygiene files every repo
   gets, correct for a records-only one; a Stack Overlay is appended
-  below each one's marked line (`docs/conventions/repo-hygiene/`
-  §2, *The template layers*).
+  below each one's marked line (`knowledge/backbone-ideas/repo-hygiene.md`
+  §1, *Its Defined Terms*).
 - **Stack Overlay** — the stack's part of the hygiene files, appended
   below the Hygiene Base's marked line: the `.part` files under
-  `knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/repo-hygiene/`, one directory per stack (`docs/conventions/repo-hygiene/` §2, *The template layers*).
+  `knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/repo-hygiene/`, one directory per stack (`knowledge/backbone-ideas/repo-hygiene.md` §1, *Its Defined Terms*).
 - **Decisions Log** — a CBC Run's `.claude/decisions.md`, where its
   agent records the decisions about its own setup; ours is the same
   file here (`docs/conventions/agent-arrangement/` §3.4, *`.claude/decisions.md`*).

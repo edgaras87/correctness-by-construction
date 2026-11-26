@@ -6,7 +6,7 @@ What it stands on: knowledge/backbone-ideas/repo-hygiene.md, the Backbone Idea i
 What stands on it: the Backend Kit's Adapted Case for repo hygiene.
 Its place in the repo: knowledge/problem-domain-ideas/cbc-backend-design/ (ADR-0084). It is kept in the Maintainer Repo, and never copied to a Backend Repo.
 Its first sources, input and not rules:
-- the repo-hygiene manual, docs/conventions/repo-hygiene/README.md: What it is for, §2, §3 and The seats;
+- the repo-hygiene manual, docs/conventions/repo-hygiene/README.md, deleted on 2026-11-26, its last state in git at ea07c6dd: What it is for, §2, §3 and The seats;
 - three Backend Repos that wrote their stack's lines by hand: temp/reading-run-4-2026-11-26.md, FINDING-38; temp/reading-run-5-2026-11-26.md, FINDING-40; temp/reading-run-6-2026-11-26.md, FINDING-26.
 How it is edited: a trial, as in the layers of knowledge: a section's rules close it, in a last paragraph marked Rules, and govern that section.
 -->

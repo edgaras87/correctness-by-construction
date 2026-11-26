@@ -5,7 +5,7 @@ What it is: a Backbone Idea, bound to no Problem Domain, and its one home (knowl
 Its place in the repo: knowledge/backbone-ideas/ (ADR-0084).
 Why it is an idea of its own: both Problem Domains work by it (temp/rewrite-map.md §10, Shared questions, QUESTION-7).
 Its first sources, input and not rules:
-- the repo-hygiene manual, docs/conventions/repo-hygiene/README.md, its What it is for and §1 to §3;
+- the repo-hygiene manual, docs/conventions/repo-hygiene/README.md, deleted on 2026-11-26, its last state in git at ea07c6dd: its What it is for and §1 to §3;
 - the Hygiene Base's three files, knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/repo-hygiene/.gitignore, .gitattributes and .editorconfig.
 What stands on it: knowledge/problem-domain-ideas/keeping-knowledge/repo-hygiene-in-keeping-knowledge.md, its Problem Domain Idea of keeping knowledge, and knowledge/problem-domain-ideas/cbc-backend-design/repo-hygiene-in-cbc-backend-design.md, its Problem Domain Idea of CBC backend design. Each Problem Domain Idea points here, and never retells it.
 How it is edited:

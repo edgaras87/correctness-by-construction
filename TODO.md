@@ -45,8 +45,8 @@
       that land with a text (§8, *Items from TODO*).
       Ideas:
       - the order by §9's *Needs first*: first the texts that need
-        none, such as the project-recording, repo-hygiene and
-        visual-comparison manuals and the Agent Model;
+        none, such as the project-recording and visual-comparison
+        manuals and the Agent Model;
       - one Plan Step per idea, as change was done.
       Trigger: the map's Plan Step closed.
       See: devlog 2026-11-26, the map's Plan Step; ADR-0082.
