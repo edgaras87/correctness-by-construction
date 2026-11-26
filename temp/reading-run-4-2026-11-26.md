@@ -273,12 +273,56 @@ deciding what a skill would ask a human.
 
 ## 5. Decisions
 
-None yet. Decisions are written at the judging, stage 4, with CBC
-Runs 5 and 6.
+Judged with CBC Runs 5 and 6. The decisions live in CBC Run 6's
+Reading, `temp/reading-run-6-2026-11-26.md` §5, its DECISION-1. This
+Reading's findings among them:
+
+- CBC Run 6's DECISION-2, held: FINDING-1, 12 and 22.
+- CBC Run 6's DECISION-4, declined: FINDING-27.
+- CBC Run 6's DECISION-5, declined: FINDING-28.
+- CBC Run 6's DECISION-6, declined: FINDING-8, 15 and 16, and
+  FINDING-9's tags.
+- CBC Run 6's DECISION-7, the watch ended: FINDING-32.
 
 ## 6. The work
 
-None yet; written at the judging.
+The work lives in CBC Run 6's Reading, §6, with each item's ending.
+This Reading's findings among it:
+
+- CBC Run 6's WORK-1, the cbc-slice Agent Skill: FINDING-6 and 18,
+  TAUGHT-3.
+- CBC Run 6's WORK-2, the cbc-bootstrap references and templates:
+  FINDING-3, 6, 7, 17 and 21.
+- CBC Run 6's WORK-4, the Output Shapes: FINDING-2, 4, 5, 9, 13 and
+  14.
+- CBC Run 6's WORK-5, the commit-messages Agent Skill: FINDING-6, 19
+  and 25.
+- CBC Run 6's WORK-6, the retrospective Agent Skill: FINDING-33 and
+  36.
+- CBC Run 6's WORK-7, CBC Run Asks checked at Release's close:
+  FINDING-11, 23 and 24.
+- CBC Run 6's WORK-8, the apply-retrospective Agent Skill:
+  FINDING-6, 10 and 20.
+- CBC Run 6's WORK-9, the Entry File stub: FINDING-32.
+- CBC Run 6's WORK-10, the PLAN stub: FINDING-31.
+- CBC Run 6's WORK-11, the playbook's Plan Step Form: FINDING-30.
+- CBC Run 6's WORK-14, the auto-run Approach on Trial: FINDING-11
+  and 26, TAUGHT-1.
+- CBC Run 6's WORK-15, `.gitignore` written by hand: FINDING-38.
+- CBC Run 6's WORK-17, how much a CBC Run records: FINDING-40 and
+  41.
+- CBC Run 6's WORK-18, the TODO items whose trigger fired:
+  FINDING-39, TAUGHT-2 and TAUGHT-4, and the four TODO items in §8.
+
+**Ending with no item:**
+
+- FINDING-29: `temp/RUN-4.md` was read whole for the Plan Step's
+  item, and is deleted at the judging.
+- FINDING-34 and 35: CBC Run 4's own questions, answered by the
+  read. The status line and the Plan Steps confirmed once framed held
+  as written.
+- FINDING-37: `temp/` has shipped from the container since CBC Run
+  5's pin (CBC Run 5's FINDING-39).
 
 ## 7. What this CBC Run Reading taught
 
@@ -288,6 +332,8 @@ None yet; written at the judging.
 - A CBC Run on full auto may log its edits in its own decision log,
   not in the Decisions Log. Working-a-reading step 6 then reads them
   as unrecorded, and the decision log is the place to check.
+- The lesson of the judging, on working-a-reading step 1's count, is
+  in CBC Run 6's Reading, §7.
 
 ## 8. Notes
 
