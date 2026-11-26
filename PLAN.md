@@ -139,3 +139,121 @@ reason. That is a finding about the item, not a Plan Step skipping
 work.
 
 ---
+
+## Step: Map today's Maintainer Repo for the rewrite  (the commit-messages Agent Skill; the commit-plan Agent Skill if a Change Set needs it)    [~]
+
+Goal: the rewrite has a map of today's Maintainer Repo: each text of
+Living Text, the parts it holds, the layer each part goes to, and which
+text needs another first; and every TODO item due at the map has ended.
+Now: stage 1, the items due.
+Gate:
+
+**At the opening.**
+
+- [-] The Plan Step's branch `map-2026-11-26`, if it has one, is cut
+      from main, and nothing of the Plan Step was done on main
+      (`.claude/rules/working-a-reading.md`, step 1)
+      (skipped 2026-11-26, the reviewer: no branch; the map writes
+      only `temp/` and `TODO.md`, nothing ships, and each commit is
+      signed; the Plan Step runs on main).
+- [ ] This Plan Step Gate was written before the work started.
+- [ ] The Plan Step's Work Approach is known: the stages its Notes
+      list, from the inventory of 2026-11-03,
+      `temp/rebuild-inventory.md`; no Approach on Trial drafted.
+
+**The Plan Step's own items.**
+
+- [ ] The map is a kept file in `temp/`, its header naming the commit
+      it was counted at (`temp/README.md`).
+- [ ] Every file of Living Text at that commit has one line on the
+      map, checked by script against `git ls-files`.
+- [ ] Each text on the map names the parts it holds, and the layer
+      each part goes to (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md`
+      §3.5, *Where each layer is kept*), or the question that keeps
+      it open.
+- [ ] Each text on the map names the texts it needs rewritten first,
+      or none.
+- [ ] A question many texts share is decided once, on the map, on
+      the reviewer's word, and each text it touches points at it.
+- [ ] How much of today's repo is rewritten is decided on the
+      reviewer's word, from what the map shows.
+- [ ] Each TODO item whose trigger was the refinement's close has
+      ended: put on the map, given a new trigger, or dropped.
+- [ ] Each TODO item whose trigger names the map has ended: decided,
+      put on the map, or given a new trigger.
+- [ ] The TODO item on the shared names of five conventions and their
+      Agent Skills or Agent Rules has ended the same way.
+- [ ] Each Idea of the TODO item this Plan Step opened from has ended
+      as its Notes weigh it.
+
+**Known already.** The commit-messages and commit-plan Agent Skills
+have no *Gates* section; the own items stand alone.
+
+**At the close.**
+
+- [ ] Every link and path in the records resolves.
+- [ ] Every ADR a record cites exists.
+- [ ] Each pair of copies agrees, such as the worked example in the
+      cbc-framing Agent Skill and in the cbc-slice Agent Skill.
+- [ ] No line of Living Text in a record the Plan Step touched, or one that
+      mentions its subject, still says "now", "today" or "not yet"
+      about something the Plan Step changed.
+- [ ] New and changed text meets `.claude/rules/writing.md`.
+- [ ] Every commit on `map-2026-11-26` follows the commit-messages Agent Skill.
+      Its subjects are counted by script: one up to 70 characters
+      passes, and one past 70 is the reviewer's to keep or rewrite
+      (`docs/conventions/commit-messages/` §2.1, *Conventional Commits*).
+- [ ] No commit straddles agent and project paths
+      (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*).
+- [ ] The Plan Step's lessons are written back where they came from:
+      conventions, the playbook, the concept.
+- [ ] `CLAUDE.md` read top to bottom; each line still passes its
+      three tests, or leaves (`docs/conventions/agent-arrangement/`
+      §2.4, *How the Entry File is written*).
+- [ ] Each Approach on Trial the Plan Step drafted or used has this
+      use's dated note, and was handed over for evaluation
+      (`.claude/approaches-on-trial/approach-drafting.md` §3, *Close*).
+
+Notes:
+- Opened 2026-11-26, from TODO's item of the same title, its trigger
+  "CBC Runs 4, 5 and 6 judged" fired at `bc4faabd`. The reviewer
+  stopped evolving the Maintainer Repo that day: the lighter way
+  first, and how much is rewritten left to what the map shows.
+  Behind it: ADR-0082, decision 2; ADR-0089; devlog 2026-11-23, the
+  order before the rewrite.
+- What the map starts from, counted by script at `bc4faabd`: 264
+  tracked files, 68 of them changed since the inventory's `ee8f3b0`
+  (38 added, 26 changed, 3 deleted, 1 renamed). History is not
+  mapped: it is never updated (`.claude/rules/one-home.md`, *Not a
+  second home*).
+- The TODO items due, found by script at `bc4faabd`:
+  - 13 whose trigger names the refinement's close, against the 14
+    counted on 2026-11-02;
+  - 6 whose trigger names the map: the drafts' words of walking
+    commits, the problem file's next pass, the CBC Runs' Approaches
+    on Trial and check scripts, how much a CBC Run records, our forms
+    as Output Shapes, `docs/baselines/` by kind;
+  - the shared names of five conventions.
+- The TODO item's Ideas, weighed now:
+  - the 14 items first: taken, as stage 1.
+  - the inventory brought up to date, not started again: taken.
+  - which of today's ideas are Backbone Ideas, open question 4 of the
+    layers document: taken, as a question the map decides once.
+  - how much is rewritten, decided by what the map shows: taken, as
+    an own item.
+  - a later update to a CBC Run born before names the renames in its
+    Delivery Note: put on the map, at the exchange-deliver Agent
+    Skill.
+  - the lessons in §7 of the three CBC Run Readings: put on the map,
+    at working-a-reading and the exchange-read Agent Skill.
+- Stages:
+  1. the items due: each ends put on the map, with a new trigger, or
+     dropped; an item done before the rewrite keeps a TODO line, and
+     is not done in this Plan Step;
+  2. the inventory brought up to date, at one commit;
+  3. each text's parts, their layers, and what each needs first;
+  4. the shared questions, decided once, one at a time, with the
+     reviewer;
+  5. close.
+- The reviewer signs each stage's result before the next, and each
+  commit.

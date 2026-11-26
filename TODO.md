@@ -187,36 +187,6 @@
       See: ADR-0082; `TODO-CONVERSATION-MEMORY.md` §31, *Keeping what
       we know true*, in git at `60f692d`.
 
-- [ ] Map today's Maintainer Repo for the rewrite: each text, the
-      parts it holds, the layer each part goes to, and which text
-      needs another first (2026-11-23, the reviewer).
-      Context: the rewrite brings today's texts into the layers model
-      part by part, and a text goes once all it holds has landed or
-      been judged not needed (ADR-0082, decision 2). A question many
-      texts share is decided once, on the map, not text by text.
-      `temp/rebuild-inventory.md` lists 28 Work Approaches and the 16
-      ideas behind them, counted on 2026-11-03 for the rebuild in
-      `cbc-concept`.
-      Ideas:
-      - first, the 14 items whose trigger was the refinement's close,
-        on 2026-11-02: each goes into the map, is done before the
-        rewrite, or is dropped, since most are about texts the rewrite
-        replaces;
-      - the inventory brought up to date, not started again;
-      - which of today's ideas are Backbone Ideas, open question 4 of
-        the keeping-knowledge layers document;
-      - how much is rewritten, decided here by what the map shows,
-        with the aim of getting back to the projects soon
-        (2026-11-26, the reviewer);
-      - a later update to a CBC Run born before names the renames in
-        its Delivery Note, once (from the Plan Step that reads and
-        judges CBC Runs 4, 5 and 6);
-      - the lessons in §7 of the three CBC Run Readings, for
-        working-a-reading and the exchange-read Agent Skill (from the
-        Plan Step that reads and judges CBC Runs 4, 5 and 6).
-      Trigger: CBC Runs 4, 5 and 6 judged.
-      See: devlog 2026-11-23, the order before the rewrite.
-
 - [ ] Decide whether the rewrite takes the Approaches on Trial and
       check scripts the CBC Runs wrote (2026-11-26, the judging of
       CBC Runs 4, 5 and 6).
