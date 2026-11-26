@@ -7,7 +7,7 @@ Why it is an idea of its own: both Problem Domains work by it (temp/rewrite-map.
 Its first sources, input and not rules:
 - the repo-hygiene manual, docs/conventions/repo-hygiene/README.md, its What it is for and §1 to §3;
 - the Hygiene Base's three files, delivery/container/.gitignore, .gitattributes and .editorconfig.
-What stands on it: its Problem Domain Ideas, one for each Problem Domain. Each points here, and never retells it.
+What stands on it: knowledge/problem-domain-ideas/keeping-knowledge/repo-hygiene-in-keeping-knowledge.md, its Problem Domain Idea of keeping knowledge, and knowledge/problem-domain-ideas/cbc-backend-design/repo-hygiene-in-cbc-backend-design.md, its Problem Domain Idea of CBC backend design. Each Problem Domain Idea points here, and never retells it.
 How it is edited:
 - It gives no example from one Problem Domain's work.
 - A trial, as in the layers of knowledge: a section's rules close it, in a last paragraph marked Rules, and govern that section.
@@ -59,7 +59,7 @@ A repo exists before it builds anything, so its files cannot wait for its stack.
 
 **Rules:**
 
-- Machine-local editor state is ignored whole, such as `.idea/`. Sharing a part of it, such as run configurations, is a decision, recorded where the repo records its decisions, never a silent edit.
+- Machine-local state of the editor and other tools, such as `.idea/` or an agent's local settings, is ignored whole. Sharing a part of it, such as run configurations, is a decision, recorded where the repo records its decisions, never a silent edit.
 - Secrets are ignored. What is committed is an example file with no real values, such as `.env.example` beside `.env`.
 
 ## 5. Whose files they are
