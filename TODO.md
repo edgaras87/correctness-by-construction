@@ -683,6 +683,11 @@
       Fact References, so a check of today's texts would check what
       goes. The three items' Ideas are in git, at `f83d146b:TODO.md`,
       lines 768, 1226 and 1256.
+      Ideas:
+      - the scripts behind a count kept, so a recount needs no rebuild:
+        the inventory's of 2026-11-03 were not, and the map's were
+        written again from its §7, then checked against the old numbers
+        (2026-11-26, the map's close).
       Trigger: the rewrite done.
       See: `TODO-CONVERSATION-MEMORY.md` §14, *A sweep, and what
       looking back is*, §21, *A full read for missing fact

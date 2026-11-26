@@ -145,7 +145,7 @@ work.
 Goal: the rewrite has a map of today's Maintainer Repo: each text of
 Living Text, the parts it holds, the layer each part goes to, and which
 text needs another first; and every TODO item due at the map has ended.
-Now: stage 4, the shared questions.
+Now: stage 5, close.
 Gate:
 
 **At the opening.**
@@ -176,14 +176,17 @@ Gate:
       §3.5, *Where each layer is kept*), or the question that keeps
       it open (2026-11-26, stage 3).
 - [x] Each text on the map names the texts it needs rewritten first,
-      or none (2026-11-26, stage 3: all 161 lines of §9, with item 3;
-      the open parts name QUESTION-1 to 6 in §10).
+      or none (2026-11-26, stage 3: all 161 lines of the map's §9,
+      with item 3; the open parts name QUESTION-1 to 6 in its §10).
 - [x] A question many texts share is decided once, on the map, on
       the reviewer's word, and each text it touches points at it
       (2026-11-26, stage 4: QUESTION-1 to 7, `temp/rewrite-map.md`
       §10).
-- [ ] How much of today's repo is rewritten is decided on the
-      reviewer's word, from what the map shows.
+- [x] How much of today's repo is rewritten is decided on the
+      reviewer's word, from what the map shows (2026-11-26, the
+      reviewer: all of it, this repo's own texts included, as
+      ADR-0082, decision 2 reads; a lighter way, the Backend Kit and
+      its ideas first, declined).
 - [x] Each TODO item whose trigger was the refinement's close has
       ended: put on the map, given a new trigger, or dropped
       (2026-11-26, stage 1: 5 on the map, 8 with new triggers, 3 of
@@ -195,36 +198,55 @@ Gate:
       Agent Skills or Agent Rules has ended the same way (2026-11-26,
       stage 1: dropped, since the rewrite makes a manual and its Agent
       Skill one Adapted Case).
-- [ ] Each Idea of the TODO item this Plan Step opened from has ended
-      as its Notes weigh it.
+- [x] Each Idea of the TODO item this Plan Step opened from has ended
+      as its Notes weigh it (2026-11-26: the items first, stage 1; the
+      inventory brought up to date, stage 2; Backbone Ideas,
+      QUESTION-7; how much is rewritten, own item 6; the renames line,
+      at exchange-deliver's line; the Readings' §7 lessons, at
+      working-a-reading's and exchange-read's lines).
 
 **Known already.** The commit-messages and commit-plan Agent Skills
 have no *Gates* section; the own items stand alone.
 
 **At the close.**
 
-- [ ] Every link and path in the records resolves.
-- [ ] Every ADR a record cites exists.
-- [ ] Each pair of copies agrees, such as the worked example in the
-      cbc-framing Agent Skill and in the cbc-slice Agent Skill.
-- [ ] No line of Living Text in a record the Plan Step touched, or one that
+- [x] Every link and path in the records resolves (2026-11-26, by
+      script over the 9 records touched: 21 hits, none broken; generic
+      names, CBC Run 6's own paths, the rename line, history).
+- [x] Every ADR a record cites exists (2026-11-26, 42, by script).
+- [x] Each pair of copies agrees, such as the worked example in the
+      cbc-framing Agent Skill and in the cbc-slice Agent Skill
+      (2026-11-26: identical; no copy changed).
+- [x] No line of Living Text in a record the Plan Step touched, or one that
       mentions its subject, still says "now", "today" or "not yet"
-      about something the Plan Step changed.
-- [ ] New and changed text meets `.claude/rules/writing.md`.
-- [ ] Every commit on `map-2026-11-26` follows the commit-messages Agent Skill.
+      about something the Plan Step changed (2026-11-26: every Living
+      Text naming the map swept; three lines of CBC Run 6's Reading
+      marked on the map).
+- [x] New and changed text meets `.claude/rules/writing.md`
+      (2026-11-26: Glossary Names and local numbers by script over 771
+      added lines, one owner added; each batch signed by the reviewer).
+- [x] Every commit on `map-2026-11-26` follows the commit-messages Agent Skill.
       Its subjects are counted by script: one up to 70 characters
       passes, and one past 70 is the reviewer's to keep or rewrite
-      (`docs/conventions/commit-messages/` §2.1, *Conventional Commits*).
-- [ ] No commit straddles agent and project paths
-      (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*).
-- [ ] The Plan Step's lessons are written back where they came from:
-      conventions, the playbook, the concept.
-- [ ] `CLAUDE.md` read top to bottom; each line still passes its
+      (`docs/conventions/commit-messages/` §2.1, *Conventional Commits*)
+      (2026-11-26: no branch, so the 12 commits on main from
+      `f83d146b`; longest 49, none past 70).
+- [x] No commit straddles agent and project paths
+      (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*)
+      (2026-11-26, by script: no agent path changed).
+- [x] The Plan Step's lessons are written back where they came from:
+      conventions, the playbook, the concept (2026-11-26: one, the
+      scripts behind a count are kept, held as an Idea of TODO's
+      "Decide how texts are checked to stay true after the rewrite";
+      no text of these changes before the rewrite, ADR-0089).
+- [x] `CLAUDE.md` read top to bottom; each line still passes its
       three tests, or leaves (`docs/conventions/agent-arrangement/`
-      §2.4, *How the Entry File is written*).
-- [ ] Each Approach on Trial the Plan Step drafted or used has this
+      §2.4, *How the Entry File is written*) (2026-11-26: nothing it
+      rests on changed).
+- [-] Each Approach on Trial the Plan Step drafted or used has this
       use's dated note, and was handed over for evaluation
-      (`.claude/approaches-on-trial/approach-drafting.md` §3, *Close*).
+      (`.claude/approaches-on-trial/approach-drafting.md` §3, *Close*)
+      (skipped 2026-11-26: none drafted or used).
 
 Notes:
 - Opened 2026-11-26, from TODO's item of the same title, its trigger

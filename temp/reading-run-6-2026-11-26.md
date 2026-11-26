@@ -212,7 +212,7 @@ settled by the reviewer on 2026-11-26.
   evaluation, since the rewrite may replace the texts they would
   change. TODO's "Decide whether the rewrite takes the Approaches on
   Trial and check scripts the CBC Runs wrote", trigger: the map
-  (`d1919e53`).
+  (`d1919e53`); on the map since 2026-11-26 (`temp/rewrite-map.md` §8, *Items from TODO*).
 - **DECISION-3. CBC Run 5's SLICE-1 record was never finished,** and
   six later texts said it was (CBC Run 5's FINDING-21). Settled:
   taken. It lands with the cbc-slice Agent Skill's close: the close
@@ -349,13 +349,13 @@ and WORK-16 taken as one batch, the rest one at a time.
     FINDING-14);
   - how work is run by agents, new trigger the Agent Model rewrite;
   - our own forms as Output Shapes, new trigger the map (TAUGHT-2;
-    CBC Run 4's FINDING-39);
+    CBC Run 4's FINDING-39); on the map since 2026-11-26 (`temp/rewrite-map.md` §8, *Items from TODO*);
   - the Evidence Test Shape at CBC Run 5's first gate, closed as
     answered: tests from the cbc-slice Agent Skill alone did not
     fully meet the Output Shapes. CBC Run 6's first slice record and
     its tests were reworked once at the gate (L-60), and no close
     after found a difference (RETRO.md, *What went wrong*; TAUGHT-2);
-  - sorting `docs/baselines/`, new trigger the map;
+  - sorting `docs/baselines/`, new trigger the map; on the map since 2026-11-26 (`temp/rewrite-map.md` §8, *Items from TODO*);
   - the two facts for the exchange convention, new trigger its next
     change;
   - the frozen CLAUDE template's stance bullets (WORK-9).
