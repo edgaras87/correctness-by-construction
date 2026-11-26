@@ -243,6 +243,15 @@ to it, a stop hook refusing a stop until Release, and the run file
   our container at the pin. CBC Run 4 had none (its FINDING-37).
 - **FINDING-40. `.gitignore`'s stack overlay was appended at Step 4**
   (ADR-0008), with one line for the fresh-clone check's working copy.
+- **FINDING-41. CBC Run Ask 5's range ends at a commit that does not
+  touch identity.** `76a3318` changes `COMMIT-PLAN.md` only; the
+  last commit to `identity.md` is `27362c8`. FINDING-12 gives the
+  range as the CBC Run Ask wrote it. The old Reading's FINDING-27.
+- **FINDING-42. CBC Run Ask 13 says D20 changes the release Approach
+  on Trial's stage 4,** but D20's own *Lands in* names
+  `.claude/checks/fresh-clone-check.sh` and `checks.md`, not
+  `release.md`. FINDING-20 gives the claim as the CBC Run Ask wrote
+  it. The old Reading's FINDING-27.
 
 ## 4. What the CBC Run taught us that we had not thought of
 
@@ -289,14 +298,15 @@ None yet; written at the judging.
   13, 14, 15, 14, 13, 14, 15, 11, 15, 17 and 12, for Steps 0 to 13,
   and 4 after. 14 changed files under the copies' paths, 337 lines in
   and 22 out: 10 delivered copies, and the run's own 4 Approaches on
-  Trial. 13 CBC Run Asks, 40 findings, 5 taught.
+  Trial. 13 CBC Run Asks, 42 findings, 5 taught.
 - **Not committed:** nothing; the tree is clean at `80099b1`.
 - **Hashes cited:** the CBC Run's own commits cited here are on its
   main; `ae8a041` is on our main.
 - **The old Reading, of 2026-10-22,** read the code, the tests and
   the records more widely: 31 findings, 13 edits, 13 asks. Its items
   not met in this read, FINDING-8, 10, 11, 12, 14, 15, 18, 19, 20,
-  21, 23, 27 and 28, are for the judging to compare, at
+  21, 23 and 28, and FINDING-27's third pointer, are for the judging
+  to compare, at
   `4a44c206:temp/reading-run-5-2026-10-22.md`. Its open DECISION-2
   and DECISION-5, and WORK-1 and WORK-3 to WORK-10, are among the
   items above.
