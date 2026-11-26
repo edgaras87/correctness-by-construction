@@ -297,11 +297,11 @@ and the shipped copy, takes one line. **Parts:** what the text holds.
 | `README.md` | its form; what this repo is, for a reader from outside | form: 4, open (QUESTION-1); the content: 4, rewritten last | every other text: it says what stands |
 | `TODO-CONVERSATION-MEMORY.md`, its form | its form, on trial; the sections are history | form: 4, open (QUESTION-1); whether it stays: TODO's "Judge the Conversation Memory trial" | TODO's "Judge the Conversation Memory trial" |
 | `TODO.md` | its form, in the header comment; the items, this repo's work | form: 4, open (QUESTION-1); the items: 4, in place | `docs/conventions/project-recording/` |
-| `concept/00-cbc.md` | | | |
-| `concept/01-layered-system.md` | | | |
-| `concept/02-guarantees-and-walls.md` | | | |
-| `concept/03-cbc-framing.md` | | | |
-| `concept/04-cbc-slice.md` | | | |
+| `concept/00-cbc.md` | CBC itself: the CBC Inversion, the two components, the shape of the work, how it fails | 1 and 2: CBC design, and CBC design in CBC backend design, by TODO's item that splits the concept, its labels first | none |
+| `concept/01-layered-system.md` | the Layered System, its five layers | 1 and 2: CBC design, and CBC design in CBC backend design, by TODO's item that splits the concept, its labels first | none |
+| `concept/02-guarantees-and-walls.md` | System Guarantees and Structural Walls, the Falsifiable Promise | 1 and 2: CBC design, and CBC design in CBC backend design, by TODO's item that splits the concept, its labels first | none |
+| `concept/03-cbc-framing.md` | CBC Framing: paper first, the derivation order, what it produces | 1 and 2: CBC design, and CBC design in CBC backend design, by TODO's item that splits the concept, its labels first | none |
+| `concept/04-cbc-slice.md` | the Invariant Slice: its four phases, the proof standard | 1 and 2: CBC design, and CBC design in CBC backend design, by TODO's item that splits the concept, its labels first | none |
 | `delivery/README.md` | | | |
 | `delivery/container/.claude/CLAUDE.md` | | | |
 | `delivery/container/.claude/rules/delivered-copies.md` | | | |
@@ -320,40 +320,40 @@ and the shipped copy, takes one line. **Parts:** what the text holds.
 | `delivery/container/temp/README.md` | | | |
 | `delivery/fills/cbc-run-pure-playbook.md` | | | |
 | `delivery/installs/pure-seed.md` | | | |
-| `delivery/method/.claude/shapes/evidence-test.md` | | | |
-| `delivery/method/.claude/shapes/kill.md` | | | |
-| `delivery/method/.claude/shapes/registry-entry.md` | | | |
-| `delivery/method/.claude/shapes/slice-record.md` | | | |
-| `delivery/method/.claude/skills/cbc-framing/SKILL.md` | | | |
-| `delivery/method/.claude/skills/cbc-framing/references/cbc-framing-workflow.md` | | | |
-| `delivery/method/.claude/skills/cbc-framing/references/the-whole-system-in-plain.md` | | | |
-| `delivery/method/.claude/skills/cbc-framing/references/worked-example.md` | | | |
-| `delivery/method/.claude/skills/cbc-framing/templates/registry.md` | | | |
-| `delivery/method/.claude/skills/cbc-slice/SKILL.md` | | | |
-| `delivery/method/.claude/skills/cbc-slice/references/cbc-slice-workflow.md` | | | |
-| `delivery/method/.claude/skills/cbc-slice/references/system-readiness.md` | | | |
-| `delivery/method/.claude/skills/cbc-slice/references/worked-example.md` | | | |
-| `delivery/method/docs/glossary/method.md` | | | |
-| `delivery/spring-postgres/.claude/skills/cbc-bootstrap/SKILL.md` | | | |
-| `delivery/spring-postgres/.claude/skills/cbc-bootstrap/references/app-structure.md` | | | |
-| `delivery/spring-postgres/.claude/skills/cbc-bootstrap/references/spring-boot-walkthrough.md` | | | |
-| `delivery/spring-postgres/.claude/skills/cbc-bootstrap/references/spring-harness-reference.md` | | | |
-| `delivery/spring-postgres/.claude/skills/cbc-bootstrap/references/spring-pom-convention.md` | | | |
-| `delivery/spring-postgres/.claude/skills/cbc-bootstrap/templates/application.yaml` | | | |
-| `delivery/spring-postgres/.claude/skills/cbc-bootstrap/templates/readme-run-test.md` | | | |
-| `delivery/spring-postgres/.claude/skills/cbc-bootstrap/templates/testcontainers.properties` | | | |
-| `delivery/spring-postgres/.claude/skills/infra-establish/SKILL.md` | | | |
-| `delivery/spring-postgres/.claude/skills/infra-establish/references/establishment-walk.md` | | | |
-| `delivery/spring-postgres/.claude/skills/infra-establish/references/postgres-role-split.md` | | | |
-| `delivery/spring-postgres/.claude/skills/infra-establish/references/postgres-setup-walkthrough.md` | | | |
-| `delivery/spring-postgres/.claude/skills/infra-establish/templates/.env.example` | | | |
-| `delivery/spring-postgres/.claude/skills/infra-establish/templates/bootstrap.sql` | | | |
-| `delivery/spring-postgres/.claude/skills/infra-establish/templates/compose.yaml` | | | |
-| `delivery/spring-postgres/.claude/skills/infra-establish/templates/flyway.conf` | | | |
-| `delivery/spring-postgres/.claude/skills/infra-establish/templates/readme-prerequisites.md` | | | |
-| `delivery/spring-postgres/.claude/skills/infra-establish/templates/verify-database-model.sql` | | | |
-| `delivery/spring-postgres/.claude/skills/infra-serve/SKILL.md` | | | |
-| `delivery/spring-postgres/docs/glossary/stack.md` | | | |
+| `delivery/method/.claude/shapes/evidence-test.md` | the Evidence Test Shape | 3, the Backend Kit's | `docs/conventions/shapes/`; `concept/` |
+| `delivery/method/.claude/shapes/kill.md` | the Enemy Collision Kill Shape | 3, the Backend Kit's | `docs/conventions/shapes/`; `concept/` |
+| `delivery/method/.claude/shapes/registry-entry.md` | the Invariant Slice Entry Shape | 3, the Backend Kit's | `docs/conventions/shapes/`; `concept/` |
+| `delivery/method/.claude/shapes/slice-record.md` | the Invariant Slice Record Shape | 3, the Backend Kit's | `docs/conventions/shapes/`; `concept/` |
+| `delivery/method/.claude/skills/cbc-framing/SKILL.md` | the cbc-framing Agent Skill: its stages | 3, the Backend Kit's CBC system design, by TODO's item that splits the concept | `concept/` |
+| `delivery/method/.claude/skills/cbc-framing/references/cbc-framing-workflow.md` | the cbc-framing Agent Skill: a reference, cbc-framing-workflow.md | 3, the Backend Kit's CBC system design, by TODO's item that splits the concept | `concept/` |
+| `delivery/method/.claude/skills/cbc-framing/references/the-whole-system-in-plain.md` | the cbc-framing Agent Skill: a reference, the-whole-system-in-plain.md | 3, the Backend Kit's CBC system design, by TODO's item that splits the concept | `concept/` |
+| `delivery/method/.claude/skills/cbc-framing/references/worked-example.md` | the cbc-framing Agent Skill: a reference, worked-example.md | 3, the Backend Kit's CBC system design, by TODO's item that splits the concept; kept identical with its twin in the other Agent Skill | `concept/` |
+| `delivery/method/.claude/skills/cbc-framing/templates/registry.md` | the cbc-framing Agent Skill: an Agent Skill Template, registry.md | 3, the Backend Kit's CBC system design, by TODO's item that splits the concept | `concept/` |
+| `delivery/method/.claude/skills/cbc-slice/SKILL.md` | the cbc-slice Agent Skill: its stages | 3, the Backend Kit's CBC system design, by TODO's item that splits the concept | `concept/` |
+| `delivery/method/.claude/skills/cbc-slice/references/cbc-slice-workflow.md` | the cbc-slice Agent Skill: a reference, cbc-slice-workflow.md | 3, the Backend Kit's CBC system design, by TODO's item that splits the concept | `concept/` |
+| `delivery/method/.claude/skills/cbc-slice/references/system-readiness.md` | the cbc-slice Agent Skill: a reference, system-readiness.md | 3, the Backend Kit's CBC system design, by TODO's item that splits the concept | `concept/` |
+| `delivery/method/.claude/skills/cbc-slice/references/worked-example.md` | the cbc-slice Agent Skill: a reference, worked-example.md | 3, the Backend Kit's CBC system design, by TODO's item that splits the concept; kept identical with its twin in the other Agent Skill | `concept/` |
+| `delivery/method/docs/glossary/method.md` | the concept's and the method's Glossary Names | 3, the Backend Kit's Defined Terms, in place: QUESTION-2 | `concept/` |
+| `delivery/spring-postgres/.claude/skills/cbc-bootstrap/SKILL.md` | the cbc-bootstrap Agent Skill: its stages | 3, by TODO's item that splits the concept, its question whether the stack is only more input to the backend case | `concept/`; the method's Agent Skills |
+| `delivery/spring-postgres/.claude/skills/cbc-bootstrap/references/app-structure.md` | the cbc-bootstrap Agent Skill: a reference, app-structure.md | 3, by TODO's item that splits the concept, its question whether the stack is only more input to the backend case | `concept/`; the method's Agent Skills |
+| `delivery/spring-postgres/.claude/skills/cbc-bootstrap/references/spring-boot-walkthrough.md` | the cbc-bootstrap Agent Skill: a reference, spring-boot-walkthrough.md | 3, by TODO's item that splits the concept, its question whether the stack is only more input to the backend case | `concept/`; the method's Agent Skills |
+| `delivery/spring-postgres/.claude/skills/cbc-bootstrap/references/spring-harness-reference.md` | the cbc-bootstrap Agent Skill: a reference, spring-harness-reference.md | 3, by TODO's item that splits the concept, its question whether the stack is only more input to the backend case | `concept/`; the method's Agent Skills |
+| `delivery/spring-postgres/.claude/skills/cbc-bootstrap/references/spring-pom-convention.md` | the cbc-bootstrap Agent Skill: a reference, spring-pom-convention.md | 3, by TODO's item that splits the concept, its question whether the stack is only more input to the backend case | `concept/`; the method's Agent Skills |
+| `delivery/spring-postgres/.claude/skills/cbc-bootstrap/templates/application.yaml` | the cbc-bootstrap Agent Skill: an Agent Skill Template, application.yaml | 3, by TODO's item that splits the concept, its question whether the stack is only more input to the backend case | `concept/`; the method's Agent Skills |
+| `delivery/spring-postgres/.claude/skills/cbc-bootstrap/templates/readme-run-test.md` | the cbc-bootstrap Agent Skill: an Agent Skill Template, readme-run-test.md | 3, by TODO's item that splits the concept, its question whether the stack is only more input to the backend case | `concept/`; the method's Agent Skills |
+| `delivery/spring-postgres/.claude/skills/cbc-bootstrap/templates/testcontainers.properties` | the cbc-bootstrap Agent Skill: an Agent Skill Template, testcontainers.properties | 3, by TODO's item that splits the concept, its question whether the stack is only more input to the backend case | `concept/`; the method's Agent Skills |
+| `delivery/spring-postgres/.claude/skills/infra-establish/SKILL.md` | the infra-establish Agent Skill: its stages | 3, by TODO's item that splits the concept, its question whether the stack is only more input to the backend case | `concept/`; the method's Agent Skills |
+| `delivery/spring-postgres/.claude/skills/infra-establish/references/establishment-walk.md` | the infra-establish Agent Skill: a reference, establishment-walk.md | 3, by TODO's item that splits the concept, its question whether the stack is only more input to the backend case | `concept/`; the method's Agent Skills |
+| `delivery/spring-postgres/.claude/skills/infra-establish/references/postgres-role-split.md` | the infra-establish Agent Skill: a reference, postgres-role-split.md | 3, by TODO's item that splits the concept, its question whether the stack is only more input to the backend case | `concept/`; the method's Agent Skills |
+| `delivery/spring-postgres/.claude/skills/infra-establish/references/postgres-setup-walkthrough.md` | the infra-establish Agent Skill: a reference, postgres-setup-walkthrough.md | 3, by TODO's item that splits the concept, its question whether the stack is only more input to the backend case | `concept/`; the method's Agent Skills |
+| `delivery/spring-postgres/.claude/skills/infra-establish/templates/.env.example` | the infra-establish Agent Skill: an Agent Skill Template, .env.example | 3, by TODO's item that splits the concept, its question whether the stack is only more input to the backend case | `concept/`; the method's Agent Skills |
+| `delivery/spring-postgres/.claude/skills/infra-establish/templates/bootstrap.sql` | the infra-establish Agent Skill: an Agent Skill Template, bootstrap.sql | 3, by TODO's item that splits the concept, its question whether the stack is only more input to the backend case | `concept/`; the method's Agent Skills |
+| `delivery/spring-postgres/.claude/skills/infra-establish/templates/compose.yaml` | the infra-establish Agent Skill: an Agent Skill Template, compose.yaml | 3, by TODO's item that splits the concept, its question whether the stack is only more input to the backend case | `concept/`; the method's Agent Skills |
+| `delivery/spring-postgres/.claude/skills/infra-establish/templates/flyway.conf` | the infra-establish Agent Skill: an Agent Skill Template, flyway.conf | 3, by TODO's item that splits the concept, its question whether the stack is only more input to the backend case | `concept/`; the method's Agent Skills |
+| `delivery/spring-postgres/.claude/skills/infra-establish/templates/readme-prerequisites.md` | the infra-establish Agent Skill: an Agent Skill Template, readme-prerequisites.md | 3, by TODO's item that splits the concept, its question whether the stack is only more input to the backend case | `concept/`; the method's Agent Skills |
+| `delivery/spring-postgres/.claude/skills/infra-establish/templates/verify-database-model.sql` | the infra-establish Agent Skill: an Agent Skill Template, verify-database-model.sql | 3, by TODO's item that splits the concept, its question whether the stack is only more input to the backend case | `concept/`; the method's Agent Skills |
+| `delivery/spring-postgres/.claude/skills/infra-serve/SKILL.md` | the infra-serve Agent Skill: its stages | 3, by TODO's item that splits the concept, its question whether the stack is only more input to the backend case | `concept/`; the method's Agent Skills |
+| `delivery/spring-postgres/docs/glossary/stack.md` | the stack's Glossary Names | 3, the Backend Kit's Defined Terms, in place: QUESTION-2 | `concept/` |
 | `devlog/README.md` | the devlog's form; the entries are history | form: 4, open (QUESTION-1) | `docs/conventions/project-recording/` |
 | `docs/adr/README.md` | the ADR's form; the ADRs are history | form: 4, open (QUESTION-1) | `docs/conventions/project-recording/` |
 | `docs/baselines/cbc-derived-claude-walk1.md` | | | |
