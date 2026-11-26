@@ -362,25 +362,25 @@ and the shipped copy, takes one line. **Parts:** what the text holds.
 | `docs/baselines/claude-md-template-v1.md` | | | |
 | `docs/baselines/spring-slice-reference.md` | | | |
 | `docs/conventions/README.md` | | | |
-| `docs/conventions/agent-arrangement/README.md` | | | |
-| `docs/conventions/commit-messages/README.md` | | | |
-| `docs/conventions/commit-plan/README.md` | | | |
-| `docs/conventions/conventions/README.md` | | | |
-| `docs/conventions/exchange/README.md` | | | |
-| `docs/conventions/facts-in-sync/README.md` | | | |
-| `docs/conventions/project-recording/README.md` | | | |
-| `docs/conventions/repo-hygiene/README.md` | | | |
+| `docs/conventions/agent-arrangement/README.md` | the idea: §1 to §4, an arrangement, the Entry File, `.claude/`; §5, the Claude Code Tool Binding; both seats; the form's sections | idea: 1 or 2 (§8, the Idea Models row); §5: QUESTION-6; the CBC Run's seat: 3; ours: 4; the form's sections: QUESTION-4 | `docs/models/agent.md` |
+| `docs/conventions/commit-messages/README.md` | the idea: §1, §2; §3, our habit; the seats, alike; the form's sections | idea: 1 or 2 (§8, the Idea Models row); §3: 4; the CBC Run's seat: 3; ours: 4; the form's sections: QUESTION-4 | `docs/conventions/agent-arrangement/`, for §2.3 |
+| `docs/conventions/commit-plan/README.md` | the idea: §1, §2; the seats, alike; the form's sections | idea: 1 or 2 (§8, the Idea Models row); the CBC Run's seat: 3; ours: 4; the form's sections: QUESTION-4 | `docs/conventions/commit-messages/` |
+| `docs/conventions/conventions/README.md` | how a Work Approach is written, §1; the manual's form, §2; adding a convention, §3 | QUESTION-5 | none: the layers, in place |
+| `docs/conventions/exchange/README.md` | the idea: §1, §2; down to a CBC Run, §3, §4; editing a copy, §5; up from a CBC Run, §6; the body by seat; the form's sections | §1, §2: 1 or 2 (§8, the Idea Models row); §3 to §6: each to the change text in place that holds it, at layers 2 to 4, the rest beside them; the form's sections: QUESTION-4 | `docs/models/tiers.md`; `docs/conventions/facts-in-sync/` |
+| `docs/conventions/facts-in-sync/README.md` | the idea: §1 to §5, one home, the Fact Reference, a Canonical Description's rule, a disagreement; both seats; the form's sections | idea: 1 or 2 (§8, the Idea Models row); the CBC Run's seat: 3; ours: 4; the form's sections: QUESTION-4 | `docs/models/idea-to-output.md`, for §4 |
+| `docs/conventions/project-recording/README.md` | the idea of records: §1, §11 to §13; each record, §2 to §8, and its form; the playbook, §9; supporting records, §10; Conversation Memory, §14; both seats; the form's sections | idea: 1 or 2 (§8, the Idea Models row); each record's form: QUESTION-1; §14: 4, on trial; the CBC Run's seat: 3; ours: 4; the form's sections: QUESTION-4 | none |
+| `docs/conventions/repo-hygiene/README.md` | the idea: §1 to §3, the three files, the template layers, the rules; the seats; the form's sections | idea: 1 or 2 (§8, the Idea Models row); the CBC Run's seat: 3; ours: 4; the form's sections: QUESTION-4 | none |
 | `docs/conventions/repo-hygiene/templates/java-spring/editorconfig.part` | | | |
 | `docs/conventions/repo-hygiene/templates/java-spring/gitattributes.part` | | | |
 | `docs/conventions/repo-hygiene/templates/java-spring/gitignore.part` | | | |
-| `docs/conventions/retrospective/README.md` | | | |
-| `docs/conventions/shapes/README.md` | | | |
-| `docs/conventions/visual-comparison/README.md` | | | |
-| `docs/conventions/writing/README.md` | | | |
+| `docs/conventions/retrospective/README.md` | the idea: §1 to §4, the two Plan Steps, deciding, applying, `RETRO.md`; both seats; the form's sections | idea: 1 or 2 (§8, the Idea Models row); the CBC Run's seat: 3; ours: 4, on trial (TODO's "Run this repo's retrospective, on trial"); the form's sections: QUESTION-4 | `docs/conventions/project-recording/` |
+| `docs/conventions/shapes/README.md` | the idea: §1 to §5, what an Output Shape is and is not, where it lives, between repos, using it; both seats; the form's sections | idea: 1 or 2 (§8, the Idea Models row); the CBC Run's seat: 3; ours: 4; the form's sections: QUESTION-4; two items wait here (§8) | `docs/models/tiers.md`, for §4.1 |
+| `docs/conventions/visual-comparison/README.md` | the idea: §1, §2; the seats, alike; the form's sections | idea: 1 or 2 (§8, the Idea Models row); the CBC Run's seat: 3; ours: 4; the form's sections: QUESTION-4 | none |
+| `docs/conventions/writing/README.md` | the idea: §1, §2, what it governs, why each rule; the seats; the form's sections | idea: 1 or 2 (§8, the Idea Models row); rule 9: QUESTION-2; the CBC Run's seat: 3; ours: 4; the form's sections: QUESTION-4; one item waits here (§8) | `docs/conventions/facts-in-sync/`, for §1.1 |
 | `docs/glossary.md` | its form; the Glossary Names, each pointing at its home | open (QUESTION-2) | `docs/conventions/writing/`; each text a Name points at |
-| `docs/models/agent.md` | | | |
-| `docs/models/idea-to-output.md` | | | |
-| `docs/models/tiers.md` | | | |
+| `docs/models/agent.md` | how an agent works: §1 to §8, §11, §12; where each convention lands, §9; the Tool Bindings, §10 | §1 to §8, §11, §12: 1 or 2 (§8, the Idea Models row); §9: 4; §10: QUESTION-6 | none |
+| `docs/models/idea-to-output.md` | the chain, its kinds and links, the two directions, a convention: §1 to §8 | QUESTION-5 | none: the layers, in place |
+| `docs/models/tiers.md` | the tiers, Concept Repos and Run Repos, and the flows between them: §1 to §4 | QUESTION-5 | none: the layers, in place |
 | `knowledge/adapted-cases/cbc-backend-design/defined-terms/defined-terms.md` | the Backend Kit's Defined Terms, an Instruction Text alone | 3, in place | none |
 | `knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/change-a-kit-copy/rule.md` | changing a Kit Copy: its Instruction Text, a Paths Rule | 3, in place | none |
 | `knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/change-a-kit-copy/understanding.md` | changing a Kit Copy: its Adapted Understanding Text | 3, in place | none |
@@ -442,3 +442,18 @@ Each text it touches names it in §9.
   for those who pin a concept version. In the layers model the concept
   is split (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md`
   §3.3, *The Adapted Case layer*).
+- **QUESTION-4. A manual's own sections.** *What it is for*, *What
+  this is made usable as*, *The seats*, *Why it arrives this way*,
+  *What this does not cover* and *Where to look* are the manual's form
+  (`.claude/rules/convention-manual.md`). In the layers model, a text's
+  header says what it is, what it stands on and what stands on it.
+  Which of these sections land in the header, which in the text, and
+  which go. Touches the 12 manuals.
+- **QUESTION-5. What the layers model replaces.** The conventions
+  manual, the Idea-to-Output Model and the Tiers Model say how ideas,
+  texts and repos tie. The layers model says it for its own texts
+  (`knowledge/backbone-ideas/layers-of-knowledge.md`). Touches those
+  three, and every text with a Foundation Line.
+- **QUESTION-6. Where the Tool Bindings go.** How the Agent Model's
+  channels map onto Claude Code: agent-arrangement §5, *The Claude
+  Code Tool Binding*, and the Agent Model's §10, *The Tool Bindings*.
