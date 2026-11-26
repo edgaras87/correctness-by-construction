@@ -14,7 +14,7 @@ it met with no way written down. The reviewer reads all of it after
 auto ends.
 
 Done once before, inside CBC Run 3, which wrote the CBC Run Hand-off that
-started CBC Run 4 (`temp/RUN-4.md`). Never on our Convention Seat.
+started CBC Run 4 (in git at `4ef580f6^:temp/RUN-4.md`). Never on our Convention Seat.
 
 ## Stages
 
