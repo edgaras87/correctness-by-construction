@@ -116,52 +116,6 @@
       Trigger: the map reaches the problem file.
       See: devlog 2026-11-18, later, *Found, not fixed*, item 5.
 
-- [ ] Read and judge CBC Runs 4, 5 and 6: each read apart, their
-      findings judged together, kept for the rewrite (2026-11-19,
-      the reviewer; from three items of 2026-10-15 to 2026-10-31).
-      Context: CBC Run 4 is unread, born by hand from CBC Run 3's kit
-      at `dac4dd1`, twelve lines under *To the deliverer*. CBC Run 5
-      was read on 2026-10-22, `temp/reading-run-5-2026-10-22.md`, its
-      judging half done. CBC Run 6 is unread: 233 commits on main, 254
-      across its branches, tag `v0.1.0`. The kit is updated during
-      the rewrite, not now: no old text changed, no update sent
-      (ADR-0082).
-      Ideas:
-      - CBC Run 6 first, then CBC Run 4;
-      - each read with today's conventions (2026-11-26, the reviewer);
-      - read by needs, not by diff: how the CBC Run went and what it
-        needed, since the refinement and the rewrite change the
-        texts its diff touched; each need ends met, naming where;
-        missing or wrong; or no longer applies, saying why the need
-        is gone;
-      - CBC Run 5's Reading re-judged by needs, not read again; its
-        open DECISION-2 and DECISION-5, and WORK-1 and WORK-3 to
-        WORK-10, among the findings;
-      - judged by working-a-reading, each item taken, declined or
-        held, and kept for the rewrite (ADR-0089);
-      - old words read through the refinement's Names table, at
-        `55e2bd0^:temp/refinement-2026-10-18.md`;
-      - CBC Run 4's own questions: CBC Run 3's and CBC Run 4's
-        `RETRO.md` against the retrospective Agent Skill's form
-        (ADR-0054); `temp/RUN-4.md`, the hand-off that started it,
-        read and then deleted; how it closed its Plan Step branches;
-        whether its birth fired three triggers, shipping `temp/`, the
-        ground-must-be-up rule, the cbc-bootstrap Agent Skill's
-        hygiene; its "rules in force now" list on an append-only
-        Decisions Log; the cbc-framing Agent Skill's README status
-        line; whether it confirmed its Plan Steps once framed;
-      - CBC Run 6's: whether CBC Run 5's and CBC Run 6's Entry Files
-        added the ground-must-be-up rule unasked (ADR-0013);
-        `temp/run-6-handoff/`, the hand-off its reading starts from;
-      - a later update to a CBC Run born before names the renames in
-        its Delivery Note, once.
-      Trigger: before the rewrite of today's repo into the layers model
-      begins (the layers item's idea, today's Maintainer Repo brought
-      in), since the findings are about the texts it rewrites.
-      See: ADR-0082; devlog 2026-10-29, morning; `f097695`;
-      `TODO-CONVERSATION-MEMORY.md` §5, *Run 4's reading: two moves
-      from layer 6*, and §30, *Reading a CBC Run born before*.
-
 - [ ] Confirm the Common Ground Problem in the reviewer's words
       (2026-11-05, the reviewer; an item since 2026-11-19).
       Context: the problem is drafted in
@@ -253,7 +207,10 @@
         the keeping-knowledge layers document;
       - how much is rewritten, decided here by what the map shows,
         with the aim of getting back to the projects soon
-        (2026-11-26, the reviewer).
+        (2026-11-26, the reviewer);
+      - a later update to a CBC Run born before names the renames in
+        its Delivery Note, once (from the Plan Step that reads and
+        judges CBC Runs 4, 5 and 6).
       Trigger: CBC Runs 4, 5 and 6 judged.
       See: devlog 2026-11-23, the order before the rewrite.
 
@@ -740,7 +697,8 @@
       again.
       Trigger: CBC Runs 4, 5 and 6 read and judged, CBC Run 5's nine
                lessons for the auto-run Approach on Trial among the
-               findings (the item that reads and judges them).
+               findings (`PLAN.md`, the Plan Step that reads and
+               judges them).
       See: devlog 2026-10-22.
 
 - [ ] Decide how a Work Approach and an Output Shape divide an output: the
@@ -1070,7 +1028,7 @@
       - a strict "verb first" grammar would rename 11 of the 12
         Agent Skills; a loose one 3, and lets commit-plan through.
       - no grammar parts a manual from an Agent Rule: both are nouns.
-      Trigger: the CBC Run Readings of CBC Runs 4, 5 and 6 have closed. A
+      Trigger: CBC Runs 4, 5 and 6 judged. A
                CBC Run born before then is built with the old names
                and joins them.
       See: `TODO-CONVERSATION-MEMORY.md` §27, *Shared names of

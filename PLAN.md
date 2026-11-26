@@ -139,3 +139,151 @@ reason. That is a finding about the item, not a Plan Step skipping
 work.
 
 ---
+
+## Step: Read and judge CBC Runs 4, 5 and 6  (the exchange-read Agent Skill; the exchange-reading and working-a-reading Agent Rules)    [~]
+
+Goal: CBC Runs 4, 5 and 6 each have a CBC Run Reading by today's
+exchange, and every item of the three has ended taken, declined or
+held, kept for the rewrite.
+Now: the opening.
+Gate:
+
+**At the opening.**
+
+- [ ] The Plan Step's branch `runs-judged-2026-11-26`, if it has one,
+      is cut from main after the reads, and nothing of the Plan Step
+      was done on main except the reads
+      (`.claude/rules/working-a-reading.md`, step 1).
+- [ ] This Plan Step Gate was written before the work started.
+- [ ] The Plan Step's Work Approach is known: the exchange-read Agent
+      Skill, for each read; the exchange-reading and working-a-reading
+      Agent Rules, for each CBC Run Reading and its judging; the
+      commit-plan Agent Skill, if the count calls for a branch.
+
+**The Plan Step's own items.**
+
+- [ ] CBC Run 6 has a CBC Run Reading in `temp/`, its first line
+      naming the commit read through.
+- [ ] CBC Run 4 has a CBC Run Reading in `temp/`, its first line
+      naming the commit read through.
+- [ ] CBC Run 5's CBC Run Reading reads in today's words, and each of
+      its open items says whether today's texts already meet it.
+- [ ] Each edit, CBC Run Ask and finding of CBC Runs 4 and 6 has one
+      line in its CBC Run Reading.
+- [ ] CBC Run 4's own questions and CBC Run 6's, listed in the Notes,
+      each have a line in their CBC Run Reading.
+- [ ] The three CBC Run Readings were judged together: a finding seen
+      in more than one names each CBC Run it came from, and is judged
+      once.
+- [ ] Every finding has ended in a decision or a work item, or says
+      why it needs neither.
+- [ ] Every work item has ended taken, declined or held, and is
+      marked in its CBC Run Reading.
+- [ ] Each taken item names the text it lands with in the rewrite. No
+      Master Copy changed and no Delivery Note was sent (ADR-0089,
+      decision 3).
+- [ ] Each held item has its line in TODO.
+- [ ] Nothing in CBC Runs 4, 5 and 6 was written to.
+- [ ] Each CBC Run's uncommitted work, if any, is named in its CBC Run
+      Reading.
+- [ ] The three CBC Run Readings stay in `temp/`, each header saying
+      it is kept for the rewrite.
+- [ ] `temp/RUN-4.md` is read, then deleted.
+
+**Known already.** The exchange-read Agent Skill's *Gates* and
+working-a-reading's *Gates*, checked against the own items by meaning:
+
+- the CBC Run Reading to its form, its first line naming `HEAD`: in
+  the first two items;
+- every edit, CBC Run Ask and finding with one line, none decided at
+  the read; the uncommitted work named; nothing written to the CBC
+  Run: each joined as an item;
+- every finding ended, every work item ended and marked: each joined
+  as an item;
+- the Delivery Note in the CBC Run: struck, since none is sent until
+  the rewrite (ADR-0089, decision 3);
+- the CBC Run Reading's lessons where they act, or in TODO: in the
+  close's lessons item.
+
+**At the close.**
+
+- [ ] Every link and path in the records resolves.
+- [ ] Every ADR a record cites exists.
+- [ ] Each pair of copies agrees, such as the worked example in the
+      cbc-framing Agent Skill and in the cbc-slice Agent Skill.
+- [ ] No line of Living Text in a record the Plan Step touched, or one that
+      mentions its subject, still says "now", "today" or "not yet"
+      about something the Plan Step changed.
+- [ ] New and changed text meets `.claude/rules/writing.md`.
+- [ ] Every commit on `runs-judged-2026-11-26` follows the
+      commit-messages Agent Skill. Its subjects are counted by script:
+      one up to 70 characters passes, and one past 70 is the
+      reviewer's to keep or rewrite
+      (`docs/conventions/commit-messages/` §2.1, *Conventional Commits*).
+- [ ] No commit straddles agent and project paths
+      (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*).
+- [ ] The Plan Step's lessons are written back where they came from:
+      conventions, the playbook, the concept.
+- [ ] `CLAUDE.md` read top to bottom; each line still passes its
+      three tests, or leaves (`docs/conventions/agent-arrangement/`
+      §2.4, *How the Entry File is written*).
+- [ ] Each Approach on Trial the Plan Step drafted or used has this
+      use's dated note, and was handed over for evaluation
+      (`.claude/approaches-on-trial/approach-drafting.md` §3, *Close*).
+
+Notes:
+- Opened 2026-11-26, from TODO's item of the same title, its trigger
+  the rewrite about to begin. The reviewer stopped evolving the
+  Maintainer Repo that day, to get back to the projects
+  (`d7ace896`). Read and judged by today's exchange, and no Agent
+  Skill of the layers model used (ADR-0089).
+- The three CBC Runs:
+  - CBC Run 6: unread; 233 commits on main, 34 branches, tag
+    `v0.1.0`, born from our pin `657d372`. Its read starts from the
+    hand-off, `temp/run-6-handoff/`.
+  - CBC Run 4: unread; 158 commits, 42 branches, born by hand from
+    CBC Run 3's kit at `dac4dd1`; 12 lines under *To the deliverer*.
+  - CBC Run 5: read on 2026-10-22 through `80099b1`,
+    `temp/reading-run-5-2026-10-22.md`, its judging half done; no
+    commit since, its tree clean. Its open DECISION-2 and
+    DECISION-5, and WORK-1 and WORK-3 to WORK-10, are among the
+    findings.
+- The TODO item's Ideas, weighed now:
+  - CBC Run 6 first, then CBC Run 4: taken. CBC Run 6 used the newest
+    kit, so its findings are nearest today's texts.
+  - each read with today's conventions: taken (ADR-0089).
+  - read by needs, not by diff: declined for the read, which is the
+    exchange-read Agent Skill's (ADR-0089, decision 1). Extended to
+    the judging: an item whose need is gone ends declined, saying why.
+  - CBC Run 5's Reading not read again: open, the reviewer's, before
+    CBC Run 5's stage.
+  - judged by working-a-reading: taken (ADR-0089).
+  - old words read through the refinement's Names table, at
+    `55e2bd0^:temp/refinement-2026-10-18.md`: taken.
+  - CBC Run 4's own questions: taken. CBC Run 3's and CBC Run 4's
+    `RETRO.md` against the retrospective Agent Skill's form
+    (ADR-0054); how it closed its Plan Step branches; whether its
+    birth fired three triggers, shipping `temp/`, the
+    ground-must-be-up rule, the cbc-bootstrap Agent Skill's hygiene;
+    its "rules in force now" list on an append-only Decisions Log;
+    the cbc-framing Agent Skill's README status line; whether it
+    confirmed its Plan Steps once framed.
+  - CBC Run 6's own questions: taken. Whether CBC Run 5's and CBC Run
+    6's Entry Files added the ground-must-be-up rule unasked
+    (ADR-0013).
+  - a later update to a CBC Run born before names the renames in its
+    Delivery Note, once: moved to TODO's map item, since no Delivery
+    Note is sent here.
+- Stages:
+  1. read CBC Run 6 (the exchange-read Agent Skill);
+  2. read CBC Run 4 (the same);
+  3. bring CBC Run 5's CBC Run Reading to today's words;
+  4. decide and work, the three together (working-a-reading, steps
+     1 to 8), on the branch if the count calls for one;
+  5. close (working-a-reading, step 9, without the Delivery Note).
+- The reviewer signs each CBC Run Reading before the next stage, and
+  each commit.
+- Behind it: ADR-0082, decision 4; ADR-0089; devlog 2026-10-29,
+  morning; `f097695`; `TODO-CONVERSATION-MEMORY.md` §5, *Run 4's
+  reading: two moves from layer 6*, and §30, *Reading a CBC Run born
+  before*.
