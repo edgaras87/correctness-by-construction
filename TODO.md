@@ -47,7 +47,8 @@
       - the order by §9's *Needs first*: first the texts that need
         none, such as the project-recording and visual-comparison
         manuals and the Agent Model;
-      - one Plan Step per idea, as change was done.
+      - one Plan Step per idea, as change was done;
+      - each Plan Step on a branch: shipped files move.
       Trigger: the map's Plan Step closed.
       See: devlog 2026-11-26, the map's Plan Step; ADR-0082.
 
