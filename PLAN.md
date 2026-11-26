@@ -174,10 +174,10 @@ Gate:
       its open items says whether today's texts already meet it
       (struck 2026-11-26: the reviewer chose to read CBC Run 5 again
       from its first commit, so the two items below replace it).
-- [ ] CBC Run 5's old CBC Run Reading, of 2026-10-22, is closed as
+- [x] CBC Run 5's old CBC Run Reading, of 2026-10-22, is closed as
       overtaken: each open item says where it went, and the file is
       deleted (`docs/conventions/exchange/` §6.4, *How a CBC Run
-      Reading closes*).
+      Reading closes*) (2026-11-26, `4a44c206` and `23744f02`).
 - [ ] CBC Run 5 has a new CBC Run Reading in `temp/`, its first line
       naming the commit read through.
 - [ ] Each edit, CBC Run Ask and finding of CBC Runs 4, 5 and 6 has
