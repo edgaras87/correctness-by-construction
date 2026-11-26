@@ -1339,3 +1339,16 @@
   Why: ADR-0088, decision 9.
   Rejected: a Borrow Table in each Backend Kit file, every row
   pointing at the terms text.
+
+- 2026-11-26 The layers model's three Agent Skills, read-copy-changes,
+  judge-copy-changes and deliver-the-kit-update, take
+  `disable-model-invocation: true`. The agent cannot invoke them on
+  its own, and their descriptions leave its context; the reviewer
+  still runs each by its name. A CBC Run is a Backend Repo by the
+  model's words, so "read CBC Run 6's lessons" matches
+  read-copy-changes' description. The line goes when one is first
+  used on a Backend Repo.
+  Why: ADR-0089, decision 4.
+  Rejected: the three moved out of `.claude/skills/`, breaking the
+  pointers in 8 Living Text files, fixed again on the way back; no
+  guard, the agent's care alone.

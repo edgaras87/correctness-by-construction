@@ -1,6 +1,7 @@
 ---
 name: deliver-the-kit-update
 description: Make a Kit Update for one Backend Repo, then stage it into the Backend Repo's temp/ on the human's word. Use when the human names a Backend Repo to update, once its Look for Lessons has ended, or asks which Backend Repos are behind.
+disable-model-invocation: true
 ---
 
 # Deliver the Kit Update
@@ -68,3 +69,4 @@ Compare each Backend Repo's Kit Version with the newest, as in Stage 1, step 2. 
 
 - ADR-0087 — written from the simulation alone, whole with its understanding; making and staging in one Adapted Case
 - ADR-0084 — this repo's own Adapted Cases kept whole in `.claude/`
+- ADR-0089 — not invoked by the agent on its own, since a CBC Run reads as a Backend Repo by its description

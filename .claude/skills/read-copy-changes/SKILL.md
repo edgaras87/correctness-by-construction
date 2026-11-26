@@ -1,6 +1,7 @@
 ---
 name: read-copy-changes
 description: Read one Backend Repo's Copy Changes since the Maintainer Repo last looked, and list them in a Repo Reading, judging nothing. Use when the human names a Backend Repo, for its lessons or to update it, or asks which Backend Repos have new work.
+disable-model-invocation: true
 ---
 
 # Read Copy Changes
@@ -75,3 +76,4 @@ Compare every Backend Repo's main with its *settled snapshot* in the Repo Regist
 
 - ADR-0087 — written from the simulation alone, whole with its understanding
 - ADR-0084 — this repo's own Adapted Cases kept whole in `.claude/`
+- ADR-0089 — not invoked by the agent on its own, since a CBC Run reads as a Backend Repo by its description

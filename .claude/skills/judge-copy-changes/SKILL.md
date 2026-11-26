@@ -1,6 +1,7 @@
 ---
 name: judge-copy-changes
 description: Judge each line of a Repo Reading, write its verdict, act on the verdicts, and end the Look for Lessons by moving the settled snapshot. Use when the human starts judging a Repo Reading whose list was checked whole, or when Read Copy Changes ends with nothing to judge.
+disable-model-invocation: true
 ---
 
 # Judge Copy Changes
@@ -91,3 +92,4 @@ For each decided verdict, make what its depth asks (Change, in keeping knowledge
 
 - ADR-0087 — written from the simulation alone, whole with its understanding; Judge and Act in one Adapted Case
 - ADR-0084 — this repo's own Adapted Cases kept whole in `.claude/`
+- ADR-0089 — not invoked by the agent on its own, since a CBC Run reads as a Backend Repo by its description
