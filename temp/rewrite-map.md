@@ -302,24 +302,24 @@ and the shipped copy, takes one line. **Parts:** what the text holds.
 | `concept/02-guarantees-and-walls.md` | System Guarantees and Structural Walls, the Falsifiable Promise | 1 and 2: CBC design, and CBC design in CBC backend design, by TODO's item that splits the concept, its labels first | none |
 | `concept/03-cbc-framing.md` | CBC Framing: paper first, the derivation order, what it produces | 1 and 2: CBC design, and CBC design in CBC backend design, by TODO's item that splits the concept, its labels first | none |
 | `concept/04-cbc-slice.md` | the Invariant Slice: its four phases, the proof standard | 1 and 2: CBC design, and CBC design in CBC backend design, by TODO's item that splits the concept, its labels first | none |
-| `delivery/README.md` | | | |
-| `delivery/container/.claude/CLAUDE.md` | | | |
-| `delivery/container/.claude/rules/delivered-copies.md` | | | |
-| `delivery/container/.claude/rules/shapes-lifecycle.md` | | | |
-| `delivery/container/.claude/skills/apply-retrospective/SKILL.md` | | | |
-| `delivery/container/.claude/skills/retrospective/SKILL.md` | | | |
-| `delivery/container/ARCHITECTURE.md` | | | |
-| `delivery/container/CHANGELOG.md` | | | |
-| `delivery/container/PLAN.md` | | | |
-| `delivery/container/README.md` | | | |
-| `delivery/container/TODO.md` | | | |
-| `delivery/container/devlog/devlog.md` | | | |
-| `delivery/container/docs/adr/0001-record-architecture-decisions.md` | | | |
-| `delivery/container/docs/glossary.md` | | | |
-| `delivery/container/docs/glossary/container.md` | | | |
-| `delivery/container/temp/README.md` | | | |
-| `delivery/fills/cbc-run-pure-playbook.md` | | | |
-| `delivery/installs/pure-seed.md` | | | |
+| `delivery/README.md` | a Local Map: how the delivery's groups land in a CBC Run | 4; goes with the delivery it maps | every text under `delivery/` |
+| `delivery/container/.claude/CLAUDE.md` | the CBC Run's Entry File | 3, the Backend Kit's | `docs/conventions/agent-arrangement/`; `docs/conventions/project-recording/` |
+| `delivery/container/.claude/rules/delivered-copies.md` | taking a delivery; editing a copy | 3: each part to the Backend Kit's change Adapted Case in place that holds it, the rest beside them | `docs/conventions/exchange/` |
+| `delivery/container/.claude/rules/shapes-lifecycle.md` | how an Output Shape is born and changed | 3, the Backend Kit's | `docs/conventions/shapes/` |
+| `delivery/container/.claude/skills/apply-retrospective/SKILL.md` | applying the look back before Release | 3, the Backend Kit's | `docs/conventions/retrospective/` |
+| `delivery/container/.claude/skills/retrospective/SKILL.md` | a CBC Run looking back | 3, the Backend Kit's | `docs/conventions/retrospective/` |
+| `delivery/container/ARCHITECTURE.md` | the Record Stub for ARCHITECTURE | 3, the Backend Kit's record forms; QUESTION-1 | `docs/conventions/project-recording/` |
+| `delivery/container/CHANGELOG.md` | the Record Stub for the changelog | 3, the Backend Kit's record forms; QUESTION-1 | `docs/conventions/project-recording/` |
+| `delivery/container/PLAN.md` | the Record Stub for the plan | 3, the Backend Kit's record forms; QUESTION-1 | `docs/conventions/project-recording/`; the playbook |
+| `delivery/container/README.md` | the Record Stub for the README | 3, the Backend Kit's record forms; QUESTION-1 | `docs/conventions/project-recording/` |
+| `delivery/container/TODO.md` | the Record Stub for TODO | 3, the Backend Kit's record forms; QUESTION-1 | `docs/conventions/project-recording/` |
+| `delivery/container/devlog/devlog.md` | the Record Stub for the devlog | 3, the Backend Kit's record forms; QUESTION-1 | `docs/conventions/project-recording/` |
+| `delivery/container/docs/adr/0001-record-architecture-decisions.md` | the first ADR, and the ADR's form | 3, the Backend Kit's record forms; QUESTION-1 | `docs/conventions/project-recording/` |
+| `delivery/container/docs/glossary.md` | the Record Stub for a CBC Run's own glossary | 3, the Backend Kit's record forms; QUESTION-1; QUESTION-2 | `docs/conventions/project-recording/`; `docs/conventions/writing/` |
+| `delivery/container/docs/glossary/container.md` | the shared Glossary Names | 3, the Backend Kit's Defined Terms, in place: QUESTION-2 | `docs/conventions/writing/` |
+| `delivery/container/temp/README.md` | the Record Stub for `temp/` | 3, the Backend Kit's record forms; QUESTION-1 | `docs/conventions/project-recording/` |
+| `delivery/fills/cbc-run-pure-playbook.md` | a CBC Run's Plan Steps from birth to Release, and the Plan Step Form | 3, the Backend Kit's; the Plan Step Form: QUESTION-1; one item waits here (§8) | `docs/conventions/project-recording/`; `concept/` |
+| `delivery/installs/pure-seed.md` | making a CBC Run Birth: its idea, written only here (§3), and its steps | idea: 1 or 2; the steps: 4 | `docs/conventions/exchange/`; `docs/conventions/repo-hygiene/` |
 | `delivery/method/.claude/shapes/evidence-test.md` | the Evidence Test Shape | 3, the Backend Kit's | `docs/conventions/shapes/`; `concept/` |
 | `delivery/method/.claude/shapes/kill.md` | the Enemy Collision Kill Shape | 3, the Backend Kit's | `docs/conventions/shapes/`; `concept/` |
 | `delivery/method/.claude/shapes/registry-entry.md` | the Invariant Slice Entry Shape | 3, the Backend Kit's | `docs/conventions/shapes/`; `concept/` |
