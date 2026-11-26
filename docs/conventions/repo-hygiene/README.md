@@ -19,12 +19,12 @@ recorded before it. Lived since:
 
 ## What this is made usable as
 
-- **`delivery/container/.gitignore`,
-  `delivery/container/.gitattributes` and
-  `delivery/container/.editorconfig` — the Hygiene Base, shipped**, copied
+- **`.gitignore`, `.gitattributes` and `.editorconfig` in
+  `knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/repo-hygiene/`
+  — the Hygiene Base, shipped**, copied
   into a repo at its creation and the CBC Run's own from then on; they
   are never delivered again.
-- **`docs/conventions/repo-hygiene/templates/java-spring/` — a
+- **`knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/repo-hygiene/java-spring/` — a
   Stack Overlay, the Concept Deliverer's**, three `.part` files for Maven
   build output, wrapper line-ending exceptions and SQL/conf
   indents. Not shipped.
@@ -116,5 +116,5 @@ delivery at all.
 
 ## Where to look
 
-- The Hygiene Base: the three dotfiles at the root of `delivery/container/`.
-- The Stack Overlay: `docs/conventions/repo-hygiene/templates/java-spring/`.
+- The Hygiene Base: the three dotfiles in `knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/repo-hygiene/`.
+- The Stack Overlay: `knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/repo-hygiene/java-spring/`.

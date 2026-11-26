@@ -161,7 +161,7 @@ Skills would be a group beside this one.
 
 `delivery/container/`: the conventions made usable. The Record
 Stubs, the Entry File, the Decisions Log, the convention Agent Skills
-and Agent Rules, an Approach on Trial, the Hygiene Base, the shared
+and Agent Rules, an Approach on Trial, the shared
 Glossary Names, `docs/glossary/container.md`, and `temp/README.md`. Which convention a
 file belongs to is its Foundation Line. A project with no
 correctness-by-construction in it would still want most of this,

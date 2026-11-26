@@ -210,7 +210,9 @@ At birth, every file of each group. After it, only the copies:
 
 The rest of the Container Group went once and is the CBC Run's: its
 records, the two composed files, the Entry File and `README.md`, the
-Decisions Log, the hygiene files (§2.4, *The records' exception*). A
+Decisions Log; and so did the hygiene files, from
+`knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/repo-hygiene/`
+(§2.4, *The records' exception*). A
 later delivery that carried it would land Record Stubs over what the
 CBC Run has written.
 

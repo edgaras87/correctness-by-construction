@@ -31,8 +31,8 @@ container's records table and each Record Stub's header comment say.
 ### 2.1 Own from birth
 
 The container's Record Stubs, its two composed files, the Entry File
-and `README.md`, its Decisions Log, its Hygiene Base and its
-`temp/README.md` are copied once and are the CBC Run's from then on.
+and `README.md`, its Decisions Log and its `temp/README.md`, and the
+Hygiene Base, are copied once and are the CBC Run's from then on.
 They are never delivered again
 (`docs/conventions/exchange/` §2.4, *The records' exception*).
 

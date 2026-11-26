@@ -55,6 +55,9 @@ name.
 ```bash
 mkdir -p "$new_project_dir"
 cp -r "$deliverer_dir"/delivery/container/. "$new_project_dir"/
+hygiene_dir="$deliverer_dir"/knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/repo-hygiene
+cp "$hygiene_dir"/.gitignore "$hygiene_dir"/.gitattributes \
+   "$hygiene_dir"/.editorconfig "$new_project_dir"/
 sed -i -e "s/<delivery-pin>/$deliverer_pin/" \
     -e "s/<YYYY-MM-DD> Born/$(date +%F) Born/" \
     "$new_project_dir"/.claude/decisions.md
@@ -76,8 +79,9 @@ for p in sys.argv[1:]:
 ```
 
 The trailing `/.` matters. `delivery/container/*` silently skips the
-dotfiles, `.gitignore`, `.gitattributes` and `.editorconfig`, and
-the whole `.claude/` directory.
+whole `.claude/` directory. The three hygiene files, `.gitignore`,
+`.gitattributes` and `.editorconfig`, are copied from
+`knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/repo-hygiene/`.
 
 The birth entry takes two placeholders:
 

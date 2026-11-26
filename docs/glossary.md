@@ -195,7 +195,7 @@ delivered files below.
   §2, *The template layers*).
 - **Stack Overlay** — the stack's part of the hygiene files, appended
   below the Hygiene Base's marked line: the `.part` files under
-  `docs/conventions/repo-hygiene/templates/`, one directory per stack (`docs/conventions/repo-hygiene/` §2, *The template layers*).
+  `knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/repo-hygiene/`, one directory per stack (`docs/conventions/repo-hygiene/` §2, *The template layers*).
 - **Decisions Log** — a CBC Run's `.claude/decisions.md`, where its
   agent records the decisions about its own setup; ours is the same
   file here (`docs/conventions/agent-arrangement/` §3.4, *`.claude/decisions.md`*).

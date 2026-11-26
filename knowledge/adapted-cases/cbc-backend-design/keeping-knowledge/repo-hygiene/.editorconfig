@@ -14,7 +14,8 @@
 # - a ruler line marks each file-type block.
 #
 # LAYERS: this is the Hygiene Base (any repo, day zero). Stack Overlay
-# blocks are appended at the CBC Bootstrap below the marker at the bottom.
+# blocks are appended below the marker at the bottom when the repo first
+# builds on its stack.
 
 root = true
 
@@ -51,5 +52,5 @@ trim_trailing_whitespace = false
 indent_size = 2
 
 # =====================================================================
-# Stack Overlays - appended below this line at the CBC Bootstrap
+# Stack Overlays - appended below this line when the repo first builds on its stack
 # =====================================================================

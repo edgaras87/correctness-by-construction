@@ -6,5 +6,5 @@
 * text=auto eol=lf
 
 # ======================================================================
-# Stack Overlays — appended below this line at the CBC Bootstrap
+# Stack Overlays — appended below this line when the repo first builds on its stack
 # ======================================================================

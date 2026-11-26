@@ -1188,7 +1188,7 @@
 - [ ] Decide whether the cbc-bootstrap Agent Skill points at the Spring
       Stack Overlay, or "grow, never overwrite" stands (2026-09-18).
       Context: the `.part` files under
-      `docs/conventions/repo-hygiene/templates/java-spring/` are pointed at by
+      `knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/repo-hygiene/java-spring/` are pointed at by
       nothing, and six CBC Runs derived `.gitignore` by hand, the last CBC Runs 4, 5 and 6. They
       belong to the Stack Group (ADR-0029 decision 7) and move with the
       answer. Until then they break ADR-0029 decision 5, that what is
