@@ -138,3 +138,120 @@ reason. That is a finding about the item, not a Plan Step skipping
 work.
 
 ---
+
+## Step: Rewrite the commit-messages manual into the layers  (the commit-messages Agent Skill; the commit-plan Agent Skill if a Change Set needs it)    [~]
+
+Goal: every part of the commit-messages manual,
+`docs/conventions/commit-messages/`, stands at its layer, with the
+Agent Skill pair that waits on it alone, and the manual is gone.
+Now: stage 1, the Backbone Idea.
+Gate:
+
+**At the opening.**
+
+- [x] The Plan Step's branch `commit-messages-2026-11-27`, if it has one, is cut
+      from main, and nothing of the Plan Step was done on main
+      (`.claude/rules/working-a-reading.md`, step 1)
+      (2026-11-27, cut at `aa0105e9`, before the opening commit).
+- [x] This Plan Step Gate was written before the work started
+      (2026-11-27, in the Plan Step's opening commit).
+- [x] The Plan Step's Work Approach is known: the stages its Notes
+      list, from the map, `temp/rewrite-map.md` §9, *Every text*, and
+      §10, *Shared questions*; no Approach on Trial drafted
+      (2026-11-27).
+
+**The Plan Step's own items.**
+
+- [ ] Commit messages is a Backbone Idea,
+      `knowledge/backbone-ideas/commit-messages.md`, with its row in
+      §3.1's table of the layers document in keeping knowledge
+      (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md`
+      §3.5, *Where each layer is kept*; the map's QUESTION-7).
+- [ ] Commit messages has a Problem Domain Idea in each Problem
+      Domain, keeping knowledge and CBC backend design, each with its
+      row in §3.2's table of the same document. The one in keeping
+      knowledge says why the scope, not the type, carries the signal
+      in a repo that keeps only text (decision A).
+- [ ] The Backend Kit's commit-messages Agent Skill, today
+      `delivery/container/.claude/skills/commit-messages/SKILL.md`, is
+      its Adapted Case at layer 3, at its path by §3.5, with its
+      Adapted Understanding Text beside it; the Pure Seed copies it
+      from there.
+- [ ] Our commit-messages Agent Skill is our own Adapted Case at layer
+      4, where it is, with its Adapted Understanding Text in
+      `.claude/understanding/`. It states this repo's scopes
+      (decision B).
+- [ ] Each part the map's §9 lists for the manual has landed, or was
+      judged not needed, and the commit that ends it names where.
+- [ ] The manual is gone, and every Living Text that named its path or
+      sections names where each part now stands
+      (`docs/conventions/facts-in-sync/` §3.3, *The rename grep*).
+
+**Known already.** The commit-messages and commit-plan Agent Skills
+have no *Gates* section; the own items stand alone.
+
+**At the close.**
+
+- [ ] Every link and path in the records resolves.
+- [ ] Every ADR a record cites exists.
+- [ ] Each pair of copies agrees, such as the worked example in the
+      cbc-framing Agent Skill and in the cbc-slice Agent Skill.
+- [ ] No line of Living Text in a record the Plan Step touched, or one that
+      mentions its subject, still says "now", "today" or "not yet"
+      about something the Plan Step changed.
+- [ ] New and changed text meets `.claude/rules/writing.md`.
+- [ ] Every commit on `commit-messages-2026-11-27` follows the commit-messages Agent Skill.
+      Its subjects are counted by script: one up to 70 characters
+      passes, and one past 70 is the reviewer's to keep or rewrite
+      (`docs/conventions/commit-messages/` §2.1, *Conventional Commits*).
+- [ ] No commit straddles agent and project paths
+      (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*).
+- [ ] The Plan Step's lessons are written back where they came from:
+      conventions, the playbook, the concept.
+- [ ] `CLAUDE.md` read top to bottom; each line still passes its
+      three tests, or leaves (`knowledge/backbone-ideas/agent-files.md` §5, *How the Entry File is written*).
+- [ ] Each Approach on Trial the Plan Step drafted or used has this
+      use's dated note, and was handed over for evaluation
+      (`.claude/approaches-on-trial/approach-drafting.md` §3, *Close*).
+
+Notes:
+- Opened 2026-11-27, the fifth Plan Step of TODO's "Rewrite today's
+  Maintainer Repo into the layers model, by the map", chosen by the
+  reviewer: the manual needed only the agent-arrangement manual, gone
+  in the last Plan Step, and 2 texts wait on it, as many as on the
+  retrospective manual and more than on the visual-comparison manual,
+  1 (the map's §9, by script). The TODO item stays: it is the whole
+  rewrite.
+- The texts it rewrites, by the map's §9: the manual, and the Agent
+  Skill pair that waits on it alone, ours and the Backend Kit's. Not
+  this Plan Step's: the commit-plan manual, an idea of its own; its
+  pointers into this manual are fixed by the rename grep.
+- Checked at the opening, by subject against the manual: no Glossary
+  Name has its home in the manual; no TODO item of the map's §8 lands
+  with it; the two texts in the layers model that name it, agent
+  files and Change, in keeping knowledge, point at it and borrow no
+  Defined Term.
+- Decision A, at the opening, on the reviewer's word: the manual's §3,
+  the Concept Deliverer's habit, splits. Why the scope carries the
+  signal, since a repo that keeps only text commits nearly all as
+  `docs`, goes to layer 2, in the Problem Domain Idea of keeping
+  knowledge; the list of this repo's scopes goes to layer 4. The map
+  put all of §3 at layer 4; the split places each part by its subject.
+- Decision B, at the opening, on the reviewer's word: our Agent Skill
+  states the list of scopes, since it is opened at the commit, where
+  the list is used; our Adapted Understanding Text never loads. Our
+  Agent Skill and the Backend Kit's then differ in more than their
+  pointers, as each is written for its own seat (ADR-0069).
+- Its stages, from the map:
+  1. the Backbone Idea, from the manual's opening, *What it is for*,
+     §1 and §2;
+  2. the two Problem Domain Ideas: keeping knowledge's from §3's why
+     and *The seats*; CBC backend design's from *The seats*;
+  3. the Backend Kit's Adapted Case: its Agent Skill moved by
+     `git mv`, the Pure Seed's copy block tested in the scratchpad,
+     and its Adapted Understanding Text from *Why it arrives this way*;
+  4. our own Adapted Case: our Agent Skill with this repo's scopes,
+     and `.claude/understanding/commit-messages.md`;
+  5. the manual goes: the rename grep, 35 pointers in 17 files outside
+     history, by script on 2026-11-27;
+  6. the close.
