@@ -423,9 +423,8 @@
         word in a note sits outside the repo, where no Borrow Table
         or collision search reaches it. From the glossary item,
         closed 2026-11-23.
-      Trigger: the session-end item is decided, or our Tool Binding is
-      written with the agent-arrangement manual's rewrite, whichever
-      comes first.
+      Trigger: the session-end item is decided, or the rewrite done,
+      whichever comes first.
       See: `TODO-CONVERSATION-MEMORY.md` §32, *The agent's memory*.
 
 - [ ] Try a multi-agent refinement of the Common Ground Problem
@@ -619,8 +618,7 @@
         (`knowledge/backbone-ideas/how-an-agent-works.md` §5, *Write-back*);
         the Tool Binding (`knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/claude-code-tool-binding/understanding.md`)
         would hold the mechanics.
-      Trigger: our Tool Binding is written, with the agent-arrangement
-      manual's rewrite.
+      Trigger: the rewrite done.
       See: devlog 2026-10-21, evening; `TODO-CONVERSATION-MEMORY.md`
       §11, *How work is run by agents*; `.claude/decisions.md`, 2026-10-22, the account Agent Skills.
 
@@ -679,11 +677,22 @@
         the scratch space got its home in records' §15, repo hygiene's
         understanding text still retold its why, with no pointer the
         rename grep could find; the reviewer's question found it
-        (2026-11-27, records' Plan Step).
+        (2026-11-27, records' Plan Step). The same for a moved file:
+        each text that says what a folder holds, in words, is re-read;
+        the records' move left two such lines, found at the Entry
+        File's move (2026-11-27, the agent-arrangement manual's Plan
+        Step).
       - the Defined Terms check run at each layer text's commit, not
         only at the close: two new texts used a Defined Term they did
         not borrow, found by script at the close (2026-11-27, records'
-        Plan Step).
+        Plan Step). Writing rule 10's title length too: one title ran
+        36 characters, found at the close (2026-11-27, the
+        agent-arrangement manual's Plan Step).
+      - a sweep for borrows searches every Borrow Table row in the
+        repo, by the row's form, not the folders thought to hold them:
+        the deliver-the-kit-update Agent Skill's table was missed, and
+        found after its commit (2026-11-27, the agent-arrangement
+        manual's Plan Step).
       - a script that replaces a word compares the heading text before
         and after, not only the count: a sed for "Claim" lowercased
         "## 10. Claims", and every pointer's title missed it; the
@@ -936,8 +945,8 @@
       only from that CBC Run Reading, each line traced to the CBC Run. CBC Run 3
       has had no Release; CBC Run 4 released the same project, so its
       Entry File is read, CBC Run 3's beside it.
-      Trigger: `CLAUDE.md` comes in whole, with the agent-arrangement
-      manual's rewrite.
+      Trigger: the concept's rewrite reaches the Backend Kit's Entry
+      File, whose body keeps today's words until then.
       See: devlog 2026-09-06 (the template re-cut).
 
 - [ ] Decide whether an Idea Model ships to a CBC Run (2026-10-24, the
