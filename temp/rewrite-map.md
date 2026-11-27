@@ -283,7 +283,7 @@ it for, and nothing goes before the rewrite decides.
 | `.claude/skills/exchange-read/SKILL.md` | reading a CBC Run | 4: each part to our change Adapted Case in place that holds it, the rest beside them; the lessons in §7 of the three CBC Run Readings land here | `docs/conventions/exchange/` |
 | `.claude/skills/judge-copy-changes/SKILL.md` | our Judge Copy Changes: the Instruction Text, an Agent Skill | 4, in place | none |
 | `.claude/skills/read-copy-changes/SKILL.md` | our Read Copy Changes: the Instruction Text, an Agent Skill | 4, in place | none |
-| `.claude/skills/visual-comparison/SKILL.md` and `delivery/container/.claude/skills/visual-comparison/SKILL.md` | how a structure is shown | ours: 4; the CBC Run's copy: 3, its instruction side | `docs/conventions/visual-comparison/` |
+| `.claude/skills/visual-comparison/SKILL.md` and `delivery/container/.claude/skills/visual-comparison/SKILL.md` | how a structure is shown | ours: 4; the CBC Run's copy: 3, its instruction side, kept in `delivery/container/` until the exchange's rewrite (the visual-comparison manual's Plan Step, 2026-11-27) | `docs/conventions/visual-comparison/` |
 | `.claude/understanding/defined-terms.md` | our Defined Terms: the Adapted Understanding Text | 4, in place | none |
 | `.claude/understanding/deliver-the-kit-update.md` | our Deliver the Kit Update: the Adapted Understanding Text | 4, in place | none |
 | `.claude/understanding/judge-copy-changes.md` | our Judge Copy Changes: the Adapted Understanding Text | 4, in place | none |

@@ -144,7 +144,7 @@ work.
 Goal: every part of the visual-comparison manual,
 `docs/conventions/visual-comparison/`, stands at its layer, with the
 Agent Skill pair that waits on it alone, and the manual is gone.
-Now: stage 1, the Backbone Idea.
+Now: stage 3, the Backend Kit's Adapted Case.
 Gate:
 
 **At the opening.**

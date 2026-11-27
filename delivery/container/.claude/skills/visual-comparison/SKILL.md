@@ -1,8 +1,9 @@
 ---
 name: visual-comparison
 description: Settle how a structure is shown: a picture, a table or a plain list. Write down what the reader must get, and render every candidate against it. Use when a diagram might be the answer, including deciding it should not be.
-foundation: the visual-comparison convention
 ---
+
+<!-- One of the Backend Kit's files: the Instruction Text of its Adapted Case for visual comparison, an Agent Skill. Why it is as it is: its Adapted Understanding Text, kept in the Maintainer Repo. -->
 
 # Visual Comparison
 
@@ -37,7 +38,7 @@ fire, however large the form.
 
 ## 2. The comparison's steps
 
-Why they are so: (the Concept Deliverer's docs/conventions/visual-comparison/ §2.1, *A non-picture in the set*; §2.2, *Deciding by the render*; §2.4, *The buildable notations*).
+Why they are so: (visual comparison, kept in the Maintainer Repo, §3, *A non-picture in the set*; §4, *Deciding by the render*; §6, *The buildable notations*).
 
 1. **Write the requirements first, in a `temp/` draft.** What the
    artifact must *carry*, not what it should look like. Each one
@@ -132,7 +133,7 @@ name the case, it is not an entry yet.
   and writing one would have been ceremony over a comparison that
   did not happen.
 
-- **Using a dialect is not fighting it** (the Concept Deliverer's docs/conventions/visual-comparison/ §2.3, *Fighting a notation*). Ordinary syntax is
+- **Using a dialect is not fighting it** (visual comparison, kept in the Maintainer Repo, §5, *Fighting a notation*). Ordinary syntax is
   ordinary. Invisible links, spacer nodes and nodes declared out
   of meaning order are the fight, and a candidate needing them has
   lost.
@@ -140,7 +141,7 @@ name the case, it is not an entry yet.
 ## 5. What this does not do
 
 - It does not choose a notation for this project. The Mermaid in
-  its cases is the Concept Deliverer's provisional trial. It is
+  its cases is the Maintainer Repo's provisional trial. It is
   not delivered. This project decides its own forms.
 - It does not run on a schedule, and it is not a review of forms
   already settled.
