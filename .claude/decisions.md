@@ -15,9 +15,10 @@
      An entry that follows from an ADR says in a line or two what
      changed in this arrangement, and points at the ADR; it does
      not retell it.
-     Why the form is as it is: (docs/conventions/agent-arrangement/
-     §3.4, .claude/decisions.md).
-     foundation: the agent-arrangement convention -->
+     This repo's own Adapted Case for its Decisions Log. Why its form
+     is as it is: (agent files, in keeping knowledge,
+     knowledge/problem-domain-ideas/keeping-knowledge/agent-files-in-keeping-knowledge.md
+     §4, The Decisions Log). -->
 
 - 2026-08-27 Born from the engineering-handbook starter kit
   @ 4fe8083.

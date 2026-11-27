@@ -32,11 +32,11 @@ and is read back from here. Documents only — no code, no CBC Runs
 | Work needs more than one commit | In-flight Change Set | COMMIT-PLAN.md (when present) |
 
 <!-- This file is loaded in full on every task, relevant or not
-     (`docs/conventions/agent-arrangement/` §2.6, The Entry File's size), so every line
+     (knowledge/backbone-ideas/agent-files.md §6, The Entry File's size), so every line
      below passes three tests or leaves
-     (`docs/conventions/agent-arrangement/` §2.4, How the Entry File is written):
-     1. True of this project and nowhere else. Otherwise it belongs in a
-        manual, stated once.
+     (knowledge/backbone-ideas/agent-files.md §5, How the Entry File is written):
+     1. True of this project and nowhere else. Otherwise it belongs to
+        an idea, at its home, stated once.
      2. No moment. Otherwise it goes where the moment is: the record's
         Record Stub, README, a project Agent Skill, or a Paths Rule in
         .claude/rules/ for one directory.
@@ -44,7 +44,8 @@ and is read back from here. Documents only — no code, no CBC Runs
         would notice was missing.
      Longer than a screen means a line is failing. Shrinking it is
      maintenance, not tidying.
-     foundation: the agent-arrangement convention -->
+     This repo's own Adapted Case for its Entry File. Why it is as it
+     is: .claude/understanding/entry-file.md. -->
 
 ## Local rules
 

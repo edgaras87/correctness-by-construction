@@ -55,7 +55,7 @@ The Problem Domain Idea searches every text a new Defined Term may be read with 
 
 ## 5. Why a Paths Rule
 
-The Instruction Text is a Paths Rule on the layers model's folders. Its moment is when the agent reads or writes a text there and meets a Defined Term. Without it, the agent opens a home whole to find one definition, or reads a Defined Term as English (ADR-0085, its consequences). A Paths Rule loads when a file under its paths is read (`docs/conventions/agent-arrangement/` §5.6, *Rules files*):
+The Instruction Text is a Paths Rule on the layers model's folders. Its moment is when the agent reads or writes a text there and meets a Defined Term. Without it, the agent opens a home whole to find one definition, or reads a Defined Term as English (ADR-0085, its consequences). A Paths Rule loads when a file under its paths is read (`knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/claude-code-tool-binding/understanding.md` §6, *Paths Rules*):
 
 - an Agent Rule loaded in every session would cost every session that never opens the set;
 - an Agent Skill fires only when the agent notices its moment, and the failure here is not noticing: a Defined Term read as English.
