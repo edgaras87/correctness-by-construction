@@ -145,7 +145,7 @@ work.
 Goal: every part of the project-recording manual, and of the record
 forms that wait on it alone, stands at its layer, and the manual is
 gone.
-Now: stage 4, this repo's own Adapted Cases.
+Now: stage 5, the manual goes.
 Gate:
 
 **At the opening.**
@@ -181,12 +181,15 @@ Gate:
       no record has a why of its own, so none has an Adapted
       Understanding Text; `temp/README.md` is the scratch space's,
       not a record's).
-- [ ] This repo's four record forms that wait on the manual alone are
+- [x] This repo's four record forms that wait on the manual alone are
       its own Adapted Cases at layer 4 (§3.4, *The layer of a repo's
       work*): each record's header where it is, and an Adapted
       Understanding Text in `.claude/understanding/` for a why of that
       record alone; the manual's §14, *Conversation Memory*, among
-      them, on trial.
+      them, on trial (2026-11-27; none of the four has a why of its
+      own; two Adapted Understanding Texts of our own,
+      `.claude/understanding/conversation-memory.md` and
+      `.claude/understanding/architecture.md`).
 - [ ] Each part the map's §9 lists for the manual has landed, or was
       judged not needed, and the commit that ends it names where.
 - [ ] The manual is gone, and every Living Text that named its path or

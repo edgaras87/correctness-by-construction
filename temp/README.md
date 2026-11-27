@@ -15,8 +15,7 @@ Both are tracked, so the shaping shows as diffs. Each is deleted
 once the work that needed it is done, and git history keeps every version.
 
 Not records. What a draft said and why lives in the records, which
-project-recording's list of the records names
-(`docs/conventions/project-recording/` §1, *The records at a glance*):
+records' list names (`knowledge/backbone-ideas/records.md` §3, *The records*):
 
 - the devlog logs a draft made, passed, or deleted;
 - decisions go to the ADRs;
@@ -24,3 +23,6 @@ project-recording's list of the records names
 
 What a Delivery Note to a CBC Run may say is the Exchange Convention's
 (`docs/conventions/exchange/` §3.7, *The Delivery Note*).
+
+<!-- Why it is as it is: (records, knowledge/backbone-ideas/records.md
+     §15, The scratch space). -->

@@ -16,6 +16,6 @@ yet weighed goes into TODO first, written light. An action left to
 the reviewer is said as theirs. Steps are put in order only where
 one needs another.
 
-<!-- Why the form is as it is: (docs/conventions/project-recording/
-     §4.4, How the devlog is written).
-     foundation: the project-recording convention -->
+<!-- Why the form is as it is: (records, in keeping knowledge,
+     knowledge/problem-domain-ideas/keeping-knowledge/records-in-keeping-knowledge.md;
+     and records, knowledge/backbone-ideas/records.md §6, The devlog). -->

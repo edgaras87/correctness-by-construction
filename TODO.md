@@ -26,9 +26,9 @@
      its header comment). When an item changes, rewrite
      it true for today. Never stack a dated update on it: the
      change's story is the devlog's.
-     Why the form is as it is: (docs/conventions/project-recording/
-     §5.4, How an item is written).
-     foundation: the project-recording convention -->
+     Why the form is as it is: (records, in keeping knowledge,
+     knowledge/problem-domain-ideas/keeping-knowledge/records-in-keeping-knowledge.md;
+     and records, knowledge/backbone-ideas/records.md §7, The backlog). -->
 
 ## Now (due while the open Plan Step runs)
 
