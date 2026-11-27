@@ -144,7 +144,7 @@ work.
 Goal: every part of the commit-messages manual,
 `docs/conventions/commit-messages/`, stands at its layer, with the
 Agent Skill pair that waits on it alone, and the manual is gone.
-Now: stage 1, the Backbone Idea.
+Now: stage 2, the two Problem Domain Ideas.
 Gate:
 
 **At the opening.**
@@ -162,11 +162,12 @@ Gate:
 
 **The Plan Step's own items.**
 
-- [ ] Commit messages is a Backbone Idea,
+- [x] Commit messages is a Backbone Idea,
       `knowledge/backbone-ideas/commit-messages.md`, with its row in
       §3.1's table of the layers document in keeping knowledge
       (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md`
-      §3.5, *Where each layer is kept*; the map's QUESTION-7).
+      §3.5, *Where each layer is kept*; the map's QUESTION-7)
+      (2026-11-27, stage 1: `6ba8b00a`).
 - [ ] Commit messages has a Problem Domain Idea in each Problem
       Domain, keeping knowledge and CBC backend design, each with its
       row in §3.2's table of the same document. The one in keeping
