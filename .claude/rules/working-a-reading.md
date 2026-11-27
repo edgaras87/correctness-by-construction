@@ -25,7 +25,7 @@ there.
    needed. The count is of items, not of work. One item can take
    twenty commits. An item that edits an Agent Skill both Convention
    Seats hold is two commits: the Master Copy, then our own copy
-   (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*).
+   (`knowledge/backbone-ideas/commit-messages.md` §4, *What shares a commit*).
 
 2. **Decisions first.** A decision gates the work that rests on it,
    and settling it reshapes or deletes that work. A question outside
@@ -44,7 +44,7 @@ there.
    needs none is settled on its proposal, and marked so in place.
 
 4. **A work item is a commit or a commit plan**, with the reviewer
-   at every boundary (`docs/conventions/commit-messages/` §2.4, *Commit on the word*). An item taken into a Master Copy is checked against
+   at every boundary (`knowledge/backbone-ideas/commit-messages.md` §5, *Commit on the word*). An item taken into a Master Copy is checked against
    its foundation (`.claude/rules/foundation-check.md`). The file it
    lands in is read whole before the commit: a CBC Run's edit shows
    one file, never what that file stands on. It is checked

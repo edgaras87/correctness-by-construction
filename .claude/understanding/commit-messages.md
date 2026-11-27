@@ -5,10 +5,10 @@ What it is: the Adapted Understanding Text of this repo's own Adapted Case for c
 What it stands on: knowledge/problem-domain-ideas/keeping-knowledge/commit-messages-in-keeping-knowledge.md, the Problem Domain Idea it is written from. It adapts that text, and never retells it.
 What stands on it: its Instruction Text, the commit-messages Agent Skill, .claude/skills/commit-messages/SKILL.md.
 Its place in the repo: .claude/understanding/ (ADR-0084). It never loads; it is read when its Instruction Text changes.
-Its first sources, input and not rules: the commit-messages manual, docs/conventions/commit-messages/README.md: §3, The Concept Deliverer's habit, its list of scopes; Why it arrives this way; this repo's log, by script on 2026-11-27 (PLAN.md, the commit-messages manual's Plan Step, decisions B and E).
+Its first sources, input and not rules: the commit-messages manual, docs/conventions/commit-messages/README.md, deleted on 2026-11-27, its last state in git at 47007e1b: §3, The Concept Deliverer's habit, its list of scopes; Why it arrives this way; this repo's log, by script on 2026-11-27 (PLAN.md, the commit-messages manual's Plan Step, decisions B and E).
 -->
 
-This text says why this repo's commit-messages Agent Skill lists its scopes, and why the agent's own files take `docs(agent)`. Why the scope carries the signal here at all is commit messages, in keeping knowledge (`knowledge/problem-domain-ideas/keeping-knowledge/commit-messages-in-keeping-knowledge.md` §2, *The scope carries the signal*).
+This text says why this repo's commit-messages Agent Skill lists its scopes, why the agent's own files take `docs(agent)`, and why it is an Agent Skill. Why the scope carries the signal here at all is commit messages, in keeping knowledge (`knowledge/problem-domain-ideas/keeping-knowledge/commit-messages-in-keeping-knowledge.md` §2, *The scope carries the signal*).
 
 ## 1. Its Defined Terms
 
@@ -23,6 +23,7 @@ Borrowed:
 | Backend Repo | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Instruction Text | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
 | Problem Domain Idea | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
+| Pulled Channel | `knowledge/backbone-ideas/how-an-agent-works.md` §1, *Its Defined Terms* |
 
 ## 2. Why the list is here
 
@@ -41,6 +42,14 @@ In a repo of text, a change to text is `docs`, and the scope carries the signal.
 - Every commit of the agent's own files is `docs(agent)`.
 - The `chore(agent)` commits before 2026-11-26 stay as they are: history is not rewritten.
 
-## 4. Open
+## 4. Why an Agent Skill
+
+A rule for writing a commit message binds at one moment: the commit. The Agent Skill is opened there, through the Pulled Channel (`knowledge/backbone-ideas/how-an-agent-works.md` §3.2, *The Pulled Channel*). Opened at every commit here, it still did not keep each subject to its aim: 125 of 233 commits ran over 50 (`knowledge/problem-domain-ideas/keeping-knowledge/how-an-agent-works-in-keeping-knowledge.md` §3, *What the work showed*, A1). So a check counts the subjects too, at each Plan Step's close (`knowledge/problem-domain-ideas/keeping-knowledge/commit-messages-in-keeping-knowledge.md` §3, *When subjects are counted*).
+
+**Rules:**
+
+- The commit-messages Agent Skill is opened before every commit message is written.
+
+## 5. Open
 
 None is open now.

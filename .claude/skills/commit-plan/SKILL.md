@@ -99,7 +99,7 @@ Why it is so: (`docs/conventions/commit-plan/` §1, *What a commit plan is*; §2
   its Decisions Log entry. `COMMIT-PLAN.md` is one of them: a plan
   opened or revised beside a TODO line or an ADR is two commits. It is never
   folded into a records commit, since the two are kept apart
-  (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*). A records commit planned to carry one has to be split
+  (`knowledge/backbone-ideas/commit-messages.md` §4, *What shares a commit*). A records commit planned to carry one has to be split
   when it opens.
 
 ## 4. The lifecycle
@@ -157,7 +157,7 @@ planned refinement, not divergence; the close body distinguishes the two.
 
 Work stops at every commit boundary: stage, show the diff, commit
 only on the reviewer's word. The rule is the commit-messages Agent Skill's, and binds
-at every commit, not only inside a Change Set (`docs/conventions/commit-messages/` §2.4, *Commit on the word*).
+at every commit, not only inside a Change Set (`knowledge/backbone-ideas/commit-messages.md` §5, *Commit on the word*).
 
 ### 6.2 Small commits
 
