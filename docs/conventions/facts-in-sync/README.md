@@ -159,7 +159,7 @@ That home sits at the line's own level or above: a Canonical Description's
 line points at a Canonical Description or an Idea Model, never at an Agent Skill or a
 record for a fact. A line that only names a text, such as the
 record a manual describes, is not a Fact Reference, and names any
-level (`docs/models/idea-to-output.md` §3.2, *The direction of a link*).
+level (`knowledge/backbone-ideas/layers-of-knowledge.md` §3, *The layers*).
 
 A Fact Reference is written in one form, always in parentheses:
 

@@ -58,8 +58,8 @@ would describe intent, as a template does.
 | written from | an output or Work Approach | the kind written from it (§4.2, *The upward direction*) |
 
 A file stands on one thing; a line may point at a fact's home in
-any document at its own level or above (§3.2, *The direction of a
-link*).
+any document at its own level or above
+(`knowledge/backbone-ideas/layers-of-knowledge.md` §3, *The layers*).
 
 A placed Work Approach stands on a Canonical Description, never on an
 Idea Model directly. An Approach on Trial stands on none yet (§4.2,
@@ -67,21 +67,8 @@ Idea Model directly. An Approach on Trial stands on none yet (§4.2,
 
 ### 3.2 The direction of a link
 
-A lower text relies on an upper one; an upper text at most lists
-what stands on it.
-
-A line that relies on a fact points at its home at its own level or
-above, never below. A sideways link points at a fact whose home is
-at the line's own level. A line that only names or lists a text, such as the record a
-Canonical Description is about or what stands on it, may name any level:
-naming is not a link.
-
-A link that would point down is fixed by moving its idea up. Where
-the lower text holds an
-idea general enough, the idea is written into the upper text in
-general words, and the lower text stands on it. Where it holds only
-one repo's specifics, the upper text says one general line. A marked
-example, which the claim does not rest on, may stay (ADR-0071).
+Which way a link points is the layers document's
+(`knowledge/backbone-ideas/layers-of-knowledge.md` §3, *The layers*).
 
 ### 3.3 Settling a disagreement
 

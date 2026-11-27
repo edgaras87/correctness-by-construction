@@ -4,6 +4,7 @@
 What it is: a Backbone Idea (§3.1), and its one home.
 What stands on it: knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md, its Problem Domain Idea of keeping knowledge. knowledge/backbone-ideas/change.md, a Backbone Idea standing on it. Each Problem Domain Idea points here, and never retells it.
 Its place in the repo: knowledge/backbone-ideas/ (ADR-0084).
+Why §3's rules on links: ADR-0071; they came from the Idea-to-Output Model's §3.2, The direction of a link.
 How it is edited:
 - The picture and the text are checked against each other at every change: each label in the picture is explained in the text, each part the text names is in the picture. It draws what is where, and the one arrow that is part of it, *worked by*; how knowledge moves is Change's, knowledge/backbone-ideas/change.md (ADR-0088, decision 8).
 - It gives no example from one Problem Domain's work. §1 names one kind of project only to show what a Problem Domain is.
@@ -76,6 +77,12 @@ Knowledge sits in four layers. The higher the layer, the closer its text is to a
 Each Problem Domain adapts the Backbone Ideas it needs to its own problem.
 
 Text comes in two kinds, Understanding Texts and Instruction Texts, and the kind runs across the layers. Layers 1 and 2 hold understanding only. Layers 3 and 4 each hold understanding and instructions.
+
+**Rules:**
+
+- A text that relies on a fact points at the fact's home, in its own layer or a layer above it, never below.
+- A text that only names another, such as a list of what stands on it, may name a text in any layer: naming is not relying.
+- A link that would point down is fixed by moving its idea up. Where the lower text holds an idea true beyond itself, the idea is written in the higher text, and the lower text points at it. Where it holds only its own details, the higher text says one line in general words. A marked example, which no claim rests on, may stay.
 
 ### 3.1 The Backbone Idea layer
 
