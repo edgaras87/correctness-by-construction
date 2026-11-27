@@ -1,10 +1,18 @@
 ---
 name: commit-messages
 description: Conventional Commits format and the 50/72 rules. Use before writing any commit message.
-foundation: the commit-messages convention
 ---
 
 # Commit Messages
+
+How a commit is written in this repo. Why it is as it is: `.claude/understanding/commit-messages.md`.
+
+Borrowed:
+
+| Defined Term | Defined in |
+|---|---|
+| Backend Kit | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
+| Backend Repo | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 
 ## Format
 
@@ -16,7 +24,7 @@ foundation: the commit-messages convention
 <footer>                                ← issue refs, breaking changes, optional
 ```
 
-Why it is so: (`docs/conventions/commit-messages/` §2.1, *Conventional Commits*; §2.2, *Mood and tense*).
+Why it is so: (`knowledge/backbone-ideas/commit-messages.md` §3, *The subject*).
 
 The subject says what the commit changes, in the present tense, and
 makes sense alone in `git log --oneline`. Either mood will do:
@@ -43,6 +51,21 @@ makes sense alone in `git log --oneline`. Either mood will do:
 
 Use a scope, the module or area touched, once the repo has more
 than one area: `feat(auth):`, `fix(orders):`.
+
+## This repo's scopes
+
+Why it is so: (`knowledge/problem-domain-ideas/keeping-knowledge/commit-messages-in-keeping-knowledge.md` §2, *The scope carries the signal*; `.claude/understanding/commit-messages.md` §2, *Why the list is here*).
+
+This repo keeps only text. So a change to text is `docs`, and the
+scope carries the signal:
+
+| Subject starts | When |
+|---|---|
+| `docs:` | most commits: the manuals, the records, `knowledge/`, `ARCHITECTURE.md` |
+| `docs(temp):` | the whole commit is in `temp/` |
+| `docs(adr):` | the whole commit is an ADR |
+| `docs(agent):` | the whole commit is the agent's own files (below) |
+| `fix(<area>):` or `feat(<area>):` | a Backend Repo would notice something gained or lost: most often `fix(delivery):` |
 
 ## Breaking changes
 
@@ -103,17 +126,16 @@ refresh. Re-land after #58.
 
 ## The agent's own files
 
-Why it is so: (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*).
+Why it is so: (`knowledge/backbone-ideas/commit-messages.md` §4, *What shares a commit*).
 
-`CLAUDE.md` and `.claude/` are the working arrangement.
+`CLAUDE.md`, `CLAUDE.local.md` and `.claude/` are the working arrangement.
 `COMMIT-PLAN.md` is committed with them. None is a project record. A
 commit that touches them is scoped `agent`, and touches nothing else.
-`chore(agent)` adds, installs or updates an Agent Skill, an Agent Rule or an Approach on Trial. `docs(agent)` is for a commit plan's
-lifecycle.
+Each such commit is `docs(agent)`: the agent's files are text too.
 
 ## Rules
 
-Why they are so: (`docs/conventions/commit-messages/` §1, *What a commit message is*; §2.4, *Commit on the word*).
+Why they are so: (`knowledge/backbone-ideas/commit-messages.md` §2, *What a commit message is*; §5, *Commit on the word*).
 
 - **Commit on the word.** Stage, show the reviewer the diff, and
   commit only when they have said so; one commit at a time, and no
