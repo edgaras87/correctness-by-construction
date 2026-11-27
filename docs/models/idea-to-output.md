@@ -1,10 +1,27 @@
 # Idea-to-Output Model
 
-A structured description of the kinds of text this repo holds, how
-each links to the others, and the two directions text moves: down
-from an idea to what work produces, and up from work to a new idea.
+A structured description of the kinds of text this repo holds, and
+how each links to the others.
 Its job is to answer, for any text, *what kind is this, and what
 does it stand on* — instead of each session re-deriving the picture.
+
+It is shrinking, as today's texts are rewritten into the layers
+(ADR-0082, decision 2). §3.2 and §4 point at their new homes. What
+it still holds waits for a home not yet written:
+
+- §1 to §3.1, the home of 5 Glossary Names: Idea Model, Work
+  Approach, Output Form, Output Shape and Chain Link. They stay
+  until the texts that use them are rewritten.
+- §3.3, settling a disagreement: to the one-home idea, written from
+  the facts-in-sync manual.
+- §5, an Idea Model and a concept: to CBC design, written from
+  `concept/`.
+- §6, a convention: to the idea of how instructions are written for
+  an agent, written with the conventions manual.
+- Output Shape in §2, and *governs* in §3.1: to wherever the shapes
+  manual's rewrite places them.
+
+The model goes when the last of them has landed.
 
 This is an Idea Model: the top Canonical Description of its chain. It binds
 what stands on it. When the two disagree, either side may be

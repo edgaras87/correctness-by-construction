@@ -227,8 +227,8 @@ Notes:
   was rejected.
 - Decision B, at the opening, on the reviewer's word: §1, §2 and §3.1
   stay, though the layers document holds their idea. They are the
-  home of 5 Glossary Names, Idea Model, Canonical Description, Work
-  Approach, Output Form and Chain Link, and texts not yet rewritten
+  home of 5 Glossary Names, Idea Model, Work Approach, Output Form,
+  Output Shape and Chain Link, and texts not yet rewritten
   use them, such as the Foundation Check.
 - Its stages, from the map:
   1. which way a link points, into the layers document, with the
