@@ -6,7 +6,7 @@ What it stands on: knowledge/backbone-ideas/one-home.md, the Backbone Idea it is
 What stands on it: the Backend Kit's Adapted Case for one home.
 Its place in the repo: knowledge/problem-domain-ideas/cbc-backend-design/ (ADR-0084). It is kept in the Maintainer Repo, and never copied to a Backend Repo.
 Its first sources, input and not rules:
-- the facts-in-sync manual, docs/conventions/facts-in-sync/README.md: from What it is for, CBC Run 3's four records; from Why it arrives this way, the rule written from the start; The CBC Run's seat; from §3.4, the copy delivered without its footer, and the Record Stub that cites nothing;
+- the facts-in-sync manual, docs/conventions/facts-in-sync/README.md, deleted on 2026-11-27, its last state in git at 0f525a7d: from What it is for, CBC Run 3's four records; from Why it arrives this way, the rule written from the start; The CBC Run's seat; from §3.4, the copy delivered without its footer, and the Record Stub that cites nothing;
 - the Backend Kit's one-home Agent Rule, delivery/container/.claude/rules/one-home.md: its rule 2, the id and its first example.
 The decisions behind them: ADR-0070; ADR-0078.
 How it is edited: a trial, as in the layers of knowledge: a section's rules close it, in a last paragraph marked Rules, and govern that section.

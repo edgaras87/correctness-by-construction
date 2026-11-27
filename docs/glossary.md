@@ -112,10 +112,11 @@ delivered files below.
 ## Kinds of text
 
 - **Canonical Description** — how we understand a thing today,
-  written down: the concept, an Idea Model, a Convention Manual. It
+  written down: the concept, an Idea Model, a Convention Manual
+  (`docs/models/idea-to-output.md` §2, *The kinds*). It
   may be wrong or incomplete. It is the one that counts regardless.
   What derives from it applies it and does not explain. One rule for
-  all of them (`docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*);
+  all of them (`knowledge/backbone-ideas/one-home.md` §7, *What stands on a text*);
   they differ at the edges (ADR-0039). It changes only for a reason
   that is recorded.
 - **Idea Model** — the top Canonical Description of a chain of
@@ -211,11 +212,12 @@ delivered files below.
   (`docs/conventions/writing/` §2, *Why each rule*, rule 9).
 - **Living Text** — text kept true as things change: every text
   here but history, which records what was true then
-  and is never updated (`docs/conventions/facts-in-sync/` §1.5, *Living Text*).
+  and is never updated (`knowledge/backbone-ideas/one-home.md` §1, *Its Defined Terms*).
 - **Fact Reference** — what a line carries when it relies on a fact
   written elsewhere: the address of the fact's home, its path,
   section and title, in parentheses
-  (`docs/conventions/facts-in-sync/` §3.1, *What a Fact Reference is*).
+  (`knowledge/backbone-ideas/one-home.md` §1, *Its Defined Terms*; its form here:
+  `knowledge/problem-domain-ideas/keeping-knowledge/one-home-in-keeping-knowledge.md` §2, *Writing a Fact Reference*).
 - **Chain Link** — a relation from a lower text to the upper one it
   relies on: stands on, points, governs, written from
   (`docs/models/idea-to-output.md` §3.1, *The four Chain Links*). A
@@ -229,17 +231,17 @@ delivered files below.
   `.claude/understanding/`; a line that uses a part of a document carries a
   Fact Reference to that part instead
   (`docs/conventions/conventions/` §1.3, *The Foundation Line*;
-  `docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*).
+  `knowledge/backbone-ideas/one-home.md` §7, *What stands on a text*).
   Not *source*: that was a CBC Run's word for the Concept Deliverer, and is not
   ours.
 - **Change Walk** — what a change to a Canonical Description sets
   off: the greps for its path and its name, and the re-read of each
   line they find
-  (`docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*, step 3).
+  (`knowledge/problem-domain-ideas/keeping-knowledge/one-home-in-keeping-knowledge.md` §1, *Its Defined Terms*).
 - **Foundation Check** — the check before a commit is staged that
   runs the Change Walk and settles each disagreement it finds, our
   Agent Rule `.claude/rules/foundation-check.md`
-  (`docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*).
+  (`.claude/understanding/foundation-check.md` §1, *Its Defined Terms*).
 
 ## The work
 

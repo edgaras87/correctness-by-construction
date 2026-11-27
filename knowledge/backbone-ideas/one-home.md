@@ -5,7 +5,7 @@ What it is: a Backbone Idea, bound to no Problem Domain, and its one home (knowl
 Its place in the repo: knowledge/backbone-ideas/ (ADR-0084).
 Why it is an idea of its own: both Problem Domains work by it, settling a disagreement with it (temp/rewrite-map.md §10, Shared questions, QUESTION-7).
 Its first sources, input and not rules:
-- the facts-in-sync manual, docs/conventions/facts-in-sync/README.md: its opening; What it is for; §1; §2; §3.1, but how a Fact Reference is written; §3.3; §3.4; §4, but its greps and the Foundation Line; §5, but where a disagreement is raised;
+- the facts-in-sync manual, docs/conventions/facts-in-sync/README.md, deleted on 2026-11-27, its last state in git at 0f525a7d: its opening; What it is for; §1; §2; §3.1, but how a Fact Reference is written; §3.3; §3.4; §4, but its greps and the Foundation Line; §5, but where a disagreement is raised;
 - the Idea-to-Output Model, docs/models/idea-to-output.md: §3.3, Settling a disagreement;
 - three earlier drafts, read for ideas: temp/model-example/idea/one-home.md, its limits, the ways rejected and the three ways out; temp/model-example/this-repo/one-home.md; temp/model-example/approaches/change-a-home.md (PLAN.md, the facts-in-sync manual's Plan Step).
 The decisions behind them: ADR-0039; ADR-0059; ADR-0065; ADR-0070; ADR-0072; ADR-0078.

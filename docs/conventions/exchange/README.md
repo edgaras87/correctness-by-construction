@@ -318,7 +318,7 @@ A copy goes without its *Decisions* footer: the `---` line and the
 `## Decisions` section below it, the last part of an Agent Skill, an
 Agent Rule, an Approach on Trial or an Output Shape. Why it goes, and
 why the Master Copy keeps it, is the citation rule's
-(`docs/conventions/facts-in-sync/` §3.4, *A decision citation*).
+(`knowledge/backbone-ideas/one-home.md` §6, *Where a decision is cited*).
 
 The strip runs in three places:
 
@@ -553,8 +553,8 @@ Each item leaves the list with one of three:
   carries it, and the CBC Run's edit is absorbed rather than
   overwritten.
 - **Declined** — with why, and the why is never "the Canonical Description
-  says otherwise": the facts-in-sync manual owns that rule, for every Canonical
-  Description (`docs/conventions/facts-in-sync/` §5, *A disagreement*). A
+  says otherwise": one home owns that rule, for every Canonical
+  Description (`knowledge/backbone-ideas/one-home.md` §8, *A disagreement*). A
   Canonical Description can be what the CBC Run has found wrong. Declined means:
   not general, or not worth the change. The why goes in the Delivery Note
   and nowhere else; nothing in our tree moves.

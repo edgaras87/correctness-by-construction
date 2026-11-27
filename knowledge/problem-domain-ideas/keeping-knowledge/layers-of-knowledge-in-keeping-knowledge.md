@@ -225,6 +225,6 @@ None is answered by the text above. Each is answered when work reaches it: its a
    - an Understanding Text with no Instruction Text, such as the description of CBC system design for a Backend Repo's readers (§3, the Backend Kit's item 5);
    - Knowledge on Trial in the Backend Kit: today's, for ways of working, is one text of both kinds, not yet split, and today's Kit Updates carry it.
 4. **Which other ideas are Backbone Ideas:** of today's project-agnostic ideas, beyond how an agent works and CBC design (§3.1).
-5. **What one Adapted Case holds:** one Agent Skill or Agent Rule under its understanding text, or several. One understanding text may stand under more than one, as the facts-in-sync manual stands under two Agent Rules.
+5. **What one Adapted Case holds:** one Agent Skill or Agent Rule under its understanding text, or several. One understanding text may stand under more than one, as the facts-in-sync manual stood under two Agent Rules, until its rewrite gave each an understanding text of its own.
 6. **An Adapted Case from two ideas:** the cbc-framing Agent Skill holds CBC design's content, written as a piece of agent work. Is it adapted from two Problem Domain Ideas, or from one, with the other giving only its form?
 7. **A table of this repo's own Adapted Cases:** §3.1 and §3.2 list their layers' texts in tables, and §3.4 lists none. Should it, beside them? With one, Defined Terms, a table adds little. Its trigger: the second of this repo's own Adapted Cases.

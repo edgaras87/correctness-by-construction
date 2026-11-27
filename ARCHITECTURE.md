@@ -105,8 +105,6 @@ they hand work to each other is the conventions' Local Map,
   down and made usable.
 - `docs/conventions/exchange/` — what passes between a Concept
   Deliverer and a CBC Run.
-- `docs/conventions/facts-in-sync/` — how each fact keeps one home,
-  and what relies on it agrees.
 - `docs/conventions/retrospective/` — how a finished CBC Run looks
   back.
 - `docs/conventions/shapes/` — what a kind of output looks like.
@@ -129,7 +127,7 @@ delivery's Local Map, `delivery/README.md`. What stands on the
 concept is the method, derived from it, and the Stack Group and the
 playbook, checked against it (§2.1, *The Method Group*, §2.2, *The
 Stack Group* and §2.4, *What does not ship*). This list is kept here: the chapters carry none
-(`docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*, step 1).
+(`knowledge/backbone-ideas/one-home.md` §7, *What stands on a text*).
 
 ### 2.1 The Method Group
 
@@ -214,7 +212,7 @@ layout of the tree, or a check at commit review.
 | Every Agent Skill of the method states the concept version it derives from | `docs/conventions/conventions/` §1.3, *The Foundation Line* (ADR-0004, ADR-0036) | its Foundation Line, which every copy carries |
 | Every file a CBC Run receives has its Master Copy here, in the group that ships it | `docs/conventions/exchange/` §1, *What cannot change* and §3.2, *What goes* | the exchange-deliver Agent Skill, which stages a delivery only from the Master Copies |
 | A manual never ships | `docs/conventions/exchange/` §3.2, *What goes* | the tree: manuals sit under `docs/`, and a delivery is staged only from `delivery/` and `concept/` |
-| No manual explains a rule that no longer holds | `docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule* and §5, *A disagreement* (ADR-0025) | the Foundation Check, `.claude/rules/foundation-check.md`, at each commit |
+| No manual explains a rule that no longer holds | `knowledge/backbone-ideas/one-home.md` §7, *What stands on a text* and §8, *A disagreement* (ADR-0025) | the Foundation Check, `.claude/rules/foundation-check.md`, at each commit |
 | Agent side and project side never share a commit | (`knowledge/backbone-ideas/commit-messages.md` §4, *What shares a commit*) | the commit-messages Agent Skill, and commit review |
 | A Delivery Pin never claims more than was checked | `docs/conventions/exchange/` §6.1, *Reading a CBC Run* and §6.6, *The Delivery Note after a read* (ADR-0023) | the exchange-read and exchange-deliver Agent Skills |
 | An Agent Skill never spans two groups, and nothing that needs Spring, PostgreSQL, Maven or podman sits under `method/` | `docs/conventions/exchange/` §3.4, *One group per file* | the tree: a group is a directory, so a misfiled file shows as a path |

@@ -653,12 +653,12 @@
       manual as a concept: an idea written down, with sub-ideas,
       and its rules and Agent Skills as the convention. "Concept" already
       names this repo's concept and the Tiers Model's concepts tier.
-      Facts-in-sync calls both a Canonical Description
-      (`docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*).
+      The Idea-to-Output Model calls both a Canonical Description
+      (`docs/models/idea-to-output.md` §2, *The kinds*).
       Ideas:
       - a manual is a concept; its rules and Agent Skills, the convention.
-      - "description" stays the general word, as facts-in-sync has it
-        (`docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*).
+      - "description" stays the general word, as the Idea-to-Output
+        Model has it (`docs/models/idea-to-output.md` §2, *The kinds*).
       Trigger: a second Concept Repo, when what a concept is gets
                decided (`docs/models/idea-to-output.md` §5, *An Idea Model and a concept*).
       See: devlog 2026-10-19, the redesign's ideas.
@@ -819,12 +819,12 @@
       - all ten and how each touches the others, derived from those references, built by the visual-comparison Agent Skill.
       - the four Chain Links (`docs/models/idea-to-output.md` §3.1, *The four Chain Links*),
         each with its upkeep: stands on
-        (`docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*, the Foundation
+        (`knowledge/backbone-ideas/one-home.md` §7, *What stands on a text*; the Foundation
         Check), points (one home, the grep at a commit that moves a
         section, a Plan Step's close), governs
         (none: a change to a rule that governs other text could
         sweep that text or file the sweep, a rule beside
-        `docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*),
+        `knowledge/backbone-ideas/one-home.md` §7, *What stands on a text*),
         written from (none named yet).
       - scenarios as entries into one procedure, the Foundation
         Check: a manual, an Agent Skill or Agent Rule, a CBC Run's finding. Two
@@ -1151,7 +1151,7 @@
       into a chapter's section today. The chapters are the canonical
       text every CBC Run holds a copy of, so numbering them would change
       every copy for no reader yet
-      (`docs/conventions/facts-in-sync/` §3.2, *Numbering a section's parts*).
+      (`knowledge/problem-domain-ideas/keeping-knowledge/one-home-in-keeping-knowledge.md` §3, *Numbering a section's parts*).
       Trigger: the first Fact Reference that needs a section of a
                chapter.
       See: devlog 2026-09-30, numbered parts.

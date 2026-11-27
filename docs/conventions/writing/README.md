@@ -68,8 +68,8 @@ chat answers, records, commit messages, code comments.
 
 ### 1.1 History keeps its words
 
-History, as facts-in-sync names it
-(`docs/conventions/facts-in-sync/` §1.4, *History is not a second home*),
+History, as one home names it
+(`knowledge/backbone-ideas/one-home.md` §3, *A fact and its home*),
 is not rewritten for its voice. The Agent Rule applies
 to every new or changed line.
 
@@ -210,7 +210,7 @@ stays one page.
 
 ## What this does not cover
 
-- **Where a fact lives** — `docs/conventions/facts-in-sync/` §1, *One home*.
+- **Where a fact lives** — `knowledge/backbone-ideas/one-home.md` §3, *A fact and its home*.
 - **Which record owns which kind of fact** —
   `knowledge/backbone-ideas/records.md` §12, *The Records Table*.
 - **The form of a commit message** —

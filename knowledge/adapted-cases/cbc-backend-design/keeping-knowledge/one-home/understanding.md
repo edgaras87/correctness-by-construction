@@ -4,7 +4,7 @@
 What it is: one of the Backend Kit's files, the Adapted Understanding Text of its Adapted Case for one home. It says why its Instruction Text is as it is, where only this Adapted Case relies on the reason.
 What it stands on: knowledge/problem-domain-ideas/cbc-backend-design/one-home-in-cbc-backend-design.md, kept in the Maintainer Repo. The rules this Adapted Case shares with every repo, and why each is so, are there and in the Backbone Idea it adapts.
 What stands on it: its Instruction Text, the one-home Agent Rule, delivery/container/.claude/rules/one-home.md, copied to a Backend Repo's .claude/rules/one-home.md. It moves beside this text when the exchange is rewritten, as the commit-messages Agent Skill does (PLAN.md, the facts-in-sync manual's Plan Step).
-Its first source, input and not rules: the facts-in-sync manual, docs/conventions/facts-in-sync/README.md: Why it arrives this way, its half for the one-home Agent Rule; The CBC Run's seat.
+Its first source, input and not rules: the facts-in-sync manual, docs/conventions/facts-in-sync/README.md, deleted on 2026-11-27, its last state in git at 0f525a7d: Why it arrives this way, its half for the one-home Agent Rule; The CBC Run's seat.
 It never loads; it is read when its Instruction Text changes.
 -->
 

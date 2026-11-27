@@ -77,9 +77,9 @@ moment of use. In a CBC Run, that agent holds a pinned copy.
 
 - A rule is one sentence in the imperative. Its why is the manual's
   or the ADR's.
-- A decision is cited as the facts-in-sync manual says for every text, in both
+- A decision is cited as one home says for every text, in both
   Convention Seats: in a Work Approach, once, in its *Decisions*
-  footer (`docs/conventions/facts-in-sync/` §3.4, *A decision citation*).
+  footer (`knowledge/backbone-ideas/one-home.md` §6, *Where a decision is cited*).
 - Say what a rule is not only when a consumer lived the misreading,
   and then name the CBC Run.
 - A worked example in a code block is exempt from all of this.
@@ -105,7 +105,7 @@ foundation: <what the file stands on, as §1.3 gives it>
 
 `foundation` says what the whole file stands on *now*. It is a live
 claim, never history. A file has one
-(`docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*, step 2).
+(`knowledge/backbone-ideas/one-home.md` §7, *What stands on a text*).
 
 Which files carry it, and where:
 
@@ -166,7 +166,7 @@ its act, a verb: exchange-read, infra-establish.
 In text, a Work Approach is always written with its kind: the
 commit-plan Agent Skill, the one-home Agent Rule. A manual is written
 the same way, the commit-plan manual. A sentence that points at where a fact is written gives the path, as a
-Fact Reference (`docs/conventions/facts-in-sync/` §3.1, *What a Fact Reference is*).
+Fact Reference (`knowledge/problem-domain-ideas/keeping-knowledge/one-home-in-keeping-knowledge.md` §2, *Writing a Fact Reference*).
 
 Four names older than this part are shared: commit-plan,
 visual-comparison and retrospective, each a manual and an Agent
@@ -187,7 +187,7 @@ Approaches are made usable (`docs/models/idea-to-output.md` §6.1, *The manual's
 points at the ADRs. A Work Approach says what a project does, and its
 `foundation` line names the manual it derives from. How a manual
 and what points at it or derives from it stay in agreement is
-`docs/conventions/facts-in-sync/`.
+one home's, `knowledge/backbone-ideas/one-home.md`.
 
 **The form** is the sections a manual has, each a heading after the
 opening, but for §2.6, a rule for the body. They come in the order of §2.1 to §2.9 below. It fixes where a reader
@@ -265,10 +265,10 @@ It is placed after *What this is made usable as*.
 
 Numbered sections, free prose. Each numbered section holds one
 subject, and a subject has one section: other sections point at
-it, and do not tell it again. The facts-in-sync manual asks the same of a convention's subject across the manuals
-(`docs/conventions/facts-in-sync/` §2, *Point and derive*); this asks it inside
-one. When a section gets a number, and its parts too, is that manual's
-(`docs/conventions/facts-in-sync/` §3.2, *Numbering a section's parts*).
+it, and do not tell it again. One home asks the same of a fact across texts
+(`knowledge/backbone-ideas/one-home.md` §4, *Pointing at a home*); this asks it inside
+one. When a section gets a number, and its parts too, is one home's, in keeping knowledge
+(`knowledge/problem-domain-ideas/keeping-knowledge/one-home-in-keeping-knowledge.md` §3, *Numbering a section's parts*).
 
 *Its story: devlog 2026-10-19; devlog 2026-10-29, the lessons' own stories: conventions and facts-in-sync.*
 
@@ -355,7 +355,7 @@ what a file stands on has to travel with the file.
 - **Which copy is the Master Copy, how a copy changes, and what
   ships** — `docs/conventions/exchange/`.
 - **How a fact keeps one home, and how what points at it or derives
-  from it stays in agreement** — `docs/conventions/facts-in-sync/`.
+  from it stays in agreement** — `knowledge/backbone-ideas/one-home.md`.
 - **The Repo Tag a citation carries, and the records a project keeps** —
   `knowledge/backbone-ideas/records.md`.
 - **How an Agent Rule or an Agent Skill reaches an agent, and which files
@@ -370,7 +370,7 @@ what a file stands on has to travel with the file.
 ## Where to look
 
 - The order the conventions act in: `docs/conventions/README.md`.
-- The rule for every description: `docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*.
+- The rule for every description: `knowledge/backbone-ideas/one-home.md` §7, *What stands on a text*.
 - What `foundation` holds for each kind of file: `docs/conventions/conventions/` §1.3, *The Foundation Line*.
 - That it travels with a copy: `docs/conventions/exchange/` §3.5, *The Foundation Line in a copy*.
 - A convention whose Work Approach is an Agent Rule, not an Agent Skill:

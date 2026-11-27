@@ -45,7 +45,7 @@ Living Text before anything retells it.
 ## Decisions
 
 - ADR-0053 — the one-home Agent Rule loads in every session
-- ADR-0065 — one home is facts-in-sync's
+- ADR-0065 — one home gathered in one convention, since rewritten into the layers
 - ADR-0070 — a retelling may stand beside its id, re-read when
   its home changes
 - ADR-0078 — rule 6: a decision is cited where its reader needs it

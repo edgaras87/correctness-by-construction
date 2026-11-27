@@ -138,7 +138,7 @@ TODO line or an ADR is two commits: the plan's, then the record's.
 Before the close, the sweep looks again for every name the Change
 Set moved, all at once. A commit that renames a file, renumbers or
 retitles a section, or moves a fact greps for the old names in that
-commit (`docs/conventions/facts-in-sync/` §3.3, *The rename grep*).
+commit (`knowledge/backbone-ideas/one-home.md` §5, *When a home moves*).
 But a commit's own grep looks for the names it meant to move, and
 misses the rest. The sweep reads the text unwrapped. A grep matches line by line, and a line of older text may be wrapped,
 so a name broken across two lines is never found. *Its story: ADR-0049; devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model.*
