@@ -144,7 +144,7 @@ work.
 Goal: every part of the facts-in-sync manual,
 `docs/conventions/facts-in-sync/`, stands at its layer, with the
 three Agent Rules that wait on it, and the manual is gone.
-Now: stage 1, the Backbone Idea.
+Now: stage 2, the two Problem Domain Ideas.
 Gate:
 
 **At the opening.**
@@ -162,16 +162,17 @@ Gate:
 
 **The Plan Step's own items.**
 
-- [ ] One home is a Backbone Idea, `knowledge/backbone-ideas/one-home.md`,
+- [x] One home is a Backbone Idea, `knowledge/backbone-ideas/one-home.md`,
       with its row in §3.1's table of the layers document in keeping
       knowledge
       (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md`
       §3.5, *Where each layer is kept*; the map's QUESTION-7). It
-      holds settling a disagreement.
-- [ ] The Idea-to-Output Model's §3.3, *Settling a disagreement*, has
+      holds settling a disagreement
+      (2026-11-27, `ad7ede7f`).
+- [x] The Idea-to-Output Model's §3.3, *Settling a disagreement*, has
       landed in the Backbone Idea; its heading stays, with one line
       pointing there, and the model's header and the map's row for it
-      say so.
+      say so (2026-11-27, `ad7ede7f`).
 - [ ] One home has a Problem Domain Idea in each Problem Domain,
       keeping knowledge and CBC backend design, each with its row in
       §3.2's table of the same document. The one in keeping knowledge
@@ -306,6 +307,13 @@ Notes:
   names the number, and only this repo writes references by path,
   section and title. The writing manual was rejected: it is not yet
   rewritten, and the part would move twice.
+- Decision E, at stage 1, on the reviewer's word: the Backbone Idea
+  takes all three of the drafts' ideas the manual does not hold. The
+  ways rejected go to §2, the three ways out to §8, and the limits to
+  §9. The third limit is reworded: "copy" became two places each
+  holding a fact of their own, since a copy with no owner is a second
+  home. The drafts' list of what each project decides is left to the
+  Problem Domain Ideas. `ad7ede7f`'s body calls it decision 5.
 - Its stages, from the map:
   1. the Backbone Idea, from the manual's layer-1 parts, the
      Idea-to-Output Model's §3.3 and the three drafts; the model's
