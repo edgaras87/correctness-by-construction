@@ -143,6 +143,7 @@ The Maintainer Repo's own Problem Domain. It works by its own Adapted Cases, wri
 | Repo hygiene, in keeping knowledge | Repo hygiene | no stack; the Backend Kit's files it keeps | `knowledge/problem-domain-ideas/keeping-knowledge/repo-hygiene-in-keeping-knowledge.md` |
 | Records, in keeping knowledge | Records | no end; one Plan Step in the plan; no changelog; the Backend Kit's records it keeps | `knowledge/problem-domain-ideas/keeping-knowledge/records-in-keeping-knowledge.md` |
 | Agent files, in keeping knowledge | Agent files | the handbook's evidence; the Entry File at the root, read again at each Plan Step's close; a Decisions Log that receives nothing; the operator's file tracked | `knowledge/problem-domain-ideas/keeping-knowledge/agent-files-in-keeping-knowledge.md` |
+| Commit messages, in keeping knowledge | Commit messages | the scope carries the signal in a repo of text; subjects counted at each Plan Step's close | `knowledge/problem-domain-ideas/keeping-knowledge/commit-messages-in-keeping-knowledge.md` |
 
 #### 3.2.2 CBC backend design
 
@@ -157,6 +158,7 @@ The Backend Repos' Problem Domain. The Maintainer Repo keeps its Problem Domain 
 | Repo hygiene, in CBC backend design | Repo hygiene | the files at birth; the stack's lines at their Plan Step | `knowledge/problem-domain-ideas/cbc-backend-design/repo-hygiene-in-cbc-backend-design.md` |
 | Records, in CBC backend design | Records | the Record Stubs at birth; the plan from the playbook; the playbook | `knowledge/problem-domain-ideas/cbc-backend-design/records-in-cbc-backend-design.md` |
 | Agent files, in CBC backend design | Agent files | the agent files at birth; the Entry File in the agent's folder, read again at the retrospective; what the Decisions Log holds; Output Shapes | `knowledge/problem-domain-ideas/cbc-backend-design/agent-files-in-cbc-backend-design.md` |
+| Commit messages, in CBC backend design | Commit messages | the type carries the signal; subjects counted at each Plan Step's close; the stop with nobody watching | `knowledge/problem-domain-ideas/cbc-backend-design/commit-messages-in-cbc-backend-design.md` |
 
 ### 3.3 The Adapted Case layer
 
