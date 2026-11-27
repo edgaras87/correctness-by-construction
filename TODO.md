@@ -65,6 +65,12 @@
         Rule, with a Borrow Table and its twins replaced. The gate
         planned pointers alone, and stage 4 grew (2026-11-27, the
         facts-in-sync manual's Plan Step).
+      - at a Plan Step's opening, a decision that says what each Problem
+        Domain Idea will hold is checked against each Problem Domain's
+        own sources before the gate is written: decision B said both
+        hold to plain text, and CBC backend design's sources left it to
+        the Backend Repo (2026-11-27, the visual-comparison manual's
+        Plan Step, decision D).
       Trigger: the map's Plan Step closed.
       See: devlog 2026-11-26, the map's Plan Step; ADR-0082.
 
