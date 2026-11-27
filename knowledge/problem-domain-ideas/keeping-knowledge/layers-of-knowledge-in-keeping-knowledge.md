@@ -117,6 +117,7 @@ Layer 1 holds Backbone Ideas (`knowledge/backbone-ideas/layers-of-knowledge.md` 
 | Records | which records a repo keeps, what each answers, and how they feed each other | `knowledge/backbone-ideas/records.md` |
 | Agent files | which files a repo keeps for the agent that works in it, and what goes in each | `knowledge/backbone-ideas/agent-files.md` |
 | Commit messages | how a commit is written: its message, what may share one, and who commits it | `knowledge/backbone-ideas/commit-messages.md` |
+| One home | where a fact is written, and how every text that relies on it stays in agreement with it | `knowledge/backbone-ideas/one-home.md` |
 
 Which other of today's project-agnostic ideas are Backbone Ideas is open (§5).
 

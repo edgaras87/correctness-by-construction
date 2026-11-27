@@ -174,7 +174,7 @@ devlog (raw, daily)
 
 **Rules:**
 
-- Each fact has one home, and the other records point at it (`docs/conventions/facts-in-sync/` §1, *One home*).
+- Each fact has one home, and the other records point at it (`knowledge/backbone-ideas/one-home.md` §3, *A fact and its home*).
 - What matters is written up, never left to memory. A dead end noted in the devlog is safe; one only remembered will be repeated. The same holds for decisions, written up as ADRs, and lessons.
 - Records are updated at moments in the work, never on a schedule. Bound to events, recording never becomes a chore of its own to skip. Each record's moment is stated once, in the Records Table (§12).
 - Cheap at the bottom, lasting at the top. The devlog may be rough; the ADRs must be clean. Effort goes where a record will be read again.

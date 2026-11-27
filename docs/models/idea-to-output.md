@@ -6,14 +6,12 @@ Its job is to answer, for any text, *what kind is this, and what
 does it stand on* — instead of each session re-deriving the picture.
 
 It is shrinking, as today's texts are rewritten into the layers
-(ADR-0082, decision 2). §3.2 and §4 point at their new homes. What
+(ADR-0082, decision 2). §3.2, §3.3 and §4 point at their new homes. What
 it still holds waits for a home not yet written:
 
 - §1 to §3.1, the home of 5 Glossary Names: Idea Model, Work
   Approach, Output Form, Output Shape and Chain Link. They stay
   until the texts that use them are rewritten.
-- §3.3, settling a disagreement: to the one-home idea, written from
-  the facts-in-sync manual.
 - §5, an Idea Model and a concept: to CBC design, written from
   `concept/`.
 - §6, a convention: to the idea of how instructions are written for
@@ -85,10 +83,8 @@ Which way a link points is the layers document's
 
 ### 3.3 Settling a disagreement
 
-When two linked texts disagree, the disagreement is settled, never
-left standing. Either may be the wrong one: the upper binds the
-lower, but being upper doesn't make it right. It ends when the two
-agree again, by changing the lower, the upper, or both.
+Settling a disagreement is one home's
+(`knowledge/backbone-ideas/one-home.md` §8, *A disagreement*).
 
 ## 4. The two directions
 

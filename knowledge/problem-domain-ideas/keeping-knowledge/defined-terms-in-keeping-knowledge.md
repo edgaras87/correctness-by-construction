@@ -27,7 +27,7 @@ Borrowed:
 | Adapted Understanding Text | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
 | Backbone Idea | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
 | Defined Term | `knowledge/backbone-ideas/defined-terms.md` §1, *Its Defined Terms* |
-| Fact Reference | `docs/conventions/facts-in-sync/` §3.1, *What a Fact Reference is* |
+| Fact Reference | `knowledge/backbone-ideas/one-home.md` §1, *Its Defined Terms* |
 | Glossary Name | `docs/conventions/writing/` §2, *Why each rule*, rule 9 |
 | Maintainer Repo | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Problem Domain | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
