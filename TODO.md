@@ -59,6 +59,12 @@
         that leaves keeps its heading and one line pointing at its
         new home, so no pointer elsewhere changes until the text goes
         (2026-11-27, the Idea-to-Output Model's Plan Step).
+      - at a Plan Step's opening, the part check also asks which rules
+        govern each text once it moves: an Agent Rule or Agent Skill
+        given an understanding text comes under the defined-terms Agent
+        Rule, with a Borrow Table and its twins replaced. The gate
+        planned pointers alone, and stage 4 grew (2026-11-27, the
+        facts-in-sync manual's Plan Step).
       Trigger: the map's Plan Step closed.
       See: devlog 2026-11-26, the map's Plan Step; ADR-0082.
 
