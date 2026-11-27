@@ -5,7 +5,7 @@ What it is: the Adapted Understanding Text of this repo's own Adapted Case for v
 What it stands on: knowledge/problem-domain-ideas/keeping-knowledge/visual-comparison-in-keeping-knowledge.md, the Problem Domain Idea it is written from. It adapts that text, and never retells it.
 What stands on it: its Instruction Text, the visual-comparison Agent Skill, .claude/skills/visual-comparison/SKILL.md.
 Its place in the repo: .claude/understanding/ (ADR-0084). It never loads; it is read when its Instruction Text changes.
-Its first sources, input and not rules: the visual-comparison manual, docs/conventions/visual-comparison/README.md: Why it arrives this way; .claude/decisions.md, its entry of 2026-11-19 on the visual-comparison Agent Skill.
+Its first sources, input and not rules: the visual-comparison manual, docs/conventions/visual-comparison/README.md, deleted on 2026-11-27, its last state in git at e8edf8f3: Why it arrives this way; .claude/decisions.md, its entry of 2026-11-19 on the visual-comparison Agent Skill.
 -->
 
 This text says why this repo's visual-comparison Agent Skill has the reviewer render, why a small outcome is recorded in a commit body, and why it is an Agent Skill. Which notations this repo uses is visual comparison, in keeping knowledge (`knowledge/problem-domain-ideas/keeping-knowledge/visual-comparison-in-keeping-knowledge.md` §2, *Plain text, no build step*).
