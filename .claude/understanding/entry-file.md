@@ -5,7 +5,7 @@ What it is: the Adapted Understanding Text of this repo's own Adapted Case for i
 What it stands on: knowledge/problem-domain-ideas/keeping-knowledge/agent-files-in-keeping-knowledge.md, the Problem Domain Idea nearest it. How the Entry File is written, and why, are agent files' (knowledge/backbone-ideas/agent-files.md §5, How the Entry File is written); this text never retells it.
 What stands on it: its Instruction Text, CLAUDE.md at the root.
 Its place in the repo: .claude/understanding/ (ADR-0084). It never loads; it is read when its Instruction Text changes.
-Its first source, input and not rules: the Local Rule's own line in CLAUDE.md, and the agent-arrangement manual, docs/conventions/agent-arrangement/README.md: §2.4, Local rules; §5.6, the first limit of a rules file.
+Its first source, input and not rules: the Local Rule's own line in CLAUDE.md, and the agent-arrangement manual, docs/conventions/agent-arrangement/README.md, deleted on 2026-11-27, its last state in git at bd6941d6: §2.4, Local rules; §5.6, the first limit of a rules file.
 -->
 
 This text says why the Entry File's one Local Rule is a Local Rule. Its other lines need no reason of their own: what the repo is, and the Records Table, whose rows are records'.

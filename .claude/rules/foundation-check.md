@@ -7,7 +7,7 @@ foundation: the facts-in-sync convention
      §5, A disagreement; §3.3, The rename grep) fire at the commit;
      before, they had to be remembered. Loaded in every session, with no paths: a Paths Rule loads only when a file is touched with the agent's
      tools, and an edit made by script never loads it
-     (docs/conventions/agent-arrangement/ §5.6, Rules files). Ours, shipped
+     (knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/claude-code-tool-binding/understanding.md §6, Paths Rules). Ours, shipped
      nowhere: a CBC Run holds no manuals. -->
 
 # The Foundation Check

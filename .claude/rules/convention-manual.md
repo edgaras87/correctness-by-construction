@@ -5,8 +5,8 @@ foundation: the conventions convention
 ---
 
 <!-- The form of a manual, as an Agent Rule. Loads when one is read, not
-     while a new one is written (docs/conventions/agent-arrangement/
-     §5.6, Rules files); says its form, never its content.
+     while a new one is written (knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/claude-code-tool-binding/understanding.md
+     §6, Paths Rules); says its form, never its content.
      Ours, shipped nowhere: a CBC Run writes no manuals. The why is in
      the conventions manual (docs/conventions/conventions/ §2, The Convention Manual). -->
 

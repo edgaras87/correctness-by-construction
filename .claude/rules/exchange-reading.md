@@ -6,7 +6,7 @@ foundation: the exchange convention
 
 <!-- The form of a CBC Run Reading, as an Agent Rule. Loads when one is read,
      so while it is worked, not while a new one is written
-     (docs/conventions/agent-arrangement/ §5.6, Rules files); says its form,
+     (knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/claude-code-tool-binding/understanding.md §6, Paths Rules); says its form,
      never its content. -->
 
 # The CBC Run Reading

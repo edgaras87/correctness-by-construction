@@ -105,7 +105,7 @@ evaluation closes on the agent's word.
   when placed: one manual, an Agent Skill for each Convention Seat.
 - **What a CBC Run does with a piece left as the project's own:** keeps
   it as its Approach on Trial, or writes it as an Agent Skill or Agent Rule of
-  its own (`docs/conventions/agent-arrangement/` §3.1, *`.claude/skills/`*).
+  its own (`knowledge/backbone-ideas/agent-files.md` §7, *Agent Skills and Agent Rules*).
 - **Whether generalizing is work of its own.** Today it is Stage 6.
   Both are the Concept Deliverer's, so no Convention Seat splits them; a first use
   that shows it big enough splits it.

@@ -68,7 +68,7 @@ started CBC Run 4 (in git at `4ef580f6^:temp/RUN-4.md`). Never on our Convention
   stopping it.
 - **How a CBC Run is kept from reading what it should not.** A `Read`
   deny rule stops `cat` and `sed` on a path, but not `grep -r` or a
-  script (`docs/conventions/agent-arrangement/` §5.4, *Permission rules*). For CBC Run 5, the
+  script (`knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/claude-code-tool-binding/understanding.md` §4, *Permission rules*). For CBC Run 5, the
   other repositories were made unreadable on disk. The Concept
   Deliverer's stayed readable, on trust.
 - **Whether the light read is enough,** or a CBC Run should not be born

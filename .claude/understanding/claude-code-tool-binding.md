@@ -5,7 +5,7 @@ What it is: the Adapted Understanding Text of this repo's own Adapted Case for C
 What it stands on: knowledge/problem-domain-ideas/keeping-knowledge/agent-files-in-keeping-knowledge.md and knowledge/problem-domain-ideas/keeping-knowledge/how-an-agent-works-in-keeping-knowledge.md. Every fact of the tool is the Backend Kit's Tool Binding's, knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/claude-code-tool-binding/understanding.md: this text points there and holds only what is this repo's own (the layers document, §3.3, The Adapted Case layer).
 What stands on it: this repo's agent files: CLAUDE.md, CLAUDE.local.md and .gitignore's "this repo" section.
 Its place in the repo: .claude/understanding/ (ADR-0084). It never loads; it is read when an agent file of this repo changes, and when the Backend Kit's Tool Binding does.
-Its first source, input and not rules: the agent-arrangement manual, docs/conventions/agent-arrangement/README.md: §2.3, this repo's Entry File; §3.5 and §3.7, this repo's settings and operator's file; §5.3, claudeMdExcludes.
+Its first source, input and not rules: the agent-arrangement manual, docs/conventions/agent-arrangement/README.md, deleted on 2026-11-27, its last state in git at bd6941d6: §2.3, this repo's Entry File; §3.5 and §3.7, this repo's settings and operator's file; §5.3, claudeMdExcludes.
 -->
 
 This text says what is this repo's own in how Claude Code works here. What the tool gives each channel, and where each agent file sits for it, are the Backend Kit's Tool Binding's (`knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/claude-code-tool-binding/understanding.md`).
