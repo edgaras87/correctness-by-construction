@@ -33,7 +33,7 @@ The Hygiene Base ignores the file of one person's own instructions to the agent,
 
 ## 3. Why `temp/` is tracked
 
-`temp/` holds drafts and kept files. They are tracked so the shaping of a draft shows as diffs, and git keeps every version once one is deleted (`temp/README.md`).
+`.gitignore` names no line for `temp/`, so its drafts are tracked. Why a scratch space is tracked is records' (`knowledge/backbone-ideas/records.md` §15, *The scratch space*).
 
 ## 4. No Stack Overlay
 
