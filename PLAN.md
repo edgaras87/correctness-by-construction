@@ -144,7 +144,7 @@ work.
 Goal: every part of the commit-messages manual,
 `docs/conventions/commit-messages/`, stands at its layer, with the
 Agent Skill pair that waits on it alone, and the manual is gone.
-Now: stage 4, our own Adapted Case.
+Now: stage 5, the manual goes.
 Gate:
 
 **At the opening.**
@@ -180,10 +180,11 @@ Gate:
       and points at it. The Agent Skill stays where it is, and moves
       beside that text with the exchange's rewrite (decision C)
       (2026-11-27, stage 3: `e00e8aeb`).
-- [ ] Our commit-messages Agent Skill is our own Adapted Case at layer
+- [x] Our commit-messages Agent Skill is our own Adapted Case at layer
       4, where it is, with its Adapted Understanding Text in
       `.claude/understanding/`. It states this repo's scopes
-      (decision B).
+      (decision B)
+      (2026-11-27, stage 4: `c8d78c86`).
 - [ ] Each part the map's §9 lists for the manual has landed, or was
       judged not needed, and the commit that ends it names where.
 - [ ] The manual is gone, and every Living Text that named its path or
@@ -259,6 +260,14 @@ Notes:
   Agent Skill whose understanding is in `.claude/understanding/`; its
   reason holds for the Backend Kit's too, so the exemption widens, and
   three retellings follow it.
+- Decision E, at stage 4, on the reviewer's word: every commit of the
+  agent's own files here is `docs(agent)`, not the `chore(agent)` the
+  manual's §3 and the Agent Skill named for our Agent Skills, Agent
+  Rules and Approaches on Trial. The agent files are text, and a
+  change to text here is `docs`, the scope carrying the signal. Found
+  by the scope check at stage 4: from 2026-11-26, 12 such commits took
+  `docs(agent)` and none `chore(agent)`, with no decision behind them,
+  by script. The Backend Kit's Agent Skill keeps `chore(agent)`.
 - Its stages, from the map:
   1. the Backbone Idea, from the manual's opening, *What it is for*,
      §1 and §2;
