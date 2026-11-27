@@ -144,7 +144,7 @@ work.
 Goal: every part of the visual-comparison manual,
 `docs/conventions/visual-comparison/`, stands at its layer, with the
 Agent Skill pair that waits on it alone, and the manual is gone.
-Now: stage 3, the Backend Kit's Adapted Case.
+Now: stage 5, the manual goes.
 Gate:
 
 **At the opening.**
@@ -162,23 +162,27 @@ Gate:
 
 **The Plan Step's own items.**
 
-- [ ] Visual comparison is a Backbone Idea,
+- [x] Visual comparison is a Backbone Idea,
       `knowledge/backbone-ideas/visual-comparison.md`, with its row in
       §3.1's table of the layers document in keeping knowledge
       (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md`
       §3.5, *Where each layer is kept*; the map's QUESTION-7). It
       holds the buildable notations under the condition that makes
       them so (decision B), and its opening says which way a repo
-      draws is that repo's own (decision C).
-- [ ] Visual comparison has a Problem Domain Idea in each Problem
+      draws is that repo's own (decision C)
+      (2026-11-27, stage 1: `f9776657`).
+- [x] Visual comparison has a Problem Domain Idea in each Problem
       Domain, keeping knowledge and CBC backend design, each with its
-      row in §3.2.1's or §3.2.2's table of the same document. Each
-      says its repos hold to plain text that renders with no build
-      step (decision B). Keeping knowledge's holds the case of
-      2026-09-18 (decision A) and this repo's Mermaid trial; CBC
-      backend design's says a Backend Repo picks its own notations,
-      and the trial does not reach it (decision C).
-- [ ] The Backend Kit's visual-comparison Agent Skill,
+      row in §3.2.1's or §3.2.2's table of the same document. Keeping
+      knowledge's says its repos hold to plain text that renders with
+      no build step (decision B); CBC backend design's says a Backend
+      Repo decides whether it does (decision D). Keeping knowledge's
+      holds the case of 2026-09-18 (decision A) and this repo's
+      Mermaid trial; CBC backend design's says a Backend Repo picks
+      its own notations, and the trial does not reach it (decision C)
+      (2026-11-27, stage 2: `9177f76c`; reworded at stage 5, by
+      decision D).
+- [x] The Backend Kit's visual-comparison Agent Skill,
       `delivery/container/.claude/skills/visual-comparison/SKILL.md`,
       is the Instruction Text of its Adapted Case at layer 3, with its
       Adapted Understanding Text at
@@ -186,14 +190,18 @@ Gate:
       The Agent Skill stays where it is until the exchange is
       rewritten, as the commit-messages manual's Plan Step kept its
       own (devlog 2026-11-27, evening, decision C). It points at the
-      Maintainer Repo's texts by name, and carries no Foundation Line.
-- [ ] Our visual-comparison Agent Skill is our own Adapted Case at
+      Maintainer Repo's texts by name, and carries no Foundation Line
+      (2026-11-27, stage 3: `b471ae1e`).
+- [x] Our visual-comparison Agent Skill is our own Adapted Case at
       layer 4, where it is, with its Adapted Understanding Text at
       `.claude/understanding/visual-comparison.md`. It borrows its
       Defined Terms as the defined-terms Agent Rule says, and carries
-      no Foundation Line.
-- [ ] Each Agent Skill's §4, *What the render has caught*, keeps its
-      entries as checks read at the comparison (decision A).
+      no Foundation Line (2026-11-27, stage 4: `8562d3f2`).
+- [x] Each Agent Skill's §4, *What the render has caught*, keeps its
+      entries as checks read at the comparison (decision A)
+      (2026-11-27, stages 3 and 4: `b471ae1e`, `8562d3f2`; in ours,
+      two twins gave way, CBC Run Reading and Idea Model, the
+      entries' checks the same).
 - [ ] Each part the map's §9 lists for the manual has landed, or was
       judged not needed, and the commit that ends it names where.
 - [ ] The manual is gone, and every Living Text that named its path,
@@ -264,6 +272,15 @@ Notes:
   CBC backend design's; the Backbone Idea's opening says each Problem
   Domain Idea says it. Each Agent Skill's §5 keeps its line; the
   Backend Kit's names the Maintainer Repo, not the Concept Deliverer.
+- Decision D, at stage 2, on the reviewer's word: visual comparison,
+  in CBC backend design, says a Backend Repo decides whether it holds
+  to plain text that renders with no build step. Decision B had each
+  Problem Domain Idea say its repos hold to it; for the Backend Repos
+  no source says so, and the Backend Kit's Agent Skill keeps the
+  condition, "where a project holds to plain text", with its §5, "this
+  project decides its own forms". Writing that they hold to it was
+  rejected: a sentence with no source, and a choice decision C leaves
+  to them. The own items' second was reworded at stage 5.
 - Its stages, from the map:
   1. the Backbone Idea, from the manual's opening, *What it is for*
      without its case, §1 and §2; *What this does not cover* as its
