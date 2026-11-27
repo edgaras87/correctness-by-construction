@@ -85,14 +85,13 @@ it.
 
 ### 3.2 The Told Channel
 
-The Told Channel is not delivery, and is unpinned by design
-(`knowledge/backbone-ideas/how-an-agent-works.md` §3.4, *The Told Channel*). A tier above may hand a
-Run Repo a warning as session input, after the Run Repo's own work
-has missed it and is on record. The Run Repo's records say it was
-told. A Run Repo that leans on it has the Told Channel's diagnostic.
-A copy the Run Repo has edited between two Delivery Pins is not a
-form of delivery either (§3.5, *What holds on every flow*, fact 4):
-delivery comes down, and an edit is read from above.
+A warning told to a CBC Run by hand is how an agent works, in
+CBC backend design's
+(`knowledge/problem-domain-ideas/cbc-backend-design/how-an-agent-works-in-cbc-backend-design.md`
+§2, *The case nobody watches*). That an edited copy is read from
+above, not delivered, is Change, in keeping knowledge's
+(`knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md`
+§2, *The arrows*, the arrow *Copy Change, read back*).
 
 ### 3.3 Upward harvest
 

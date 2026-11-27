@@ -289,9 +289,9 @@ delivered files below.
   did not choose: a task type matches, an event occurs
   (`knowledge/backbone-ideas/how-an-agent-works.md` §3.3, *The Pushed Channel*).
 - **Told Channel** — what a human says in the session
-  (`knowledge/backbone-ideas/how-an-agent-works.md` §3.4, *The Told Channel*); between tiers, what a tier
-  above hands a Run Repo as session input (`docs/models/tiers.md`
-  §3.2, *The Told Channel*).
+  (`knowledge/backbone-ideas/how-an-agent-works.md` §3.4, *The Told Channel*); told to a CBC Run, a warning a
+  human hands its agent after its own work missed it
+  (`knowledge/problem-domain-ideas/cbc-backend-design/how-an-agent-works-in-cbc-backend-design.md` §2, *The case nobody watches*).
 - **Observed Channel** — the results of commands the agent runs: file
   contents, search hits, test output
   (`knowledge/backbone-ideas/how-an-agent-works.md` §3.5, *The Observed Channel*).

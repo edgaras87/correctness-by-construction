@@ -5,7 +5,7 @@ What it is: a Problem Domain Idea of CBC backend design, the Backend Repos' Prob
 What it stands on: knowledge/backbone-ideas/how-an-agent-works.md, the Backbone Idea it is adapted from. It adapts that document, and never retells it.
 What stands on it: the Backend Kit's Adapted Cases, written from it for a Backend Repo's agent work (knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md §3.3, The Adapted Case layer).
 Its place in the repo: knowledge/problem-domain-ideas/cbc-backend-design/ (ADR-0084). It is kept in the Maintainer Repo, and never copied to a Backend Repo.
-Its first source, input and not rules: the Agent Model, docs/models/agent.md, deleted on 2026-11-27, its last state in git at 703ff7ca: §1; P2's test; §12's evidence seen in the Backend Repos.
+Its first sources, input and not rules: the Agent Model, docs/models/agent.md, deleted on 2026-11-27, its last state in git at 703ff7ca: §1; P2's test; §12's evidence seen in the Backend Repos. The Tiers Model, docs/models/tiers.md §3.2, The Told Channel, for §2's warning told by hand.
 How it is edited: a trial, as in the layers of knowledge: a section's rules close it, in a last paragraph marked Rules, and govern that section.
 -->
 
@@ -22,15 +22,19 @@ Borrowed:
 | Backend Repo | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Entry File | `knowledge/backbone-ideas/how-an-agent-works.md` §1, *Its Defined Terms* |
 | Kit Copy | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
+| Kit Version | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Maintainer Repo | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Plan Step | `knowledge/backbone-ideas/records.md` §1, *Its Defined Terms* |
 | Problem Domain | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
 | Problem Domain Idea | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
 | Pure Seed | `delivery/installs/pure-seed.md` |
+| Told Channel | `knowledge/backbone-ideas/how-an-agent-works.md` §1, *Its Defined Terms* |
 
 ## 2. The case nobody watches
 
 A Backend Repo works by the Kit Copies it took from the Backend Kit. The rules are written for it, and it is the case nobody watches: what reaches its agent, and what does not, shows only when the Maintainer Repo reads it back. So the question how an agent works answers matters most here: given a rule sitting in a Backend Repo, how does it reach the agent meant to follow it?
+
+A rule can also reach the agent through the Told Channel (`knowledge/backbone-ideas/how-an-agent-works.md` §3.4, *The Told Channel*). The human hands the Backend Repo's agent a warning in the session, after the Backend Repo's own work has missed it and the miss is on record. The warning comes with no Kit Copy, and no Kit Version holds it. The Backend Repo's records say it was told. A Backend Repo that leans on such warnings shows the Told Channel's diagnostic: a rule is missing from its Kit Copies, or one there is not firing.
 
 ## 3. What the work showed
 
