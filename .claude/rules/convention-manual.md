@@ -20,7 +20,7 @@ is written. Its form, never its content.
 Each a `##` heading, except the opening statement, which is a bold
 sentence under the title, and item 6, a rule for the body. The body's sections are numbered; the
 others are not. A manual whose idea an Idea Model states opens with
-frontmatter naming it, `foundation: the agent model`
+frontmatter naming it, `foundation: the tiers model`
 (`docs/conventions/conventions/` §1.3, *The Foundation Line*).
 
 1. **The opening statement.** One bold sentence: the manual's
@@ -79,8 +79,8 @@ frontmatter naming it, `foundation: the agent model`
 7. **Why it arrives this way.** The channel: an Agent Skill, an Agent Rule, a
    Record Stub or a file. Then why that one: the moment it serves, and
    what would or would not put it in front of its reader then.
-   Where the reasoning rests on the Agent Model, it carries a Fact
-   Reference to that part, such as (`docs/models/agent.md` §8,
+   Where the reasoning rests on how an agent works, it carries a Fact
+   Reference to that part, such as (`knowledge/backbone-ideas/how-an-agent-works.md` §7,
    *Choosing a channel*). Why: (`docs/conventions/conventions/` §2.7, *The channel*).
 8. **What this does not cover.** A list: each neighbouring subject
    in bold, then the path it belongs to (`docs/conventions/conventions/` §2.8, *The boundary*).
