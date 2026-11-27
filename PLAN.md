@@ -175,11 +175,11 @@ Gate:
 - [ ] Claude Code's Tool Binding, the manual's §5, stands as two
       Adapted Cases: the Backend Kit's at layer 3 and ours at layer 4,
       each at its path by §3.5 (the map's QUESTION-6).
-- [ ] The Backend Kit's Entry File and its Decisions Log's Record Stub,
-      today `delivery/container/.claude/CLAUDE.md` and
+- [x] The Backend Kit's Entry File and its Decisions Log's Record Stub,
+      once `delivery/container/.claude/CLAUDE.md` and
       `delivery/container/.claude/decisions.md`, are its Adapted Cases
       at layer 3, at their paths by §3.5; the Pure Seed copies them
-      from there (the map's QUESTION-1).
+      from there (the map's QUESTION-1) (2026-11-27, stage 3).
 - [ ] Our `CLAUDE.md` comes in whole as our own Adapted Case at layer
       4, its Local Rule among its lines; our `.claude/decisions.md`
       header is our Decisions Log's form at layer 4, where it is; each
@@ -268,6 +268,10 @@ Notes:
   Idea may add a kind of agent file for its own repos, in its own
   table; CBC backend design adds Output Shapes. Agent files' closed
   list says so.
+- Decision F, at stage 3, on the reviewer's word: the Backend Kit's
+  three Adapted Cases for agent files sit in its `keeping-knowledge/`
+  group, beside the records, a folder each: `entry-file/`,
+  `decisions-log/`, `claude-code-tool-binding/`.
 - Its stages, from the map:
   1. the Backbone Idea, from the manual's opening, *What it is for*
      and §1 to §4;
@@ -282,8 +286,7 @@ Notes:
      repointed, Agent Rule, Agent Skill, Local Rule, Paths Rule and
      Decisions Log;
   6. the close.
-- Open, decided at the stage it meets: the folder of the Backend
-  Kit's Adapted Cases at layer 3; how the two Tool Bindings stay
+- Open, decided at the stage it meets: how the two Tool Bindings stay
   alike where the tool's facts are the same.
 - Their trigger met at this Plan Step's close: TODO's "Write the
   understanding of the agent's memory", "Decide how work is run by

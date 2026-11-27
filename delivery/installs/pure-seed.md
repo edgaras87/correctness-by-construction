@@ -65,6 +65,8 @@ cp "$records_dir"/readme/README.md "$records_dir"/architecture/ARCHITECTURE.md \
 cp "$records_dir"/devlog/devlog.md "$new_project_dir"/devlog/
 cp "$records_dir"/decisions/0001-record-architecture-decisions.md "$new_project_dir"/docs/adr/
 cp "$records_dir"/scratch-space/README.md "$new_project_dir"/temp/
+cp "$records_dir"/entry-file/CLAUDE.md "$records_dir"/decisions-log/decisions.md \
+   "$new_project_dir"/.claude/
 sed -i -e "s/<delivery-pin>/$deliverer_pin/" \
     -e "s/<YYYY-MM-DD> Born/$(date +%F) Born/" \
     "$new_project_dir"/.claude/decisions.md
@@ -90,7 +92,8 @@ whole `.claude/` directory. The three hygiene files, `.gitignore`,
 `.gitattributes` and `.editorconfig`, are copied from
 `knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/repo-hygiene/`.
 Six Record Stubs and the scratch space's README are copied from their
-folders beside it, each to the path it lands at. The plan's Record
+folders beside it, each to the path it lands at, and so are the Entry
+File and the Decisions Log's Record Stub, to `.claude/`. The plan's Record
 Stub and the glossary's still come with the container.
 
 The birth entry takes two placeholders:
@@ -238,7 +241,7 @@ way. Then:
   and the working name in the two composed files. Every other Record Stub
   still reads as one, and no entry from this repo's own birth exists.
   `.claude/CLAUDE.md` and `README.md` are byte-identical to the
-  container's with the name filled, neither carries a provenance
+  Backend Kit's files with the name filled, neither carries a provenance
   header, and no `CLAUDE.md` sits at the root.
 - No provenance header from this repo anywhere in the Newborn CBC Run.
 

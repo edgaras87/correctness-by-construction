@@ -209,8 +209,8 @@ At birth, every file of each group. After it, only the copies:
 - the concept.
 
 The rest of the Container Group went once and is the CBC Run's: the
-plan's and the glossary's Record Stubs, the two composed files, the Entry File and `README.md`, the
-Decisions Log; and so did the hygiene files, six Record Stubs and the
+plan's and the glossary's Record Stubs; and so did the hygiene files,
+six Record Stubs, the Entry File, the Decisions Log and the
 scratch space's README, from their folders under
 `knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/`
 (§2.4, *The records' exception*). A

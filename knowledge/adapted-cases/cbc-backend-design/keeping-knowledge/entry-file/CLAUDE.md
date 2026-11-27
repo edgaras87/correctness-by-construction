@@ -57,7 +57,7 @@ arrive with them, in `docs/glossary/`; this project's own are
 
 <!-- This file is loaded in full on every task, relevant or not, so
      every line below passes three tests or leaves
-     (the Concept Deliverer's docs/conventions/agent-arrangement/ §2.4, How the Entry File is written):
+     (agent files, kept in the Maintainer Repo, How the Entry File is written):
      1. True of this project and nowhere else. Otherwise it belongs in a
         delivered Agent Skill, Agent Rule or Record Stub, stated once.
      2. No moment. Otherwise it goes where the moment is: the record's
@@ -67,7 +67,9 @@ arrive with them, in `docs/glossary/`; this project's own are
         would notice was missing.
      Longer than a screen means a line is failing. Shrinking it is
      maintenance, not tidying.
-     foundation: the agent-arrangement convention -->
+     Born from the Backend Kit's Entry File: this repo's own from
+     birth, never a Kit Copy. Why it is as it is: agent files, in CBC
+     backend design, kept in the Maintainer Repo. -->
 
 ## Local rules
 

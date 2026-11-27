@@ -157,7 +157,7 @@ Skills would be a group beside this one.
 ### 2.3 The Container Group
 
 `delivery/container/`: the conventions made usable. The plan's and
-the glossary's Record Stubs, the Entry File, the Decisions Log, the convention Agent Skills
+the glossary's Record Stubs, the convention Agent Skills
 and Agent Rules, an Approach on Trial, and the shared
 Glossary Names, `docs/glossary/container.md`. Which convention a
 file belongs to is its Foundation Line. A project with no
