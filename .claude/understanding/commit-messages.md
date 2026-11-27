@@ -33,7 +33,7 @@ The scopes are used at the commit, and the Agent Skill is opened there. Until 20
 
 - The Agent Skill lists this repo's scopes.
 
-## 3. Why the agent's files are `docs(agent)`
+## 3. Why the agent's files are docs
 
 In a repo of text, a change to text is `docs`, and the scope carries the signal. The agent's files are text too. So the type stays `docs`, and `agent` says whose files they are. The Backend Kit's Agent Skill keeps `chore(agent)`: a Backend Repo builds software, and there the agent's files are not the work.
 
