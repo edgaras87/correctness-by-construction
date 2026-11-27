@@ -145,7 +145,7 @@ work.
 Goal: every part of the agent-arrangement manual,
 `docs/conventions/agent-arrangement/`, stands at its layer, with the
 three texts that wait on it alone, and the manual is gone.
-Now: stage 1, the Backbone Idea.
+Now: stage 2, the two Problem Domain Ideas.
 Gate:
 
 **At the opening.**
@@ -192,9 +192,11 @@ Gate:
 - [ ] The manual is gone, and every Living Text that named its path or
       sections names where each part now stands
       (`docs/conventions/facts-in-sync/` §3.3, *The rename grep*).
-- [ ] Each Defined Term a text in the layers model borrows from the
+- [x] Each Defined Term a text in the layers model borrows from the
       manual, Agent Skill, Agent Rule and Paths Rule, has its home in
-      the layers model, and each borrow points at it.
+      the layers model, and each borrow points at it
+      (2026-11-27, stage 1: `dc00764e`; 17 borrows repointed in
+      `9aa0f28f` and `4006d64d`).
 - [ ] Each Glossary Name whose home is the manual stays in
       `docs/glossary.md`, pointing at its new home, while a text
       outside the layers model uses it (the map's QUESTION-2).
