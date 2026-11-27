@@ -145,7 +145,7 @@ work.
 Goal: every part of the project-recording manual, and of the record
 forms that wait on it alone, stands at its layer, and the manual is
 gone.
-Now: stage 2, the two Problem Domain Ideas.
+Now: stage 3, the Backend Kit's Adapted Cases.
 Gate:
 
 **At the opening.**
@@ -168,9 +168,9 @@ Gate:
       knowledge (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md`
       §3.5, *Where each layer is kept*; the map's QUESTION-7)
       (2026-11-27).
-- [ ] Records has a Problem Domain Idea in each Problem Domain,
+- [x] Records has a Problem Domain Idea in each Problem Domain,
       keeping knowledge and CBC backend design, each with its row in
-      §3.2's table of the same document.
+      §3.2's table of the same document (2026-11-27).
 - [ ] The Backend Kit holds each record's form as an Adapted Case at
       layer 3, at its path by §3.5: the seven Record Stubs of
       `delivery/container/` that wait on the manual alone, each its

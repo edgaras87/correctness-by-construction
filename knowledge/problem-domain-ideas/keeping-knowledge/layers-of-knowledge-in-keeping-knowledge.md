@@ -139,6 +139,7 @@ The Maintainer Repo's own Problem Domain. It works by its own Adapted Cases, wri
 | Change, in keeping knowledge | Change | the arrows between the Maintainer Repo and the Backend Repos; how a change travels them | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` |
 | How an agent works, in keeping knowledge | How an agent works | not yet known | planned (`TODO.md`, the item that rewrites the Agent Model) |
 | Repo hygiene, in keeping knowledge | Repo hygiene | no stack; the Backend Kit's files it keeps | `knowledge/problem-domain-ideas/keeping-knowledge/repo-hygiene-in-keeping-knowledge.md` |
+| Records, in keeping knowledge | Records | no end; one Plan Step in the plan; no changelog; the Backend Kit's records it keeps | `knowledge/problem-domain-ideas/keeping-knowledge/records-in-keeping-knowledge.md` |
 
 #### 3.2.2 CBC backend design
 
@@ -151,6 +152,7 @@ The Backend Repos' Problem Domain. The Maintainer Repo keeps its Problem Domain 
 | Defined Terms, in CBC backend design | Defined Terms | the Backend Kit's Defined Terms, read in a Backend Repo without layers 1 and 2 | `knowledge/problem-domain-ideas/cbc-backend-design/defined-terms-in-cbc-backend-design.md` |
 | Change, in CBC backend design | Change | how a Backend Repo changes a Kit Copy, and takes a Kit Update | `knowledge/problem-domain-ideas/cbc-backend-design/change-in-cbc-backend-design.md` |
 | Repo hygiene, in CBC backend design | Repo hygiene | the files at birth; the stack's lines at their Plan Step | `knowledge/problem-domain-ideas/cbc-backend-design/repo-hygiene-in-cbc-backend-design.md` |
+| Records, in CBC backend design | Records | the Record Stubs at birth; the plan from the playbook; the playbook | `knowledge/problem-domain-ideas/cbc-backend-design/records-in-cbc-backend-design.md` |
 
 ### 3.3 The Adapted Case layer
 
