@@ -144,7 +144,7 @@ work.
 Goal: every part of the Tiers Model, `docs/models/tiers.md`, that has
 a home in the layers points there, and what stays says what it waits
 for.
-Now: stage 1, the parts held already.
+Now: stage 4, the close.
 Gate:
 
 **At the opening.**
@@ -162,38 +162,46 @@ Gate:
 
 **The Plan Step's own items.**
 
-- [ ] The Tiers Model does not go: it keeps §2.2, §2.3, §3.1 and §3.3,
+- [x] The Tiers Model does not go: it keeps §2.2, §2.3, §3.1 and §3.3,
       the homes of 7 Glossary Names, and goes when the last of them
-      has landed (decision A).
-- [ ] §2.1 keeps its heading and one line pointing at the layers
+      has landed (decision A) (2026-11-27, `8bbb51b3`).
+- [x] §2.1 keeps its heading and one line pointing at the layers
       document's open question 1, in keeping knowledge
       (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md`
       §5, *Open questions*). That question holds the rule a second
       Maintainer Repo follows and its trigger, cites ADR-0038, and no
-      longer points at §2.1 (decision C).
-- [ ] §3.2 has landed in how an agent works, in CBC backend design,
+      longer points at §2.1 (decision C) (2026-11-27, `c0a84d76`).
+- [x] §3.2 has landed in how an agent works, in CBC backend design,
       §2, *The case nobody watches*, from §3.2's own lines; §3.2 points
       there, that text borrows Told Channel, and the Told Channel's
-      glossary entry gives its second meaning that home (decision B).
-- [ ] §3.4 and §3.5 point at each fact's home in Change, in keeping
+      glossary entry gives its second meaning that home (decision B)
+      (2026-11-27, `8370ca43`).
+- [x] §3.4 and §3.5 point at each fact's home in Change, in keeping
       knowledge, Change, in CBC backend design, and the layers
-      document in keeping knowledge.
-- [ ] §4.1 points at Change §3, *How the layers fill*, and the layers
-      of knowledge §3.4, *The layer of work*.
-- [ ] §4.2 points at Change, in keeping knowledge §2, *The arrows*,
+      document in keeping knowledge (2026-11-27, `f3a4c929`).
+- [x] §4.1 points at Change §3, *How the layers fill*, and the layers
+      of knowledge §3.4, *The layer of work* (2026-11-27, `f3a4c929`).
+- [x] §4.2 points at Change, in keeping knowledge §2, *The arrows*,
       and the layers document in keeping knowledge §3, *The layers*
-      (decision D).
-- [ ] Each part the map's §9 lists for the model has landed, waits
+      (decision D) (2026-11-27, `f3a4c929`).
+- [x] Each part the map's §9 lists for the model has landed, waits
       with its home named, or was judged not needed, and the commit
-      that ends it names where.
-- [ ] The model's opening says what it still holds and where each
-      part goes, and the map's row for it says the same.
-- [ ] No pointer to the model elsewhere changed, and each still
-      resolves: a section that leaves keeps its heading.
-- [ ] A Change Walk over what stands on the model finds no line its
+      that ends it names where (2026-11-27: §1, §2.1's second
+      paragraph and §3.5's story line judged not needed, `f3a4c929`;
+      the rest by the items above).
+- [x] The model's opening says what it still holds and where each
+      part goes, and the map's row for it says the same (2026-11-27,
+      `8bbb51b3`; the map's QUESTION-5 corrected too, by decision D).
+- [x] No pointer to the model elsewhere changed, and each still
+      resolves: a section that leaves keeps its heading (2026-11-27,
+      by script: 19 pointers, in 9 files, name 6 sections, each heading standing;
+      the 2 that changed, the glossary's Told Channel and question 1,
+      moved by decisions B and C).
+- [x] A Change Walk over what stands on the model finds no line its
       changes make untrue
       (`knowledge/problem-domain-ideas/keeping-knowledge/one-home-in-keeping-knowledge.md`
-      §4, *The Change Walk*).
+      §4, *The Change Walk*) (2026-11-27: 6 lines into §3.5 and 2 into
+      §2.1 still hold, in each stage's commit body).
 
 **Known already.** The Plan Step uses no Agent Skill or Agent Rule
 with a *Gates* section; the own items stand alone.
