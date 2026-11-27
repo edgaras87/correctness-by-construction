@@ -32,7 +32,7 @@ A fact is retold in whatever text is being written. So the rule binds whenever a
 
 The rule carries no `paths:` list. A Paths Rule loads only when a file under its paths is touched with the agent's tools, and an edit made by script loads nothing (`knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/claude-code-tool-binding/understanding.md` §6, *Paths Rules*). A fact can be retold in any file, so no list of paths covers the moment.
 
-## 3. Why it holds more than the Backend Kit's
+## 3. What is ours alone
 
 The Backend Kit's rule says one home in a Backend Repo's words: a fact's id, or its path, re-read when the fact changes. This repo writes every Fact Reference by path, section and title, and its Change Walk re-reads each line that carries one (`knowledge/problem-domain-ideas/keeping-knowledge/one-home-in-keeping-knowledge.md` §2, *Writing a Fact Reference*). So three things in it are its own:
 
