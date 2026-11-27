@@ -16,20 +16,10 @@ the wrong one (`docs/models/idea-to-output.md` §3.3, *Settling a disagreement*)
 
 ## 1. A drawing of the tiers
 
-In the drawing, "conventions, container, models" are the
-conventions, the Container Group and the Idea Models; a Concept
-Repo's "mental layer" is its Canonical Descriptions, and its
-"container and execution copies" are what is made usable from them.
-
-```
-(no repo)     how you work      method: conventions, container, models —
-                                held by the Concept Repo below until
-                                three repos have lived (ADR-0038)
-concepts      what you know     one repo per concept: mental layer,
-   │ container and execution        ▲ Record Harvest: a Run Repo's surprises
-   ▼ copies, pinned at a commit     │ become concept changes
-runs          what you try      projects, experiments
-```
+The drawing is judged not needed: the layers document in keeping
+knowledge draws the repos and their layers
+(`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md`
+§2, *The picture*).
 
 ## 2. The tiers
 
@@ -40,11 +30,6 @@ Run Repos are born with, as its own. A second Concept Repo that
 needs the method copies parts. A third does the same. Only after
 three is a repo above them considered, from what the three lived.
 Until then the upward flows end at the Concept Repo.
-
-A repo that owned the working arrangement was built once, ahead of
-its evidence, and is history (ADR-0038). It held how projects are
-recorded, how conventions are written and delivered, and what an
-agent is.
 
 ### 2.2 Concept Repos
 
@@ -122,52 +107,48 @@ another as a side effect, up or down.
 
 ### 3.4 The Delivery Pin and documents
 
-The Delivery Pin (§3.5, *What holds on every flow*) follows the
-documents the tiers exchange.
-No tier's agent reads a tier above it, so every delivery is a
-document, and each delivery that brings a copy moves its Delivery Pin. A document taken
-without its Delivery Pin moving leaves the Run Repo's record of what
-it holds wrong. That is why the Delivery Pin moves with every Delivery Take that brings a copy (§3.5, *What holds on every flow*; ADR-0036).
+That the repo below cannot see the one above, and that each take
+records the version it brings, is Change, in keeping knowledge's
+(`knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md`
+§3.5, *Deliver the Kit Update*, and §3.6, *Take the Kit Update*,
+item 4).
 
 ### 3.5 What holds on every flow
 
-Five facts hold between a tier and the one below it. A design that
-ignores one describes a different system.
+Each fact has its home in the layers:
 
-1. **The tier below is blind.** It holds no address for the tier
-   above, and cannot fetch (§3.4, *The Delivery Pin and documents*).
-2. **Nothing arrives by itself.** Every delivery is decided above
-   and carried across by a person, or by an agent on a person's
-   word. Never automatic, never started below.
-3. **Below holds copies; above holds Master Copies.** A copy changes only
-   by being copied anew, or by the tier below editing it.
-4. **A copy is edited when it fails.** The tier below edits its copy
-   where the copy did not foresee what happened. That is where
-   learning starts, and the edit is read from above as the diff.
-5. **Nothing moves up as files.** The tier above reads; the tier
-   below never sends (§3.3, *Upward harvest*).
+1. **The tier below is blind:** Change, in keeping knowledge
+   (`knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md`
+   §3.5, *Deliver the Kit Update*).
+2. **Nothing arrives by itself:** the same section, its *Staging*.
+3. **Below holds copies; above holds Master Copies:** the layers
+   document in keeping knowledge
+   (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md`
+   §1, *Its Defined Terms*, the Backend Kit).
+4. **A copy is edited when it fails:** Change, in CBC backend design
+   (`knowledge/problem-domain-ideas/cbc-backend-design/change-in-cbc-backend-design.md`
+   §2, *Changing a Kit Copy*).
+5. **Nothing moves up as files:** Change, in keeping knowledge
+   (`knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md`
+   §3, *How a change travels*, its picture).
 
-And one number, the Delivery Pin: the commit of the tier above that a
-delivery's copies equal, kept by the tier below. One Delivery Pin for a
-delivery, never one per part, so the tier below cannot hold two
-answers to what it was given.
-
-*Its story: ADR-0071; devlog 2026-09-26; devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model.*
+The one number, the Delivery Pin: Change, in keeping knowledge, §3.5,
+*Deliver the Kit Update*, its *What a Kit Update is*.
 
 ## 4. What the Idea Model answers
 
 ### 4.1 Where a lesson lands
 
-- **About how to work:** the tier above, which today is the Concept
-  Repo that holds the method.
-- **About what is true of a concept:** that concept's repo, as a
-  Record Harvest.
-- **About this particular attempt:** the Run Repo's own records, and
-  nowhere else unless harvested.
+Where a lesson lands is Change's
+(`knowledge/backbone-ideas/change.md` §3, *How the layers fill*)
+and the layers of knowledge's
+(`knowledge/backbone-ideas/layers-of-knowledge.md` §3.4, *The layer of work*).
 
 ### 4.2 The dependency rule
 
-Downward: only pinned copies and Delivery Fills. Upward: only
-records, and the diff of the copies. A repo lives in exactly one tier. A Concept Repo that keeps
-its own records, and today its method, does the concepts tier's
-work, not a Run Repo's.
+What crosses between the repos is Change, in keeping knowledge's
+(`knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md`
+§2, *The arrows*). That each repo is one kind is the layers
+document's in keeping knowledge
+(`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md`
+§3, *The layers*).
