@@ -5,7 +5,7 @@ What it is: the Adapted Understanding Text of this repo's own Adapted Case for C
 What it stands on: knowledge/problem-domain-ideas/keeping-knowledge/records-in-keeping-knowledge.md, the Problem Domain Idea nearest it. It adds a record that text does not hold, and never retells it.
 What stands on it: its Instruction Text, the header comment of TODO-CONVERSATION-MEMORY.md.
 Its place in the repo: .claude/understanding/ (ADR-0084). It never loads; it is read when its Instruction Text changes.
-Its first sources, input and not rules: the project-recording manual, docs/conventions/project-recording/README.md: §14 and The seats, its item 7; ADR-0060.
+Its first sources, input and not rules: the project-recording manual, docs/conventions/project-recording/README.md, deleted on 2026-11-27, its last state in git at 3bb95746: §14 and The seats, its item 7; ADR-0060.
 -->
 
 This text says what Conversation Memory is, why it is kept beside the backlog, and how its trial ends. Only this repo keeps one.

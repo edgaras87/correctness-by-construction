@@ -13,9 +13,9 @@ and is read back from here. Documents only — no code, no CBC Runs
      once opened, and nothing else says when. Three things per row:
      the moment, what it holds, the path. Never the rule itself: what
      an ADR contains is inside the ADR. What it holds summarizes the
-     record's item in project-recording's list of the records
-     (docs/conventions/project-recording/ §1, The records at a glance). Adding a record means
-     adding its row (`docs/conventions/project-recording/` §13, The records table). -->
+     record's row in records' list of the records
+     (knowledge/backbone-ideas/records.md §3, The records). Adding a record means
+     adding its row (knowledge/backbone-ideas/records.md §12, The Records Table). -->
 
 | When | What's in it | Record |
 |---|---|---|

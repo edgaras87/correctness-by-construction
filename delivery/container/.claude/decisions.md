@@ -33,7 +33,7 @@
 - <YYYY-MM-DD> Born from the correctness-by-construction delivery,
   Delivery Pin <delivery-pin>; Read-Through Commit none — nothing read before the
   first Delivery Note.
-  Work Approaches made from: project-recording, commit-messages,
+  Work Approaches made from: commit-messages,
   commit-plan, exchange, agent-arrangement, visual-comparison,
   shapes, writing, retrospective, facts-in-sync.
   Approaches on Trial: approach-drafting.

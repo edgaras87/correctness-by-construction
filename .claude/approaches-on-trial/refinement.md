@@ -129,7 +129,7 @@ order that puts a source before what derives from it:
 
 1. the conventions manual, `docs/conventions/conventions/`, which
    every other manual is read against;
-2. project-recording, with its list of the records, which other
+2. records, `knowledge/backbone-ideas/records.md`, with its list of the records, which other
    text points to;
 3. the other manuals, and the concept chapters;
 4. `ARCHITECTURE.md`, `README.md` and the records;

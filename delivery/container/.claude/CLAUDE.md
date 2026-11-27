@@ -37,8 +37,8 @@ arrive with them, in `docs/glossary/`; this project's own are
      once opened, and nothing else says when. Three things per row:
      the moment, what it holds, the path. Never the rule itself: what
      an ADR contains is inside the ADR. Adding a record means adding
-     its row (the Concept Deliverer's docs/conventions/project-recording/ §13, The records
-     table). -->
+     its row (the Concept Deliverer's knowledge/backbone-ideas/records.md §12, The
+     Records Table). -->
 
 | When | What's in it | Record |
 |---|---|---|
