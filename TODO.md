@@ -49,10 +49,6 @@
         Model;
       - one Plan Step per idea, as change was done;
       - each Plan Step on a branch: shipped files move.
-      - `CLAUDE.md` comes in whole with the agent-arrangement manual,
-        its Local Rule among its lines: no understanding text for one
-        line before the rest (2026-11-23, the reviewer; moved here
-        from the Agent Model's item, 2026-11-27).
       - at a Plan Step's opening, before its gate, each planned part is
         checked against the source by subject: the layers document
         planned "what one piece of agent work is", which the Agent

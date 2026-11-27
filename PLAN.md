@@ -139,3 +139,139 @@ reason. That is a finding about the item, not a Plan Step skipping
 work.
 
 ---
+
+## Step: Rewrite the agent-arrangement manual into the layers  (the commit-messages Agent Skill; the commit-plan Agent Skill if a Change Set needs it)    [~]
+
+Goal: every part of the agent-arrangement manual,
+`docs/conventions/agent-arrangement/`, stands at its layer, with the
+three texts that wait on it alone, and the manual is gone.
+Now: stage 1, the Backbone Idea.
+Gate:
+
+**At the opening.**
+
+- [x] The Plan Step's branch `agent-arrangement-2026-11-27`, if it has one, is cut
+      from main, and nothing of the Plan Step was done on main
+      (`.claude/rules/working-a-reading.md`, step 1)
+      (2026-11-27, cut at `d9ef9969`, before the opening commit).
+- [x] This Plan Step Gate was written before the work started
+      (2026-11-27, in the Plan Step's opening commit).
+- [x] The Plan Step's Work Approach is known: the stages its Notes
+      list, from the map, `temp/rewrite-map.md` §9, *Every text*, and
+      §10, *Shared questions*; no Approach on Trial drafted
+      (2026-11-27).
+
+**The Plan Step's own items.**
+
+- [ ] The agent arrangement is a Backbone Idea,
+      `knowledge/backbone-ideas/agent-arrangement.md`, with its row in
+      §3.1's table of the layers document in keeping knowledge
+      (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md`
+      §3.5, *Where each layer is kept*; the map's QUESTION-7).
+- [ ] The agent arrangement has a Problem Domain Idea in each Problem
+      Domain, keeping knowledge and CBC backend design, each with its
+      row in §3.2's table of the same document.
+- [ ] Claude Code's Tool Binding, the manual's §5, stands as two
+      Adapted Cases: the Backend Kit's at layer 3 and ours at layer 4,
+      each at its path by §3.5 (the map's QUESTION-6).
+- [ ] The Backend Kit's Entry File and its Decisions Log's Record Stub,
+      today `delivery/container/.claude/CLAUDE.md` and
+      `delivery/container/.claude/decisions.md`, are its Adapted Cases
+      at layer 3, at their paths by §3.5; the Pure Seed copies them
+      from there (the map's QUESTION-1).
+- [ ] Our `CLAUDE.md` comes in whole as our own Adapted Case at layer
+      4, its Local Rule among its lines; our `.claude/decisions.md`
+      header is our Decisions Log's form at layer 4, where it is; each
+      has an Adapted Understanding Text in `.claude/understanding/`
+      for a why of that file alone.
+- [ ] Each part the map's §9 lists for the manual has landed, or was
+      judged not needed, and the commit that ends it names where. A
+      part whose subject is how instructions are written for an agent
+      is named in the map's QUESTION-5, for that idea.
+- [ ] The manual is gone, and every Living Text that named its path or
+      sections names where each part now stands
+      (`docs/conventions/facts-in-sync/` §3.3, *The rename grep*).
+- [ ] Each Defined Term a text in the layers model borrows from the
+      manual, Agent Skill, Agent Rule and Paths Rule, has its home in
+      the layers model, and each borrow points at it.
+- [ ] Each Glossary Name whose home is the manual stays in
+      `docs/glossary.md`, pointing at its new home, while a text
+      outside the layers model uses it (the map's QUESTION-2).
+
+**Known already.** The commit-messages and commit-plan Agent Skills
+have no *Gates* section; the own items stand alone.
+
+**At the close.**
+
+- [ ] Every link and path in the records resolves.
+- [ ] Every ADR a record cites exists.
+- [ ] Each pair of copies agrees, such as the worked example in the
+      cbc-framing Agent Skill and in the cbc-slice Agent Skill.
+- [ ] No line of Living Text in a record the Plan Step touched, or one that
+      mentions its subject, still says "now", "today" or "not yet"
+      about something the Plan Step changed.
+- [ ] New and changed text meets `.claude/rules/writing.md`.
+- [ ] Every commit on `agent-arrangement-2026-11-27` follows the commit-messages Agent Skill.
+      Its subjects are counted by script: one up to 70 characters
+      passes, and one past 70 is the reviewer's to keep or rewrite
+      (`docs/conventions/commit-messages/` §2.1, *Conventional Commits*).
+- [ ] No commit straddles agent and project paths
+      (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*).
+- [ ] The Plan Step's lessons are written back where they came from:
+      conventions, the playbook, the concept.
+- [ ] `CLAUDE.md` read top to bottom; each line still passes its
+      three tests, or leaves (`docs/conventions/agent-arrangement/`
+      §2.4, *How the Entry File is written*).
+- [ ] Each Approach on Trial the Plan Step drafted or used has this
+      use's dated note, and was handed over for evaluation
+      (`.claude/approaches-on-trial/approach-drafting.md` §3, *Close*).
+
+Notes:
+- Opened 2026-11-27, the fourth Plan Step of TODO's "Rewrite today's
+  Maintainer Repo into the layers model, by the map", chosen by the
+  reviewer: the manual needed only the Agent Model, gone in the last
+  Plan Step, and 4 texts wait on it, more than on the retrospective
+  manual, 2, or the visual-comparison manual, 1 (the map's §9, by
+  script). The TODO item stays: it is the whole rewrite.
+- The texts it rewrites, by the map's §9: the manual, and the three
+  that wait on it alone: `CLAUDE.md`; `delivery/container/.claude/CLAUDE.md`;
+  the Decisions Log's form, ours and the Backend Kit's. Not this Plan
+  Step's: the commit-messages manual, an idea of its own; its
+  pointers into this manual are fixed by the rename grep.
+- The rewrite item's Idea "`CLAUDE.md` comes in whole with the
+  agent-arrangement manual, its Local Rule among its lines: no
+  understanding text for one line before the rest" became this Plan
+  Step's item and left TODO.
+- Decision A, at the opening, on the reviewer's word: the arrangement
+  is an idea of its own, at layer 1, since both Problem Domains work
+  by it (the map's QUESTION-7, whose list does not name it). It is
+  not a part of how an agent works: that idea says how text reaches
+  an agent; this one says which files a repo keeps for it, and what
+  goes in each.
+- Its stages, from the map:
+  1. the Backbone Idea, from the manual's opening, *What it is for*
+     and §1 to §4;
+  2. the two Problem Domain Ideas, with each seat's evidence;
+  3. the Backend Kit's Adapted Cases: its Entry File, its Decisions
+     Log's Record Stub, and Claude Code's Tool Binding for the Backend
+     Repos;
+  4. our own Adapted Cases: `CLAUDE.md` in whole, our Decisions Log's
+     form, and our Tool Binding;
+  5. the manual goes: the rename grep, 71 path hits in 32 files by
+     `git grep` at `d9ef9969`, outside the devlog and `docs/adr/`; 5 Glossary Names
+     repointed, Agent Rule, Agent Skill, Local Rule, Paths Rule and
+     Decisions Log;
+  6. the close.
+- Open, decided at the stage it meets: where Agent Skill, Agent Rule
+  and Paths Rule are defined, since their words are Claude Code's
+  paths, at layer 1 or in a Tool Binding; the folder of the Backend
+  Kit's Adapted Cases at layer 3; how the two Tool Bindings stay
+  alike where the tool's facts are the same.
+- Their trigger met at this Plan Step's close: TODO's "Write the
+  understanding of the agent's memory", "Decide how work is run by
+  agents" and "Read the frozen CLAUDE template's stance bullets
+  against a full CBC Run's derived Entry File"; named to the reviewer
+  then.
+- Behind it: ADR-0082, decision 2; ADR-0087, decision 4; ADR-0089;
+  the map's QUESTION-1, QUESTION-2, QUESTION-4, QUESTION-5,
+  QUESTION-6 and QUESTION-7.
