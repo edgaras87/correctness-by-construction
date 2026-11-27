@@ -144,7 +144,7 @@ work.
 Goal: every part of the facts-in-sync manual,
 `docs/conventions/facts-in-sync/`, stands at its layer, with the
 three Agent Rules that wait on it, and the manual is gone.
-Now: stage 2, the two Problem Domain Ideas.
+Now: stage 3, the Backend Kit's Adapted Case.
 Gate:
 
 **At the opening.**
@@ -173,11 +173,12 @@ Gate:
       landed in the Backbone Idea; its heading stays, with one line
       pointing there, and the model's header and the map's row for it
       say so (2026-11-27, `ad7ede7f`).
-- [ ] One home has a Problem Domain Idea in each Problem Domain,
+- [x] One home has a Problem Domain Idea in each Problem Domain,
       keeping knowledge and CBC backend design, each with its row in
       §3.2's table of the same document. The one in keeping knowledge
       holds how a Fact Reference is written here, numbering a
-      section's parts (decision D), and the Change Walk.
+      section's parts (decision D), and the Change Walk
+      (2026-11-27, `dd8ca7fa`, `e74fd88f`).
 - [ ] The Backend Kit's one-home Agent Rule,
       `delivery/container/.claude/rules/one-home.md`, is the
       Instruction Text of its Adapted Case at layer 3, with its
@@ -314,6 +315,30 @@ Notes:
   holding a fact of their own, since a copy with no owner is a second
   home. The drafts' list of what each project decides is left to the
   Problem Domain Ideas. `ad7ede7f`'s body calls it decision 5.
+- Decision F, at stage 2, on the reviewer's word: the manual's "a
+  finding is declined only for not being general" is held already.
+  Change, in keeping knowledge, §3.3 lists the verdicts, "its own"
+  and "held" among them, and one home's §8 says neither side is right
+  for being upper. Restating it in keeping knowledge was rejected: a
+  second home for Change's verdicts.
+- Decision G, at stage 2, on the reviewer's word: a Backend Kit
+  file points at a Maintainer Repo text by the text's name, "kept in
+  the Maintainer Repo", then its section, the form the rewritten Kit
+  files already use. The manual's "the Concept Deliverer's" was
+  rejected: a twin of Maintainer Repo (`.claude/rules/defined-terms.md`,
+  rule 2). Its 22 lines under `delivery/` stay until their files are
+  rewritten.
+- Decision H, at stage 2, on the reviewer's word: Change Walk keeps
+  its name. Fact Change was rejected: it names the change, not the
+  re-read, and sits beside Copy Change as if the same kind. Reliance
+  Check was rejected: a twin beside Change Walk in 49 lines of 20
+  files, by script, until they are rewritten.
+- Decision I, at stage 2, on the reviewer's word: a case stays in a
+  Problem Domain Idea only where a text relies on it. CBC Run 3's
+  stays in CBC backend design's, for the Backend Kit's understanding
+  text, which may name no project. The handbook's leaves keeping
+  knowledge's: its home is agent files, in keeping knowledge §2, and
+  no text of one home relies on it (`e74fd88f`).
 - Its stages, from the map:
   1. the Backbone Idea, from the manual's layer-1 parts, the
      Idea-to-Output Model's §3.3 and the three drafts; the model's
