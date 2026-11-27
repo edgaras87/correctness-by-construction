@@ -25,11 +25,10 @@ knowledge draws the repos and their layers
 
 ### 2.1 The empty top tier
 
-The top tier is empty: today the Concept Repo holds the method its
-Run Repos are born with, as its own. A second Concept Repo that
-needs the method copies parts. A third does the same. Only after
-three is a repo above them considered, from what the three lived.
-Until then the upward flows end at the Concept Repo.
+What a second Concept Repo does, and when a kit for them is weighed,
+is the layers document's in keeping knowledge, its open question 1
+(`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md`
+§5, *Open questions*).
 
 ### 2.2 Concept Repos
 
