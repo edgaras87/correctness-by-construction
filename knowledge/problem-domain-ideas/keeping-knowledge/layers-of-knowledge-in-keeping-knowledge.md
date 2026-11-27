@@ -114,6 +114,7 @@ Layer 1 holds Backbone Ideas (`knowledge/backbone-ideas/layers-of-knowledge.md` 
 | Change | any change to knowledge, wherever it starts, and what holds for every one | `knowledge/backbone-ideas/change.md` |
 | Repo hygiene | the files every repo carries from its first commit, and why | `knowledge/backbone-ideas/repo-hygiene.md` |
 | Records | which records a repo keeps, what each answers, and how they feed each other | `knowledge/backbone-ideas/records.md` |
+| Agent files | which files a repo keeps for the agent that works in it, and what goes in each | `knowledge/backbone-ideas/agent-files.md` |
 
 Which other of today's project-agnostic ideas are Backbone Ideas is open (§5).
 

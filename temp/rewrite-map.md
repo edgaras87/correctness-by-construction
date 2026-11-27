@@ -556,13 +556,19 @@ Each text it touches names it in §9.
   at layer 2, and goes up by Change's arrow *lesson* when a second
   needs it.
   - **Layer 1, in place or planned:** change, Defined Terms, the
-    layers, how an agent works, CBC design.
+    layers, how an agent works, CBC design; agent files, from the
+    agent-arrangement manual, which this list did not name (its Plan
+    Step, 2026-11-27, decision A).
   - **Layer 1, both work by it:** writing; one home, from the
     facts-in-sync manual, with settling a disagreement; records, from
     the project-recording manual; commit messages; a set of commits,
     from the commit-plan manual; repo hygiene; visual comparison;
     trying a new way of working, from the approach-drafting Approach
     on Trial; how instructions are written for an agent (QUESTION-5).
+    Agent files lists the folder of ways of working on trial in plain
+    words until the idea of trying a new way of working defines
+    Approach on Trial; the line takes the Defined Term then (the
+    agent-arrangement manual's Plan Step, 2026-11-27, decision D).
   - **Layer 2, keeping knowledge only:** refinement.
   - **Layer 2, CBC backend design only:** looking back, from the
     retrospective manual, our trial never run; Output Shapes, until

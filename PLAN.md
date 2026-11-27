@@ -163,12 +163,13 @@ Gate:
 
 **The Plan Step's own items.**
 
-- [ ] The agent arrangement is a Backbone Idea,
-      `knowledge/backbone-ideas/agent-arrangement.md`, with its row in
+- [x] Agent files is a Backbone Idea,
+      `knowledge/backbone-ideas/agent-files.md`, with its row in
       §3.1's table of the layers document in keeping knowledge
       (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md`
-      §3.5, *Where each layer is kept*; the map's QUESTION-7).
-- [ ] The agent arrangement has a Problem Domain Idea in each Problem
+      §3.5, *Where each layer is kept*; the map's QUESTION-7)
+      (2026-11-27, stage 1).
+- [ ] Agent files has a Problem Domain Idea in each Problem
       Domain, keeping knowledge and CBC backend design, each with its
       row in §3.2's table of the same document.
 - [ ] Claude Code's Tool Binding, the manual's §5, stands as two
@@ -248,6 +249,19 @@ Notes:
   not a part of how an agent works: that idea says how text reaches
   an agent; this one says which files a repo keeps for it, and what
   goes in each.
+- Decision B, at stage 1, on the reviewer's word: the idea is named
+  Agent files, `knowledge/backbone-ideas/agent-files.md`, a plain
+  phrase the commit-messages and commit-plan manuals already use.
+- Decision C, at stage 1, on the reviewer's word: Agent Skill, Agent
+  Rule and Paths Rule are defined at layer 1, in Agent files, in
+  words no tool owns; their paths go to the Tool Bindings, and the
+  Backend Kit's Defined Terms keep Claude Code's words, their home
+  repointed. By the same reasoning, Local Rule and Decisions Log are
+  defined there too.
+- Decision D, at stage 1, on the reviewer's word: the folder of
+  Approaches on Trial is listed in plain words, with no Defined Term,
+  until the idea of trying a new way of working defines one (the
+  map's QUESTION-7).
 - Its stages, from the map:
   1. the Backbone Idea, from the manual's opening, *What it is for*
      and §1 to §4;
@@ -262,9 +276,7 @@ Notes:
      repointed, Agent Rule, Agent Skill, Local Rule, Paths Rule and
      Decisions Log;
   6. the close.
-- Open, decided at the stage it meets: where Agent Skill, Agent Rule
-  and Paths Rule are defined, since their words are Claude Code's
-  paths, at layer 1 or in a Tool Binding; the folder of the Backend
+- Open, decided at the stage it meets: the folder of the Backend
   Kit's Adapted Cases at layer 3; how the two Tool Bindings stay
   alike where the tool's facts are the same.
 - Their trigger met at this Plan Step's close: TODO's "Write the
