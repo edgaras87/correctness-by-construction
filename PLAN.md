@@ -144,7 +144,7 @@ work.
 Goal: every part of the facts-in-sync manual,
 `docs/conventions/facts-in-sync/`, stands at its layer, with the
 three Agent Rules that wait on it, and the manual is gone.
-Now: stage 5, the manual goes.
+Now: stage 6, the close.
 Gate:
 
 **At the opening.**
@@ -196,21 +196,25 @@ Gate:
 - [x] TODO's "Simulate depth c, then bring the Change idea to it"
       holds an Idea: what replaces the Foundation Check in the layers
       model (decision B) (2026-11-27, `132d6189`).
-- [ ] Living Text and Fact Reference are Defined Terms of the Backbone
+- [x] Living Text and Fact Reference are Defined Terms of the Backbone
       Idea, Change Walk of the Problem Domain Idea in keeping
       knowledge, and Foundation Check of its Adapted Understanding
       Text. Each one's glossary entry points at its new home, and
       Canonical Description's at the Idea-to-Output Model's §2, *The
-      kinds* (decision C).
+      kinds* (decision C) (2026-11-27, `ad7ede7f`, `dd8ca7fa`,
+      `e0624cf7`, `f7a7d9f2`).
 - [x] The 3 Foundation Lines that name `the facts-in-sync convention`,
       in the three Agent Rules, are gone: each rule's understanding is
       written beside it (`docs/conventions/conventions/` §1.3, *The
       Foundation Line*) (2026-11-27, `89034a00`, `e0624cf7`).
-- [ ] Each part the map's §9 lists for the manual has landed, or was
-      judged not needed, and the commit that ends it names where.
-- [ ] The manual is gone, and every Living Text that named its path or
+- [x] Each part the map's §9 lists for the manual has landed, or was
+      judged not needed, and the commit that ends it names where
+      (2026-11-27, `f7a7d9f2`).
+- [x] The manual is gone, and every Living Text that named its path or
       sections names where each part now stands
-      (`docs/conventions/facts-in-sync/` §3.3, *The rename grep*).
+      (`knowledge/backbone-ideas/one-home.md` §5, *When a home moves*)
+      (2026-11-27, `f7a7d9f2`, `cd56b211`; 0 Fact References to it
+      left in Living Text, by grep).
 
 **Known already.** The Plan Step uses no Agent Skill or Agent Rule
 with a *Gates* section; the own items stand alone.
@@ -348,6 +352,11 @@ Notes:
   replaced, and the Foundation Check's "Idea Model" became "a model
   under `docs/models/`", since Backbone Idea would be false of those
   files. The gate had planned pointers alone (`e0624cf7`).
+- At stage 5, on the reviewer's word, two parts no stage had placed
+  were judged: the concept's list of what stands on it is held by
+  `ARCHITECTURE.md` §2, which says it itself; the edges of ADR-0039
+  and ADR-0003 are those decisions', and need no new text
+  (`f7a7d9f2`).
 - Its stages, from the map:
   1. the Backbone Idea, from the manual's layer-1 parts, the
      Idea-to-Output Model's §3.3 and the three drafts; the model's
