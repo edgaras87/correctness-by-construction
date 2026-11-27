@@ -139,7 +139,7 @@ Its first use. One use was behind the Approach on Trial, so every
 piece stayed on trial. Stage 6 was the work: rewritten in general,
 with what would settle it. Stage 3 was weighed for an Idea Model as a
 home, and kept to conventions and records: a piece reaches an Idea
-Model only through a convention (`docs/models/idea-to-output.md` §3.1, *The four Chain Links*, and §4.2, *The upward direction*). Taught: a first
+Model only through a convention (`docs/models/idea-to-output.md` §3.1, *The four Chain Links*, and `knowledge/backbone-ideas/change.md` §4, *The arrows*). Taught: a first
 evaluation places nothing; its work is the rewrite.
 
 The two notes below are from before it was written.
