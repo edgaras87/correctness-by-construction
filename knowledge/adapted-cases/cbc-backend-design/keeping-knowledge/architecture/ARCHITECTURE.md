@@ -6,9 +6,9 @@
      by Invariant Slice: an Invariant Slice's close adds or changes rows
      in Invariants, never a paragraph. How the Invariant Slice got there
      is its Invariant Slice Record's.
-     Why the form is as it is: (the Concept Deliverer's docs/conventions/project-recording/
-     §8.4, How ARCHITECTURE is written).
-     foundation: the project-recording convention -->
+     Born from the Backend Kit's Record Stub for the architecture: this repo's
+     own from birth, never a Kit Copy. Why its form is as it is:
+     records, in CBC backend design, kept in the Maintainer Repo. -->
 
 ## Overview
 

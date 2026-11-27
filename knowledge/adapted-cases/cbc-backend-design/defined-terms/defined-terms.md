@@ -26,4 +26,5 @@ Each Defined Term is written with capitals at every use, and bold only here. Sea
 - **Maintainer Repo:** the repo that keeps the Backend Kit, and reads back what this repo learns. Its home: `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms*.
 - **Paths Rule:** a rule file with a `paths:` list, loaded when a file it names is touched. Its home: `docs/conventions/agent-arrangement/` §5.6, *Rules files*.
 - **Plan Step:** one piece of this repo's plan, closed at its gate. Its home: `knowledge/backbone-ideas/records.md` §1, *Its Defined Terms*.
+- **Record Stub:** a record as this repo was born with it: the Backend Kit's file, its form in its header, its content still to be filled. Its home: `knowledge/problem-domain-ideas/cbc-backend-design/records-in-cbc-backend-design.md` §1, *Its Defined Terms*.
 - **Stack Overlay:** the lines this repo's stack adds to each file of the Hygiene Base, appended below its marked line. Its home: `knowledge/backbone-ideas/repo-hygiene.md` §1, *Its Defined Terms*.

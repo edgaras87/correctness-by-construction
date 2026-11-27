@@ -58,6 +58,13 @@ cp -r "$deliverer_dir"/delivery/container/. "$new_project_dir"/
 hygiene_dir="$deliverer_dir"/knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/repo-hygiene
 cp "$hygiene_dir"/.gitignore "$hygiene_dir"/.gitattributes \
    "$hygiene_dir"/.editorconfig "$new_project_dir"/
+records_dir="$deliverer_dir"/knowledge/adapted-cases/cbc-backend-design/keeping-knowledge
+mkdir -p "$new_project_dir"/devlog "$new_project_dir"/docs/adr "$new_project_dir"/temp
+cp "$records_dir"/readme/README.md "$records_dir"/architecture/ARCHITECTURE.md \
+   "$records_dir"/changelog/CHANGELOG.md "$records_dir"/backlog/TODO.md "$new_project_dir"/
+cp "$records_dir"/devlog/devlog.md "$new_project_dir"/devlog/
+cp "$records_dir"/decisions/0001-record-architecture-decisions.md "$new_project_dir"/docs/adr/
+cp "$records_dir"/scratch-space/README.md "$new_project_dir"/temp/
 sed -i -e "s/<delivery-pin>/$deliverer_pin/" \
     -e "s/<YYYY-MM-DD> Born/$(date +%F) Born/" \
     "$new_project_dir"/.claude/decisions.md
@@ -82,6 +89,9 @@ The trailing `/.` matters. `delivery/container/*` silently skips the
 whole `.claude/` directory. The three hygiene files, `.gitignore`,
 `.gitattributes` and `.editorconfig`, are copied from
 `knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/repo-hygiene/`.
+Six Record Stubs and the scratch space's README are copied from their
+folders beside it, each to the path it lands at. The plan's Record
+Stub and the glossary's still come with the container.
 
 The birth entry takes two placeholders:
 

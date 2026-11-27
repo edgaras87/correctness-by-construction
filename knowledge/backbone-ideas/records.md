@@ -216,6 +216,18 @@ Not every repo needs every record. They scale with the stakes:
 
 - A record is added when someone, probably its own writer later, will need its answer and be unable to rebuild it. It is then written once, at its home.
 
-## 15. Open questions
+## 15. The scratch space
+
+A repo's work makes things it needs for a while and then drops: a draft of a text whose home is elsewhere, notes taken while working, a tool's output, a file kept for work still to come. They sit in one folder, `temp/`, with a README that says what it holds.
+
+**Rules:**
+
+- Nothing in the scratch space is a record, and nothing there is in force.
+- What must last moves out to its home: a decision to an ADR, work for later to the backlog, a fact to where its kind lives.
+- It is tracked, so what was drafted shows in history.
+- A file is deleted once it has served; history keeps it.
+- The devlog tells what a draft was for: made, passed or deleted.
+
+## 16. Open questions
 
 None is open now. A question joins this list when work meets one, and leaves it once its answer is in the text above.

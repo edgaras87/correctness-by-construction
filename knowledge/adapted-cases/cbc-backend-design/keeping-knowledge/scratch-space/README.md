@@ -1,5 +1,9 @@
 # temp/ — this project's scratch space
 
+<!-- Born from the Backend Kit's README for the scratch space: this
+     repo's own from birth, never a Kit Copy. Why it is as it is:
+     records, in CBC backend design, kept in the Maintainer Repo. -->
+
 A place for what this project needs for a while and then drops:
 drafts, notes taken while working, a tool's output, what a try
 left behind. It is tracked, so what was drafted here shows in

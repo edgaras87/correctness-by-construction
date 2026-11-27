@@ -32,6 +32,6 @@ concept; start with [00-cbc.md](docs/concept/00-cbc.md).
      only what is already true. Once the project runs: its prerequisites, the one command
      that builds and runs it from a clean clone, and how to run its
      tests, each when it becomes true.
-     Why the form is as it is: (the Concept Deliverer's docs/conventions/project-recording/
-     §7.4, How a README is written).
-     foundation: the project-recording convention -->
+     Born from the Backend Kit's Record Stub for the README: this repo's
+     own from birth, never a Kit Copy. Why its form is as it is:
+     records, in CBC backend design, kept in the Maintainer Repo. -->

@@ -21,9 +21,9 @@
      or declined, and the verdict goes with the work. When an item
      changes, rewrite it true for today. Never stack a dated update on
      it: the change's story is the devlog's.
-     Why the form is as it is: (the Concept Deliverer's docs/conventions/project-recording/
-     §5.4, How an item is written).
-     foundation: the project-recording convention -->
+     Born from the Backend Kit's Record Stub for the backlog: this repo's
+     own from birth, never a Kit Copy. Why its form is as it is:
+     records, in CBC backend design, kept in the Maintainer Repo. -->
 
 ## Now (the current Plan Step)
 

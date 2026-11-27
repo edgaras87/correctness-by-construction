@@ -38,6 +38,6 @@ decision time.
 
 <!-- The form of the next ADR: copy this file, bump the number,
      replace every section. Keep it under one page.
-     Why the form is as it is: (the Concept Deliverer's docs/conventions/project-recording/
-     §3.4, How an ADR is written).
-     foundation: the project-recording convention -->
+     Born from the Backend Kit's Record Stub for the decisions: this repo's
+     own from birth, never a Kit Copy. Why its form is as it is:
+     records, in CBC backend design, kept in the Maintainer Repo. -->

@@ -15,9 +15,9 @@ CBC Framing decides. The answer replaces this placeholder.>
      Releasing = rename [Unreleased] to a version + date, open a
      fresh one. A breaking change is called out as one; under
      SemVer it bumps the major version.
-     Why the form is as it is: (the Concept Deliverer's docs/conventions/project-recording/
-     §6.4, How the changelog is written).
-     foundation: the project-recording convention -->
+     Born from the Backend Kit's Record Stub for the changelog: this repo's
+     own from birth, never a Kit Copy. Why its form is as it is:
+     records, in CBC backend design, kept in the Maintainer Repo. -->
 
 ## [Unreleased]
 

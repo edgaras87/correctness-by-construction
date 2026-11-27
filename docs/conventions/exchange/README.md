@@ -31,7 +31,7 @@ The first convention whose Work Approaches split between the two
 arrangements, each side holding only what it runs
 (`docs/conventions/agent-arrangement/`, *The seats*).
 
-- **`delivery/container/temp/README.md` — shipped at birth**, the
+- **`knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/scratch-space/README.md` — shipped at birth**, the
   CBC Run's own from then on: what its `temp/` is for, where a delivery
   arrives and the CBC Run keeps its own scratch (§3.1, *Delivery Staging*; §4, *The Delivery Take*).
 - **`delivery/container/.claude/rules/delivered-copies.md` — an
@@ -208,10 +208,11 @@ At birth, every file of each group. After it, only the copies:
 - each group's Glossary Names, in `docs/glossary/`;
 - the concept.
 
-The rest of the Container Group went once and is the CBC Run's: its
-records, the two composed files, the Entry File and `README.md`, the
-Decisions Log; and so did the hygiene files, from
-`knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/repo-hygiene/`
+The rest of the Container Group went once and is the CBC Run's: the
+plan's and the glossary's Record Stubs, the two composed files, the Entry File and `README.md`, the
+Decisions Log; and so did the hygiene files, six Record Stubs and the
+scratch space's README, from their folders under
+`knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/`
 (§2.4, *The records' exception*). A
 later delivery that carried it would land Record Stubs over what the
 CBC Run has written.

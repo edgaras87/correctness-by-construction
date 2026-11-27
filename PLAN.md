@@ -145,7 +145,7 @@ work.
 Goal: every part of the project-recording manual, and of the record
 forms that wait on it alone, stands at its layer, and the manual is
 gone.
-Now: stage 3, the Backend Kit's Adapted Cases.
+Now: stage 4, this repo's own Adapted Cases.
 Gate:
 
 **At the opening.**
@@ -171,12 +171,16 @@ Gate:
 - [x] Records has a Problem Domain Idea in each Problem Domain,
       keeping knowledge and CBC backend design, each with its row in
       §3.2's table of the same document (2026-11-27).
-- [ ] The Backend Kit holds each record's form as an Adapted Case at
+- [x] The Backend Kit holds each record's form as an Adapted Case at
       layer 3, at its path by §3.5: the seven Record Stubs of
       `delivery/container/` that wait on the manual alone, each its
       Instruction Text, with an Adapted Understanding Text for a why
       of that record alone; the Pure Seed copies them from there (the
-      map's QUESTION-1).
+      map's QUESTION-1) (2026-11-27, one folder each under
+      `knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/`;
+      no record has a why of its own, so none has an Adapted
+      Understanding Text; `temp/README.md` is the scratch space's,
+      not a record's).
 - [ ] This repo's four record forms that wait on the manual alone are
       its own Adapted Cases at layer 4 (§3.4, *The layer of a repo's
       work*): each record's header where it is, and an Adapted

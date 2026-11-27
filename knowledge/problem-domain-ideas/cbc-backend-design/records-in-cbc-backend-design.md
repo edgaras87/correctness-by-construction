@@ -3,7 +3,7 @@
 <!--
 What it is: a Problem Domain Idea of CBC backend design, the Backend Repos' Problem Domain, and its one home (knowledge/backbone-ideas/layers-of-knowledge.md §3.2, The Problem Domain layer). Still a draft and a trial: practice changes it.
 What it stands on: knowledge/backbone-ideas/records.md, the Backbone Idea it is adapted from. It adapts that document, and never retells it.
-What stands on it: the Backend Kit's Adapted Cases for the records, the Record Stubs and the playbook.
+What stands on it: the Backend Kit's Adapted Cases for the records, the Record Stubs and the playbook, and for the scratch space, its README.
 Its place in the repo: knowledge/problem-domain-ideas/cbc-backend-design/ (ADR-0084). It is kept in the Maintainer Repo, and never copied to a Backend Repo.
 Its first sources, input and not rules: the project-recording manual, docs/conventions/project-recording/README.md: What this is made usable as; The seats, The CBC Run's seat, and its items 4 to 6; §2.4, §3.3, §3.4, §7.5, §8.1, §8.4 and §9; the records' exception, docs/conventions/exchange/README.md §2.4.
 How it is edited: a trial, as in the layers of knowledge: a section's rules close it, in a last paragraph marked Rules, and govern that section.
@@ -31,12 +31,12 @@ Borrowed:
 
 ## 2. At birth
 
-A Backend Repo is born with a Record Stub for each of its records. Each holds its form in its header, so the rule is in front of the agent when it opens the record (`knowledge/backbone-ideas/records.md` §13, *Where a record's rules sit*). From then each record is the Backend Repo's own. A record holds what one Backend Repo did, so a newer Record Stub has nothing to say to a record already filled.
+A Backend Repo is born with a Record Stub for each of its records. Each holds its form in its header, so the rule is in front of the agent when it opens the record (`knowledge/backbone-ideas/records.md` §13, *Where a record's rules sit*). From then each record is the Backend Repo's own. A record holds what one Backend Repo did, so a newer Record Stub has nothing to say to a record already filled. The README of its scratch space comes the same way (`knowledge/backbone-ideas/records.md` §15, *The scratch space*).
 
 **Rules:**
 
-- A Backend Repo's first commit holds a Record Stub for each of its records.
-- No Kit Update changes a Backend Repo's records after birth.
+- A Backend Repo's first commit holds a Record Stub for each of its records, and the README of its scratch space.
+- No Kit Update changes a Backend Repo's records, or its scratch space's README, after birth.
 
 ## 3. The plan
 

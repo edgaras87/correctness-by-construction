@@ -9,9 +9,9 @@
      Mark dead ends with "DEAD END:" so they're greppable.
      End every session with a "Resume:" line: the next session starts there.
      When this file passes 300 lines, split it into devlog/<YYYY-MM>.md per month.
-     Why the form is as it is: (the Concept Deliverer's docs/conventions/project-recording/
-     §4.4, How the devlog is written).
-     foundation: the project-recording convention -->
+     Born from the Backend Kit's Record Stub for the devlog: this repo's
+     own from birth, never a Kit Copy. Why its form is as it is:
+     records, in CBC backend design, kept in the Maintainer Repo. -->
 
 ## <YYYY-MM-DD>  (Step 0: Bootstrap)
 
