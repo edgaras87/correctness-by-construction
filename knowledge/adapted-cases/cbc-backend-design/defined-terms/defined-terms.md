@@ -11,7 +11,7 @@ Each Defined Term is written with capitals at every use, and bold only here. Sea
 
 - **Adapted Case:** a part of the Backend Kit, written for one piece of work or for what all the work uses: an Adapted Understanding Text, with the Instruction Texts built on it. Its home: `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms*.
 - **Adapted Understanding Text:** the text of an Adapted Case that says why its Instruction Texts are as they are. It never loads, and is read when they change. Its home: `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms*.
-- **Agent Skill:** a file under `.claude/skills/<name>/`, its `SKILL.md`, read when its moment comes. Its home: `docs/conventions/agent-arrangement/` §3.1, *`.claude/skills/`*.
+- **Agent Skill:** a file under `.claude/skills/<name>/`, its `SKILL.md`, read when its moment comes. Its home: `knowledge/backbone-ideas/agent-files.md` §1, *Its Defined Terms*.
 - **Backend Kit:** the set of Adapted Cases this repo was born with copies of. It is kept in the Maintainer Repo, and its changes reach this repo by a Backend Kit Update. Its home: `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms*.
 - **Backend Kit Copy:** a copy of a Backend Kit file, as it lives in this repo. Short form: **Kit Copy**. Its home: `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms*.
 - **Backend Kit Copy Change:** this repo's change to a Backend Kit Copy. Short form: **Copy Change**. Its home: `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms*.
@@ -24,7 +24,7 @@ Each Defined Term is written with capitals at every use, and bold only here. Sea
 - **Hygiene Base:** the three files `.gitignore`, `.gitattributes` and `.editorconfig` as this repo was born with them, true for any repo. Each ends at a marked line, for its Stack Overlay. Its home: `knowledge/backbone-ideas/repo-hygiene.md` §1, *Its Defined Terms*.
 - **Instruction Text:** a text of an Adapted Case that the agent acts on in its work. Its home: `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms*.
 - **Maintainer Repo:** the repo that keeps the Backend Kit, and reads back what this repo learns. Its home: `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms*.
-- **Paths Rule:** a rule file with a `paths:` list, loaded when a file it names is touched. Its home: `docs/conventions/agent-arrangement/` §5.6, *Rules files*.
+- **Paths Rule:** a rule file with a `paths:` list, loaded when a file it names is touched. Its home: `knowledge/backbone-ideas/agent-files.md` §1, *Its Defined Terms*.
 - **Plan Step:** one piece of this repo's plan, closed at its gate. Its home: `knowledge/backbone-ideas/records.md` §1, *Its Defined Terms*.
 - **Record Stub:** a record as this repo was born with it: the Backend Kit's file, its form in its header, its content still to be filled. Its home: `knowledge/problem-domain-ideas/cbc-backend-design/records-in-cbc-backend-design.md` §1, *Its Defined Terms*.
 - **Stack Overlay:** the lines this repo's stack adds to each file of the Hygiene Base, appended below its marked line. Its home: `knowledge/backbone-ideas/repo-hygiene.md` §1, *Its Defined Terms*.
