@@ -1,16 +1,9 @@
----
-foundation: the facts-in-sync convention
----
+<!-- One of the Backend Kit's files: the Instruction Text of its Adapted Case for one home, an Agent Rule. No paths: line, so it loads in every session. Why it is as it is: its Adapted Understanding Text, kept in the Maintainer Repo. -->
 
 # One home per fact
 
 **Governs:** where a fact is written in records, comments and
 config. Where it lives, never how it reads.
-
-<!-- No paths: line, so this loads at the start of every session:
-     a fact can be retold in any line written. The why is in the
-     facts-in-sync manual (the Concept Deliverer's
-     docs/conventions/facts-in-sync/ §1, One home; The CBC Run's seat). -->
 
 ## The rules
 
