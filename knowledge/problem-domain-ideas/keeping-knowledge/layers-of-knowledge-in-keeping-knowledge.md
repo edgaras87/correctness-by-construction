@@ -192,7 +192,7 @@ Each layer has one folder, so a text's path says its layer:
 
 - layer 1: `knowledge/backbone-ideas/`;
 - layer 2: `knowledge/problem-domain-ideas/<Problem Domain>/`, such as `keeping-knowledge/`;
-- layer 3: `knowledge/adapted-cases/<Problem Domain>/`, one set for each Problem Domain. In it, a folder for each group, such as `keeping-knowledge/`, and in that a folder for each Adapted Case, named after it, its texts together, each named by its kind, such as `understanding.md` and `rule.md`. The Defined Terms sit in `defined-terms/`, beside the groups. Each Instruction Text is written as it loads in a Backend Repo;
+- layer 3: `knowledge/adapted-cases/<Problem Domain>/`, one set for each Problem Domain. In it, a folder for each group, such as `keeping-knowledge/`, and in that a folder for each Adapted Case, named after it, its texts together. The Adapted Understanding Text is `understanding.md`. An Instruction Text whose name is fixed where it lands in a Backend Repo, by the tool or by its idea, takes that name, such as `SKILL.md`, `CLAUDE.md` or `TODO.md`; any other is named by its kind, such as `rule.md`. The Defined Terms sit in `defined-terms/`, beside the groups. Each Instruction Text is written as it loads in a Backend Repo;
 - layer 4, this repo's own Adapted Cases: whole in `.claude/`. The Instruction Text sits where its kind loads, such as `.claude/rules/`. The Adapted Understanding Text sits in `.claude/understanding/`, which never loads.
 
 A Backend Repo's layer 4 is kept in the Backend Repo.
