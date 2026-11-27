@@ -702,6 +702,11 @@
         when that text was written without the idea; the rename grep
         for a text being written looks for triggers naming it
         (2026-11-27, the Agent Model's Plan Step).
+      - a part check at a Plan Step's opening lists each rule of the
+        source, not each section: the body's line of 72 sat inside the
+        commit-messages manual's §2.1, and was found unplaced only at
+        the manual's deletion (2026-11-27, the commit-messages manual's
+        Plan Step).
       Trigger: the rewrite done.
       See: `TODO-CONVERSATION-MEMORY.md` §14, *A sweep, and what
       looking back is*, §21, *A full read for missing fact
