@@ -138,3 +138,152 @@ reason. That is a finding about the item, not a Plan Step skipping
 work.
 
 ---
+
+## Step: Shrink the Tiers Model to what waits    [~]
+
+Goal: every part of the Tiers Model, `docs/models/tiers.md`, that has
+a home in the layers points there, and what stays says what it waits
+for.
+Now: stage 1, the parts held already.
+Gate:
+
+**At the opening.**
+
+- [x] The Plan Step's branch `tiers-2026-11-27`, if it has one, is cut
+      from main, and nothing of the Plan Step was done on main
+      (`.claude/rules/working-a-reading.md`, step 1)
+      (2026-11-27, cut at `51cfcd51`, before the opening commit).
+- [x] This Plan Step Gate was written before the work started
+      (2026-11-27, in the Plan Step's opening commit).
+- [x] The Plan Step's Work Approach is known: the stages its Notes
+      list, from the map, `temp/rewrite-map.md` §9, *Every text*, and
+      §10, *Shared questions*, and from the Idea-to-Output Model's
+      Plan Step; no Approach on Trial drafted (2026-11-27).
+
+**The Plan Step's own items.**
+
+- [ ] The Tiers Model does not go: it keeps §2.2, §2.3, §3.1 and §3.3,
+      the homes of 7 Glossary Names, and goes when the last of them
+      has landed (decision A).
+- [ ] §2.1 keeps its heading and one line pointing at the layers
+      document's open question 1, in keeping knowledge
+      (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md`
+      §5, *Open questions*). That question holds the rule a second
+      Maintainer Repo follows and its trigger, cites ADR-0038, and no
+      longer points at §2.1 (decision C).
+- [ ] §3.2 has landed in how an agent works, in CBC backend design,
+      §2, *The case nobody watches*, from §3.2's own lines; §3.2 points
+      there, that text borrows Told Channel, and the Told Channel's
+      glossary entry gives its second meaning that home (decision B).
+- [ ] §3.4 and §3.5 point at each fact's home in Change, in keeping
+      knowledge, Change, in CBC backend design, and the layers
+      document in keeping knowledge.
+- [ ] §4.1 points at Change §3, *How the layers fill*, and the layers
+      of knowledge §3.4, *The layer of work*.
+- [ ] §4.2 points at Change, in keeping knowledge §2, *The arrows*,
+      and the layers document in keeping knowledge §3, *The layers*
+      (decision D).
+- [ ] Each part the map's §9 lists for the model has landed, waits
+      with its home named, or was judged not needed, and the commit
+      that ends it names where.
+- [ ] The model's opening says what it still holds and where each
+      part goes, and the map's row for it says the same.
+- [ ] No pointer to the model elsewhere changed, and each still
+      resolves: a section that leaves keeps its heading.
+- [ ] A Change Walk over what stands on the model finds no line its
+      changes make untrue
+      (`knowledge/problem-domain-ideas/keeping-knowledge/one-home-in-keeping-knowledge.md`
+      §4, *The Change Walk*).
+
+**Known already.** The Plan Step uses no Agent Skill or Agent Rule
+with a *Gates* section; the own items stand alone.
+
+**At the close.**
+
+- [ ] Every link and path in the records resolves.
+- [ ] Every ADR a record cites exists.
+- [ ] Each pair of copies agrees, such as the worked example in the
+      cbc-framing Agent Skill and in the cbc-slice Agent Skill.
+- [ ] No line of Living Text in a record the Plan Step touched, or one that
+      mentions its subject, still says "now", "today" or "not yet"
+      about something the Plan Step changed.
+- [ ] New and changed text meets `.claude/rules/writing.md`.
+- [ ] Every commit on `tiers-2026-11-27` follows the commit-messages Agent Skill.
+      Its subjects are counted by script: one up to 70 characters
+      passes, and one past 70 is the reviewer's to keep or rewrite
+      (`knowledge/backbone-ideas/commit-messages.md` §3, *The subject*).
+- [ ] No commit straddles agent and project paths
+      (`knowledge/backbone-ideas/commit-messages.md` §4, *What shares a commit*).
+- [ ] The Plan Step's lessons are written back where they came from:
+      conventions, the playbook, the concept.
+- [ ] `CLAUDE.md` read top to bottom; each line still passes its
+      three tests, or leaves (`knowledge/backbone-ideas/agent-files.md` §5, *How the Entry File is written*).
+- [ ] Each Approach on Trial the Plan Step drafted or used has this
+      use's dated note, and was handed over for evaluation
+      (`.claude/approaches-on-trial/approach-drafting.md` §3, *Close*).
+
+Notes:
+- Opened 2026-11-27, the eighth Plan Step of TODO's "Rewrite today's
+  Maintainer Repo into the layers model, by the map", chosen by the
+  reviewer: the model needs no text first, and the exchange and shapes
+  manuals wait on it (the map's §9). The TODO item stays: it is the
+  whole rewrite.
+- Checked at the opening, each part against its home, line by line:
+  - held already: the five facts of §3.5, in Change, in keeping
+    knowledge §3.5, *Deliver the Kit Update* (a Backend Repo cannot
+    see the Maintainer Repo; nothing crosses without the human's
+    word; every Kit Copy whole, at one Kit Version) and §3's picture
+    (reads, writes nothing there); in the layers document in keeping
+    knowledge §1 (the originals stay in the Maintainer Repo); in
+    Change, in CBC backend design §2, *Changing a Kit Copy* (a Kit
+    Copy changes only when the work shows it does not fit); §3.4's
+    Delivery Pin moving at each take, in Change, in keeping knowledge
+    §3.6, *Take the Kit Update*, item 4; §4.1's lesson as high as it
+    is true, in Change §3, and a text true only for its project, in
+    the layers of knowledge §3.4;
+  - waits: §2.2 and §2.3, the homes of Concept Repo, Run Repo,
+    Concept Garden, Concept Deliverer and CBC Run; §3.1, of CBC Run
+    Birth, until birth lands in Change with the Pure Seed (the map's
+    QUESTION-7); §3.3, of Record Harvest, until the exchange manual
+    is rewritten;
+  - judged not needed: §1, the drawing, which the layers document's
+    picture in keeping knowledge draws; §2.1's second paragraph, the
+    handbook's story, ADR-0038's.
+- Decision A, at the opening, on the reviewer's word: the model
+  shrinks to what waits, and does not go. 7 Glossary Names have their
+  home in it, used across texts not yet rewritten, `CLAUDE.md` among
+  them. A section that leaves keeps its heading and one line pointing
+  at its new home, as the Idea-to-Output Model's did (devlog
+  2026-11-27, evening, the Idea-to-Output Model, decision D).
+  Removing it now, the 7 Names moved to the nearest Defined Terms,
+  was rejected: those are close to theirs but not the same, and 22
+  files of Living Text point at the model.
+- Decision B, at the opening, on the reviewer's word: §3.2, a warning
+  told by hand to a Backend Repo after its own work missed it, lands
+  in how an agent works, in CBC backend design §2: a rule reaching a
+  Backend Repo's agent outside its Kit Copies. No layered text held
+  it. Keeping it in the model was rejected: its home exists. So was
+  Change, in keeping knowledge: a warning told by hand is a channel,
+  not a change travelling between the repos.
+- Decision C, at the opening, on the reviewer's word: §2.1's rule, a
+  second Maintainer Repo copies the parts it needs and a kit is
+  weighed only after three have lived (ADR-0038), moves into the
+  layers document's open question 1, which pointed at §2.1 for it.
+  Leaving it in §2.1 was rejected: the question would rely on a text
+  that is going, and §2.1 pointing back would make a circle.
+- Decision D, at the opening, on the reviewer's word: §4.2, *The
+  dependency rule*, points at Change, in keeping knowledge §2, and
+  the layers document in keeping knowledge §3. Read whole, it says
+  what crosses between the repos, and that each repo is one kind. The
+  map's QUESTION-5 sends it to the layers rules on links, as "which
+  text may point at which"; those rules hold nothing it says, and the
+  map's row is corrected at stage 3.
+- Its stages:
+  1. the parts held already: §3.4, §3.5, §4.1 and §4.2 point at their
+     homes; §1 and §2.1's second paragraph go, judged not needed;
+  2. the parts that land: §2.1's rule in the layers document's
+     question 1; §3.2 in how an agent works, in CBC backend design,
+     with the Told Channel's glossary entry;
+  3. what waits: the model's opening says what it still holds; the
+     map's row says the same;
+  4. the close, the closing items by script.
