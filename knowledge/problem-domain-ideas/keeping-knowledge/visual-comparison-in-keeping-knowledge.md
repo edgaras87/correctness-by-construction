@@ -5,7 +5,7 @@ What it is: a Problem Domain Idea of keeping knowledge, the Maintainer Repo's Pr
 What it stands on: knowledge/backbone-ideas/visual-comparison.md, the Backbone Idea it is adapted from. It adapts that document, and never retells it.
 What stands on it: this repo's own Adapted Case for visual comparison.
 Its place in the repo: knowledge/problem-domain-ideas/keeping-knowledge/ (ADR-0084).
-Its first sources, input and not rules: the visual-comparison manual, docs/conventions/visual-comparison/README.md: What it is for, its case; The seats; What this does not cover, its first item, the Mermaid trial (PLAN.md, the visual-comparison manual's Plan Step, decisions A to C). The decisions behind them: ADR-0027; ADR-0028.
+Its first sources, input and not rules: the visual-comparison manual, docs/conventions/visual-comparison/README.md, deleted on 2026-11-27, its last state in git at e8edf8f3: What it is for, its case; The seats; What this does not cover, its first item, the Mermaid trial (PLAN.md, the visual-comparison manual's Plan Step, decisions A to C). The decisions behind them: ADR-0027; ADR-0028.
 How it is edited: a trial, as in the layers of knowledge: a section's rules close it, in a last paragraph marked Rules, and govern that section.
 -->
 

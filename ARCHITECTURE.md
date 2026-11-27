@@ -108,8 +108,6 @@ they hand work to each other is the conventions' Local Map,
 - `docs/conventions/retrospective/` — how a finished CBC Run looks
   back.
 - `docs/conventions/shapes/` — what a kind of output looks like.
-- `docs/conventions/visual-comparison/` — how the way a structure is
-  shown is chosen.
 - `docs/conventions/writing/` — how a text reads.
 
 ### 1.3 The Idea Models

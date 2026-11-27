@@ -144,7 +144,7 @@ work.
 Goal: every part of the visual-comparison manual,
 `docs/conventions/visual-comparison/`, stands at its layer, with the
 Agent Skill pair that waits on it alone, and the manual is gone.
-Now: stage 5, the manual goes.
+Now: stage 6, the close.
 Gate:
 
 **At the opening.**
@@ -202,11 +202,15 @@ Gate:
       (2026-11-27, stages 3 and 4: `b471ae1e`, `8562d3f2`; in ours,
       two twins gave way, CBC Run Reading and Idea Model, the
       entries' checks the same).
-- [ ] Each part the map's §9 lists for the manual has landed, or was
-      judged not needed, and the commit that ends it names where.
-- [ ] The manual is gone, and every Living Text that named its path,
+- [x] Each part the map's §9 lists for the manual has landed, or was
+      judged not needed, and the commit that ends it names where
+      (2026-11-27, stage 5: the manual's deletion, its body).
+- [x] The manual is gone, and every Living Text that named its path,
       sections or name names where each part now stands
-      (`knowledge/backbone-ideas/one-home.md` §5, *When a home moves*).
+      (`knowledge/backbone-ideas/one-home.md` §5, *When a home moves*)
+      (2026-11-27, stage 5: the manual's deletion and the agent's
+      follower; by grep, the map's three rows and TODO's Idea example
+      kept as they are).
 
 **Known already.** The commit-messages Agent Skill has no *Gates*
 section; the own items stand alone.

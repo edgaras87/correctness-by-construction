@@ -6,7 +6,7 @@ What it stands on: knowledge/backbone-ideas/visual-comparison.md, the Backbone I
 What stands on it: the Backend Kit's Adapted Case for visual comparison.
 Its place in the repo: knowledge/problem-domain-ideas/cbc-backend-design/ (ADR-0084). It is kept in the Maintainer Repo, and never copied to a Backend Repo.
 Its first sources, input and not rules:
-- the visual-comparison manual, docs/conventions/visual-comparison/README.md: The seats; What this does not cover, its first item (PLAN.md, the visual-comparison manual's Plan Step, decision C);
+- the visual-comparison manual, docs/conventions/visual-comparison/README.md, deleted on 2026-11-27, its last state in git at e8edf8f3: The seats; What this does not cover, its first item (PLAN.md, the visual-comparison manual's Plan Step, decision C);
 - the Backend Kit's visual-comparison Agent Skill, delivery/container/.claude/skills/visual-comparison/SKILL.md: its step 4, the notations under their condition; its §5, the project's own forms.
 How it is edited: a trial, as in the layers of knowledge: a section's rules close it, in a last paragraph marked Rules, and govern that section.
 -->

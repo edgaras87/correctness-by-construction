@@ -168,9 +168,8 @@ commit-plan Agent Skill, the one-home Agent Rule. A manual is written
 the same way, the commit-plan manual. A sentence that points at where a fact is written gives the path, as a
 Fact Reference (`knowledge/problem-domain-ideas/keeping-knowledge/one-home-in-keeping-knowledge.md` §2, *Writing a Fact Reference*).
 
-Four names older than this part are shared: commit-plan,
-visual-comparison and retrospective, each a manual and an Agent
-Skill; writing, a manual and an Agent Rule. The kind keeps
+Three names older than this part are shared: commit-plan and
+retrospective, each a manual and an Agent Skill; writing, a manual and an Agent Rule. The kind keeps
 them apart in text (ADR-0078).
 
 ## 2. The Convention Manual

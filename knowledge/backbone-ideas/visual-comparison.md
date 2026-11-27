@@ -4,7 +4,7 @@
 What it is: a Backbone Idea, bound to no Problem Domain, and its one home (knowledge/backbone-ideas/layers-of-knowledge.md §3.1, The Backbone Idea layer).
 Its place in the repo: knowledge/backbone-ideas/ (ADR-0084).
 Why it is an idea of its own: both Problem Domains work by it (temp/rewrite-map.md §10, Shared questions, QUESTION-7).
-Its first sources, input and not rules: the visual-comparison manual, docs/conventions/visual-comparison/README.md: its opening; What it is for, without its case; §1; §2; What this does not cover, as the neighbours below (PLAN.md, the visual-comparison manual's Plan Step, decisions A to C). The decisions behind them: ADR-0028; ADR-0030.
+Its first sources, input and not rules: the visual-comparison manual, docs/conventions/visual-comparison/README.md, deleted on 2026-11-27, its last state in git at e8edf8f3: its opening; What it is for, without its case; §1; §2; What this does not cover, as the neighbours below (PLAN.md, the visual-comparison manual's Plan Step, decisions A to C). The decisions behind them: ADR-0028; ADR-0030.
 What stands on it: its Problem Domain Ideas, one for each Problem Domain. Each points here, and never retells it.
 How it is edited:
 - It gives no example from one Problem Domain's work.
