@@ -55,15 +55,15 @@ would describe intent, as a template does.
 | stands on | a file | what the whole of it was written from |
 | points | a line | the home of a fact it relies on: the one place that fact is written |
 | governs | an output | the Output Shape it is checked against, at a Plan Step Gate |
-| written from | an output or Work Approach | the kind written from it (§4.2, *The upward direction*) |
+| written from | an output or Work Approach | the kind written from it (`knowledge/backbone-ideas/change.md` §4, *The arrows*) |
 
 A file stands on one thing; a line may point at a fact's home in
 any document at its own level or above
 (`knowledge/backbone-ideas/layers-of-knowledge.md` §3, *The layers*).
 
 A placed Work Approach stands on a Canonical Description, never on an
-Idea Model directly. An Approach on Trial stands on none yet (§4.2,
-*The upward direction*).
+Idea Model directly. An Approach on Trial stands on none yet
+(`knowledge/backbone-ideas/change.md` §4, *The arrows*).
 
 ### 3.2 The direction of a link
 
@@ -79,46 +79,9 @@ agree again, by changing the lower, the upper, or both.
 
 ## 4. The two directions
 
-### 4.1 The downward direction
-
-An Idea Model is adapted by a manual. The manual is made usable as
-Agent Skills, Agent Rules and Output Forms. Work done with them leaves
-outputs. Each stands on the one above.
-
-### 4.2 The upward direction
-
-New things are born the other way:
-
-```
-unfamiliar work ──► Approach on Trial ──► convention ──► Idea Model
-outputs ──► Output Shape
-```
-
-- **An Approach on Trial** comes from work no Work Approach covers.
-- **A convention** comes from Work Approaches whose rules hold across
-  projects.
-- **An Idea Model** comes from a convention whose idea is general enough
-  to be used elsewhere. Here, for example, the Tiers Model took the
-  Exchange Convention's general facts on 2026-10-28, by an Approach on
-  Trial still open, `.claude/approaches-on-trial/model-placing.md`.
-  The earlier Idea Models came from the handbook, the repo that held
-  the working arrangement before this repo, now history (ADR-0038).
-- **An Output Shape** comes from outputs that exist.
-
-So a new text finds its foundation by looking up this path for the
-Canonical Description whose idea it applies. Where none states it, the text is
-first-time work, and the step up writes the Canonical Description it will
-stand on.
-
-The steps between repos, a CBC Run's lesson reaching the Concept Deliverer, are the Tiers Model's
-(`docs/models/tiers.md` §3, *The flows*).
-
-### 4.3 After the step up
-
-The lower text is rewritten to stand on the new one. An Agent Skill
-drafted as an Approach on Trial is rewritten from the convention
-written out of it. A manual whose idea became an Idea Model stands on
-it. A new text is written up; afterwards, reliance goes up too.
+How a text is written from the one above it, and how new knowledge
+goes up, is Change's (`knowledge/backbone-ideas/change.md` §3, *How
+the layers fill*, and §4, *The arrows*).
 
 ## 5. An Idea Model and a concept
 

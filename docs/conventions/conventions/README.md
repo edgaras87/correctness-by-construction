@@ -119,7 +119,7 @@ Which files carry it, and where:
 
 An Approach on Trial carries none: it is first-time work, and stands
 on no Canonical Description until an evaluation places it
-(`docs/models/idea-to-output.md` §4.2, *The upward direction*).
+(`docs/models/idea-to-output.md` §3.1, *The four Chain Links*).
 
 An Agent Skill or Agent Rule whose understanding is written beside it, in `.claude/understanding/` or in the Backend Kit's Adapted Case under `knowledge/adapted-cases/`, carries none either. It stands on that text, and that text on one under `knowledge/`, which no value above names. That text's header says what it stands on, and what stands on it. It carries one when the rewrite of today's texts into `knowledge/` brings the Foundation Line there.
 
@@ -309,7 +309,7 @@ Optional: Fact References only, as root paths.
 A new convention can come from an Approach on Trial, ours or a
 CBC Run's, when its evaluation, by the approach-evaluation Approach
 on Trial, places a piece as a convention of its own
-(`docs/models/idea-to-output.md` §4.2, *The upward direction*). The
+(`knowledge/backbone-ideas/change.md` §4, *The arrows*). The
 placing takes these steps:
 
 1. An ADR for the decisions behind it, opened Proposed when it lands

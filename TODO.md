@@ -972,8 +972,8 @@
       Context: the text-division item had an Idea Model only where several
       manuals share an idea. The reviewer asked to weaken that: an
       Idea Model for one convention, "to see general idea behind that
-      convention". The Idea-to-Output Model has an Idea Model come from a convention whose idea is
-      general enough (`docs/models/idea-to-output.md` §4.2, *The upward direction*).
+      convention". Change sends a lesson up as far as it is true
+      (`knowledge/backbone-ideas/change.md` §3, *How the layers fill*).
       Trigger: a convention whose idea another repo could use, with
                no second manual sharing it.
       See: ADR-0063; `30eb42e:TODO-CONVERSATION-MEMORY.md` §1.
