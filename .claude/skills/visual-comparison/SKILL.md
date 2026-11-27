@@ -1,13 +1,22 @@
 ---
 name: visual-comparison
 description: Settle how a structure is shown: a picture, a table or a plain list. Write down what the reader must get, and render every candidate against it. Use when a diagram might be the answer, including deciding it should not be.
-foundation: the visual-comparison convention
 ---
 
 # Visual Comparison
 
 How a structure is shown is settled by rendering, not by argument.
 Write what the reader must get *before* looking at candidates.
+Why it is as it is: `.claude/understanding/visual-comparison.md`.
+
+Borrowed:
+
+| Defined Term | Defined in |
+|---|---|
+| Agent Skill | `knowledge/backbone-ideas/agent-files.md` §1, *Its Defined Terms* |
+| Backend Repo | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
+| Entry File | `knowledge/backbone-ideas/how-an-agent-works.md` §1, *Its Defined Terms* |
+| Maintainer Repo | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 
 The steps are:
 
@@ -37,7 +46,7 @@ fire, however large the form.
 
 ## 2. The comparison's steps
 
-Why they are so: (`docs/conventions/visual-comparison/` §2.1, *A non-picture in the set*; §2.2, *Deciding by the render*; §2.4, *The buildable notations*).
+Why they are so: (`knowledge/backbone-ideas/visual-comparison.md` §3, *A non-picture in the set*; §4, *Deciding by the render*; §6, *The buildable notations*).
 
 1. **Write the requirements first, in a `temp/` draft.** What the
    artifact must *carry*, not what it should look like. Each one
@@ -102,9 +111,10 @@ name the case, it is not an entry yet.
 - **The dialect built for the job can be the one that fails.**
   Mermaid `block-beta` is meant for stacked blocks and lost both
   the arrow labels and the vertical order. `sequenceDiagram` is
-  meant for handoffs between actors and had to draw a read-only
-  CBC Run Reading as an arrow into the other repo. That asserted the opposite
-  of the rule the exchange existed to keep: a CBC Run Reading writes nothing in the CBC Run. A picture that states
+  meant for handoffs between actors and had to draw the Maintainer
+  Repo's read-only reading of a Backend Repo as an arrow into the other
+  repo. That asserted the opposite of the rule the exchange existed to
+  keep: the reading writes nothing in the Backend Repo. A picture that states
   the opposite of the truth is worse than no picture.
 
 - **A requirement no candidate can hold is evidence about the
@@ -117,7 +127,7 @@ name the case, it is not an entry yet.
   carries text between them, not as a place.
 
 - **Asked for a picture, the comparison is not always what is wanted.**
-  An Idea Model written in prose was asked for a diagram of it. The comparison
+  A model written in prose was asked for a diagram of it. The comparison
   was reached for, and most of it was not run:
   - no non-picture candidate;
   - requirements written after the first candidate was built;
@@ -132,7 +142,7 @@ name the case, it is not an entry yet.
   and writing one would have been ceremony over a comparison that
   did not happen.
 
-- **Using a dialect is not fighting it** (`docs/conventions/visual-comparison/` §2.3, *Fighting a notation*). Ordinary syntax is
+- **Using a dialect is not fighting it** (`knowledge/backbone-ideas/visual-comparison.md` §5, *Fighting a notation*). Ordinary syntax is
   ordinary. Invisible links, spacer nodes and nodes declared out
   of meaning order are the fight, and a candidate needing them has
   lost.
@@ -140,7 +150,7 @@ name the case, it is not an entry yet.
 ## 5. What this does not do
 
 - It does not choose a format for another repo. Our Mermaid trial
-  is provisional and is not delivered; a CBC Run decides its own forms.
+  is provisional and is not delivered; a Backend Repo decides its own forms.
 - It does not run on a schedule, and it is not a review of forms
   already settled.
 
