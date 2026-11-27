@@ -61,7 +61,7 @@ The failure they answer is a rule restated in the Entry File "so it is always in
 
 **Rules:**
 
-- The list is closed. A kind of file is an agent file only by its row here, and a new kind joins with its row.
+- The list is closed. A kind of file is an agent file only by its row here, or in a Problem Domain Idea's own table for its repos. A new kind joins with its row.
 - A file is an agent file when removing it breaks nothing in the project's work.
 - Agent files hold no project truth: what the repo decides, plans or ships is in its records, which a copy that drops the agent files still holds. Where a project fact must sit in an agent file, such as the Records Table in the Entry File, the idea that owns the fact states it, and this one holds only the file.
 

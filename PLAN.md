@@ -145,7 +145,7 @@ work.
 Goal: every part of the agent-arrangement manual,
 `docs/conventions/agent-arrangement/`, stands at its layer, with the
 three texts that wait on it alone, and the manual is gone.
-Now: stage 2, the two Problem Domain Ideas.
+Now: stage 3, the Backend Kit's Adapted Cases.
 Gate:
 
 **At the opening.**
@@ -169,9 +169,9 @@ Gate:
       (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md`
       §3.5, *Where each layer is kept*; the map's QUESTION-7)
       (2026-11-27, stage 1).
-- [ ] Agent files has a Problem Domain Idea in each Problem
+- [x] Agent files has a Problem Domain Idea in each Problem
       Domain, keeping knowledge and CBC backend design, each with its
-      row in §3.2's table of the same document.
+      row in §3.2's table of the same document (2026-11-27, stage 2).
 - [ ] Claude Code's Tool Binding, the manual's §5, stands as two
       Adapted Cases: the Backend Kit's at layer 3 and ours at layer 4,
       each at its path by §3.5 (the map's QUESTION-6).
@@ -264,6 +264,10 @@ Notes:
   Approaches on Trial is listed in plain words, with no Defined Term,
   until the idea of trying a new way of working defines one (the
   map's QUESTION-7).
+- Decision E, at stage 2, on the reviewer's word: a Problem Domain
+  Idea may add a kind of agent file for its own repos, in its own
+  table; CBC backend design adds Output Shapes. Agent files' closed
+  list says so.
 - Its stages, from the map:
   1. the Backbone Idea, from the manual's opening, *What it is for*
      and §1 to §4;
