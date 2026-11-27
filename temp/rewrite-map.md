@@ -527,7 +527,10 @@ Each text it touches names it in §9.
   - **how instructions are written for an agent:** how an Agent Skill
     or Agent Rule is written, what a convention asserts, and the
     Foundation Line, a new idea, written when the rewrite reaches the
-    conventions manual.
+    conventions manual. It takes the Agent Model's §9 too: which kind
+    of file carries a rule, chosen by the channel table, and no field
+    in a file names a channel (the Agent Model's Plan Step,
+    2026-11-27).
 - **QUESTION-6. Where the Tool Bindings go.** How the Agent Model's
   channels map onto Claude Code: agent-arrangement §5, *The Claude
   Code Tool Binding*, and the Agent Model's §10, *The Tool Bindings*.

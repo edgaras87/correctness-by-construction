@@ -144,7 +144,7 @@ work.
 
 Goal: every part of the Agent Model, `docs/models/agent.md`, stands
 at its layer, and the Agent Model is gone.
-Now: stage 3, this repo's own Adapted Case.
+Now: stage 4, the Agent Model goes.
 Gate:
 
 **At the opening.**
@@ -187,9 +187,14 @@ Gate:
       *Change a Kit Copy*, step 2.~~ Struck, on the reviewer's word:
       it is how a Backend Repo closes a Plan Step, the playbook's
       subject, and moved to the playbook's row of the map's §9.
-- [ ] The Agent Model's §9, *Where each convention lands*, is this
+- [x] The Agent Model's §9, *Where each convention lands*, is this
       repo's own Adapted Case at layer 4, at its path by §3.5, or was
-      judged not needed.
+      judged not needed (2026-11-27, judged not needed, on the
+      reviewer's word: which mechanism serves which channel is held by
+      agent-arrangement §5.1, *Channels to mechanisms*, our Tool
+      Binding; choosing the file by the channel table goes to the
+      idea of how instructions are written for an agent, the map's
+      QUESTION-5; why §9 has no table goes with the Agent Model).
 - [ ] Each part the map's §9 lists for the Agent Model has landed, or
       was judged not needed, and the commit that ends it names where.
 - [ ] The Agent Model is gone, and every Living Text that named its
