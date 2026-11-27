@@ -5,7 +5,7 @@ What it is: a Problem Domain Idea of keeping knowledge, the Maintainer Repo's Pr
 What it stands on: knowledge/backbone-ideas/how-an-agent-works.md, the Backbone Idea it is adapted from. It adapts that document, and never retells it.
 What stands on it: this repo's own Adapted Cases, written mostly from it (knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md §3.4, The layer of a repo's work).
 Its place in the repo: knowledge/problem-domain-ideas/keeping-knowledge/ (ADR-0084).
-Its first source, input and not rules: the Agent Model, docs/models/agent.md: §1's last line; §12's evidence seen in this repo and in the handbook.
+Its first source, input and not rules: the Agent Model, docs/models/agent.md, deleted on 2026-11-27, its last state in git at 703ff7ca: §1's last line; §12's evidence seen in this repo and in the handbook.
 How it is edited: a trial, as in the layers of knowledge: a section's rules close it, in a last paragraph marked Rules, and govern that section.
 -->
 

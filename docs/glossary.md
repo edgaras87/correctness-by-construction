@@ -123,7 +123,7 @@ delivered files below.
   repo adapts it in a Convention Manual of its own
   (`docs/models/idea-to-output.md` §2, *The kinds*, and §5, *An Idea
   Model and a concept*). A particular one is named by its name: the
-  Agent Model, the Tiers Model, the Idea-to-Output Model.
+  Tiers Model, the Idea-to-Output Model.
 - **Convention Manual** — a convention's Canonical Description, at
   `docs/conventions/<name>/README.md` (`docs/conventions/conventions/`
   §2, *The Convention Manual*).
@@ -158,7 +158,7 @@ delivered files below.
   Form, which is read while writing.
 - **Entry File** — the file the tool loads at session start, before
   the first task: `CLAUDE.md` here, and in every CBC Run
-  (`docs/models/agent.md` §4.1, *Ambient Channel*).
+  (`knowledge/backbone-ideas/how-an-agent-works.md` §3.1, *The Ambient Channel*).
 - **Local Map** — a directory's `README.md` that says how the parts
   of that area relate (`knowledge/backbone-ideas/records.md` §1, *Its Defined Terms*).
 - **Agent Rule** — a file under `.claude/rules/`, loaded into the
@@ -276,32 +276,32 @@ delivered files below.
   nothing; it is read when the item is worked
   (`.claude/understanding/conversation-memory.md` §1, *Its Defined Terms*).
 
-## The Agent Model
+## How an agent works
 
 - **Ambient Channel** — text that reaches the agent at session start,
   before the first task: the Entry File and what it loads
-  (`docs/models/agent.md` §4.1, *Ambient Channel*).
+  (`knowledge/backbone-ideas/how-an-agent-works.md` §3.1, *The Ambient Channel*).
 - **Pulled Channel** — a file the agent reads because it decided to
-  (`docs/models/agent.md` §4.2, *Pulled Channel*).
+  (`knowledge/backbone-ideas/how-an-agent-works.md` §3.2, *The Pulled Channel*).
 - **Pushed Channel** — text put in the agent's context at a moment it
   did not choose: a task type matches, an event occurs
-  (`docs/models/agent.md` §4.3, *Pushed Channel*).
+  (`knowledge/backbone-ideas/how-an-agent-works.md` §3.3, *The Pushed Channel*).
 - **Told Channel** — what a human says in the session
-  (`docs/models/agent.md` §4.4, *Told Channel*); between tiers, what a tier
+  (`knowledge/backbone-ideas/how-an-agent-works.md` §3.4, *The Told Channel*); between tiers, what a tier
   above hands a Run Repo as session input (`docs/models/tiers.md`
   §3.2, *The Told Channel*).
 - **Observed Channel** — the results of commands the agent runs: file
   contents, search hits, test output
-  (`docs/models/agent.md` §4.5, *Observed Channel*).
+  (`knowledge/backbone-ideas/how-an-agent-works.md` §3.5, *The Observed Channel*).
 - **Installed Channel** — files that work by existing, such as
   `.gitignore`, and deliver nothing to the context window
-  (`docs/models/agent.md` §4.6, *Installed Channel*).
+  (`knowledge/backbone-ideas/how-an-agent-works.md` §3.6, *The Installed Channel*).
 - **Enforcement Gate** — a check outside the text that turns "should"
   into "cannot": a hook, CI, a human review
-  (`docs/models/agent.md` §7, *The Enforcement Gate*).
+  (`knowledge/backbone-ideas/how-an-agent-works.md` §6, *The Enforcement Gate*).
 - **Tool Binding** — the mechanisms one tool gives the channels and
   the Enforcement Gate, written by the repo that uses the tool
-  (`docs/models/agent.md` §10, *The Tool Bindings*).
+  (`knowledge/backbone-ideas/how-an-agent-works.md` §8, *The Tool Bindings*).
 
 ## The concept and the method
 

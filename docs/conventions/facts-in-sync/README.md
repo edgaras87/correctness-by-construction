@@ -149,11 +149,11 @@ a follower, not a second statement (§1, *One home*; ADR-0059).
 A line that relies on a fact written elsewhere carries a **Fact
 Reference**: the address of the fact's home. It has two readers.
 The agent may follow it to read the fact whole, with no guarantee
-that it will (`docs/models/agent.md` §12.2, *Claims on the Pulled Channel*, claim P1). The Change Walk
+that it will (`knowledge/backbone-ideas/how-an-agent-works.md` §10.2, *On the Pulled Channel*, claim P1). The Change Walk
 re-reads the line when the home changes (§4, *A Canonical Description's rule*). A fact has one home,
 so a Fact Reference has one target: the home of the fact its line
 relies on. The line above relies on a claim about agents, so it
-names the Agent Model, not a convention that applies the claim.
+names how an agent works, not a convention that applies the claim.
 
 That home sits at the line's own level or above: a Canonical Description's
 line points at a Canonical Description or an Idea Model, never at an Agent Skill or a
@@ -202,8 +202,8 @@ docs/conventions/exchange/ §2.4, *The records' exception*), and
 serves this repo's Change Walk alone. A CBC Run cannot open our manuals, so
 the line says what the CBC Run needs without it.
 
-The Agent Model calls any text that sends an agent to a file a
-pointer (`docs/models/agent.md` §12.2, *Claims on the Pulled Channel*, claim P1). A
+How an agent works calls any text that sends an agent to a file a
+pointer (`knowledge/backbone-ideas/how-an-agent-works.md` §10.2, *On the Pulled Channel*, claim P1). A
 Fact Reference is one kind of pointer, and this page calls it only
 by its own name.
 
@@ -392,7 +392,7 @@ Canonical Description or what derives from it. An Agent Rule with
 edit made by script never loads it
 (`docs/conventions/agent-arrangement/` §5.6, *Rules files*). Both
 moments are every task, so both Agent Rules go through the Ambient
-Channel (`docs/models/agent.md` §8, *Choosing a channel*).
+Channel (`knowledge/backbone-ideas/how-an-agent-works.md` §7, *Choosing a channel*).
 
 ## What this does not cover
 

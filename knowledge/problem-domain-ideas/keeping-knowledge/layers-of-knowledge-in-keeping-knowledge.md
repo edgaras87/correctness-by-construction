@@ -29,7 +29,6 @@ Borrowed:
 |---|---|
 | Adapted Case | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
 | Adapted Understanding Text | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
-| Agent Model | `docs/models/agent.md` |
 | Agent Rule | `docs/conventions/agent-arrangement/` §3.2, *`.claude/rules/`* |
 | Agent Skill | `docs/conventions/agent-arrangement/` §3.1, *`.claude/skills/`* |
 | Backbone Idea | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |

@@ -90,7 +90,7 @@ SVG renders but is not text anyone can read in a diff.
 ## Why it arrives this way
 
 An Agent Skill, opened when a structure is hard to see and more than one way
-of showing it could work (`docs/models/agent.md` §4.2, *Pulled Channel*). The agent
+of showing it could work (`knowledge/backbone-ideas/how-an-agent-works.md` §3.2, *The Pulled Channel*). The agent
 recognises the moment by the question it is facing. No file is
 touched that a Paths Rule could load on. Nothing in a record would
 bring the method up then.

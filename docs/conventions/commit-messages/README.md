@@ -12,8 +12,8 @@ rewriting it. Adopted with the Container Group (ADR-0038, 1a, 1c,
 1f). The failure it answers is measured. The subject limit sat in an
 Entry File, through the Ambient Channel, and an Agent Skill pulled
 the rule in. 15 of the first 20 commits of the repo it came from
-broke it: present, correct, unfollowed (`docs/models/agent.md`
-§12.1, *Claims on the Ambient Channel*, A1). So the rule is opened at the commit, not read
+broke it: present, correct, unfollowed (`knowledge/problem-domain-ideas/keeping-knowledge/how-an-agent-works-in-keeping-knowledge.md`
+§3, *What the work showed*, A1). So the rule is opened at the commit, not read
 once. Lived here since: 480 commits under it by
 2026-09-19. CBC Run 3 held forty-four commits on the stop sentence
 alone, with no Enforcement Gate. The stop sentence is the rule that
@@ -126,9 +126,9 @@ is following neither and discovering the shape afterwards. *Its story: devlog 20
 ## Why it arrives this way
 
 An Agent Skill, opened at the moment of writing a commit message
-(`docs/models/agent.md` §4.2, *Pulled Channel*), because the rule held in an
+(`knowledge/backbone-ideas/how-an-agent-works.md` §3.2, *The Pulled Channel*), because the rule held in an
 Entry File, through the Ambient Channel, was present and unfollowed (*What it is for*;
-`docs/models/agent.md` §12.1, *Claims on the Ambient Channel*). The commit is also the moment two other
+`knowledge/backbone-ideas/how-an-agent-works.md` §10.1, *On the Ambient Channel*). The commit is also the moment two other
 rules bind at, the `agent` scope and the stop. That is why those
 sentences live in this Agent Skill and nowhere else.
 

@@ -33,7 +33,7 @@ written from the one before it. A chain may start below an Idea Model:
 
 | Kind | What it is | Here |
 |---|---|---|
-| Idea Model | an idea any repo can adapt; its rules vary by repo, like an interface | `docs/models/`: the Agent Model, the Tiers Model, this one |
+| Idea Model | an idea any repo can adapt; its rules vary by repo, like an interface | `docs/models/`: the Tiers Model, this one |
 | Canonical Description | how one thing is understood today, written down | a convention's manual; the concept, `concept/` |
 | Work Approach | how a piece of work is done | an Agent Skill, an Agent Rule, an Approach on Trial, an Output Form |
 | output | what the work produces | a record's entries, a CBC Run's Invariant Slices and code |
@@ -189,7 +189,8 @@ A project holds no convention, only the Work Approaches made from one.
 ## 7. One chain here
 
 Each file names what it stands on, so the chains are not listed
-here. The Agent Model's chain is the worked example. The Agent Model stands
+here. The Agent Model was deleted on 2026-11-27, its last state in
+git at `703ff7ca`, and this chain is told as it stood then. The Agent Model's chain is the worked example. The Agent Model stands
 above the agent-arrangement manual. That manual stands above the
 Entry File's guard, the comment in it that says what the file must
 not become, and the Decisions Log's header. What the Entry File and
@@ -200,6 +201,6 @@ Model it reasons from.
 ## 8. What it does not answer
 
 - **Which repo a text belongs to** — `docs/models/tiers.md`.
-- **How a text reaches an agent** — `docs/models/agent.md`.
+- **How a text reaches an agent** — `knowledge/backbone-ideas/how-an-agent-works.md`.
 - **How a link is written and checked, and a disagreement found
   and decided** — `docs/conventions/facts-in-sync/`, not this Idea Model.

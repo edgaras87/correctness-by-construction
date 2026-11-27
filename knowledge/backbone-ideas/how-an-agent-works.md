@@ -4,7 +4,7 @@
 What it is: a Backbone Idea, bound to no Problem Domain, and its one home (knowledge/backbone-ideas/layers-of-knowledge.md §3.1, The Backbone Idea layer).
 Its place in the repo: knowledge/backbone-ideas/ (ADR-0084).
 Why it is an idea of its own: both Problem Domains work by it (temp/rewrite-map.md §10, Shared questions, QUESTION-7).
-Its first sources, input and not rules: the Agent Model, docs/models/agent.md: its opening; §2 to §8; §10's two things every Tool Binding must say; §11; §12's claims, their status and the evidence from outside.
+Its first sources, input and not rules: the Agent Model, docs/models/agent.md, deleted on 2026-11-27, its last state in git at 703ff7ca: its opening; §2 to §8; §10's two things every Tool Binding must say; §11; §12's claims, their status and the evidence from outside.
 What stands on it: its Problem Domain Ideas, one for each Problem Domain. Each points here, and never retells it.
 How it is edited:
 - It gives no example from one Problem Domain's work.

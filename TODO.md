@@ -395,8 +395,8 @@
       Context: the agent keeps notes outside the repo, one folder for
       each project folder, its index loaded every session, each note
       read when it seems relevant. They are not in git, and the
-      reviewer rarely reads them; the repo's Agent Model says the repo
-      is the only durable memory (`docs/models/agent.md` §2, §6). A
+      reviewer rarely reads them; how an agent works says the repo
+      is the only durable memory (`knowledge/backbone-ideas/how-an-agent-works.md` §2, *The agent's parts*, §5, *Write-back*). A
       session-end check of them is on trial in `CLAUDE.local.md`.
       Ideas:
       - the kinds of note and where each belongs: the reviewer's
@@ -613,7 +613,8 @@
         session keeps the transcript; an agent the usage limit stopped
         keeps its transcript and resumes by `SendMessage`; a new
         session keeps the repo, the devlog's Resume line and the
-        user's memory files only. The Agent Model §6 states the rule;
+        user's memory files only. How an agent works states the rule
+        (`knowledge/backbone-ideas/how-an-agent-works.md` §5, *Write-back*);
         the Tool Binding (`docs/conventions/agent-arrangement/` §5,
         *The Claude Code Tool Binding*) would hold the mechanics.
       Trigger: the Agent Model is rewritten.
@@ -741,8 +742,8 @@
         changed are shown to the reviewer. Three such rules were found
         at that session's end that lived nowhere else.
       - the agent's memory is not in git, so its changes leave no
-        history, and the repo's Agent Model says the repo is the only
-        durable memory (`docs/models/agent.md` §2, §6): add both to
+        history, and how an agent works says the repo is the only
+        durable memory (`knowledge/backbone-ideas/how-an-agent-works.md` §2, *The agent's parts*, §5, *Write-back*): add both to
         the problem draft (§3.1, and §2.2 as a gap seen); check
         what `/memory` covers; at each check, ask per note
         whether it stays, moves into the repo, or goes.
@@ -1134,7 +1135,7 @@
       Context: it maps the workspace, and the workspace has no home:
       the Concept Garden stays a plain folder until a second Concept Repo
       exists (`docs/models/tiers.md` §2.2, *Concept Repos*). Until then it lives here,
-      beside the Agent Model; `docs/models/` stays.
+      beside the Idea-to-Output Model; `docs/models/` stays.
       Trigger: a second Concept Repo.
       See: devlog 2026-09-30, the Tiers Model.
 

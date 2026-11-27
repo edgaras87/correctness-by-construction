@@ -102,7 +102,7 @@ it.
 ### 3.2 The Told Channel
 
 The Told Channel is not delivery, and is unpinned by design
-(`docs/models/agent.md` §4.4, *Told Channel*). A tier above may hand a
+(`knowledge/backbone-ideas/how-an-agent-works.md` §3.4, *The Told Channel*). A tier above may hand a
 Run Repo a warning as session input, after the Run Repo's own work
 has missed it and is on record. The Run Repo's records say it was
 told. A Run Repo that leans on it has the Told Channel's diagnostic.

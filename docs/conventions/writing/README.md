@@ -193,7 +193,7 @@ there. The Agent Rule then names that kind and its style. None is named yet.
 An Agent Rule with no `paths:`, loaded in every session
 (`docs/conventions/agent-arrangement/` §3.9, *An Agent Rule always loaded*). Its moment is every
 answer and every record written, and nothing else fires at all of
-them (`docs/models/agent.md` §8, *Choosing a channel*):
+them (`knowledge/backbone-ideas/how-an-agent-works.md` §7, *Choosing a channel*):
 
 - **A Paths Rule** loads when a file is touched, after a new one's
   first draft is written. Chat has no path

@@ -134,7 +134,7 @@ What it holds:
   shapes convention`;
 - for a record's form, the convention it comes from, `the
   writing convention`;
-- for a manual, the Idea Model that states its idea, by name, `the agent
+- for a manual, the Idea Model that states its idea, by name, `the tiers
   model`.
 
 Where a file is not derived from what it names, the value says how
@@ -292,8 +292,8 @@ stands on it, so it still holds when the example is gone.
 
 *Why it arrives this way* names the channel, an Agent Skill, an Agent
 Rule, a Record Stub or a file, and why that one.
-Where it reasons from the Agent Model, it carries a Fact Reference to
-the part it rests on, such as (`docs/models/agent.md` §8, *Choosing a channel*).
+Where it reasons from how an agent works, it carries a Fact Reference to
+the part it rests on, such as (`knowledge/backbone-ideas/how-an-agent-works.md` §7, *Choosing a channel*).
 
 ### 2.8 The boundary
 

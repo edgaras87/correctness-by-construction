@@ -171,7 +171,7 @@ It is the commit-messages manual's rule, and this convention points at it
 
 An Agent Skill, because the agent recognises its moment: work
 turning out to need several commits. Nothing in a record would put
-the plan in front of it then (`docs/models/agent.md` §4.2, *Pulled Channel*). The one rule
+the plan in front of it then (`knowledge/backbone-ideas/how-an-agent-works.md` §3.2, *The Pulled Channel*). The one rule
 that must fire at every commit, the stop, is not here: an Agent Skill that
 opens only for multi-commit work cannot carry it, so it is
 the commit-messages manual's (`docs/conventions/commit-messages/` §2.4, *Commit on the word*).

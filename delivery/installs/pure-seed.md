@@ -297,7 +297,7 @@ The prompt holds what is true of this session only:
 The review protocol is true of this session too: a reviewer is
 present *in this session*. An agent pressed to finish skips a stop written only in a file,
 when nothing outside the file says a
-reviewer is present (`docs/models/agent.md` §5, *The context window*;
+reviewer is present (`knowledge/backbone-ideas/how-an-agent-works.md` §4, *The context window*;
 its story: devlog 2026-09-06, "the pure seed runs").
 Pacing is not what a CBC Run Reading measures, so these lines give
 nothing away. PLAN carries only what stays true of the project.

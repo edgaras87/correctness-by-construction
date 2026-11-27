@@ -5,7 +5,7 @@ What it is: a Problem Domain Idea of CBC backend design, the Backend Repos' Prob
 What it stands on: knowledge/backbone-ideas/how-an-agent-works.md, the Backbone Idea it is adapted from. It adapts that document, and never retells it.
 What stands on it: the Backend Kit's Adapted Cases, written from it for a Backend Repo's agent work (knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md §3.3, The Adapted Case layer).
 Its place in the repo: knowledge/problem-domain-ideas/cbc-backend-design/ (ADR-0084). It is kept in the Maintainer Repo, and never copied to a Backend Repo.
-Its first source, input and not rules: the Agent Model, docs/models/agent.md: §1; P2's test; §12's evidence seen in the Backend Repos.
+Its first source, input and not rules: the Agent Model, docs/models/agent.md, deleted on 2026-11-27, its last state in git at 703ff7ca: §1; P2's test; §12's evidence seen in the Backend Repos.
 How it is edited: a trial, as in the layers of knowledge: a section's rules close it, in a last paragraph marked Rules, and govern that section.
 -->
 

@@ -582,7 +582,7 @@ the Delivery Pin does not.
 The CBC Run's half is an Agent Rule rather than an Agent Skill
 because its moment is a copy, or a file in `temp/`, being read. It
 loads then, instead of waiting to be opened by name
-(`docs/models/agent.md` §4.3, *Pushed Channel*). The Concept
+(`knowledge/backbone-ideas/how-an-agent-works.md` §3.3, *The Pushed Channel*). The Concept
 Deliverer's two Agent Skills open on the reviewer's word, "read" or
 "deliver", which is a moment the agent is told rather than one it
 must notice. The CBC Run Reading's form loads by path when a CBC Run

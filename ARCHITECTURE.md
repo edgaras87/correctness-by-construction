@@ -120,9 +120,10 @@ they hand work to each other is the conventions' Local Map,
 ### 1.3 The Idea Models
 
 `docs/models/`: ideas any repo can adapt, their rules varying by repo
-(`docs/models/idea-to-output.md` §2, *The kinds*): the Agent Model,
-the Tiers Model and the Idea-to-Output Model. A manual that stands on
-one names it in its Foundation Line.
+(`docs/models/idea-to-output.md` §2, *The kinds*): the Tiers Model
+and the Idea-to-Output Model. A manual that stands on one names it in
+its Foundation Line. The Agent Model's ideas moved to
+`knowledge/backbone-ideas/how-an-agent-works.md`.
 
 ## 2. The delivery and the CBC Runs
 

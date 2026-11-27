@@ -324,7 +324,7 @@ between them records when the Output Shape changed.
 
 The first convention with no Agent Skill. Its Work Approach is an
 Agent Rule. Its moment is an Output Shape being touched, and an Agent
-Rule loads on that path (`docs/models/agent.md` §4.3, *Pushed Channel*). The Output Shapes themselves reach no
+Rule loads on that path (`knowledge/backbone-ideas/how-an-agent-works.md` §3.3, *The Pushed Channel*). The Output Shapes themselves reach no
 agent while work is written, by design. Nothing loads
 `.claude/shapes/`, and that is what makes them work (§3, *Where an Output Shape lives*).
 

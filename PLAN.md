@@ -144,7 +144,7 @@ work.
 
 Goal: every part of the Agent Model, `docs/models/agent.md`, stands
 at its layer, and the Agent Model is gone.
-Now: stage 4, the Agent Model goes.
+Now: stage 5, the close.
 Gate:
 
 **At the opening.**
@@ -195,14 +195,17 @@ Gate:
       Binding; choosing the file by the channel table goes to the
       idea of how instructions are written for an agent, the map's
       QUESTION-5; why §9 has no table goes with the Agent Model).
-- [ ] Each part the map's §9 lists for the Agent Model has landed, or
-      was judged not needed, and the commit that ends it names where.
-- [ ] The Agent Model is gone, and every Living Text that named its
+- [x] Each part the map's §9 lists for the Agent Model has landed, or
+      was judged not needed, and the commit that ends it names where
+      (2026-11-27, the Agent Model's deletion commit).
+- [x] The Agent Model is gone, and every Living Text that named its
       path or sections names where each part now stands
-      (`docs/conventions/facts-in-sync/` §3.3, *The rename grep*).
-- [ ] Each Glossary Name the new texts define stays in
+      (`docs/conventions/facts-in-sync/` §3.3, *The rename grep*)
+      (2026-11-27, the deletion commit and its agent follower).
+- [x] Each Glossary Name the new texts define stays in
       `docs/glossary.md`, pointing at its new home, while a text
-      outside the layers model uses it (the map's QUESTION-2).
+      outside the layers model uses it (the map's QUESTION-2)
+      (2026-11-27: 9, under the glossary's *How an agent works*).
 
 **Known already.** The commit-messages and commit-plan Agent Skills
 have no *Gates* section; the own items stand alone.
@@ -260,10 +263,10 @@ Notes:
      files by `git grep`, outside the devlog and the closed ADRs; the
      9 Glossary Names it defines repointed;
   5. the close.
-- Open, decided at the stage it meets: what the agent-arrangement
-  manual's Foundation Line, `the agent model`, becomes once the Agent
-  Model goes. Where §12's evidence lines go was decided at stage 1,
-  decision B on the reviewer's word: each where it was seen.
+- Decided at the stage that met it, each on the reviewer's word:
+  where §12's evidence lines go, at stage 1, decision B: each where it
+  was seen; the agent-arrangement manual's Foundation Line, `the agent
+  model`, at stage 4: dropped, as records' decision A dropped theirs.
 - Their trigger met at this Plan Step's close: TODO's "Write the
   understanding of the agent's memory" and "Decide how work is run by
   agents"; named to the reviewer then.

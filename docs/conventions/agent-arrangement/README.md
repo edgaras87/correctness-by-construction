@@ -1,7 +1,3 @@
----
-foundation: the agent model
----
-
 # Agent arrangement
 
 **The agent side of a project: the files that make an agent work
@@ -125,10 +121,10 @@ manual names how in its list of what derives from it:
 ## 1. What the arrangement is
 
 The arrangement is a closed list of agent-side paths a copy of the
-project can drop. The theory this leans on is `docs/models/agent.md`:
-the Ambient Channel (`docs/models/agent.md` §4.1, *Ambient Channel*), the choosing table
-(`docs/models/agent.md` §8, *Choosing a channel*), the claims (`docs/models/agent.md`
-§12, *Claims*). The Agent Model describes; this page explains against it. Its Tool Binding is what Claude Code gives each channel
+project can drop. The theory this leans on is how an agent works, `knowledge/backbone-ideas/how-an-agent-works.md`:
+the Ambient Channel (`knowledge/backbone-ideas/how-an-agent-works.md` §3.1, *The Ambient Channel*), the choosing table
+(`knowledge/backbone-ideas/how-an-agent-works.md` §7, *Choosing a channel*), the claims (`knowledge/backbone-ideas/how-an-agent-works.md`
+§10, *Claims*). How an agent works describes; this page explains against it. Its Tool Binding is what Claude Code gives each channel
 (§5, *The Claude Code Tool Binding*).
 
 ### 1.1 A closed list of paths
@@ -208,7 +204,7 @@ three the Entry File's guard comment states:
   `paths:` (§3.9, *An Agent Rule always loaded*): the convention's channel, not a line here.
   **It points; it never restates**: a summary is lossy on arrival,
   and then two files disagree while both look current
-  (`docs/models/agent.md` §12.7, *Claims on summaries*, claims M1 and M2).
+  (`knowledge/backbone-ideas/how-an-agent-works.md` §10.7, *On summaries*, claims M1 and M2).
 - **No moment.** A line with a moment goes where the moment is:
   - the record's Record Stub;
   - README;
@@ -266,10 +262,10 @@ moves, a convention is adopted, or the build command changes, and at the re-read
 
 ### 2.6 The Entry File's size
 
-The Entry File goes through the Ambient Channel (`docs/models/agent.md` §4.1, *Ambient Channel*).
+The Entry File goes through the Ambient Channel (`knowledge/backbone-ideas/how-an-agent-works.md` §3.1, *The Ambient Channel*).
 It is paid on every task, including the tasks it is irrelevant to. Each
 line added lowers compliance with every other
-(`docs/models/agent.md` §12.1, *Claims on the Ambient Channel*, claim A2,
+(`knowledge/backbone-ideas/how-an-agent-works.md` §10.1, *On the Ambient Channel*, claim A2,
 assumed). So its size is a running concern, not a one-time one.
 
 The cost is what the tool delivers, not the file. HTML comments are
@@ -360,14 +356,14 @@ Base ignores it (`knowledge/backbone-ideas/repo-hygiene.md` §4, *What every rep
 
 Not under `.claude/`, but the arrangement's neighbour: the operator's
 standing instructions, loaded beside the Entry File and read the same
-way (`docs/models/agent.md` §4.1, *Ambient Channel*, ownership). One person, one
+way (`knowledge/backbone-ideas/how-an-agent-works.md` §3.1, *The Ambient Channel*, ownership). One person, one
 checkout. The Hygiene Base ignores it. Its words never enter a record:
 a record that quotes it has let one operator's preference into the
 project's truth. The Container Group ships none, and a CBC Run's
 stays ignored. The Concept Deliverer tracks its own: it has one operator,
 and a setting kept out of git is one no reader of the repo can see
-(ADR-0062). That adapts the Agent Model, which keeps an operator's
-file out of history (`docs/models/agent.md` §4.1, *Ambient Channel*). Outside practice ignores the file, as the tool's
+(ADR-0062). That adapts how an agent works, which keeps an operator's
+file out of history (`knowledge/backbone-ideas/how-an-agent-works.md` §3.1, *The Ambient Channel*). Outside practice ignores the file, as the tool's
 documentation advises.
 
 It holds the operator's settings, never rules. A setting is a
@@ -432,21 +428,21 @@ qualify in a CBC Run and three here. *Its story: ADR-0053.*
 - **Growth by accretion** — every line added dilutes every other line,
   so removing one is maintenance, not tidying.
 - **Keeping a repeated rule in the operator's file** — a rule the
-  human keeps saying is the Agent Model's Told Channel diagnostic
-  (`docs/models/agent.md` §8, *Choosing a channel*): a convention
+  human keeps saying is the Told Channel diagnostic of how an agent works
+  (`knowledge/backbone-ideas/how-an-agent-works.md` §7, *Choosing a channel*): a convention
   is missing, or its channel is not firing. `CLAUDE.local.md` makes
   the saying persistent and the diagnosis invisible.
 
 ## 5. The Claude Code Tool Binding
 
-The Agent Model names the channels and the Enforcement Gate
-(`docs/models/agent.md` §4, *The channels*, §7, *The Enforcement Gate*); a Tool Binding names the mechanisms one
-tool gives each (`docs/models/agent.md` §10, *The Tool Bindings*). This is Claude Code's,
+How an agent works names the channels and the Enforcement Gate
+(`knowledge/backbone-ideas/how-an-agent-works.md` §3, *The channels*, §6, *The Enforcement Gate*); a Tool Binding names the mechanisms one
+tool gives each (`knowledge/backbone-ideas/how-an-agent-works.md` §8, *The Tool Bindings*). This is Claude Code's,
 the tool both Convention Seats use. It changes with the tool's releases, so
 each fact says which release it was checked against, and a change
 is made here alone. A second tool's Tool Binding would be written beside
 this one, and writing it is the test for tool-shaped assumptions
-hiding in the Agent Model. None has been needed.
+hiding in how an agent works. None has been needed.
 
 ### 5.1 Channels to mechanisms
 
@@ -454,7 +450,7 @@ Sketch, Claude Code — checked against 2.1.310 on 2026-10-24, by its
 documentation, by what could be observed here, and by bug reports
 (first checked against 2.1.284 on 2026-09-29):
 
-| Channel (the Agent Model's Layer 1) | Claude Code mechanism |
+| Channel (how an agent works) | Claude Code mechanism |
 |---|---|
 | Ambient Channel | memory files — `CLAUDE.md` (root or under `.claude/`), `~/.claude/CLAUDE.md`, `@` imports; `AGENTS.md`, read when no `CLAUDE.md` is found; `.claude/rules/*.md` without a `paths:` list; `CLAUDE.local.md`, the operator's; the first 200 lines of auto memory's `MEMORY.md`; an Agent Skill's `name` and `description` |
 | Pulled Channel | `Read`, `Grep`, `Glob`; an Agent Skill's body, once the agent invokes it |
@@ -505,7 +501,7 @@ Channel. Claude Code loads an Agent Skill's `name` and `description`
 at session start, and its body only when the agent invokes it: a
 trigger in the Ambient Channel over a body in the Pulled Channel. The
 agent still decides, and the Pushed Channel promises it does not
-(`docs/models/agent.md` §4.3, *Pushed Channel*). An Agent Skill is
+(`knowledge/backbone-ideas/how-an-agent-works.md` §3.3, *The Pushed Channel*). An Agent Skill is
 still the closest this tool gets to the Pushed Channel for a rule
 about an action; a hook closes the remainder.
 
@@ -543,7 +539,7 @@ repo saw the Read tool alone load a rule; on 2.1.310 a `sed` read
 loaded one, as the documentation now says. Bug reports, checked
 2026-10-24, show `paths:` failing silently in some formats and surfaces
 (Claude Code issues #17204, #33581, #87217). An Agent Rule that must arrive
-does not rest on a path alone (`docs/models/agent.md` §7, *The Enforcement Gate*).
+does not rest on a path alone (`knowledge/backbone-ideas/how-an-agent-works.md` §6, *The Enforcement Gate*).
 
 ### 5.7 Compaction and subagents
 
@@ -557,7 +553,7 @@ does not rest on a path alone (`docs/models/agent.md` §7, *The Enforcement Gate
   agents skip `CLAUDE.md`. A fork inherits the whole conversation.
 
 So what a delegated task must know goes in its prompt, the Told Channel
-(`docs/models/agent.md` §4.4, *Told Channel*). An Explore or Plan agent gets none of
+(`knowledge/backbone-ideas/how-an-agent-works.md` §3.4, *The Told Channel*). An Explore or Plan agent gets none of
 the Agent Rules loaded every session, only those whose `paths:` match the files it
 touches.
 
@@ -567,7 +563,7 @@ Every rule here governs a file the Container Group ships and is a
 comment in it. The Entry File's comments carry the rule that it
 points and never restates, the guard comment and the size rule. The
 Decisions Log's carry its own.
-Acting on the file is the trigger (`docs/models/agent.md` §4.6, *Installed Channel*).
+Acting on the file is the trigger (`knowledge/backbone-ideas/how-an-agent-works.md` §3.6, *The Installed Channel*).
 
 Not an Agent Skill, because the failure guarded against is a noticing
 failure. Told "remember X", an agent writes X into the Entry File.
@@ -601,4 +597,4 @@ on (`docs/conventions/exchange/` §2.4, *The records' exception*).
 - The Entry File and the Decisions Log's Record Stub:
   `delivery/container/.claude/CLAUDE.md` and
   `delivery/container/.claude/decisions.md`.
-- The Agent Model it explains against: `docs/models/agent.md`.
+- How an agent works, which it explains against: `knowledge/backbone-ideas/how-an-agent-works.md`.
