@@ -109,7 +109,7 @@ Layer 1 holds Backbone Ideas (`knowledge/backbone-ideas/layers-of-knowledge.md` 
 | Backbone Idea | What it says | Home |
 |---|---|---|
 | The layers of knowledge | the layers knowledge sits in, and what each holds | `knowledge/backbone-ideas/layers-of-knowledge.md` |
-| How an agent works | what one piece of agent work is: what the agent does, when, where and how | planned, from `docs/models/agent.md` (`PLAN.md`, the Agent Model's Plan Step) |
+| How an agent works | how a rule written in a repo reaches the agent, and what each channel guarantees | `knowledge/backbone-ideas/how-an-agent-works.md` |
 | CBC design | how a system is designed by CBC, for no one kind of system | planned, from `concept/` (`TODO.md`, the item that splits the concept) |
 | Defined Terms | what a Defined Term is, and what keeps its meaning exact | `knowledge/backbone-ideas/defined-terms.md` |
 | Change | any change to knowledge, wherever it starts, and what holds for every one | `knowledge/backbone-ideas/change.md` |

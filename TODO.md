@@ -349,9 +349,9 @@
       Ideas:
       - the reviewer reads it manually first; then the agent checks it
         for ideas not yet taken in here; then it is dropped.
-      Trigger: what one piece of agent work is, written as an idea: an
-      open point of how an agent works (`PLAN.md`, the Agent Model's
-      Plan Step, decision A).
+      Trigger: what one piece of agent work is, written as an idea
+      (`knowledge/backbone-ideas/how-an-agent-works.md` §11, *Open
+      questions*, question 1).
       See: ADR-0082; ADR-0081.
 
 - [ ] Try CBC design on the finished Common Ground Problem, beside

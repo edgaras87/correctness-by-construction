@@ -144,7 +144,7 @@ work.
 
 Goal: every part of the Agent Model, `docs/models/agent.md`, stands
 at its layer, and the Agent Model is gone.
-Now: stage 1, the Backbone Idea.
+Now: stage 2, the two Problem Domain Ideas.
 Gate:
 
 **At the opening.**
@@ -162,17 +162,19 @@ Gate:
 
 **The Plan Step's own items.**
 
-- [ ] How an agent works is a Backbone Idea,
+- [x] How an agent works is a Backbone Idea,
       `knowledge/backbone-ideas/how-an-agent-works.md`, with its row
       in §3.1's table of the layers document in keeping knowledge
       (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md`
       §3.5, *Where each layer is kept*; the map's QUESTION-7). The row
       says what it holds: how text reaches an agent, and what each way
-      guarantees.
-- [ ] The Backbone Idea holds the two things every Tool Binding must
-      say, from the Agent Model's §10 (the map's QUESTION-6).
-- [ ] What one piece of agent work is stands as an open point, with
-      its trigger, beside the rule it would join.
+      guarantees (2026-11-27).
+- [x] The Backbone Idea holds the two things every Tool Binding must
+      say, from the Agent Model's §10 (the map's QUESTION-6)
+      (2026-11-27, its §8).
+- [x] What one piece of agent work is stands as an open point, with
+      its trigger, beside the rule it would join (2026-11-27, the
+      Backbone Idea's §11, question 1).
 - [ ] How an agent works has a Problem Domain Idea in each Problem
       Domain, keeping knowledge and CBC backend design, each with its
       row in §3.2's table of the same document.
