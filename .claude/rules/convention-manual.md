@@ -60,14 +60,14 @@ frontmatter naming it, `foundation: the tiers model`
      (`knowledge/backbone-ideas/layers-of-knowledge.md` §3, *The layers*);
    - never a restatement of another convention's subject, but for a
      retelling with a Fact Reference to its section, where the reader
-     acts on it in place (`docs/conventions/facts-in-sync/` §2,
-     *Point and derive*).
+     acts on it in place (`knowledge/backbone-ideas/one-home.md` §4,
+     *Pointing at a home*).
 
    A section divided into
    labelled parts numbers them, `### N.M`, and so does every
    section of the same form in the manual. Emphasis in prose is
    not a part; a bold-led bullet with a paragraph of its own is
-   (`docs/conventions/facts-in-sync/` §3.2, *Numbering a section's parts*). Each numbered section
+   (`knowledge/problem-domain-ideas/keeping-knowledge/one-home-in-keeping-knowledge.md` §3, *Numbering a section's parts*). Each numbered section
    holds one subject, and a subject has one section; other
    sections point at it (`docs/conventions/conventions/` §2.5, *The body*).
 6. **A lesson points at its story.** The body holds what it

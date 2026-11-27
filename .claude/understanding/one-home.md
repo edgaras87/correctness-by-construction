@@ -5,7 +5,7 @@ What it is: the Adapted Understanding Text of this repo's own Adapted Case for o
 What it stands on: knowledge/problem-domain-ideas/keeping-knowledge/one-home-in-keeping-knowledge.md, the Problem Domain Idea it is written from. It adapts that text, and never retells it.
 What stands on it: its Instruction Text, the one-home Agent Rule, .claude/rules/one-home.md.
 Its place in the repo: .claude/understanding/ (ADR-0084). It never loads; it is read when its Instruction Text changes.
-Its first sources, input and not rules: the facts-in-sync manual, docs/conventions/facts-in-sync/README.md: The Concept Deliverer's seat; Why it arrives this way, its half for the one-home Agent Rule; and the one-home Agent Rule's header comment, at 643c2bd6.
+Its first sources, input and not rules: the facts-in-sync manual, docs/conventions/facts-in-sync/README.md, deleted on 2026-11-27, its last state in git at 0f525a7d: The Concept Deliverer's seat; Why it arrives this way, its half for the one-home Agent Rule; and the one-home Agent Rule's header comment, at 643c2bd6.
 -->
 
 This text says why this repo's one-home Agent Rule loads in every session, and why it holds more than the Backend Kit's. Why one home is needed at all is one home's (`knowledge/backbone-ideas/one-home.md` §2, *Why one home*).

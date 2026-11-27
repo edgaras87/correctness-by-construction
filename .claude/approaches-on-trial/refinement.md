@@ -52,8 +52,8 @@ is the Concept Deliverer's.
 
 ## 1. What it reads
 
-A refinement reads Living Text (`docs/conventions/facts-in-sync/` §1.5,
-*Living Text*) against the rules it names. It leaves out `docs/baselines/`, frozen on purpose,
+A refinement reads Living Text (`knowledge/backbone-ideas/one-home.md` §1,
+*Its Defined Terms*) against the rules it names. It leaves out `docs/baselines/`, frozen on purpose,
 and a CBC Run's own text in `temp/`, which its CBC Run Reading reads. Its
 Finding Kinds are its own, so they are written in its file, not here.
 
@@ -363,7 +363,7 @@ commit, so the file can be read from git.
   reviewer's view, 2026-10-31: the checks at each change are the
   first, a refinement the second, and a finding's cause the way back
   from the second to the first. Judged at the close, with where it is
-  written: a convention of its own, or the facts-in-sync manual.
+  written: a convention of its own, or one home.
 - **Whether the refinement's file needs an Output Shape.** It borrows the
   eval's form, which borrowed a CBC Run Reading's.
 - **Whether the three Refinement Rounds hold.** They were drawn from one

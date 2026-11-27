@@ -5,7 +5,7 @@ What it is: the Adapted Understanding Text of this repo's own Adapted Case for t
 What it stands on: knowledge/problem-domain-ideas/keeping-knowledge/one-home-in-keeping-knowledge.md, the Problem Domain Idea it is written from: §4, The Change Walk, and §5, Where a disagreement is raised. It adapts that text, and never retells it.
 What stands on it: its Instruction Text, the Foundation Check Agent Rule, .claude/rules/foundation-check.md.
 Its place in the repo: .claude/understanding/ (ADR-0084). It never loads; it is read when its Instruction Text changes.
-Its first sources, input and not rules: the facts-in-sync manual, docs/conventions/facts-in-sync/README.md: §4's last paragraph, what the check makes this repo do; Why it arrives this way, its half for the check; the check's header comment, at 643c2bd6; and PLAN.md, the facts-in-sync manual's Plan Step, decision B.
+Its first sources, input and not rules: the facts-in-sync manual, docs/conventions/facts-in-sync/README.md, deleted on 2026-11-27, its last state in git at 0f525a7d: §4's last paragraph, what the check makes this repo do; Why it arrives this way, its half for the check; the check's header comment, at 643c2bd6; and PLAN.md, the facts-in-sync manual's Plan Step, decision B.
 -->
 
 This text says why the Foundation Check acts at the commit, why it loads in every session, and what it stands for while the layers model has no form of its own for it.
