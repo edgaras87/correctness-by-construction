@@ -180,8 +180,8 @@ there. The Agent Rule then names that kind and its style. None is named yet.
     need to move. Markdown has no line width here. A reader meets the
     text rendered, or in an editor that wraps. On 2026-10-29, 985 lines in
     83 of the 99 living files already ran past 72. The 72 is
-    the commit-messages manual's rule for a body and nothing else
-    (`docs/conventions/commit-messages/` §2.1, *Conventional Commits*).
+    commit messages' rule for a body and nothing else
+    (`knowledge/backbone-ideas/commit-messages.md` §2, *What a commit message is*).
     A scripted pass is held to the same rule: it counts headings,
     references and code fences before and after, and changes nothing
     on a second run.
@@ -214,7 +214,7 @@ stays one page.
 - **Which record owns which kind of fact** —
   `knowledge/backbone-ideas/records.md` §12, *The Records Table*.
 - **The form of a commit message** —
-  `docs/conventions/commit-messages/`.
+  `knowledge/backbone-ideas/commit-messages.md`.
 - **The form of a manual** — `docs/conventions/conventions/` §2, *The Convention Manual*.
 - **What a kind of output looks like** —
   `docs/conventions/shapes/`.

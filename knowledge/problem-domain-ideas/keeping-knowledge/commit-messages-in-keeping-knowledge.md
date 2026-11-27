@@ -5,7 +5,7 @@ What it is: a Problem Domain Idea of keeping knowledge, the Maintainer Repo's Pr
 What it stands on: knowledge/backbone-ideas/commit-messages.md, the Backbone Idea it is adapted from. It adapts that document, and never retells it.
 What stands on it: this repo's own Adapted Case for commit messages.
 Its place in the repo: knowledge/problem-domain-ideas/keeping-knowledge/ (ADR-0084).
-Its first source, input and not rules: the commit-messages manual, docs/conventions/commit-messages/README.md: from What it is for, the commits lived under it; from §3, The Concept Deliverer's habit, why the scope carries the signal, its list of scopes left to this repo's own Adapted Case (PLAN.md, the commit-messages manual's Plan Step, decision A); The seats.
+Its first source, input and not rules: the commit-messages manual, docs/conventions/commit-messages/README.md, deleted on 2026-11-27, its last state in git at 47007e1b: from What it is for, the commits lived under it; from §3, The Concept Deliverer's habit, why the scope carries the signal, its list of scopes left to this repo's own Adapted Case (PLAN.md, the commit-messages manual's Plan Step, decision A); The seats.
 How it is edited: a trial, as in the layers of knowledge: a section's rules close it, in a last paragraph marked Rules, and govern that section.
 -->
 

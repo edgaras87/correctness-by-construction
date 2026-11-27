@@ -317,7 +317,7 @@ for all of them, and this is where it is stated:
    Reference says which line to re-read when the part changes.
 3. A change to the Canonical Description walks the list in the same commit,
    or in the next when one side is an agent file and the other is
-   not (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*). It greps for the
+   not (`knowledge/backbone-ideas/commit-messages.md` §4, *What shares a commit*). It greps for the
    Canonical Description's path, to find what points at it, and for its name
    in Foundation Lines, to find what stands on it: `the <name>
    convention`, `the <name> model`, or `concept v1`. Each retelling

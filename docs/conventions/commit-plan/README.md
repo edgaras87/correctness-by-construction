@@ -111,7 +111,7 @@ rule that stops it. *Its story: ADR-0050, 4 and 5.*
 ### 2.8 Counting subjects
 
 A subject's characters are counted against the subject's 50-character
-aim (`docs/conventions/commit-messages/` §2.1, *Conventional Commits*)
+aim (`knowledge/backbone-ideas/commit-messages.md` §3, *The subject*)
 when it is written. A plan writes every subject
 before any lands. Counted only at each boundary, a long one lands
 long, or is rewritten there with nothing in the plan saying why. *Its story: devlog 2026-10-08; devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model.*
@@ -124,7 +124,7 @@ before it lands.
 ### 2.9 The agent's files
 
 A commit that touches them is kept apart from everything else
-(`docs/conventions/commit-messages/` §2.3, *The `agent` scope*), so
+(`knowledge/backbone-ideas/commit-messages.md` §4, *What shares a commit*), so
 a records commit planned to carry an Agent Skill's correction has to be
 split when it opens.
 *Its story: devlog 2026-11-01, the last read's work, pass 1 and most of pass 2.*
@@ -150,8 +150,8 @@ commit before its boundary, so the reviewer still sees one commit
 there. When each planned commit lands as one, there is no room to
 try. Trying two ways meant reworking a commit in place. Small commits give the room.
 The grant is the reviewer's because a small commit is still a
-commit. The stop at every commit is the commit-messages manual's rule
-(`docs/conventions/commit-messages/` §2.4, *Commit on the word*). Without the grant, every
+commit. The stop at every commit is commit messages' rule
+(`knowledge/backbone-ideas/commit-messages.md` §5, *Commit on the word*). Without the grant, every
 commit is a boundary. Each small commit is counted
 when it is written, as a planned subject is. *Its story: ADR-0050.*
 
@@ -164,8 +164,8 @@ commit two changes. *Its story: ADR-0050, 3.*
 
 ### 2.13 The stop at every boundary
 
-It is the commit-messages manual's rule, and this convention points at it
-(`docs/conventions/commit-messages/` §2.4, *Commit on the word*). *Its story: ADR-0038; devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model.*
+It is commit messages' rule, and this convention points at it
+(`knowledge/backbone-ideas/commit-messages.md` §5, *Commit on the word*). *Its story: ADR-0038; devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model.*
 
 ## Why it arrives this way
 
@@ -174,12 +174,12 @@ turning out to need several commits. Nothing in a record would put
 the plan in front of it then (`knowledge/backbone-ideas/how-an-agent-works.md` §3.2, *The Pulled Channel*). The one rule
 that must fire at every commit, the stop, is not here: an Agent Skill that
 opens only for multi-commit work cannot carry it, so it is
-the commit-messages manual's (`docs/conventions/commit-messages/` §2.4, *Commit on the word*).
+commit messages' (`knowledge/backbone-ideas/commit-messages.md` §5, *Commit on the word*).
 
 ## What this does not cover
 
 - **The commit boundary itself, and the `agent` scope** —
-  `docs/conventions/commit-messages/`.
+  `knowledge/backbone-ideas/commit-messages.md`.
 - **The records a plan is walked against, and what an ADR is** —
   `knowledge/backbone-ideas/records.md`.
 - **The order of the work inside a plan** — the domain Agent Skill that
@@ -189,6 +189,6 @@ the commit-messages manual's (`docs/conventions/commit-messages/` §2.4, *Commit
 ## Where to look
 
 - The commit boundary and the `agent` scope:
-  `docs/conventions/commit-messages/`.
+  `knowledge/backbone-ideas/commit-messages.md`.
 - The records table the plan is walked against:
   `knowledge/backbone-ideas/records.md` §12, *The Records Table*.

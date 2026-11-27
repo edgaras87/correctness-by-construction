@@ -601,9 +601,9 @@
         never rules).
       - or that section splits in two: the approaches, and what
         reaches the agent's setup.
-      - `CLAUDE.local.md` repeats two rules, both the commit-messages manual's:
+      - `CLAUDE.local.md` repeats two rules, both commit messages':
         commit on the word, and a stop at each boundary
-        (`docs/conventions/commit-messages/` §2.4, *Commit on the word*). Yet agent files count how often the agent stops as a
+        (`knowledge/backbone-ideas/commit-messages.md` §5, *Commit on the word*). Yet agent files count how often the agent stops as a
         setting (`knowledge/backbone-ideas/agent-files.md` §10, *The operator's file*). Refinement Round
         2's FINDING-194 found it again.
       - "never rewrite main across 35edd3f" lives only in the

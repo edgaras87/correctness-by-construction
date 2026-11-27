@@ -361,7 +361,7 @@ copy.
    - **unanswered:** it was made after the Concept Deliverer last
      read, and it is re-applied on top.
 3. **Place.** The delivered files overwrite the copies whole. The
-   Delivery Take's commits follow `docs/conventions/commit-messages/`; when
+   Delivery Take's commits follow the commit-messages Agent Skill; when
    they are more than one, the chapters' commit comes first, so
    step 5's entry lands in the last (ADR-0046). A **Receipt Branch**
    holds the delivery as it arrived, named by the Delivery Pin. It is

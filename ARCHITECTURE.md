@@ -99,7 +99,6 @@ Model's (`docs/models/idea-to-output.md` §6, *A convention*). How
 they hand work to each other is the conventions' Local Map,
 `docs/conventions/README.md`.
 
-- `docs/conventions/commit-messages/` — how a commit is written.
 - `docs/conventions/commit-plan/` — how work larger than one commit
   is planned.
 - `docs/conventions/conventions/` — how a way of working is written
@@ -216,7 +215,7 @@ layout of the tree, or a check at commit review.
 | Every file a CBC Run receives has its Master Copy here, in the group that ships it | `docs/conventions/exchange/` §1, *What cannot change* and §3.2, *What goes* | the exchange-deliver Agent Skill, which stages a delivery only from the Master Copies |
 | A manual never ships | `docs/conventions/exchange/` §3.2, *What goes* | the tree: manuals sit under `docs/`, and a delivery is staged only from `delivery/` and `concept/` |
 | No manual explains a rule that no longer holds | `docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule* and §5, *A disagreement* (ADR-0025) | the Foundation Check, `.claude/rules/foundation-check.md`, at each commit |
-| Agent side and project side never share a commit | (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*) | the commit-messages Agent Skill, and commit review |
+| Agent side and project side never share a commit | (`knowledge/backbone-ideas/commit-messages.md` §4, *What shares a commit*) | the commit-messages Agent Skill, and commit review |
 | A Delivery Pin never claims more than was checked | `docs/conventions/exchange/` §6.1, *Reading a CBC Run* and §6.6, *The Delivery Note after a read* (ADR-0023) | the exchange-read and exchange-deliver Agent Skills |
 | An Agent Skill never spans two groups, and nothing that needs Spring, PostgreSQL, Maven or podman sits under `method/` | `docs/conventions/exchange/` §3.4, *One group per file* | the tree: a group is a directory, so a misfiled file shows as a path |
 | A Record Stub is never re-delivered to a live CBC Run | `docs/conventions/exchange/` §2.4, *The records' exception* (ADR-0036) | the CBC Run's delivered-copies rule 1 |

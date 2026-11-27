@@ -104,8 +104,8 @@ come in its CBC Run Hand-off, never here.
 - [ ] Every commit on `<branch>` follows the commit-messages Agent Skill.
       Its subjects are counted by script: one up to 70 characters
       passes, and one past 70 is the reviewer's to keep or rewrite
-      (the Concept Deliverer's docs/conventions/commit-messages/ §2.1,
-      *Conventional Commits*).
+      (the Concept Deliverer's knowledge/backbone-ideas/commit-messages.md
+      §3, *The subject*).
 - [ ] No commit straddles agent and project paths
       (`.claude/skills/commit-messages/SKILL.md`, *The agent's own files*).
 - [ ] No implementation file is older than the decision it

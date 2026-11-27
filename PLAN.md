@@ -95,9 +95,9 @@ Plan Step that uses none has only its own items.
 - [ ] Every commit on `<branch>` follows the commit-messages Agent Skill.
       Its subjects are counted by script: one up to 70 characters
       passes, and one past 70 is the reviewer's to keep or rewrite
-      (`docs/conventions/commit-messages/` §2.1, *Conventional Commits*).
+      (`knowledge/backbone-ideas/commit-messages.md` §3, *The subject*).
 - [ ] No commit straddles agent and project paths
-      (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*).
+      (`knowledge/backbone-ideas/commit-messages.md` §4, *What shares a commit*).
 - [ ] The Plan Step's lessons are written back where they came from:
       conventions, the playbook, the concept.
 - [ ] `CLAUDE.md` read top to bottom; each line still passes its
@@ -144,7 +144,7 @@ work.
 Goal: every part of the commit-messages manual,
 `docs/conventions/commit-messages/`, stands at its layer, with the
 Agent Skill pair that waits on it alone, and the manual is gone.
-Now: stage 5, the manual goes.
+Now: stage 6, the close.
 Gate:
 
 **At the opening.**
@@ -185,11 +185,14 @@ Gate:
       `.claude/understanding/`. It states this repo's scopes
       (decision B)
       (2026-11-27, stage 4: `c8d78c86`).
-- [ ] Each part the map's §9 lists for the manual has landed, or was
-      judged not needed, and the commit that ends it names where.
-- [ ] The manual is gone, and every Living Text that named its path or
+- [x] Each part the map's §9 lists for the manual has landed, or was
+      judged not needed, and the commit that ends it names where
+      (2026-11-27, stage 5: every part placed, the commit body names
+      where).
+- [x] The manual is gone, and every Living Text that named its path or
       sections names where each part now stands
-      (`docs/conventions/facts-in-sync/` §3.3, *The rename grep*).
+      (`docs/conventions/facts-in-sync/` §3.3, *The rename grep*)
+      (2026-11-27, stage 5, with the agent's follower).
 
 **Known already.** The commit-messages and commit-plan Agent Skills
 have no *Gates* section; the own items stand alone.
@@ -207,9 +210,9 @@ have no *Gates* section; the own items stand alone.
 - [ ] Every commit on `commit-messages-2026-11-27` follows the commit-messages Agent Skill.
       Its subjects are counted by script: one up to 70 characters
       passes, and one past 70 is the reviewer's to keep or rewrite
-      (`docs/conventions/commit-messages/` §2.1, *Conventional Commits*).
+      (`knowledge/backbone-ideas/commit-messages.md` §3, *The subject*).
 - [ ] No commit straddles agent and project paths
-      (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*).
+      (`knowledge/backbone-ideas/commit-messages.md` §4, *What shares a commit*).
 - [ ] The Plan Step's lessons are written back where they came from:
       conventions, the playbook, the concept.
 - [ ] `CLAUDE.md` read top to bottom; each line still passes its

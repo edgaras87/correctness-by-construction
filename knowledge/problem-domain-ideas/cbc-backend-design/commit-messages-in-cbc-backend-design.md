@@ -6,7 +6,7 @@ What it stands on: knowledge/backbone-ideas/commit-messages.md, the Backbone Ide
 What stands on it: the Backend Kit's Adapted Case for commit messages.
 Its place in the repo: knowledge/problem-domain-ideas/cbc-backend-design/ (ADR-0084). It is kept in the Maintainer Repo, and never copied to a Backend Repo.
 Its first sources, input and not rules:
-- the commit-messages manual, docs/conventions/commit-messages/README.md: from What it is for, CBC Run 3's commits held by the stop; The seats;
+- the commit-messages manual, docs/conventions/commit-messages/README.md, deleted on 2026-11-27, its last state in git at 47007e1b: from What it is for, CBC Run 3's commits held by the stop; The seats;
 - the Backend Kit's commit-messages Agent Skill, delivery/container/.claude/skills/commit-messages/SKILL.md: its Types, and the scope once a repo has more than one area;
 - ADR-0038, 1f: the permission gate CBC Run 3 declined.
 How it is edited: a trial, as in the layers of knowledge: a section's rules close it, in a last paragraph marked Rules, and govern that section.

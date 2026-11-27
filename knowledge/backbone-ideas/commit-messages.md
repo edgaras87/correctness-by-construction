@@ -4,7 +4,7 @@
 What it is: a Backbone Idea, bound to no Problem Domain, and its one home (knowledge/backbone-ideas/layers-of-knowledge.md §3.1, The Backbone Idea layer).
 Its place in the repo: knowledge/backbone-ideas/ (ADR-0084).
 Why it is an idea of its own: both Problem Domains work by it (temp/rewrite-map.md §10, Shared questions, QUESTION-7).
-Its first sources, input and not rules: the commit-messages manual, docs/conventions/commit-messages/README.md: its opening; What it is for; §1; §2; and from the commit-messages Agent Skill, .claude/skills/commit-messages/SKILL.md, its Rules: one logical change per commit, no placeholder subjects on a shared branch. The decisions behind them: ADR-0038, 1a, 1c and 1f; ADR-0049, 5; ADR-0083.
+Its first sources, input and not rules: the commit-messages manual, docs/conventions/commit-messages/README.md, deleted on 2026-11-27, its last state in git at 47007e1b: its opening; What it is for; §1; §2; and from the commit-messages Agent Skill, .claude/skills/commit-messages/SKILL.md, its Rules: one logical change per commit, no placeholder subjects on a shared branch. The decisions behind them: ADR-0038, 1a, 1c and 1f; ADR-0049, 5; ADR-0083.
 What stands on it: its Problem Domain Ideas, one for each Problem Domain. Each points here, and never retells it.
 How it is edited:
 - It gives no example from one Problem Domain's work.
@@ -44,6 +44,7 @@ The body is the part history cannot rebuild. The diff shows what changed. It doe
 - The subject makes sense alone, in a log of one line per commit.
 - The body says why, and what the diff cannot: alternatives rejected, constraints not obvious.
 - A reason too small for a decision record, but worth keeping, is written in the body.
+- A body line is wrapped at 72 characters.
 - A commit that carries out a decision links it in a footer. One that resolves a backlog item names it.
 
 ## 3. The subject
