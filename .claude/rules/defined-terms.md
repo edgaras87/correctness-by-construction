@@ -17,8 +17,8 @@ Borrowed:
 
 | Defined Term | Defined in |
 |---|---|
-| Agent Rule | `docs/conventions/agent-arrangement/` §3.2, *`.claude/rules/`* |
-| Agent Skill | `docs/conventions/agent-arrangement/` §3.1, *`.claude/skills/`* |
+| Agent Rule | `knowledge/backbone-ideas/agent-files.md` §1, *Its Defined Terms* |
+| Agent Skill | `knowledge/backbone-ideas/agent-files.md` §1, *Its Defined Terms* |
 | Backend Kit | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Borrow Table | `knowledge/problem-domain-ideas/keeping-knowledge/defined-terms-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Defined Term | `knowledge/backbone-ideas/defined-terms.md` §1, *Its Defined Terms* |

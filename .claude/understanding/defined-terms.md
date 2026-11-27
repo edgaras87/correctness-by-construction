@@ -18,13 +18,13 @@ Borrowed:
 |---|---|
 | Adapted Case | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
 | Adapted Understanding Text | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
-| Agent Rule | `docs/conventions/agent-arrangement/` §3.2, *`.claude/rules/`* |
-| Agent Skill | `docs/conventions/agent-arrangement/` §3.1, *`.claude/skills/`* |
+| Agent Rule | `knowledge/backbone-ideas/agent-files.md` §1, *Its Defined Terms* |
+| Agent Skill | `knowledge/backbone-ideas/agent-files.md` §1, *Its Defined Terms* |
 | Backbone Idea | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
 | Defined Term | `knowledge/backbone-ideas/defined-terms.md` §1, *Its Defined Terms* |
 | Glossary Name | `docs/conventions/writing/` §2, *Why each rule*, rule 9 |
 | Instruction Text | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
-| Paths Rule | `docs/conventions/agent-arrangement/` §5.6, *Rules files* |
+| Paths Rule | `knowledge/backbone-ideas/agent-files.md` §1, *Its Defined Terms* |
 | Problem Domain Idea | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
 
 ## 2. Two sets of texts

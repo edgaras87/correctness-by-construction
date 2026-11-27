@@ -19,7 +19,7 @@ Borrowed:
 |---|---|
 | Adapted Case | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
 | Adapted Understanding Text | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
-| Agent Skill | `docs/conventions/agent-arrangement/` §3.1, *`.claude/skills/`* |
+| Agent Skill | `knowledge/backbone-ideas/agent-files.md` §1, *Its Defined Terms* |
 | Backend Kit | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Backend Repo | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Copy Change | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
@@ -29,7 +29,7 @@ Borrowed:
 | Kit Version | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Look for Lessons | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Maintainer Repo | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
-| Paths Rule | `docs/conventions/agent-arrangement/` §5.6, *Rules files* |
+| Paths Rule | `knowledge/backbone-ideas/agent-files.md` §1, *Its Defined Terms* |
 | Plan Step | `knowledge/backbone-ideas/records.md` §1, *Its Defined Terms* |
 | Update Note | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Update Take | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |

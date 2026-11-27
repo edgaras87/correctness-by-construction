@@ -19,7 +19,7 @@ Borrowed:
 |---|---|
 | Adapted Case | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
 | Adapted Understanding Text | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
-| Agent Skill | `docs/conventions/agent-arrangement/` §3.1, *`.claude/skills/`* |
+| Agent Skill | `knowledge/backbone-ideas/agent-files.md` §1, *Its Defined Terms* |
 | Backend Kit | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Backend Repo | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Change Record | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
