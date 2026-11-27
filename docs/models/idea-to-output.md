@@ -6,9 +6,6 @@ from an idea to what work produces, and up from work to a new idea.
 Its job is to answer, for any text, *what kind is this, and what
 does it stand on* — instead of each session re-deriving the picture.
 
-A draft: written from one full chain, the Agent Model's (§7, *One
-chain here*), and checked against the concept's and one record's.
-
 This is an Idea Model: the top Canonical Description of its chain. It binds
 what stands on it. When the two disagree, either side may be
 the wrong one (§3.3, *Settling a disagreement*).
@@ -26,8 +23,7 @@ the wrong one (§3.3, *Settling a disagreement*).
 ```
 
 Read left to right, it is the idea-to-output chain: each kind is
-written from the one before it. A chain may start below an Idea Model:
-8 of the 12 manuals stand on none (2026-11-01).
+written from the one before it. A chain may start below an Idea Model.
 
 ## 2. The kinds
 
@@ -135,22 +131,3 @@ differ in four things:
 | A version | none (ADR-0039) | versioned as a whole (ADR-0039) |
 
 A project holds no convention, only the Work Approaches made from one.
-
-## 7. One chain here
-
-Each file names what it stands on, so the chains are not listed
-here. The Agent Model was deleted on 2026-11-27, its last state in
-git at `703ff7ca`, and this chain is told as it stood then. The Agent Model's chain is the worked example. The Agent Model stands
-above the agent-arrangement manual. That manual stands above the
-Entry File's guard, the comment in it that says what the file must
-not become, and the Decisions Log's header. What the Entry File and
-the Decisions Log hold is the output. Each
-manual's *Why it arrives this way* points at the part of the Agent
-Model it reasons from.
-
-## 8. What it does not answer
-
-- **Which repo a text belongs to** — `docs/models/tiers.md`.
-- **How a text reaches an agent** — `knowledge/backbone-ideas/how-an-agent-works.md`.
-- **How a link is written and checked, and a disagreement found
-  and decided** — `docs/conventions/facts-in-sync/`, not this Idea Model.
