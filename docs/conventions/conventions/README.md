@@ -68,7 +68,7 @@ The Master Copies are real files in the Container Group,
 how every other copy changes, is the Exchange Convention's
 (`docs/conventions/exchange/` §1, *What cannot change*, and §4, *The Delivery Take*). The Concept Deliverer's own Agent Skills
 and Agent Rules are not copies: it writes its own
-(`docs/conventions/agent-arrangement/` §3.1, *`.claude/skills/`*).
+(`knowledge/backbone-ideas/agent-files.md` §7, *Agent Skills and Agent Rules*).
 
 A Work Approach's reader is an agent in a project, opening it at the
 moment of use. In a CBC Run, that agent holds a pinned copy.
@@ -319,7 +319,7 @@ placing takes these steps:
 3. Its Work Approaches in the Container Group, if it ships any. A Work Approach
    entering or leaving the Container Group updates the birth entry in the
    Decisions Log's Record Stub there, in the same commit: a CBC Run holds
-   that list, and cannot open this repo's (`docs/conventions/agent-arrangement/` §3.4, *`.claude/decisions.md`*).
+   that list, and cannot open this repo's (`knowledge/backbone-ideas/agent-files.md` §8, *The Decisions Log*).
 4. Its place in the index's order of the conventions, only if the
    convention acts in sequence during a piece of work.
 5. The convention's line in `ARCHITECTURE.md`: a phrase and its
@@ -330,7 +330,7 @@ placing takes these steps:
    `.claude/decisions.md` when it changes how this repo's agent works.
    A CBC Run's Decisions Log lists, in its birth entry, the
    Work Approaches it received. The Concept Deliverer's lists none,
-   since it receives none (`docs/conventions/agent-arrangement/` §3.4, *`.claude/decisions.md`*; ADR-0042).
+   since it receives none (`knowledge/problem-domain-ideas/keeping-knowledge/agent-files-in-keeping-knowledge.md` §4, *The Decisions Log*; ADR-0042).
 
 *Its story: devlog 2026-10-18; devlog 2026-10-29, the lessons' own stories: conventions and facts-in-sync.*
 
@@ -345,7 +345,7 @@ header comment). The PLAN has no Plan Step per convention.
 The manual reaches no agent: a maintainer reads it. The form of a
 manual is an Agent Rule. It loads when a manual is read, so it is in
 view while one is worked. A manual written new is written without it
-(`docs/conventions/agent-arrangement/` §5.6, *Rules files*). The
+(`knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/claude-code-tool-binding/understanding.md` §6, *Paths Rules*). The
 Foundation Line sits in every file §1.3 names, in its frontmatter or
 its header comment, read by whoever opens the file, because a claim about
 what a file stands on has to travel with the file.
@@ -358,8 +358,8 @@ what a file stands on has to travel with the file.
   from it stays in agreement** — `docs/conventions/facts-in-sync/`.
 - **The Repo Tag a citation carries, and the records a project keeps** —
   `knowledge/backbone-ideas/records.md`.
-- **How an Agent Rule or an Agent Skill reaches an agent, and which paths
-  the agent-arrangement manual lists** — `docs/conventions/agent-arrangement/`.
+- **How an Agent Rule or an Agent Skill reaches an agent, and which files
+  are the agent's** — `knowledge/backbone-ideas/agent-files.md`.
 - **What an Output Shape is and how one lives** — `docs/conventions/shapes/`.
   The form of a manual is an Agent Rule held here, not an Output Shape.
 - **The concept's edges, its version and its changelog** —

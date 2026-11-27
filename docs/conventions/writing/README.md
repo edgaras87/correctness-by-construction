@@ -191,13 +191,13 @@ there. The Agent Rule then names that kind and its style. None is named yet.
 ## Why it arrives this way
 
 An Agent Rule with no `paths:`, loaded in every session
-(`docs/conventions/agent-arrangement/` §3.9, *An Agent Rule always loaded*). Its moment is every
+(`knowledge/backbone-ideas/agent-files.md` §7, *Agent Skills and Agent Rules*). Its moment is every
 answer and every record written, and nothing else fires at all of
 them (`knowledge/backbone-ideas/how-an-agent-works.md` §7, *Choosing a channel*):
 
 - **A Paths Rule** loads when a file is touched, after a new one's
   first draft is written. Chat has no path
-  (`docs/conventions/agent-arrangement/` §5.6, *Rules files*).
+  (`knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/claude-code-tool-binding/understanding.md` §6, *Paths Rules*).
 - **An Agent Skill** fires when the agent notices the moment. The failure
   here is not noticing: the agent writes in the voice it last read.
 - **Memory or `CLAUDE.local.md`** holds a lesson the agent does not act
@@ -219,7 +219,7 @@ stays one page.
 - **What a kind of output looks like** —
   `docs/conventions/shapes/`.
 - **How an Agent Rule reaches an agent** —
-  `docs/conventions/agent-arrangement/` §5.6, *Rules files*.
+  `knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/claude-code-tool-binding/understanding.md` §6, *Paths Rules*.
 
 ## Where to look
 

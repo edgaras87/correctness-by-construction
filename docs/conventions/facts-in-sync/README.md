@@ -17,7 +17,7 @@ relies on it. What went wrong without it:
   trusted;
 - the Entry File of the handbook, the repo the arrangement came from,
   now history (ADR-0038), held three disagreeing copies of one rule
-  (`docs/conventions/agent-arrangement/`, *What it is for*);
+  (`knowledge/problem-domain-ideas/keeping-knowledge/agent-files-in-keeping-knowledge.md` §2, *What the work showed*);
 - CBC Run 3 told one Plan Step's story in four records: `PLAN.md`,
   the devlog, the Invariant Slice Record and the commits (its RETRO.md,
   D1).
@@ -137,8 +137,8 @@ restate it: another manual, a Local Map, `ARCHITECTURE.md`, an ADR's
 context, an Entry File. Text that makes the subject usable derives
 from the manual and names it in `foundation`. Two relations, two
 verbs: point and derive. A reader who finds the subject stated
-twice has found a defect. The measured case is `docs/conventions/agent-arrangement/`'s, its
-*What it is for*. A retelling with a Fact
+twice has found a defect. The measured case is the handbook's Entry File
+(`knowledge/problem-domain-ideas/keeping-knowledge/agent-files-in-keeping-knowledge.md` §2, *What the work showed*). A retelling with a Fact
 Reference to its section, where the reader acts on it in place, is
 a follower, not a second statement (§1, *One home*; ADR-0059).
 
@@ -380,7 +380,7 @@ been read against it hard enough, is not known.
 ## Why it arrives this way
 
 Two rules, each loaded in every session, with no `paths:`
-(`docs/conventions/agent-arrangement/` §3.9, *An Agent Rule always loaded*). The one-home Agent Rule's moment is
+(`knowledge/backbone-ideas/agent-files.md` §7, *Agent Skills and Agent Rules*). The one-home Agent Rule's moment is
 every text written. A fact is retold in the record being written.
 That record's Record Stub says nothing of the record the fact was
 taken from, so no Record Stub is open at the moment. The
@@ -390,7 +390,7 @@ The Foundation Check's moment is every commit that touches a
 Canonical Description or what derives from it. An Agent Rule with
 `paths:` loads only when a file is touched with the agent's tools: an
 edit made by script never loads it
-(`docs/conventions/agent-arrangement/` §5.6, *Rules files*). Both
+(`knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/claude-code-tool-binding/understanding.md` §6, *Paths Rules*). Both
 moments are every task, so both Agent Rules go through the Ambient
 Channel (`knowledge/backbone-ideas/how-an-agent-works.md` §7, *Choosing a channel*).
 

@@ -569,7 +569,7 @@
       - each delegation leaves one line: the kind of work, the
         model, the effort, whether it paid.
       - an Approach on Trial before any convention (ADR-0058); a
-        convention of its own, or a section of agent-arrangement.
+        convention of its own, or a section of agent files.
       - one default model for every subagent, offered by `/doctor`
         and held for this item.
       - before a new Agent Skill is proposed, search what exists: the
@@ -598,28 +598,27 @@
       - a manual's "What this is made usable as" also names any
         `CLAUDE.md` line and the settings it leaves to the operator,
         so `CLAUDE.local.md` holds only those
-        (`docs/conventions/agent-arrangement/` §3.7, *`CLAUDE.local.md`*: settings,
+        (`knowledge/backbone-ideas/agent-files.md` §10, *The operator's file*: settings,
         never rules).
       - or that section splits in two: the approaches, and what
         reaches the agent's setup.
       - `CLAUDE.local.md` repeats two rules, both the commit-messages manual's:
         commit on the word, and a stop at each boundary
-        (`docs/conventions/commit-messages/` §2.4, *Commit on the word*). Yet agent-arrangement counts how often the agent stops as a
-        setting (`docs/conventions/agent-arrangement/` §3.7, *`CLAUDE.local.md`*). Refinement Round
+        (`docs/conventions/commit-messages/` §2.4, *Commit on the word*). Yet agent files count how often the agent stops as a
+        setting (`knowledge/backbone-ideas/agent-files.md` §10, *The operator's file*). Refinement Round
         2's FINDING-194 found it again.
       - "never rewrite main across 35edd3f" lives only in the
         agent's memory, unseen by any reader of the repo. Its
         failure is not noticing the moment, a rebase: a Local Rule
-        for our `CLAUDE.md` (`docs/conventions/agent-arrangement/`
-        §2.4, *How the Entry File is written*)?
+        for our `CLAUDE.md` (`knowledge/backbone-ideas/agent-files.md` §5, *How the Entry File is written*)?
       - what survives what, lived 2026-10-30: a model switch inside a
         session keeps the transcript; an agent the usage limit stopped
         keeps its transcript and resumes by `SendMessage`; a new
         session keeps the repo, the devlog's Resume line and the
         user's memory files only. How an agent works states the rule
         (`knowledge/backbone-ideas/how-an-agent-works.md` §5, *Write-back*);
-        the Tool Binding (`docs/conventions/agent-arrangement/` §5,
-        *The Claude Code Tool Binding*) would hold the mechanics.
+        the Tool Binding (`knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/claude-code-tool-binding/understanding.md`)
+        would hold the mechanics.
       Trigger: our Tool Binding is written, with the agent-arrangement
       manual's rewrite.
       See: devlog 2026-10-21, evening; `TODO-CONVERSATION-MEMORY.md`
@@ -852,7 +851,7 @@
         `.claude/rules/` and `delivery/`.
       - a Paths Rule loads only when a file is touched, and the
         commit is the other moment
-        (`docs/conventions/agent-arrangement/` §5.6, *Rules files*).
+        (`knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/claude-code-tool-binding/understanding.md` §6, *Paths Rules*).
       - the approach-evaluation Approach on Trial's placing hands each piece to the
         rule, for a Work Approach of ours and of a CBC Run's alike.
       Trigger: the first evaluation that places a piece as an Agent Skill
@@ -945,7 +944,7 @@
       reviewer).
       Context: no manual and no Idea Model ships
       (`docs/conventions/exchange/` §3.2, *What goes*). A manual may now stand on
-      an Idea Model, as agent-arrangement does; a CBC Run gets the files made
+      an Idea Model, as the exchange manual does; a CBC Run gets the files made
       from it, never the reasoning above them.
       Ideas:
       - the Tiers Model's top tier holds the Idea Models in the
@@ -1248,7 +1247,7 @@
       (2026-10-01, from the draft of working a reading, now gone).
       Context: the agent proposes and builds, the reviewer settles —
       every CBC Run Reading has gone so, and nothing says it. Probably
-      agent-arrangement's to say, not the CBC Run Reading's.
+      agent files' to say, not the CBC Run Reading's.
       Trigger: an agent found settling what was the reviewer's.
       See: devlog 2026-10-01.
 

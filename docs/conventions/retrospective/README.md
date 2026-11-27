@@ -125,7 +125,7 @@ the lessons, before Release.
   - what had no home;
   - which Plan Step Gate items caught nothing;
   - and the Entry File read top to bottom, its only re-reading
-    (`docs/conventions/agent-arrangement/` §2.6, *The Entry File's size*).
+    (`knowledge/backbone-ideas/agent-files.md` §6, *The Entry File's size*).
 
 *Its story: devlog 2026-10-29, the lessons' own stories: six places.*
 

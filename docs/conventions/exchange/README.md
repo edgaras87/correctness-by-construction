@@ -29,7 +29,7 @@ Made one convention on 2026-09-26; what it replaced is ADR-0036's.
 
 The first convention whose Work Approaches split between the two
 arrangements, each side holding only what it runs
-(`docs/conventions/agent-arrangement/`, *The seats*).
+(`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §3.3, *The Adapted Case layer*).
 
 - **`knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/scratch-space/README.md` — shipped at birth**, the
   CBC Run's own from then on: what its `temp/` is for, where a delivery
@@ -49,8 +49,7 @@ arrangements, each side holding only what it runs
   the Delivery Fills, and `delivery/installs/pure-seed.md` keeps that.
 - **`.claude/rules/exchange-reading.md` — the CBC Run Reading's form, the
   Concept Deliverer's**, loading when a CBC Run Reading in `temp/` is read, not
-  while a new one is written (`docs/conventions/agent-arrangement/`
-  §5.6, *Rules files*). What the exchange-read Agent Skill writes, and what
+  while a new one is written (`knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/claude-code-tool-binding/understanding.md` §6, *Paths Rules*). What the exchange-read Agent Skill writes, and what
   the work then fills, to one form.
 - **`.claude/rules/working-a-reading.md` — how a CBC Run Reading's list is
   worked, the Concept Deliverer's**, practice under this page, loading when
@@ -587,16 +586,14 @@ Deliverer's two Agent Skills open on the reviewer's word, "read" or
 "deliver", which is a moment the agent is told rather than one it
 must notice. The CBC Run Reading's form loads by path when a CBC Run
 Reading is read, so it is in view while the list is worked; a CBC Run
-Reading written new is written without it (`docs/conventions/agent-arrangement/`
-§5.6, *Rules files*).
+Reading written new is written without it (`knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/claude-code-tool-binding/understanding.md` §6, *Paths Rules*).
 
 *Its story: devlog 2026-10-29, the lessons' own stories: six places.*
 
 ## What this does not cover
 
-- **Which files each side holds, and which paths are the
-  arrangement's** — `docs/conventions/agent-arrangement/`, *The
-  seats*.
+- **Which files each side holds, and which are the agent's** —
+  `knowledge/backbone-ideas/agent-files.md`, and its two Problem Domain Ideas.
 - **What `foundation` holds for each kind of file** —
   `docs/conventions/conventions/` §1.3, *The Foundation Line*.
 - **How an Output Shape reaches a CBC Run** — `docs/conventions/shapes/` §4, *An Output Shape between repos*.

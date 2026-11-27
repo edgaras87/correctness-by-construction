@@ -5,7 +5,7 @@ What it is: a Problem Domain Idea of CBC backend design, the Backend Repos' Prob
 What it stands on: knowledge/backbone-ideas/agent-files.md, the Backbone Idea it is adapted from. It adapts that document, and never retells it.
 What stands on it: the Backend Kit's Adapted Cases for agent files: the Entry File, the Decisions Log's Record Stub and Claude Code's Tool Binding for the Backend Repos.
 Its place in the repo: knowledge/problem-domain-ideas/cbc-backend-design/ (ADR-0084). It is kept in the Maintainer Repo, and never copied to a Backend Repo.
-Its first sources, input and not rules: the agent-arrangement manual, docs/conventions/agent-arrangement/README.md: What it is for, CBC Run 3's evidence; What this is made usable as; The seats, The CBC Run's seat; §2.3 to §2.6, the Backend Repo's Entry File; §3.3, its Output Shapes; §3.4, its Decisions Log; the records' exception, docs/conventions/exchange/README.md §2.4. What a Kit Update records is Change's, in keeping knowledge, not today's exchange manual's.
+Its first sources, input and not rules: the agent-arrangement manual, docs/conventions/agent-arrangement/README.md, deleted on 2026-11-27, its last state in git at bd6941d6: What it is for, CBC Run 3's evidence; What this is made usable as; The seats, The CBC Run's seat; §2.3 to §2.6, the Backend Repo's Entry File; §3.3, its Output Shapes; §3.4, its Decisions Log; the records' exception, docs/conventions/exchange/README.md §2.4. What a Kit Update records is Change's, in keeping knowledge, not today's exchange manual's.
 How it is edited: a trial, as in the layers of knowledge: a section's rules close it, in a last paragraph marked Rules, and govern that section.
 -->
 

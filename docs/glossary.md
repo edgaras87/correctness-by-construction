@@ -163,21 +163,21 @@ delivered files below.
   of that area relate (`knowledge/backbone-ideas/records.md` §1, *Its Defined Terms*).
 - **Agent Rule** — a file under `.claude/rules/`, loaded into the
   agent by path or in every session
-  (`docs/conventions/agent-arrangement/` §3.2, *`.claude/rules/`*). A
+  (`knowledge/backbone-ideas/agent-files.md` §1, *Its Defined Terms*). A
   numbered line inside one is named by its owner and number:
   "one-home rule 3", "writing rule 6". The kinds in use: a Local
   Rule; a Paths Rule; and Claude Code's permission and deny rules,
   its own words
-  (`docs/conventions/agent-arrangement/` §3.5, *`.claude/settings.json`*).
+  (`knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/claude-code-tool-binding/understanding.md` §4, *Permission rules*).
 - **Local Rule** — a rule written in the Entry File's *Local rules*
   slot, true of this project only
-  (`docs/conventions/agent-arrangement/` §2.4, *How the Entry File is written*).
+  (`knowledge/backbone-ideas/agent-files.md` §1, *Its Defined Terms*).
 - **Paths Rule** — an Agent Rule with a `paths:` list, loaded when a
   file it names is touched
-  (`docs/conventions/agent-arrangement/` §5.6, *Rules files*).
+  (`knowledge/backbone-ideas/agent-files.md` §1, *Its Defined Terms*).
 - **Agent Skill** — a file under `.claude/skills/<name>/`, its
   `SKILL.md` and what it references, read when its moment comes
-  (`docs/conventions/agent-arrangement/` §3.1, *`.claude/skills/`*). Always written with its
+  (`knowledge/backbone-ideas/agent-files.md` §1, *Its Defined Terms*). Always written with its
   kind, the commit-plan Agent Skill
   (`docs/conventions/conventions/` §1.5, *Naming a Work Approach*).
 - **Agent Skill Template** — a file under an Agent Skill's `templates/`, copied
@@ -198,7 +198,7 @@ delivered files below.
   `knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/repo-hygiene/`, one directory per stack (`knowledge/backbone-ideas/repo-hygiene.md` §1, *Its Defined Terms*).
 - **Decisions Log** — a CBC Run's `.claude/decisions.md`, where its
   agent records the decisions about its own setup; ours is the same
-  file here (`docs/conventions/agent-arrangement/` §3.4, *`.claude/decisions.md`*).
+  file here (`knowledge/backbone-ideas/agent-files.md` §1, *Its Defined Terms*).
 - **Repo Tag** — the letters a repo's decisions carry when cited from
   another repo, CBC for this one
   (`knowledge/backbone-ideas/records.md` §1, *Its Defined Terms*).

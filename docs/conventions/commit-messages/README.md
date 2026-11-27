@@ -86,8 +86,8 @@ the work, and the arrangement that made an agent do the work a
 particular way. They stay separable, for a filtered log or a
 portfolio copy that drops the arrangement, only if no commit ever
 straddles them. Hence the `agent` scope (ADR-0038, 1c); which
-paths are the arrangement's is the agent-arrangement manual's
-(`docs/conventions/agent-arrangement/` §1.1, *A closed list of paths*).
+paths are the arrangement's is agent files'
+(`knowledge/backbone-ideas/agent-files.md` §3, *The agent files*).
 
 ### 2.4 Commit on the word
 
@@ -137,7 +137,7 @@ sentences live in this Agent Skill and nowhere else.
 - **The Change Set: sequencing, the boundary inside a plan, the
   close** — `docs/conventions/commit-plan/`.
 - **What the agent side is, and which paths it holds** —
-  `docs/conventions/agent-arrangement/`.
+  `knowledge/backbone-ideas/agent-files.md`.
 - **The records a commit's footer links, and what an ADR is** —
   `knowledge/backbone-ideas/records.md`.
 
@@ -145,4 +145,4 @@ sentences live in this Agent Skill and nowhere else.
 
 - The commit boundary inside a Change Set:
   `docs/conventions/commit-plan/`.
-- What the `agent` scope covers: `docs/conventions/agent-arrangement/`.
+- What the `agent` scope covers: `knowledge/backbone-ideas/agent-files.md` §3, *The agent files*.

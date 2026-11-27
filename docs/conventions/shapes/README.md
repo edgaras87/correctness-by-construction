@@ -56,7 +56,7 @@ and its Plan Steps have Plan Step Gates (ADR-0057). Two of its own
 Output Forms, a CBC Run Reading's and a Convention Manual's, are Agent
 Rules today, with
 a Governs line. They load when the file is read, not while a new one is
-written (`docs/conventions/agent-arrangement/` §5.6, *Rules files*).
+written (`knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/claude-code-tool-binding/understanding.md` §6, *Paths Rules*).
 Whether they become Output Shapes read at a Plan Step Gate is held on
 the rewrite's map (`temp/rewrite-map.md` §8, *Items from TODO*).
 
@@ -333,7 +333,7 @@ agent while work is written, by design. Nothing loads
 - **When an output opens, extends and closes** — the convention
   that owns the output; an Output Shape that restates it is a copy of that
   convention (§1.1, *What an Output Shape says*).
-- **How an Agent Rule loads** — `docs/conventions/agent-arrangement/` §5.6, *Rules files*.
+- **How an Agent Rule loads** — `knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/claude-code-tool-binding/understanding.md` §6, *Paths Rules*.
 - **What passes between repositories, and how** —
   `docs/conventions/exchange/`.
 - **The Plan Step Gate items that make a project meet an Output Shape at a Plan Step's

@@ -4,7 +4,7 @@
 What it is: one of the Backend Kit's files, the Adapted Understanding Text of its Adapted Case for Claude Code's Tool Binding: the mechanisms Claude Code gives each channel and the Enforcement Gate, and where each agent file sits for it.
 What it stands on: knowledge/problem-domain-ideas/cbc-backend-design/agent-files-in-cbc-backend-design.md and knowledge/problem-domain-ideas/cbc-backend-design/how-an-agent-works-in-cbc-backend-design.md, kept in the Maintainer Repo. What every Tool Binding must say is how an agent works's, §8.
 What stands on it: the Backend Kit's Instruction Texts whose place or form rests on the tool: the Entry File, the Decisions Log's Record Stub, each Agent Rule's paths: list. The Maintainer Repo's own Tool Binding points here for every fact of the tool, and holds only what is its own (knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md §3.3, The Adapted Case layer).
-Its first source, input and not rules: the agent-arrangement manual, docs/conventions/agent-arrangement/README.md: §5; from §2.3, §2.6 and §3, each agent file's path, the tool's bound on the Entry File, and the settings' format.
+Its first source, input and not rules: the agent-arrangement manual, docs/conventions/agent-arrangement/README.md, deleted on 2026-11-27, its last state in git at bd6941d6: §5; from §2.3, §2.6 and §3, each agent file's path, the tool's bound on the Entry File, and the settings' format.
 It never loads; it is read when an Instruction Text that rests on it changes, and when the tool's release is checked again. Each fact names the release it was checked against, and is changed here alone.
 -->
 

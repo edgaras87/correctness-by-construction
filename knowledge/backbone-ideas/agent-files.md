@@ -4,7 +4,7 @@
 What it is: a Backbone Idea, bound to no Problem Domain, and its one home (knowledge/backbone-ideas/layers-of-knowledge.md §3.1, The Backbone Idea layer).
 Its place in the repo: knowledge/backbone-ideas/ (ADR-0084).
 Why it is an idea of its own: both Problem Domains work by it (temp/rewrite-map.md §10, Shared questions, QUESTION-7; PLAN.md, the agent-arrangement manual's Plan Step, decision A).
-Its first sources, input and not rules: the agent-arrangement manual, docs/conventions/agent-arrangement/README.md: its opening; What it is for; §1 to §4; from §5, what holds for any tool: a Paths Rule's condition is a place, and a comment the tool drops costs nothing; from Why it arrives this way, the Entry File's rules in its comments.
+Its first sources, input and not rules: the agent-arrangement manual, docs/conventions/agent-arrangement/README.md, deleted on 2026-11-27, its last state in git at bd6941d6: its opening; What it is for; §1 to §4; from §5, what holds for any tool: a Paths Rule's condition is a place, and a comment the tool drops costs nothing; from Why it arrives this way, the Entry File's rules in its comments.
 What stands on it: its Problem Domain Ideas, one for each Problem Domain. Each points here, and never retells it.
 How it is edited:
 - It gives no example from one Problem Domain's work.

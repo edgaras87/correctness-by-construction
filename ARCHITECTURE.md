@@ -99,8 +99,6 @@ Model's (`docs/models/idea-to-output.md` §6, *A convention*). How
 they hand work to each other is the conventions' Local Map,
 `docs/conventions/README.md`.
 
-- `docs/conventions/agent-arrangement/` — the files that make an
-  agent work in a repo.
 - `docs/conventions/commit-messages/` — how a commit is written.
 - `docs/conventions/commit-plan/` — how work larger than one commit
   is planned.

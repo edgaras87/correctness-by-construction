@@ -101,8 +101,7 @@ Plan Step that uses none has only its own items.
 - [ ] The Plan Step's lessons are written back where they came from:
       conventions, the playbook, the concept.
 - [ ] `CLAUDE.md` read top to bottom; each line still passes its
-      three tests, or leaves (`docs/conventions/agent-arrangement/`
-      §2.4, *How the Entry File is written*).
+      three tests, or leaves (`knowledge/backbone-ideas/agent-files.md` §5, *How the Entry File is written*).
 - [ ] Each Approach on Trial the Plan Step drafted or used has this
       use's dated note, and was handed over for evaluation
       (`.claude/approaches-on-trial/approach-drafting.md` §3, *Close*).
@@ -145,7 +144,7 @@ work.
 Goal: every part of the agent-arrangement manual,
 `docs/conventions/agent-arrangement/`, stands at its layer, with the
 three texts that wait on it alone, and the manual is gone.
-Now: stage 5, the manual goes.
+Now: stage 6, the close.
 Gate:
 
 **At the opening.**
@@ -189,21 +188,24 @@ Gate:
       for a why of that file alone (2026-11-27, stage 4:
       `.claude/understanding/entry-file.md`; the Decisions Log has no
       why of its own, so none).
-- [ ] Each part the map's §9 lists for the manual has landed, or was
+- [x] Each part the map's §9 lists for the manual has landed, or was
       judged not needed, and the commit that ends it names where. A
       part whose subject is how instructions are written for an agent
-      is named in the map's QUESTION-5, for that idea.
-- [ ] The manual is gone, and every Living Text that named its path or
+      is named in the map's QUESTION-5, for that idea (2026-11-27,
+      stage 5: none went there).
+- [x] The manual is gone, and every Living Text that named its path or
       sections names where each part now stands
-      (`docs/conventions/facts-in-sync/` §3.3, *The rename grep*).
+      (`docs/conventions/facts-in-sync/` §3.3, *The rename grep*)
+      (2026-11-27, stage 5, with the agent's follower).
 - [x] Each Defined Term a text in the layers model borrows from the
       manual, Agent Skill, Agent Rule and Paths Rule, has its home in
       the layers model, and each borrow points at it
       (2026-11-27, stage 1: `dc00764e`; 17 borrows repointed in
       `9aa0f28f` and `4006d64d`).
-- [ ] Each Glossary Name whose home is the manual stays in
+- [x] Each Glossary Name whose home is the manual stays in
       `docs/glossary.md`, pointing at its new home, while a text
-      outside the layers model uses it (the map's QUESTION-2).
+      outside the layers model uses it (the map's QUESTION-2)
+      (2026-11-27, stage 5: five, repointed).
 
 **Known already.** The commit-messages and commit-plan Agent Skills
 have no *Gates* section; the own items stand alone.
@@ -227,8 +229,7 @@ have no *Gates* section; the own items stand alone.
 - [ ] The Plan Step's lessons are written back where they came from:
       conventions, the playbook, the concept.
 - [ ] `CLAUDE.md` read top to bottom; each line still passes its
-      three tests, or leaves (`docs/conventions/agent-arrangement/`
-      §2.4, *How the Entry File is written*).
+      three tests, or leaves (`knowledge/backbone-ideas/agent-files.md` §5, *How the Entry File is written*).
 - [ ] Each Approach on Trial the Plan Step drafted or used has this
       use's dated note, and was handed over for evaluation
       (`.claude/approaches-on-trial/approach-drafting.md` §3, *Close*).

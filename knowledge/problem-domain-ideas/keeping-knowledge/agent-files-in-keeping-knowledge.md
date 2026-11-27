@@ -5,7 +5,7 @@ What it is: a Problem Domain Idea of keeping knowledge, the Maintainer Repo's Pr
 What it stands on: knowledge/backbone-ideas/agent-files.md, the Backbone Idea it is adapted from. It adapts that document, and never retells it.
 What stands on it: this repo's own Adapted Cases for its agent files: its Entry File, its Decisions Log's form and its Tool Binding (knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md §3.4, The layer of a repo's work).
 Its place in the repo: knowledge/problem-domain-ideas/keeping-knowledge/ (ADR-0084).
-Its first source, input and not rules: the agent-arrangement manual, docs/conventions/agent-arrangement/README.md: What it is for, the handbook's evidence; The seats, The Concept Deliverer's seat; §2.3 and §2.6, this repo's Entry File; §3.4 and §3.7, this repo's Decisions Log and operator's file.
+Its first source, input and not rules: the agent-arrangement manual, docs/conventions/agent-arrangement/README.md, deleted on 2026-11-27, its last state in git at bd6941d6: What it is for, the handbook's evidence; The seats, The Concept Deliverer's seat; §2.3 and §2.6, this repo's Entry File; §3.4 and §3.7, this repo's Decisions Log and operator's file.
 How it is edited: a trial, as in the layers of knowledge: a section's rules close it, in a last paragraph marked Rules, and govern that section.
 -->
 
