@@ -330,7 +330,7 @@ for all of them, and this is where it is stated:
    changes, the Change Walk runs again.
 
 Steps 1, 2 and the greps in 3 are checkable today: every shipped
-Agent Skill and Agent Rule carries `foundation`, every manual names what
+Agent Skill and Agent Rule carries `foundation` unless exempt, every manual names what
 derives from it in *What this is made usable as*, and a path and a
 `foundation` value are tokens (`docs/conventions/conventions/` §1.3, *The Foundation Line*).
 The Foundation Check makes this repo do the rest, the re-reads in

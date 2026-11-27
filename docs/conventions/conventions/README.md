@@ -25,7 +25,7 @@ convention, and the index read against it the next day (devlog
 
 Nothing shipped of its own; what a repo holds is:
 
-- **the Foundation Line in every shipped Agent Skill, Agent Rule and Output Shape**
+- **the Foundation Line in every shipped Agent Skill, Agent Rule and Output Shape**, but those §1.3 exempts
   — held in a CBC Run, where it is this convention's one Work Approach, read whenever its file is opened (§1.3, *The Foundation Line*);
 - **`.claude/rules/convention-manual.md` — the form of a manual,
   the Concept Deliverer's**, loading whenever a manual is opened;
@@ -121,7 +121,7 @@ An Approach on Trial carries none: it is first-time work, and stands
 on no Canonical Description until an evaluation places it
 (`docs/models/idea-to-output.md` §4.2, *The upward direction*).
 
-An Agent Skill or Agent Rule whose understanding is written beside it, in `.claude/understanding/`, carries none either. It stands on that text, and that text on one under `knowledge/`, which no value above names. That text's header says what it stands on, and what stands on it. It carries one when the rewrite of today's texts into `knowledge/` brings the Foundation Line there.
+An Agent Skill or Agent Rule whose understanding is written beside it, in `.claude/understanding/` or in the Backend Kit's Adapted Case under `knowledge/adapted-cases/`, carries none either. It stands on that text, and that text on one under `knowledge/`, which no value above names. That text's header says what it stands on, and what stands on it. It carries one when the rewrite of today's texts into `knowledge/` brings the Foundation Line there.
 
 What it holds:
 

@@ -253,7 +253,7 @@ those lines become a Delivery Fill.
 ### 3.5 The Foundation Line in a copy
 
 Every shipped Agent Skill, Agent Rule and Output Shape carries a
-Foundation Line. The field, its name, that each has one, and what it
+Foundation Line, unless the conventions manual exempts it. The field, its name, that each has one, and what it
 holds for each kind, is the conventions manual's
 (`docs/conventions/conventions/` §1.3, *The Foundation Line*). What
 is the Exchange Convention's: every copy carries the line as a live

@@ -1,8 +1,9 @@
 ---
 name: commit-messages
 description: Conventional Commits format and the 50/72 rules. Use before writing any commit message.
-foundation: the commit-messages convention
 ---
+
+<!-- One of the Backend Kit's files: the Instruction Text of its Adapted Case for commit messages, an Agent Skill. Why it is as it is: its Adapted Understanding Text, kept in the Maintainer Repo. -->
 
 # Commit Messages
 
@@ -16,7 +17,7 @@ foundation: the commit-messages convention
 <footer>                                ← issue refs, breaking changes, optional
 ```
 
-Why it is so: (the Concept Deliverer's docs/conventions/commit-messages/ §2.1, *Conventional Commits*; §2.2, *Mood and tense*).
+Why it is so: (commit messages, kept in the Maintainer Repo, §3, *The subject*).
 
 The subject says what the commit changes, in the present tense, and
 makes sense alone in `git log --oneline`. Either mood will do:
@@ -103,7 +104,7 @@ refresh. Re-land after #58.
 
 ## The agent's own files
 
-Why it is so: (the Concept Deliverer's docs/conventions/commit-messages/ §2.3, *The `agent` scope*).
+Why it is so: (commit messages, kept in the Maintainer Repo, §4, *What shares a commit*).
 
 `CLAUDE.md` and `.claude/` are the working arrangement.
 `COMMIT-PLAN.md` is committed with them. None is a project record. A
@@ -113,7 +114,7 @@ lifecycle.
 
 ## Rules
 
-Why they are so: (the Concept Deliverer's docs/conventions/commit-messages/ §1, *What a commit message is*; §2.4, *Commit on the word*).
+Why they are so: (commit messages, kept in the Maintainer Repo, §2, *What a commit message is*; §5, *Commit on the word*).
 
 - **Commit on the word.** Stage, show the reviewer the diff, and
   commit only when they have said so; one commit at a time, and no

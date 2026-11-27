@@ -174,11 +174,11 @@ Gate:
       knowledge says why the scope, not the type, carries the signal
       in a repo that keeps only text (decision A)
       (2026-11-27, stage 2: `ba106c17`).
-- [ ] The Backend Kit's commit-messages Agent Skill, today
-      `delivery/container/.claude/skills/commit-messages/SKILL.md`, is
-      its Adapted Case at layer 3, at its path by §3.5, with its
-      Adapted Understanding Text beside it; the Pure Seed copies it
-      from there.
+- [ ] The Backend Kit's commit-messages Agent Skill,
+      `delivery/container/.claude/skills/commit-messages/SKILL.md`, has
+      its Adapted Understanding Text at layer 3, at its path by §3.5,
+      and points at it. The Agent Skill stays where it is, and moves
+      beside that text with the exchange's rewrite (decision C).
 - [ ] Our commit-messages Agent Skill is our own Adapted Case at layer
       4, where it is, with its Adapted Understanding Text in
       `.claude/understanding/`. It states this repo's scopes
@@ -244,14 +244,28 @@ Notes:
   the list is used; our Adapted Understanding Text never loads. Our
   Agent Skill and the Backend Kit's then differ in more than their
   pointers, as each is written for its own seat (ADR-0069).
+- Decision C, at stage 3, on the reviewer's word: the Backend Kit's
+  Agent Skill stays in `delivery/container/` until the exchange is
+  rewritten. It is the first file sent after birth to reach the
+  layers, and the exchange-deliver Agent Skill's script finds what it
+  sends only under `delivery/<group>/`. Moving it now would patch the
+  Pure Seed, that script and the exchange manual's §3.2, each due for
+  its own rewrite. The gate's item on it was reworded to match.
+- Decision D, at stage 3, on the reviewer's word, the Foundation
+  Check's ending for the Agent Skill's Foundation Line: the foundation
+  was wrong. Its line named the commit-messages convention, which
+  goes at stage 5. The conventions manual's §1.3 exempted only an
+  Agent Skill whose understanding is in `.claude/understanding/`; its
+  reason holds for the Backend Kit's too, so the exemption widens, and
+  three retellings follow it.
 - Its stages, from the map:
   1. the Backbone Idea, from the manual's opening, *What it is for*,
      §1 and §2;
   2. the two Problem Domain Ideas: keeping knowledge's from §3's why
      and *The seats*; CBC backend design's from *The seats*;
-  3. the Backend Kit's Adapted Case: its Agent Skill moved by
-     `git mv`, the Pure Seed's copy block tested in the scratchpad,
-     and its Adapted Understanding Text from *Why it arrives this way*;
+  3. the Backend Kit's Adapted Case: its Adapted Understanding Text
+     from *Why it arrives this way*, and its Agent Skill pointing at
+     it, where it is (decision C);
   4. our own Adapted Case: our Agent Skill with this repo's scopes,
      and `.claude/understanding/commit-messages.md`;
   5. the manual goes: the rename grep, 35 pointers in 17 files outside
