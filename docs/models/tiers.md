@@ -6,6 +6,21 @@ with delivery flowing down and learning flowing up. Its job is to
 answer, for any lesson or file, *which repo does this belong
 to* — instead of each session re-deriving the picture.
 
+It is shrinking, as today's texts are rewritten into the layers
+(ADR-0082, decision 2). §1, §2.1, §3.2, §3.4, §3.5 and §4 point at
+their new homes. What it still holds waits for a home not yet
+written:
+
+- §2.2 and §2.3, the home of 5 Glossary Names: Concept Repo, Run
+  Repo, Concept Garden, Concept Deliverer and CBC Run. They stay
+  until the texts that use them are rewritten.
+- §3.1, the home of CBC Run Birth: to Change, when the Pure Seed is
+  rewritten.
+- §3.3, the home of Record Harvest: to wherever the exchange
+  manual's rewrite places it.
+
+The model goes when the last of them has landed.
+
 A draft: revised when the Concept Garden earns machinery (§2.2, *Concept Repos*).
 
 This is an Idea Model: the top Canonical Description of its chain. It binds

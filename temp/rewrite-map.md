@@ -382,7 +382,7 @@ it for, and nothing goes before the rewrite decides.
 | `docs/glossary.md` | its form; the Glossary Names, each pointing at its home | open (QUESTION-2) | `docs/conventions/writing/`; each text a Name points at |
 | `docs/models/agent.md` | how an agent works: §1 to §8, §11, §12; where each convention lands, §9; the Tool Bindings, §10 | §1 to §8, §11, §12: 1 or 2 (§8, the Idea Models row); §9: 4; §10: QUESTION-6 | none |
 | `docs/models/idea-to-output.md` | the chain, its kinds and links, the two directions, a convention: §1 to §8 | goes (QUESTION-5), once all it holds has landed: §3.2, the layers document, §3.3, one home, and §4, Change, landed; §1 to §3.1 stay, the home of 5 Glossary Names, until the texts that use them are rewritten; §5, CBC design; §6, the idea of how instructions are written for an agent; Output Shape and *governs*, the shapes manual (this text's Plan Step, 2026-11-27, decisions A and B; §3.3, the facts-in-sync manual's Plan Step, 2026-11-27) | none: the layers, in place |
-| `docs/models/tiers.md` | the tiers, Concept Repos and Run Repos, and the flows between them: §1 to §4 | goes (QUESTION-5): §2, the repos in the layers in keeping knowledge; §3, §4.1, Change; §4.2, the layers document | none: the layers, in place |
+| `docs/models/tiers.md` | the tiers, Concept Repos and Run Repos, and the flows between them: §1 to §4 | goes (QUESTION-5), once all it holds has landed: §2.1, the layers document's open question 1, in keeping knowledge; §3.2, how an agent works, in CBC backend design; §3.4, §3.5 and §4.1, Change and the layers documents; §4.2, Change, in keeping knowledge, and the layers document in keeping knowledge, landed; §1 judged not needed; §2.2, §2.3, §3.1 and §3.3 stay, the home of 7 Glossary Names, until the texts that use them are rewritten (this text's Plan Step, 2026-11-27, decisions A to D) | none: the layers, in place |
 | `knowledge/adapted-cases/cbc-backend-design/defined-terms/defined-terms.md` | the Backend Kit's Defined Terms, an Instruction Text alone | 3, in place | none |
 | `knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/change-a-kit-copy/rule.md` | changing a Kit Copy: its Instruction Text, a Paths Rule | 3, in place | none |
 | `knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/change-a-kit-copy/understanding.md` | changing a Kit Copy: its Adapted Understanding Text | 3, in place | none |
@@ -520,8 +520,10 @@ Each text it touches names it in §9.
     pointing up, the layers document; the two directions, Change;
   - **how knowledge moves:** the five facts on every flow and where a
     lesson lands, Change;
-  - **which text may point at which:** the dependency rule, the
-    layers document;
+  - **which text may point at which:** the layers document. The
+    Tiers Model's dependency rule is not this: it says what crosses
+    between the repos, and points at Change, in keeping knowledge
+    (the Tiers Model's Plan Step, 2026-11-27, decision D);
   - **keeping linked texts true:** settling a disagreement, the idea
     written from the facts-in-sync manual;
   - **how instructions are written for an agent:** how an Agent Skill
