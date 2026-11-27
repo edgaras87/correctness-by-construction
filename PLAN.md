@@ -144,7 +144,7 @@ work.
 Goal: every part of the commit-messages manual,
 `docs/conventions/commit-messages/`, stands at its layer, with the
 Agent Skill pair that waits on it alone, and the manual is gone.
-Now: stage 2, the two Problem Domain Ideas.
+Now: stage 3, the Backend Kit's Adapted Case.
 Gate:
 
 **At the opening.**
@@ -168,11 +168,12 @@ Gate:
       (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md`
       §3.5, *Where each layer is kept*; the map's QUESTION-7)
       (2026-11-27, stage 1: `6ba8b00a`).
-- [ ] Commit messages has a Problem Domain Idea in each Problem
+- [x] Commit messages has a Problem Domain Idea in each Problem
       Domain, keeping knowledge and CBC backend design, each with its
       row in §3.2's table of the same document. The one in keeping
       knowledge says why the scope, not the type, carries the signal
-      in a repo that keeps only text (decision A).
+      in a repo that keeps only text (decision A)
+      (2026-11-27, stage 2: `ba106c17`).
 - [ ] The Backend Kit's commit-messages Agent Skill, today
       `delivery/container/.claude/skills/commit-messages/SKILL.md`, is
       its Adapted Case at layer 3, at its path by §3.5, with its
