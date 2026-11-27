@@ -531,14 +531,16 @@ Each text it touches names it in §9.
 - **QUESTION-6. Where the Tool Bindings go.** How the Agent Model's
   channels map onto Claude Code: agent-arrangement §5, *The Claude
   Code Tool Binding*, and the Agent Model's §10, *The Tool Bindings*.
-  **Decided 2026-11-26, the reviewer:** split as every idea is, and
-  written by TODO's item that rewrites the Agent Model, whose Ideas
-  name it:
+  **Decided 2026-11-26, the reviewer:** split as every idea is:
   - what every Tool Binding must say, the Agent Model's §10: layer 1,
     in the Backbone Idea of how an agent works;
   - Claude Code's binding for the Backend Repos, all of which use it:
     a Backend Kit Adapted Case, layer 3;
   - ours, today's agent-arrangement §5: our own Adapted Case, layer 4.
+
+  Written in two parts (2026-11-27, the reviewer): layer 1 with the
+  Agent Model's rewrite; layers 3 and 4 with the agent-arrangement
+  manual's, since they come from its §5.
 - **QUESTION-7. Which ideas are Backbone Ideas.** §8's row on which
   ideas here are Idea Models, decided once with the layers document's
   open question 4, which ideas are Backbone Ideas

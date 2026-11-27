@@ -139,3 +139,124 @@ reason. That is a finding about the item, not a Plan Step skipping
 work.
 
 ---
+
+## Step: Rewrite the Agent Model into the layers  (the commit-messages Agent Skill; the commit-plan Agent Skill if a Change Set needs it)    [~]
+
+Goal: every part of the Agent Model, `docs/models/agent.md`, stands
+at its layer, and the Agent Model is gone.
+Now: stage 1, the Backbone Idea.
+Gate:
+
+**At the opening.**
+
+- [x] The Plan Step's branch `agent-model-2026-11-27`, if it has one, is cut
+      from main, and nothing of the Plan Step was done on main
+      (`.claude/rules/working-a-reading.md`, step 1)
+      (2026-11-27, cut at `cfa5c336`, before the opening commit).
+- [x] This Plan Step Gate was written before the work started
+      (2026-11-27, in the Plan Step's opening commit).
+- [x] The Plan Step's Work Approach is known: the stages its Notes
+      list, from the map, `temp/rewrite-map.md` §9, *Every text*, and
+      §10, *Shared questions*; no Approach on Trial drafted
+      (2026-11-27).
+
+**The Plan Step's own items.**
+
+- [ ] How an agent works is a Backbone Idea,
+      `knowledge/backbone-ideas/how-an-agent-works.md`, with its row
+      in §3.1's table of the layers document in keeping knowledge
+      (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md`
+      §3.5, *Where each layer is kept*; the map's QUESTION-7). The row
+      says what it holds: how text reaches an agent, and what each way
+      guarantees.
+- [ ] The Backbone Idea holds the two things every Tool Binding must
+      say, from the Agent Model's §10 (the map's QUESTION-6).
+- [ ] What one piece of agent work is stands as an open point, with
+      its trigger, beside the rule it would join.
+- [ ] How an agent works has a Problem Domain Idea in each Problem
+      Domain, keeping knowledge and CBC backend design, each with its
+      row in §3.2's table of the same document.
+- [ ] How an agent works, in CBC backend design, holds *At the gate*,
+      the gate's part of closing one of the Backend Repo's Plan Steps,
+      in one section. Its why stands in
+      `knowledge/problem-domain-ideas/cbc-backend-design/change-in-cbc-backend-design.md`
+      §2, *Changing a Kit Copy*; its steps in
+      `temp/common-ground/backend-repo-change-simulation.md` §3,
+      *Change a Kit Copy*, step 2.
+- [ ] The Agent Model's §9, *Where each convention lands*, is this
+      repo's own Adapted Case at layer 4, at its path by §3.5, or was
+      judged not needed.
+- [ ] Each part the map's §9 lists for the Agent Model has landed, or
+      was judged not needed, and the commit that ends it names where.
+- [ ] The Agent Model is gone, and every Living Text that named its
+      path or sections names where each part now stands
+      (`docs/conventions/facts-in-sync/` §3.3, *The rename grep*).
+- [ ] Each Glossary Name the new texts define stays in
+      `docs/glossary.md`, pointing at its new home, while a text
+      outside the layers model uses it (the map's QUESTION-2).
+
+**Known already.** The commit-messages and commit-plan Agent Skills
+have no *Gates* section; the own items stand alone.
+
+**At the close.**
+
+- [ ] Every link and path in the records resolves.
+- [ ] Every ADR a record cites exists.
+- [ ] Each pair of copies agrees, such as the worked example in the
+      cbc-framing Agent Skill and in the cbc-slice Agent Skill.
+- [ ] No line of Living Text in a record the Plan Step touched, or one that
+      mentions its subject, still says "now", "today" or "not yet"
+      about something the Plan Step changed.
+- [ ] New and changed text meets `.claude/rules/writing.md`.
+- [ ] Every commit on `agent-model-2026-11-27` follows the commit-messages Agent Skill.
+      Its subjects are counted by script: one up to 70 characters
+      passes, and one past 70 is the reviewer's to keep or rewrite
+      (`docs/conventions/commit-messages/` §2.1, *Conventional Commits*).
+- [ ] No commit straddles agent and project paths
+      (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*).
+- [ ] The Plan Step's lessons are written back where they came from:
+      conventions, the playbook, the concept.
+- [ ] `CLAUDE.md` read top to bottom; each line still passes its
+      three tests, or leaves (`docs/conventions/agent-arrangement/`
+      §2.4, *How the Entry File is written*).
+- [ ] Each Approach on Trial the Plan Step drafted or used has this
+      use's dated note, and was handed over for evaluation
+      (`.claude/approaches-on-trial/approach-drafting.md` §3, *Close*).
+
+Notes:
+- Opened 2026-11-27, the third Plan Step of TODO's "Rewrite today's
+  Maintainer Repo into the layers model, by the map", chosen by the
+  reviewer: the Agent Model needs no text first, and the
+  agent-arrangement manual waits on it, with 4 texts waiting on that
+  manual (the map's §9, by script). The TODO item stays: it is the
+  whole rewrite.
+- TODO's "Rewrite the Agent Model into the layers of knowledge" became
+  this Plan Step and left TODO. Its scope, on the reviewer's word:
+  the map's row, and *At the gate*. Two of its Ideas wait on the
+  agent-arrangement manual's text, so they go with that manual's
+  rewrite: `CLAUDE.md` coming in whole, now an Idea of the rewrite
+  item; Claude Code's Tool Binding for the Backend Repos and ours,
+  now in the map's QUESTION-6.
+- Decision A, on the reviewer's word: the Backbone Idea holds what the
+  Agent Model holds, how text reaches an agent and what each way
+  guarantees. The layers document planned it as "what one piece of
+  agent work is"; no text holds that, so it stays an open point,
+  written when a second text needs it. TODO's "Check `cbc-concept`"
+  waits on it.
+- Its stages, from the map:
+  1. the Backbone Idea, from §1 to §8, §10's two things, §11 and §12;
+  2. the two Problem Domain Ideas, with *At the gate*;
+  3. this repo's own Adapted Case, from §9;
+  4. the Agent Model goes: the rename grep, 55 path hits in 21
+     files by `git grep`, outside the devlog and the closed ADRs; the
+     9 Glossary Names it defines repointed;
+  5. the close.
+- Open, decided at the stage it meets: what the agent-arrangement
+  manual's Foundation Line, `the agent model`, becomes once the Agent
+  Model goes; where §12's evidence lines go; the form of *At the
+  gate*, an Agent Skill or a step of the close.
+- Their trigger met at this Plan Step's close: TODO's "Write the
+  understanding of the agent's memory" and "Decide how work is run by
+  agents"; named to the reviewer then.
+- Behind it: ADR-0082, decision 2; ADR-0087, decision 4; ADR-0089;
+  the map's QUESTION-2, QUESTION-6 and QUESTION-7.

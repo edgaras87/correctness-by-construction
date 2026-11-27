@@ -49,6 +49,10 @@
         Model;
       - one Plan Step per idea, as change was done;
       - each Plan Step on a branch: shipped files move.
+      - `CLAUDE.md` comes in whole with the agent-arrangement manual,
+        its Local Rule among its lines: no understanding text for one
+        line before the rest (2026-11-23, the reviewer; moved here
+        from the Agent Model's item, 2026-11-27).
       Trigger: the map's Plan Step closed.
       See: devlog 2026-11-26, the map's Plan Step; ADR-0082.
 
@@ -335,46 +339,6 @@
       See: devlog 2026-11-08, CBC design beyond backends;
       `TODO-CONVERSATION-MEMORY.md` §33, *CBC design beyond backends*.
 
-- [ ] Rewrite the Agent Model into the layers of knowledge: how an
-      agent works as a Backbone Idea, a Problem Domain Idea of it in
-      each Problem Domain, and Adapted Cases written from each
-      (2026-11-16, the reviewer).
-      Context: the layers model plans how an agent works as a
-      Backbone Idea, rewritten from the Agent Model
-      (`docs/models/agent.md`). It holds what one piece of agent
-      work is: what the agent does, when, where and how
-      (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §3.1, *The Backbone
-      Idea layer*). Each Problem Domain holds its own Problem Domain Idea
-      of it (§2.2 there).
-      Ideas:
-      - the same shape as the concept's split, the item above;
-      - the two Problem Domain Ideas of it are written apart, each its
-        Problem Domain's own; what both hold goes up to the Backbone
-        Idea (`knowledge/backbone-ideas/layers-of-knowledge.md` §3.2,
-        *The Problem Domain layer*);
-      - the piece of work, split off as a Backbone Idea of its own if
-        a second Backbone Idea uses it; both then point at it
-        (`knowledge/backbone-ideas/layers-of-knowledge.md` §3.1, *The
-        Backbone Idea layer*);
-      - `CLAUDE.md` comes in whole then, its Local Rule among its
-        lines: no understanding text for one line before the rest
-        (2026-11-23, the reviewer);
-      - the Backend Kit's *At the gate*, the gate's part of closing
-        one of the Backend Repo's Plan Steps, is written with how a
-        Backend Repo closes a Plan Step, in how an agent works, in
-        CBC backend design. Its form, an Agent Skill or a step of
-        the close, is decided then. Its why stands in
-        `knowledge/problem-domain-ideas/cbc-backend-design/change-in-cbc-backend-design.md`
-        §2, *Changing a Kit Copy*; its steps in the simulation's §3,
-        step 2 (2026-11-25, the reviewer);
-      - the Tool Bindings, written with it: what every binding must
-        say at layer 1, Claude Code's for the Backend Repos as a
-        Backend Kit Adapted Case at layer 3, ours at layer 4
-        (`temp/rewrite-map.md` §10, QUESTION-6, 2026-11-26, the
-        reviewer).
-      Trigger: with the concept's split.
-      See: devlog 2026-11-16 and 2026-11-18, layers 3 and 4 read back.
-
 - [ ] Check `cbc-concept` for ideas not yet taken in here, then drop
       it (2026-11-19, the reviewer).
       Context: the rebuild in `cbc-concept` ended (ADR-0082). The
@@ -385,8 +349,9 @@
       Ideas:
       - the reviewer reads it manually first; then the agent checks it
         for ideas not yet taken in here; then it is dropped.
-      Trigger: the Agent Model's rewrite reaches the piece of work as a
-      Backbone Idea (the item above).
+      Trigger: what one piece of agent work is, written as an idea: an
+      open point of how an agent works (`PLAN.md`, the Agent Model's
+      Plan Step, decision A).
       See: ADR-0082; ADR-0081.
 
 - [ ] Try CBC design on the finished Common Ground Problem, beside
@@ -958,8 +923,8 @@
       only from that CBC Run Reading, each line traced to the CBC Run. CBC Run 3
       has had no Release; CBC Run 4 released the same project, so its
       Entry File is read, CBC Run 3's beside it.
-      Trigger: the Agent Model is rewritten, where `CLAUDE.md` comes in
-      whole.
+      Trigger: `CLAUDE.md` comes in whole, with the agent-arrangement
+      manual's rewrite.
       See: devlog 2026-09-06 (the template re-cut).
 
 - [ ] Decide whether an Idea Model ships to a CBC Run (2026-10-24, the

@@ -78,7 +78,7 @@ Borrowed:
 
 The Backend Kit's, in its group for keeping knowledge, each written from this document:
 - for changing a Kit Copy, `knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/change-a-kit-copy/`. It loads when a Kit Copy is touched;
-- the gate's part of closing one of the Backend Repo's Plan Steps, *At the gate*, written with how a Backend Repo closes a Plan Step (`TODO.md`, the item that rewrites the Agent Model);
+- the gate's part of closing one of the Backend Repo's Plan Steps, *At the gate*, written with how a Backend Repo closes a Plan Step (`PLAN.md`, the Agent Model's Plan Step);
 - for taking a Kit Update, `knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/take-the-kit-update/`, itself in the Kit Update and taken first.
 
 ## 5. Open questions

@@ -109,7 +109,7 @@ Layer 1 holds Backbone Ideas (`knowledge/backbone-ideas/layers-of-knowledge.md` 
 | Backbone Idea | What it says | Home |
 |---|---|---|
 | The layers of knowledge | the layers knowledge sits in, and what each holds | `knowledge/backbone-ideas/layers-of-knowledge.md` |
-| How an agent works | what one piece of agent work is: what the agent does, when, where and how | planned, from `docs/models/agent.md` (`TODO.md`, the item that rewrites the Agent Model) |
+| How an agent works | what one piece of agent work is: what the agent does, when, where and how | planned, from `docs/models/agent.md` (`PLAN.md`, the Agent Model's Plan Step) |
 | CBC design | how a system is designed by CBC, for no one kind of system | planned, from `concept/` (`TODO.md`, the item that splits the concept) |
 | Defined Terms | what a Defined Term is, and what keeps its meaning exact | `knowledge/backbone-ideas/defined-terms.md` |
 | Change | any change to knowledge, wherever it starts, and what holds for every one | `knowledge/backbone-ideas/change.md` |
@@ -137,7 +137,7 @@ The Maintainer Repo's own Problem Domain. It works by its own Adapted Cases, wri
 | The layers of knowledge, in keeping knowledge | The layers of knowledge | where each layer is kept | this document |
 | Defined Terms, in keeping knowledge | Defined Terms | the mark; where each is defined; the Borrow Table; finding one | `knowledge/problem-domain-ideas/keeping-knowledge/defined-terms-in-keeping-knowledge.md` |
 | Change, in keeping knowledge | Change | the arrows between the Maintainer Repo and the Backend Repos; how a change travels them | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` |
-| How an agent works, in keeping knowledge | How an agent works | not yet known | planned (`TODO.md`, the item that rewrites the Agent Model) |
+| How an agent works, in keeping knowledge | How an agent works | not yet known | planned (`PLAN.md`, the Agent Model's Plan Step) |
 | Repo hygiene, in keeping knowledge | Repo hygiene | no stack; the Backend Kit's files it keeps | `knowledge/problem-domain-ideas/keeping-knowledge/repo-hygiene-in-keeping-knowledge.md` |
 | Records, in keeping knowledge | Records | no end; one Plan Step in the plan; no changelog; the Backend Kit's records it keeps | `knowledge/problem-domain-ideas/keeping-knowledge/records-in-keeping-knowledge.md` |
 
@@ -148,7 +148,7 @@ The Backend Repos' Problem Domain. The Maintainer Repo keeps its Problem Domain 
 | Problem Domain Idea | Adapted from | What it adds | Home |
 |---|---|---|---|
 | CBC design, in CBC backend design | CBC design | backends as the kind of system | planned, from `concept/` (`TODO.md`, the item that splits the concept) |
-| How an agent works, in CBC backend design | How an agent works | not yet known | planned (`TODO.md`, the item that rewrites the Agent Model) |
+| How an agent works, in CBC backend design | How an agent works | not yet known | planned (`PLAN.md`, the Agent Model's Plan Step) |
 | Defined Terms, in CBC backend design | Defined Terms | the Backend Kit's Defined Terms, read in a Backend Repo without layers 1 and 2 | `knowledge/problem-domain-ideas/cbc-backend-design/defined-terms-in-cbc-backend-design.md` |
 | Change, in CBC backend design | Change | how a Backend Repo changes a Kit Copy, and takes a Kit Update | `knowledge/problem-domain-ideas/cbc-backend-design/change-in-cbc-backend-design.md` |
 | Repo hygiene, in CBC backend design | Repo hygiene | the files at birth; the stack's lines at their Plan Step | `knowledge/problem-domain-ideas/cbc-backend-design/repo-hygiene-in-cbc-backend-design.md` |
