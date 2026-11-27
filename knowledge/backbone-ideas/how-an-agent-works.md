@@ -206,7 +206,7 @@ This document names capabilities. A Tool Binding names the mechanisms one tool g
 - **The model's capability.** How capable, how current: it changes with each release. These are claims about the shape of the runtime, not its quality.
 - **The tool's mechanisms:** a Tool Binding's (§8).
 
-## 10. claims
+## 10. Claims
 
 The structure above mixes mechanical facts, such as that a session starts empty and a file must be read to be present, with assumptions about behaviour, such as that presence does not mean compliance. The second kind is stated here, each claim attached to the part it constrains, each written so it can be proven wrong.
 

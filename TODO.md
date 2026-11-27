@@ -53,6 +53,12 @@
         its Local Rule among its lines: no understanding text for one
         line before the rest (2026-11-23, the reviewer; moved here
         from the Agent Model's item, 2026-11-27).
+      - at a Plan Step's opening, before its gate, each planned part is
+        checked against the source by subject: the layers document
+        planned "what one piece of agent work is", which the Agent
+        Model does not hold, and a TODO Idea put *At the gate* in the
+        nearest text, not its subject's (2026-11-27, the Agent Model's
+        Plan Step).
       Trigger: the map's Plan Step closed.
       See: devlog 2026-11-26, the map's Plan Step; ADR-0082.
 
@@ -421,8 +427,9 @@
         word in a note sits outside the repo, where no Borrow Table
         or collision search reaches it. From the glossary item,
         closed 2026-11-23.
-      Trigger: the session-end item is decided, or the Agent Model is
-      reworked, whichever comes first.
+      Trigger: the session-end item is decided, or our Tool Binding is
+      written with the agent-arrangement manual's rewrite, whichever
+      comes first.
       See: `TODO-CONVERSATION-MEMORY.md` §32, *The agent's memory*.
 
 - [ ] Try a multi-agent refinement of the Common Ground Problem
@@ -617,7 +624,8 @@
         (`knowledge/backbone-ideas/how-an-agent-works.md` §5, *Write-back*);
         the Tool Binding (`docs/conventions/agent-arrangement/` §5,
         *The Claude Code Tool Binding*) would hold the mechanics.
-      Trigger: the Agent Model is rewritten.
+      Trigger: our Tool Binding is written, with the agent-arrangement
+      manual's rewrite.
       See: devlog 2026-10-21, evening; `TODO-CONVERSATION-MEMORY.md`
       §11, *How work is run by agents*; `.claude/decisions.md`, 2026-10-22, the account Agent Skills.
 
@@ -681,6 +689,15 @@
         only at the close: two new texts used a Defined Term they did
         not borrow, found by script at the close (2026-11-27, records'
         Plan Step).
+      - a script that replaces a word compares the heading text before
+        and after, not only the count: a sed for "Claim" lowercased
+        "## 10. Claims", and every pointer's title missed it; the
+        count still matched (2026-11-27, the Agent Model's Plan Step).
+      - a trigger names the idea it waits for, not a text: one named
+        "How an agent works, in keeping knowledge, written", and fired
+        when that text was written without the idea; the rename grep
+        for a text being written looks for triggers naming it
+        (2026-11-27, the Agent Model's Plan Step).
       Trigger: the rewrite done.
       See: `TODO-CONVERSATION-MEMORY.md` §14, *A sweep, and what
       looking back is*, §21, *A full read for missing fact
