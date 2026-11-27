@@ -488,7 +488,7 @@ A CBC Run whose decided constraints differ from what an Agent Skill Template
 assumes is off-template. It derives from what the Agent Skill Template
 implements, which the Agent Skill names. It records the deviation where
 its records table puts a decision, what it did instead and why
-(`docs/conventions/project-recording/` §13, *The records table*). It expects the
+(`knowledge/backbone-ideas/records.md` §12, *The Records Table*). It expects the
 deviation to come back as a change to the Agent Skill. It never bends a
 decided constraint to fit an Agent Skill Template (ADR-0008).
 
@@ -603,7 +603,7 @@ Reading written new is written without it (`docs/conventions/agent-arrangement/`
 - **The commits and decisions of working a CBC Run Reading** — a commit
   plan when it takes more than one commit,
   `docs/conventions/commit-plan/`, and an ADR when a decision has
-  rejected options, `docs/conventions/project-recording/`.
+  rejected options, `knowledge/backbone-ideas/records.md` §5, *The decisions*.
 - **The concept's version** — ADR-0003, and `CHANGELOG.md`'s
   standing comment.
 - **How a CBC Run is born** — `delivery/installs/pure-seed.md`.

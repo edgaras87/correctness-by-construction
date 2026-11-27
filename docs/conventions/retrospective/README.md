@@ -180,7 +180,7 @@ Steps*).
 ## What this does not cover
 
 - **The records a CBC Run keeps, and when each is opened** —
-  `docs/conventions/project-recording/`.
+  `knowledge/problem-domain-ideas/cbc-backend-design/records-in-cbc-backend-design.md`.
 - **How the apply Plan Step's commits are planned** —
   `docs/conventions/commit-plan/`.
 - **What an Output Shape is, and how a Plan Step Gate reads it** —

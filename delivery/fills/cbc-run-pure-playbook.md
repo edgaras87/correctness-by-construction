@@ -23,7 +23,8 @@ Concept Deliverer: since v10, written in Glossary Names)
 <!-- Copied into a Plan Step when it opens, and filled in. Copied, never
      shared: each Plan Step ticks its own items, so one checkbox cannot
      serve every Plan Step.
-     foundation: the project-recording convention -->
+     Why the form is as it is: (the Concept Deliverer's
+     knowledge/problem-domain-ideas/cbc-backend-design/records-in-cbc-backend-design.md §4, The playbook). -->
 
 ```markdown
 ## Step <n>: <title>  (<the Agent Skill or Approach on Trial it runs, if any>)    [ ]

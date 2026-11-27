@@ -133,7 +133,7 @@ What it holds:
 - for an Output Shape, the convention it lives under, `practice, under the
   shapes convention`;
 - for a record's form, the convention it comes from, `the
-  project-recording convention`;
+  writing convention`;
 - for a manual, the Idea Model that states its idea, by name, `the agent
   model`.
 
@@ -357,7 +357,7 @@ what a file stands on has to travel with the file.
 - **How a fact keeps one home, and how what points at it or derives
   from it stays in agreement** — `docs/conventions/facts-in-sync/`.
 - **The Repo Tag a citation carries, and the records a project keeps** —
-  `docs/conventions/project-recording/`.
+  `knowledge/backbone-ideas/records.md`.
 - **How an Agent Rule or an Agent Skill reaches an agent, and which paths
   the agent-arrangement manual lists** — `docs/conventions/agent-arrangement/`.
 - **What an Output Shape is and how one lives** — `docs/conventions/shapes/`.

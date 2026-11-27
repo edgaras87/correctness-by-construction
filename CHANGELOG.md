@@ -19,9 +19,8 @@ concept versions — whole numbers, not SemVer (ADR-0003).
      derived from it or checked against it; a convention's change,
      or the delivery's, is none — a manual has no version
      (ADR-0039).
-     Why the form is as it is: (docs/conventions/project-recording/
-     §6.4, How the changelog is written).
-     foundation: the project-recording convention -->
+     Why the form is as it is: (records, knowledge/backbone-ideas/records.md
+     §8, The changelog). -->
 
 ## [Unreleased]
 

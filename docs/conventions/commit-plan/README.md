@@ -67,7 +67,7 @@ held. The second kind makes the plan's last commits provisional, and the plan sa
 
 It is temporary, not a record. Nothing about it is meant to be read a
 year later except through `git log`. So it sits outside
-`docs/conventions/project-recording/`, whose records are all
+the records (`knowledge/backbone-ideas/records.md` §3, *The records*), which are all
 append-or-evolve (ADR-0038, 1b).
 
 ### 2.2 Root placement
@@ -181,7 +181,7 @@ the commit-messages manual's (`docs/conventions/commit-messages/` §2.4, *Commit
 - **The commit boundary itself, and the `agent` scope** —
   `docs/conventions/commit-messages/`.
 - **The records a plan is walked against, and what an ADR is** —
-  `docs/conventions/project-recording/`.
+  `knowledge/backbone-ideas/records.md`.
 - **The order of the work inside a plan** — the domain Agent Skill that
   knows the work; the order in the conventions' Local Map,
   `docs/conventions/README.md`, says which.
@@ -191,4 +191,4 @@ the commit-messages manual's (`docs/conventions/commit-messages/` §2.4, *Commit
 - The commit boundary and the `agent` scope:
   `docs/conventions/commit-messages/`.
 - The records table the plan is walked against:
-  `docs/conventions/project-recording/`.
+  `knowledge/backbone-ideas/records.md` §12, *The Records Table*.

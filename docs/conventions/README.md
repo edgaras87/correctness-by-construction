@@ -1,6 +1,6 @@
 # Conventions
 
-A Local Map (`docs/conventions/project-recording/` §8.6, *Local Maps*): how the conventions that act in sequence
+A Local Map (`knowledge/backbone-ideas/records.md` §10, *The architecture*): how the conventions that act in sequence
 during a piece of work hand to each other, from an idea to committed
 work. The others relate through what they govern, read or describe,
 and each states those relations in its manual's *What this does not

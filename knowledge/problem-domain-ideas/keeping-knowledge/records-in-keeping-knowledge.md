@@ -5,7 +5,7 @@ What it is: a Problem Domain Idea of keeping knowledge, the Maintainer Repo's Pr
 What it stands on: knowledge/backbone-ideas/records.md, the Backbone Idea it is adapted from. It adapts that document, and never retells it.
 What stands on it: this repo's own Adapted Cases for its records, and for its scratch space, its README.
 Its place in the repo: knowledge/problem-domain-ideas/keeping-knowledge/ (ADR-0084).
-Its first sources, input and not rules: the project-recording manual, docs/conventions/project-recording/README.md: The seats, its items 1 to 6; the map's QUESTION-3, temp/rewrite-map.md §10, Shared questions.
+Its first sources, input and not rules: the project-recording manual, docs/conventions/project-recording/README.md, deleted on 2026-11-27, its last state in git at 3bb95746: The seats, its items 1 to 6; the map's QUESTION-3, temp/rewrite-map.md §10, Shared questions.
 How it is edited: a trial, as in the layers of knowledge: a section's rules close it, in a last paragraph marked Rules, and govern that section.
 -->
 

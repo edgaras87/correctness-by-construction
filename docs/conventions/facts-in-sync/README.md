@@ -198,7 +198,7 @@ only the address.
 
 In a shipped file, a reference to this repo's text opens with "the
 Concept Deliverer's", such as (the Concept Deliverer's
-docs/conventions/project-recording/ §3.3, *Where ADRs live*), and
+docs/conventions/exchange/ §2.4, *The records' exception*), and
 serves this repo's Change Walk alone. A CBC Run cannot open our manuals, so
 the line says what the CBC Run needs without it.
 
@@ -275,7 +275,7 @@ both Convention Seats:
    repo inherited is adopted before anything here cites it
    (ADR-0038): a citation points at a decision this repo holds.
    Another repo's decision carries its Repo Tag
-   (`docs/conventions/project-recording/` §3.5, *Numbers across repos*).
+   (`knowledge/backbone-ideas/records.md` §5, *The decisions*).
 5. **A copy we deliver has its footer stripped at delivery.** A CBC
    Run cannot open our ADRs, so our footer is a pointer it cannot
    follow. We keep it, since we are the ones who change the file. The
@@ -397,13 +397,13 @@ Channel (`docs/models/agent.md` §8, *Choosing a channel*).
 ## What this does not cover
 
 - **Which record owns which kind of fact** —
-  `docs/conventions/project-recording/` §13, *The records table*.
+  `knowledge/backbone-ideas/records.md` §12, *The Records Table*.
 - **Which copy is the Master Copy, and how a copy reaches a CBC Run** —
   `docs/conventions/exchange/`.
 - **What a convention is, and the form of a manual** —
   `docs/conventions/conventions/`.
 - **The Repo Tag a citation carries, `CBC ADR-nnnn`** —
-  `docs/conventions/project-recording/` §3.5, *Numbers across repos*.
+  `knowledge/backbone-ideas/records.md` §5, *The decisions*.
 - **What a link is, and that either side may be wrong** —
   `docs/models/idea-to-output.md` §3.1, *The four Chain Links* and §3.3, *Settling a disagreement*.
 

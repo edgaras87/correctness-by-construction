@@ -160,7 +160,7 @@ delivered files below.
   the first task: `CLAUDE.md` here, and in every CBC Run
   (`docs/models/agent.md` §4.1, *Ambient Channel*).
 - **Local Map** — a directory's `README.md` that says how the parts
-  of that area relate (`docs/conventions/project-recording/` §8.6, *Local Maps*).
+  of that area relate (`knowledge/backbone-ideas/records.md` §1, *Its Defined Terms*).
 - **Agent Rule** — a file under `.claude/rules/`, loaded into the
   agent by path or in every session
   (`docs/conventions/agent-arrangement/` §3.2, *`.claude/rules/`*). A
@@ -186,9 +186,9 @@ delivered files below.
   A particular one is named by its file: `templates/registry.md`.
 - **Record Stub** — a record as it is born: the shipped file with its
   header comment and headings, which a project fills from its first
-  entry on. The Container Group holds one per record, each named by
-  its record
-  (`docs/conventions/project-recording/`, *What this is made usable as*).
+  entry on. The Backend Kit holds one per record, each named by
+  its record; the plan's and the glossary's still sit in the Container Group
+  (`knowledge/problem-domain-ideas/cbc-backend-design/records-in-cbc-backend-design.md` §1, *Its Defined Terms*).
 - **Hygiene Base** — the stack-agnostic hygiene files every repo
   gets, correct for a records-only one; a Stack Overlay is appended
   below each one's marked line (`knowledge/backbone-ideas/repo-hygiene.md`
@@ -201,7 +201,7 @@ delivered files below.
   file here (`docs/conventions/agent-arrangement/` §3.4, *`.claude/decisions.md`*).
 - **Repo Tag** — the letters a repo's decisions carry when cited from
   another repo, CBC for this one
-  (`docs/conventions/project-recording/` §3.5, *Numbers across repos*).
+  (`knowledge/backbone-ideas/records.md` §1, *Its Defined Terms*).
 
 ## How texts tie
 
@@ -243,7 +243,8 @@ delivered files below.
 
 ## The work
 
-- **Plan Step** — one piece of `PLAN.md`'s work, a CBC Run's or ours.
+- **Plan Step** — one piece of `PLAN.md`'s work, a CBC Run's or ours
+  (`knowledge/backbone-ideas/records.md` §1, *Its Defined Terms*).
   What makes work a Plan Step here is the Plan Step Form in our
   `PLAN.md` (ADR-0057). Named by its number in its plan: Step 0.
 - **Agent Skill Stage** — one phase of an Agent Skill, numbered, and
@@ -267,12 +268,13 @@ delivered files below.
   (`docs/conventions/commit-plan/` §1, *What a commit plan is*).
 - **Plan Step Gate** — a Plan Step's exit criteria: facts that can be
   checked, written when the Plan Step opens; it is done only when
-  every one is true (the Plan Step Form in our `PLAN.md`).
+  every one is true (`knowledge/backbone-ideas/records.md` §1, *Its Defined Terms*; the Plan Step
+  Form in our `PLAN.md`).
 - **Conversation Memory** — the talk that shaped a TODO item, kept
   beside it in `TODO-CONVERSATION-MEMORY.md`: what was asked, the
   options weighed, what was said for and against. It decides
   nothing; it is read when the item is worked
-  (`docs/conventions/project-recording/` §14, *Conversation Memory*).
+  (`.claude/understanding/conversation-memory.md` §1, *Its Defined Terms*).
 
 ## The Agent Model
 

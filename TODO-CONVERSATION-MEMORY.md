@@ -3,7 +3,7 @@
      against, the reviewer's own words. A record that decides
      nothing and tells no story: the item's ADR decides, and the
      devlog tells. Our Convention Seat only, on trial
-     (docs/conventions/project-recording/ §14, Conversation Memory; ADR-0060).
+     (.claude/understanding/conversation-memory.md; ADR-0060).
 
      One section per item: a TODO item, or an open question another
      record holds. Numbered as added; a number is never reused.
@@ -27,9 +27,7 @@
      the file stays, empty or not.
 
      Last touched: 2026-11-26.
-     Why the form is as it is: (docs/conventions/project-recording/
-     §14, Conversation Memory).
-     foundation: the project-recording convention -->
+     Why the form is as it is: (.claude/understanding/conversation-memory.md). -->
 
 # TODO's Conversation Memory
 

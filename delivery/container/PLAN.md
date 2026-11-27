@@ -7,9 +7,8 @@
      playbook the Concept Deliverer keeps. The playbook itself is not delivered. A project born
      without a playbook fills the placeholders in place. Either way the two STEPS markers stay:
      they are what makes the swap re-runnable.
-     Why the form is as it is: (the Concept Deliverer's docs/conventions/project-recording/
-     §2.4, How a plan is written).
-     foundation: the project-recording convention -->
+     Why the form is as it is: (the Concept Deliverer's
+     knowledge/problem-domain-ideas/cbc-backend-design/records-in-cbc-backend-design.md §3, The plan). -->
 
 <!-- Steps from: <playbook> v<N> at <concept commit>,
      copied at birth. It is filled in place at birth, and this

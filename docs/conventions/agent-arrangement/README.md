@@ -240,9 +240,9 @@ from the names below, *How to work here* and *Local rules*, so two
 born repos spell them the same way.
 
 *The records table* is the slot this convention provides and
-`docs/conventions/project-recording/` fills: its rows, and the
-requirement that every row names a moment, belong to that
-convention (`docs/conventions/project-recording/` §13, *The records table*).
+records fill: its rows, and the
+requirement that every row names a moment, belong to records
+(`knowledge/backbone-ideas/records.md` §12, *The Records Table*).
 
 *How to work here* is the stance a project expects where it is not
 the obvious one — "decide before building", "prefer exploring over
@@ -588,7 +588,7 @@ on (`docs/conventions/exchange/` §2.4, *The records' exception*).
 - **The commit that touches these paths, and its scope** —
   `docs/conventions/commit-messages/`.
 - **The records the Entry File's table lists, and when each is
-  touched** — `docs/conventions/project-recording/` §13, *The records table*.
+  touched** — `knowledge/backbone-ideas/records.md` §12, *The Records Table*.
 - **What an Output Shape is, and how one lives** —
   `docs/conventions/shapes/`.
 - **How a copy under `.claude/` is updated, and what a CBC Run may do

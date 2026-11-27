@@ -68,15 +68,13 @@ the structure of a thing rather than tested in afterwards.
 | Changelog | [CHANGELOG.md](CHANGELOG.md) | What changed per concept version, for those who pin one |
 | Devlog | [devlog/](devlog/) | What happened, the dead ends, where to resume |
 
-A summary. Every record in both Convention Seats, the CBC Run's and this repo's,
-and where each is explained, is project-recording's list of the
-records (`docs/conventions/project-recording/` §1, *The records at a glance*).
+A summary. Which records a repo keeps, and what each answers, is
+records' list (`knowledge/backbone-ideas/records.md` §3, *The records*).
 
 <!-- A line here is true now, and meant for someone arriving from
      outside. What changes weekly is TODO.md's; why is the ADRs'; how
      it went is the devlog's. A missing section is not an omission. It
      arrives when a Plan Step Gate makes it true, since the README says
      only what is already true.
-     Why the form is as it is: (docs/conventions/project-recording/
-     §7.4, How a README is written).
-     foundation: the project-recording convention -->
+     Why the form is as it is: (records, knowledge/backbone-ideas/records.md
+     §9, The README). -->

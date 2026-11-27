@@ -5,7 +5,7 @@ What it is: a Problem Domain Idea of CBC backend design, the Backend Repos' Prob
 What it stands on: knowledge/backbone-ideas/records.md, the Backbone Idea it is adapted from. It adapts that document, and never retells it.
 What stands on it: the Backend Kit's Adapted Cases for the records, the Record Stubs and the playbook, and for the scratch space, its README.
 Its place in the repo: knowledge/problem-domain-ideas/cbc-backend-design/ (ADR-0084). It is kept in the Maintainer Repo, and never copied to a Backend Repo.
-Its first sources, input and not rules: the project-recording manual, docs/conventions/project-recording/README.md: What this is made usable as; The seats, The CBC Run's seat, and its items 4 to 6; §2.4, §3.3, §3.4, §7.5, §8.1, §8.4 and §9; the records' exception, docs/conventions/exchange/README.md §2.4.
+Its first sources, input and not rules: the project-recording manual, docs/conventions/project-recording/README.md, deleted on 2026-11-27, its last state in git at 3bb95746: What this is made usable as; The seats, The CBC Run's seat, and its items 4 to 6; §2.4, §3.3, §3.4, §7.5, §8.1, §8.4 and §9; the records' exception, docs/conventions/exchange/README.md §2.4.
 How it is edited: a trial, as in the layers of knowledge: a section's rules close it, in a last paragraph marked Rules, and govern that section.
 -->
 

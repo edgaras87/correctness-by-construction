@@ -4,7 +4,7 @@
      one part shows what else moves. How a part came to be is the
      ADRs' and the devlog's; this page points there and does not
      retell it. The Concept Deliverer's ARCHITECTURE.md
-     (docs/conventions/project-recording/, The Concept Deliverer's seat;
+     (.claude/understanding/architecture.md;
      ADR-0044, ADR-0068): aiming at about two pages, owning the pairing of
      stated and made usable, the table of CBC Runs, how each rule is held and the codemap, and
      pointing at the home of everything else.
@@ -13,9 +13,9 @@
      repo and in the CBC Runs, and mark anything merely intended as
      intended. A line found wrong, or two that contradict, and not
      fixed at once, is a TODO known issue until it is.
-     Why the form is as it is: (docs/conventions/project-recording/
-     §8.4, How ARCHITECTURE is written).
-     foundation: the project-recording convention -->
+     Why the form is as it is: (records, knowledge/backbone-ideas/records.md
+     §10, The architecture; and records, in keeping knowledge,
+     knowledge/problem-domain-ideas/keeping-knowledge/records-in-keeping-knowledge.md §5). -->
 
 ## Overview
 
@@ -110,8 +110,6 @@ they hand work to each other is the conventions' Local Map,
   Deliverer and a CBC Run.
 - `docs/conventions/facts-in-sync/` — how each fact keeps one home,
   and what relies on it agrees.
-- `docs/conventions/project-recording/` — the records, and how each
-  is kept.
 - `docs/conventions/retrospective/` — how a finished CBC Run looks
   back.
 - `docs/conventions/shapes/` — what a kind of output looks like.
@@ -231,8 +229,8 @@ layout of the tree, or a check at commit review.
      too long for that column moves every line, so a new one is
      fitted to it (ADR-0044). -->
 
-A line marked *record* is one of the records; what each answers is the project-recording manual's
-(`docs/conventions/project-recording/` §1, *The records at a glance*).
+A line marked *record* is one of the records; what each answers is records'
+(`knowledge/backbone-ideas/records.md` §3, *The records*).
 
 ```
 README.md            record

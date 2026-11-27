@@ -45,8 +45,8 @@
       that land with a text (§8, *Items from TODO*).
       Ideas:
       - the order by §9's *Needs first*: first the texts that need
-        none, such as the project-recording and visual-comparison
-        manuals and the Agent Model;
+        none, such as the visual-comparison manual and the Agent
+        Model;
       - one Plan Step per idea, as change was done;
       - each Plan Step on a branch: shipped files move.
       Trigger: the map's Plan Step closed.
@@ -736,16 +736,16 @@
 - [ ] Decide whether a session's end has a home of its own, and
       what it holds (2026-10-22, the reviewer).
       Context: a session's end is spread out.
-      Project-recording asks for a devlog entry and a Resume line
-      (`docs/conventions/project-recording/` §4, *The devlog*). Two habits
+      Records ask for a devlog entry and a Resume line
+      (`knowledge/backbone-ideas/records.md` §6, *The devlog*). Two habits
       live only in the agent's own memory: a line per
       delegation, and, from 2026-10-22, one missing-context
       finding. A reader of the repo sees neither.
       Ideas:
       - a convention of its own, by its moment; the sweep its
         twin for work that has landed.
-      - a section of project-recording's devlog part
-        (`docs/conventions/project-recording/` §4, *The devlog*), since most of it is devlog writes.
+      - a section of records' devlog part
+        (`knowledge/backbone-ideas/records.md` §6, *The devlog*), since most of it is devlog writes.
       - an Approach on Trial first (ADR-0058).
       - an Agent Rule loaded every session, naming each duty and its
         home.
@@ -800,12 +800,12 @@
 - [ ] Make the conventions index a full Local Map (2026-09-30, the
       reviewer).
       Context: its order shows only the conventions that act in
-      sequence during a piece of work. The other nine relate by what
+      sequence during a piece of work. The other seven relate by what
       they govern, read or describe, stated as about thirty Fact References across the manuals' *What this does not cover*, and seen
-      together nowhere. Project-recording's Local Map part now exists
-      (`docs/conventions/project-recording/` §8.6, *Local Maps*, ADR-0045).
+      together nowhere. Records' Local Map part now exists
+      (`knowledge/backbone-ideas/records.md` §10, *The architecture*, ADR-0045).
       Ideas:
-      - all twelve and how each touches the others, derived from those references, built by the visual-comparison Agent Skill.
+      - all ten and how each touches the others, derived from those references, built by the visual-comparison Agent Skill.
       - the four Chain Links (`docs/models/idea-to-output.md` §3.1, *The four Chain Links*),
         each with its upkeep: stands on
         (`docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*, the Foundation
@@ -912,9 +912,9 @@
 
 - [ ] Judge the Conversation Memory trial (2026-11-01, the
       refinement's last read).
-      Context: project-recording put `TODO-CONVERSATION-MEMORY.md` on
-      trial (`docs/conventions/project-recording/` §14,
-      *Conversation Memory*). The trial runs on as it is, three
+      Context: this repo put `TODO-CONVERSATION-MEMORY.md` on
+      trial (`.claude/understanding/conversation-memory.md` §3,
+      *The trial*). The trial runs on as it is, three
       forms included, and is judged later, on the reviewer's word.
       If it holds, it reaches CBC Runs through the Container Group;
       if not, it goes.
@@ -1061,11 +1061,11 @@
       - what is tracked is read again when the repo grows a new kind
         of thing.
       - the Record Stub gains a `Tracks:` line beside `Versioning:`, decided
-        at the CBC Framing Plan Step, with when to revisit it; the lesson goes in project-recording's changelog part
-        (`docs/conventions/project-recording/` §6, *CHANGELOG.md*).
+        at the CBC Framing Plan Step, with when to revisit it; the lesson goes in records' changelog part
+        (`knowledge/backbone-ideas/records.md` §8, *The changelog*).
       - a Delivery Fill sets a CBC Run's two lines at birth, as the playbook
         fills its plan; we fill ours in place
-        (`docs/conventions/project-recording/` §9.4, *How a playbook is written*, step 1).
+        (`knowledge/problem-domain-ideas/cbc-backend-design/records-in-cbc-backend-design.md` §4, *The playbook*, moment 1).
       Trigger: the release item above opens; its CHANGELOG entry
                needs the answer.
       See: devlog 2026-10-21; `TODO-CONVERSATION-MEMORY.md` §4, *What our changelog tracks*.
@@ -1135,13 +1135,13 @@
 
 - [ ] Does the playbook need a convention of its own? (2026-09-29,
       the reviewer)
-      Context: project-recording describes it
-      (`docs/conventions/project-recording/` §9, *The playbook*), and one playbook exists, the CBC Run's. It is not an Output Shape: an Output Shape is form, never content
+      Context: records, in CBC backend design, describes it
+      (`knowledge/problem-domain-ideas/cbc-backend-design/records-in-cbc-backend-design.md` §4, *The playbook*), and one playbook exists, the CBC Run's. It is not an Output Shape: an Output Shape is form, never content
       (`docs/conventions/shapes/` §1.1, *What an Output Shape says*, and §2, *What an
       Output Shape is not*), and a filled-in template is not one; a
       playbook is content, copied and filled at birth.
-      Ideas: a convention of its own, split from project-recording's playbook part
-        (`docs/conventions/project-recording/` §9, *The playbook*).
+      Ideas: a convention of its own, split from records' playbook part
+        (`knowledge/problem-domain-ideas/cbc-backend-design/records-in-cbc-backend-design.md` §4, *The playbook*).
       Trigger: a second typed playbook.
       See: devlog 2026-09-29, the PLAN pass.
 

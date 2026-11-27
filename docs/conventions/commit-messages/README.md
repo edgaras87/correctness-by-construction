@@ -139,7 +139,7 @@ sentences live in this Agent Skill and nowhere else.
 - **What the agent side is, and which paths it holds** —
   `docs/conventions/agent-arrangement/`.
 - **The records a commit's footer links, and what an ADR is** —
-  `docs/conventions/project-recording/`.
+  `knowledge/backbone-ideas/records.md`.
 
 ## Where to look
 

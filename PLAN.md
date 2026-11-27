@@ -18,9 +18,9 @@
 <!-- Copied into a Plan Step when it opens, and filled in. The CBC Run's
      form, delivery/fills/cbc-run-pure-playbook.md, adapted to this
      Convention Seat (ADR-0057).
-     Why the form is as it is: (docs/conventions/project-recording/
-     §2.4, How a plan is written).
-     foundation: the project-recording convention -->
+     Why the form is as it is: (records, knowledge/backbone-ideas/records.md
+     §4, The plan; and records, in keeping knowledge,
+     knowledge/problem-domain-ideas/keeping-knowledge/records-in-keeping-knowledge.md §3). -->
 
 **A Plan Step is the one piece of work being done now:** a CBC Run Reading,
 or a TODO item big enough for a branch. A Change Set inside it is a
@@ -145,7 +145,7 @@ work.
 Goal: every part of the project-recording manual, and of the record
 forms that wait on it alone, stands at its layer, and the manual is
 gone.
-Now: stage 5, the manual goes.
+Now: stage 6, the close.
 Gate:
 
 **At the opening.**
@@ -190,14 +190,19 @@ Gate:
       own; two Adapted Understanding Texts of our own,
       `.claude/understanding/conversation-memory.md` and
       `.claude/understanding/architecture.md`).
-- [ ] Each part the map's §9 lists for the manual has landed, or was
-      judged not needed, and the commit that ends it names where.
-- [ ] The manual is gone, and every Living Text that named its path or
+- [x] Each part the map's §9 lists for the manual has landed, or was
+      judged not needed, and the commit that ends it names where
+      (2026-11-27, the manual's deletion commit).
+- [x] The manual is gone, and every Living Text that named its path or
       sections names where each part now stands
-      (`docs/conventions/facts-in-sync/` §3.3, *The rename grep*).
-- [ ] Each Glossary Name the new texts define stays in
+      (`docs/conventions/facts-in-sync/` §3.3, *The rename grep*)
+      (2026-11-27; left: history, and the map's rows of files as
+      they stood at `491e673e`).
+- [x] Each Glossary Name the new texts define stays in
       `docs/glossary.md`, pointing at its new home, while a text
-      outside the layers model uses it (the map's QUESTION-2).
+      outside the layers model uses it (the map's QUESTION-2)
+      (2026-11-27: Local Map, Plan Step, Plan Step Gate, Record Stub,
+      Repo Tag and Conversation Memory, each still used outside).
 
 **Known already.** The commit-messages and commit-plan Agent Skills
 have no *Gates* section; the own items stand alone.
@@ -256,10 +261,11 @@ Notes:
   4. this repo's own Adapted Cases, with our seat and §14;
   5. the manual goes: the rename grep, the Glossary Names repointed;
   6. the close.
-- Open, decided at the stage it meets: what a Foundation Line naming
+- Decided at stages 3 to 5: what a Foundation Line naming
   `the project-recording convention` becomes once the manual goes. 16
-  texts carry one: 9 of the record forms here, and 7 texts outside
-  the layers model that stay.
+  texts carried one: 9 of the record forms here, and 7 texts outside
+  the layers model that stay. Each line goes, and its "Why the form
+  is as it is" points at the records text that holds the why.
 - Left to practice, by QUESTION-1: the paths of the Backend Kit's
   Record Stubs, and which whys are one record's alone; decided at
   stages 3 and 4.
