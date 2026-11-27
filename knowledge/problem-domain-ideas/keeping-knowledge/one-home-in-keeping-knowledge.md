@@ -5,7 +5,7 @@ What it is: a Problem Domain Idea of keeping knowledge, the Maintainer Repo's Pr
 What it stands on: knowledge/backbone-ideas/one-home.md, the Backbone Idea it is adapted from. It adapts that document, and never retells it.
 What stands on it: this repo's own Adapted Cases for one home and for the check at the commit.
 Its place in the repo: knowledge/problem-domain-ideas/keeping-knowledge/ (ADR-0084).
-Its first source, input and not rules: the facts-in-sync manual, docs/conventions/facts-in-sync/README.md: from What it is for, the handbook's evidence; §3.1, how a Fact Reference is written; §3.2 (PLAN.md, the facts-in-sync manual's Plan Step, decision D); from §3.3, the move of a trial's text and the commit plan's sweep; from §4, its greps; from §5, where a disagreement is raised; The Concept Deliverer's seat, each new line asked at the commit. A finding declined only for not being general is held already, by Change, in keeping knowledge §3.3, and one home §8 (decision F). A Backend Kit file's pointer at a Maintainer Repo text takes the form its rewritten files use (decision G). The decisions behind them: ADR-0059; ADR-0070; ADR-0072.
+Its first source, input and not rules: the facts-in-sync manual, docs/conventions/facts-in-sync/README.md: §3.1, how a Fact Reference is written; §3.2 (PLAN.md, the facts-in-sync manual's Plan Step, decision D); from §3.3, the move of a trial's text and the commit plan's sweep; from §4, its greps; from §5, where a disagreement is raised; The Concept Deliverer's seat, each new line asked at the commit. A finding declined only for not being general is held already, by Change, in keeping knowledge §3.3, and one home §8 (decision F). A Backend Kit file's pointer at a Maintainer Repo text takes the form its rewritten files use (decision G). The decisions behind them: ADR-0059; ADR-0070; ADR-0072.
 How it is edited: a trial, as in the layers of knowledge: a section's rules close it, in a last paragraph marked Rules, and govern that section.
 -->
 
@@ -22,7 +22,6 @@ Borrowed:
 | Backend Kit | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Backend Repo | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Copy Change | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
-| Entry File | `knowledge/backbone-ideas/agent-files.md` §1, *Its Defined Terms* |
 | Fact Reference | `knowledge/backbone-ideas/one-home.md` §1, *Its Defined Terms* |
 | Foundation Line | `docs/conventions/conventions/` §1.3, *The Foundation Line* |
 | Instruction Text | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
@@ -34,11 +33,7 @@ Borrowed:
 | Repo Tag | `knowledge/backbone-ideas/records.md` §1, *Its Defined Terms* |
 | Understanding Text | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
 
-## 2. What the work showed
-
-The handbook, the repo before this one, kept three copies of one rule in its Entry File, and they disagreed (`knowledge/problem-domain-ideas/keeping-knowledge/agent-files-in-keeping-knowledge.md` §2, *What the work showed*).
-
-## 3. Writing a Fact Reference
+## 2. Writing a Fact Reference
 
 A Fact Reference here is written in one form, always in parentheses:
 
@@ -62,7 +57,7 @@ A Backend Repo cannot open a Maintainer Repo text. So a Backend Kit file's line 
 - In a list whose items are only addresses, the address stands without parentheses. A section in it still carries its title.
 - A section's title is carried whole. Titles are 30 characters or fewer (`docs/conventions/writing/` §2, *Why each rule*, rule 10). A numbered rule's bold lead over 30 characters is cut at a word boundary, to 30 or fewer, ending in "…".
 
-## 4. Numbering a section's parts
+## 3. Numbering a section's parts
 
 A Fact Reference names a section's number. So a section divided into labelled parts numbers them, `### N.M`, and so does every section of the same form in the text, whether anything points there yet or not. A reader then meets one structure throughout.
 
@@ -75,7 +70,7 @@ This reaches the texts whose parts are pointed at: the Understanding Texts. In a
 - A label repeated in every section of one form is that form's fixed label, not a part.
 - In any text, a part that a Fact Reference points at is numbered.
 
-## 5. The Change Walk
+## 4. The Change Walk
 
 A text others stand on changes. The Change Walk finds what relies on it, in the same commit, or in the next when one side is an agent file and the other is not (`knowledge/backbone-ideas/commit-messages.md` §4, *What shares a commit*).
 
@@ -91,13 +86,13 @@ A home that moves is searched for by each old path, number and title (`knowledge
 - A text that changes for it has its own Change Walk.
 - At each commit, each new or changed line is asked whether it relies on a fact written elsewhere, and whether it says where.
 
-## 6. Where a disagreement is raised
+## 5. Where a disagreement is raised
 
 **Rules:**
 
 - A disagreement is raised where it is found, in one of three places: a Copy Change, read back in a Repo Reading; a question at a Plan Step's or a commit plan's boundary; or this repo's own check at the commit.
 - It is recorded in the commit body that settles it, or in an ADR when options were weighed.
 
-## 7. Open questions
+## 6. Open questions
 
 None is open now. A question joins this list when work meets one, and leaves it once its answer is in the text above.
