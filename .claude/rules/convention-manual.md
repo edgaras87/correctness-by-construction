@@ -57,7 +57,7 @@ frontmatter naming it, `foundation: the tiers model`
    points at:
    - Fact References to a manual, the concept or an Idea Model, never
      to an Agent Skill or a record for a fact
-     (`docs/models/idea-to-output.md` §3.2, *The direction of a link*);
+     (`knowledge/backbone-ideas/layers-of-knowledge.md` §3, *The layers*);
    - never a restatement of another convention's subject, but for a
      retelling with a Fact Reference to its section, where the reader
      acts on it in place (`docs/conventions/facts-in-sync/` §2,

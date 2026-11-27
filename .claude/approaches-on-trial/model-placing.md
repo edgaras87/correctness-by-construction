@@ -15,7 +15,7 @@ what is its repo's. It is the step from a convention to an Idea Model
 ## When it opens
 
 An Idea Model's line relies on a fact whose home is a manual or another
-text below it (`docs/models/idea-to-output.md` §3.2, *The direction of a link*).
+text below it (`knowledge/backbone-ideas/layers-of-knowledge.md` §3, *The layers*).
 
 ## Stages
 
