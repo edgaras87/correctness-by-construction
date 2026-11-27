@@ -26,7 +26,7 @@ Borrowed:
 | Problem Domain Idea | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
 | Records Table | `knowledge/backbone-ideas/records.md` §1, *Its Defined Terms* |
 
-## 2. Why the layers' rule is a Local Rule
+## 2. Why a Local Rule
 
 The Local Rule says: before writing a new text for the layers of knowledge, read where it goes, in the layers document's §3.5. A text placed in the wrong folder is a text at the wrong layer, since a text's path says its layer.
 
