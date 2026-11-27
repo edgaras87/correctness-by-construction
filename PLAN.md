@@ -144,7 +144,7 @@ work.
 
 Goal: every part of the Agent Model, `docs/models/agent.md`, stands
 at its layer, and the Agent Model is gone.
-Now: stage 2, the two Problem Domain Ideas.
+Now: stage 3, this repo's own Adapted Case.
 Gate:
 
 **At the opening.**
@@ -175,16 +175,18 @@ Gate:
 - [x] What one piece of agent work is stands as an open point, with
       its trigger, beside the rule it would join (2026-11-27, the
       Backbone Idea's §11, question 1).
-- [ ] How an agent works has a Problem Domain Idea in each Problem
+- [x] How an agent works has a Problem Domain Idea in each Problem
       Domain, keeping knowledge and CBC backend design, each with its
-      row in §3.2's table of the same document.
-- [ ] How an agent works, in CBC backend design, holds *At the gate*,
+      row in §3.2's table of the same document (2026-11-27).
+- [-] ~~How an agent works, in CBC backend design, holds *At the gate*,
       the gate's part of closing one of the Backend Repo's Plan Steps,
       in one section. Its why stands in
       `knowledge/problem-domain-ideas/cbc-backend-design/change-in-cbc-backend-design.md`
       §2, *Changing a Kit Copy*; its steps in
       `temp/common-ground/backend-repo-change-simulation.md` §3,
-      *Change a Kit Copy*, step 2.
+      *Change a Kit Copy*, step 2.~~ Struck, on the reviewer's word:
+      it is how a Backend Repo closes a Plan Step, the playbook's
+      subject, and moved to the playbook's row of the map's §9.
 - [ ] The Agent Model's §9, *Where each convention lands*, is this
       repo's own Adapted Case at layer 4, at its path by §3.5, or was
       judged not needed.
@@ -247,7 +249,7 @@ Notes:
   waits on it.
 - Its stages, from the map:
   1. the Backbone Idea, from §1 to §8, §10's two things, §11 and §12;
-  2. the two Problem Domain Ideas, with *At the gate*;
+  2. the two Problem Domain Ideas, with *At the gate*, struck there;
   3. this repo's own Adapted Case, from §9;
   4. the Agent Model goes: the rename grep, 55 path hits in 21
      files by `git grep`, outside the devlog and the closed ADRs; the
@@ -255,8 +257,8 @@ Notes:
   5. the close.
 - Open, decided at the stage it meets: what the agent-arrangement
   manual's Foundation Line, `the agent model`, becomes once the Agent
-  Model goes; where §12's evidence lines go; the form of *At the
-  gate*, an Agent Skill or a step of the close.
+  Model goes. Where §12's evidence lines go was decided at stage 1,
+  decision B on the reviewer's word: each where it was seen.
 - Their trigger met at this Plan Step's close: TODO's "Write the
   understanding of the agent's memory" and "Decide how work is run by
   agents"; named to the reviewer then.
