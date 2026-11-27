@@ -145,7 +145,7 @@ work.
 Goal: every part of the project-recording manual, and of the record
 forms that wait on it alone, stands at its layer, and the manual is
 gone.
-Now: stage 1, the Backbone Idea.
+Now: stage 2, the two Problem Domain Ideas.
 Gate:
 
 **At the opening.**
@@ -163,10 +163,11 @@ Gate:
 
 **The Plan Step's own items.**
 
-- [ ] Records is a Backbone Idea, `knowledge/backbone-ideas/records.md`,
+- [x] Records is a Backbone Idea, `knowledge/backbone-ideas/records.md`,
       with its row in §3.1's table of the layers document in keeping
       knowledge (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md`
-      §3.5, *Where each layer is kept*; the map's QUESTION-7).
+      §3.5, *Where each layer is kept*; the map's QUESTION-7)
+      (2026-11-27).
 - [ ] Records has a Problem Domain Idea in each Problem Domain,
       keeping knowledge and CBC backend design, each with its row in
       §3.2's table of the same document.
