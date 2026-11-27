@@ -967,17 +967,6 @@
                of the Idea Model behind it.
       See: ADR-0063.
 
-- [ ] Decide whether an Idea Model may be written for one convention
-      (2026-10-23, the reviewer).
-      Context: the text-division item had an Idea Model only where several
-      manuals share an idea. The reviewer asked to weaken that: an
-      Idea Model for one convention, "to see general idea behind that
-      convention". Change sends a lesson up as far as it is true
-      (`knowledge/backbone-ideas/change.md` §3, *How the layers fill*).
-      Trigger: a convention whose idea another repo could use, with
-               no second manual sharing it.
-      See: ADR-0063; `30eb42e:TODO-CONVERSATION-MEMORY.md` §1.
-
 - [ ] Look again at where a CBC Run learns how to treat an Agent Skill
       Template (2026-10-28, the reviewer).
       Context: four shipped files told the off-template rule in
