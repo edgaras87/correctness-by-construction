@@ -25,5 +25,5 @@ Each Defined Term is written with capitals at every use, and bold only here. Sea
 - **Instruction Text:** a text of an Adapted Case that the agent acts on in its work. Its home: `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms*.
 - **Maintainer Repo:** the repo that keeps the Backend Kit, and reads back what this repo learns. Its home: `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms*.
 - **Paths Rule:** a rule file with a `paths:` list, loaded when a file it names is touched. Its home: `docs/conventions/agent-arrangement/` §5.6, *Rules files*.
-- **Plan Step:** one piece of this repo's plan, closed at its gate. Its home: `docs/conventions/project-recording/` §2.1, *What a plan is*.
+- **Plan Step:** one piece of this repo's plan, closed at its gate. Its home: `knowledge/backbone-ideas/records.md` §1, *Its Defined Terms*.
 - **Stack Overlay:** the lines this repo's stack adds to each file of the Hygiene Base, appended below its marked line. Its home: `knowledge/backbone-ideas/repo-hygiene.md` §1, *Its Defined Terms*.

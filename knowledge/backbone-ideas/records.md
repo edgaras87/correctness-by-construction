@@ -16,6 +16,8 @@ This document says which records a repo keeps, what each answers, and how they f
 ## 1. Its Defined Terms
 
 - **Local Map:** a folder's README that says how the parts of that folder relate. `ARCHITECTURE.md` points into it.
+- **Plan Step:** one piece of a repo's plan: the work it holds, its Plan Step Gate and its live status.
+- **Plan Step Gate:** a Plan Step's exit criteria: facts that can be checked. The Plan Step is done only when every one is true.
 - **Records Table:** the table, in the text read before any work in a repo, that gives each record one row: the moment it is opened, what it holds, and its path.
 - **Repo Tag:** the short upper-case name a repo's decisions carry when another repo cites them, such as `ABC ADR-0012`.
 
@@ -47,17 +49,17 @@ The table gives each record's usual place. §4 to §10 say what each is and why 
 
 ## 4. The plan
 
-A plan is its steps. The whole of the work is sketched coarsely, and the next one or two steps in detail. The detail moves forward as steps close. Each step has a live status and a gate: its exit criteria. The plan answers, at any moment, where the work stands, what is next and what *done* means. Without it, those three answers live only in someone's head.
+A plan is its Plan Steps. The whole of the work is sketched coarsely, and the next one or two Plan Steps in detail. The detail moves forward as Plan Steps close. Each Plan Step has a live status and a Plan Step Gate. The plan answers, at any moment, where the work stands, what is next and what *done* means. Without it, those three answers live only in someone's head.
 
 **Rules:**
 
-- A gate holds facts that can be checked, never intentions: "tests pass on a clean clone", not "the code is good". So no step is declared done from fatigue.
-- A closed step says what diverged from the plan.
-- A step links out to its decisions and its history, so the plan is the record the others point back to.
-- A step that stops is neither done nor dropped. It keeps its place and the work it did, and resumes where it stopped.
-- A step's goal is one piece of work. A goal that grows past one is re-cut: the step's items that moved are struck, each naming the backlog item it went to, and the step closes.
+- A Plan Step Gate holds facts that can be checked, never intentions: "tests pass on a clean clone", not "the code is good". So no Plan Step is declared done from fatigue.
+- A closed Plan Step says what diverged from the plan.
+- A Plan Step links out to its decisions and its history, so the plan is the record the others point back to.
+- A Plan Step that stops is neither done nor dropped. It keeps its place and the work it did, and resumes where it stopped.
+- A Plan Step's goal is one piece of work. A goal that grows past one is re-cut: the Plan Step Gate's items that moved are struck, each naming the backlog item it went to, and the Plan Step closes.
 - Updating the plan is part of the work, so no status goes stale.
-- No step is detailed long before the steps ahead of it are done.
+- No Plan Step is detailed long before the ones ahead of it are done.
 
 ## 5. The decisions
 
@@ -96,7 +98,7 @@ It sits in `devlog/`, a file per month, such as `devlog/2026-08.md`. A small rep
 
 ## 7. The backlog
 
-The backlog holds everything known and not yet done: work not yet in a step, bugs, ideas, and problems put off on purpose. A thing known and not written down costs attention. Written down and sorted, it costs nothing until its time. It also makes putting off explicit: "we know, and chose not yet" is a decision, recorded here.
+The backlog holds everything known and not yet done: work not yet in a Plan Step, bugs, ideas, and problems put off on purpose. A thing known and not written down costs attention. Written down and sorted, it costs nothing until its time. It also makes putting off explicit: "we know, and chose not yet" is a decision, recorded here.
 
 It sits in `TODO.md` at the root. A team may keep it in an issue tracker instead: the form is the same, the tool differs.
 
@@ -110,7 +112,7 @@ It sits in `TODO.md` at the root. A team may keep it in an issue tracker instead
 - An idea on an item is noted, never weighed, until the item is due. It is then not lost to the session that had it, and not mistaken for a decision.
 - An item that changes is rewritten true for today. A dated update stacked on it is history.
 - A to-do note left in the work itself names its item, or it is forgotten.
-- The backlog is not the plan: it has no gates and no order.
+- The backlog is not the plan: it has no Plan Step Gates and no order.
 
 ## 8. The changelog
 
@@ -137,7 +139,7 @@ It sits at the root, in every repo.
 
 - It has a table of the repo's records, how a newcomer finds them. Its row for the decisions declares the Repo Tag.
 - It says only what is already true. A section arrives when it becomes true, never ahead.
-- A step whose gate makes true something the README should say updates the README in that step. It is never a standing item on every gate: an item that is usually empty trains ticking it unread.
+- A Plan Step whose Plan Step Gate makes true something the README should say updates the README in that Plan Step. It is never a standing item on every Plan Step Gate: an item that is usually empty trains ticking it unread.
 - What changes often lives elsewhere, and the README links to it: a wrong README is worse than a sparse one.
 - How to set it up works on any machine, not only the author's.
 
@@ -151,7 +153,7 @@ It sits in `ARCHITECTURE.md`, at the root or in `docs/`.
 
 - One or two pages: a newcomer reads it second, after the README. It describes the whole; each part's detail is in the part.
 - It states, and never argues: the why behind a choice is its ADR's, linked.
-- It is checked when a step closes, since that is when the structure it describes can have moved.
+- It is checked when a Plan Step closes, since that is when the structure it describes can have moved.
 - It describes the repo as built, never as hoped.
 - A part of it that no one reads goes.
 - An area gets a Local Map when its parts relate in ways the architecture should not carry: how they connect, hand work to each other, or land elsewhere. A Local Map holds those relations only: no count or list the architecture holds, and nothing a part says about itself. Its first lines say what it maps, and point at the rest.
@@ -165,9 +167,9 @@ Each record is written from the one below it. The devlog holds what happened; th
 devlog (raw, daily)
   → ADR           when a struggle ends in a decision
   → backlog       when it shows work for later
-  → plan notes    when it explains why a step diverged
-       → changelog      when a step gives out something its readers see
-       → architecture   when a step changed the repo's structure
+  → plan notes    when it explains why a Plan Step diverged
+       → changelog      when a Plan Step gives out something its readers see
+       → architecture   when a Plan Step changed the repo's structure
 ```
 
 **Rules:**

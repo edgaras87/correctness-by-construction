@@ -25,7 +25,7 @@ Borrowed:
 | Backend Repo | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Hygiene Base | `knowledge/backbone-ideas/repo-hygiene.md` §1, *Its Defined Terms* |
 | Kit Update | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
-| Plan Step | `docs/conventions/project-recording/` §2.1, *What a plan is* |
+| Plan Step | `knowledge/backbone-ideas/records.md` §1, *Its Defined Terms* |
 | Problem Domain | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
 | Problem Domain Idea | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
 | Stack Overlay | `knowledge/backbone-ideas/repo-hygiene.md` §1, *Its Defined Terms* |
