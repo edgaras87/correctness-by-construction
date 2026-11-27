@@ -16,7 +16,7 @@ This document says which files a repo keeps for the agent that works in it, and 
 
 It stands on how an agent works: that idea says how text reaches the agent; this one says which file carries it (`knowledge/backbone-ideas/how-an-agent-works.md` §7, *Choosing a channel*). It names no tool's paths. Where each file sits, and how the tool loads it, are a Tool Binding's (`knowledge/backbone-ideas/how-an-agent-works.md` §8, *The Tool Bindings*).
 
-Its neighbours: the records the Entry File's Records Table lists are records' (`knowledge/backbone-ideas/records.md` §12, *The Records Table*); what a repo keeps out of git is repo hygiene's (`knowledge/backbone-ideas/repo-hygiene.md` §4, *What every repo keeps out*); how a commit that touches agent files is made is the commit-messages manual's (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*).
+Its neighbours: the records the Entry File's Records Table lists are records' (`knowledge/backbone-ideas/records.md` §12, *The Records Table*); what a repo keeps out of git is repo hygiene's (`knowledge/backbone-ideas/repo-hygiene.md` §4, *What every repo keeps out*); how a commit that touches agent files is made is commit messages' (`knowledge/backbone-ideas/commit-messages.md` §4, *What shares a commit*).
 
 ## 1. Its Defined Terms
 

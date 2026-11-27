@@ -39,7 +39,7 @@ The evidence seen in this repo's history and in the handbook's, under each claim
 **A1. Presence is not compliance.**
 - The commit-subject limit, 50 characters or fewer, was in the handbook's Entry File, its Ambient Channel, from its Step 6, and in its commit-messages Agent Skill, its Pulled Channel, from its Step 5. 15 of the handbook's first 20 commits exceed it. Present, correct, unfollowed.
 - Here too: 125 of this repo's 233 commits from 2026-09-20 to 09-29 run over 50 characters, though the commit-messages Agent Skill is opened at every commit here. Seven of the eight revisions of commit plans of 2026-09-29 ran over too, the longest at 67.
-- The question it raises, for the commit-messages idea when the rewrite reaches it: is the limit only unenforced, or set wrong? `docs(handbook):` takes 15 of the 50 characters before the verb. Here the commit-plan Agent Skill's own revision form, `docs(agent): revise commit plan — `, takes 34 before saying what changed.
+- The question it raised, whether the limit was only unenforced or set wrong, is answered by two numbers: the writer's aim, 50, and a check's line, 70 (`knowledge/backbone-ideas/commit-messages.md` §3, *The subject*). `docs(handbook):` takes 15 of the 50 characters before the verb. Here the commit-plan Agent Skill's own revision form, `docs(agent): revise commit plan — `, takes 34 before saying what changed.
 
 **O1. Divergence is invisible without a comparison.** Here, three divergences were missed until a comparison was run for another reason:
 - ADR-0024 decision 4 said `fills/` retires, and it still held one file, added 2026-09-18; found on 2026-09-29 while PLAN's Step 8 was being shrunk.
