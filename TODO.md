@@ -1018,6 +1018,29 @@
       Trigger: the 5th subject past 70 found by a check.
       See: ADR-0083; devlog 2026-11-19, the subject's aim and its line.
 
+- [ ] Decide whether every Adapted Case has an Adapted Understanding
+      Text (2026-11-27, the reviewer).
+      Context: the layers document defines an Adapted Case as its
+      Adapted Understanding Text with the Instruction Texts built on it
+      (`knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its
+      Defined Terms*). Yet 10 of the Backend Kit's 15 Adapted Cases
+      hold none: the six Record Stubs, the Decisions Log's Record
+      Stub, the scratch space's README, the Entry File and the Defined
+      Terms. The map's QUESTION-1 decided that a
+      record with no why of its own has none, and a Backend Kit text
+      holds only its own Adapted Case's whys (ADR-0087, decision 10).
+      Ideas:
+      - the definition gains the exception: a text only where the
+        Adapted Case has a why of its own; else its header points at
+        its Problem Domain Idea, as the Entry File's does (the
+        reviewer's lean, 2026-11-27);
+      - every Adapted Case gets a text, a near-empty one where its why
+        is all at layer 2.
+      Trigger: the layers document is next changed.
+      See: devlog 2026-11-27, the commit-messages manual's Plan Step;
+      `temp/rewrite-map.md` §10, *Shared questions*, QUESTION-1;
+      ADR-0087.
+
 ## Later / someday
 
 - [ ] Release concept v2 (2026-10-17, from PLAN's Step N).
