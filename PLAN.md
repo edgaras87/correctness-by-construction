@@ -145,7 +145,7 @@ work.
 Goal: every part of the agent-arrangement manual,
 `docs/conventions/agent-arrangement/`, stands at its layer, with the
 three texts that wait on it alone, and the manual is gone.
-Now: stage 4, our own Adapted Cases.
+Now: stage 5, the manual goes.
 Gate:
 
 **At the opening.**
@@ -172,19 +172,23 @@ Gate:
 - [x] Agent files has a Problem Domain Idea in each Problem
       Domain, keeping knowledge and CBC backend design, each with its
       row in §3.2's table of the same document (2026-11-27, stage 2).
-- [ ] Claude Code's Tool Binding, the manual's §5, stands as two
+- [x] Claude Code's Tool Binding, the manual's §5, stands as two
       Adapted Cases: the Backend Kit's at layer 3 and ours at layer 4,
-      each at its path by §3.5 (the map's QUESTION-6).
+      each at its path by §3.5 (the map's QUESTION-6)
+      (2026-11-27, stages 3 and 4: ours points at the Backend Kit's,
+      decision G).
 - [x] The Backend Kit's Entry File and its Decisions Log's Record Stub,
       once `delivery/container/.claude/CLAUDE.md` and
       `delivery/container/.claude/decisions.md`, are its Adapted Cases
       at layer 3, at their paths by §3.5; the Pure Seed copies them
       from there (the map's QUESTION-1) (2026-11-27, stage 3).
-- [ ] Our `CLAUDE.md` comes in whole as our own Adapted Case at layer
+- [x] Our `CLAUDE.md` comes in whole as our own Adapted Case at layer
       4, its Local Rule among its lines; our `.claude/decisions.md`
       header is our Decisions Log's form at layer 4, where it is; each
       has an Adapted Understanding Text in `.claude/understanding/`
-      for a why of that file alone.
+      for a why of that file alone (2026-11-27, stage 4:
+      `.claude/understanding/entry-file.md`; the Decisions Log has no
+      why of its own, so none).
 - [ ] Each part the map's §9 lists for the manual has landed, or was
       judged not needed, and the commit that ends it names where. A
       part whose subject is how instructions are written for an agent
