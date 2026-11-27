@@ -152,7 +152,7 @@ On the reviewer's word. If the agent stages the delivery, it runs steps 1 and
    Method Group's and the Stack Group's Agent Skills, Agent Rules and
    Output Shapes; each group's `docs/glossary/`. The script looks in
    all five folders of every group, and a folder a group does not
-   have yields nothing. Nothing else of a group goes: the Container Group's
+   have yields nothing. Nothing else of a group goes: the
    records, the Entry File, `README.md`, the Decisions Log and the Hygiene
    Base went at birth and are the CBC Run's.
 
