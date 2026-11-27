@@ -14,7 +14,7 @@ This text says why commit messages reach this repo's agent as an Agent Skill, an
 
 A rule for writing a commit message binds at one moment: the commit. An Agent Skill is read at that moment, whole, through the Pulled Channel. A rule held in the Entry File reaches the agent through the Ambient Channel, at every task, and binds at none of them. In the repo the rule came from, the subject's limit sat in the Entry File, and 15 of the first 20 commits broke it: present, correct, unfollowed. So the rule is opened at the commit, not read once.
 
-## 2. Why the stop and the `agent` scope sit here
+## 2. Why two more rules sit here
 
 The commit is also the moment two other rules bind at:
 
