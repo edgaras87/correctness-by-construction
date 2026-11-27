@@ -144,7 +144,7 @@ work.
 Goal: every part of the facts-in-sync manual,
 `docs/conventions/facts-in-sync/`, stands at its layer, with the
 three Agent Rules that wait on it, and the manual is gone.
-Now: stage 3, the Backend Kit's Adapted Case.
+Now: stage 4, our two Adapted Cases.
 Gate:
 
 **At the opening.**
@@ -179,14 +179,15 @@ Gate:
       holds how a Fact Reference is written here, numbering a
       section's parts (decision D), and the Change Walk
       (2026-11-27, `dd8ca7fa`, `e74fd88f`).
-- [ ] The Backend Kit's one-home Agent Rule,
+- [x] The Backend Kit's one-home Agent Rule,
       `delivery/container/.claude/rules/one-home.md`, is the
       Instruction Text of its Adapted Case at layer 3, with its
       Adapted Understanding Text at
       `knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/one-home/understanding.md`.
       The rule stays where it is until the exchange is rewritten, as
       the commit-messages Agent Skill did (devlog 2026-11-27, evening,
-      the commit-messages manual, decision C).
+      the commit-messages manual, decision C)
+      (2026-11-27, `89034a00`).
 - [ ] Our one-home Agent Rule and our Foundation Check are two
       Adapted Cases at layer 4, each with its Adapted Understanding
       Text in `.claude/understanding/`. The Foundation Check's steps
