@@ -144,7 +144,7 @@ work.
 Goal: every part of the commit-messages manual,
 `docs/conventions/commit-messages/`, stands at its layer, with the
 Agent Skill pair that waits on it alone, and the manual is gone.
-Now: stage 3, the Backend Kit's Adapted Case.
+Now: stage 4, our own Adapted Case.
 Gate:
 
 **At the opening.**
@@ -174,11 +174,12 @@ Gate:
       knowledge says why the scope, not the type, carries the signal
       in a repo that keeps only text (decision A)
       (2026-11-27, stage 2: `ba106c17`).
-- [ ] The Backend Kit's commit-messages Agent Skill,
+- [x] The Backend Kit's commit-messages Agent Skill,
       `delivery/container/.claude/skills/commit-messages/SKILL.md`, has
       its Adapted Understanding Text at layer 3, at its path by §3.5,
       and points at it. The Agent Skill stays where it is, and moves
-      beside that text with the exchange's rewrite (decision C).
+      beside that text with the exchange's rewrite (decision C)
+      (2026-11-27, stage 3: `e00e8aeb`).
 - [ ] Our commit-messages Agent Skill is our own Adapted Case at layer
       4, where it is, with its Adapted Understanding Text in
       `.claude/understanding/`. It states this repo's scopes
