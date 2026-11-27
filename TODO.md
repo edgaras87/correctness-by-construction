@@ -55,6 +55,10 @@
         Model does not hold, and a TODO Idea put *At the gate* in the
         nearest text, not its subject's (2026-11-27, the Agent Model's
         Plan Step).
+      - a text that goes in parts keeps its section numbers: a part
+        that leaves keeps its heading and one line pointing at its
+        new home, so no pointer elsewhere changes until the text goes
+        (2026-11-27, the Idea-to-Output Model's Plan Step).
       Trigger: the map's Plan Step closed.
       See: devlog 2026-11-26, the map's Plan Step; ADR-0082.
 

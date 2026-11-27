@@ -145,7 +145,7 @@ Goal: every part of the Idea-to-Output Model,
 `docs/models/idea-to-output.md`, whose home stands has landed there,
 or was judged not needed; the model keeps only the parts whose home
 is not yet written, and each names where it goes.
-Now: stage 1, which way a link points.
+Now: stage 5, the close.
 Gate:
 
 **At the opening.**
@@ -163,51 +163,67 @@ Gate:
 
 **The Plan Step's own items.**
 
-- [ ] The layers document,
+- [x] The layers document,
       `knowledge/backbone-ideas/layers-of-knowledge.md`, holds which
       way a link points, the model's §3.2, and the 3 pointers to §3.2
-      name it.
-- [ ] §4, *The two directions*, has left the model, and the 5
+      name it
+      (2026-11-27, `71f49c34` and `92bf0bc6`).
+- [x] §4, *The two directions*, has left the model, and the 5
       pointers to §4.2 name Change,
-      `knowledge/backbone-ideas/change.md`.
-- [ ] §1's count of manuals, §4.2's history, §7 and §8 are gone, each
-      judged not needed in the commit that removes it.
-- [ ] The model's header says what it still holds, and where each
+      `knowledge/backbone-ideas/change.md`
+      (2026-11-27, `5b833e0d` and `4d4c0436`: 4 name Change; the 5th, the conventions manual's line 122, names the model's §3.1, the one text that holds its claim, on the reviewer's word at stage 2).
+- [x] §1's count of manuals, §4.2's history, §7 and §8 are gone, each
+      judged not needed in the commit that removes it
+      (2026-11-27, §4.2's history in `5b833e0d`, the rest in `984534da`).
+- [x] The model's header says what it still holds, and where each
       part goes: §1 to §3.1, the home of 5 Glossary Names, until the
       texts that use them are rewritten; §3.3 to the one-home idea;
       §5 to CBC design; §6 to the idea of how instructions are written
-      for an agent; Output Shape and *governs* to the shapes manual.
-- [ ] The map's row for the model says the same.
-- [ ] The facts-in-sync manual can be rewritten next: what its §4
+      for an agent; Output Shape and *governs* to the shapes manual
+      (2026-11-27, `357b973a`).
+- [x] The map's row for the model says the same
+      (2026-11-27, `357b973a`).
+- [x] The facts-in-sync manual can be rewritten next: what its §4
       relies on stands in the layers model, or in what the model
-      still holds.
+      still holds
+      (2026-11-27, by grep: its §4 points only at the model's §2, which stays; the rest of the manual at §2, §3.1 and §3.3, which stay too).
 
 **Known already.** The Plan Step uses no Agent Skill or Agent Rule
 with a *Gates* section; the own items stand alone.
 
 **At the close.**
 
-- [ ] Every link and path in the records resolves.
-- [ ] Every ADR a record cites exists.
-- [ ] Each pair of copies agrees, such as the worked example in the
-      cbc-framing Agent Skill and in the cbc-slice Agent Skill.
-- [ ] No line of Living Text in a record the Plan Step touched, or one that
+- [x] Every link and path in the records resolves
+      (2026-11-27, by script: 29 pointers in the Plan Step's added lines, none broken).
+- [x] Every ADR a record cites exists
+      (2026-11-27, by script: none missing in the 5 touched texts that cite one).
+- [x] Each pair of copies agrees, such as the worked example in the
+      cbc-framing Agent Skill and in the cbc-slice Agent Skill
+      (2026-11-27, no paired copy touched: none of the 3 agent files has a delivered copy).
+- [x] No line of Living Text in a record the Plan Step touched, or one that
       mentions its subject, still says "now", "today" or "not yet"
-      about something the Plan Step changed.
-- [ ] New and changed text meets `.claude/rules/writing.md`.
-- [ ] Every commit on `idea-to-output-2026-11-27` follows the commit-messages Agent Skill.
+      about something the Plan Step changed
+      (2026-11-27, by script: only homes still unwritten, and content).
+- [x] New and changed text meets `.claude/rules/writing.md`
+      (2026-11-27, read at each stage; the 5 Glossary Names corrected in `357b973a`).
+- [x] Every commit on `idea-to-output-2026-11-27` follows the commit-messages Agent Skill.
       Its subjects are counted by script: one up to 70 characters
       passes, and one past 70 is the reviewer's to keep or rewrite
-      (`knowledge/backbone-ideas/commit-messages.md` §3, *The subject*).
-- [ ] No commit straddles agent and project paths
-      (`knowledge/backbone-ideas/commit-messages.md` §4, *What shares a commit*).
-- [ ] The Plan Step's lessons are written back where they came from:
-      conventions, the playbook, the concept.
-- [ ] `CLAUDE.md` read top to bottom; each line still passes its
-      three tests, or leaves (`knowledge/backbone-ideas/agent-files.md` §5, *How the Entry File is written*).
-- [ ] Each Approach on Trial the Plan Step drafted or used has this
+      (`knowledge/backbone-ideas/commit-messages.md` §3, *The subject*)
+      (2026-11-27, by script: 8 subjects to `357b973a`, the longest 51, none past 70).
+- [x] No commit straddles agent and project paths
+      (`knowledge/backbone-ideas/commit-messages.md` §4, *What shares a commit*)
+      (2026-11-27, by script: none).
+- [x] The Plan Step's lessons are written back where they came from:
+      conventions, the playbook, the concept
+      (2026-11-27, one lesson as an Idea of TODO's "Rewrite today's Maintainer Repo into the layers model, by the map", in this commit).
+- [x] `CLAUDE.md` read top to bottom; each line still passes its
+      three tests, or leaves (`knowledge/backbone-ideas/agent-files.md` §5, *How the Entry File is written*)
+      (2026-11-27: no line names the model, each passes).
+- [x] Each Approach on Trial the Plan Step drafted or used has this
       use's dated note, and was handed over for evaluation
-      (`.claude/approaches-on-trial/approach-drafting.md` §3, *Close*).
+      (`.claude/approaches-on-trial/approach-drafting.md` §3, *Close*)
+      (2026-11-27, none drafted or used: two had a pointer moved).
 
 Notes:
 - Opened 2026-11-27, the sixth Plan Step of TODO's "Rewrite today's
