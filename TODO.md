@@ -114,6 +114,12 @@
         reach every text built on it. It answers the Backbone Idea
         Change's open question on such a change, first a guess: carried
         to all layers together (2026-11-24, the reviewer).
+      - the Foundation Check is, for this repo's own change, the survey
+        depth c asks before an idea above changes. What replaces it in
+        the layers model is decided with depth c; until then it stands
+        as it works (`.claude/understanding/foundation-check.md` §4,
+        *What it stands for*; 2026-11-27, the facts-in-sync manual's
+        Plan Step, decision B).
       Trigger: the first lesson judged at depth c, in a Backend Repo's
       reading.
       See: devlog 2026-11-22, the depth c item.
