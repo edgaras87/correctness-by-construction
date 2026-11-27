@@ -145,7 +145,7 @@ work.
 Goal: every part of the agent-arrangement manual,
 `docs/conventions/agent-arrangement/`, stands at its layer, with the
 three texts that wait on it alone, and the manual is gone.
-Now: stage 3, the Backend Kit's Adapted Cases.
+Now: stage 4, our own Adapted Cases.
 Gate:
 
 **At the opening.**
@@ -272,6 +272,10 @@ Notes:
   three Adapted Cases for agent files sit in its `keeping-knowledge/`
   group, beside the records, a folder each: `entry-file/`,
   `decisions-log/`, `claude-code-tool-binding/`.
+- Decision G, at stage 3, on the reviewer's word: Claude Code's facts
+  are kept once, in the Backend Kit's Tool Binding; ours points at it
+  and holds only what is its own. The layers document's §3.3 says so,
+  for a tool both kinds of repo work with.
 - Its stages, from the map:
   1. the Backbone Idea, from the manual's opening, *What it is for*
      and §1 to §4;
@@ -286,8 +290,6 @@ Notes:
      repointed, Agent Rule, Agent Skill, Local Rule, Paths Rule and
      Decisions Log;
   6. the close.
-- Open, decided at the stage it meets: how the two Tool Bindings stay
-  alike where the tool's facts are the same.
 - Their trigger met at this Plan Step's close: TODO's "Write the
   understanding of the agent's memory", "Decide how work is run by
   agents" and "Read the frozen CLAUDE template's stance bullets

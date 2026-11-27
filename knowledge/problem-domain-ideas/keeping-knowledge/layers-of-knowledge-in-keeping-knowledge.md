@@ -44,6 +44,7 @@ Borrowed:
 | Problem Domain | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
 | Problem Domain Idea | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
 | Tiers Model | `docs/models/tiers.md` |
+| Tool Binding | `knowledge/backbone-ideas/how-an-agent-works.md` §1, *Its Defined Terms* |
 | Understanding Text | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
 
 ## 2. The picture
@@ -162,7 +163,7 @@ Layer 3 holds Adapted Cases (`knowledge/backbone-ideas/layers-of-knowledge.md` �
 
 Here an Adapted Case is written for one piece of agent work, such as reading a Backend Repo, working one step of its Plan Step, or writing a commit message, or for what all of the agent's work uses, such as the Defined Terms. Its Instruction Text is anything the agent acts on in that work: an Agent Skill, an Agent Rule, the Defined Terms it writes by, or a record form it fills. How many one Adapted Case holds is open (§5). Its Adapted Understanding Text says why the Instruction Text is as it is. The agent uses the Instruction Text in the work, and reads the Adapted Understanding Text only when the Instruction Text is changed. The two travel together: a Backend Repo's Kit Copy holds both.
 
-Layer 3 holds one set for each Problem Domain. So far there is one, the Backend Kit, for the Backend Repos'. The Maintainer Repo's Problem Domain has none, so its own Adapted Cases are layer 4 (§3.4). §3.3.1 and §3.3.2 list the Backend Kit's Adapted Cases in two groups: for keeping a Backend Repo's own knowledge, and for designing its backend. An Agent Skill or Agent Rule found both in the Backend Kit and among the Maintainer Repo's own is two Adapted Cases, one in each. The two are tied only through the nearest idea above them both (`knowledge/backbone-ideas/layers-of-knowledge.md` §3.3, *The Adapted Case layer*).
+Layer 3 holds one set for each Problem Domain. So far there is one, the Backend Kit, for the Backend Repos'. The Maintainer Repo's Problem Domain has none, so its own Adapted Cases are layer 4 (§3.4). §3.3.1 and §3.3.2 list the Backend Kit's Adapted Cases in two groups: for keeping a Backend Repo's own knowledge, and for designing its backend. An Agent Skill or Agent Rule found both in the Backend Kit and among the Maintainer Repo's own is two Adapted Cases, one in each. The two are tied only through the nearest idea above them both (`knowledge/backbone-ideas/layers-of-knowledge.md` §3.3, *The Adapted Case layer*). One kind of text is kept once: the facts of a tool both kinds of repo work with, its Tool Binding. It is the Backend Kit's, and the Maintainer Repo's own Tool Binding points at it and holds only what is its own, since how a tool works does not differ by repo.
 
 Work no Adapted Case covers may write one of the repo's own, on trial: one kind of Knowledge on Trial (`knowledge/backbone-ideas/change.md` §4, *The arrows*, the arrow *fit*). It is layer 4, the repo's own (§3.4). A Backend Repo's Knowledge on Trial is kept in the Backend Repo, comes from no Kit Copy, and is handed over at its close.
 
