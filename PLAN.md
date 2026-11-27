@@ -221,27 +221,40 @@ with a *Gates* section; the own items stand alone.
 
 **At the close.**
 
-- [ ] Every link and path in the records resolves.
-- [ ] Every ADR a record cites exists.
-- [ ] Each pair of copies agrees, such as the worked example in the
-      cbc-framing Agent Skill and in the cbc-slice Agent Skill.
-- [ ] No line of Living Text in a record the Plan Step touched, or one that
+- [x] Every link and path in the records resolves (2026-11-27, by
+      script against `7a844ad4`: the one path the branch added that is
+      missing is this Plan Step's own mention of the deleted manual).
+- [x] Every ADR a record cites exists (2026-11-27, by script).
+- [x] Each pair of copies agrees, such as the worked example in the
+      cbc-framing Agent Skill and in the cbc-slice Agent Skill
+      (2026-11-27: nothing under `delivery/method/` changed).
+- [x] No line of Living Text in a record the Plan Step touched, or one that
       mentions its subject, still says "now", "today" or "not yet"
-      about something the Plan Step changed.
-- [ ] New and changed text meets `.claude/rules/writing.md`.
-- [ ] Every commit on `facts-in-sync-2026-11-27` follows the commit-messages Agent Skill.
+      about something the Plan Step changed (2026-11-27: 15 added
+      lines use the words, by script, and none claims so).
+- [x] New and changed text meets `.claude/rules/writing.md`
+      (2026-11-27: one title past 30 characters, shortened in
+      `d7132ed9`).
+- [x] Every commit on `facts-in-sync-2026-11-27` follows the commit-messages Agent Skill.
       Its subjects are counted by script: one up to 70 characters
       passes, and one past 70 is the reviewer's to keep or rewrite
-      (`knowledge/backbone-ideas/commit-messages.md` §3, *The subject*).
-- [ ] No commit straddles agent and project paths
-      (`knowledge/backbone-ideas/commit-messages.md` §4, *What shares a commit*).
-- [ ] The Plan Step's lessons are written back where they came from:
-      conventions, the playbook, the concept.
-- [ ] `CLAUDE.md` read top to bottom; each line still passes its
-      three tests, or leaves (`knowledge/backbone-ideas/agent-files.md` §5, *How the Entry File is written*).
-- [ ] Each Approach on Trial the Plan Step drafted or used has this
+      (`knowledge/backbone-ideas/commit-messages.md` §3, *The subject*)
+      (2026-11-27: 16 subjects by script, from `7a844ad4` exclusive to
+      `3e3f7bbc`, longest 58, none past 70).
+- [x] No commit straddles agent and project paths
+      (`knowledge/backbone-ideas/commit-messages.md` §4, *What shares a commit*)
+      (2026-11-27, by script).
+- [x] The Plan Step's lessons are written back where they came from:
+      conventions, the playbook, the concept (2026-11-27: one, held as
+      an Idea of TODO's rewrite item, since no convention changes
+      before the rewrite, ADR-0089; `3e3f7bbc`).
+- [x] `CLAUDE.md` read top to bottom; each line still passes its
+      three tests, or leaves (`knowledge/backbone-ideas/agent-files.md` §5, *How the Entry File is written*)
+      (2026-11-27: no line names what the Plan Step changed).
+- [x] Each Approach on Trial the Plan Step drafted or used has this
       use's dated note, and was handed over for evaluation
-      (`.claude/approaches-on-trial/approach-drafting.md` §3, *Close*).
+      (`.claude/approaches-on-trial/approach-drafting.md` §3, *Close*)
+      (2026-11-27, none drafted or used: two had pointers moved).
 
 Notes:
 - Opened 2026-11-27, the seventh Plan Step of TODO's "Rewrite today's
