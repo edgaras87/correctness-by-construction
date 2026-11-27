@@ -706,6 +706,15 @@
         the inventory's of 2026-11-03 were not, and the map's were
         written again from its §7, then checked against the old numbers
         (2026-11-26, the map's close).
+      - a grep for a moved fact's words, not only its old path: when
+        the scratch space got its home in records' §15, repo hygiene's
+        understanding text still retold its why, with no pointer the
+        rename grep could find; the reviewer's question found it
+        (2026-11-27, records' Plan Step).
+      - the Defined Terms check run at each layer text's commit, not
+        only at the close: two new texts used a Defined Term they did
+        not borrow, found by script at the close (2026-11-27, records'
+        Plan Step).
       Trigger: the rewrite done.
       See: `TODO-CONVERSATION-MEMORY.md` §14, *A sweep, and what
       looking back is*, §21, *A full read for missing fact

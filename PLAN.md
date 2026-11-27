@@ -209,28 +209,42 @@ have no *Gates* section; the own items stand alone.
 
 **At the close.**
 
-- [ ] Every link and path in the records resolves.
-- [ ] Every ADR a record cites exists.
-- [ ] Each pair of copies agrees, such as the worked example in the
-      cbc-framing Agent Skill and in the cbc-slice Agent Skill.
-- [ ] No line of Living Text in a record the Plan Step touched, or one that
+- [x] Every link and path in the records resolves (2026-11-27, by
+      script over the branch's 787 added lines, 51 paths; six meant:
+      a file name pattern, a Backend Repo's own paths, the manual's
+      last state in git).
+- [x] Every ADR a record cites exists (2026-11-27, 9 by script).
+- [x] Each pair of copies agrees, such as the worked example in the
+      cbc-framing Agent Skill and in the cbc-slice Agent Skill
+      (2026-11-27, neither touched on the branch; identical by cmp).
+- [x] No line of Living Text in a record the Plan Step touched, or one that
       mentions its subject, still says "now", "today" or "not yet"
-      about something the Plan Step changed.
-- [ ] New and changed text meets `.claude/rules/writing.md`.
-- [ ] Every commit on `records-2026-11-27` follows the commit-messages Agent Skill.
+      about something the Plan Step changed (2026-11-27, 16 hits by
+      script, none about what changed).
+- [x] New and changed text meets `.claude/rules/writing.md`
+      (2026-11-27; the new texts' Defined Terms checked by script,
+      two missing borrows added at the close).
+- [x] Every commit on `records-2026-11-27` follows the commit-messages Agent Skill.
       Its subjects are counted by script: one up to 70 characters
       passes, and one past 70 is the reviewer's to keep or rewrite
-      (`docs/conventions/commit-messages/` §2.1, *Conventional Commits*).
-- [ ] No commit straddles agent and project paths
-      (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*).
-- [ ] The Plan Step's lessons are written back where they came from:
-      conventions, the playbook, the concept.
-- [ ] `CLAUDE.md` read top to bottom; each line still passes its
+      (`docs/conventions/commit-messages/` §2.1, *Conventional Commits*)
+      (2026-11-27, 11 by script, the longest 53).
+- [x] No commit straddles agent and project paths
+      (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*)
+      (2026-11-27, by script).
+- [x] The Plan Step's lessons are written back where they came from:
+      conventions, the playbook, the concept (2026-11-27, two, as
+      Ideas of TODO's "Decide how texts are checked to stay true after
+      the rewrite", since no convention changes before the rewrite,
+      ADR-0089: a moved fact's words grepped, and the Defined Terms
+      check at each commit).
+- [x] `CLAUDE.md` read top to bottom; each line still passes its
       three tests, or leaves (`docs/conventions/agent-arrangement/`
-      §2.4, *How the Entry File is written*).
-- [ ] Each Approach on Trial the Plan Step drafted or used has this
+      §2.4, *How the Entry File is written*) (2026-11-27).
+- [x] Each Approach on Trial the Plan Step drafted or used has this
       use's dated note, and was handed over for evaluation
-      (`.claude/approaches-on-trial/approach-drafting.md` §3, *Close*).
+      (`.claude/approaches-on-trial/approach-drafting.md` §3, *Close*)
+      (2026-11-27, none drafted or used).
 
 Notes:
 - Opened 2026-11-27, the second Plan Step of TODO's "Rewrite today's
