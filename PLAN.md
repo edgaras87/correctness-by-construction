@@ -144,7 +144,7 @@ work.
 Goal: every part of the facts-in-sync manual,
 `docs/conventions/facts-in-sync/`, stands at its layer, with the
 three Agent Rules that wait on it, and the manual is gone.
-Now: stage 4, our two Adapted Cases.
+Now: stage 5, the manual goes.
 Gate:
 
 **At the opening.**
@@ -188,23 +188,24 @@ Gate:
       the commit-messages Agent Skill did (devlog 2026-11-27, evening,
       the commit-messages manual, decision C)
       (2026-11-27, `89034a00`).
-- [ ] Our one-home Agent Rule and our Foundation Check are two
+- [x] Our one-home Agent Rule and our Foundation Check are two
       Adapted Cases at layer 4, each with its Adapted Understanding
       Text in `.claude/understanding/`. The Foundation Check's steps
-      stand as they work today, but for their pointers (decision B).
-- [ ] TODO's "Simulate depth c, then bring the Change idea to it"
+      stand as they work today, but for their pointers (decision B)
+      (2026-11-27, `e0624cf7`).
+- [x] TODO's "Simulate depth c, then bring the Change idea to it"
       holds an Idea: what replaces the Foundation Check in the layers
-      model (decision B).
+      model (decision B) (2026-11-27, `132d6189`).
 - [ ] Living Text and Fact Reference are Defined Terms of the Backbone
       Idea, Change Walk of the Problem Domain Idea in keeping
       knowledge, and Foundation Check of its Adapted Understanding
       Text. Each one's glossary entry points at its new home, and
       Canonical Description's at the Idea-to-Output Model's §2, *The
       kinds* (decision C).
-- [ ] The 3 Foundation Lines that name `the facts-in-sync convention`,
+- [x] The 3 Foundation Lines that name `the facts-in-sync convention`,
       in the three Agent Rules, are gone: each rule's understanding is
       written beside it (`docs/conventions/conventions/` §1.3, *The
-      Foundation Line*).
+      Foundation Line*) (2026-11-27, `89034a00`, `e0624cf7`).
 - [ ] Each part the map's §9 lists for the manual has landed, or was
       judged not needed, and the commit that ends it names where.
 - [ ] The manual is gone, and every Living Text that named its path or
@@ -340,6 +341,13 @@ Notes:
   text, which may name no project. The handbook's leaves keeping
   knowledge's: its home is agent files, in keeping knowledge §2, and
   no text of one home relies on it (`e74fd88f`).
+- Stage 4 grew, on the reviewer's word: with their understanding in
+  `.claude/understanding/`, both our rules came under the
+  defined-terms Agent Rule. Each gained a Borrow Table, and its twins
+  gave way to Defined Terms or plain words: rule 2's example was
+  replaced, and the Foundation Check's "Idea Model" became "a model
+  under `docs/models/`", since Backbone Idea would be false of those
+  files. The gate had planned pointers alone (`e0624cf7`).
 - Its stages, from the map:
   1. the Backbone Idea, from the manual's layer-1 parts, the
      Idea-to-Output Model's §3.3 and the three drafts; the model's
