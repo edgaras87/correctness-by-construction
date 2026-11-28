@@ -6,8 +6,9 @@ What it stands on: knowledge/backbone-ideas/commit-sets.md, the Backbone Idea it
 What stands on it: this repo's own Adapted Case for commit sets.
 Its place in the repo: knowledge/problem-domain-ideas/keeping-knowledge/ (ADR-0084).
 Its first sources, input and not rules (PLAN.md, the commit-plan manual's Plan Step, decision C):
-- the commit-plan manual, docs/conventions/commit-plan/README.md: What it is for, the Commit Set revised four times; §2.4, its story;
-- devlog 2026-11-01, round 3 worked and closed: the close read's followers, and the rename grep that missed a wrapped quote.
+- for §2, the commit-plan manual, docs/conventions/commit-plan/README.md, What it is for and §2.4's story: one Commit Set revised four times at its boundaries on 2026-09-27 and 28, on the reviewer's readings;
+- for §3, devlog 2026-11-01, round 3 worked and closed: the close read planned 19 commits and landed 31, 5 of them followers for the agent files;
+- for §4, the same entry: a commit's search missed a quote of a label broken across two lines, and the next commit's search, its lines joined, found it.
 How it is edited: a trial, as in the layers of knowledge: a section's rules close it, in a last paragraph marked Rules, and govern that section.
 -->
 
@@ -31,11 +32,11 @@ Borrowed:
 
 ## 2. Found in the material
 
-In a repo that keeps texts, what a text should say often shows only once it is written. The reviewer reads it at the boundary, and finds there what they want. So here the decision usually lives in the material (`knowledge/backbone-ideas/commit-sets.md` §4, *How the commits are split*). A Commit Plan expects revisions at its boundaries, and a revision is the Commit Plan working, not failing. On 2026-09-27 and 28, one Commit Set was revised four times at its boundaries, on the reviewer's readings, each revision in its own commit.
+In a repo that keeps texts, what a text should say often shows only once it is written. The reviewer reads it at the boundary, and finds there what they want. So here the decision usually lives in the material (`knowledge/backbone-ideas/commit-sets.md` §4, *How the commits are split*). A Commit Plan expects revisions at its boundaries, and a revision is the Commit Plan working, not failing.
 
 ## 3. A follower for the agent files
 
-The agent files here are text, like the ideas they come from. A change to an idea often reaches an Agent Skill or Agent Rule built on it. The two cannot share a commit (`knowledge/backbone-ideas/commit-messages.md` §4, *What shares a commit*). So one change lands as two commits: the text's, then the agent file's, which follows it. Round 3's close read planned 19 commits and landed 31; 5 of them were such followers.
+The agent files here are text, like the ideas they come from. A change to an idea often reaches an Agent Skill or Agent Rule built on it. The two cannot share a commit (`knowledge/backbone-ideas/commit-messages.md` §4, *What shares a commit*). So one change lands as two commits: the text's, then the agent file's, which follows it. A Commit Plan that leaves the follower out meets it at the boundary, and grows by a commit there.
 
 **Rules:**
 
@@ -43,7 +44,7 @@ The agent files here are text, like the ideas they come from. A change to an ide
 
 ## 4. The sweep weighs most
 
-A text here is pointed at by Fact References from many others. A moved home reaches them all, and older text is often wrapped. So the sweep before the close finds most here (`knowledge/backbone-ideas/commit-sets.md` §6, *The close*). In Round 3, a commit relabelled a part, and its own search missed a quote of the old label broken across two lines. The next commit's search, with the lines joined, found it.
+A text here is pointed at by Fact References from many others. A moved home reaches them all. Older text is often wrapped, so a search line by line misses a name broken across two lines. So the sweep before the close finds most here (`knowledge/backbone-ideas/commit-sets.md` §6, *The close*).
 
 ## 5. Open questions
 

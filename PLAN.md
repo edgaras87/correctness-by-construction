@@ -277,14 +277,14 @@ Notes:
   first wording, what its repos lived and do, wrote history into
   layer 2; the history stays in ADR-0038, the devlog and the log.
   Keeping knowledge's: decisions found in the material; a follower
-  commit for the agent files; the sweep weighs most. CBC backend
-  design's: two moments open a Commit Set, at birth
-  (`delivery/installs/pure-seed.md`) and when a retrospective is
-  applied (the apply-retrospective Agent Skill, Stage 2); coherent as
-  software; agent files at the retrospective, CBC Run 3's SL-3 plan
-  the reason; a try before the choice, CBC Runs 4 to 6 as decision B.
-  How a full-auto run treats its Commit Plan is left out: no source
-  says.
+  commit for the agent files; the sweep weighs most; each section's
+  case in its header. CBC backend design's: coherent as software,
+  and nothing else differs. Where a Backend Repo's texts name a
+  Commit Plan, at birth and at a retrospective, stays in those texts;
+  when its agent files change is agent files' and the
+  retrospective's; the try before the choice is the Backbone Idea's,
+  its evidence decision B. How a full-auto run treats its Commit Plan
+  is left out: no source says.
 - Decision D, at the opening, on the reviewer's word: the work a
   commit plan plans is named "Commit Set", not "Change Set". It says
   what it is made of, commits, and fits work that adds, deletes or

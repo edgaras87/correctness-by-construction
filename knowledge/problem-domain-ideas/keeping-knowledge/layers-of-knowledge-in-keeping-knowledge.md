@@ -167,7 +167,7 @@ The Backend Repos' Problem Domain. The Maintainer Repo keeps its Problem Domain 
 | Commit messages, in CBC backend design | Commit messages | the type carries the signal; subjects counted at each Plan Step's close; the stop with nobody watching | `knowledge/problem-domain-ideas/cbc-backend-design/commit-messages-in-cbc-backend-design.md` |
 | One home, in CBC backend design | One home | CBC Run 3's four records; ids as Fact References; what a Backend Repo cannot open | `knowledge/problem-domain-ideas/cbc-backend-design/one-home-in-cbc-backend-design.md` |
 | Visual comparison, in CBC backend design | Visual comparison | the Backend Repo picks its own notations; the Maintainer Repo's trial not delivered | `knowledge/problem-domain-ideas/cbc-backend-design/visual-comparison-in-cbc-backend-design.md` |
-| Commit sets, in CBC backend design | Commit sets | two moments open one; coherent as software; agent files at the retrospective; a try before the choice | `knowledge/problem-domain-ideas/cbc-backend-design/commit-sets-in-cbc-backend-design.md` |
+| Commit sets, in CBC backend design | Commit sets | coherent as software; nothing else differs | `knowledge/problem-domain-ideas/cbc-backend-design/commit-sets-in-cbc-backend-design.md` |
 
 ### 3.3 The Adapted Case layer
 
