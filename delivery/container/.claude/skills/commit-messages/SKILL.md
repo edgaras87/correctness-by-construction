@@ -107,10 +107,9 @@ refresh. Re-land after #58.
 Why it is so: (commit messages, kept in the Maintainer Repo, §4, *What shares a commit*).
 
 `CLAUDE.md` and `.claude/` are the working arrangement.
-`COMMIT-PLAN.md` is committed with them. None is a project record. A
+Neither is a project record. A
 commit that touches them is scoped `agent`, and touches nothing else.
-`chore(agent)` adds, installs or updates an Agent Skill, an Agent Rule or an Approach on Trial. `docs(agent)` is for a commit plan's
-lifecycle.
+`chore(agent)` adds, installs or updates an Agent Skill, an Agent Rule or an Approach on Trial.
 
 ## Rules
 

@@ -146,7 +146,7 @@ Goal: every part of the commit-plan manual,
 Skill pair that waits on it, and the manual is gone; the plan file is
 no agent file, the work it plans is named "Commit Set", and a second
 way is tried before a choice, not looked for after the work.
-Now: stage 2, the two Problem Domain Ideas.
+Now: stage 3, the Backend Kit's Adapted Case.
 Gate:
 
 **At the opening.**
@@ -321,6 +321,14 @@ Notes:
   sets says only that no Commit Plan is opened where a record agreed
   before the work lists the commits one by one, and calls its parts
   commits, never steps.
+- Decision H, at stage 3, on the reviewer's word: decision E reaches
+  the Backend Repos through the Agent Skill they read. Both commit-plan
+  Agent Skills' §1 say: "A Plan Step needs no Commit Plan when each of
+  its stages is one commit or a few: the stages already list the
+  commits. Open a Commit Plan only for a stage that takes many
+  commits." A Backend Repo never reads records in the Maintainer
+  Repo; without it, the Agent Skill would still call for a Commit Plan
+  for any work of more than one commit.
 - Decided before the opening, on the reviewer's word: the stop at
   every commit stays (`knowledge/backbone-ideas/commit-messages.md`
   §5, *Commit on the word*); at a stop the reviewer finds what they

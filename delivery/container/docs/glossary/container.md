@@ -99,8 +99,10 @@
 - **Decisions Log** — `.claude/decisions.md`: the agent's own setup
   decisions, the Work Approaches held, and each delivery's Delivery Pin
   and Read-Through Commit.
-- **Change Set** — a body of work that needs more than one commit,
-  planned and closed under the commit-plan Agent Skill.
+- **Commit Set** — a body of work that needs more than one commit,
+  planned in a Commit Plan and closed under the commit-plan Agent Skill.
+- **Commit Plan** — a Commit Set's list of commits, in `COMMIT-PLAN.md`
+  at the repo root, agreed before the first lands, deleted at the close.
 - **Idea Model** — a Concept Deliverer's text stating an idea any
   repository can adapt; this project holds none and may meet the
   word in a delivered Agent Skill.
