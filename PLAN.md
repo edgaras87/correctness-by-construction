@@ -309,6 +309,13 @@ Notes:
   records' name for the record of Plan Steps, since the Commit Plan
   carries its own subject. The record's own subject waits for TODO's
   item on its name.
+- Decision G, at stage 2, on the reviewer's word: commit sets names
+  no Plan Step. The idea that uses it points at it: records says its
+  stages list a Plan Step's commits, and holds the rule that a Plan
+  Step Gate item closed inside a Commit Set names its commit. Commit
+  sets says only that no Commit Plan is opened where a record agreed
+  before the work lists the commits one by one, and calls its parts
+  commits, never steps.
 - Decided before the opening, on the reviewer's word: the stop at
   every commit stays (`knowledge/backbone-ideas/commit-messages.md`
   §5, *Commit on the word*); at a stop the reviewer finds what they

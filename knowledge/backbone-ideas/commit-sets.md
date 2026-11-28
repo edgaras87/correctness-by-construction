@@ -4,7 +4,7 @@
 What it is: a Backbone Idea, bound to no Problem Domain, and its one home (knowledge/backbone-ideas/layers-of-knowledge.md §3.1, The Backbone Idea layer).
 Its place in the repo: knowledge/backbone-ideas/ (ADR-0084).
 Why it is an idea of its own: both Problem Domains work by it (temp/rewrite-map.md §10, Shared questions, QUESTION-7).
-Its first sources, input and not rules: the commit-plan manual, docs/conventions/commit-plan/README.md: its opening; What it is for, without its lived history; §1; §2.1 to §2.12; What this does not cover, as the neighbours below. From the commit-plan Agent Skill, .claude/skills/commit-plan/SKILL.md: when a Commit Plan is needed; divergence; an ADR opened Proposed. Read for ideas: temp/model-example/idea/commit-set.md. No Commit Plan where a Plan Step's stages list the commits: records holds the rule (PLAN.md, the commit-plan manual's Plan Step, decision E). The decisions behind them: ADR-0038, 1b, 1d and 1e; ADR-0049, 1 and 3; ADR-0050; PLAN.md, the commit-plan manual's Plan Step, decisions A, B, D, E and F.
+Its first sources, input and not rules: the commit-plan manual, docs/conventions/commit-plan/README.md: its opening; What it is for, without its lived history; §1; §2.1 to §2.12; What this does not cover, as the neighbours below. From the commit-plan Agent Skill, .claude/skills/commit-plan/SKILL.md: when a Commit Plan is needed; divergence; an ADR opened Proposed. Read for ideas: temp/model-example/idea/commit-set.md. No Commit Plan where a record already lists the commits, and no Plan Step named: the idea that uses commit sets points here (PLAN.md, the commit-plan manual's Plan Step, decisions E and G). The decisions behind them: ADR-0038, 1b, 1d and 1e; ADR-0049, 1 and 3; ADR-0050; PLAN.md, the commit-plan manual's Plan Step, decisions A, B, D, E, F and G.
 What stands on it: its Problem Domain Ideas, one for each Problem Domain. Each points here, and never retells it.
 How it is edited:
 - It gives no example from one Problem Domain's work.
@@ -27,8 +27,6 @@ Borrowed:
 |---|---|
 | Backbone Idea | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
 | Living Text | `knowledge/backbone-ideas/one-home.md` §1, *Its Defined Terms* |
-| Plan Step | `knowledge/backbone-ideas/records.md` §1, *Its Defined Terms* |
-| Plan Step Gate | `knowledge/backbone-ideas/records.md` §1, *Its Defined Terms* |
 | Problem Domain | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
 | Problem Domain Idea | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
 | Records Table | `knowledge/backbone-ideas/records.md` §1, *Its Defined Terms* |
@@ -44,17 +42,17 @@ A Commit Plan plans the commits, not the change. What the work is to do is settl
 **Rules:**
 
 - Work worth more than one commit is a Commit Set. A change of one commit has no Commit Plan.
-- A Commit Set's commits are agreed before the first lands: in a Commit Plan, or in a Plan Step's stages (§3).
+- A Commit Set's commits are agreed before the first lands: in a Commit Plan, or in another record that lists them one by one (§3).
 
 ## 3. The Commit Plan
 
-A Commit Plan is one file at the repo's root, one at a time. It is committed once it is agreed, and deleted at the close. Everything lasting in it survives as the commit messages it produced. Where a Plan Step's stages already list the commits, in the plan, the record of Plan Steps, no Commit Plan is opened (`knowledge/backbone-ideas/records.md` §4, *The plan*).
+A Commit Plan is one file at the repo's root, one at a time. It is committed once it is agreed, and deleted at the close. Everything lasting in it survives as the commit messages it produced. Where a record agreed before the work already lists the commits one by one, no Commit Plan is opened.
 
 - **Not a record.** It is temporary. Nothing in it is meant to be read a year later, except through the log. So it sits outside the records (`knowledge/backbone-ideas/records.md` §3, *The records*), which are all added to or kept up to date.
 - **Not an agent file.** It is the trail of one piece of work, as a commit message is. It tells the agent nothing about how to work. So a commit of the Commit Plan is a commit of the work.
 - **At the root.** A set half landed can be seen from a clean clone: where it stopped is answered without the working tree.
 - **No status in it.** Tracking status there ties every commit of the work to an edit of the Commit Plan, and one not edited goes stale. The log is the status: the commits that exist are the Commit Plan done so far.
-- **Commits, never Plan Steps.** A Commit Plan counts commits. "Step" belongs to the plan, the record of Plan Steps (`knowledge/backbone-ideas/records.md` §4, *The plan*), and one word would carry two meanings.
+- **Commits, never steps.** A Commit Plan counts commits, and calls them commits. A word that names the parts of another plan would carry two meanings.
 - **Numbers that stay.** A Commit Plan's numbers are cited, in its notes, its revisions and its commit bodies. So a commit inserted later takes a letter, and none is renumbered. Where one change reaches many records, one planned commit repeats over them, naming its order and what stops it.
 - **Subjects counted when written.** A Commit Plan writes every subject before any lands, so each is counted against the subject's aim then (`knowledge/backbone-ideas/commit-messages.md` §3, *The subject*). Counted only as each lands, a long one lands long, or is rewritten with nothing in the Commit Plan saying why.
 
@@ -82,7 +80,7 @@ A Commit Plan is one file at the repo's root, one at a time. It is committed onc
 - Each commit, reverted alone, leaves the repo coherent.
 - A decision settled in talk is recorded before it is carried out. A decision found in the material is recorded from what held.
 - No commit refers to what does not yet exist. The lasting records are caught up before the close.
-- Every record whose moment the Commit Set reaches gets a commit, where its truth exists. A Commit Set that closes a Plan Step Gate item names the commit that closes it.
+- Every record whose moment the Commit Set reaches gets a commit, where its truth exists.
 - A decision record opened inside a Commit Set is proposed until the set's last records commit, never accepted earlier.
 
 ## 5. At each boundary
