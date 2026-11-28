@@ -1121,6 +1121,43 @@
       Trigger: the commit-plan manual's Plan Step closed.
       See: devlog 2026-11-28, the commit-plan manual's Plan Step.
 
+- [ ] Decide where a fact that joins two ideas lives, and how a Plan
+      Step finds the other ideas its work touches (2026-11-28, the
+      reviewer).
+      Context: twice in the commit-plan manual's Plan Step, a rule
+      about Plan Steps landed in commit sets' texts (PLAN.md, its
+      decisions G and I). One home says each fact has one home, not
+      which (`knowledge/backbone-ideas/one-home.md` §3, *A fact and
+      its home*), and a rule is a fact too. The Change Walk follows
+      what stands on a changed text; nothing asks which other ideas a
+      worked idea touches, nor finds a connection not yet written.
+      Ideas:
+      - the rule: an idea's texts, at every layer, hold only facts
+        about its subject. A fact that joins two lives in the one that
+        uses the other; the idea used names none of its users, and
+        leaves an opening only in general words. Its home: one home's
+        §3; which layer stays the layers document's;
+      - while working: a fact found for another idea is not written
+        into this one's texts, but listed in the Plan Step's Notes,
+        "Noticed for other ideas", with the idea it seems to belong to;
+      - at the close, a gate item walks every idea by its row in the
+        layers document's §3.1 and §3.2: does the worked idea touch
+        it, bring it a rule, or need an opening for it? A text is
+        opened only where its row or the noticed list shows a touch.
+        Search finds where a text already names the idea, and never
+        decides which ideas are asked;
+      - each rule found goes to its own idea's texts, in the Plan Step
+        or as a TODO item; the walk may give the worked idea an
+        opening its users need;
+      - later, a check of the whole repo for rules still in the wrong
+        idea;
+      - it holds for any idea, new or old, not only the rewrite.
+      Trigger: the commit-plan manual's Plan Step's close, where it is
+      tried first, on its noticed fact: the plan's rule on Commit
+      Plans.
+      See: devlog 2026-11-28, the commit-plan manual's Plan Step;
+      `TODO-CONVERSATION-MEMORY.md` §36, *Where a joining fact lives*.
+
 ## Later / someday
 
 - [ ] Release concept v2 (2026-10-17, from PLAN's Step N).

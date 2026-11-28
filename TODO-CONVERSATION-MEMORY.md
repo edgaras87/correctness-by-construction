@@ -26,7 +26,7 @@
      changed the work. It goes in the commit that works its item;
      the file stays, empty or not.
 
-     Last touched: 2026-11-26.
+     Last touched: 2026-11-28.
      Why the form is as it is: (.claude/understanding/conversation-memory.md). -->
 
 # TODO's Conversation Memory
@@ -1393,3 +1393,50 @@ The other decisions keep their words; each is a "yes" to the agent's recommendat
 #### What the reviewer took
 
 Depths are layers, c split in two; question 4 as 4a and 4b. What follows from a rule already written is defined, by pointer; each choice of how is an Open item with its trigger, so practice is not steered by a guess. The survey, depth d and depth e follow that split; verdicts are named by layer; the work reaches three files. Depth f keeps its label. This commit plan finishes first. Where Change goes is decided next, before the change flow; which of the three ways is open.
+
+## 36. Where a joining fact lives
+
+Item: "Decide where a fact that joins two ideas lives, and how a Plan
+Step finds the other ideas its work touches".
+
+### 2026-11-28
+
+#### What the reviewer said
+
+In the commit-plan manual's Plan Step, after its stage 3, on decision H putting a Plan Step's rule into the commit-plan Agent Skills: "question is why plan step thing again is in commit set, not in skills? i think this is the point where we need a rules so we need adapted case for controling what info where to go. I noticed second time that one idea goes into others ideas texts. maybe i am wrong, but i want rule that says to not do that. call all thoses 4 layers be writen so that it was not dependent to each other. in this example with commit set. it will be used in many cases, where one of them is plan step. now when we write commit set , no matter which layers, it should be writen so that it has not rules or dependencies of other ideas. those other ideas that use commit set and needs rules, are writen in those idea's layers accordingly. so if we write commit set layer 2 and there is new rules for plan step it lands in plan step idea. if we write commit set adapted case and there is rules for  plan step, those rules should not land in commit set adapted case. these rules should be in plan (work plan) adapted cases. it also brings idea not only where and what should land but also how we write ideas layers. all layers should be writen so that they not depend on others, but that does not mean that they are completely unaware. it should formulated that they fit togther and how each uses other idea if it does, it defines in its idea layer. and as last one is the check we do for all mainatainer repo to find where it is not true and fixing it, because after some time there still be some slips where that not hold so we have such check as skill or rule. what u think on all this?"
+
+On one home: "when we say one home, we say "each fact is written once;". but maybe we need to extend this by fact groups or what? like one idea is one fact group? so then commit set as idea contains facts about commit set. when other idea like plan step needs facts from commit set it can only refer it. so this is about facts. now what we have now is rules spliting into other idea layers, right? so do we need one home of group for rules or something? is this idea of layers thing? what u think on this idea and what could u suggest?"
+
+On a gate: "we noticed we need rules for how we grouping idea facts. fact here also include rules. we have this thing that when we are working on some particular idea we not puting in facts in its layers from other ideas. as this is maintainer repos thing, it has this work plan gates where we could have something like this: we check at the end of open plan step on what we worked, how that could be effected in other ideas. as an example, we decided here to rewrite commit set. that means we working on commit set facts. it can be that during the work we noticed that commit set has this rule for work plan. what i thinking here we should have like notes what we noticed to consider at gate. in that gate we check all other ideas and what rules each idea could refer and write about commits set idea to themself, so here comes also thos noticed notes in help and we have here work plan commit set rule. also there could be more in other idea.  that way we could work on one idea we need and also we have step where we check others idea too. that way we miss less and write more comprahend ideas. also those checks at gate may tell how we need update idea we wrote that all together would fit. what u think on this? could tell me this back in more formulated way?"
+
+On the agent's limit to the ideas a search finds: "why not have to check each idea? do u consider from rewriting perspective? i am thinking of it as any new or old idea thing? i thing it is how we work on ideas in maintainer. let say we found new idea. it most likely pop up not from nowhere and it will have connection to some idea. but we will be working on it only from plan step. we will mark notuces to those other idea to not forget to check. but let say i missed that this new idea also touching other cases and bring new rules. so i want in the end that this new idea would be considered if it touches other idea and how. what u think?"
+
+#### What the reviewer said, edited
+
+"Why is the Plan Step rule in commit sets again, and not in the Agent Skills? I think we need a rule here, and so an Adapted Case, for controlling which information goes where. This is the second time I noticed one idea going into another idea's texts. Maybe I am wrong, but I want a rule that says not to do that: all four layers written so that they do not depend on each other. Take commit sets: they will be used in many cases, and the Plan Step is one. When we write commit sets, at any layer, they should hold no rules of, and no dependence on, other ideas. The ideas that use commit sets and need rules write them in their own layers. So if commit sets' layer 2 meets a new rule for Plan Steps, it lands in the Plan Step idea; if commit sets' Adapted Case meets one, it lands in the plan's (the work plan's) Adapted Cases. This is also about how we write an idea's layers: not dependent on each other, but not unaware either. They are written to fit together, and each idea that uses another says how, in its own layer. Last, a check over the whole Maintainer Repo finds where this does not hold and fixes it, since slips will still happen: a check as an Agent Skill or Agent Rule. What do you think of all this?"
+
+"One home says each fact is written once. Maybe we need to extend it with fact groups: one idea is one group of facts. Commit sets hold the facts about Commit Sets, and when another idea, such as the Plan Step, needs a fact from commit sets, it only points at it. That is about facts. What we have now is rules splitting into other ideas' layers, right? So do we need one home per group for rules? Or is this the layers' matter? What do you think, and what do you suggest?"
+
+"We found we need rules for how an idea's facts are grouped, and a fact here includes a rule. When we work on one idea, we do not put facts of other ideas into its layers. The Maintainer Repo has Plan Step Gates, so a gate could hold this: at the close of the open Plan Step, we check how what we worked on affects other ideas. Here we rewrote commit sets, so we worked on commit sets' facts. During the work we noticed that commit sets held a rule for the work plan. So we keep notes of what we noticed, to consider at the gate. At the gate we check every other idea: which rules it could take about commit sets and write for itself. The noticed notes help there, and here they hold the work plan's Commit Set rule; other ideas may hold more. So we work on the one idea we need, and still have a step that checks the others. We miss less and write fuller ideas. The checks at the gate may also tell us how to update the idea we wrote, so everything fits together. What do you think? Can you tell it back to me, better formulated?"
+
+"Why not check every idea? Are you thinking of the rewrite? I mean any idea, new or old: this is how we work on ideas in the Maintainer Repo. Say we find a new idea. It most likely comes from somewhere, connected to some idea, but we work on it only within a Plan Step. We mark notes for the other ideas, so as not to forget to check them. But say I missed that the new idea touches other cases and brings new rules. In the end I want the new idea checked for whether it touches other ideas, and how."
+
+#### What the reviewer asked, as the agent would ask it
+
+1. Should a rule say that an idea's texts, at every layer, hold no rule of another idea, so that the idea that uses another writes how it uses it in its own texts?
+2. Is that one home's matter, a home per group of facts, or the layers'?
+3. Should a Plan Step keep notes of facts it found for other ideas, and its close walk every other idea for rules it should take, and for openings the worked idea needs?
+4. Should that walk ask every idea, not only those a search finds, so a connection not yet written is found too?
+5. Should a check over the whole Maintainer Repo find the slips that remain?
+
+#### What the agent added
+
+- **A rule is a fact,** so no second home rule is needed. One home says each fact has one home, not which. The slips kept one home: the rule was written once, in the wrong idea.
+- **Two questions place a fact:** which idea it is about, one home's; and how general it is, the layers document's. The commit sets slip was the first; the history written into layer 2 was the second.
+- **A fact that joins two ideas lives in the one that uses the other.** The idea used names none of its users and may leave an opening in general words, as commit sets' "where a record already lists the commits" does.
+- **The walk is the missing direction:** the Change Walk follows what stands on a changed text, never the ideas that use it.
+- **The walk stays cheap by reading rows, not texts:** the layers document's §3.1 and §3.2 give each idea one line, 11 Backbone Ideas and 21 Problem Domain Ideas by script on 2026-11-28; a text is opened only where a row or the noticed list shows a touch. The agent had first limited the walk to the ideas a search finds; the reviewer's question showed a search finds only connections already written.
+
+#### What the reviewer took
+
+All of it, as one TODO item. Decision I moved the Plan Step's rule from both commit-plan Agent Skills to the two Plan Step Forms in the same Plan Step. The rest waits for the item, first tried at the Plan Step's close.
