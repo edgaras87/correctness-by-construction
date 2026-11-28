@@ -23,8 +23,10 @@
      knowledge/problem-domain-ideas/keeping-knowledge/records-in-keeping-knowledge.md §3). -->
 
 **A Plan Step is the one piece of work being done now:** a CBC Run Reading,
-or a TODO item big enough for a branch. A Change Set inside it is a
-commit plan. A small item needs no Plan Step, nor does a delivery
+or a TODO item big enough for a branch. It needs no Commit Plan when
+each of its stages is one commit or a few: the stages already list the
+commits. A stage that takes many commits opens a Commit Plan, under the
+commit-plan Agent Skill. A small item needs no Plan Step, nor does a delivery
 alone. TODO never repeats the open Plan Step; a TODO item that
 becomes a Plan Step leaves TODO.
 
@@ -47,7 +49,7 @@ Plan Step enters a new one, not at every commit.** A Plan Step whose Work Approa
 is known lists its stages in its Notes: an Agent Skill's, an Approach on
 Trial's, or those of earlier work.
 
-Inside a commit plan, the plan and the branch's log show where the
+Inside a Commit Plan, it and the branch's log show where the
 work is.
 
 **The Plan Step Gate is written when the Plan Step opens, before any of its
@@ -329,6 +331,15 @@ Notes:
   commits." A Backend Repo never reads records in the Maintainer
   Repo; without it, the Agent Skill would still call for a Commit Plan
   for any work of more than one commit.
+- Decision I, at stage 3, on the reviewer's word: decision H's lines
+  leave both commit-plan Agent Skills for the two Plan Step Forms,
+  ours in this file and the Backend Kit's in
+  `delivery/fills/cbc-run-pure-playbook.md`. A fact that joins two
+  ideas lives in the one that uses the other: the plan uses Commit
+  Sets, and commit sets names none of its users. A Plan Step's form
+  is read when a Plan Step opens, the moment the rule is needed. The
+  rule itself, for every idea, waits on TODO's layers item; one home
+  §3 is its home.
 - Decided before the opening, on the reviewer's word: the stop at
   every commit stays (`knowledge/backbone-ideas/commit-messages.md`
   §5, *Commit on the word*); at a stop the reviewer finds what they

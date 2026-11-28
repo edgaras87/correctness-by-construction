@@ -268,6 +268,12 @@ delivered files below.
 - **Change Set** — a body of work that needs more than one commit,
   sequenced and closed as a commit plan
   (`docs/conventions/commit-plan/` §1, *What a commit plan is*).
+- **Commit Set** — a body of work that needs more than one commit,
+  planned as commits before it starts, reviewed as they land, and
+  closed (`knowledge/backbone-ideas/commit-sets.md` §1, *Its Defined Terms*).
+- **Commit Plan** — a Commit Set's list of commits, agreed before the
+  first lands, in one file at the repo's root, deleted at the close
+  (`knowledge/backbone-ideas/commit-sets.md` §1, *Its Defined Terms*).
 - **Plan Step Gate** — a Plan Step's exit criteria: facts that can be
   checked, written when the Plan Step opens; it is done only when
   every one is true (`knowledge/backbone-ideas/records.md` §1, *Its Defined Terms*; the Plan Step

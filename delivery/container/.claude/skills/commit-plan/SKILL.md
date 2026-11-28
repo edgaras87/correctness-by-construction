@@ -19,15 +19,13 @@ Commit Set's ADR is still Proposed.
 
 ## 1. When a Commit Plan is needed
 
-Why it is so: (commit sets, kept in the Maintainer Repo, §2, *What a Commit Set is*; records, kept in the Maintainer Repo, §4, *The plan*).
+Why it is so: (commit sets, kept in the Maintainer Repo, §2, *What a Commit Set is*).
 
 Write one when the work is worth splitting into more than one
 commit. A single-commit change gets none: the Commit Plan costs two extra
 commits, and pays for itself only across a sequence. Reach for one
 especially when the split could turn out wrong halfway through, or
 when someone other than the author reviews as it lands.
-
-A Plan Step needs no Commit Plan when each of its stages is one commit or a few: the stages already list the commits. Open a Commit Plan only for a stage that takes many commits.
 
 ## 2. The Commit Plan
 

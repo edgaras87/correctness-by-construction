@@ -53,8 +53,11 @@ Two examples:
 - Step 2, which runs no Agent Skill, its Notes listing name, description
   and remote: "Now: the description. Name chosen 2026-11-03."
 
-Inside a commit plan, the plan and the branch's log show where the
-work is.
+**A Plan Step needs no Commit Plan when each of its stages is one
+commit or a few:** the stages already list the commits. Open a Commit
+Plan only for a stage that takes many commits, under the commit-plan
+Agent Skill. Inside a Commit Plan, it and the branch's log show where
+the work is.
 
 **The Plan Step Gate is written when the Plan Step opens, before any
 of its work.** A Plan Step Gate written at the close describes what happened. It
