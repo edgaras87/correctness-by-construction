@@ -265,9 +265,6 @@ delivered files below.
 - **Finding Kind** — one rule the refinement reads against, and the
   findings it makes
   (`.claude/approaches-on-trial/refinement.md` §1.1, *The refinement's words*).
-- **Change Set** — a body of work that needs more than one commit,
-  sequenced and closed as a commit plan
-  (`docs/conventions/commit-plan/` §1, *What a commit plan is*).
 - **Commit Set** — a body of work that needs more than one commit,
   planned as commits before it starts, reviewed as they land, and
   closed (`knowledge/backbone-ideas/commit-sets.md` §1, *Its Defined Terms*).

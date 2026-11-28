@@ -182,7 +182,7 @@ Steps*).
 - **The records a CBC Run keeps, and when each is opened** —
   `knowledge/problem-domain-ideas/cbc-backend-design/records-in-cbc-backend-design.md`.
 - **How the apply Plan Step's commits are planned** —
-  `docs/conventions/commit-plan/`.
+  `knowledge/backbone-ideas/commit-sets.md`.
 - **What an Output Shape is, and how a Plan Step Gate reads it** —
   `docs/conventions/shapes/`.
 - **How a CBC Run edits a delivered copy, and hands it back** —

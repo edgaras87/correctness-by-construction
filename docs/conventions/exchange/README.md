@@ -597,9 +597,9 @@ Reading written new is written without it (`knowledge/adapted-cases/cbc-backend-
 - **What `foundation` holds for each kind of file** —
   `docs/conventions/conventions/` §1.3, *The Foundation Line*.
 - **How an Output Shape reaches a CBC Run** — `docs/conventions/shapes/` §4, *An Output Shape between repos*.
-- **The commits and decisions of working a CBC Run Reading** — a commit
-  plan when it takes more than one commit,
-  `docs/conventions/commit-plan/`, and an ADR when a decision has
+- **The commits and decisions of working a CBC Run Reading** — a Commit
+  Plan when it takes more than one commit,
+  `knowledge/backbone-ideas/commit-sets.md`, and an ADR when a decision has
   rejected options, `knowledge/backbone-ideas/records.md` §5, *The decisions*.
 - **The concept's version** — ADR-0003, and `CHANGELOG.md`'s
   standing comment.

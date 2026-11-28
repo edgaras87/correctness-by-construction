@@ -165,7 +165,7 @@ its act, a verb: exchange-read, infra-establish.
 
 In text, a Work Approach is always written with its kind: the
 commit-plan Agent Skill, the one-home Agent Rule. A manual is written
-the same way, the commit-plan manual. A sentence that points at where a fact is written gives the path, as a
+the same way, the writing manual. A sentence that points at where a fact is written gives the path, as a
 Fact Reference (`knowledge/problem-domain-ideas/keeping-knowledge/one-home-in-keeping-knowledge.md` §2, *Writing a Fact Reference*).
 
 Three names older than this part are shared: commit-plan and
@@ -312,7 +312,7 @@ on Trial, places a piece as a convention of its own
 placing takes these steps:
 
 1. An ADR for the decisions behind it, opened Proposed when it lands
-   inside a Change Set.
+   inside a Commit Set.
 2. The manual at `docs/conventions/<name>/README.md`, in the form
    (§2, *The Convention Manual*).
 3. Its Work Approaches in the Container Group, if it ships any. A Work Approach

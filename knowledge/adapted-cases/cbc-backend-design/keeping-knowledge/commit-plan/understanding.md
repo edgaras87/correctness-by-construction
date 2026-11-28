@@ -4,7 +4,7 @@
 What it is: one of the Backend Kit's files, the Adapted Understanding Text of its Adapted Case for commit sets. It says why its Instruction Text is as it is, where only this Adapted Case relies on the reason.
 What it stands on: knowledge/problem-domain-ideas/cbc-backend-design/commit-sets-in-cbc-backend-design.md, kept in the Maintainer Repo. The rules this Adapted Case shares with every repo, and why each is so, are there and in the Backbone Idea it adapts.
 What stands on it: its Instruction Text, the commit-plan Agent Skill, delivery/container/.claude/skills/commit-plan/SKILL.md, copied to a Backend Repo's .claude/skills/commit-plan/. It moves beside this text when the exchange is rewritten, as the commit-messages Agent Skill does (devlog 2026-11-27, evening, the commit-messages manual's Plan Step, decision C).
-Its first source, input and not rules: the commit-plan manual, docs/conventions/commit-plan/README.md: Why it arrives this way.
+Its first source, input and not rules: the commit-plan manual, docs/conventions/commit-plan/README.md, deleted on 2026-11-28, its last state in git at ee749870: Why it arrives this way.
 It never loads; it is read when its Instruction Text changes.
 -->
 

@@ -14,7 +14,7 @@ How it is edited:
 
 This document says how the way a structure is shown is chosen: a picture, a table or a plain list. It names no Problem Domain: each Problem Domain Idea adapted from it says which notations its own repos use.
 
-Its neighbours: a choice that is not about how something is shown is decided while building, and corrected at a boundary (`docs/conventions/commit-plan/`); whether a picture may carry a fact the prose does not is decided by the text that holds the picture.
+Its neighbours: a choice that is not about how something is shown is decided while building, and corrected at a boundary (`knowledge/backbone-ideas/commit-sets.md` §5, *At each boundary*); whether a picture may carry a fact the prose does not is decided by the text that holds the picture.
 
 ## 1. Its Defined Terms
 

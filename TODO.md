@@ -793,8 +793,8 @@
 
 - [ ] Decide how commits cited by hash can still be regrouped
       (2026-10-19, the reviewer).
-      Context: our `commit-plan` Agent Skill regroups a Change Set's commits before
-      its close (`docs/conventions/commit-plan/` §2.12, *The look back*), and a regroup gives them new hashes. This repo cites
+      Context: our `commit-plan` Agent Skill regroups a Commit Set's commits before
+      its close (`knowledge/backbone-ideas/commit-sets.md` §6, *The close*), and a regroup gives them new hashes. This repo cites
       hashes in Living Text: the refinement's file, TODO, other
       commit bodies. So the refinement's commits up to `ccce6af`
       were not regrouped, and the history keeps every small fix,
@@ -802,12 +802,12 @@
       Ideas:
       - cite records, not commits: Living Text points at a devlog
         entry or a section; hashes only in history.
-      - cite at the close: while a Change Set is open nothing durable
+      - cite at the close: while a Commit Set is open nothing durable
         cites its hashes; the close cites the final ones.
       - rewrite the citations with the regroup: a map of old hash
         to new, grepped and replaced in the same rewrite.
       - regroup only on the branch, before main takes it.
-      Trigger: a Change Set wants a regroup, and its hashes are cited.
+      Trigger: a Commit Set wants a regroup, and its hashes are cited.
       See: devlog 2026-10-19, regrouping.
 
 - [ ] Make the conventions index a full Local Map (2026-09-30, the

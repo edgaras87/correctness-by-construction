@@ -14,7 +14,7 @@ How it is edited:
 
 This document says how a commit is written: its message, what may share one, and who commits it. It names no Problem Domain: each Problem Domain Idea adapted from it says what its own repos' commits carry.
 
-Its neighbours: which files are agent files is agent files' (`knowledge/backbone-ideas/agent-files.md` §3, *The agent files*); what a decision record is, and the other records a footer links, are records' (`knowledge/backbone-ideas/records.md` §3, *The records*); work of more than one commit is the commit-plan manual's (`docs/conventions/commit-plan/`).
+Its neighbours: which files are agent files is agent files' (`knowledge/backbone-ideas/agent-files.md` §3, *The agent files*); what a decision record is, and the other records a footer links, are records' (`knowledge/backbone-ideas/records.md` §3, *The records*); work of more than one commit is commit sets' (`knowledge/backbone-ideas/commit-sets.md`).
 
 ## 1. Its Defined Terms
 

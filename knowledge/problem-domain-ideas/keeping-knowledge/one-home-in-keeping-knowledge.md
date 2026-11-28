@@ -20,6 +20,8 @@ Borrowed:
 | Defined Term | Defined in |
 |---|---|
 | Backend Kit | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
+| Commit Plan | `knowledge/backbone-ideas/commit-sets.md` §1, *Its Defined Terms* |
+| Commit Set | `knowledge/backbone-ideas/commit-sets.md` §1, *Its Defined Terms* |
 | Backend Repo | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Copy Change | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Fact Reference | `knowledge/backbone-ideas/one-home.md` §1, *Its Defined Terms* |
@@ -76,7 +78,7 @@ A text others stand on changes. The Change Walk finds what relies on it, in the 
 
 It finds only lines that carry a Fact Reference. A line that relies on a fact written elsewhere and carries none is found by nothing. So each new or changed line is asked, at the commit, whether it relies on a fact written elsewhere, and whether it says where.
 
-A home that moves is searched for by each old path, number and title (`knowledge/backbone-ideas/one-home.md` §5, *When a home moves*). Here, Knowledge on Trial placed into a lasting text is such a move. A commit plan's sweep looks again before its close (`docs/conventions/commit-plan/` §2.10, *The sweep*).
+A home that moves is searched for by each old path, number and title (`knowledge/backbone-ideas/one-home.md` §5, *When a home moves*). Here, Knowledge on Trial placed into a lasting text is such a move. A Commit Set's sweep looks again before its close (`knowledge/backbone-ideas/commit-sets.md` §6, *The close*).
 
 **Rules:**
 
@@ -90,7 +92,7 @@ A home that moves is searched for by each old path, number and title (`knowledge
 
 **Rules:**
 
-- A disagreement is raised where it is found, in one of three places: a Copy Change, read back in a Repo Reading; a question at a Plan Step's or a commit plan's boundary; or this repo's own check at the commit.
+- A disagreement is raised where it is found, in one of three places: a Copy Change, read back in a Repo Reading; a question at a Plan Step's or a Commit Plan's boundary; or this repo's own check at the commit.
 - It is recorded in the commit body that settles it, or in an ADR when options were weighed.
 
 ## 6. Open questions

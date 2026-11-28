@@ -99,8 +99,6 @@ Model's (`docs/models/idea-to-output.md` §6, *A convention*). How
 they hand work to each other is the conventions' Local Map,
 `docs/conventions/README.md`.
 
-- `docs/conventions/commit-plan/` — how work larger than one commit
-  is planned.
 - `docs/conventions/conventions/` — how a way of working is written
   down and made usable.
 - `docs/conventions/exchange/` — what passes between a Concept

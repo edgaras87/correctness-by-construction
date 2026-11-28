@@ -6,7 +6,7 @@ What it stands on: knowledge/backbone-ideas/commit-sets.md, the Backbone Idea it
 What stands on it: this repo's own Adapted Case for commit sets.
 Its place in the repo: knowledge/problem-domain-ideas/keeping-knowledge/ (ADR-0084).
 Its first sources, input and not rules (PLAN.md, the commit-plan manual's Plan Step, decision C):
-- for §2, the commit-plan manual, docs/conventions/commit-plan/README.md, What it is for and §2.4's story: one Commit Set revised four times at its boundaries on 2026-09-27 and 28, on the reviewer's readings;
+- for §2, the commit-plan manual, docs/conventions/commit-plan/README.md, deleted on 2026-11-28, its last state in git at ee749870, What it is for and §2.4's story: one Commit Set revised four times at its boundaries on 2026-09-27 and 28, on the reviewer's readings;
 - for §3, devlog 2026-11-01, round 3 worked and closed: the close read planned 19 commits and landed 31, 5 of them followers for the agent files;
 - for §4, the same entry: a commit's search missed a quote of a label broken across two lines, and the next commit's search, its lines joined, found it.
 How it is edited: a trial, as in the layers of knowledge: a section's rules close it, in a last paragraph marked Rules, and govern that section.

@@ -53,7 +53,7 @@ arrive with them, in `docs/glossary/`; this project's own are
 | Something became true the outside should see | The first page: what this is, how to use it | README.md |
 | Agent setup changed, or a Work Approach arrives | Decision, why, rejected options; the Work Approaches held, the Delivery Pin | .claude/decisions.md |
 | The CBC Run has finished building, before Release | What the next CBC Run does differently, and where each lesson lands | RETRO.md (when present) |
-| Work needs more than one commit | In-flight Change Set | COMMIT-PLAN.md (when present) |
+| Work needs more than one commit | In-flight Commit Set | COMMIT-PLAN.md (when present) |
 
 <!-- This file is loaded in full on every task, relevant or not, so
      every line below passes three tests or leaves
