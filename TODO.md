@@ -132,6 +132,11 @@
         as it works (`.claude/understanding/foundation-check.md` §4,
         *What it stands for*; 2026-11-27, the facts-in-sync manual's
         Plan Step, decision B).
+      - the idea's title gains its subject: "Change" alone does not
+        say change of what. Candidates: "Knowledge change", "How
+        knowledge moves". Its three files, and the 200 lines in 40
+        files that point at them (by script, 2026-11-28), move with
+        it (2026-11-28, the reviewer).
       Trigger: the first lesson judged at depth c, in a Backend Repo's
       reading.
       See: devlog 2026-11-22, the depth c item.
