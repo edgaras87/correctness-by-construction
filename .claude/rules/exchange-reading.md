@@ -51,7 +51,7 @@ What a CBC Run Reading holds, and why: (`docs/conventions/exchange/` §6.3, *The
    asks, what rests on it, and which others it gates. Settled ones say
    so and how, in place.
 6. **The work.** `WORK-1`, `WORK-2`, … — one per thing to do, marked
-   **plan** when it will need a commit plan of its own. Done ones say
+   **plan** when it will need a Commit Plan of its own. Done ones say
    so with the commit, in place. The order is preliminary and the
    reviewer reorders it.
 7. **What this CBC Run Reading taught.** Lessons about reading itself,

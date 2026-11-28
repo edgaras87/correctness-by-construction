@@ -57,7 +57,7 @@ either.
    three verdicts (`docs/conventions/exchange/` §6.5, *Verdicts*): placed is
    taken, on trial is held, the project's own and dropped are
    declined.
-5. **Place what is placed,** as a commit plan. A new convention is added as the conventions manual says
+5. **Place what is placed,** as a Commit Plan. A new convention is added as the conventions manual says
    (`docs/conventions/conventions/` §3, *Adding a convention*). A section of an
    existing one goes into its manual first, and the Foundation
    Check carries it to what derives from it.

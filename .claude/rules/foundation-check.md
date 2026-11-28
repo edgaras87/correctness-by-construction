@@ -14,6 +14,7 @@ Borrowed:
 | Backend Repo | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Canonical Description | `docs/models/idea-to-output.md` §2, *The kinds* |
 | Change Walk | `knowledge/problem-domain-ideas/keeping-knowledge/one-home-in-keeping-knowledge.md` §1, *Its Defined Terms* |
+| Commit Set | `knowledge/backbone-ideas/commit-sets.md` §1, *Its Defined Terms* |
 | Copy Change | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Fact Reference | `knowledge/backbone-ideas/one-home.md` §1, *Its Defined Terms* |
 | Foundation Check | `.claude/understanding/foundation-check.md` §1, *Its Defined Terms* |
@@ -65,7 +66,7 @@ Borrowed:
 6. **A foundation that changes is a Canonical Description changed.** Step 3
    runs on it again, and what it finds goes through steps 4 and 5.
    The check ends when a Change Walk finds nothing new. When the changes
-   need more than one commit, they are a commit plan.
+   need more than one commit, they are a Commit Set.
 
 ## A moved section
 

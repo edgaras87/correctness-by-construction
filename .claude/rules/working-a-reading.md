@@ -39,11 +39,11 @@ there.
 
 3. **A decision that needs an ADR is a proposed one**, built and
    corrected while building, not a list of questions. It opens
-   Proposed under a commit plan. The plan's revisions correct it. It
-   flips to Accepted in the Change Set's records commit. One that
+   Proposed under a Commit Plan. The Commit Plan's revisions correct it. It
+   flips to Accepted in the Commit Set's records commit. One that
    needs none is settled on its proposal, and marked so in place.
 
-4. **A work item is a commit or a commit plan**, with the reviewer
+4. **A work item is a commit or a Commit Set**, with the reviewer
    at every boundary (`knowledge/backbone-ideas/commit-messages.md` §5, *Commit on the word*). An item taken into a Master Copy is checked against
    its foundation (`.claude/rules/foundation-check.md`). The file it
    lands in is read whole before the commit: a CBC Run's edit shows
@@ -55,7 +55,7 @@ there.
    item is marked the moment it closes, with its commit. Then each
    open finding, decision and work item is read once against it, as
    changed, closed, or blocked, and marked in place before the next
-   is opened. The items are not independent: one item's Change Set can close
+   is opened. The items are not independent: one item's Commit Set can close
    another, and right after one moved is the only cheap moment to see
    how the others moved with it.
 
@@ -120,7 +120,7 @@ the exchange-deliver Agent Skill's Stage 1, step 0, the Now line returns to read
   `docs/conventions/exchange/` §6.3, *The CBC Run Reading* and §6.4, *How a CBC Run Reading closes*.
 - **The CBC Run moving before the Delivery Note** — `.claude/skills/exchange-deliver/SKILL.md`, Stage 1,
   step 0.
-- **How a commit plan runs** — `.claude/skills/commit-plan/SKILL.md`.
+- **How a Commit Plan runs** — `.claude/skills/commit-plan/SKILL.md`.
 
 ---
 

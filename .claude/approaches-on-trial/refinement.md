@@ -4,7 +4,7 @@
 It goes in Refinement Rounds: what is true, then where it lives, then how it
 reads. Each Refinement Round reads first and lists what it finds. Nothing
 changes until the reviewer has ended each finding, and then the
-text is fixed by a Change Set written from the list.**
+text is fixed by a Commit Set written from the list.**
 
 ## What it is for
 
@@ -260,8 +260,8 @@ A finding is never deleted or renumbered while the file lives.
 
 ### 2.7 Working the findings
 
-A Refinement Round's findings are worked as one Change Set
-(`docs/conventions/commit-plan/`), written from its list. The list's
+A Refinement Round's findings are worked as one Commit Set
+(`knowledge/backbone-ideas/commit-sets.md`), written from its list. The list's
 order by Refinement Layer (§2.2, *List the files*) shows which fixes
 are sources. The plan groups the commits by what each change needs:
 
@@ -273,7 +273,7 @@ Each commit names its findings. Once the work is done, the Refinement
 Round's section names each finding's commit. A commit that touches a
 Canonical Description goes through the Foundation Check.
 
-*Found 2026-11-01: one commit plan for each Refinement Layer would
+*Found 2026-11-01: one Commit Plan for each Refinement Layer would
 have opened most files of the last read two or three times, and left a
 shared fact's copies disagreeing between Refinement Layers
 (devlog 2026-11-01).*
@@ -292,13 +292,13 @@ deletion, not a rewrite.
 
 A finding whose fix changes how a convention works, not only what
 its text says, is a design change. It is made inside the
-refinement, as a commit plan of its own on its branch; the
+refinement, as a Commit Plan of its own on its branch; the
 refinement does not stop for it. It goes as soon as the reviewer
 has decided it, before the Refinement Round's other decisions, since other
 findings may rest on it. The Foundation Check carries it to what
 derives from the convention. It never changes a rule the Refinement Round
 reads against (§2.4, *Reading the Finding Kinds*). A change with a goal of its own, too big for
-one commit plan, is a Plan Step of its own, in `PLAN.md`.
+one Commit Plan, is a Plan Step of its own, in `PLAN.md`.
 
 *Found 2026-10-20: Refinement Round 1's DECISION-1 asked what "manual" means
 in a CBC Run, and the answer was a change to how first-time work is
@@ -344,7 +344,7 @@ any order.
 What it finds is listed by Refinement Round, by the Finding Kinds'
 rule (§2.1, *Group the Finding Kinds*), then by Refinement Layer
 (§2.5, *List the findings*). No read waits on a fix, so all of it is
-worked as one Change Set written from that list (§2.7, *Working the
+worked as one Commit Set written from that list (§2.7, *Working the
 findings*). Where findings of two Refinement Rounds touch the same
 lines, the edit takes them in Refinement Round order. Then everything is read
 again, until a read finds nothing that breaks a rule. The rule for a finding (§2.4, *Reading the Finding Kinds*) is what makes this end.
@@ -369,7 +369,7 @@ commit, so the file can be read from git.
 - **Whether the three Refinement Rounds hold.** They were drawn from one
   refinement's eight Finding Kinds. Wiring, which adds missing links, fitted
   Refinement Round 1; whether other added text fits is still to see.
-- **Whether a Change Set written from the list holds.** The last
+- **Whether a Commit Set written from the list holds.** The last
   read's is the first; its close says what diverged.
 - **Approach on Trial Stages beside Agent Skill Stages.** The glossary gives this
   page's phases their own Name; whether the two hold apart is judged
@@ -393,7 +393,7 @@ in it. Each *Not known yet* item is then answered from two uses.
 
 *The Concept Deliverer, the first refinement, 2026-10-18 to 2026-11-02.*
 Three Refinement Rounds and a last read; the last read's 385 findings
-all ended, in one Change Set written from the list. The read again was
+all ended, in one Commit Set written from the list. The read again was
 skipped once, for budget, and §2.9 stands. Taught: Refinement Rounds
 and Refinement Layers order the read and the list, not the work
 (§2.7, *Working the findings*); text another TODO item already plans to
@@ -417,7 +417,7 @@ goes, and its evaluation at the close places its pieces
 - **How text reads, and where a fact lives** —
   `.claude/rules/writing.md`, `.claude/rules/one-home.md`.
 - **How the work's commits are planned** —
-  `docs/conventions/commit-plan/`.
+  `knowledge/backbone-ideas/commit-sets.md`.
 
 ## Where to look
 

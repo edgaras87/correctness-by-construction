@@ -21,13 +21,14 @@ Borrowed:
 | Agent Skill | `knowledge/backbone-ideas/agent-files.md` §1, *Its Defined Terms* |
 | Backend Kit | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Backend Repo | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
+| Commit Plan | `knowledge/backbone-ideas/commit-sets.md` §1, *Its Defined Terms* |
 | Instruction Text | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
 | Problem Domain Idea | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
 | Pulled Channel | `knowledge/backbone-ideas/how-an-agent-works.md` §1, *Its Defined Terms* |
 
 ## 2. Why the list is here
 
-The scopes are used at the commit, and the Agent Skill is opened there. Until 2026-11-27 the list sat only in the commit-messages manual, which no commit opens, and the agent took the scopes from the log. So it drifted: from 2026-11-26, 12 commits of the agent's files beyond a commit plan took `docs(agent)`, and none took the `chore(agent)` the Agent Skill named.
+The scopes are used at the commit, and the Agent Skill is opened there. Until 2026-11-27 the list sat only in the commit-messages manual, which no commit opens, and the agent took the scopes from the log. So it drifted: from 2026-11-26, 12 commits of the agent's files, not counting a Commit Plan's own, took `docs(agent)`, and none took the `chore(agent)` the Agent Skill named.
 
 **Rules:**
 
