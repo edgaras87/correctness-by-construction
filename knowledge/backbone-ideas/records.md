@@ -4,7 +4,7 @@
 What it is: a Backbone Idea, bound to no Problem Domain, and its one home (knowledge/backbone-ideas/layers-of-knowledge.md §3.1, The Backbone Idea layer).
 Its place in the repo: knowledge/backbone-ideas/ (ADR-0084).
 Why it is an idea of its own: both Problem Domains work by it (temp/rewrite-map.md §10, Shared questions, QUESTION-7).
-Its first sources, input and not rules: the project-recording manual, docs/conventions/project-recording/README.md, deleted on 2026-11-27, its last state in git at 3bb95746: its What it is for; §1; each record's what, why and where, and the reasons for its form that every repo shares, from §2 to §8; §11 to §13; Why it arrives this way.
+Its first sources, input and not rules: the project-recording manual, docs/conventions/project-recording/README.md, deleted on 2026-11-27, its last state in git at 3bb95746: its What it is for; §1; each record's what, why and where, and the reasons for its form that every repo shares, from §2 to §8; §11 to §13; Why it arrives this way. A Plan Step's stages as the plan of its commits, from both Problem Domains' work: the Plan Steps of the Maintainer Repo's rewrite into the layers, from 2026-11-26, which opened no Commit Plan; CBC Run 4's Plan Steps, which opened one only for its retrospective (TODO-CONVERSATION-MEMORY.md §9, A commit plan's look-back at the way; PLAN.md, the commit-plan manual's Plan Step, decision E).
 What stands on it: its Problem Domain Ideas, one for each Problem Domain. Each points here, and never retells it.
 How it is edited:
 - It gives no example from one Problem Domain's work.
@@ -26,6 +26,7 @@ Borrowed:
 | Defined Term | Defined in |
 |---|---|
 | Backbone Idea | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
+| Commit Plan | `knowledge/backbone-ideas/commit-sets.md` §1, *Its Defined Terms* |
 | Problem Domain | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
 | Problem Domain Idea | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
 
@@ -51,6 +52,8 @@ The table gives each record's usual place. §4 to §10 say what each is and why 
 
 A plan is its Plan Steps. The whole of the work is sketched coarsely, and the next one or two Plan Steps in detail. The detail moves forward as Plan Steps close. Each Plan Step has a live status and a Plan Step Gate. The plan answers, at any moment, where the work stands, what is next and what *done* means. Without it, those three answers live only in someone's head.
 
+A Plan Step whose stages each land as one commit or a few needs no Commit Plan: its stages already list its commits. A stage that takes many commits opens a Commit Plan of its own (`knowledge/backbone-ideas/commit-sets.md` §3, *The Commit Plan*).
+
 **Rules:**
 
 - A Plan Step Gate holds facts that can be checked, never intentions: "tests pass on a clean clone", not "the code is good". So no Plan Step is declared done from fatigue.
@@ -60,6 +63,7 @@ A plan is its Plan Steps. The whole of the work is sketched coarsely, and the ne
 - A Plan Step's goal is one piece of work. A goal that grows past one is re-cut: the Plan Step Gate's items that moved are struck, each naming the backlog item it went to, and the Plan Step closes.
 - Updating the plan is part of the work, so no status goes stale.
 - No Plan Step is detailed long before the ones ahead of it are done.
+- A stage of a Plan Step that takes many commits opens a Commit Plan. Stages of one commit or a few need none.
 
 ## 5. The decisions
 

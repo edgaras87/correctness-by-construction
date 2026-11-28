@@ -288,6 +288,27 @@ Notes:
   Subversion a changeset is one commit. The plan, its file and the
   commit-plan Agent Skill keep their names. The Change idea's own
   title waits for TODO's depth c item (`69f618a8`).
+- Decision E, at stage 2, on the reviewer's word: a Plan Step whose
+  stages each land as one commit or a few needs no Commit Plan, its
+  stages already listing its commits; a stage of many commits opens
+  one. Its subject is the Plan Step, so records holds it
+  (`knowledge/backbone-ideas/records.md` §4, *The plan*), and commit
+  sets says only that no Commit Plan is opened where a Plan Step's
+  stages list the commits. It holds in both Problem Domains, so it
+  goes to layer 1, once: the rewrite's Plan Steps since 2026-11-26
+  opened no Commit Plan, and CBC Run 4's framing, skeleton and slices
+  ran as Plan Steps with small commits, a Commit Plan only for its
+  retrospective. Writing it into each Problem Domain Idea was
+  rejected: two copies of one rule
+  (`knowledge/backbone-ideas/layers-of-knowledge.md` §3.2, *The
+  Problem Domain layer*). Putting it in commit sets was rejected: its
+  subject is the Plan Step.
+- Decision F, at stage 2, on the reviewer's word: a Commit Set's list
+  of commits is named "Commit Plan", a Defined Term of commit sets,
+  and commit sets never says a bare "plan" for it. "The plan" stays
+  records' name for the record of Plan Steps, since the Commit Plan
+  carries its own subject. The record's own subject waits for TODO's
+  item on its name.
 - Decided before the opening, on the reviewer's word: the stop at
   every commit stays (`knowledge/backbone-ideas/commit-messages.md`
   §5, *Commit on the word*); at a stop the reviewer finds what they

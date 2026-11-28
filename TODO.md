@@ -1080,6 +1080,21 @@
       Backend Repo's work.
       See: devlog 2026-11-28, the commit-plan manual's opening.
 
+- [ ] Give the plan, the record of Plan Steps, a name that carries
+      its subject (2026-11-28, the reviewer).
+      Context: records names the plan by its kind alone, "the plan"
+      (`knowledge/backbone-ideas/records.md` §3, *The records*). Since
+      commit sets defined the Commit Plan, two plans exist, and "the
+      plan" alone does not say plan of what. Until this is done, "the
+      plan" names the record, and the Commit Plan is always written
+      whole.
+      Ideas:
+      - "Work Plan", the reviewer's first thought, not yet sure;
+      - the Plan Step and the Plan Step Gate are named from the plan,
+        and may follow the new name.
+      Trigger: the rewrite done, so each text is renamed once.
+      See: devlog 2026-11-28, the commit-plan manual's Plan Step.
+
 ## Later / someday
 
 - [ ] Release concept v2 (2026-10-17, from PLAN's Step N).
