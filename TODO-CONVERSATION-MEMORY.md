@@ -144,54 +144,6 @@ layer 6 findings into this item rather than fixing either side:
 Nothing more was said of either; the reviewer said "go, write the
 plan".
 
-## 9. A commit plan's look-back at the way
-
-Item: "Decide whether a commit plan's look-back also asks if the
-work could have been done better".
-
-### 2026-10-21
-
-#### What the reviewer asked
-
-While run 4 was read for run 5's birth: did run 4 use
-`commit-plan`, with provisional ADRs? When it planned meaningful
-work, did each step it did change how it had planned? Things look
-one way before the work, and a step or two in, something shows that
-was not seen. Then a proposal: before a commit plan closes, look
-back and check whether the work could have been done better; only
-for a real, meaningful change, try that way and compare it with the
-agent's first try before deciding which to keep. Should that be
-marked to check?
-
-#### What exists today
-
-- **Run 4 used `commit-plan` twice,** both for its retrospective
-  (`58ce0a1` to `cf221b3`, `95e9091` to `74a4445`). Its framing,
-  skeleton and four slices were steps, each with its gate written
-  first, and small commits; none was a commit plan. Its one
-  recorded divergence: commit 5 of the apply plan split when a
-  script missed an anchor, and a commit was added outside the plan.
-- **Provisional ADRs, some:** ADR-0007 and ADR-0011 opened
-  Proposed and were accepted later; all 13 are Accepted.
-- **`commit-plan`'s look-back** checks the landed commits for their
-  grouping only: "two that are one change, or one that is two".
-  Divergence already lets a plan change when a commit needs
-  something else (`commit-plan` §5).
-- **Run 4's `try/` branches:** each Real question's options tried
-  before the decision, 14 branches, 2 tries changing the answer.
-
-#### Points made
-
-- The idea looks back at the way, not the grouping, and is close to
-  what worked on run 4's `try/` branches.
-- It needs a bar for "meaningful", or every plan doubles its cost:
-  the better way changes a wall, a test's adversity, or removes a
-  part.
-- It is tried first in run 5's hand-off, since run 5 runs on auto
-  and its log will show whether it paid. Shipped in the convention
-  now, it would decide for every run before one has tried it. The
-  reviewer agreed to mark it.
-
 ## 10. Examples in the concept, the conventions and the approaches
 
 Item: "Decide whether the concept, the conventions and the

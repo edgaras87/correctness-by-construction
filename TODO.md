@@ -535,26 +535,6 @@
       See: devlog 2026-09-26, evening; and 2026-09-30, night,
       later, where `pure-seed.md` was brought up to date for it.
 
-- [ ] Decide whether a commit plan's look-back also asks if the
-      work could have been done better (2026-10-21, the reviewer).
-      Context: before its close, the commit-plan Agent Skill looks back at the
-      landed commits for their grouping only. Work shows what a plan
-      missed; the reviewer would have the look-back ask whether the
-      work itself could be meaningfully better, and if so try that
-      way and compare it with the first try before keeping one. CBC
-      Run 4 tried the options of each question it must not decide
-      alone on `try/` branches: 14 of them, and 2 changed the answer. CBC Run 5 tried it from
-      its CBC Run Hand-off: 13 look-back lines, 0 tries (its CBC Run Reading of 2026-10-22, FINDING-9). CBC Run 6's found nothing 12 times, and it struck the look-back (its RETRO's D9).
-      Ideas:
-      - a bar for "meaningful": it changes a Structural Wall, a test's
-        adversity, or removes a part; rewording is not enough.
-      - the better way on a `try/` branch, compared, and the try not
-        chosen kept on its branch.
-      - a cap on its cost, so no plan doubles by habit.
-      Trigger: the commit-plan Agent Skill is rewritten.
-      See: devlog 2026-10-21, evening; `TODO-CONVERSATION-MEMORY.md`
-      §9, *A commit plan's look-back at the way*.
-
 - [ ] Decide whether the concept, the conventions and the
       Approaches on Trial keep examples (2026-10-21, the reviewer).
       Context: CBC Run 4 read CBC Run 3's real Enemy Collision Kills in the Output Shapes' examples

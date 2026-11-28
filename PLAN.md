@@ -148,7 +148,7 @@ Goal: every part of the commit-plan manual,
 Skill pair that waits on it, and the manual is gone; the plan file is
 no agent file, the work it plans is named "Commit Set", and a second
 way is tried before a choice, not looked for after the work.
-Now: stage 3, the Backend Kit's Adapted Case.
+Now: stage 5, the manual goes.
 Gate:
 
 **At the opening.**
@@ -166,20 +166,23 @@ Gate:
 
 **The Plan Step's own items.**
 
-- [ ] Commit sets is a Backbone Idea,
+- [x] Commit sets is a Backbone Idea,
       `knowledge/backbone-ideas/commit-sets.md`, with its row in
       §3.1's table of the layers document in keeping knowledge
       (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md`
       §3.5, *Where each layer is kept*; the map's QUESTION-7). It
       defines "Commit Set" (decision D), says the plan file is no
       agent file (decision A), and holds the try before a choice
-      (decision B).
-- [ ] Commit sets has a Problem Domain Idea in each Problem Domain,
+      (decision B) (2026-11-28, `a93f7311`; its Commit Plan named in
+      `9dfaa5a1`, decision F; no Plan Step named in `02c8d044`,
+      decision G).
+- [x] Commit sets has a Problem Domain Idea in each Problem Domain,
       keeping knowledge and CBC backend design, each with its row in
       §3.2.1's or §3.2.2's table of the same document, each holding
-      what its own repos lived and do, and no rule of its own
-      (decision C).
-- [ ] The Backend Kit's commit-plan Agent Skill,
+      what holds for commit sets in its Problem Domain, a lived fact
+      only as the reason for a line (decision C, reworded at stage 2)
+      (2026-11-28, `f7501b9e`, `d7e48259`).
+- [x] The Backend Kit's commit-plan Agent Skill,
       `delivery/container/.claude/skills/commit-plan/SKILL.md`, is the
       Instruction Text of its Adapted Case at layer 3, with its
       Adapted Understanding Text at
@@ -187,23 +190,27 @@ Gate:
       The Agent Skill stays where it is until the exchange is
       rewritten, as the visual-comparison manual's Plan Step kept its
       own. It points at the Maintainer Repo's texts by name, and
-      carries no Foundation Line.
-- [ ] Our commit-plan Agent Skill is our own Adapted Case at layer 4,
+      carries no Foundation Line (2026-11-28, `737f16cf`).
+- [x] Our commit-plan Agent Skill is our own Adapted Case at layer 4,
       where it is, with its Adapted Understanding Text at
       `.claude/understanding/commit-plan.md`. It borrows its Defined
       Terms as the defined-terms Agent Rule says, and carries no
-      Foundation Line.
-- [ ] In both commit-plan Agent Skills and both commit-messages Agent
+      Foundation Line (2026-11-28, `da714792`).
+- [x] In both commit-plan Agent Skills and both commit-messages Agent
       Skills, ours and the Backend Kit's, a commit of the plan file is
       plain `docs`, the plan file is not listed with the agent's
       files, and no rule makes a plan beside a TODO line or an ADR two
-      commits (decision A).
-- [ ] Both commit-plan Agent Skills name a second way worth trying at
-      a boundary, tried on a `try/` branch on the human's word; their
-      look back regroups the commits and no more. TODO's "Decide
+      commits (decision A) (2026-11-28, the Backend Kit's in
+      `737f16cf`, ours in `da714792`).
+- [x] Both commit-plan Agent Skills name a second way worth trying at
+      a boundary, tried on a branch of its own on the human's word;
+      their look back regroups the commits and no more. TODO's "Decide
       whether a commit plan's look-back also asks if the work could
       have been done better" has left TODO, its verdict in the commit
-      that removes it (decision B).
+      that removes it (decision B) (2026-11-28, the Agent Skills'
+      §6.3 in `737f16cf` and `da714792`; the item left in the commit
+      that ticks this; "a `try/` branch" reworded, as commit sets' §5
+      says it).
 - [ ] Every text this Plan Step writes or changes names "Commit Set",
       never "Change Set"; the glossary's "Change Set" points at its
       new home until no text outside the layers model uses it (the
