@@ -5,7 +5,7 @@ What it is: the Adapted Understanding Text of this repo's own Adapted Case for c
 What it stands on: knowledge/problem-domain-ideas/keeping-knowledge/commit-sets-in-keeping-knowledge.md, the Problem Domain Idea it is written from. It adapts that text, and never retells it.
 What stands on it: its Instruction Text, the commit-plan Agent Skill, .claude/skills/commit-plan/SKILL.md.
 Its place in the repo: .claude/understanding/ (ADR-0084). It never loads; it is read when its Instruction Text changes.
-Its first source, input and not rules: the commit-plan manual, docs/conventions/commit-plan/README.md: Why it arrives this way.
+Its first source, input and not rules: the commit-plan manual, docs/conventions/commit-plan/README.md, deleted on 2026-11-28, its last state in git at ee749870: Why it arrives this way.
 -->
 
 This text says why this repo's commit-plan Agent Skill reaches the agent as an Agent Skill, and why the stop at each commit is not in it. What a repo of texts meets in its Commit Sets is commit sets, in keeping knowledge (`knowledge/problem-domain-ideas/keeping-knowledge/commit-sets-in-keeping-knowledge.md`).
