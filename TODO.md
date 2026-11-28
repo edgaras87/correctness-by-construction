@@ -71,6 +71,11 @@
         hold to plain text, and CBC backend design's sources left it to
         the Backend Repo (2026-11-27, the visual-comparison manual's
         Plan Step, decision D).
+      - at a Plan Step's opening, a Problem Domain Idea is planned as
+        what holds in its Problem Domain, never as what its repos
+        lived; a lived case stays only as the reason for a line, in
+        its header's first sources (2026-11-28, the commit-plan
+        manual's Plan Step, decision C).
       Trigger: the map's Plan Step closed.
       See: devlog 2026-11-26, the map's Plan Step; ADR-0082.
 
@@ -1093,6 +1098,27 @@
       - the Plan Step and the Plan Step Gate are named from the plan,
         and may follow the new name.
       Trigger: the rewrite done, so each text is renamed once.
+      See: devlog 2026-11-28, the commit-plan manual's Plan Step.
+
+- [ ] Read each Problem Domain Idea the rewrite wrote for what holds
+      in its Problem Domain (2026-11-28, the reviewer).
+      Context: the commit-plan manual's Plan Step found its first
+      drafts read as records: dated cases as the content, a part
+      whose subject is another idea's, and a limit no source sets
+      (PLAN.md, its decision C). By script, 14 body lines in 8 of the
+      21 Problem Domain Ideas hold a date, a CBC Run number, a Round
+      or a commit count; parts under the wrong subject, and false
+      limits, are found only by reading.
+      Ideas:
+      - three questions of each section: does it hold what differs in
+        this Problem Domain; is its subject this idea's; does a source
+        set each limit it states;
+      - a lived case stays only as the reason for a line, in the
+        header's first sources;
+      - visual comparison's case of 2026-09-18 and how an agent
+        works' *What the work showed* were placed on purpose; their
+        decisions are weighed again, not overridden.
+      Trigger: the commit-plan manual's Plan Step closed.
       See: devlog 2026-11-28, the commit-plan manual's Plan Step.
 
 ## Later / someday
