@@ -1057,6 +1057,24 @@
       `temp/rewrite-map.md` §10, *Shared questions*, QUESTION-1;
       ADR-0087.
 
+- [ ] Rerun a finished Plan Step on full auto, from its decisions
+      alone, and compare the two results (2026-11-28, the reviewer).
+      Context: the agent stops at every commit for the reviewer's word
+      (`knowledge/backbone-ideas/commit-messages.md` §5, *Commit on
+      the word*). The stops stay: at them the reviewer finds what they
+      want, often only once some work is done. The doubt is whether
+      the stops also keep the agent from better solutions. A rerun
+      would answer it with evidence, not a guess.
+      Ideas:
+      - a fresh agent gets only the Plan Step's decisions, as needs:
+        what and why, no implementation choices. It redoes the work on
+        a branch with no stops, and the two results are compared;
+      - today a Plan Step's decisions mix needs with implementation
+        choices; writing them apart is part of the rerun.
+      Trigger: the first time the reviewer wants it, most likely in a
+      Backend Repo's work.
+      See: devlog 2026-11-28, the commit-plan manual's opening.
+
 ## Later / someday
 
 - [ ] Release concept v2 (2026-10-17, from PLAN's Step N).
