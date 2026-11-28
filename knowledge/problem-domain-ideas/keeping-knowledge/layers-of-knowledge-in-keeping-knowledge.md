@@ -119,6 +119,7 @@ Layer 1 holds Backbone Ideas (`knowledge/backbone-ideas/layers-of-knowledge.md` 
 | Commit messages | how a commit is written: its message, what may share one, and who commits it | `knowledge/backbone-ideas/commit-messages.md` |
 | One home | where a fact is written, and how every text that relies on it stays in agreement with it | `knowledge/backbone-ideas/one-home.md` |
 | Visual comparison | how the way a structure is shown is chosen: a picture, a table or a plain list | `knowledge/backbone-ideas/visual-comparison.md` |
+| Commit sets | how work larger than one commit is planned as commits, reviewed as they land, and closed | `knowledge/backbone-ideas/commit-sets.md` |
 
 Which other of today's project-agnostic ideas are Backbone Ideas is open (§5).
 
