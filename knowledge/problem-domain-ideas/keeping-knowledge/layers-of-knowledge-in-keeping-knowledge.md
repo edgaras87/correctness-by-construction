@@ -149,6 +149,7 @@ The Maintainer Repo's own Problem Domain. It works by its own Adapted Cases, wri
 | Commit messages, in keeping knowledge | Commit messages | the scope carries the signal in a repo of text; subjects counted at each Plan Step's close | `knowledge/problem-domain-ideas/keeping-knowledge/commit-messages-in-keeping-knowledge.md` |
 | One home, in keeping knowledge | One home | how a Fact Reference is written; numbered parts; the Change Walk; where a disagreement is raised | `knowledge/problem-domain-ideas/keeping-knowledge/one-home-in-keeping-knowledge.md` |
 | Visual comparison, in keeping knowledge | Visual comparison | plain text with no build step; the Mermaid trial; the case it came from | `knowledge/problem-domain-ideas/keeping-knowledge/visual-comparison-in-keeping-knowledge.md` |
+| Commit sets, in keeping knowledge | Commit sets | decisions found in the material; a follower for the agent files; the sweep weighs most | `knowledge/problem-domain-ideas/keeping-knowledge/commit-sets-in-keeping-knowledge.md` |
 
 #### 3.2.2 CBC backend design
 
@@ -166,6 +167,7 @@ The Backend Repos' Problem Domain. The Maintainer Repo keeps its Problem Domain 
 | Commit messages, in CBC backend design | Commit messages | the type carries the signal; subjects counted at each Plan Step's close; the stop with nobody watching | `knowledge/problem-domain-ideas/cbc-backend-design/commit-messages-in-cbc-backend-design.md` |
 | One home, in CBC backend design | One home | CBC Run 3's four records; ids as Fact References; what a Backend Repo cannot open | `knowledge/problem-domain-ideas/cbc-backend-design/one-home-in-cbc-backend-design.md` |
 | Visual comparison, in CBC backend design | Visual comparison | the Backend Repo picks its own notations; the Maintainer Repo's trial not delivered | `knowledge/problem-domain-ideas/cbc-backend-design/visual-comparison-in-cbc-backend-design.md` |
+| Commit sets, in CBC backend design | Commit sets | two moments open one; coherent as software; agent files at the retrospective; a try before the choice | `knowledge/problem-domain-ideas/cbc-backend-design/commit-sets-in-cbc-backend-design.md` |
 
 ### 3.3 The Adapted Case layer
 

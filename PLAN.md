@@ -146,7 +146,7 @@ Goal: every part of the commit-plan manual,
 Skill pair that waits on it, and the manual is gone; the plan file is
 no agent file, the work it plans is named "Commit Set", and a second
 way is tried before a choice, not looked for after the work.
-Now: stage 1, the Backbone Idea.
+Now: stage 2, the two Problem Domain Ideas.
 Gate:
 
 **At the opening.**
@@ -271,15 +271,20 @@ Notes:
   `try/` branches changed 2 answers. The agent names a second way
   worth trying at a boundary, beside the diff, and tries it on the
   human's word.
-- Decision C, at the opening, on the reviewer's word: each Problem
-  Domain Idea holds what its own repos lived and do. Keeping
-  knowledge's: the handbook's scratch file, 118 commit plans opened
-  since 2026-08-27 by script, one revised four times on 2026-09-27
-  and 28. CBC backend design's: where a Backend Repo opens one, at
-  birth (`delivery/installs/pure-seed.md`) and when it applies a
-  retrospective (the apply-retrospective Agent Skill, Stage 2); CBC
-  Run 3's SL-3 plan split by a revision; CBC Runs 4 to 6 as decision
-  B. How a full-auto run treats its plan is left out: no source says.
+- Decision C, at the opening, reworded at stage 2, on the reviewer's
+  word: each Problem Domain Idea holds what holds for commit sets in
+  its Problem Domain, a lived fact only as the reason for a line. The
+  first wording, what its repos lived and do, wrote history into
+  layer 2; the history stays in ADR-0038, the devlog and the log.
+  Keeping knowledge's: decisions found in the material; a follower
+  commit for the agent files; the sweep weighs most. CBC backend
+  design's: two moments open a Commit Set, at birth
+  (`delivery/installs/pure-seed.md`) and when a retrospective is
+  applied (the apply-retrospective Agent Skill, Stage 2); coherent as
+  software; agent files at the retrospective, CBC Run 3's SL-3 plan
+  the reason; a try before the choice, CBC Runs 4 to 6 as decision B.
+  How a full-auto run treats its Commit Plan is left out: no source
+  says.
 - Decision D, at the opening, on the reviewer's word: the work a
   commit plan plans is named "Commit Set", not "Change Set". It says
   what it is made of, commits, and fits work that adds, deletes or
