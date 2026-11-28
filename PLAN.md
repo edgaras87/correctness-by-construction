@@ -138,3 +138,177 @@ reason. That is a finding about the item, not a Plan Step skipping
 work.
 
 ---
+
+## Step: Rewrite the commit-plan manual into the layers  (the commit-messages Agent Skill)    [~]
+
+Goal: every part of the commit-plan manual,
+`docs/conventions/commit-plan/`, stands at its layer, with the Agent
+Skill pair that waits on it, and the manual is gone; the plan file is
+no agent file, the work it plans is named "Commit Set", and a second
+way is tried before a choice, not looked for after the work.
+Now: stage 1, the Backbone Idea.
+Gate:
+
+**At the opening.**
+
+- [x] The Plan Step's branch `commit-plan-2026-11-28`, if it has one, is cut
+      from main, and nothing of the Plan Step was done on main
+      (`.claude/rules/working-a-reading.md`, step 1)
+      (2026-11-28, cut at `69f618a8`, before the opening commit).
+- [x] This Plan Step Gate was written before the work started
+      (2026-11-28, in the Plan Step's opening commit).
+- [x] The Plan Step's Work Approach is known: the stages its Notes
+      list, from the map, `temp/rewrite-map.md` §9, *Every text*, and
+      §10, *Shared questions*, and from the visual-comparison manual's
+      Plan Step; no Approach on Trial drafted (2026-11-28).
+
+**The Plan Step's own items.**
+
+- [ ] Commit sets is a Backbone Idea,
+      `knowledge/backbone-ideas/commit-sets.md`, with its row in
+      §3.1's table of the layers document in keeping knowledge
+      (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md`
+      §3.5, *Where each layer is kept*; the map's QUESTION-7). It
+      defines "Commit Set" (decision D), says the plan file is no
+      agent file (decision A), and holds the try before a choice
+      (decision B).
+- [ ] Commit sets has a Problem Domain Idea in each Problem Domain,
+      keeping knowledge and CBC backend design, each with its row in
+      §3.2.1's or §3.2.2's table of the same document, each holding
+      what its own repos lived and do, and no rule of its own
+      (decision C).
+- [ ] The Backend Kit's commit-plan Agent Skill,
+      `delivery/container/.claude/skills/commit-plan/SKILL.md`, is the
+      Instruction Text of its Adapted Case at layer 3, with its
+      Adapted Understanding Text at
+      `knowledge/adapted-cases/cbc-backend-design/keeping-knowledge/commit-plan/understanding.md`.
+      The Agent Skill stays where it is until the exchange is
+      rewritten, as the visual-comparison manual's Plan Step kept its
+      own. It points at the Maintainer Repo's texts by name, and
+      carries no Foundation Line.
+- [ ] Our commit-plan Agent Skill is our own Adapted Case at layer 4,
+      where it is, with its Adapted Understanding Text at
+      `.claude/understanding/commit-plan.md`. It borrows its Defined
+      Terms as the defined-terms Agent Rule says, and carries no
+      Foundation Line.
+- [ ] In both commit-plan Agent Skills and both commit-messages Agent
+      Skills, ours and the Backend Kit's, a commit of the plan file is
+      plain `docs`, the plan file is not listed with the agent's
+      files, and no rule makes a plan beside a TODO line or an ADR two
+      commits (decision A).
+- [ ] Both commit-plan Agent Skills name a second way worth trying at
+      a boundary, tried on a `try/` branch on the human's word; their
+      look back regroups the commits and no more. TODO's "Decide
+      whether a commit plan's look-back also asks if the work could
+      have been done better" has left TODO, its verdict in the commit
+      that removes it (decision B).
+- [ ] Every text this Plan Step writes or changes names "Commit Set",
+      never "Change Set"; the glossary's "Change Set" points at its
+      new home until no text outside the layers model uses it (the
+      map's QUESTION-2; decision D).
+- [ ] Each part the map's §9 lists for the manual has landed, or was
+      judged not needed, and the commit that ends it names where.
+- [ ] The manual is gone, and every Living Text that named its path,
+      sections or name names where each part now stands
+      (`knowledge/backbone-ideas/one-home.md` §5, *When a home moves*).
+
+**Known already.** The commit-messages Agent Skill has no *Gates*
+section; the own items stand alone.
+
+**At the close.**
+
+- [ ] Every link and path in the records resolves.
+- [ ] Every ADR a record cites exists.
+- [ ] Each pair of copies agrees, such as the worked example in the
+      cbc-framing Agent Skill and in the cbc-slice Agent Skill.
+- [ ] No line of Living Text in a record the Plan Step touched, or one that
+      mentions its subject, still says "now", "today" or "not yet"
+      about something the Plan Step changed.
+- [ ] New and changed text meets `.claude/rules/writing.md`.
+- [ ] Every commit on `commit-plan-2026-11-28` follows the commit-messages Agent Skill.
+      Its subjects are counted by script: one up to 70 characters
+      passes, and one past 70 is the reviewer's to keep or rewrite
+      (`knowledge/backbone-ideas/commit-messages.md` §3, *The subject*).
+- [ ] No commit straddles agent and project paths
+      (`knowledge/backbone-ideas/commit-messages.md` §4, *What shares a commit*).
+- [ ] The Plan Step's lessons are written back where they came from:
+      conventions, the playbook, the concept.
+- [ ] `CLAUDE.md` read top to bottom; each line still passes its
+      three tests, or leaves (`knowledge/backbone-ideas/agent-files.md` §5, *How the Entry File is written*).
+- [ ] Each Approach on Trial the Plan Step drafted or used has this
+      use's dated note, and was handed over for evaluation
+      (`.claude/approaches-on-trial/approach-drafting.md` §3, *Close*).
+
+Notes:
+- Opened 2026-11-28, the tenth Plan Step of TODO's "Rewrite today's
+  Maintainer Repo into the layers model, by the map", chosen by the
+  reviewer: the manual needs no text first, and is the smallest left,
+  194 lines (the map's §9). The TODO item stays: it is the whole
+  rewrite.
+- The texts it rewrites, by the map's §9: the manual, and the Agent
+  Skill pair that waits on it, ours and the Backend Kit's. Read for
+  ideas, as the map's §9 says: `temp/model-example/idea/commit-set.md`
+  and `temp/model-example/this-repo/committing.md`, an earlier try,
+  input and not rules.
+- Checked at the opening, by subject against the manual: the
+  Glossary Name "Change Set" has its home in the manual's §1; no TODO
+  item of the map's §8 lands with it; 26 lines in 13 files of Living
+  Text name its path or name, by script, history and
+  `temp/model-example/` left out.
+- Decision A, at the opening, on the reviewer's word: the plan file,
+  `COMMIT-PLAN.md`, is no agent file. It is the trail of one piece of
+  work, as a commit message is, and tells the agent nothing of how to
+  work. The manual's §2.9 had called it one from a lesson of
+  2026-11-02, which gave no reason but the `docs(agent)` scope; agent
+  files' list, closed, has no row for it
+  (`knowledge/backbone-ideas/agent-files.md` §3, *The agent files*).
+  Adding the row was rejected.
+- Decision B, at the opening, on the reviewer's word: TODO's
+  look-back item comes due, since this Plan Step changes the Agent
+  Skill's rules. The look back at the way after the work is declined:
+  CBC Runs 5 and 6 tried it, 13 lines and 0 tries, and 12 times
+  nothing. The try before a choice is kept: CBC Run 4's 14 tries on
+  `try/` branches changed 2 answers. The agent names a second way
+  worth trying at a boundary, beside the diff, and tries it on the
+  human's word.
+- Decision C, at the opening, on the reviewer's word: each Problem
+  Domain Idea holds what its own repos lived and do. Keeping
+  knowledge's: the handbook's scratch file, 118 commit plans opened
+  since 2026-08-27 by script, one revised four times on 2026-09-27
+  and 28. CBC backend design's: where a Backend Repo opens one, at
+  birth (`delivery/installs/pure-seed.md`) and when it applies a
+  retrospective (the apply-retrospective Agent Skill, Stage 2); CBC
+  Run 3's SL-3 plan split by a revision; CBC Runs 4 to 6 as decision
+  B. How a full-auto run treats its plan is left out: no source says.
+- Decision D, at the opening, on the reviewer's word: the work a
+  commit plan plans is named "Commit Set", not "Change Set". It says
+  what it is made of, commits, and fits work that adds, deletes or
+  tries as well as work that changes. "Change" already names how
+  knowledge moves in the layers model, and in Mercurial and
+  Subversion a changeset is one commit. The plan, its file and the
+  commit-plan Agent Skill keep their names. The Change idea's own
+  title waits for TODO's depth c item (`69f618a8`).
+- Decided before the opening, on the reviewer's word: the stop at
+  every commit stays (`knowledge/backbone-ideas/commit-messages.md`
+  §5, *Commit on the word*); at a stop the reviewer finds what they
+  want. Whether it costs the agent better solutions waits on TODO's
+  "Rerun a finished Plan Step on full auto" (`ca431339`).
+- Its stages, from the map:
+  1. the Backbone Idea, from the manual's opening, *What it is for*
+     without its lived history, §1 and §2.1 to §2.12; *What this does
+     not cover* as its neighbours (the map's QUESTION-4); decisions
+     A, B and D;
+  2. the two Problem Domain Ideas, from *What it is for*'s lived
+     history and the Backend Kit's own texts (decision C);
+  3. the Backend Kit's Adapted Case: its Adapted Understanding Text
+     from *Why it arrives this way*; its commit-plan Agent Skill's
+     header, pointers and decisions A, B and D; its commit-messages
+     Agent Skill's lines on the plan file; the delivered container
+     glossary's entry;
+  4. our own Adapted Case: `.claude/understanding/commit-plan.md`,
+     and our commit-plan Agent Skill's Borrow Table, pointers and
+     decisions A, B and D; our commit-messages Agent Skill's line on
+     the plan file;
+  5. the manual goes: the rename grep over its path, sections and
+     name, and over "Change Set";
+  6. the close.
