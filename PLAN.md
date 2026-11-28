@@ -148,7 +148,7 @@ Goal: every part of the commit-plan manual,
 Skill pair that waits on it, and the manual is gone; the plan file is
 no agent file, the work it plans is named "Commit Set", and a second
 way is tried before a choice, not looked for after the work.
-Now: stage 5, the manual goes.
+Now: stage 6, the close.
 Gate:
 
 **At the opening.**
@@ -211,42 +211,65 @@ Gate:
       §6.3 in `737f16cf` and `da714792`; the item left in the commit
       that ticks this; "a `try/` branch" reworded, as commit sets' §5
       says it).
-- [ ] Every text this Plan Step writes or changes names "Commit Set",
-      never "Change Set"; the glossary's "Change Set" points at its
-      new home until no text outside the layers model uses it (the
-      map's QUESTION-2; decision D).
-- [ ] Each part the map's §9 lists for the manual has landed, or was
-      judged not needed, and the commit that ends it names where.
-- [ ] The manual is gone, and every Living Text that named its path,
+- [x] Every text this Plan Step writes or changes names "Commit Set",
+      never "Change Set"; the glossary's "Change Set" went, since no
+      text uses it (decision D) (2026-11-28, `4e2e9374`, `96b24c9c`,
+      `d53123af` and `32b19706`; reworded: on the reviewer's word every
+      Living Text was renamed, so the entry went instead of pointing
+      at its new home).
+- [x] Each part the map's §9 lists for the manual has landed, or was
+      judged not needed, and the commit that ends it names where
+      (2026-11-28, `4e2e9374`, its body).
+- [x] The manual is gone, and every Living Text that named its path,
       sections or name names where each part now stands
-      (`knowledge/backbone-ideas/one-home.md` §5, *When a home moves*).
+      (`knowledge/backbone-ideas/one-home.md` §5, *When a home moves*)
+      (2026-11-28, `4e2e9374` and `96b24c9c`; our understanding's
+      header in `ff8b8a23`).
 
 **Known already.** The commit-messages Agent Skill has no *Gates*
 section; the own items stand alone.
 
 **At the close.**
 
-- [ ] Every link and path in the records resolves.
-- [ ] Every ADR a record cites exists.
-- [ ] Each pair of copies agrees, such as the worked example in the
-      cbc-framing Agent Skill and in the cbc-slice Agent Skill.
-- [ ] No line of Living Text in a record the Plan Step touched, or one that
+- [x] Every link and path in the records resolves (2026-11-28, by
+      script over the lines this Plan Step added: each resolves, or
+      names a deleted text with its last state in git; one did not,
+      fixed in `ff8b8a23`).
+- [x] Every ADR a record cites exists (2026-11-28, by script over the
+      lines this Plan Step added).
+- [x] Each pair of copies agrees, such as the worked example in the
+      cbc-framing Agent Skill and in the cbc-slice Agent Skill
+      (2026-11-28: the worked example's copies untouched; the two
+      commit-plan Agent Skills agree beyond their pointers, by `diff`).
+- [x] No line of Living Text in a record the Plan Step touched, or one that
       mentions its subject, still says "now", "today" or "not yet"
-      about something the Plan Step changed.
-- [ ] New and changed text meets `.claude/rules/writing.md`.
-- [ ] Every commit on `commit-plan-2026-11-28` follows the commit-messages Agent Skill.
+      about something the Plan Step changed (2026-11-28, by script:
+      only standing phrases and quotes).
+- [x] New and changed text meets `.claude/rules/writing.md` (2026-11-28:
+      each changed sentence re-read; each new numbered title 30
+      characters or fewer, by script).
+- [x] Every commit on `commit-plan-2026-11-28` follows the commit-messages Agent Skill.
       Its subjects are counted by script: one up to 70 characters
       passes, and one past 70 is the reviewer's to keep or rewrite
-      (`knowledge/backbone-ideas/commit-messages.md` §3, *The subject*).
-- [ ] No commit straddles agent and project paths
-      (`knowledge/backbone-ideas/commit-messages.md` §4, *What shares a commit*).
-- [ ] The Plan Step's lessons are written back where they came from:
-      conventions, the playbook, the concept.
-- [ ] `CLAUDE.md` read top to bottom; each line still passes its
-      three tests, or leaves (`knowledge/backbone-ideas/agent-files.md` §5, *How the Entry File is written*).
-- [ ] Each Approach on Trial the Plan Step drafted or used has this
+      (`knowledge/backbone-ideas/commit-messages.md` §3, *The subject*)
+      (2026-11-28, by script: 18 subjects with this one, longest 50,
+      none past 70).
+- [x] No commit straddles agent and project paths
+      (`knowledge/backbone-ideas/commit-messages.md` §4, *What shares a commit*)
+      (2026-11-28, by script: none).
+- [x] The Plan Step's lessons are written back where they came from:
+      conventions, the playbook, the concept (2026-11-28: held in
+      TODO, since no convention changes before the rewrite
+      (ADR-0089): the rewrite item's Idea on a Problem Domain Idea as
+      understanding, `1f042072`; the joining-fact item, `71f0c7bf`).
+- [x] `CLAUDE.md` read top to bottom; each line still passes its
+      three tests, or leaves (`knowledge/backbone-ideas/agent-files.md` §5, *How the Entry File is written*)
+      (2026-11-28: read; its one changed line, the Commit Set row,
+      passes).
+- [x] Each Approach on Trial the Plan Step drafted or used has this
       use's dated note, and was handed over for evaluation
-      (`.claude/approaches-on-trial/approach-drafting.md` §3, *Close*).
+      (`.claude/approaches-on-trial/approach-drafting.md` §3, *Close*)
+      (2026-11-28: none drafted or used).
 
 Notes:
 - Opened 2026-11-28, the tenth Plan Step of TODO's "Rewrite today's
@@ -347,6 +370,16 @@ Notes:
   is read when a Plan Step opens, the moment the rule is needed. The
   rule itself, for every idea, waits on TODO's layers item; one home
   §3 is its home.
+- Noticed for other ideas, walked at the close, the first try of
+  TODO's item on where a joining fact lives: the 31 other rows of the
+  layers document's §3.1 and §3.2 read, 2 texts opened. Commit sets
+  touches 4 ideas. Placed: a Plan Step of small stages needs no
+  Commit Plan, in records and the Plan Step Forms (decisions E and
+  I). Left to the map's rows of the texts whose rewrite places them:
+  a Backend Repo's birth opens a Commit Plan, the Pure Seed's;
+  applying a retrospective opens one, the apply-retrospective Agent
+  Skill's; a CBC Run Reading's work of several commits is a Commit
+  Set, the exchange manual's. No opening is missing in commit sets.
 - Decided before the opening, on the reviewer's word: the stop at
   every commit stays (`knowledge/backbone-ideas/commit-messages.md`
   §5, *Commit on the word*); at a stop the reviewer finds what they

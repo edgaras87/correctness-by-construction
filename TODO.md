@@ -1132,9 +1132,12 @@
       - later, a check of the whole repo for rules still in the wrong
         idea;
       - it holds for any idea, new or old, not only the rewrite.
-      Trigger: the commit-plan manual's Plan Step's close, where it is
-      tried first, on its noticed fact: the plan's rule on Commit
-      Plans.
+      - its first try, at the commit-plan manual's Plan Step's close:
+        the 31 other rows read, 2 texts opened, 4 touches found, 1
+        placed and 3 left to the map's rows (PLAN.md, that Plan Step's
+        Notes).
+      Trigger: the next Plan Step's close, its second try; the rule is
+      decided after it.
       See: devlog 2026-11-28, the commit-plan manual's Plan Step;
       `TODO-CONVERSATION-MEMORY.md` §36, *Where a joining fact lives*.
 
