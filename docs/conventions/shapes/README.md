@@ -183,7 +183,7 @@ For example:
 
 - an Invariant Slice Record's Output Shape is `method/`;
 - a file of the stack's Adversity Harness is `spring-postgres/`;
-- a devlog entry's or a commit plan's is `container/`.
+- a devlog entry's or a Commit Plan's is `container/`.
 
 A CBC Run on another stack receives the first and never the second,
 and that follows from the groups rather than being enforced on top

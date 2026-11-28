@@ -64,7 +64,7 @@ and checks.
   (`.claude/rules/delivered-copies.md`, rule 2, *A copy may be edited in place…*);
   a copy this CBC Run has finished with is marked untried.
 
-## Stage 2 — commit plan
+## Stage 2 — Commit Plan
 
 Built from the applied rows and their sizes, under the commit-plan Agent Skill.
 The reviewer approves it before any change. Order the commits by
@@ -141,12 +141,12 @@ history lines.
    `-detail` branch that keeps what was tried, are the commit-plan Agent Skill's
    (`.claude/skills/commit-plan/SKILL.md` §4, *The lifecycle*, and §6.2, *Small commits*). The branch
    reaches main by fast-forward, on the reviewer's word (`PLAN.md`,
-   *The Plan Step Form*, *At the close*), and the commit plan closes.
+   *The Plan Step Form*, *At the close*), and the Commit Set closes.
 
 ## Between sessions
 
-PLAN's "Now:" line and the commit plan say where the Plan Step stands.
-The branch's log against the commit plan says which commits landed.
+PLAN's "Now:" line and the Commit Plan say where the Plan Step stands.
+The branch's log against the Commit Plan says which commits landed.
 
 ---
 

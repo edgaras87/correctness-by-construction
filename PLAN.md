@@ -295,7 +295,7 @@ Notes:
   its evidence decision B. How a full-auto run treats its Commit Plan
   is left out: no source says.
 - Decision D, at the opening, on the reviewer's word: the work a
-  commit plan plans is named "Commit Set", not "Change Set". It says
+  Commit Plan plans is named "Commit Set", not "Change Set". It says
   what it is made of, commits, and fits work that adds, deletes or
   tries as well as work that changes. "Change" already names how
   knowledge moves in the layers model, and in Mercurial and

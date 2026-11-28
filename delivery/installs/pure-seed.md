@@ -338,7 +338,7 @@ instructions:
   own sequence and the commit split the Agent Skills define. An
   add-all in one commit is an outcome the CBC Run Reading records,
   not one the Pure Seed prevents.
-- A commit plan whose sequence is chosen and justified: the Entry
+- A Commit Plan whose sequence is chosen and justified: the Entry
   File's place in it, when records enter history and how far they
   adapt to the method, whether Agent Skills land whole or split by
   source.

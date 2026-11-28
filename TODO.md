@@ -292,7 +292,7 @@
       - a Plan Step of its own;
       - separate work inside a Plan Step, with gates at its end: it
         looks like a Plan Step and is not one;
-      - a commit plan's close, which already says what diverged.
+      - a Commit Set's close, which already says what diverged.
       Trigger: the item "Design how a document is refined" is worked,
                or other small work needs a check at its end.
       See: devlog 2026-11-12, a refinement's Output Shape;
@@ -892,7 +892,7 @@
       and why; the Work Approaches made from it state the rules, one
       sentence each, and explain nothing (`docs/models/idea-to-output.md`
       §6.1, *The manual's level*, ADR-0078). Text at the wrong level
-      breaks that. Found at commit 5 of ADR-0078's commit plan: facts-in-sync §3.4
+      breaks that. Found at commit 5 of ADR-0078's Commit Plan: facts-in-sync §3.4
       first listed its six rules with almost no why; the conventions
       manual §1 holds the rules for writing an Agent Skill or Agent
       Rule, and no Work Approach carries them to the writer.
@@ -1014,7 +1014,7 @@
       Context: the writer aims at 50 characters, and the checks, at a
       Plan Step's close and a session's end, pass a subject up to 70
       (ADR-0083). Nothing counts a single commit's subject when it is
-      written; a commit plan still counts its own. Each subject past
+      written; a Commit Plan still counts its own. Each subject past
       70 a check finds counts here, fixed or kept. Found so far: 0.
       Ideas:
       - found fast: the commit-messages Agent Skill counts each

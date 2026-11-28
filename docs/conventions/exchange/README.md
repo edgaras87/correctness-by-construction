@@ -523,7 +523,7 @@ that CBC Run. It is a document in `temp/` listing every edit, every
 CBC Run Ask and every finding, one line each. It is revised as items
 close, and deleted when the work does. One per CBC Run at a time. The
 CBC Run Reading is the list. Working it is ordinary work here: a
-commit plan when it takes more than one commit, an ADR when a
+Commit Plan when it takes more than one commit, an ADR when a
 decision has rejected options. This page says only what each item must end as, and
 where; how the list is worked is
 `.claude/rules/working-a-reading.md`'s, practice under it.

@@ -66,7 +66,7 @@ decisions. In summary of them:
   - each triage row: a decision marked applied, partly applied, or
     next CBC Run only;
   - each new decision the triage raises;
-  - the commit plan before any change;
+  - the Commit Plan before any change;
   - each planned commit at its boundary;
   - each revision of the plan that changes what lands;
   - when the branch lands.
