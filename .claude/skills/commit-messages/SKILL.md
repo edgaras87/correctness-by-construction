@@ -129,7 +129,7 @@ refresh. Re-land after #58.
 Why it is so: (`knowledge/backbone-ideas/commit-messages.md` §4, *What shares a commit*).
 
 `CLAUDE.md`, `CLAUDE.local.md` and `.claude/` are the working arrangement.
-`COMMIT-PLAN.md` is committed with them. None is a project record. A
+None is a project record. A
 commit that touches them is scoped `agent`, and touches nothing else.
 Each such commit is `docs(agent)`: the agent's files are text too.
 
